@@ -43,6 +43,7 @@ Symlink into your personal skills directory so the skill is available across all
 
 ```bash
 git clone https://github.com/rochacbruno/gcd-claude-skill.git
+mkdir -p ~/.claude/skills
 ln -s /path/to/gcd-claude-skill ~/.claude/skills/gcd
 ```
 
@@ -55,6 +56,7 @@ The repo includes a `.claude-plugin/plugin.json` manifest, so it can be loaded a
 claude --add-dir /path/to/gcd-claude-skill
 
 # Or place in skills dir and it auto-loads as a skills-directory plugin
+mkdir -p ~/.claude/skills
 ln -s /path/to/gcd-claude-skill ~/.claude/skills/gcd
 ```
 
