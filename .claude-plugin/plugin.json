@@ -1,0 +1,22 @@
+{
+  "name": "gcd",
+  "displayName": "Google Cloud Dedicated",
+  "version": "1.0.0",
+  "description": "Knowledge skill for Google Cloud Dedicated (GCD) - sovereign cloud platform. Provides guidance on GCD-specific services, authentication, Terraform, and key differences from public Google Cloud.",
+  "author": {
+    "name": "Bruno Rocha",
+    "url": "https://github.com/rochacbruno"
+  },
+  "repository": "https://github.com/rochacbruno/gcd-claude-skill",
+  "license": "Apache-2.0",
+  "keywords": [
+    "google-cloud-dedicated",
+    "gcd",
+    "sovereign-cloud",
+    "google-cloud",
+    "gcp",
+    "terraform",
+    "infrastructure"
+  ],
+  "skills": ["./"]
+}
