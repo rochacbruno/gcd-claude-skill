@@ -1,0 +1,51 @@
+name: Update GCD docs
+
+on:
+  schedule:
+    - cron: "23 3 * * *"  # 03:23 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      - name: Save previous update tracker
+        run: cp docs-raw/_last_updated.json /tmp/previous_tracker.json 2>/dev/null || echo "{}" > /tmp/previous_tracker.json
+
+      - name: Run scraper
+        run: python3 -u scripts/scrape-gcd-docs.py
+
+      - name: Diff update tracker
+        id: diff
+        run: |
+          if diff -q /tmp/previous_tracker.json docs-raw/_last_updated.json > /dev/null 2>&1; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No documentation changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Documentation changes detected:"
+            diff /tmp/previous_tracker.json docs-raw/_last_updated.json || true
+          fi
+
+      - name: Commit updated docs
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs-raw/
+          git commit -m "chore: update scraped GCD docs ($(date -u +%Y-%m-%d))"
+          git push

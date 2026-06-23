@@ -15,16 +15,35 @@ When activated, the skill provides:
 
 ## Installation
 
-### Claude Code - as a skill
+### Claude Code - as a project skill (recommended)
 
-Copy or symlink into your personal skills directory:
+Clone the repo and symlink it into your project's `.claude/skills/` directory:
 
 ```bash
-# Personal skill (available in all projects)
-cp -r /path/to/gcd-claude-skill ~/.claude/skills/gcd
+# Clone the skill repo
+git clone https://github.com/rochacbruno/gcd-claude-skill.git
 
-# Or project skill (available in one project)
-cp -r /path/to/gcd-claude-skill .claude/skills/gcd
+# From your project root, create the skills directory and symlink
+mkdir -p .claude/skills
+ln -s /path/to/gcd-claude-skill .claude/skills/gcd
+```
+
+The skill activates automatically when Claude detects GCD-related work in that project. You can also invoke it directly with `/gcd`.
+
+To share with your team, commit the symlink:
+
+```bash
+git add .claude/skills/gcd
+git commit -m "Add GCD skill"
+```
+
+### Claude Code - as a personal skill
+
+Symlink into your personal skills directory so the skill is available across all projects:
+
+```bash
+git clone https://github.com/rochacbruno/gcd-claude-skill.git
+ln -s /path/to/gcd-claude-skill ~/.claude/skills/gcd
 ```
 
 ### Claude Code - as a plugin
@@ -36,11 +55,12 @@ The repo includes a `.claude-plugin/plugin.json` manifest, so it can be loaded a
 claude --add-dir /path/to/gcd-claude-skill
 
 # Or place in skills dir and it auto-loads as a skills-directory plugin
+ln -s /path/to/gcd-claude-skill ~/.claude/skills/gcd
 ```
 
 ### Other agents (Cursor, Gemini CLI, VS Code Copilot, etc.)
 
-Place the `SKILL.md` and `references/` directory where your agent discovers skills. The skill follows the open [agentskills.io](https://agentskills.io) standard and requires no agent-specific configuration.
+Clone the repo and place (or symlink) the `SKILL.md` and `references/` directory where your agent discovers skills. The skill follows the open [agentskills.io](https://agentskills.io) standard and requires no agent-specific configuration.
 
 ## Structure
 
