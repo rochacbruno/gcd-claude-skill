@@ -37,7 +37,7 @@
   "/access-context-manager/docs/reference/rest": {
     "title": "Access Context Manager API",
     "filename": "access-context-manager_reference_rest.md",
-    "size": 16299,
+    "size": 16303,
     "url": "https://berlin.devsitetest.how/access-context-manager/docs/reference/rest",
     "last_updated": "2026-04-21"
   },
@@ -149,7 +149,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 51066,
+    "size": 51065,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-06-18"
   },
@@ -177,14 +177,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 68600,
+    "size": 68603,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-06-18"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Loading CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139129,
+    "size": 139132,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-06-18"
   },
@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39329,
+    "size": 39333,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-06-18"
   },
@@ -249,7 +249,7 @@
     "filename": "compute_instances_create-start-instance.md",
     "size": 24215,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/create-start-instance",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-23"
   },
   "/compute/docs/instances/ssh": {
     "title": "About SSH connections",
@@ -555,7 +555,7 @@
   "/docs/discovery/apis": {
     "title": "Discovery Document",
     "filename": "discovery_apis.md",
-    "size": 29490,
+    "size": 29491,
     "url": "https://berlin.devsitetest.how/docs/discovery/apis",
     "last_updated": "2025-06-16"
   },
@@ -655,7 +655,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16541,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-23"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -676,7 +676,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3552,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-23"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -697,7 +697,7 @@
     "filename": "get-started_developer-tools.md",
     "size": 5164,
     "url": "https://berlin.devsitetest.how/docs/get-started/developer-tools",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-23"
   },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Google Cloud Dedicated in Germany",
@@ -800,7 +800,7 @@
   "/docs/quotas/audit-logging": {
     "title": "Cloud Quotas audit logging",
     "filename": "quotas_audit-logging.md",
-    "size": 12281,
+    "size": 12306,
     "url": "https://berlin.devsitetest.how/docs/quotas/audit-logging",
     "last_updated": "2026-06-18"
   },
@@ -1276,7 +1276,7 @@
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
     "filename": "iam_reference_rest.md",
-    "size": 50313,
+    "size": 50318,
     "url": "https://berlin.devsitetest.how/iam/docs/reference/rest",
     "last_updated": "2026-01-15"
   },
@@ -1458,7 +1458,7 @@
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
-    "size": 27457,
+    "size": 27458,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
     "last_updated": "2026-06-18"
   },
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 60791,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-06-23"
+    "last_updated": "2026-06-24"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1787,7 +1787,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30586,
+    "size": 30583,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
     "last_updated": "2026-06-18"
   },
@@ -1829,7 +1829,7 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41719,
+    "size": 38349,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
     "last_updated": "2026-06-18"
   },

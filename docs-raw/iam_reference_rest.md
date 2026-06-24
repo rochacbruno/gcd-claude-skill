@@ -339,7 +339,7 @@ Deletes a policy. |
 
 `[get](/iam/docs/reference/rest/v2beta/policies/get)` | 
 
-`GET /v2beta/{name=policies/*/*/*}` 
+`GET / v2beta/ {name=policies/ */ */ *}` 
 
 Gets a policy. | 
 |

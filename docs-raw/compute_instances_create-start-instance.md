@@ -1,7 +1,7 @@
 # Create and start a Compute Engine instance
 
 Source: https://berlin.devsitetest.how/compute/docs/instances/create-start-instance
-Last updated: 2026-06-18
+Last updated: 2026-06-23
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 

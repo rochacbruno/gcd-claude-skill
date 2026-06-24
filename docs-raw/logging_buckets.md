@@ -172,7 +172,7 @@ customer-managed encryption key (CMEK). If you are interested in that topic,
 then see
 [Configure CMEK for logs storage](/logging/docs/routing/managed-encryption-storage).
 
-## Before you begin
+## Before you begin 
 
 To get started with buckets, do the following:
 

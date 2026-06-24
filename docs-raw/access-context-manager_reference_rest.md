@@ -249,7 +249,7 @@ Creates an access policy. |
 
 `[delete](/access-context-manager/docs/reference/rest/v1/accessPolicies/delete)` | 
 
-`DELETE /v1/{name=accessPolicies/*}` 
+`DELETE / v1/ {name=access Policies/ *}` 
 
 Deletes an `[access policy](/access-context-manager/docs/reference/rest/v1/accessPolicies#AccessPolicy)` based on the resource name. | 
 |

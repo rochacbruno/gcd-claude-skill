@@ -388,9 +388,9 @@ client library.
 
 
 ```
-using [ Google.Cloud.Storage.V1 ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Storage.V1/latest/Google.Cloud.Storage.V1.html) ; 
+using Google.Cloud.Storage.V1 ; 
 
-var client = [ StorageClient ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Storage.V1/latest/Google.Cloud.Storage.V1.StorageClient.html) . [ Create ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Storage.V1/latest/Google.Cloud.Storage.V1.StorageClient.html#Google_Cloud_Storage_V1_StorageClient_Create) (); 
+var client = StorageClient . Create (); 
 client . Service . HttpClient . DefaultRequestHeaders . Add ( "custom-header" , "custom-value" ); 
 
 var buckets = client . ListBuckets ( "my-project-id" ); 
@@ -428,7 +428,7 @@ if err != nil {
 ctx = callctx . SetHeaders ( ctx , "X-Custom-Header" , "value" ) 
 
 // Use client as usual with the context and the additional headers will be sent. 
-_ , err = client . [ Bucket ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/storage/latest/index.html#cloud_google_com_go_storage_Client_Bucket) ( "my-bucket" ). Attrs ( ctx ) 
+_ , err = client . Bucket ( "my-bucket" ). Attrs ( ctx ) 
 if err != nil { 
 // Handle error. 
 } 
@@ -437,12 +437,12 @@ if err != nil {
 
 
 ```
-import com.google.api.gax.rpc.[FixedHeaderProvider](https://berlin.devsitetest.how/java/docs/reference/gax/latest/com.google.api.gax.rpc.FixedHeaderProvider.html) ; 
-import com.google.api.gax.rpc.[HeaderProvider](https://berlin.devsitetest.how/java/docs/reference/gax/latest/com.google.api.gax.rpc.HeaderProvider.html) ; 
-import com.google.cloud.[WriteChannel](https://berlin.devsitetest.how/java/docs/reference/google-cloud-core/latest/com.google.cloud.WriteChannel.html) ; 
-import com.google.cloud.storage.[BlobInfo](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.BlobInfo.html) ; 
-import com.google.cloud.storage.[Storage](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.Storage.html) ; 
-import com.google.cloud.storage.[StorageOptions](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.StorageOptions.html) ; 
+import com.google.api.gax.rpc.FixedHeaderProvider ; 
+import com.google.api.gax.rpc.HeaderProvider ; 
+import com.google.cloud.WriteChannel ; 
+import com.google.cloud.storage.BlobInfo ; 
+import com.google.cloud.storage.Storage ; 
+import com.google.cloud.storage.StorageOptions ; 
 
 import java.io.IOException ; 
 import java.nio.ByteBuffer ; 
@@ -450,20 +450,20 @@ import static java.nio.charset.StandardCharsets.UTF_8 ;
 
 public class Example { 
 
-public void main ( [ String ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigtable/latest/com.google.cloud.bigtable.common.Type.String.html) args [] ) throws IOException { 
-[ HeaderProvider ](https://berlin.devsitetest.how/java/docs/reference/gax/latest/com.google.api.gax.rpc.HeaderProvider.html) headerProvider = 
-[ FixedHeaderProvider ](https://berlin.devsitetest.how/java/docs/reference/gax/latest/com.google.api.gax.rpc.FixedHeaderProvider.html) . create ( "custom-header" , "custom-value" ); 
-[ Storage ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.Storage.html) storage = [ StorageOptions ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.StorageOptions.html) . getDefaultInstance () 
+public void main ( String args [] ) throws IOException { 
+HeaderProvider headerProvider = 
+FixedHeaderProvider . create ( "custom-header" , "custom-value" ); 
+Storage storage = StorageOptions . getDefaultInstance () 
 . toBuilder () 
 . setHeaderProvider ( headerProvider ) 
 . build (). getService (); 
-[ String ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigtable/latest/com.google.cloud.bigtable.common.Type.String.html) bucketName = "example-bucket" ; 
-[ String ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigtable/latest/com.google.cloud.bigtable.common.Type.String.html) blobName = "test-custom-header" ; 
+String bucketName = "example-bucket" ; 
+String blobName = "test-custom-header" ; 
 
 // Use client with custom header 
-[ BlobInfo ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.BlobInfo.html) blob = [ BlobInfo ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.BlobInfo.html) . newBuilder ( bucketName , blobName ). build (); 
+BlobInfo blob = BlobInfo . newBuilder ( bucketName , blobName ). build (); 
 byte [] stringBytes ; 
-try ( [ WriteChannel ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-core/latest/com.google.cloud.WriteChannel.html) writer = storage . [ writer ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-storage/latest/com.google.cloud.storage.Storage.html#com_google_cloud_storage_Storage_writer_com_google_cloud_storage_BlobInfo_com_google_cloud_storage_Storage_BlobWriteOption____) ( blob )) { 
+try ( WriteChannel writer = storage . writer ( blob )) { 
 stringBytes = "hello world" . getBytes ( UTF_8 ); 
 writer . write ( ByteBuffer . wrap ( stringBytes )); 
 } 
@@ -516,9 +516,9 @@ $bucket->info([
 
 
 ```
-from google.cloud import [ storage ](https://berlin.devsitetest.how/python/docs/reference/storage/latest)
+from google.cloud import storage 
 
-client = [ storage ](https://berlin.devsitetest.how/python/docs/reference/storage/latest) . [ Client ](https://berlin.devsitetest.how/python/docs/reference/storage/latest/google.cloud.storage.client.Client.html) ( 
+client = storage . Client ( 
 extra_headers = { 
 "x-custom-header" : "value" 
 } 
@@ -529,9 +529,9 @@ extra_headers = {
 ```
 require "google/cloud/storage" 
 
-storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: Storage . new 
 
-storage . [ add_custom_headers ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Project.html) { 'X-Custom-Header' = > 'value' } 
+storage . add_custom_headers { 'X-Custom-Header' = > 'value' } 
 ```
 
 

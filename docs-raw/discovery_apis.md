@@ -423,7 +423,7 @@ Description |
 `string` | 
 
 The kind for this response. The fixed string
-`discovery#restDescription`.
+`discovery#rest Description`.
 | 
 |
 

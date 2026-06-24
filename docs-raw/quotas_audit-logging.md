@@ -197,10 +197,10 @@ Methods |
 |
 
 | 
-`ADMIN_READ` | 
-`google.api.cloudquotas.v1.CloudQuotas.GetQuotaInfo`
-`google.api.cloudquotas.v1.CloudQuotas.GetQuotaPreference`
-`google.api.cloudquotas.v1.CloudQuotas.ListQuotaInfos`
+`ADMIN_ READ` | 
+`google. api. cloudquotas. v1. Cloud Quotas. Get Quota Info`
+`google. api. cloudquotas. v1. Cloud Quotas. Get Quota Preference`
+`google. api. cloudquotas. v1. Cloud Quotas. List Quota Infos`
 `google.api.cloudquotas.v1.CloudQuotas.ListQuotaPreferences`
 `google.api.cloudquotas.v1beta.CloudQuotas.GetQuotaInfo`
 `google.api.cloudquotas.v1beta.CloudQuotas.GetQuotaPreference`
