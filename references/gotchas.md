@@ -60,6 +60,23 @@ public GCP to Google Cloud Dedicated.
 - **New GCP features may not launch simultaneously in GCD.** Subscribe to GCD
   release notes for updates.
 
+## SSH Access
+
+- **OS Login is unavailable.** You cannot use `gcloud compute os-login` or
+  rely on OS Login for SSH key and user management. Manage SSH keys and
+  user accounts manually or via instance metadata.
+- **Use `gcloud compute ssh` when possible.** It handles key generation,
+  metadata-based key distribution, and firewall rule setup automatically.
+  This works for normal interactive access and automation/CI where gcloud
+  is installed.
+- **For environments without gcloud**, use plain SSH with pre-configured
+  keys and users (set via instance metadata or baked into the image).
+- **IAP TCP forwarding is unavailable.** You cannot tunnel SSH through
+  Identity-Aware Proxy. If VMs lack public IPs, use a bastion host with
+  plain SSH for the second hop.
+- **Interactive serial console access is unavailable.** If a VM is
+  unreachable via SSH, you cannot fall back to the serial console.
+
 ## Naming and Branding
 
 - **"Google-managed" does not mean Google manages your data.** In GCD, the
