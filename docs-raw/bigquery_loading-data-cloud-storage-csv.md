@@ -1,7 +1,7 @@
 # Loading CSV data from Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv
-Last updated: 2026-06-18
+Last updated: 2026-06-25
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -4236,7 +4236,7 @@ after the table is created. Another option is to provide an explicit schema
 instead of using autodetect.
 
 You might have a CSV file with a header row, where all of the data fields are
-strings. In that case, BigQuery will not automatically detect that
+strings. In that case, BigQuery won't automatically detect that
 the first row is a header. Use the `--skip_leading_rows` option to skip the
 header row. Otherwise, the header will be imported as data. Also consider
 providing an explicit schema in this case, so that you can assign column names.
@@ -4245,6 +4245,18 @@ providing an explicit schema in this case, so that you can assign column names.
 
 BigQuery detects quoted new line characters within a CSV field
 and does not interpret the quoted new line character as a row boundary.
+
+#### Troubleshooting
+
+When auto-detecting schema for CSV files, you might encounter the following
+error:
+
+**Error:** `Error while reading data, error message: CSV processing encountered
+too many errors, giving up.`
+
+This error can occur when your CSV file has a header row with string values, and
+BigQuery didn't detect it as a header. You can use the
+`--skip_leading_rows` option to skip the header row.
 
 ## Troubleshoot parsing errors
 

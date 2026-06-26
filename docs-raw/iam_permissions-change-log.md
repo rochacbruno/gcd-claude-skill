@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-06-24
+Last updated: 2026-06-25
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -169,6 +169,786 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-06-23
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+Access Context Manager
+| 
+
+
+
+The following permissions have been added to the VPC Service Controls Troubleshooter Viewer role (`roles/accesscontextmanager.vpcScTroubleshooterViewer`):
+
+
+
+`iam.roles.get`
+
+
+
+| 
+|
+
+| 
+
+Gemini Enterprise Agent Platform
+| 
+
+
+
+The following permissions have been added to the Vertex AI Service Agent role (`roles/aiplatform.serviceAgent`):
+
+
+
+`compute.instanceGroupManagers.update`
+
+`logging.operations.get`
+
+`logging.operations.list`
+
+`observability.operations.get`
+
+`observability.operations.list`
+
+
+
+| 
+|
+
+| 
+
+API Hub
+| 
+
+
+
+The following permissions have been added to the Cloud API Hub Admin role (`roles/apihub.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+API Hub
+| 
+
+
+
+The following permissions have been added to the Cloud API hub Provisioning Admin role (`roles/apihub.provisioningAdmin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+App Engine
+| 
+
+
+
+The Appengine Admin role (`roles/appengine.admin`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+App Engine
+| 
+
+
+
+The Appengine Editor role (`roles/appengine.editor`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+App Engine
+| 
+
+
+
+The Appengine Viewer role (`roles/appengine.viewer`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added to the Chronicle API Editor role (`roles/chronicle.editor`):
+
+
+
+`chronicle.moduleSettingsProperties.get`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added to the Chronicle SOAR Admin role (`roles/chronicle.soarAdmin`):
+
+
+
+`chronicle.preferenceSets.update`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added to the Chronicle SOAR Threat Manager role (`roles/chronicle.soarThreatManager`):
+
+
+
+`chronicle.dataAccessScopes.list`
+
+`chronicle.environmentGroups.get`
+
+`chronicle.instances.get`
+
+`chronicle.integrations.get`
+
+`chronicle.legacySoarAdvancedReports.get`
+
+`chronicle.legacySoarUsers.get`
+
+`chronicle.moduleSettings.rebranding`
+
+`chronicle.moduleSettingsProperties.get`
+
+`chronicle.preferenceSets.get`
+
+`chronicle.preferenceSets.update`
+
+`chronicle.socRoles.get`
+
+`chronicle.userLocalizations.get`
+
+`chronicle.userNotifications.get`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added to the Chronicle SOAR Vulnerability Manager role (`roles/chronicle.soarVulnerabilityManager`):
+
+
+
+`chronicle.dataAccessScopes.list`
+
+`chronicle.environmentGroups.get`
+
+`chronicle.instances.get`
+
+`chronicle.integrations.get`
+
+`chronicle.legacySoarAdvancedReports.get`
+
+`chronicle.legacySoarUsers.get`
+
+`chronicle.moduleSettings.rebranding`
+
+`chronicle.moduleSettingsProperties.get`
+
+`chronicle.preferenceSets.get`
+
+`chronicle.preferenceSets.update`
+
+`chronicle.socRoles.get`
+
+`chronicle.userLocalizations.get`
+
+`chronicle.userNotifications.get`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added to the Chronicle API Viewer role (`roles/chronicle.viewer`):
+
+
+
+`chronicle.moduleSettingsProperties.get`
+
+`chronicle.userLocalizations.get`
+
+`chronicle.userNotifications.get`
+
+
+
+| 
+|
+
+| 
+
+Developer Connect
+| 
+
+
+
+The following permissions have been added to the Developer Connect Service Agent role (`roles/developerconnect.serviceAgent`):
+
+
+
+`developerconnect.connections.get`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Gemini Enterprise User role (`roles/discoveryengine.agentspaceUser`):
+
+
+
+`discoveryengine.collections.get`
+
+`discoveryengine.dataStores.get`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Podcast API User role (`roles/discoveryengine.podcastApiUser`):
+
+
+
+`discoveryengine.collections.get`
+
+`discoveryengine.dataStores.get`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Discovery Engine User role (`roles/discoveryengine.user`):
+
+
+
+`discoveryengine.collections.get`
+
+`discoveryengine.dataStores.get`
+
+
+
+| 
+|
+
+| 
+
+Firebase Telemetry
+| 
+
+
+
+The Firebase Telemetry Service Agent role (`roles/firebasetelemetry.serviceAgent`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Backup for GKE
+| 
+
+
+
+The following permissions have been added to the Backup for GKE Admin role (`roles/gkebackup.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Cluster Director
+| 
+
+
+
+The following permissions have been added to the Cluster Director Service Agent role (`roles/hypercomputecluster.serviceAgent`):
+
+
+
+`hypercomputecluster.machineLearningRuns.create`
+
+`hypercomputecluster.machineLearningRuns.delete`
+
+`hypercomputecluster.machineLearningRuns.get`
+
+`hypercomputecluster.machineLearningRuns.list`
+
+`hypercomputecluster.machineLearningRuns.update`
+
+`hypercomputecluster.operations.cancel`
+
+`hypercomputecluster.operations.delete`
+
+`hypercomputecluster.operations.get`
+
+`hypercomputecluster.operations.list`
+
+
+
+| 
+|
+
+| 
+
+Cloud Monitoring
+| 
+
+
+
+The Monitoring Alert Viewer role (`roles/monitoring.alertViewer`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Network Connectivity Center
+| 
+
+
+
+The following permissions have been added to the Network Connectivity Service Agent role (`roles/networkconnectivity.serviceAgent`):
+
+
+
+`compute.serviceAttachments.get`
+
+`compute.serviceAttachments.update`
+
+
+
+| 
+|
+
+| 
+
+Secret Manager
+| 
+
+
+
+The Secretmanager Editor role (`roles/secretmanager.editor`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Workflows
+| 
+
+
+
+The following permissions have been added to the Workflows Admin role (`roles/workflows.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Workflows
+| 
+
+
+
+The following permissions have been added to the Workflows Editor role (`roles/workflows.editor`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Bare Metal Solution
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`baremetalsolution.luns.onDemandEvict`
+
+`baremetalsolution.volumes.onDemandEvict`
+
+
+
+| 
+|
+
+| 
+
+Bare Metal Solution
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`baremetalsolution.luns.onDemandEvict`
+
+`baremetalsolution.volumes.onDemandEvict`
+
+
+
+| 
+|
+
+| 
+
+Bare Metal Solution
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`baremetalsolution.luns.onDemandEvict`
+
+`baremetalsolution.volumes.onDemandEvict`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`chronicle.connectorEvents.get`
+
+`chronicle.featuredContentPlaybooks.get`
+
+`chronicle.featuredContentPlaybooks.install`
+
+`chronicle.featuredContentPlaybooks.list`
+
+`chronicle.moduleSettings.modifyCaseList`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`chronicle.connectorEvents.get`
+
+`chronicle.featuredContentPlaybooks.get`
+
+`chronicle.featuredContentPlaybooks.install`
+
+`chronicle.featuredContentPlaybooks.list`
+
+`chronicle.moduleSettings.modifyCaseList`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`chronicle.caseAlerts.removeTag`
+
+`chronicle.caseAlerts.updateTag`
+
+`chronicle.caseDetections.get`
+
+`chronicle.caseEvents.get`
+
+`chronicle.caseEvidenceDatas.get`
+
+
+
+| 
+|
+
+| 
+
+Cloud Monitoring
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`monitoring.alerts.get`
+
+`monitoring.alerts.list`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`run.instances.sshRead`
+
+`run.instances.sshRoot`
+
+`run.jobs.sshRead`
+
+`run.jobs.sshRoot`
+
+`run.services.sshRead`
+
+`run.services.sshRoot`
+
+`run.workerpools.sshRead`
+
+`run.workerpools.sshRoot`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`run.instances.sshRead`
+
+`run.instances.sshRoot`
+
+`run.jobs.sshRead`
+
+`run.jobs.sshRoot`
+
+`run.services.sshRead`
+
+`run.services.sshRoot`
+
+`run.workerpools.sshRead`
+
+`run.workerpools.sshRoot`
+
+
+
+| 
+|
+
+| 
+
+Workload Manager
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`workloadmanager.findings.create`
+
+`workloadmanager.findings.list`
+
+
+
+| 
+|
 
 
 

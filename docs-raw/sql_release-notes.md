@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://berlin.devsitetest.how/sql/docs/release-notes
-Last updated: 2026-06-25
+Last updated: 2026-06-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -240,19 +240,6 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 ## June 22, 2026 
-
-**Cloud SQL for MySQL**
-
-Feature 
-
-
-Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is
-generally available. You can protect your CMEK-enabled Cloud SQL instances
-using Google Cloud Backup and DR Service.
-
-For more information, see [Choose your backup
-option](https://berlin.devsitetest.how/sql/docs/mysql/backup-recovery/backup-options).
-
 
 **Cloud SQL for PostgreSQL**
 
