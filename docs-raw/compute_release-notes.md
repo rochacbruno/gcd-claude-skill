@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ June 26, 2026 ](#June_26_2026)
 - [ June 22, 2026 ](#June_22_2026)
 - [ June 03, 2026 ](#June_03_2026)
 - [ May 01, 2026 ](#May_01_2026)
@@ -265,6 +266,20 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## June 26, 2026
+
+
+Feature 
+
+
+**Generally available**: In a managed instance group (MIG), you can use a health
+check to monitor your application health without triggering repairs for an
+unhealthy VM, if the application fails the health check. You can prevent the MIG
+from repairing an unhealthy VM by turning off autohealing. For more information,
+see [Turn off repairs in a MIG](/compute/docs/instance-groups/turn-off-vm-repairs-in-mig).
 
 
 

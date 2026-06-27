@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39343,
+    "size": 39344,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-06-18"
   },
@@ -268,7 +268,7 @@
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
     "filename": "compute_release-notes.md",
-    "size": 41541,
+    "size": 42018,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
     "last_updated": "2026-06-18"
   },
@@ -842,7 +842,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19109,
+    "size": 19111,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-06-18"
   },
@@ -1332,14 +1332,14 @@
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 166107,
+    "size": 166089,
     "url": "https://berlin.devsitetest.how/kms/docs/creating-keys",
     "last_updated": "2026-06-18"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 38286,
+    "size": 38280,
     "url": "https://berlin.devsitetest.how/kms/docs/destroy-restore",
     "last_updated": "2026-06-18"
   },
@@ -1367,7 +1367,7 @@
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22787,
+    "size": 22784,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
     "last_updated": "2026-06-18"
   },
@@ -1430,9 +1430,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1198380,
+    "size": 1218698,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
@@ -1446,26 +1446,26 @@
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21409,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27458,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28197,
+    "size": 28189,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
     "last_updated": "2026-06-18"
   },
@@ -1481,47 +1481,47 @@
     "filename": "logging_release-notes.md",
     "size": 3355,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze logs",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 43985,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39444,
+    "size": 39372,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
     "last_updated": "2026-06-18"
   },
@@ -1530,14 +1530,14 @@
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-26"
   },
   "/pubsub/docs": {
     "title": "Pub/Sub documentation",
@@ -1549,7 +1549,7 @@
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115149,
+    "size": 115167,
     "url": "https://berlin.devsitetest.how/pubsub/docs/access-control",
     "last_updated": "2026-06-18"
   },
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 60421,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-27"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
