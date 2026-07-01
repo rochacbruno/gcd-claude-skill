@@ -1,7 +1,7 @@
 # Use client libraries in Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/use-client-libraries
-Last updated: 2026-06-18
+Last updated: 2026-06-29
 
 - 
 

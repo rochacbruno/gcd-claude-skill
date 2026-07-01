@@ -1,7 +1,7 @@
 # Security
 
 Source: https://berlin.devsitetest.how/docs/security
-Last updated: 2026-06-18
+Last updated: 2026-06-29
 
 - 
 

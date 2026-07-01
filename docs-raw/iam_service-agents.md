@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-06-25
+Last updated: 2026-06-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -654,6 +654,22 @@ Service agent for `alloydb.googleapis.com`.
 
 
 `c- PROJECT_NUMBER - IDENTIFIER @gcp-sa-alloydb.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### Analytics Hub Service Agent
+
+[Primary service agent](/iam/docs/service-account-types#primary) for `analyticshub.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-analyticshub.eu0-system.iam.gserviceaccount.com`
 
 | 
 
@@ -5076,7 +5092,7 @@ Granted on the project.
 
 
 
-[Cloud Functions Service Agent](/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.serviceAgent)
+[(Deprecated) Cloud Functions Service Agent](/iam/docs/roles-permissions/cloudfunctions#cloudfunctions.serviceAgent)
 
 (`roles/cloudfunctions.serviceAgent`)
 

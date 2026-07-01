@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-06-25
+Last updated: 2026-06-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 

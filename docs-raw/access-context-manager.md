@@ -1,7 +1,7 @@
 # Access Context Manager documentation
 
 Source: https://berlin.devsitetest.how/access-context-manager/docs
-Last updated: 2026-06-18
+Last updated: 2026-06-29
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/access-context-manager/docs/tpc-differences) for more details.
 

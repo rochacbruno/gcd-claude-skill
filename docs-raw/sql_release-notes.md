@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://berlin.devsitetest.how/sql/docs/release-notes
-Last updated: 2026-06-30
+Last updated: 2026-07-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ June 24, 2026 ](#June_24_2026)
 - [ June 22, 2026 ](#June_22_2026)
 - [ June 18, 2026 ](#June_18_2026)
 - [ June 08, 2026 ](#June_08_2026)
@@ -239,7 +240,52 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## June 22, 2026 
+## June 24, 2026 
+
+**Cloud SQL for MySQL**
+
+Change 
+
+
+Cloud SQL now supports Private Service Connect outbound connectivity on the
+following additional types of instances:
+
+- 
+
+Read replica instances.
+
+- 
+
+Instances that use advanced disaster recovery features such as switchover and
+failover operations.
+
+For more information about Private Service Connect outbound connectivity see
+[About Private Service Connect](https://berlin.devsitetest.how/sql/docs/mysql/about-private-service-connect#psc-outbound).
+
+
+**Cloud SQL for PostgreSQL**
+
+Change 
+
+
+Cloud SQL now supports Private Service Connect outbound connectivity on the
+following additional types of instances:
+
+- 
+
+Read replica instances.
+
+- 
+
+Instances that use advanced disaster recovery features such as switchover and
+failover operations.
+
+For more information about Private Service Connect outbound connectivity see
+[About Private Service Connect](https://berlin.devsitetest.how/sql/docs/postgres/about-private-service-connect#psc-outbound).
+
+
+
+## June 22, 2026
 
 **Cloud SQL for PostgreSQL**
 
