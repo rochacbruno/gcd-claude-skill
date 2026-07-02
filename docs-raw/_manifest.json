@@ -58,28 +58,28 @@
   "/api-keys/docs": {
     "title": "API Keys documentation",
     "filename": "api-keys.md",
-    "size": 2096,
+    "size": 2271,
     "url": "https://berlin.devsitetest.how/api-keys/docs",
     "last_updated": "2026-06-29"
   },
   "/api-keys/docs/quotas": {
     "title": "Quotas and limits",
     "filename": "api-keys_quotas.md",
-    "size": 1389,
+    "size": 1477,
     "url": "https://berlin.devsitetest.how/api-keys/docs/quotas",
     "last_updated": "2026-06-29"
   },
   "/api-keys/docs/reference/rest": {
     "title": "API Keys API Documentation",
     "filename": "api-keys_reference_rest.md",
-    "size": 4669,
+    "size": 4757,
     "url": "https://berlin.devsitetest.how/api-keys/docs/reference/rest",
     "last_updated": "2025-09-25"
   },
   "/api-keys/docs/release-notes": {
     "title": "API Keys release notes",
     "filename": "api-keys_release-notes.md",
-    "size": 1717,
+    "size": 1805,
     "url": "https://berlin.devsitetest.how/api-keys/docs/release-notes",
     "last_updated": "2026-06-29"
   },
@@ -135,9 +135,9 @@
   "/bigquery/docs": {
     "title": "BigQuery documentation",
     "filename": "bigquery.md",
-    "size": 4223,
+    "size": 4417,
     "url": "https://berlin.devsitetest.how/bigquery/docs",
-    "last_updated": "2026-06-29"
+    "last_updated": "2026-07-01"
   },
   "/bigquery/docs/bq-command-line-tool": {
     "title": "Use the bq tool",
@@ -177,14 +177,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 68605,
+    "size": 68606,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-06-29"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Loading CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139546,
+    "size": 139538,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-06-29"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160731,
+    "size": 160715,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-06-29"
   },
@@ -240,9 +240,9 @@
   "/compute/docs": {
     "title": "Compute Engine documentation",
     "filename": "compute.md",
-    "size": 3014,
+    "size": 3282,
     "url": "https://berlin.devsitetest.how/compute/docs",
-    "last_updated": "2026-06-29"
+    "last_updated": "2026-07-01"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
@@ -828,7 +828,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2714,
+    "size": 2713,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-06-29"
   },
@@ -1327,28 +1327,28 @@
     "filename": "kms.md",
     "size": 3585,
     "url": "https://berlin.devsitetest.how/kms/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 166089,
+    "size": 166107,
     "url": "https://berlin.devsitetest.how/kms/docs/creating-keys",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 38280,
+    "size": 38286,
     "url": "https://berlin.devsitetest.how/kms/docs/destroy-restore",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kms/docs/importing-a-key": {
     "title": "Import a key version into Cloud KMS",
     "filename": "kms_importing-a-key.md",
     "size": 94754,
     "url": "https://berlin.devsitetest.how/kms/docs/importing-a-key",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kms/docs/reference/rest": {
     "title": "Cloud Key Management Service (KMS) API",
@@ -1362,63 +1362,63 @@
     "filename": "kms_release-notes.md",
     "size": 3731,
     "url": "https://berlin.devsitetest.how/kms/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22784,
+    "size": 22787,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Google Cloud Dedicated versus Google Cloud",
     "filename": "kms_tpc-differences.md",
     "size": 5644,
     "url": "https://berlin.devsitetest.how/kms/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs": {
     "title": "Google Kubernetes Engine documentation",
     "filename": "kubernetes-engine.md",
     "size": 3501,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
     "size": 7047,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
     "size": 8189,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
     "filename": "kubernetes-engine_how-to_cluster-access-for-kubectl.md",
     "size": 14846,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/cluster-access-for-kubectl",
-    "last_updated": "2026-06-25"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs/how-to/workload-identity": {
     "title": "Authenticate to Google Cloud Dedicated APIs from GKE workloads",
     "filename": "kubernetes-engine_how-to_workload-identity.md",
     "size": 27969,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/workload-identity",
-    "last_updated": "2026-06-25"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs/quickstarts/create-cluster": {
     "title": "Quickstart: Create a cluster and deploy a workload",
     "filename": "kubernetes-engine_quickstarts_create-cluster.md",
     "size": 9796,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/quickstarts/create-cluster",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
@@ -1439,35 +1439,35 @@
     "filename": "kubernetes-engine_tpc-differences.md",
     "size": 12707,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs": {
     "title": "Cloud Logging documentation",
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21409,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27458,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28189,
+    "size": 28215,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1481,75 +1481,75 @@
     "filename": "logging_release-notes.md",
     "size": 3355,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze logs",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 43985,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39378,
+    "size": 39365,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/monitoring/docs/release-notes": {
     "title": "Monitoring release notes",
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs": {
     "title": "Pub/Sub documentation",
     "filename": "pubsub.md",
     "size": 3988,
     "url": "https://berlin.devsitetest.how/pubsub/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115167,
+    "size": 115149,
     "url": "https://berlin.devsitetest.how/pubsub/docs/access-control",
     "last_updated": "2026-06-29"
   },
@@ -1558,112 +1558,112 @@
     "filename": "pubsub_create-topic.md",
     "size": 23608,
     "url": "https://berlin.devsitetest.how/pubsub/docs/create-topic",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/monitoring": {
     "title": "Monitor Pub/Sub in Cloud Monitoring",
     "filename": "pubsub_monitoring.md",
     "size": 27798,
     "url": "https://berlin.devsitetest.how/pubsub/docs/monitoring",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/publish-receive-messages-console": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub using the Google Cloud Dedicated console",
     "filename": "pubsub_publish-receive-messages-console.md",
     "size": 8212,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-console",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/publish-receive-messages-gcloud": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub by using the gcloud CLI",
     "filename": "pubsub_publish-receive-messages-gcloud.md",
     "size": 4464,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-gcloud",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 70166,
+    "size": 70157,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publisher",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/release-notes": {
     "title": "Pub/Sub release notes",
     "filename": "pubsub_release-notes.md",
     "size": 3414,
     "url": "https://berlin.devsitetest.how/pubsub/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/resource-location-restriction": {
     "title": "Configure message storage policies",
     "filename": "pubsub_resource-location-restriction.md",
     "size": 18809,
     "url": "https://berlin.devsitetest.how/pubsub/docs/resource-location-restriction",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/tpc-differences": {
     "title": "Pub/Sub in Google Cloud Dedicated versus Google Cloud",
     "filename": "pubsub_tpc-differences.md",
     "size": 5793,
     "url": "https://berlin.devsitetest.how/pubsub/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/pubsub/docs/troubleshooting": {
     "title": "General troubleshooting",
     "filename": "pubsub_troubleshooting.md",
     "size": 34380,
     "url": "https://berlin.devsitetest.how/pubsub/docs/troubleshooting",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs": {
     "title": "Resource Manager documentation",
     "filename": "resource-manager.md",
     "size": 3006,
     "url": "https://berlin.devsitetest.how/resource-manager/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/authorizing": {
     "title": "Authorize requests",
     "filename": "resource-manager_authorizing.md",
     "size": 6481,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/authorizing",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/creating-managing-folders": {
     "title": "Create folders",
     "filename": "resource-manager_creating-managing-folders.md",
     "size": 18302,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/creating-managing-folders",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/creating-managing-projects": {
     "title": "Create projects",
     "filename": "resource-manager_creating-managing-projects.md",
     "size": 13758,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/creating-managing-projects",
-    "last_updated": "2026-06-22"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/limits": {
     "title": "Quotas and usage limits",
     "filename": "resource-manager_limits.md",
     "size": 4934,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/limits",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/listing-all-resources": {
     "title": "List all projects and folders in your hierarchy",
     "filename": "resource-manager_listing-all-resources.md",
     "size": 9754,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/listing-all-resources",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/manage-google-cloud-resources": {
     "title": "Quickstart: Create your Google Cloud Dedicated in Germany resource hierarchy",
     "filename": "resource-manager_manage-google-cloud-resources.md",
     "size": 14136,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/manage-google-cloud-resources",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/reference/essentialcontacts/rest": {
     "title": "Essential Contacts API",
@@ -1677,56 +1677,56 @@
     "filename": "resource-manager_release-notes.md",
     "size": 2381,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/tags/tags-creating-and-managing": {
     "title": "Create and manage tags",
     "filename": "resource-manager_tags_tags-creating-and-managing.md",
     "size": 73074,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/tags/tags-creating-and-managing",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/resource-manager/docs/tpc-differences": {
     "title": "Resource Manager in Google Cloud Dedicated versus Google Cloud",
     "filename": "resource-manager_tpc-differences.md",
     "size": 4108,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs": {
     "title": "Service Usage documentation",
     "filename": "service-usage.md",
     "size": 2213,
     "url": "https://berlin.devsitetest.how/service-usage/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/enable-disable": {
     "title": "Enable and disable services",
     "filename": "service-usage_enable-disable.md",
     "size": 18534,
     "url": "https://berlin.devsitetest.how/service-usage/docs/enable-disable",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/list-services": {
     "title": "List services",
     "filename": "service-usage_list-services.md",
     "size": 7327,
     "url": "https://berlin.devsitetest.how/service-usage/docs/list-services",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/overview": {
     "title": "Service Usage overview",
     "filename": "service-usage_overview.md",
     "size": 2175,
     "url": "https://berlin.devsitetest.how/service-usage/docs/overview",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/quotas": {
     "title": "Quotas and limits",
     "filename": "service-usage_quotas.md",
     "size": 1365,
     "url": "https://berlin.devsitetest.how/service-usage/docs/quotas",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/reference/rest": {
     "title": "Service Usage API",
@@ -1740,111 +1740,111 @@
     "filename": "service-usage_release-notes.md",
     "size": 1721,
     "url": "https://berlin.devsitetest.how/service-usage/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/set-up-development-environment": {
     "title": "Quickstart: Set up Service Usage for a development environment",
     "filename": "service-usage_set-up-development-environment.md",
     "size": 3631,
     "url": "https://berlin.devsitetest.how/service-usage/docs/set-up-development-environment",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/service-usage/docs/tpc-differences": {
     "title": "Service Usage in Google Cloud Dedicated versus Google Cloud",
     "filename": "service-usage_tpc-differences.md",
     "size": 3408,
     "url": "https://berlin.devsitetest.how/service-usage/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/sql/docs": {
     "title": "Cloud SQL documentation",
     "filename": "sql.md",
     "size": 2247,
     "url": "https://berlin.devsitetest.how/sql/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/sql/docs/release-notes": {
     "title": "Cloud SQL release notes",
     "filename": "sql_release-notes.md",
-    "size": 61459,
+    "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-01"
+    "last_updated": "2026-07-02"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
     "filename": "sql_tpc-differences.md",
     "size": 6821,
     "url": "https://berlin.devsitetest.how/sql/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs": {
     "title": "Cloud Storage documentation",
     "filename": "storage.md",
     "size": 3021,
     "url": "https://berlin.devsitetest.how/storage/docs",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30575,
+    "size": 30586,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/discover-object-storage-console": {
     "title": "Quickstart: Discover object storage with the Google Cloud Dedicated console",
     "filename": "storage_discover-object-storage-console.md",
     "size": 8793,
     "url": "https://berlin.devsitetest.how/storage/docs/discover-object-storage-console",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/json_api": {
     "title": "Cloud Storage JSON API overview",
     "filename": "storage_json_api.md",
     "size": 10783,
     "url": "https://berlin.devsitetest.how/storage/docs/json_api",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 21752,
+    "size": 21763,
     "url": "https://berlin.devsitetest.how/storage/docs/reference/libraries",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
     "filename": "storage_release-notes.md",
     "size": 13442,
     "url": "https://berlin.devsitetest.how/storage/docs/release-notes",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/tpc-differences": {
     "title": "Cloud Storage in Google Cloud Dedicated versus Google Cloud",
     "filename": "storage_tpc-differences.md",
     "size": 6323,
     "url": "https://berlin.devsitetest.how/storage/docs/tpc-differences",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41708,
+    "size": 41716,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46889,
+    "size": 46900,
     "url": "https://berlin.devsitetest.how/storage/docs/uploading-objects",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   },
   "/storage/docs/xml-api/overview": {
     "title": "XML API overview",
     "filename": "storage_xml-api_overview.md",
     "size": 8802,
     "url": "https://berlin.devsitetest.how/storage/docs/xml-api/overview",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-29"
   }
 }

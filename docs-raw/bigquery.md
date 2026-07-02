@@ -1,7 +1,7 @@
 # BigQuery documentation
 
 Source: https://berlin.devsitetest.how/bigquery/docs
-Last updated: 2026-06-29
+Last updated: 2026-07-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -152,6 +152,30 @@ pricing models across on-demand and flat-rate options.
 
 
 [Go to the BigQuery product page for more.](https://berlin.devsitetest.how/bigquery)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -715,6 +739,74 @@ Introduction to vector search
 
 
 ](/bigquery/docs/vector-search-intro)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+[
+
+
+What is the ?
+
+
+](/bigquery/docs/dts-introduction)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+[
+
+
+Introduction to 
+
+
+](/bigquery/docs/migration-intro)
 
 
 

@@ -1,7 +1,7 @@
 # Compute Engine documentation
 
 Source: https://berlin.devsitetest.how/compute/docs
-Last updated: 2026-06-29
+Last updated: 2026-07-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -154,6 +154,42 @@ CPUs on a system that offers quick, consistent performance.
 
 
 [Go to the Compute Engine product page for more.](https://berlin.devsitetest.how/products/compute)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -475,6 +511,40 @@ Choose a migration path
 [
 
 
+Choose a disk type
+
+
+](/compute/docs/disks)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+[
+
+
 Data protection options
 
 
@@ -513,6 +583,74 @@ VM instance lifecycle
 
 
 ](/compute/docs/instances/instance-lifecycle)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+[
+
+
+documentation
+
+
+](/compute/shielded-vm/docs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+
+
+[
+
+
+documentation
+
+
+](/compute/vm-manager/docs)
 
 
 

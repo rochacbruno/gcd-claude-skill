@@ -1,7 +1,7 @@
 # Quickstart: Discover object storage with the Google Cloud Dedicated console
 
 Source: https://berlin.devsitetest.how/storage/docs/discover-object-storage-console
-Last updated: 2026-06-18
+Last updated: 2026-06-29
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 

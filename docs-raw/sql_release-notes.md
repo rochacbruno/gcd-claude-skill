@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://berlin.devsitetest.how/sql/docs/release-notes
-Last updated: 2026-07-01
+Last updated: 2026-07-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ June 29, 2026 ](#June_29_2026)
 - [ June 24, 2026 ](#June_24_2026)
 - [ June 22, 2026 ](#June_22_2026)
 - [ June 18, 2026 ](#June_18_2026)
@@ -240,7 +241,21 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## June 24, 2026 
+## June 29, 2026 
+
+**Cloud SQL for MySQL**
+
+Feature 
+
+
+MySQL 8.0.45 is now the [default minor version](/sql/docs/mysql/db-versions#database-version-support) for Cloud SQL for MySQL 8.0.
+
+For more information about minor version support in Cloud SQL for MySQL,
+see [MySQL 8.0](/sql/docs/mysql/db-versions#mysql-8.0).
+
+
+
+## June 24, 2026
 
 **Cloud SQL for MySQL**
 

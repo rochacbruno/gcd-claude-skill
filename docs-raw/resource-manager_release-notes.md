@@ -1,7 +1,7 @@
 # Resource Manager release notes
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/release-notes
-Last updated: 2026-06-18
+Last updated: 2026-06-29
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
