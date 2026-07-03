@@ -1,7 +1,7 @@
 # Cloud Storage client libraries
 
 Source: https://berlin.devsitetest.how/storage/docs/reference/libraries
-Last updated: 2026-06-29
+Last updated: 2026-07-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -132,6 +132,7 @@ Guides
 - [ Install the client library ](#install)
 - [ Set up authentication ](#authentication)
 - [ Use the client library ](#use)
+- [ Authentication options ](#auth-options)
 - [ Using the client library with Cloud Shell Editor ](#cloud-shell-editor)
 - [ More examples ](#more_examples)
 - [ Additional resources ](#resources)
@@ -1539,6 +1540,12 @@ end
 
 
 
+
+## Authentication options
+
+By default, the client libraries use Application Default Credentials (ADC) to authenticate. For details on setting up ADC for local development or production, see [Set up authentication](#authentication).
+
+If you want to authenticate dynamically or by using in-memory keys, pass a custom credentials object when you initialize the client. For example, you might load keys from a secure vault or configuration system. For a Python code example and details on this configuration, see [Authorize using service account credentials](/storage/docs/authentication#passing-credentials-in-code).
 
 ## Using the client library with Cloud Shell Editor
 

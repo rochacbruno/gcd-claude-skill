@@ -1,7 +1,7 @@
 # Application hosting
 
 Source: https://berlin.devsitetest.how/docs/application-hosting
-Last updated: 2026-06-29
+Last updated: 2026-07-01
 
 - 
 
@@ -329,16 +329,16 @@ Learn about configuring security in GKE.
 
 
 
-
-
-
-
-
-
-
-
-
 ### Related products, guides, and sites
+
+
+
+
+
+
+
+
+
 
 
 
