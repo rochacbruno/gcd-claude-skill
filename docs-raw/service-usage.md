@@ -1,7 +1,7 @@
 # Service Usage documentation
 
 Source: https://berlin.devsitetest.how/service-usage/docs
-Last updated: 2026-06-29
+Last updated: 2026-07-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -145,6 +145,12 @@ Service Usage
 
 Service Usage lets you list, enable, and disable APIs and services in
 your Google Cloud Dedicated projects.
+
+
+
+
+API keys additionally provides you with a programmatic interface to create and manage
+API keys for your Google Cloud Dedicated project.
 
 
 

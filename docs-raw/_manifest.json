@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39344,
+    "size": 39335,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-06-29"
   },
@@ -1556,7 +1556,7 @@
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 23608,
+    "size": 23605,
     "url": "https://berlin.devsitetest.how/pubsub/docs/create-topic",
     "last_updated": "2026-06-29"
   },
@@ -1696,9 +1696,9 @@
   "/service-usage/docs": {
     "title": "Service Usage documentation",
     "filename": "service-usage.md",
-    "size": 2213,
+    "size": 2353,
     "url": "https://berlin.devsitetest.how/service-usage/docs",
-    "last_updated": "2026-06-29"
+    "last_updated": "2026-07-01"
   },
   "/service-usage/docs/enable-disable": {
     "title": "Enable and disable services",
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-03"
+    "last_updated": "2026-07-04"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1829,7 +1829,7 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41716,
+    "size": 41719,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
     "last_updated": "2026-06-29"
   },

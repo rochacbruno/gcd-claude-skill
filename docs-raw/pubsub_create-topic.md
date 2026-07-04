@@ -1073,7 +1073,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # topic_id = "your-topic-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 topic_admin = pubsub . [ topic_admin ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html)
 
 topic = topic_admin . create_topic name : pubsub . topic_path ( topic_id ) 
