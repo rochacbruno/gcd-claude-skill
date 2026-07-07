@@ -1,7 +1,7 @@
 # Logging release notes
 
 Source: https://berlin.devsitetest.how/logging/docs/release-notes
-Last updated: 2026-06-29
+Last updated: 2026-07-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 

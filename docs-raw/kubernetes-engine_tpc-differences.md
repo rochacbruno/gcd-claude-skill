@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-07-01
+Last updated: 2026-07-06
 
 - 
 
@@ -599,10 +599,6 @@ Cluster notifications are unavailable. |
 The Ray Operator for GKE is unavailable. | 
 |
 
-| 
-**Parallelstore** | 
-Parallelstore for GKE is unavailable. | 
-|
 
 
 ### Resource management
