@@ -1,7 +1,7 @@
 # About Google Cloud Dedicated in Germany documentation
 
 Source: https://berlin.devsitetest.how/docs/overview/gcd-documentation
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 - 
 

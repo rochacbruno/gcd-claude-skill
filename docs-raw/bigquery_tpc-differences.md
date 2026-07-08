@@ -1,7 +1,7 @@
 # BigQuery in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/bigquery/docs/tpc-differences
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 - 
 

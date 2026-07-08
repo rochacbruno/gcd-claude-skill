@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://berlin.devsitetest.how/bigquery/docs/controlling-costs
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1066,7 +1066,7 @@ see the following sections:
 
 - [Clustered tables](/bigquery/docs/clustered-tables#block-pruning)
 
-### Avoid running queries to explore table data
+### Avoid running queries to explore table data 
 
 **Best practice:** Don't run queries to explore or preview table data.
 

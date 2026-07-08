@@ -1,7 +1,7 @@
 # Resource Manager in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/tpc-differences
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 - 
 

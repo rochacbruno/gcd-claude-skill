@@ -1,7 +1,7 @@
 # Quickstart: Store Docker container images in Artifact Registry
 
 Source: https://berlin.devsitetest.how/artifact-registry/docs/quickstarts
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -128,6 +128,7 @@ Guides
 
 - On this page ** 
 - [ Before you begin ](#before-you-begin)
+- [ Required roles ](#required-roles)
 
 - [ Setting up a local shell ](#local-shell)
 
@@ -419,6 +420,75 @@ Click **Save**.
 
 
 
+
+
+
+
+
+
+
+
+
+## Required roles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To get the permissions that
+you need to create and manage Artifact Registry Docker repositories,
+
+ask your administrator to grant you the
+[Artifact Registry Administrator ](/iam/docs/roles-permissions/artifactregistry#artifactregistry.admin) (`roles/artifactregistry.admin`) IAM role on your project.
+
+
+
+
+
+
+For more information about granting roles, see [Manage access to projects, folders, and organizations](/iam/docs/granting-changing-revoking-access).
+
+
+
+
+
+
+
+
+
+You might also be able to get
+the required permissions through [custom
+roles](/iam/docs/creating-custom-roles) or other [predefined
+roles](/iam/docs/roles-overview#predefined).
 
 
 

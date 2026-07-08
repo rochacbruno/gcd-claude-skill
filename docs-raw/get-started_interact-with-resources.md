@@ -1,7 +1,7 @@
 # Ways to interact with Google Cloud Dedicated in Germany
 
 Source: https://berlin.devsitetest.how/docs/get-started/interact-with-resources
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -89,10 +89,29 @@ Get started
 
 
 - On this page 
-- [ Use the browser-based Google Cloud Dedicated console ](#console)
-- [ Write commands and create scripts ](#commands-and-scripts)
-- [ Develop your own application using Cloud Client Libraries ](#libraries)
-- [ Scale resource provisioning and management with Infrastructure as Code (IaC) ](#infrastructure-as-code)
+- [ Graphical interfaces ](#graphical-interfaces)
+
+- [ Google Cloud Dedicated console ](#console)
+- [ Google Cloud Dedicated mobile app ](#mobile-app)
+
+- [ Development environments ](#development-environments)
+
+- [ Cloud Shell (and Cloud Shell Editor) ](#cloud-shell)
+- [ Antigravity 2.0 ](#antigravity)
+- [ Cloud Workstations ](#cloud-workstations)
+- [ Cloud Code ](#cloud-code)
+
+- [ Developer tools ](#developer-tools)
+
+- [ Google Cloud SDK ](#cloud-sdk)
+- [ AI-powered command-line tools ](#cli-tools)
+- [ MCP servers and Agent Skills ](#mcp-servers)
+- [ Infrastructure as code (IaC) tools ](#iac-tools)
+
+- [ Integrated AI assistance ](#integrated-ai-assistance)
+
+- [ Gemini for Google Cloud Dedicated (web and mobile) ](#gemini)
+
 - 
 
 
@@ -104,128 +123,202 @@ Get started
 
 
 
-You can use several methods to interact with Google Cloud Dedicated and your
-resources. The methods you choose can depend on your preferences, your company
-workflows, and your goals.
+Google Cloud Dedicated in Germany provides a wide range of interfaces and tools to help you be more
+productive. Whether you prefer a point-and-click graphical interface, a
+cloud-hosted development environment, or an AI-assisted command-line,
+you can choose the path that best aligns with your workflow. Mix and match
+these interfaces and tools to create pipelines for development, deployment,
+and monitoring.
 
-The following are example interaction methods:
+## Graphical interfaces 
 
-- [Google Cloud Dedicated console](#console): Use a web-based graphical user interface.
+Use graphical interfaces for visual resource management, administrative tasks,
+and high-level overviews of your cloud footprint.
 
-- [Google Cloud CLI](#commands-and-scripts): Write commands and scripts.
+### Google Cloud Dedicated console 
 
-- [Cloud Client Libraries](#libraries): Create your own application.
+If you prefer to manage your Google Cloud Dedicated projects and resources through
+a graphical user interface, use the web-based
+[Google Cloud Dedicated console](https://console.cloud.berlin-build0.goog/). It serves as your primary
+hub for:
 
-- [Infrastructure as Code (IaC)](#infrastructure-as-code): Standardize resource
-deployment.
+- **Resource creation and orchestration**: Deploy, scale, and monitor cloud
+infrastructure.
 
-## Use the browser-based Google Cloud Dedicated console 
+- **Administration and governance**: Manage Identity and Access Management (IAM) (IAM)
+policies, configure billing accounts, and audit system activity.
 
-If you prefer to manage your Google Cloud Dedicated projects and resources through a
-graphical user interface, use the browser-based Google Cloud Dedicated console.
+- **Data management and visualization**: Store, query, and process data across
+databases and analytics services.
 
-Use the Google Cloud Dedicated console to perform a variety of management and
-administrative tasks, including the following:
+- **Integrated assistance**: Use AI-assisted features to ask questions about
+your architecture or troubleshoot errors as they appear.
 
-- Manage resources.
-
-- Store, query, and process data.
-
-- Connect to virtual machines (VMs).
-
-- Analyze activity.
-
-- Diagnose production issues.
-
-- Deploy easy-to-launch solutions.
-
-To ensure proper console functionality, see also
+To ensure proper console functionality, see
 [Allow access to Google Cloud Dedicated console domains](/docs/get-started/required-domains).
 
-## Write commands and create scripts
+### Google Cloud Dedicated mobile app
 
-If you prefer to manage development and workflows on the command line or through
-automated scripts, use [the Google Cloud CLI](/sdk/gcloud). Use the
-Google Cloud CLI to perform tasks efficiently and at scale. For example, you
-might do the following:
+The [Google Cloud Dedicated mobile app](https://berlin.devsitetest.how/app), available on
+[iOS](https://itunes.apple.com/us/app/google-cloud-console/id1005120814) and
+[Android](https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole),
+is a mobile companion to the web-based Google Cloud Dedicated console. Use it to monitor
+services, respond to incidents, and perform basic resource management directly
+from a mobile device.
 
-- Create a script to push a file to all VMs.
+## Development environments
 
-- Simulate backend data with a data emulator to help you efficiently write
-client-side code.
+Development environments offer pre-configured, contextual, and often
+cloud-hosted spaces to build and manage your applications.
 
-- Deploy serverless code.
+### Cloud Shell (and Cloud Shell Editor)
 
-Run `gcloud` commands using the following methods:
+[Cloud Shell](/shell/docs) provides a web-based command-line environment
+that includes the Google Cloud CLI and other command-line tools. Use
+Cloud Shell as an interactive, web-based terminal to interact with
+Google Cloud Dedicated without installing anything locally.
 
-- 
+Cloud Shell also comes with [Cloud Shell Editor](/shell/docs/editor-overview),
+a built-in code editor that lets you browse file directories, view and edit
+files, and maintain continued access to Cloud Shell. Cloud Shell Editor is
+available by default with every Cloud Shell instance and is based on
+[Code OSS](https://github.com/microsoft/vscode).
 
-Install the [Google Cloud CLI](/sdk/docs), which lets you run commands in
-a terminal window on your local computer.
+### Antigravity 2.0
 
-- 
+For agent orchestration, [Antigravity 2.0](https://antigravity.google/docs/get-started)
+provides a GUI environment to manage parallel autonomous subagents, run
+scheduled tasks, and orchestrate workflows across editor, terminal, and browser.
 
-Use the browser-based [Cloud Shell](/shell/docs/features), which doesn't
-require local installation. Open Cloud Shell from the
-[Google Cloud Dedicated console](https://console.cloud.berlin-build0.goog/?cloudshell=true) to use the following
-features:
+### Cloud Workstations
 
-- A temporary Compute Engine VM instance.
+[Cloud Workstations](/workstations/docs/overview) provides managed,
+customizable development environments on Google Cloud Dedicated. Platform teams can
+use Cloud Workstations to provide developers with standardized, containerized
+IDEs (such as IntelliJ IDEA or VS Code). This approach helps to ensure
+consistent security across the organization by keeping development environments
+within your Virtual Private Cloud (VPC) network.
 
-- A [built-in code editor](/shell/docs/editor-overview).
+### Cloud Code
 
-- Persistent disk storage.
+[Cloud Code](/code/docs) extends supported integrated development
+environments (IDEs)—including VS Code, IntelliJ IDEA, and Cloud Shell
+Editor—to help you build and deploy applications on Google Cloud Dedicated. Use
+Cloud Code for cluster management for Google Kubernetes Engine, direct deployment to
+Cloud Run, and Gemini-powered code assistance within your IDE.
 
-- Pre-installed gcloud CLI, Terraform, and other tools.
+## Developer tools
 
-- Language support for Java, Go, Python, Node.js, PHP, Ruby and .NET.
+Developer tools include command-line interfaces (CLIs), programmatic client
+libraries, and utilities that enable modern software engineering practices.
 
-- Web preview.
+### Google Cloud SDK
 
-- Built-in authorization for access to Google Cloud Dedicated console projects and
+The [Google Cloud SDK](/sdk/docs/overview) provides programmatic access to
+Google Cloud Dedicated through command-line tools and client libraries:
+
+- **Cloud Client Libraries**: Use language-idiomatic libraries (such as Python, Go,
+and Java) to call Google Cloud Dedicated APIs directly within your application
+code. For centralized client library installation and setup instructions, see
+[Cloud Client Libraries](/apis/docs/cloud-client-libraries).
+
+- **Google Cloud CLI**: Use the primary command-line tool to manage and
+configure Google Cloud Dedicated resources, create scripts, and automate CI/CD
+pipelines. For centralized installation and setup instructions, see
+[Install the Google Cloud CLI](/sdk/docs/install-sdk).
+
+### AI-powered command-line tools
+
+AI-powered command-line interfaces let you manage Google Cloud Dedicated resources
+and develop applications using natural language. For example, the
+[Antigravity CLI](https://antigravity.google/docs/cli) is an agentic
+command-line tool that supports coding, code generation, research, task
+management, and cloud orchestration.
+
+### MCP servers and Agent Skills
+
+The [Model Context Protocol (MCP)](/discover/what-is-model-context-protocol) is
+an open standard that acts as a bridge between AI models and your data
+sources or tools. Connect your AI applications (such as Antigravity
+IDE, VS Code, or Cursor) to remote MCP servers to gather more context, ground
+responses in product data, or perform specific tasks:
+
+- **Developer Knowledge MCP**: Provide your AI tools with direct access to the
+latest Google Cloud Dedicated documentation and best practices. For more
+information, see [Developer Knowledge MCP](https://developers.google.com/knowledge/mcp).
+
+- **Google Cloud Dedicated remote MCP servers**: Enable large language models (LLMs)
+to use Google and Google Cloud Dedicated services in your AI applications through
+remote MCP servers and product-specific tools. For an overview of MCP
+architecture and capabilities, see [Google Cloud Dedicated MCP servers](/mcp/overview).
+
+- **Agent Skills and Agent Registry**: Use
+[Agent Registry](/agent-registry/overview) to discover, reuse, and
+govern autonomous AI agents and MCP tools across your organization. Agent
+Skills represent high-level capabilities possessed by autonomous agents (such
+as Agent2Agent capabilities) that your AI orchestrators can discover and
+consume, removing the need to build custom integrations for each new workflow.
+
+#### Discover remote MCP servers and Agent Skills
+
+Google Cloud Dedicated offers remote MCP servers for a growing subset of products.
+These remote servers run on Google infrastructure and provide HTTP endpoints for
+your AI applications. To discover whether remote MCP servers and agent skills
+exist for a given product, use the following methods:
+
+- **Review supported products**: To check if a Google Cloud Dedicated product offers
+a remote MCP server, toolsets, or reference documentation, see the centralized
+[Supported products](/mcp/supported-products) table. This page provides the
+direct MCP server endpoints, MCP reference documentation, and user guides for
+each supported service.
+
+- **Discover capabilities programmatically**: Once a remote MCP server is
+configured for your project or registered in
+[Agent Registry](/agent-registry/overview), AI applications can
+programmatically discover the server's capabilities—such as available tools,
+prompts, and data resources—using standard MCP discovery methods (for example,
+`tools/list`, `prompts/list`, and `resources/list`) or by querying the
+Agent Registry API.
+
+### Infrastructure as code (IaC) tools
+
+For teams practicing DevOps, Google Cloud Dedicated supports industry-standard
+[infrastructure as code](/docs/iac) (IaC) tools—such as Terraform, Pulumi, and
+Config Connector—to manage infrastructure through declarative configuration
+files.
+
+Using IaC lets you store your infrastructure definitions in source control,
+enabling repeatable deployments, automated testing, and audit logging as part of
+your change management process.
+
+## Integrated AI assistance
+
+Google Cloud Dedicated also includes direct AI integration into developer workflows
+for contextual knowledge and assistance.
+
+### Gemini for Google Cloud Dedicated (web and mobile)
+
+Gemini for Google Cloud Dedicated offers generative AI-powered assistance
+to Google Cloud Dedicated users, including developers and data
+scientists. Gemini for Google Cloud Dedicated is embedded in many
+Google Cloud Dedicated products and provides an integrated assistance experience
+using the context of your specific project:
+
+- **In the Google Cloud Dedicated console**: Use the integrated Gemini Cloud Assist
+sidebar to ask natural language questions about your environment (for example,
+"Why is my GKE cluster showing a high error rate?") or to
+generate complex BigQuery SQL from a prompt.
+
+- **In the Google Cloud Dedicated mobile app**: Use voice and chat interfaces to
+monitor incidents and get AI-driven troubleshooting summaries while away from
+your desk.
+
+- **In development environments**: Use **Gemini Code Assist** in your
+IDE to write, refactor, and document application code.
+
+- **For infrastructure lifecycle management**: Use
+**Gemini Cloud Assist** to design, deploy, and optimize your cloud
 resources.
 
-For more information about Cloud Shell, see
-[How Cloud Shell works](/shell/docs/how-cloud-shell-works).
-
-For a list of `gcloud` commands, as well as flags and examples, see the
-[`gcloud` reference](/sdk/gcloud/reference).
-
-## Develop your own application using Cloud Client Libraries
-
-If you want to create your own applications to manage resources, use
-[Cloud Client Libraries](/sdk/cloud-client-libraries) to access Google Cloud Dedicated in Germany APIs.
-
-Cloud Client Libraries provide the following benefits to help you build your
-application:
-
-- Use conventions that are specific to your preferred language.
-
-- Use a consistent style across services.
-
-- Handle authentication.
-
-For an overview, see [Cloud Client Libraries explained](/apis/docs/client-libraries-explained).
-
-## Scale resource provisioning and management with Infrastructure as Code (IaC)
-
-Infrastructure as Code (IaC) is the process of provisioning and managing
-infrastructure using *code* instead of graphical user interfaces or command-line
-scripts.
-
-Your company's administrators and architects might use IaC to obtain the
-following benefits:
-
-- Incorporate your change management process.
-
-- Test and audit as you make changes.
-
-- Store configurations in source control.
-
-- Standardize your infrastructure.
-
-Google Cloud Dedicated in Germany is integrated with several IaC tools. For example, you might use [Terraform](/docs/terraform/terraform-overview) to provision and manage your infrastructure
-through human-readable configuration files that you can version, reuse, and
-share.
-
-For an overview of IaC and a list of tools you can use with Google Cloud Dedicated in Germany, see [Infrastructure as Code on Google Cloud Dedicated](/docs/terraform/iac-overview).
+To explore more of what Gemini for Google Cloud Dedicated offers, see
+[Gemini for Google Cloud Dedicated overview](/gemini/docs/overview).

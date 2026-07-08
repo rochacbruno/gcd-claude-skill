@@ -1,7 +1,7 @@
 # Install Terraform
 
 Source: https://berlin.devsitetest.how/docs/terraform/install-configure-terraform
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 
@@ -279,7 +279,7 @@ Terraform.
 
 
 
-## What's next
+## What's next 
 
 - Work through the
 [Terraform for Google Cloud Dedicated quickstart](/docs/terraform/create-vm-instance)

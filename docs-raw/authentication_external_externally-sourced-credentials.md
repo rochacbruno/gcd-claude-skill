@@ -1,7 +1,7 @@
 # Authenticate with client libraries
 
 Source: https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials
-Last updated: 2026-06-29
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -575,7 +575,7 @@ require "google/cloud/storage"
 # *NOTE*: Replace the client created below with the client required for your application. 
 # Note that the credentials are not specified when constructing the client. 
 # Hence, the client library will look for credentials using ADC. 
-storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) project_id : project_id 
+storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) project_id : project_id 
 buckets = storage . buckets 
 puts "Buckets: " 
 buckets . [ each ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Policy-Bindings.html) do | bucket | 

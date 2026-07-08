@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-07-01
+Last updated: 2026-07-07
 
 - 
 

@@ -1,7 +1,7 @@
 # Install kubectl and configure cluster access
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/cluster-access-for-kubectl
-Last updated: 2026-07-06
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -224,6 +224,7 @@ Enable
 
 
 
+
 the Google Kubernetes Engine API.
 
 [
@@ -232,7 +233,7 @@ Enable Google Kubernetes Engine API
 
 ](https://console.cloud.berlin-build0.goog/apis/enableflow?apiid=container.googleapis.com)
 
-- If you want to use the Google Cloud CLI for this task,
+- To use the Google Cloud CLI for this task,
 [install](/sdk/docs/install) and then
 [initialize](/sdk/docs/initialize) the
 gcloud CLI. If you previously installed the gcloud CLI, get the latest

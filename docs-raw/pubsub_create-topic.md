@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://berlin.devsitetest.how/pubsub/docs/create-topic
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -1073,7 +1073,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # topic_id = "your-topic-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 topic_admin = pubsub . [ topic_admin ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html)
 
 topic = topic_admin . create_topic name : pubsub . topic_path ( topic_id ) 

@@ -1,7 +1,7 @@
 # Set up ADC for a resource with an attached service account
 
 Source: https://berlin.devsitetest.how/docs/authentication/set-up-adc-attached-service-account
-Last updated: 2026-06-29
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 

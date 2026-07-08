@@ -1,7 +1,7 @@
 # Creating a basic access level
 
 Source: https://berlin.devsitetest.how/access-context-manager/docs/create-access-level
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/access-context-manager/docs/tpc-differences) for more details.
 

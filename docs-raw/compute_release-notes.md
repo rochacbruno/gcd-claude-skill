@@ -1,7 +1,7 @@
 # Compute Engine release notes
 
 Source: https://berlin.devsitetest.how/compute/docs/release-notes
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -131,27 +131,21 @@ Resources
 - On this page 
 - [ June 26, 2026 ](#June_26_2026)
 - [ June 22, 2026 ](#June_22_2026)
-- [ June 03, 2026 ](#June_03_2026)
 - [ May 01, 2026 ](#May_01_2026)
-- [ April 17, 2026 ](#April_17_2026)
 - [ April 16, 2026 ](#April_16_2026)
 - [ April 15, 2026 ](#April_15_2026)
 - [ April 02, 2026 ](#April_02_2026)
-- [ March 24, 2026 ](#March_24_2026)
 - [ March 23, 2026 ](#March_23_2026)
 - [ March 19, 2026 ](#March_19_2026)
 - [ March 11, 2026 ](#March_11_2026)
 - [ March 04, 2026 ](#March_04_2026)
-- [ March 02, 2026 ](#March_02_2026)
 - [ February 12, 2026 ](#February_12_2026)
 - [ February 09, 2026 ](#February_09_2026)
 - [ December 22, 2025 ](#December_22_2025)
 - [ December 14, 2025 ](#December_14_2025)
 - [ December 10, 2025 ](#December_10_2025)
-- [ November 26, 2025 ](#November_26_2025)
 - [ November 24, 2025 ](#November_24_2025)
 - [ November 18, 2025 ](#November_18_2025)
-- [ November 13, 2025 ](#November_13_2025)
 - [ November 10, 2025 ](#November_10_2025)
 - [ November 04, 2025 ](#November_04_2025)
 - [ November 02, 2025 ](#November_02_2025)
@@ -162,36 +156,22 @@ Resources
 - [ October 17, 2025 ](#October_17_2025)
 - [ October 16, 2025 ](#October_16_2025)
 - [ October 06, 2025 ](#October_06_2025)
-- [ September 22, 2025 ](#September_22_2025)
-- [ September 17, 2025 ](#September_17_2025)
 - [ June 30, 2025 ](#June_30_2025)
 - [ June 27, 2025 ](#June_27_2025)
-- [ May 20, 2025 ](#May_20_2025)
 - [ March 26, 2025 ](#March_26_2025)
 - [ March 10, 2025 ](#March_10_2025)
 - [ March 04, 2025 ](#March_04_2025)
 - [ January 29, 2025 ](#January_29_2025)
 - [ January 20, 2025 ](#January_20_2025)
 - [ January 17, 2025 ](#January_17_2025)
-- [ December 16, 2024 ](#December_16_2024)
 - [ December 10, 2024 ](#December_10_2024)
 - [ November 26, 2024 ](#November_26_2024)
-- [ November 18, 2024 ](#November_18_2024)
 - [ November 05, 2024 ](#November_05_2024)
-- [ November 04, 2024 ](#November_04_2024)
 - [ October 30, 2024 ](#October_30_2024)
 - [ October 16, 2024 ](#October_16_2024)
 - [ October 15, 2024 ](#October_15_2024)
 - [ October 09, 2024 ](#October_09_2024)
-- [ September 30, 2024 ](#September_30_2024)
 - [ September 26, 2024 ](#September_26_2024)
-- [ September 05, 2024 ](#September_05_2024)
-- [ August 19, 2024 ](#August_19_2024)
-- [ July 16, 2024 ](#July_16_2024)
-- [ July 15, 2024 ](#July_15_2024)
-- [ July 11, 2024 ](#July_11_2024)
-- [ July 09, 2024 ](#July_09_2024)
-- [ July 01, 2024 ](#July_01_2024)
 - [ June 18, 2024 ](#June_18_2024)
 - [ June 17, 2024 ](#June_17_2024)
 - [ June 14, 2024 ](#June_14_2024)
@@ -295,25 +275,6 @@ managed instance group (MIG) by using resize requests. For more information, see
 
 
 
-## June 03, 2026
-
-
-Feature 
-
-
-**Generally available**: You can gradually create Flex-start VMs in a
-managed instance group (MIG) as capacity becomes available. Unlike resize
-requests for MIGs that wait for full capacity before creating VMs, this method
-might create only a portion of your requested Flex-start VMs if
-capacity is unavailable. The MIG creates the remaining VMs later as capacity
-permits. Flex-start VMs run for up to seven days and help you
-obtain high-demand resources, such as GPUs, at a discounted price.
-
-For more information, see
-[Create a MIG that uses Flex-start VMs](/compute/docs/instance-groups/create-mig-with-flex-start-vms).
-
-
-
 ## May 01, 2026
 
 
@@ -331,22 +292,6 @@ For the latest pricing information, see the
 For information about how Spot VMs work, see
 [Spot VMs](/compute/docs/instances/spot) and
 [Create and use Spot VMs](/compute/docs/instances/create-use-spot).
-
-
-
-## April 17, 2026
-
-
-Feature 
-
-
-**Generally available**: You can create a Hyperdisk Balanced High Availability disk
-by cloning a zonal Hyperdisk Balanced or Hyperdisk Extreme disk. This lets you
-make your zonal workloads highly available by adding a replica of the data in
-another zone within the same region.
-
-For more information, see
-[Create a regional disk clone from a zonal disk](/compute/docs/disks/clone-duplicate-disks#create-regional-clone).
 
 
 
@@ -414,22 +359,6 @@ projects that use the deprecated metadata, without blocking resource creation.
 For more information, see [Prevent the creation of VMs that use the container
 metadata](/compute/docs/containers/prevent-konlet-vms) and [Migrate containers
 deployed on VMs during VM creation](/compute/docs/containers/migrate-containers).
-
-
-
-## March 24, 2026
-
-
-Feature 
-
-
-**Generally available**: The maximum throughput for a Hyperdisk Balanced High
-Availability disk is increased to 2,400 MiB/s from 1,200 MiB/s.
-Hyperdisk Balanced High Availability provides high availability block storage for
-mission-critical workloads by synchronously replicating data between two zones
-within a region.
-
-For more information, see [Hyperdisk Balanced High Availability overview](/compute/docs/disks/hd-types/hyperdisk-balanced-ha).
 
 
 
@@ -527,23 +456,6 @@ and
 
 
 
-## March 02, 2026
-
-
-Feature 
-
-
-**Generally available**: You can apply compact placement policies to standalone
-Flex-start VMs. These policies let you colocate your standalone
-Flex-start VMs as close to each other as possible. Applying a
-compact placement policy minimizes network hops and improves the performance of
-latency-sensitive workloads. For more information, see
-[About compact placement policies](/compute/docs/instances/placement-policies-overview#about-compact-policies)
-and
-[About Flex-start VMs](/compute/docs/instances/about-flex-start-vms).
-
-
-
 ## February 12, 2026
 
 
@@ -618,19 +530,6 @@ For more information, see [Create a clone of an encrypted source disk](/compute/
 
 
 
-## November 26, 2025
-
-
-Issue 
-
-
-C4 machine type virtual machine (VM) instances running on sole tenant nodes
-might encounter unexpected VM terminations due to host errors or VM
-creation failures. For more information, see
-[known issues](/compute/docs/troubleshooting/known-issues#c4-oom-errors).
-
-
-
 ## November 24, 2025
 
 
@@ -654,21 +553,6 @@ You can autoscale a regional managed instance group
 These shapes are particularly beneficial for batch workloads.
 For more information about target distribution shapes, see
 [Regional MIG target distribution shape](/compute/docs/instance-groups/regional-mig-distribution-shape).
-
-
-
-## November 13, 2025
-
-
-Feature 
-
-
-**Preview**: Future reservation requests in calendar mode support reserving
-capacity for `a3-megagpu-8g` and `a3-highgpu-8g` machine types. Use future
-reservation requests in calendar mode to obtain resources for running model
-pre-training, model fine-tuning, simulation, and inference workloads. For more
-information, see
-[About future reservation requests in calendar mode](/compute/docs/instances/future-reservations-calendar-mode-overview).
 
 
 
@@ -855,38 +739,6 @@ the operating system details page.
 
 
 
-## September 22, 2025
-
-
-Feature 
-
-
-**Generally available**: You can create and use Flex-start VMs. Flex-start VMs are virtual machine (VM) instances that can run for up to seven days, and that use the flex-start provisioning model. This model provisions resources from a secure pool of capacity, increasing your chances of obtaining high-demand resources like GPUs. These features make Flex-start VMs suitable for short-duration workloads that can start at any time, such as the following:
-
-- Small model pre-training
-
-- Model fine-tuning
-
-- High performance computing (HPC) simulation
-
-- Batch inference
-
-You can create standalone Flex-start VMs, or add Flex-start VMs all at once to a managed instance group (MIG) by using resize requests. Based on the machine type that your Flex-start VMs use, you get discounts for vCPUs, memory, and any attached GPUs.
-
-For more information, see [About Flex-start VMs](/compute/docs/instances/about-flex-start-vms).
-
-
-
-## September 17, 2025
-
-
-Change 
-
-
-Compute Engine enforces limits to the total baseline performance that a project's Hyperdisk Balanced and Hyperdisk Balanced High Availability disks that are in the same zone can consume at the same time. The aggregate baseline performance limit is 50 GiB/s of throughput and 500,000 IOPS, and it only applies to baseline performance. For a detailed explanation, see [Concurrent consumption limits for baseline performance](/compute/docs/disks/hyperdisk-performance#baseline_consumption_limits).
-
-
-
 ## June 30, 2025
 
 
@@ -916,27 +768,6 @@ Feature
 
 
 **Generally available**: You can specify a custom ephemeral external IPv6 address when creating an instance. For more information, see [Create instances that use IPv6 addresses](/compute/docs/instances/create-ipv6-instance).
-
-
-
-## May 20, 2025
-
-
-Feature 
-
-
-**Preview**: You can use future reservation requests in calendar mode to reserve capacity for creating VMs with TPUs attached. This feature helps you obtain and reserve high-demand resources to run generative artificial intelligence (AI), machine learning (ML), or high performance computing (HPC) workloads. 
-
-For more information, see the following pages: 
-
-- 
-
-[About future reservation requests in calendar mode](/compute/docs/instances/future-reservations-calendar-mode-overview)
-
-- 
-
-[Create a future reservation request in calendar mode](/compute/docs/instances/create-future-reservations-calendar-mode)
-
 
 
 
@@ -1010,16 +841,6 @@ about Cloud KMS Autokey, see
 
 
 
-## December 16, 2024
-
-
-Deprecated 
-
-
-The [A3 Edge accelerator-optimized machine type](/compute/docs/accelerator-optimized-machines#a3-edge-vms) is no longer available in Turin, Italy: `europe-west12-b`. For a list of available regions and zones, see [GPU regions and zones](/compute/docs/gpus/gpu-regions-zones#view-using-table).
-
-
-
 ## December 10, 2024
 
 
@@ -1042,16 +863,6 @@ To learn more, see [Monitor disk health](/compute/docs/disks/disk-health).
 
 
 
-## November 18, 2024
-
-
-Feature 
-
-
-**Generally available**: Queretaro, Mexico, North America (`northamerica-south1-a,b,c`) has launched with [E2, N4, C4, and C3D](/compute/docs/general-purpose-machines) VMs available in all three zones. For more information, see [Global Locations](https://berlin.devsitetest.how/about/locations) and [VM instance pricing](https://berlin.devsitetest.how/compute/vm-instance-pricing).
-
-
-
 ## November 05, 2024
 
 
@@ -1059,16 +870,6 @@ Feature
 
 
 **Generally available**: An updated version of the gVNIC driver for Windows offers improved network performance and support for Jumbo frames. For more information, see [Update to the latest gVNIC driver for Windows](/compute/docs/networking/using-gvnic#windows-os-upgrade).
-
-
-
-## November 04, 2024
-
-
-Feature 
-
-
-**Preview**: You can create GPU VMs all at once in a regional managed instance group (MIG) by using resize requests. This feature was previously available only for zonal MIGs. For more information, see [About resize requests in a MIG](/compute/docs/instance-groups/about-resize-requests-mig).
 
 
 
@@ -1115,13 +916,6 @@ Feature
 
 
 
-## September 30, 2024
-
-
-Feature 
-
-
-
 ## September 26, 2024
 
 
@@ -1129,113 +923,6 @@ Deprecated
 
 
 OS Login POSIX groups support is deprecated. For more information, see [OS Login POSIX groups support deprecation](/compute/docs/deprecations/oslogin-groups).
-
-
-
-## September 05, 2024
-
-
-Feature 
-
-
-**Generally available:** Multi-writer support for Hyperdisk Balanced disks. Up to 8 VMs can simultaneously read from and write to the same disk. For more information, see [Share disks between VMs](/compute/docs/disks/sharing-disks-between-vms).
-
-
-
-## August 19, 2024
-
-
-Feature 
-
-
-**Generally available**: [General purpose C4 VMs](/compute/docs/general-purpose-machines#c4_series) on the Intel Emerald Rapids CPU. The C4 machine series offers consistently high performance with up to 192 vCPUs and 1.5 TB of DDR5 memory, and support for [Hyperdisk storage](/compute/docs/disks/hyperdisks).
-
-C4 VMs are available in the following [regions and zones](/compute/docs/regions-zones#available):
-
-- Singapore - `asia-southeast1-a,b`
-
-- Belgium - `europe-west1-b,c`
-
-- Netherlands - `europe-west4-a,b,c`
-
-- Iowa - `us-central1-a,b,c`
-
-- South Carolina - `us-east1-b,c,d`
-
-- Virginia - `us-east4-a,b,c`
-
-
-
-
-## July 16, 2024
-
-
-Feature 
-
-
-**Generally available**: C3 bare metal machine types are available in the C3 machine series. Bare metal instances let you create an instance with direct access to the machine's CPU and memory, without a virtualization layer in the middle. With bare metal instances, you can access all the raw compute resources of the server. For more information, see the [C3 machine series](/compute/docs/general-purpose-machines#c3_series).
-
-
-
-## July 15, 2024
-
-
-Change 
-
-
-**Compute flexible committed use discounts (CUDs)**—previously known as Compute Engine flexible CUDs—have been expanded to also cover your Cloud Billing account's spend across Google Kubernetes Engine (GKE) and Cloud Run. A single flexible commitment covers your eligible spend across all three services. For more information, see [Compute flexible CUDs](/compute/docs/instances/committed-use-discounts-overview#spend_based).
-
-To learn about how flexible CUDs apply to the other services, see the following:
-
-- [CUDs documentation for GKE](/kubernetes-engine/cud)
-
-- [CUDs documentation for Cloud Run](/run/cud)
-
-
-
-
-## July 11, 2024
-
-
-Change 
-
-
-You can only create on-demand reservations of A3 VMs if you create specifically targeted reservations. This restriction doesn't affect reservations that were created before July 11, 2024, which you can continue to consume based on their consumption type.
-
-For more information, see the following pages:
-
-- 
-
-[Reservations of Compute Engine zonal resources](/compute/docs/instances/reservations-overview#restrictions)
-
-- 
-
-[Create a reservation for a single project](/compute/docs/instances/reservations-single-project)
-
-- 
-
-[Create a shared reservation](/compute/docs/instances/reservations-shared)
-
-
-
-
-## July 09, 2024
-
-
-Feature 
-
-
-**Generally available**: Hyperdisk ML, block storage designed specifically for high-performance AI workloads. Each Hyperdisk ML volume can achieve up to 1,200,000 MBps of throughput. For large-scale training and inference workloads, you can attach a single Hyperdisk ML volume to up to 2,500 VM instances. For more information, see [About Hyperdisk](/compute/docs/disks/hyperdisks).
-
-
-
-## July 01, 2024
-
-
-Fixed 
-
-
-The issue related to creating larger (>90 vCPUs) C3D `standard-lssd` or `highmem-lssd` VM instances.
 
 
 

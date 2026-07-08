@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 

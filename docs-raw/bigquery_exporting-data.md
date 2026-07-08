@@ -1,7 +1,7 @@
 # Export table data to Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/exporting-data
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1032,7 +1032,7 @@ import com.google.cloud.[RetryOption](https://berlin.devsitetest.how/java/docs/r
 import com.google.cloud.bigquery.[BigQuery](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) ; 
 import com.google.cloud.bigquery.[BigQueryException](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) ; 
 import com.google.cloud.bigquery.[BigQueryOptions](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) ; 
-import com.google.cloud.bigquery.[Job](https://berlin.devsitetest.how/java/docs/reference/google-cloud-batch/latest/com.google.cloud.batch.v1.Job.html) ; 
+import com.google.cloud.bigquery.[Job](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) ; 
 import com.google.cloud.bigquery.[Table](https://berlin.devsitetest.how/java/docs/reference/google-cloud-biglake/latest/com.google.cloud.bigquery.biglake.v1.Table.html) ; 
 import com.google.cloud.bigquery.[TableId](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) ; 
 import org.threeten.bp.[Duration](https://berlin.devsitetest.how/java/docs/reference/google-cloud-compute/latest/com.google.cloud.compute.v1.Duration.html) ; 
@@ -1070,10 +1070,10 @@ try {
 [ TableId ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) tableId = [ TableId ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) . of ( projectId , datasetName , tableName ); 
 [ Table ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-biglake/latest/com.google.cloud.bigquery.biglake.v1.Table.html) table = bigquery . [ getTable ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html#com_google_cloud_bigquery_BigQuery_getTable_com_google_cloud_bigquery_TableId_com_google_cloud_bigquery_BigQuery_TableOption____) ( tableId ); 
 
-[ Job ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-batch/latest/com.google.cloud.batch.v1.Job.html) job = table . [ extract ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Table.html#com_google_cloud_bigquery_Table_extract_java_lang_String_java_lang_String_com_google_cloud_bigquery_BigQuery_JobOption____) ( dataFormat , destinationUri ); 
+[ Job ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) job = table . [ extract ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Table.html#com_google_cloud_bigquery_Table_extract_java_lang_String_java_lang_String_com_google_cloud_bigquery_BigQuery_JobOption____) ( dataFormat , destinationUri ); 
 
 // Blocks until this job completes its execution, either failing or succeeding. 
-[ Job ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-batch/latest/com.google.cloud.batch.v1.Job.html) completedJob = 
+[ Job ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) completedJob = 
 job . [ waitFor ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html#com_google_cloud_bigquery_Job_waitFor_com_google_cloud_bigquery_BigQueryRetryConfig_com_google_cloud_RetryOption____) ( 
 RetryOption . initialRetryDelay ( Duration . ofSeconds ( 1 )), 
 RetryOption . totalTimeout ( Duration . ofMinutes ( 3 ))); 
@@ -1605,7 +1605,7 @@ require "google/cloud/bigquery"
 def extract_table bucket_name = "my-bucket" , 
 dataset_id = "my_dataset_id" , 
 table_id = "my_table_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_exchange/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-reservation-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 table = dataset . table table_id 
 

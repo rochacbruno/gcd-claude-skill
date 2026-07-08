@@ -1,7 +1,7 @@
 # Configure message storage policies
 
 Source: https://berlin.devsitetest.how/pubsub/docs/resource-location-restriction
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Manage API keys
 
 Source: https://berlin.devsitetest.how/docs/authentication/api-keys
-Last updated: 2026-06-29
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -966,11 +966,24 @@ roles](/iam/docs/roles-overview#predefined).
 
 ### Enable authorization keys
 
-Before you can [create an authorization key](#api-keys-bound-sa), you first need
-to set the
+Before you can [create an authorization key](#api-keys-bound-sa), you must
+do one of the following:
+
+- 
+
+Update the
 `constraints/iam.managed.disableServiceAccountApiKeyCreation` organization
-policy constraint to `false`. Changing the organization policy requires an
-associated
+policy constraint to restrict the services that users can create
+authorization keys for. When creating an authorization key, users must add
+an [API restriction](#adding-api-restrictions) that matches a service
+allowed by the constraint.
+
+- 
+
+Disable the `constraints/iam.managed.disableServiceAccountApiKeyCreation`
+organization policy constraint.
+
+Changing the organization policy requires an
 [organization resource](/resource-manager/docs/cloud-platform-resource-hierarchy#organizations).
 Projects without an organization aren't supported.
 
@@ -996,7 +1009,7 @@ policies for.
 
 - 
 
-In the **Filter** box, enter `Block service`, and then click the filter
+In the **Filter** box, enter `Block service`, and then click the policy
 name **Block service account API key bindings**.
 
 - 
@@ -1009,7 +1022,25 @@ In the **Policy source** section, select **Override parent's policy**.
 
 - 
 
-Click **Add a rule**, and set **Enforcement** to **Off**.
+Click **Add a rule**.
+
+- 
+
+To disable the constraint, set **Enforcement** to **Off**.
+
+To add a service to the allowed list, set **Enforcement** to **On**.
+
+- 
+
+Click edit **Edit**.
+
+- 
+
+In the **Value type** section, select **User-defined**.
+
+- 
+
+Enter the service that you want to allow creating API keys for.
 
 - 
 
@@ -1027,16 +1058,21 @@ Click **Set policy**.
 
 
 
+To add a service to the allowed list, do the following:
+
 - 
 
-Create a file named `spec.yaml`, with the following content:
+Create a file named `spec.yaml` with the following content:
 
 
 ```
 name : SCOPE / SCOPE_ID /policies/iam.managed.disableServiceAccountApiKeyCreation
 spec : 
 rules : 
-- enforce : false 
+- enforce : true 
+parameters : 
+allowedServices : 
+- SERVICE_NAME 
 ```
 
 
@@ -1055,8 +1091,39 @@ applies.
 
 - 
 
+` SERVICE_NAME `: The name of the service you want to
+allow—for example, `compute.googleapis.com`.
+
+- 
+
 Run the following `gcloud` command to allow binding of API keys to service
-accounts:
+accounts for the specified service:
+
+
+```
+gcloud org-policies set-policy spec.yaml \ 
+--update-mask spec
+```
+
+
+To disable the constraint, do the following:
+
+- 
+
+Create a file named `spec.yaml` with the following content:
+
+
+```
+name : SCOPE / SCOPE_ID /policies/iam.managed.disableServiceAccountApiKeyCreation
+spec : 
+rules : 
+- enforce : false 
+```
+
+
+- 
+
+Run the following `gcloud` command to disable the constraint:
 
 
 ```

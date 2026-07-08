@@ -1,7 +1,7 @@
 # Access and resource management
 
 Source: https://berlin.devsitetest.how/docs/cross-product-overviews
-Last updated: 2026-06-29
+Last updated: 2026-07-07
 
 - 
 
