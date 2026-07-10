@@ -1,7 +1,7 @@
 # Configure log buckets
 
 Source: https://berlin.devsitetest.how/logging/docs/buckets
-Last updated: 2026-07-07
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Install kubectl and configure cluster access
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/cluster-access-for-kubectl
-Last updated: 2026-07-08
+Last updated: 2026-07-09
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -215,7 +215,9 @@ Before reading this page, ensure that you're familiar with [Kubernetes `kubectl`
 
 ## Before you begin
 
+
 Before you start, make sure that you have performed the following tasks:
+
 
 
 - 

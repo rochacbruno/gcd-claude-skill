@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-07-07
+Last updated: 2026-07-08
 
 - 
 
@@ -113,7 +113,7 @@ Guides
 
 
 
-- On this page 
+- On this page ** 
 - [ Get started with GKE ](#get-started)
 - [ When to use GKE ](#when-to-use)
 
@@ -342,19 +342,18 @@ For more information, refer to
 
 ### Kubernetes versions and features
 
-GKE automatically upgrades your control plane to new Kubernetes
-versions that add new features and improvements in the open source project. The
-Kubernetes version selected for auto-upgrades depends on the stable version in
-the GKE release channel you select when you create the cluster.
-You can also
-[manually upgrade your control plane](/kubernetes-engine/docs/how-to/upgrading-a-cluster#upgrade_cp)
-to a different Kubernetes version than the version GKE selects
-for an upgrade. For detailed information on versions and upgrades, refer to the
-[release notes](/kubernetes-engine/docs/release-notes) and
-[GKE versioning and upgrades](/kubernetes-engine/versioning-and-upgrades).
+GKE automatically upgrades the control plane and worker nodes of clusters to new Kubernetes versions so that the clusters receives new features, bug fixes, and security patches. GKE provides various capabilities to manage these upgrades to minimize disruption to your workloads while keeping them performant, reliable, and secure.
 
-GKE includes most *beta* and *stable* Kubernetes features. You
-can use [beta APIs in 1.24 and later](/kubernetes-engine/docs/how-to/use-beta-apis#configure-beta-apis).
+For more information, see [About GKE cluster upgrades](/kubernetes-engine/upgrades).
+
+
+Best practice**:
+
+If you want to try less stable Kubernetes features in the *alpha* or *beta* stages, use
+[alpha clusters](/kubernetes-engine/docs/concepts/alpha-clusters), or [use Kubernetes beta APIs with GKE clusters](/kubernetes-engine/docs/how-to/use-beta-apis).
+Review the [implications](/kubernetes-engine/docs/how-to/use-beta-apis#considerations-for-beta-apis) before enabling beta APIs in production clusters.
+
+
 
 ### Modes of operation
 

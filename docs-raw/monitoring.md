@@ -1,7 +1,7 @@
 # Cloud Monitoring documentation
 
 Source: https://berlin.devsitetest.how/monitoring/docs
-Last updated: 2026-07-07
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/monitoring/docs/tpc-differences) for more details.
 

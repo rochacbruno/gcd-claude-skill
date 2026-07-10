@@ -2062,7 +2062,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/bigquery" 
 
 def load_table_gcs_csv dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-reservation-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_policies/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 gcs_uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
 table_id = "us_states" 

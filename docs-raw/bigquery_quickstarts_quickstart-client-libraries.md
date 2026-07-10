@@ -199,7 +199,7 @@ More
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -2024,7 +2024,7 @@ require "google/cloud/bigquery"
 
 # This uses Application Default Credentials to authenticate. 
 # @see https://cloud.google.com/bigquery/docs/authentication/getting-started 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-reservation-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_policies/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 
 sql = "SELECT " \ 
 "CONCAT('https://stackoverflow.com/questions/', CAST(id as STRING)) as url, view_count " \ 

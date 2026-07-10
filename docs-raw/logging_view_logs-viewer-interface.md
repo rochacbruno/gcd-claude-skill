@@ -1,7 +1,7 @@
 # View and analyze logs
 
 Source: https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface
-Last updated: 2026-07-07
+Last updated: 2026-07-09
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -772,7 +772,7 @@ corresponding to fields in the log entries.
 
 - 
 
-**JSON payload (most frequent)**: Shows the most frequent `json_payload`
+**Frequent fields**: Shows the most frequent `json_payload`
 fields in the current query results.
 
 For the **System metadata** section, the following dimensions are always
@@ -794,11 +794,12 @@ If you want your query to filter
 by multiple severity levels, then use the **Severity** menu.
 
 Some dimensions are dynamically populated based on the labels in your log
-data. For example, you might see a **Service** or **Application** dimension:
+data. For example, you might see a **Workload / Service** or **Application**
+dimension:
 
 - 
 
-The **Service** dimension is shown in the following scenarios:
+The **Workload / Service** dimension is shown in the following scenarios:
 
 - 
 
@@ -806,7 +807,7 @@ You have log data whose resource type is
 [**Kubernetes Container**](/logging/docs/api/v2/resource-list#tag_k8s_container)
 and you haven't filtered your logs by resource type.
 The values in the `labels.k8s-pod/app` label contribute to the
-the entries in the **Service** dimension.
+the entries in the **Workload / Service** dimension.
 
 For example, if a log entry similar to the following is displayed as a result
 of your query, then the service menu includes the service named `myservice`:
@@ -856,7 +857,7 @@ environmentType: "STAGING"
 You filter your log data by the resource type of
 [**Audited Resource**](/logging/docs/api/v2/resource-list#tag_audited_resource).
 The values in the `resource.labels.service` label contribute to the
-the entries in the **Service** dimension.
+the entries in the **Workload / Service** dimension.
 
 - 
 

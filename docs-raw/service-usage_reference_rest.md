@@ -1,7 +1,7 @@
 # Service Usage API
 
 Source: https://berlin.devsitetest.how/service-usage/docs/reference/rest
-Last updated: 2025-12-10
+Last updated: 2026-07-08
 
 - 
 
@@ -122,7 +122,7 @@ Reference
 
 
 
-Enables services that service consumers want to use on Sovereign Cloud Platform, lists the available or enabled services, or disables services that service consumers no longer use.
+Enables services that service consumers want to use on Google Cloud Dedicated Platform, lists the available or enabled services, or disables services that service consumers no longer use.
 
 
 

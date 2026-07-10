@@ -1,7 +1,7 @@
 # Compute Engine in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/compute/docs/tpc-differences
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 - 
 
@@ -565,10 +565,21 @@ aren't available in Google Cloud Dedicated.
 
 
 
-All other cost savings features aren't available in
-Google Cloud Dedicated. For example,
-committed use discounts (CUDs) and sustained use discounts (SUDs)
-aren't available.
+Google Cloud Dedicated in Germany offers compute flexible
+committed use discounts (CUDs) for eligible spend across
+Compute Engine, GKE, and Cloud Run.
+To purchase spend-based commitments, contact
+[
+Google Cloud Dedicated in Germany billing support]().
+For more information, see the
+[billing differences page](/billing/docs/tpc-differences).
+
+
+
+
+All other cost-savings features aren't available in
+Google Cloud Dedicated, including
+resource-based CUDs and sustained use discounts (SUDs).
 
 
 | 

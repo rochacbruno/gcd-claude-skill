@@ -1,7 +1,7 @@
 # Google Cloud Dedicated Documentation
 
 Source: https://berlin.devsitetest.how/docs
-Last updated: 2026-07-07
+Last updated: 2026-07-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/tpc-differences) for more details.
 
@@ -376,9 +376,9 @@ Set up the Google Cloud CLI to work with Google Cloud Dedicated services.
 
 ### [
 
-Google Cloud Setup guided flow
+Set up your organization
 
-](https://berlin.devsitetest.how/docs/enterprise/cloud-setup)
+](https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization)
 
 
 
