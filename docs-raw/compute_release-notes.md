@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ July 09, 2026 ](#July_09_2026)
 - [ June 26, 2026 ](#June_26_2026)
 - [ June 22, 2026 ](#June_22_2026)
 - [ May 01, 2026 ](#May_01_2026)
@@ -246,6 +247,23 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## July 09, 2026
+
+
+Feature 
+
+
+**Generally available**: Compute flexible committed use discounts (CUDs) are
+available in Google Cloud Dedicated. Compute flexible commitments are
+spend-based commitments that you can purchase to cover eligible spend across
+Compute Engine, Google Kubernetes Engine, and Cloud Run.
+
+To purchase spend-based commitments, contact Billing support. For more
+information, see
+[Billing differences in Google Cloud Dedicated](/billing/docs/tpc-differences).
 
 
 

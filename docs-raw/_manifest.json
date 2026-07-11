@@ -149,7 +149,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 51065,
+    "size": 51066,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-07-07"
   },
@@ -177,14 +177,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 68597,
+    "size": 68603,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-07-07"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Loading CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139538,
+    "size": 139535,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-07-07"
   },
@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39335,
+    "size": 39332,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-07"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160715,
+    "size": 160709,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-07-07"
   },
@@ -242,7 +242,7 @@
     "filename": "compute.md",
     "size": 3282,
     "url": "https://berlin.devsitetest.how/compute/docs",
-    "last_updated": "2026-07-07"
+    "last_updated": "2026-07-10"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
@@ -268,7 +268,7 @@
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
     "filename": "compute_release-notes.md",
-    "size": 31829,
+    "size": 32347,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
     "last_updated": "2026-07-07"
   },
@@ -515,7 +515,7 @@
     "filename": "compute-area.md",
     "size": 3025,
     "url": "https://berlin.devsitetest.how/docs/compute-area",
-    "last_updated": "2026-07-07"
+    "last_updated": "2026-07-10"
   },
   "/docs/cross-product-overviews": {
     "title": "Access and resource management",
@@ -823,12 +823,12 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26708,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-07-07"
+    "last_updated": "2026-07-10"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2713,
+    "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-07-07"
   },
@@ -1269,9 +1269,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2022540,
+    "size": 2045426,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-07-08"
+    "last_updated": "2026-07-09"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1430,9 +1430,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1236425,
+    "size": 1263603,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-07-08"
+    "last_updated": "2026-07-10"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
@@ -1458,9 +1458,9 @@
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
-    "size": 27458,
+    "size": 27685,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-07-08"
+    "last_updated": "2026-07-10"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-11"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

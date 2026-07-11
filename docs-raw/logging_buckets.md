@@ -1,7 +1,7 @@
 # Configure log buckets
 
 Source: https://berlin.devsitetest.how/logging/docs/buckets
-Last updated: 2026-07-08
+Last updated: 2026-07-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -131,18 +131,20 @@ Guides
 - On this page ** 
 - [ Before you begin ](#before-you-begin)
 - [ Create a bucket ](#create_bucket)
+- [ List and view details of log buckets ](#list-and-view)
+
+- [ List buckets ](#listing-log-buckets)
+- [ View a bucket's details ](#viewing-logs-buckets)
+
 - [ Manage buckets ](#manage_buckets)
 
 - [ Update a bucket ](#update_bucket)
+- [ Configure custom retention ](#custom-retention)
 - [ Lock a bucket ](#locking-logs-buckets)
-- [ List buckets ](#listing-log-buckets)
-- [ View a bucket's details ](#viewing-logs-buckets)
 - [ Delete a bucket ](#deleting-logs-bucket)
 - [ Restore a deleted bucket ](#restore-logs-bucket)
 
-- [ Write to a bucket ](#writing)
-- [ Read from a bucket ](#reading)
-- [ Configure custom retention ](#custom-retention)
+- [ Read and write log entries ](#writing)
 - [ Troubleshoot common issues ](#troubleshooting)
 - [ What's next ](#whats_next)
 - 
@@ -165,11 +167,10 @@ or organization level; however, Cloud Logging automatically creates
 you.
 
 For a conceptual overview of buckets, see
-[Routing and storage overview: Log buckets](/logging/docs/store-log-entries).
+[Store log entries](/logging/docs/store-log-entries).
 
 This document doesn't describe how to create a log bucket that uses a
-customer-managed encryption key (CMEK). If you are interested in that topic,
-then see
+customer-managed encryption key (CMEK). If you want to configure CMEK, then see
 [Configure CMEK for logs storage](/logging/docs/routing/managed-encryption-storage).
 
 ## Before you begin 
@@ -614,124 +615,10 @@ After creating a bucket, create a sink to route log entries to your bucket and
 your bucket and which logs they can view. You can also update the bucket to
 configure [custom retention](#custom-retention).
 
-## Manage buckets
+## List and view details of log buckets
 
-This section describes how to manage your log buckets using the Google Cloud CLI
-or the Google Cloud Dedicated console.
-
-### Update a bucket
-
-To update the properties of your bucket, such as the
-description or retention period, do the following:
-
-
-[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
-
-
-
-
-To update your bucket's properties, do the following:
-
-- 
-
-In the Google Cloud Dedicated console, go to the Logs Storage** page:
-
-
-[Go to **Logs Storage**](https://console.cloud.berlin-build0.goog/logs/storage)
-
-If you use the search bar to find this page, then select the result whose subheading is
-**Logging**.
-
-- 
-
-For the bucket you want to update, click *more_vert* **More**.
-
-- 
-
-Select **Edit bucket**.
-
-- 
-
-Edit your bucket as needed.
-
-- 
-
-Click **Update bucket**.
-
-
-
-
-To update your bucket's properties, run the
-[`gcloud logging buckets update`](/sdk/gcloud/reference/logging/buckets/update) command:
-
-
-```
-gcloud logging buckets update ** BUCKET_ID --location= LOCATION UPDATED_ATTRIBUTES 
-```
-
-
-For example:
-
-
-```
-gcloud logging buckets update my-bucket --location=global --description "Updated description"
-```
-
-
-
-To update your bucket's properties, use
-[`projects.locations.buckets.patch`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/patch)
-in the Logging API.
-
-
-
-### Lock a bucket
-
-When you lock a bucket against updates, you also lock the bucket's
-retention policy. After a retention policy is locked, you can't delete the
-bucket until every log entry in the bucket has fulfilled the bucket's retention
-period. If you want to prevent the accidental deletion of a project that
-contains a locked log bucket, then add a lien to the project.
-To learn more, see [Protecting projects with liens](/resource-manager/docs/project-liens).
-
-To prevent anyone from updating or deleting a log bucket, lock the bucket. To
-lock the bucket, do the following:
-
-
-[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
-
-
-
-
-The Google Cloud Dedicated console doesn't support locking a log bucket.
-
-
-
-To lock your bucket, run the [`gcloud logging buckets update`](/sdk/gcloud/reference/logging/buckets/update)
-command with the `--locked` flag:
-
-
-```
-gcloud logging buckets update BUCKET_ID --location= LOCATION --locked
-```
-
-
-For example:
-
-
-```
-gcloud logging buckets update my-bucket --location=global --locked
-```
-
-
-
-To lock your bucket's attributes, use
-[`projects.locations.buckets.patch`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/patch)
-in the Logging API. Set the `locked` parameter to `true`.
-
-
+This section describes how to list and view the details of the log buckets in
+a project, folder, or organization.
 
 ### List buckets
 
@@ -895,29 +782,15 @@ in the Logging API.
 
 
 
-### Delete a bucket
+## Manage buckets
 
-You can delete log buckets that satisfy one of the following:
+This section describes how to manage your log buckets using the Google Cloud CLI
+or the Google Cloud Dedicated console.
 
-- The log bucket is [unlocked](#locking-logs-buckets).
+### Update a bucket
 
-- The log bucket is [locked](#locking-logs-buckets) and all log entries in
-the log bucket have fulfilled the bucket's retention period.
-
-You can't delete a log bucket that is locked against updates
-when that log bucket stores log entries that haven't fulfilled the bucket's
-retention period.
-
-After you issue the delete command, the log bucket transitions to the
-[`DELETE_REQUESTED` state](/logging/docs/reference/v2/rest/v2/LifecycleState), and it stays in that state
-for 7 days. During this time period, Logging continues to
-route logs to the log bucket. You can stop routing logs to the log bucket
-by deleting or modifying the log sinks that route log entries to the bucket.
-
-You can't create a new log bucket that uses the same name as a log bucket
-that is in the `DELETE_REQUESTED` state.
-
-To delete a log bucket, do the following:
+To update the properties of your bucket, such as the
+description or retention period, do the following:
 
 
 [ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
@@ -926,7 +799,7 @@ To delete a log bucket, do the following:
 
 
 
-To delete a log bucket, do the following:
+To update your bucket's properties, do the following:
 
 - 
 
@@ -940,189 +813,48 @@ If you use the search bar to find this page, then select the result whose subhea
 
 - 
 
-Locate the bucket that you want to delete, and click
-*more_vert***More**.
+For the bucket you want to update, click *more_vert* **More**.
 
 - 
 
-Select **Delete bucket**.
+Select **Edit bucket**.
 
 - 
 
-On the confirmation panel, click **Delete**.
+Edit your bucket as needed.
 
 - 
 
-On the **Logs Storage** page, your bucket has an indicator that it's
-pending deletion. The bucket, including all the logs in it, is deleted
-after 7 days.
+Click **Update bucket**.
 
 
 
 
-To delete a log bucket, run the
-[`gcloud logging buckets delete`](/sdk/gcloud/reference/logging/buckets/delete) command:
+To update your bucket's properties, run the
+[`gcloud logging buckets update`](/sdk/gcloud/reference/logging/buckets/update) command:
 
 
 ```
-gcloud logging buckets delete ** BUCKET_ID --location= LOCATION 
+gcloud logging buckets update ** BUCKET_ID --location= LOCATION UPDATED_ATTRIBUTES 
 ```
 
 
-You can't delete a log bucket when that bucket has a linked
-BigQuery dataset:
+For example:
 
-- To list the links associated with a log bucket, run the
-[`gcloud logging links list`](/sdk/gcloud/reference/logging/links/list) command.
 
-- To delete a linked dataset, run the
-[`gcloud logging links delete`](/sdk/gcloud/reference/logging/links/delete) command.
+```
+gcloud logging buckets update my-bucket --location=global --description "Updated description"
+```
 
 
 
-
-To delete a bucket, use
-[`projects.locations.buckets.delete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/delete)
+To update your bucket's properties, use
+[`projects.locations.buckets.patch`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/patch)
 in the Logging API.
 
 
 
-
-### Restore a deleted bucket
-
-You can restore, or undelete, a log bucket that's in the pending deletion state.
-To restore a log bucket, do the following:
-
-
-[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
-
-
-
-
-To restore a log bucket that is pending deletion, do the following:
-
-- 
-
-In the Google Cloud Dedicated console, go to the Logs Storage** page:
-
-
-[Go to **Logs Storage**](https://console.cloud.berlin-build0.goog/logs/storage)
-
-If you use the search bar to find this page, then select the result whose subheading is
-**Logging**.
-
-- 
-
-For the bucket you want to restore,
-click *more_vert* **More**, and then select
-**Restore deleted bucket**.
-
-- 
-
-On the confirmation panel, click **Restore**.
-
-- 
-
-On the **Logs Storage** page, the pending-deletion indicator is removed
-from your log bucket.
-
-
-
-
-To restore a log bucket that is pending deletion, run the
-[`gcloud logging buckets undelete`](/sdk/gcloud/reference/logging/buckets/undelete) command:
-
-
-```
-gcloud logging buckets undelete ** BUCKET_ID --location= LOCATION 
-```
-
-
-
-To restore a bucket that is pending deletion, use
-[`projects.locations.buckets.undelete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/undelete)
-in the Logging API.
-
-
-
-## Write to a bucket
-
-You don't directly write logs to a log bucket. Rather, you write logs to
-Google Cloud Dedicated resource: a Google Cloud Dedicated project, folder, or organization.
-The sinks in the parent resource then route the logs to destinations, including
-log buckets. A sink routes logs to a log bucket destination when the logs match
-the sink's filter and the sink has permission to route the logs to the log
-bucket.
-
-## Read from a bucket
-
-Each log bucket has a set of log views. To read logs from a log bucket, you
-need access to a log view on the log bucket. Log views let you grant a user
-access to only a subset of the logs stored in a log bucket. For information
-about how to configure log views, and how to grant access to specific log views,
-see [Configure log views on a log bucket](/logging/docs/logs-views).
-
-To read logs from a log bucket, do the following:
-
-
-[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
-
-
-
-
-- 
-
-In the Google Cloud Dedicated console, go to the
-segment 
-Logs Explorer** page:
-
-
-[Go to **Logs Explorer**](https://console.cloud.berlin-build0.goog/logs/query)
-
-If you use the search bar to find this page, then select the result whose subheading is
-**Logging**.
-
-- 
-
-To customize which logs are displayed in the Logs Explorer,
-click **Refine scope**, and then select an option. For example,
-you can view logs stored in a project or by log view.
-
-- 
-
-Click **Apply**. The **Query results** pane reloads with logs that match
-the option you selected.
-
-For more information, see
-[Logs Explorer overview: Refine scope](/logging/docs/view/logs-explorer-interface#refine_scope).
-
-
-
-To read logs from a log bucket, use the
-[`gcloud logging read`](/sdk/gcloud/reference/logging/read) command and add
-a [`LOG_FILTER`](/sdk/gcloud/reference/logging/read#LOG_FILTER) to select
-data:
-
-
-```
-gcloud logging read ** LOG_FILTER --bucket= BUCKET_ID --location= LOCATION --view= LOG_VIEW_ID 
-```
-
-
-
-To read logs from a log bucket, use the
-[entries.list](/logging/docs/reference/v2/rest/v2/entries/list) method. Set
-`resourceNames` to specify the appropriate bucket and log view, and set
-`filter` to select data.
-
-
-
-For detailed information about the filtering syntax, see
-[Logging query language](/logging/docs/view/logging-query-language).
-
-## Configure custom retention
+### Configure custom retention
 
 When you [create a log bucket](#create_bucket), you can customize the period
 that Cloud Logging stores logs in the bucket. You can also configure the
@@ -1218,6 +950,278 @@ gcloud logging buckets update _Default --location=global --retention-days=365
 If you extend a bucket's retention period, then the retention rules apply going
 forward and not retroactively. Logs can't be recovered after the applicable
 retention period ends.
+
+### Lock a bucket
+
+When you lock a bucket against updates, you also lock the bucket's
+retention policy. After a retention policy is locked, you can't delete the
+bucket until every log entry in the bucket has fulfilled the bucket's retention
+period. If you want to prevent the accidental deletion of a project that
+contains a locked log bucket, then add a lien to the project.
+To learn more, see [Protecting projects with liens](/resource-manager/docs/project-liens).
+
+To prevent anyone from updating or deleting a log bucket, lock the bucket. To
+lock the bucket, do the following:
+
+
+[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
+More 
+
+
+
+
+The Google Cloud Dedicated console doesn't support locking a log bucket.
+
+
+
+To lock your bucket, run the [`gcloud logging buckets update`](/sdk/gcloud/reference/logging/buckets/update)
+command with the `--locked` flag:
+
+
+```
+gcloud logging buckets update BUCKET_ID --location= LOCATION --locked
+```
+
+
+For example:
+
+
+```
+gcloud logging buckets update my-bucket --location=global --locked
+```
+
+
+
+To lock your bucket's attributes, use
+[`projects.locations.buckets.patch`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/patch)
+in the Logging API. Set the `locked` parameter to `true`.
+
+
+
+### Delete a bucket
+
+You can delete log buckets that satisfy one of the following:
+
+- The log bucket is [unlocked](#locking-logs-buckets).
+
+- The log bucket is [locked](#locking-logs-buckets) and all log entries in
+the log bucket have fulfilled the bucket's retention period.
+
+You can't delete a log bucket that is locked against updates
+when that log bucket stores log entries that haven't fulfilled the bucket's
+retention period.
+
+After you issue the delete command, the log bucket transitions to the
+[`DELETE_REQUESTED` state](/logging/docs/reference/v2/rest/v2/LifecycleState), and it stays in that state
+for 7 days. During this time period, Logging continues to
+route logs to the log bucket. You can stop routing logs to the log bucket
+by deleting or modifying the log sinks that route log entries to the bucket.
+
+You can't create a new log bucket that uses the same name as a log bucket
+that is in the `DELETE_REQUESTED` state.
+
+To delete a log bucket, do the following:
+
+
+[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
+More 
+
+
+
+
+To delete a log bucket, do the following:
+
+- 
+
+In the Google Cloud Dedicated console, go to the Logs Storage** page:
+
+
+[Go to **Logs Storage**](https://console.cloud.berlin-build0.goog/logs/storage)
+
+If you use the search bar to find this page, then select the result whose subheading is
+**Logging**.
+
+- 
+
+Locate the bucket that you want to delete, and click
+*more_vert***More**.
+
+- 
+
+Select **Delete bucket**.
+
+- 
+
+On the confirmation panel, click **Delete**.
+
+- 
+
+On the **Logs Storage** page, your bucket has an indicator that it's
+pending deletion. The bucket, including all the logs in it, is deleted
+after 7 days.
+
+
+
+
+To delete a log bucket, run the
+[`gcloud logging buckets delete`](/sdk/gcloud/reference/logging/buckets/delete) command:
+
+
+```
+gcloud logging buckets delete ** BUCKET_ID --location= LOCATION 
+```
+
+
+You can't delete a log bucket when that bucket has a linked
+BigQuery dataset:
+
+- To list the links associated with a log bucket, run the
+[`gcloud logging links list`](/sdk/gcloud/reference/logging/links/list) command.
+
+- To delete a linked BigQuery dataset, run the
+[`gcloud logging links delete`](/sdk/gcloud/reference/logging/links/delete) command.
+
+
+
+
+To delete a bucket, use
+[`projects.locations.buckets.delete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/delete)
+in the Logging API.
+
+
+
+
+### Restore a deleted bucket
+
+You can restore, or undelete, a log bucket that's in the pending deletion state.
+To restore a log bucket, do the following:
+
+
+[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
+More 
+
+
+
+
+To restore a log bucket that is pending deletion, do the following:
+
+- 
+
+In the Google Cloud Dedicated console, go to the Logs Storage** page:
+
+
+[Go to **Logs Storage**](https://console.cloud.berlin-build0.goog/logs/storage)
+
+If you use the search bar to find this page, then select the result whose subheading is
+**Logging**.
+
+- 
+
+For the bucket you want to restore,
+click *more_vert* **More**, and then select
+**Restore deleted bucket**.
+
+- 
+
+On the confirmation panel, click **Restore**.
+
+- 
+
+On the **Logs Storage** page, the pending-deletion indicator is removed
+from your log bucket.
+
+
+
+
+To restore a log bucket that is pending deletion, run the
+[`gcloud logging buckets undelete`](/sdk/gcloud/reference/logging/buckets/undelete) command:
+
+
+```
+gcloud logging buckets undelete ** BUCKET_ID --location= LOCATION 
+```
+
+
+
+To restore a bucket that is pending deletion, use
+[`projects.locations.buckets.undelete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/undelete)
+in the Logging API.
+
+
+
+## Read and write log entries
+
+You don't directly write logs to a log bucket. Rather, you write logs to
+Google Cloud Dedicated resource: a Google Cloud Dedicated project, folder, or organization.
+The sinks in the parent resource then route the logs to destinations, including
+log buckets. A sink routes logs to a log bucket destination when the logs match
+the sink's filter and the sink has permission to route the logs to the log
+bucket. For more information, see [Route log entries](/logging/docs/routing/overview).
+
+Each log bucket has a set of log views. To read logs from a log bucket, you
+need access to a log view on the log bucket. Log views let you grant a user
+access to only a subset of the logs stored in a log bucket. To learn more
+about log views, see [Store log entries](/logging/docs/store-log-entries) and
+[Configure log views on a log bucket](/logging/docs/logs-views).
+
+To read logs from a log bucket, do the following:
+
+
+[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [ gcloud ](#gcloud) [ REST ](#rest) 
+More 
+
+
+
+
+- 
+
+In the Google Cloud Dedicated console, go to the
+segment 
+Logs Explorer** page:
+
+
+[Go to **Logs Explorer**](https://console.cloud.berlin-build0.goog/logs/query)
+
+If you use the search bar to find this page, then select the result whose subheading is
+**Logging**.
+
+- 
+
+To customize which logs are displayed in the Logs Explorer,
+click **Refine scope**, and then select an option. For example,
+you can view logs stored in a project or by log view.
+
+- 
+
+Click **Apply**. The **Query results** pane reloads with logs that match
+the option you selected.
+
+For more information, see
+[Logs Explorer overview: Refine scope](/logging/docs/view/logs-explorer-interface#refine_scope).
+
+
+
+To read logs from a log bucket, use the
+[`gcloud logging read`](/sdk/gcloud/reference/logging/read) command and add
+a [`LOG_FILTER`](/sdk/gcloud/reference/logging/read#LOG_FILTER) to select
+data:
+
+
+```
+gcloud logging read ** LOG_FILTER --bucket= BUCKET_ID --location= LOCATION --view= LOG_VIEW_ID 
+```
+
+
+
+To read logs from a log bucket, use the
+[entries.list](/logging/docs/reference/v2/rest/v2/entries/list) method. Set
+`resourceNames` to specify the appropriate bucket and log view, and set
+`filter` to select data.
+
+
+
+For detailed information about the filtering syntax, see
+[Logging query language](/logging/docs/view/logging-query-language).
 
 ## Troubleshoot common issues
 
