@@ -1,7 +1,7 @@
 # Get started with Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 - 
 

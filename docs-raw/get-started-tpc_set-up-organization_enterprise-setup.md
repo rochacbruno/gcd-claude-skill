@@ -1,7 +1,7 @@
 # Enterprise setup with the Fabric FAST toolkit
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization/enterprise-setup
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 - 
 

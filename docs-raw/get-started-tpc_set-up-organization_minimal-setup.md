@@ -1,7 +1,7 @@
 # Minimal setup
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization/minimal-setup
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 - 
 

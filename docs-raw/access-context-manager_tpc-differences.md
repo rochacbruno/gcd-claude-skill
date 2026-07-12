@@ -1,7 +1,7 @@
 # Access Context Manager in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/access-context-manager/docs/tpc-differences
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 - 
 

@@ -1,7 +1,7 @@
 # List services
 
 Source: https://berlin.devsitetest.how/service-usage/docs/list-services
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 

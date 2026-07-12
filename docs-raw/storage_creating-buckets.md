@@ -1,7 +1,7 @@
 # Create a bucket
 
 Source: https://berlin.devsitetest.how/storage/docs/creating-buckets
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 

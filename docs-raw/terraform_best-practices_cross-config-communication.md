@@ -1,7 +1,7 @@
 # Best practices for cross-configuration communication
 
 Source: https://berlin.devsitetest.how/docs/terraform/best-practices/cross-config-communication
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 

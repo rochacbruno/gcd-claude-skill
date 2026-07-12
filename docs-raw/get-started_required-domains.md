@@ -1,7 +1,7 @@
 # Allow access to Google Cloud Dedicated console domains
 
 Source: https://berlin.devsitetest.how/docs/get-started/required-domains
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 

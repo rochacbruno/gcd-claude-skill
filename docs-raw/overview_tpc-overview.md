@@ -1,7 +1,7 @@
 # Google Cloud Dedicated in Germany overview
 
 Source: https://berlin.devsitetest.how/docs/overview/tpc-overview
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 - 
 

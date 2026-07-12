@@ -1,7 +1,7 @@
 # Terraform support for Cloud Quotas
 
 Source: https://berlin.devsitetest.how/docs/quotas/terraform-support-for-cloud-quotas
-Last updated: 2026-07-07
+Last updated: 2026-07-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
