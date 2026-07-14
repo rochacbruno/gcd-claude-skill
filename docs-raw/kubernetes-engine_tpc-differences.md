@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-07-10
+Last updated: 2026-07-13
 
 - 
 
@@ -606,7 +606,24 @@ The Ray Operator for GKE is unavailable. |
 | 
 **Config Sync**
 | 
-Config Sync is unavailable.
+
+
+Config Sync is available with only the [manual installation method](/kubernetes-engine/config-sync/docs/how-to/installing-kubectl).
+
+
+
+Because the GKE Hub (Fleet) API is unavailable, the following management and observability features are not supported:
+
+
+
+
+- Fleet-level defaults and fleet packages (`ConfigDelivery`).
+
+- Centralized management through the Config Sync dashboard in the Google Cloud Dedicated console.
+
+- Integrated dashboards and Cloud Monitoring metrics in the Google Cloud Dedicated console. You can use local Prometheus scraping (port 8675) for metrics and alerting instead.
+
+
 | 
 |
 

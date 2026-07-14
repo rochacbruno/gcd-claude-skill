@@ -1,7 +1,7 @@
 # Compute Engine release notes
 
 Source: https://berlin.devsitetest.how/compute/docs/release-notes
-Last updated: 2026-07-10
+Last updated: 2026-07-13
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ July 13, 2026 ](#July_13_2026)
 - [ July 09, 2026 ](#July_09_2026)
 - [ June 26, 2026 ](#June_26_2026)
 - [ June 22, 2026 ](#June_22_2026)
@@ -247,6 +248,27 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## July 13, 2026
+
+
+Feature 
+
+
+**Preview**: Advanced Compute Images are available in Google Cloud Dedicated.
+These images provide high-performance images to support
+your artificial intelligence (AI), machine learning (ML), and high-performance
+computing (HPC) workloads on Google Cloud Dedicated in Germany.
+
+Advanced Compute Images provide a single source of trusted, performance-tuned
+OS images that remove the need for manual image building for specialized
+workloads. Each image version is pre-installed with the necessary drivers,
+network fabrics, and Slurm agents to help you run your workloads.
+
+For more information, see
+[Overview of Advanced Compute Images](/compute/docs/images/workload/aci-images).
 
 
 

@@ -149,7 +149,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 51066,
+    "size": 51065,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-07-10"
   },
@@ -177,14 +177,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 68606,
+    "size": 68600,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-07-10"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Loading CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139538,
+    "size": 139541,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-07-10"
   },
@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39336,
+    "size": 39339,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-10"
   },
@@ -268,9 +268,9 @@
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
     "filename": "compute_release-notes.md",
-    "size": 32347,
+    "size": 33093,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-13"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
@@ -828,7 +828,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2714,
+    "size": 2713,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-07-10"
   },
@@ -842,7 +842,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19109,
+    "size": 19106,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-07-10"
   },
@@ -1437,9 +1437,9 @@
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 12609,
+    "size": 13181,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-13"
   },
   "/logging/docs": {
     "title": "Cloud Logging documentation",
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-13"
+    "last_updated": "2026-07-14"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
