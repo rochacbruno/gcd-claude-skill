@@ -1854,7 +1854,7 @@ const [ policy ] = await pubSubClient
 . subscription ( subscriptionNameOrId ) 
 . iam . [ getPolicy ](https://berlin.devsitetest.how/nodejs/docs/reference/pubsub/latest/pubsub/iam.html) (); 
 
-console . log ( `Policy for subscription: ${ [ JSON ](https://berlin.devsitetest.how/nodejs/docs/reference/pubsub/latest/pubsub/protos.google.pubsub.v1.encoding.html) . stringify ( policy . bindings ) } .` ); 
+console . log ( `Policy for subscription: ${ JSON . stringify ( policy . bindings ) } .` ); 
 } 
 ```
 

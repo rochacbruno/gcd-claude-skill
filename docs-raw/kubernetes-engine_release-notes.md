@@ -23099,9 +23099,9 @@ Apply the following filter to search kubelet startup logs:
 
 
 ```
-` resource . type = "k8s_node" 
+resource . type = "k8s_node" 
 log_name = "projects/{PROJECT_ID}/logs/kubelet" 
-resource . labels . cluster_name = "{CLUSTER_ `NAME}"
+resource . labels . cluster_name = "{CLUSTER_NAME}" 
 SEARCH ( "`FLAG:`" ) 
 ```
 
@@ -23121,7 +23121,7 @@ In GKE versions starting from 1.29.4-gke.1542000 and earlier than 1.29.7-gke.100
 
 
 ```
-` Pod "your-pod-name" is invalid : [ spec.volumes[x ] . name : Duplicate value : "gke-gcsfuse-tmp" , spec . initContainers [ x ] . name : Duplicate value : &qu `ot;gke-gcsfuse-sidecar" ] 
+Pod "your-pod-name" is invalid : [ spec.volumes[x ] . name : Duplicate value : "gke-gcsfuse-tmp" , spec . initContainers [ x ] . name : Duplicate value : "gke-gcsfuse-sidecar" ] 
 ```
 
 

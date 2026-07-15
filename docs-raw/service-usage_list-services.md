@@ -1,7 +1,7 @@
 # List services
 
 Source: https://berlin.devsitetest.how/service-usage/docs/list-services
-Last updated: 2026-07-10
+Last updated: 2026-07-14
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -128,6 +128,7 @@ Guides
 
 - On this page 
 - [ Before you begin ](#before)
+- [ List enabled services in an organization ](#org-list-enabled)
 - [ List enabled services in a project ](#enabled)
 - [ List available services in a project ](#available)
 - [ Next steps ](#next)
@@ -147,6 +148,9 @@ Guides
 
 This document describes how to list the APIs and services that are enabled or
 available in a Google Cloud Dedicated project.
+
+- To get or monitor the enabled services for an organization,
+see [List enabled services in an organization](#org-list-enabled).
 
 - To list services in a project, we recommend that you use the
 Google Cloud Dedicated console or the Google Cloud CLI. This document describes how
@@ -177,6 +181,49 @@ instructions to complete the initial setup in
 [Getting Started](/service-usage/docs/set-up-development-environment). These steps include
 defining `gcurl`, which is an authenticated alias for the standard `curl`
 command, and defining the environment variable `PROJECT_NUMBER`.
+
+## List enabled services in an organization
+
+To list which services are enabled across an organization use
+[Cloud Asset Inventory](/asset-inventory/docs/overview), which allows exporting
+the state of all projects under the control of an organization in a single RPC
+call. Cloud Asset Inventory can also be used to
+[monitor for state changes](/asset-inventory/docs/monitoring-asset-changes).
+To export all enabled services for a particular organization, follow the Cloud Asset Inventory docs for [Listing Assets](/asset-inventory/docs/listing-assets).
+
+To list the enabled APIs for an organization, run the following command after
+you set your organization and billing project IDs:
+
+
+```
+NOW=$(TZ=GMT date +"%Y-%m-%dT%H:%M:%SZ")
+gcloud asset list \
+--organization=' ORGANIZATION_ID ' \
+--billing-project=' BILLING_PROJECT_ID ' \
+--asset-types='serviceusage.googleapis.com/Service' \
+--snapshot-time=$NOW \
+--content-type='resource'
+```
+
+
+Executing the previous command lets a sufficiently privileged user list the set
+of enabled services for all projects in an organization.
+
+To experiment with Cloud Asset Inventory commands, apply these commands to a
+specific project. For example, the following command
+lists all enabled services for a particular project:
+
+
+```
+NOW=$(TZ=GMT date +"%Y-%m-%dT%H:%M:%SZ")
+gcloud asset list \
+--project=' PROJECT_ID ' \
+--billing-project=' BILLING_PROJECT_ID ' \
+--asset-types='serviceusage.googleapis.com/Service' \
+--snapshot-time=$NOW \
+--content-type='resource'
+```
+
 
 ## List enabled services in a project
 

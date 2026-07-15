@@ -1066,7 +1066,7 @@ see the following sections:
 
 - [Clustered tables](/bigquery/docs/clustered-tables#block-pruning)
 
-### Avoid running queries to explore table data
+### Avoid running queries to explore table data 
 
 **Best practice:** Don't run queries to explore or preview table data.
 

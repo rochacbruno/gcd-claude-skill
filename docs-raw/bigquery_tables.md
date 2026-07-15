@@ -1,7 +1,7 @@
 # Create and use tables
 
 Source: https://berlin.devsitetest.how/bigquery/docs/tables
-Last updated: 2026-07-10
+Last updated: 2026-07-14
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -2001,7 +2001,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/bigquery" 
 
 def create_table dataset_id = "my_dataset" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-analytics_hub/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_transfer-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 table_id = "my_table" 
 
@@ -3216,31 +3216,32 @@ To learn how to create a multimodal table, see
 ## Control access to tables
 
 To configure access to tables and views, you can grant an
-IAM role to an entity at the following levels, listed in
-order of range of resources allowed (largest to smallest):
+IAM role to an entity at the following levels, which are listed
+in
+order of the range of resources allowed (largest to smallest):
 
-- a high level in the
+- A high level in the
 [Google Cloud Dedicated in Germany resource hierarchy](/resource-manager/docs/cloud-platform-resource-hierarchy)
 such as the project, folder, or organization level
 
-- the dataset level
+- The dataset level
 
-- the table or view level
+- The table or view level
 
 You can also restrict data access within tables, by using the following
 methods:
 
-- [column-level security](/bigquery/docs/column-level-security-intro)
+- [Column-level security](/bigquery/docs/column-level-security-intro)
 
-- [column data masking](/bigquery/docs/column-data-masking-intro)
+- [Column data masking](/bigquery/docs/column-data-masking-intro)
 
-- [row-level security](/bigquery/docs/row-level-security-intro)
+- [Row-level security](/bigquery/docs/row-level-security-intro)
 
-Access with any resource protected by IAM is additive. For
-example, if an entity does not have access at the high level such as a project,
-you could grant the entity access at the dataset level, and then the entity will
-have access to the tables and views in the dataset. Similarly, if the entity
-does not have access at the high level or the dataset level, you could grant the
+Access to any resource protected by IAM is additive. For
+example, if an entity does not have access at a high level such as a project,
+you can grant the entity access at the dataset level, and the entity then has
+access to the tables and views in the dataset. Similarly, if the entity does
+not have access at the high level or the dataset level, you can grant the
 entity access at the table or view level.
 
 Granting IAM roles at a higher level in the [Google Cloud Dedicated in Germany
@@ -7642,7 +7643,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/bigquery" 
 
 def list_tables dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-analytics_hub/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_transfer-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 
 puts "Tables in dataset #{ dataset_id } :" 

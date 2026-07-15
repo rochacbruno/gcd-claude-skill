@@ -980,10 +980,10 @@ for instructions on using Visual Studio to build and run this sample C# code.
 ```
 using System ; 
 using System.Collections.Generic ; 
-using Google.Cloud.Monitoring.V3 ; 
-using Google.Protobuf.WellKnownTypes ; 
-using Google.Api ; 
-using Google.Api.Gax.ResourceNames ; 
+using [ Google.Cloud.Monitoring.V3 ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.html) ; 
+using [ Google.Protobuf.WellKnownTypes ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Protobuf/latest/Google.Protobuf.WellKnownTypes.html) ; 
+using [ Google.Api ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.html) ; 
+using [ Google.Api.Gax.ResourceNames ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.html) ; 
 
 namespace GoogleCloudSamples 
 { 
@@ -995,61 +995,61 @@ public static void Main ( string [] args )
 string projectId = "YOUR-PROJECT-ID" ; 
 
 // Create client. 
-MetricServiceClient metricServiceClient = MetricServiceClient . Create (); 
+[ MetricServiceClient ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.MetricServiceClient.html) metricServiceClient = [ MetricServiceClient ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.MetricServiceClient.html) . [ Create ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.MetricServiceClient.html#Google_Cloud_Monitoring_V3_MetricServiceClient_Create) (); 
 
 // Initialize request argument(s). 
-ProjectName name = new ProjectName ( projectId ); 
+[ ProjectName ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.ProjectName.html) name = new [ ProjectName ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.ProjectName.html) ( projectId ); 
 
 // Prepare a data point. 
-TypedValue salesTotal = new TypedValue 
+[ TypedValue ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TypedValue.html) salesTotal = new [ TypedValue ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TypedValue.html)
 { 
 DoubleValue = 123.45 
 }; 
-Point dataPoint = new Point 
+[ Point ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.Point.html) dataPoint = new [ Point ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.Point.html)
 { 
 Value = salesTotal 
 }; 
 // Sets data point's interval end time to current time. 
 DateTime UnixEpoch = new DateTime ( 1970 , 1 , 1 , 0 , 0 , 0 , DateTimeKind . Utc ); 
-Timestamp timeStamp = new Timestamp 
+[ Timestamp ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Protobuf/latest/Google.Protobuf.WellKnownTypes.Timestamp.html) timeStamp = new [ Timestamp ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Protobuf/latest/Google.Protobuf.WellKnownTypes.Timestamp.html)
 { 
 Seconds = ( long )( DateTime . UtcNow - UnixEpoch ). TotalSeconds 
 }; 
-TimeInterval interval = new TimeInterval 
+[ TimeInterval ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TimeInterval.html) interval = new [ TimeInterval ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TimeInterval.html)
 { 
 EndTime = timeStamp 
 }; 
-dataPoint . Interval = interval ; 
+dataPoint . [ Interval ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.Point.html#Google_Cloud_Monitoring_V3_Point_Interval) = interval ; 
 
 // Prepare custom metric. 
-Metric metric = new Metric 
+[ Metric ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.Metric.html) metric = new [ Metric ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.Metric.html)
 { 
 Type = "custom.googleapis.com/my_metric" 
 }; 
-metric . Labels . Add ( "store_id" , "Pittsburgh" ); 
+metric . [ Labels ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.Metric.html#Google_Api_Metric_Labels) . [ Add ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Apis/latest/Google.Apis.Requests.Parameters.ParameterCollection.html#Google_Apis_Requests_Parameters_ParameterCollection_Add_System_String_System_String_) ( "store_id" , "Pittsburgh" ); 
 
 // Prepare monitored resource. 
-MonitoredResource resource = new MonitoredResource 
+[ MonitoredResource ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.MonitoredResource.html) resource = new [ MonitoredResource ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.MonitoredResource.html)
 { 
 Type = "gce_instance" 
 }; 
 
-resource . Labels . Add ( "project_id" , projectId ); 
-resource . Labels . Add ( "instance_id" , "1234567890123456789" ); 
-resource . Labels . Add ( "zone" , "us-central1-f" ); 
+resource . [ Labels ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.MonitoredResource.html#Google_Api_MonitoredResource_Labels) . [ Add ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Apis/latest/Google.Apis.Requests.Parameters.ParameterCollection.html#Google_Apis_Requests_Parameters_ParameterCollection_Add_System_String_System_String_) ( "project_id" , projectId ); 
+resource . [ Labels ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.MonitoredResource.html#Google_Api_MonitoredResource_Labels) . [ Add ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Apis/latest/Google.Apis.Requests.Parameters.ParameterCollection.html#Google_Apis_Requests_Parameters_ParameterCollection_Add_System_String_System_String_) ( "instance_id" , "1234567890123456789" ); 
+resource . [ Labels ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Api.CommonProtos/latest/Google.Api.MonitoredResource.html#Google_Api_MonitoredResource_Labels) . [ Add ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Apis/latest/Google.Apis.Requests.Parameters.ParameterCollection.html#Google_Apis_Requests_Parameters_ParameterCollection_Add_System_String_System_String_) ( "zone" , "us-central1-f" ); 
 
 // Create a new time series using inputs. 
-TimeSeries timeSeriesData = new TimeSeries 
+[ TimeSeries ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TimeSeries.html) timeSeriesData = new [ TimeSeries ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TimeSeries.html)
 { 
 Metric = metric , 
 Resource = resource 
 }; 
-timeSeriesData . Points . Add ( dataPoint ); 
+timeSeriesData . [ Points ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.TimeSeries.html#Google_Cloud_Monitoring_V3_TimeSeries_Points) . [ Add ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Apis/latest/Google.Apis.Requests.Parameters.ParameterCollection.html#Google_Apis_Requests_Parameters_ParameterCollection_Add_System_String_System_String_) ( dataPoint ); 
 
 // Add newly created time series to list of time series to be written. 
 IEnumerable timeSeries = new List { timeSeriesData }; 
 // Write time series data. 
-metricServiceClient . CreateTimeSeries ( name , timeSeries ); 
+metricServiceClient . [ CreateTimeSeries ](https://berlin.devsitetest.how/dotnet/docs/reference/Google.Cloud.Monitoring.V3/latest/Google.Cloud.Monitoring.V3.MetricServiceClient.html#Google_Cloud_Monitoring_V3_MetricServiceClient_CreateTimeSeries_Google_Api_Gax_ResourceNames_ProjectName_System_Collections_Generic_IEnumerable_Google_Cloud_Monitoring_V3_TimeSeries__Google_Api_Gax_Grpc_CallSettings_) ( name , timeSeries ); 
 Console . WriteLine ( "Done writing time series data." ); 
 } 
 } 
@@ -1140,7 +1140,7 @@ func main () {
 ctx := context . Background () 
 
 // Creates a client. 
-client , err := monitoring . NewMetricClient ( ctx ) 
+client , err := monitoring . [ NewMetricClient ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/monitoring/latest/apiv3/v2.html#cloud_google_com_go_monitoring_apiv3_v2_MetricClient_NewMetricClient) ( ctx ) 
 if err != nil { 
 log . Fatalf ( "Failed to create client: %v" , err ) 
 } 
@@ -1262,16 +1262,16 @@ variable to `apis-berlin-build0.goog`.
 
 
 ```
-import com.google.api.Metric ; 
-import com.google.api.MonitoredResource ; 
-import com.google.cloud.monitoring.v3.MetricServiceClient ; 
-import com.google.monitoring.v3.CreateTimeSeriesRequest ; 
-import com.google.monitoring.v3.Point ; 
-import com.google.monitoring.v3.ProjectName ; 
-import com.google.monitoring.v3.TimeInterval ; 
-import com.google.monitoring.v3.TimeSeries ; 
-import com.google.monitoring.v3.TypedValue ; 
-import com.google.protobuf.util.Timestamps ; 
+import com.google.api.[Metric](https://berlin.devsitetest.how/java/docs/reference/proto-google-common-protos/latest/com.google.api.Metric.html) ; 
+import com.google.api.[MonitoredResource](https://berlin.devsitetest.how/java/docs/reference/proto-google-common-protos/latest/com.google.api.MonitoredResource.html) ; 
+import com.google.cloud.monitoring.v3.[MetricServiceClient](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.cloud.monitoring.v3.MetricServiceClient.html) ; 
+import com.google.monitoring.v3.[CreateTimeSeriesRequest](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.CreateTimeSeriesRequest.html) ; 
+import com.google.monitoring.v3.[Point](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.Point.html) ; 
+import com.google.monitoring.v3.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.ProjectName.html) ; 
+import com.google.monitoring.v3.[TimeInterval](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeInterval.html) ; 
+import com.google.monitoring.v3.[TimeSeries](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeSeries.html) ; 
+import com.google.monitoring.v3.[TypedValue](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TypedValue.html) ; 
+import com.google.protobuf.util.[Timestamps](https://berlin.devsitetest.how/java/docs/reference/protobuf/latest/com.google.protobuf.util.Timestamps.html) ; 
 import java.io.IOException ; 
 import java.util.ArrayList ; 
 import java.util.HashMap ; 
@@ -1289,26 +1289,26 @@ quickstart ( projectId );
 public static void quickstart ( String projectId ) throws IOException { 
 // Initialize client that will be used to send requests. This client only needs to be created 
 // once, and can be reused for multiple requests. 
-try ( MetricServiceClient metricServiceClient = MetricServiceClient . create ()) { 
+try ( [ MetricServiceClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.cloud.monitoring.v3.MetricServiceClient.html) metricServiceClient = [ MetricServiceClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.cloud.monitoring.v3.MetricServiceClient.html) . create ()) { 
 
 // Prepares an individual data point 
-TimeInterval interval = 
-TimeInterval . newBuilder () 
-. setEndTime ( Timestamps . fromMillis ( System . currentTimeMillis ())) 
+[ TimeInterval ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeInterval.html) interval = 
+[ TimeInterval ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeInterval.html) . newBuilder () 
+. setEndTime ( [ Timestamps ](https://berlin.devsitetest.how/java/docs/reference/protobuf/latest/com.google.protobuf.util.Timestamps.html) . fromMillis ( System . currentTimeMillis ())) 
 . build (); 
-TypedValue value = TypedValue . newBuilder (). setDoubleValue ( 123.45 ). build (); 
-Point point = Point . newBuilder (). setInterval ( interval ). setValue ( value ). build (); 
+[ TypedValue ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TypedValue.html) value = [ TypedValue ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TypedValue.html) . newBuilder (). setDoubleValue ( 123.45 ). build (); 
+[ Point ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.Point.html) point = [ Point ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.Point.html) . newBuilder (). setInterval ( interval ). setValue ( value ). build (); 
 
 List pointList = new ArrayList <> (); 
 pointList . add ( point ); 
 
-ProjectName name = ProjectName . of ( projectId ); 
+[ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.ProjectName.html) name = [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.ProjectName.html) . of ( projectId ); 
 
 // Prepares the metric descriptor 
 Map , String > metricLabels = new HashMap <> (); 
 metricLabels . put ( "store_id" , "Pittsburg" ); 
-Metric metric = 
-Metric . newBuilder () 
+[ Metric ](https://berlin.devsitetest.how/java/docs/reference/proto-google-common-protos/latest/com.google.api.Metric.html) metric = 
+[ Metric ](https://berlin.devsitetest.how/java/docs/reference/proto-google-common-protos/latest/com.google.api.Metric.html) . newBuilder () 
 . setType ( "custom.googleapis.com/stores/daily_sales" ) 
 . putAllLabels ( metricLabels ) 
 . build (); 
@@ -1316,22 +1316,22 @@ Metric . newBuilder ()
 // Prepares the monitored resource descriptor 
 Map , String > resourceLabels = new HashMap <> (); 
 resourceLabels . put ( "project_id" , projectId ); 
-MonitoredResource resource = 
-MonitoredResource . newBuilder (). setType ( "global" ). putAllLabels ( resourceLabels ). build (); 
+[ MonitoredResource ](https://berlin.devsitetest.how/java/docs/reference/proto-google-common-protos/latest/com.google.api.MonitoredResource.html) resource = 
+[ MonitoredResource ](https://berlin.devsitetest.how/java/docs/reference/proto-google-common-protos/latest/com.google.api.MonitoredResource.html) . newBuilder (). setType ( "global" ). putAllLabels ( resourceLabels ). build (); 
 
 // Prepares the time series request 
-TimeSeries timeSeries = 
-TimeSeries . newBuilder () 
+[ TimeSeries ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeSeries.html) timeSeries = 
+[ TimeSeries ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeSeries.html) . newBuilder () 
 . setMetric ( metric ) 
-. setResource ( resource ) 
-. addAllPoints ( pointList ) 
+. [ setResource ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeSeries.Builder.html#com_google_monitoring_v3_TimeSeries_Builder_setResource_com_google_api_MonitoredResource_) ( resource ) 
+. [ addAllPoints ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.TimeSeries.Builder.html#com_google_monitoring_v3_TimeSeries_Builder_addAllPoints_java_lang_Iterable___extends_com_google_monitoring_v3_Point__) ( pointList ) 
 . build (); 
 List timeSeriesList = new ArrayList <> (); 
 timeSeriesList . add ( timeSeries ); 
 
-CreateTimeSeriesRequest request = 
-CreateTimeSeriesRequest . newBuilder () 
-. setName ( name . toString ()) 
+[ CreateTimeSeriesRequest ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.CreateTimeSeriesRequest.html) request = 
+[ CreateTimeSeriesRequest ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.CreateTimeSeriesRequest.html) . newBuilder () 
+. setName ( name . [ toString ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-monitoring/latest/com.google.monitoring.v3.ProjectName.html#com_google_monitoring_v3_ProjectName_toString__) ()) 
 . addAllTimeSeries ( timeSeriesList ) 
 . build (); 
 
@@ -1410,11 +1410,11 @@ variable to `apis-berlin-build0.goog`.
 
 ```
 // Imports the Google Cloud client library 
-const monitoring = require ( '@google-cloud/monitoring' ); 
+const monitoring = require ( '[@google-cloud/monitoring](https://berlin.devsitetest.how/nodejs/docs/reference/monitoring/latest/overview.html)' ); 
 
 async function quickstart () { 
 // Creates a client 
-const client = new monitoring . MetricServiceClient (); 
+const client = new monitoring . [ MetricServiceClient ](https://berlin.devsitetest.how/nodejs/docs/reference/monitoring/latest/overview.html) (); 
 
 // TODO(developer): Uncomment and set the following variables 
 // const projectId = "PROJECT_ID" 
@@ -1656,15 +1656,15 @@ variable to `apis-berlin-build0.goog`.
 
 
 ```
-from google.cloud import monitoring_v3 
+from google.cloud import [ monitoring_v3 ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest)
 
 import time 
 
-client = monitoring_v3 . MetricServiceClient () 
+client = [ monitoring_v3 ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest) . [ MetricServiceClient ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest/google.cloud.monitoring_v3.services.metric_service.MetricServiceClient.html) () 
 # project_id = 'my-project' # TODO: Update to your project ID. 
 project_name = f "projects/ { project_id } " 
 
-series = monitoring_v3 . TimeSeries () 
+series = [ monitoring_v3 ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest) . [ TimeSeries ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest/google.cloud.monitoring_v3.types.TimeSeries.html) () 
 series . metric . type = "custom.googleapis.com/my_metric" 
 series . metric . labels [ "store_id" ] = "Pittsburgh" 
 series . resource . type = "gce_instance" 
@@ -1673,12 +1673,12 @@ series . resource . labels [ "zone" ] = "us-central1-f"
 now = time . time () 
 seconds = int ( now ) 
 nanos = int (( now - seconds ) * 10 ** 9 ) 
-interval = monitoring_v3 . TimeInterval ( 
+interval = [ monitoring_v3 ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest) . [ TimeInterval ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest/google.cloud.monitoring_v3.types.TimeInterval.html) ( 
 { "end_time" : { "seconds" : seconds , "nanos" : nanos }} 
 ) 
-point = monitoring_v3 . Point ({ "interval" : interval , "value" : { "double_value" : 3.14 }}) 
+point = [ monitoring_v3 ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest) . [ Point ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest/google.cloud.monitoring_v3.types.Point.html) ({ "interval" : interval , "value" : { "double_value" : 3.14 }}) 
 series . points = [ point ] 
-client . create_time_series ( request = { "name" : project_name , "time_series" : [ series ]}) 
+client . [ create_time_series ](https://berlin.devsitetest.how/python/docs/reference/monitoring/latest/google.cloud.monitoring_v3.services.metric_service.MetricServiceClient.html#google_cloud_monitoring_v3_services_metric_service_MetricServiceClient_create_time_series) ( request = { "name" : project_name , "time_series" : [ series ]}) 
 print ( "Successfully wrote time series." ) 
 return True 
 ```
@@ -1758,25 +1758,25 @@ require "google/cloud/monitoring"
 # metric_label = "my-value" 
 
 # Instantiates a client 
-metric_service_client = Google :: Cloud :: Monitoring . metric_service 
+metric_service_client = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Cloud-Monitoring.html) . [ metric_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring/latest/Google-Cloud-Monitoring.html)
 project_path = metric_service_client . project_path project : project_id 
 
-series = Google :: Cloud :: Monitoring :: V3 :: TimeSeries . new 
-series . metric = Google :: Api :: Metric . new type : "custom.googleapis.com/my_metric" , 
+series = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeSeries . new 
+series . [ metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) = Google :: Api :: [ Metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-migration-v2/latest/Google-Api-Metric.html) . new type : "custom.googleapis.com/my_metric" , 
 labels : { "my_key" = > metric_label } 
 
-resource = Google :: Api :: MonitoredResource . new type : "gce_instance" 
+resource = Google :: Api :: [ MonitoredResource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Api-MonitoredResource.html) . new type : "gce_instance" 
 resource . labels [ "project_id" ] = project_id 
 resource . labels [ "instance_id" ] = "1234567890123456789" 
 resource . labels [ "zone" ] = "us-central1-f" 
-series . resource = resource 
+series . [ resource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) = resource 
 
-point = Google :: Cloud :: Monitoring :: V3 :: Point . new 
-point . value = Google :: Cloud :: Monitoring :: V3 :: TypedValue . new double_value : 3 . 14 
+point = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: Point . new 
+point . value = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TypedValue . new double_value : 3 . 14 
 now = Time . now 
-end_time = Google :: Protobuf :: Timestamp . new seconds : now . to_i , nanos : now . nsec 
-point . interval = Google :: Cloud :: Monitoring :: V3 :: TimeInterval . new end_time : end_time 
-series . points point 
+end_time = Google :: Protobuf :: [ Timestamp ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-telco_automation-v1/latest/Google-Protobuf-Timestamp.html) . new seconds : now . to_i , nanos : now . nsec 
+point . interval = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeInterval . new end_time : end_time 
+series . [ points ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) point 
 
 metric_service_client . create_time_series name : project_path , time_series : [ series ] 
 

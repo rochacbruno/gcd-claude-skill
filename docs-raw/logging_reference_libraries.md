@@ -1,7 +1,7 @@
 # Logging client libraries
 
 Source: https://berlin.devsitetest.how/logging/docs/reference/libraries
-Last updated: 2026-07-10
+Last updated: 2026-07-14
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -1211,8 +1211,8 @@ import com.google.cloud.[MonitoredResource](https://berlin.devsitetest.how/java/
 import com.google.cloud.logging.[LogEntry](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) ; 
 import com.google.cloud.logging.[Logging](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Logging.html) ; 
 import com.google.cloud.logging.[LoggingOptions](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LoggingOptions.html) ; 
-import com.google.cloud.logging.[Payload](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Payload.html).StringPayload ; 
-import com.google.cloud.logging.[Severity](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Severity.html) ; 
+import com.google.cloud.logging.[Payload](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apigee-connect/latest/com.google.cloud.apigeeconnect.v1.Payload.html).StringPayload ; 
+import com.google.cloud.logging.[Severity](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apihub/latest/com.google.cloud.apihub.v1.Severity.html) ; 
 import java.util.Collections ; 
 
 /** 
@@ -1236,7 +1236,7 @@ try ( [ Logging ](https://berlin.devsitetest.how/java/docs/reference/google-clou
 
 [ LogEntry ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) entry = 
 [ LogEntry ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) . newBuilder ( StringPayload . of ( textPayload )) 
-. setSeverity ( [ Severity ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Severity.html) . ERROR ) 
+. setSeverity ( [ Severity ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apihub/latest/com.google.cloud.apihub.v1.Severity.html) . ERROR ) 
 . setLogName ( logName ) 
 . setResource ( [ MonitoredResource ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-core/latest/com.google.cloud.MonitoredResource.html) . newBuilder ( "global" ). build ()) 
 . build (); 
@@ -1602,7 +1602,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/logging" 
 
 # Instantiates a client 
-logging = Google :: Cloud :: [ Logging ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging-v2/latest/Google-Cloud-Logging.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
+logging = Google :: Cloud :: [ Logging ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-service_control-v1/latest/Google-Cloud-Logging.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
 
 # Prepares a log entry 
 entry = logging . [ entry ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging-Project.html)
