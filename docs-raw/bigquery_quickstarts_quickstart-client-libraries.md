@@ -1,7 +1,7 @@
 # Query a public dataset with the BigQuery client libraries
 
 Source: https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries
-Last updated: 2026-07-10
+Last updated: 2026-07-15
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -352,10 +352,11 @@ Enable the BigQuery API:
 Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which contains the
-`serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 ```
@@ -2024,7 +2025,7 @@ require "google/cloud/bigquery"
 
 # This uses Application Default Credentials to authenticate. 
 # @see https://cloud.google.com/bigquery/docs/authentication/getting-started 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_transfer-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_exchange-v1beta1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 
 sql = "SELECT " \ 
 "CONCAT('https://stackoverflow.com/questions/', CAST(id as STRING)) as url, view_count " \ 

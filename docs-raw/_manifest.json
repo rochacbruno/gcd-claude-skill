@@ -107,9 +107,9 @@
   "/artifact-registry/docs/quickstarts": {
     "title": "Quickstart: Store Docker container images in Artifact Registry",
     "filename": "artifact-registry_quickstarts.md",
-    "size": 13258,
+    "size": 13399,
     "url": "https://berlin.devsitetest.how/artifact-registry/docs/quickstarts",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/artifact-registry/docs/reference/rest": {
     "title": "Artifact Registry API",
@@ -142,9 +142,9 @@
   "/bigquery/docs/bq-command-line-tool": {
     "title": "Use the bq tool",
     "filename": "bigquery_bq-command-line-tool.md",
-    "size": 9725,
+    "size": 9866,
     "url": "https://berlin.devsitetest.how/bigquery/docs/bq-command-line-tool",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
@@ -156,9 +156,9 @@
   "/bigquery/docs/create-machine-learning-model": {
     "title": "Create an ML model in BigQuery ML by using SQL",
     "filename": "bigquery_create-machine-learning-model.md",
-    "size": 37641,
+    "size": 37782,
     "url": "https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/bigquery/docs/custom-quotas": {
     "title": "Create custom query quotas",
@@ -172,28 +172,28 @@
     "filename": "bigquery_dataframes-quickstart.md",
     "size": 7290,
     "url": "https://berlin.devsitetest.how/bigquery/docs/dataframes-quickstart",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 68600,
+    "size": 68605,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-07-10"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Loading CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139541,
+    "size": 139546,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-07-10"
   },
   "/bigquery/docs/quickstarts/load-data-bq": {
     "title": "Use the bq tool",
     "filename": "bigquery_quickstarts_load-data-bq.md",
-    "size": 9729,
+    "size": 9870,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/load-data-bq",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/bigquery/docs/quickstarts/query-public-dataset-console": {
     "title": "Try BigQuery using the sandbox",
@@ -205,9 +205,9 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39339,
+    "size": 39485,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/bigquery/docs/release-notes": {
     "title": "BigQuery release notes",
@@ -219,7 +219,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160721,
+    "size": 160731,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-07-14"
   },
@@ -242,21 +242,21 @@
     "filename": "compute.md",
     "size": 3282,
     "url": "https://berlin.devsitetest.how/compute/docs",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-14"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
     "filename": "compute_instances_create-start-instance.md",
     "size": 24215,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/create-start-instance",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-14"
   },
   "/compute/docs/instances/ssh": {
     "title": "About SSH connections",
     "filename": "compute_instances_ssh.md",
     "size": 5426,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/ssh",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-14"
   },
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
@@ -270,14 +270,14 @@
     "filename": "compute_release-notes.md",
     "size": 33093,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-07-13"
+    "last_updated": "2026-07-14"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
     "filename": "compute_tpc-differences.md",
     "size": 12972,
     "url": "https://berlin.devsitetest.how/compute/docs/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-14"
   },
   "/dns/docs": {
     "title": "Cloud DNS documentation",
@@ -317,9 +317,9 @@
   "/dns/docs/set-up-dns-records-domain-name": {
     "title": "Quickstart: Set up DNS records for a domain name with Cloud DNS",
     "filename": "dns_set-up-dns-records-domain-name.md",
-    "size": 9508,
+    "size": 9649,
     "url": "https://berlin.devsitetest.how/dns/docs/set-up-dns-records-domain-name",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/dns/docs/tpc-differences": {
     "title": "Cloud DNS in Google Cloud Dedicated versus Google Cloud",
@@ -401,14 +401,14 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13728,
+    "size": 13731,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-07-10"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13751,
+    "size": 13754,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-07-10"
   },
@@ -443,9 +443,9 @@
   "/docs/authentication/rest": {
     "title": "Authenticate with REST",
     "filename": "authentication_rest.md",
-    "size": 16244,
+    "size": 16385,
     "url": "https://berlin.devsitetest.how/docs/authentication/rest",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/docs/authentication/set-up-adc-attached-service-account": {
     "title": "Set up ADC for a resource with an attached service account",
@@ -506,9 +506,9 @@
   "/docs/authentication/use-service-account-impersonation": {
     "title": "Use service account impersonation",
     "filename": "authentication_use-service-account-impersonation.md",
-    "size": 8169,
+    "size": 8310,
     "url": "https://berlin.devsitetest.how/docs/authentication/use-service-account-impersonation",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/docs/compute-area": {
     "title": "Compute",
@@ -569,7 +569,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -823,7 +823,7 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26708,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -842,7 +842,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19111,
+    "size": 19109,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-07-10"
   },
@@ -1108,9 +1108,9 @@
   "/docs/terraform/deploy-flask-web-server": {
     "title": "Deploy a basic Flask web server by using Terraform",
     "filename": "terraform_deploy-flask-web-server.md",
-    "size": 12546,
+    "size": 12687,
     "url": "https://berlin.devsitetest.how/docs/terraform/deploy-flask-web-server",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/docs/terraform/get-started-with-terraform": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
@@ -1173,14 +1173,14 @@
     "filename": "terraform_resource-management_managing-infrastructure-as-code.md",
     "size": 30019,
     "url": "https://berlin.devsitetest.how/docs/terraform/resource-management/managing-infrastructure-as-code",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/docs/terraform/resource-management/store-state": {
     "title": "Store Terraform state in a Cloud Storage bucket",
     "filename": "terraform_resource-management_store-state.md",
-    "size": 11039,
+    "size": 11180,
     "url": "https://berlin.devsitetest.how/docs/terraform/resource-management/store-state",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-15"
   },
   "/docs/terraform/resources": {
     "title": "Resources",
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-16"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

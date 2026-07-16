@@ -1,7 +1,7 @@
 # Authenticate with REST
 
 Source: https://berlin.devsitetest.how/docs/authentication/rest
-Last updated: 2026-07-10
+Last updated: 2026-07-15
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -258,10 +258,11 @@ Enable the Cloud Resource Manager and Identity and Access Management (IAM) APIs:
 Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which contains the
-`serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 ```
