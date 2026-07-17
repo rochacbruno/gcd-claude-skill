@@ -1,7 +1,7 @@
 # Monitor Pub/Sub in Cloud Monitoring
 
 Source: https://berlin.devsitetest.how/pubsub/docs/monitoring
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -847,7 +847,7 @@ the age of the oldest forwarded message in the subscription
 ## Maintain a healthy publisher
 
 The primary goal of a publisher is to persist message data quickly. Monitor this
-performance using[`topic/send_request_count`](/monitoring/api/metrics_gcp_p_z#pubsub/topic/send_request_count),
+performance using [`topic/send_request_count`](/monitoring/api/metrics_gcp_p_z#pubsub/topic/send_request_count),
 grouped by `response_code`. This
 metric gives you an indication of whether Pub/Sub is healthy and
 accepting requests.

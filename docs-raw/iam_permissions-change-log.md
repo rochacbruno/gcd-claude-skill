@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-07-10
+Last updated: 2026-07-15
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -169,6 +169,368 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-07-14
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+Database Migration Service
+| 
+
+
+
+The following permissions have been added to the Database Migration Service Agent role (`roles/datamigration.serviceAgent`):
+
+
+
+`alloydb.backups.create`
+
+`alloydb.backups.get`
+
+`alloydb.backups.list`
+
+`cloudsql.backupRuns.create`
+
+`cloudsql.backupRuns.export`
+
+`cloudsql.backupRuns.get`
+
+`cloudsql.backupRuns.list`
+
+`cloudsql.instances.restoreBackup`
+
+
+
+| 
+|
+
+| 
+
+Managed Service for Apache Spark
+| 
+
+
+
+The following permissions have been added to the Dataproc Service Agent role (`roles/dataproc.serviceAgent`):
+
+
+
+`compute.networks.create`
+
+`compute.subnetworks.create`
+
+
+
+| 
+|
+
+| 
+
+Datastream
+| 
+
+
+
+The following permissions have been added to the Datastream Admin role (`roles/datastream.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Discovery Engine Service Agent role (`roles/discoveryengine.serviceAgent`):
+
+
+
+`aiplatform.endpoints.predict`
+
+
+
+| 
+|
+
+| 
+
+Cluster Director
+| 
+
+
+
+The following permissions have been added to the Cluster Director Service Agent role (`roles/hypercomputecluster.serviceAgent`):
+
+
+
+`container.deployments.get`
+
+`container.deployments.list`
+
+`container.jobs.get`
+
+`container.jobs.list`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions have been added to the Cloud Run Invoker role (`roles/run.invoker`):
+
+
+
+`run.instances.invoke`
+
+
+
+| 
+|
+
+| 
+
+BigQuery sharing
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`analyticshub.queryTemplates.approve`
+
+`analyticshub.queryTemplates.create`
+
+`analyticshub.queryTemplates.delete`
+
+`analyticshub.queryTemplates.get`
+
+`analyticshub.queryTemplates.list`
+
+`analyticshub.queryTemplates.update`
+
+
+
+| 
+|
+
+| 
+
+BigQuery sharing
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`analyticshub.queryTemplates.approve`
+
+`analyticshub.queryTemplates.create`
+
+`analyticshub.queryTemplates.delete`
+
+`analyticshub.queryTemplates.get`
+
+`analyticshub.queryTemplates.list`
+
+`analyticshub.queryTemplates.update`
+
+
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`dataplex.entryGroups.useDescriptionsAspect`
+
+`dataplex.entryGroups.useQueriesAspect`
+
+`dataplex.entryGroups.useSchemaJoinAspect`
+
+`dataplex.entryGroups.useSchemaJoinEntryLink`
+
+
+
+| 
+|
+
+| 
+
+Datastream
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`datastream.connectionProfiles.deriveDestinationSchema`
+
+
+
+| 
+|
+
+| 
+
+Datastream
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`datastream.connectionProfiles.deriveDestinationSchema`
+
+
+
+| 
+|
+
+| 
+
+Datastream
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`datastream.connectionProfiles.deriveDestinationSchema`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`run.instances.create`
+
+`run.instances.delete`
+
+`run.instances.get`
+
+`run.instances.getIamPolicy`
+
+`run.instances.invoke`
+
+`run.instances.list`
+
+`run.instances.setIamPolicy`
+
+`run.instances.start`
+
+`run.instances.stop`
+
+`run.instances.update`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`run.instances.create`
+
+`run.instances.delete`
+
+`run.instances.get`
+
+`run.instances.getIamPolicy`
+
+`run.instances.invoke`
+
+`run.instances.list`
+
+`run.instances.setIamPolicy`
+
+`run.instances.start`
+
+`run.instances.stop`
+
+`run.instances.update`
+
+
+
+| 
+|
 
 
 

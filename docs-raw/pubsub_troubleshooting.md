@@ -1,7 +1,7 @@
 # General troubleshooting
 
 Source: https://berlin.devsitetest.how/pubsub/docs/troubleshooting
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -284,8 +284,8 @@ refine your search.
 
 `protoPayload.methodName="google.iam.v1.SetIamPolicy"`: Use this query
 when you suspect that an issue is caused by incorrect or missing
-permissions. It helps you track who made changes to the IAM policy and
-what those changes were. This can be useful for troubleshooting issues
+permissions. It helps you track who made changes to the IAM policy
+and what those changes were. This can be useful for troubleshooting issues
 like users unable to publish to topics or subscribe to subscriptions,
 applications denied access to Pub/Sub resources, or
 unexpected changes in access control.

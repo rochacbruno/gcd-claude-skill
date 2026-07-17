@@ -1,7 +1,7 @@
 # Access control with Identity and Access Management
 
 Source: https://berlin.devsitetest.how/pubsub/docs/access-control
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -248,7 +248,7 @@ privilege. For more information about custom roles, see
 
 ## Required Pub/Sub permissions
 
-The following sections lists Pub/Sub permissions required for
+The following sections list Pub/Sub permissions required for
 accessing different Pub/Sub resources.
 
 ### Required permissions for topics

@@ -1,7 +1,7 @@
 # Import a key version into Cloud KMS
 
 Source: https://berlin.devsitetest.how/kms/docs/importing-a-key
-Last updated: 2026-07-10
+Last updated: 2026-07-15
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -293,10 +293,11 @@ Enable the required API.
 **Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which
-contains the `serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 
@@ -1461,7 +1462,7 @@ ImportJob : & kmspb . ImportJob {
 ProtectionLevel : kmspb . [ ProtectionLevel_HSM ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/kms/latest/apiv1/kmspb.html#cloud_google_com_go_kms_apiv1_kmspb_ProtectionLevel_PROTECTION_LEVEL_UNSPECIFIED_ProtectionLevel_SOFTWARE_ProtectionLevel_HSM_ProtectionLevel_EXTERNAL_ProtectionLevel_EXTERNAL_VPC_ProtectionLevel_HSM_SINGLE_TENANT) , 
 // See allowed values and their descriptions at 
 // https://cloud.google.com/kms/docs/key-wrapping#import_methods 
-ImportMethod : kmspb . [ ImportJob_RSA_OAEP_3072_SHA1_AES_256 ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/kms/latest/apiv1/kmspb.html#cloud_google_com_go_kms_apiv1_kmspb_ImportJob_IMPORT_METHOD_UNSPECIFIED_ImportJob_RSA_OAEP_3072_SHA1_AES_256_ImportJob_RSA_OAEP_4096_SHA1_AES_256_ImportJob_RSA_OAEP_3072_SHA256_AES_256_ImportJob_RSA_OAEP_4096_SHA256_AES_256_ImportJob_RSA_OAEP_3072_SHA256_ImportJob_RSA_OAEP_4096_SHA256) , 
+ImportMethod : kmspb . [ ImportJob_RSA_OAEP_3072_SHA1_AES_256 ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/kms/latest/apiv1/kmspb.html#cloud_google_com_go_kms_apiv1_kmspb_ImportJob_IMPORT_METHOD_UNSPECIFIED_ImportJob_RSA_OAEP_3072_SHA1_AES_256_ImportJob_RSA_OAEP_4096_SHA1_AES_256_ImportJob_RSA_OAEP_3072_SHA256_AES_256_ImportJob_RSA_OAEP_4096_SHA256_AES_256_ImportJob_RSA_OAEP_3072_SHA256_ImportJob_RSA_OAEP_4096_SHA256_ImportJob_HPKE_KEM_ML_KEM_768_HKDF_SHA256_AES_256_GCM_ImportJob_HPKE_KEM_ML_KEM_1024_HKDF_SHA256_AES_256_GCM_ImportJob_HPKE_KEM_XWING_HKDF_SHA256_AES_256_GCM) , 
 }, 
 } 
 

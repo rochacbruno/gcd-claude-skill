@@ -1,7 +1,7 @@
 # Configure message storage policies
 
 Source: https://berlin.devsitetest.how/pubsub/docs/resource-location-restriction
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -247,10 +247,10 @@ all regions.
 
 - 
 
-Similarly, in absence of a specified message storage policy, the
+Similarly, in the absence of a specified message storage policy, the
 `enforceInTransit` flag is determined based on the effective
-**Enforce in-transit regions for Pub/Sub messages** organization policy. For more
-information about this organization policy, see
+**Enforce in-transit regions for Pub/Sub messages** organization policy. For
+more information about this organization policy, see
 [Organization policy constraints](/resource-manager/docs/organization-policy/org-policy-constraints).
 
 - 
@@ -686,9 +686,7 @@ If there are any discrepancies, the info panel displays three options to
 synchronize the topic's storage policy with your organization policy,
 including:
 
-- 
-
-**Topics allow storage in disallowed locations**.
+- **Topics allow storage in disallowed locations**.
 
 Update to allow storage only where your policy allows.
 
@@ -785,7 +783,7 @@ forwards messages to subscribers from that location.
 
 This mechanism has implications for request latency and overall system
 availability. Because the request traverses more network links, it takes longer
-to complete and has a relatively higher chance of failing.This also means that
+to complete and has a relatively higher chance of failing. This also means that
 the subscribers might see the message somewhat later because it must travel to
 the nearest allowed region before being dispatched. If the policy allows a
 single region but your publisher applications run in multiple regions, the

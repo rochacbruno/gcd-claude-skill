@@ -1,7 +1,7 @@
 # Quickstart: Create a Compute Engine VM instance using Terraform
 
 Source: https://berlin.devsitetest.how/docs/terraform/create-vm-instance
-Last updated: 2026-07-10
+Last updated: 2026-07-15
 
 - 
 
@@ -213,10 +213,11 @@ Enable the Compute Engine API:
 Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which contains the
-`serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 ```

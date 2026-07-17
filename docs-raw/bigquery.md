@@ -1,7 +1,7 @@
 # BigQuery documentation
 
 Source: https://berlin.devsitetest.how/bigquery/docs
-Last updated: 2026-07-10
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -769,7 +769,7 @@ Introduction to vector search
 [
 
 
-What is the ?
+What is the BigQuery Data Transfer Service?
 
 
 ](/bigquery/docs/dts-introduction)
@@ -803,7 +803,7 @@ What is the ?
 [
 
 
-Introduction to 
+Introduction to BigQuery migration
 
 
 ](/bigquery/docs/migration-intro)

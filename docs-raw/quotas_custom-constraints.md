@@ -1,7 +1,7 @@
 # Use custom organization policies
 
 Source: https://berlin.devsitetest.how/docs/quotas/custom-constraints
-Last updated: 2026-07-15
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -406,8 +406,7 @@ To get the permissions that
 you need to manage custom organization policies,
 
 ask your administrator to grant you the
-Organization Policy Administrator (`roles/orgpolicy.policyAdmin`)
-IAM role on the organization resource.
+[Organization Policy Administrator ](/iam/docs/roles-permissions/orgpolicy#orgpolicy.policyAdmin) (`roles/orgpolicy.policyAdmin`) IAM role on the organization resource.
 
 
 

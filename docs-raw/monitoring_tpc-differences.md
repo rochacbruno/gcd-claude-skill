@@ -1,7 +1,7 @@
 # Monitoring in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/monitoring/docs/tpc-differences
-Last updated: 2026-07-10
+Last updated: 2026-07-16
 
 - 
 

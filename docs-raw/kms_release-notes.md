@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ July 16, 2026 ](#July_16_2026)
 - [ February 21, 2025 ](#February_21_2025)
 - [ October 18, 2024 ](#October_18_2024)
 - [ June 14, 2024 ](#June_14_2024)
@@ -191,7 +192,39 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## February 21, 2025 
+## July 16, 2026 
+
+
+Feature 
+
+
+Cloud KMS supports the following post-quantum computing (PQC) signing algorithms
+in General Availability:
+
+- `PQ_SIGN_HASH_SLH_DSA_SHA2_128S_SHA256`
+
+- `PQ_SIGN_ML_DSA_44`
+
+- `PQ_SIGN_ML_DSA_44_EXTERNAL_MU`
+
+- `PQ_SIGN_ML_DSA_65`
+
+- `PQ_SIGN_ML_DSA_65_EXTERNAL_MU`
+
+- `PQ_SIGN_ML_DSA_87`
+
+- `PQ_SIGN_ML_DSA_87_EXTERNAL_MU`
+
+- `PQ_SIGN_SLH_DSA_SHA2_128S`
+
+For more information about supported algorithms, see [PQC signing
+algorithms](/kms/docs/algorithms#pqc_signing_algorithms). For more information
+about PQC signing, see [Post-quantum cryptography (PQC) digital
+signature](/kms/docs/digital-signatures#pqc).
+
+
+
+## February 21, 2025
 
 
 Feature 

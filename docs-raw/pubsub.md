@@ -1,7 +1,7 @@
 # Pub/Sub documentation
 
 Source: https://berlin.devsitetest.how/pubsub/docs
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -143,8 +143,8 @@ Pub/Sub
 
 
 
-Pub/Sub is a fully-managed real-time messaging service that allows you
-to send and receive messages between independent applications.
+Pub/Sub is a fully managed real-time messaging service that lets you
+send and receive messages between independent applications.
 
 
 
@@ -785,7 +785,7 @@ Configure message storage policies
 [
 
 
-Publish message overview 
+Publish message overview
 
 
 ](/pubsub/docs/publish-message-overview)

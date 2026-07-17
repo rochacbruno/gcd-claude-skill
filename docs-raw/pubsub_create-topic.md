@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://berlin.devsitetest.how/pubsub/docs/create-topic
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -389,7 +389,7 @@ ingestion, see the following:
 
 - 
 
-[Create an Azure Event Hubs topic](/pubsub/docs/create-aws-kinesis-import-topic)
+[Create an Azure Event Hubs topic](/pubsub/docs/create-azure-event-hub-import-topic)
 
 - 
 

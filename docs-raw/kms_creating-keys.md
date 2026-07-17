@@ -1,7 +1,7 @@
 # Create a key
 
 Source: https://berlin.devsitetest.how/kms/docs/creating-keys
-Last updated: 2026-07-10
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -1463,7 +1463,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the parent key ring name. 
 key_ring_name = client . [ key_ring_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , location : location_id , key_ring : key_ring_id 
@@ -2487,7 +2487,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the parent key ring name. 
 key_ring_name = client . [ key_ring_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , location : location_id , key_ring : key_ring_id 
@@ -3681,7 +3681,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the parent key ring name. 
 key_ring_name = client . [ key_ring_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , location : location_id , key_ring : key_ring_id 
@@ -4701,7 +4701,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the parent key ring name. 
 key_ring_name = client . [ key_ring_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , location : location_id , key_ring : key_ring_id 
@@ -5094,8 +5094,8 @@ Replace the following:
 - ` LOCATION `: the Cloud KMS location of the key ring.
 
 - ` PUBLIC_KEY_FORMAT `: the format in which you want to export
-the public key. For NIST PQC algorithms
-([Preview](https://berlin.devsitetest.how/products#product-launch-stages)), use `nist-pqc` and for X-Wing use `xwing-raw-bytes`. For all other
+the public key. For NIST PQC algorithms, use `nist-pqc` and
+for X-Wing use `xwing-raw-bytes`. For all other
 keys, you can use `pem`, `der`, or omit this parameter.
 
 - ` OUTPUT_FILE_PATH `: the path where you want to save the
@@ -5857,7 +5857,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the key version name. 
 key_version_name = client . [ crypto_key_version_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , 
@@ -5934,8 +5934,7 @@ Replace the following:
 - ` KEY_VERSION `: the key version number.
 
 - ` PUBLIC_KEY_FORMAT `: the format in which you want to export
-the public key. For PQC algorithms
-([Preview](https://berlin.devsitetest.how/products#product-launch-stages)), use `NIST_PQC`. For all other
+the public key. For PQC algorithms, use `NIST_PQC`. For all other
 keys, you can use `PEM` or omit this parameter.
 
 If the public key format is omitted for a non-PQC key, the output is similar to
@@ -7305,7 +7304,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the parent key ring name. 
 key_ring_name = client . [ key_ring_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , location : location_id , key_ring : key_ring_id 

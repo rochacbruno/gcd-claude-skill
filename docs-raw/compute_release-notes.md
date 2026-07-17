@@ -1,7 +1,7 @@
 # Compute Engine release notes
 
 Source: https://berlin.devsitetest.how/compute/docs/release-notes
-Last updated: 2026-07-14
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ July 16, 2026 ](#July_16_2026)
 - [ July 13, 2026 ](#July_13_2026)
 - [ July 09, 2026 ](#July_09_2026)
 - [ June 26, 2026 ](#June_26_2026)
@@ -247,6 +248,33 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+
+## July 16, 2026
+
+
+Change 
+
+
+**Changed**: The following operations on the boot disk of a Compute Engine instance
+that has a service account attached no longer require the `iam.serviceAccounts.actAs`
+permission. In the following list, the boot disk of such an instance is
+referred to as the *source disk*.
+
+- Creating a standard or archive snapshot of the source disk.
+
+- Cloning the source disk.
+
+- Creating a machine image of the instance.
+
+- Creating a custom image of the source disk.
+
+- Starting asynchronous replication of the source disk to another region.
+
+- Creating a new disk when you create an instance, if the new disk is created
+from an instant snapshot of the source disk.
 
 
 

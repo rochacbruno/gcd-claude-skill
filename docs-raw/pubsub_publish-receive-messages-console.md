@@ -1,7 +1,7 @@
 # Quickstart: Publish and receive messages in Pub/Sub using the Google Cloud Dedicated console
 
 Source: https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-console
-Last updated: 2026-07-10
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -262,10 +262,11 @@ Enable the Pub/Sub API.
 **Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which
-contains the `serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 

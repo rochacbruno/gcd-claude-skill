@@ -1,7 +1,7 @@
 # Pub/Sub in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/pubsub/docs/tpc-differences
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 - 
 
@@ -135,7 +135,7 @@ Guides
 
 Pub/Sub is an asynchronous and scalable messaging service that
 decouples services that produce messages from services that process those
-messages. Pub/Sub allows services to communicate asynchronously,
+messages. Pub/Sub lets services communicate asynchronously,
 often to stream analytics and empower data integration pipelines to ingest and
 distribute data.
 This page describes the differences between the
@@ -337,7 +337,7 @@ and Cloud Run.
 | 
 |
 
-| **Third party integrations**
+| **Third-party integrations**
 | 
 Third-party integrations might not be supported. To determine if a
 third-party integration is supported in Google Cloud Dedicated,

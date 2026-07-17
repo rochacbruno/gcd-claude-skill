@@ -1,7 +1,7 @@
 # Retrieve a public key
 
 Source: https://berlin.devsitetest.how/kms/docs/retrieve-public-key
-Last updated: 2026-07-10
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -157,7 +157,7 @@ information, see the [RFC 7468](https://tools.ietf.org/html/rfc7468), particular
 
 - 
 
-For PQC algorithms standardized by NIST ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)), you can retrieve the
+For PQC algorithms standardized by NIST, you can retrieve the
 public key in the format identified in the NIST PCQ standards for that
 algorithm. For more information, see [FIPS-203](https://csrc.nist.gov/pubs/fips/203/final), [FIPS-204](https://csrc.nist.gov/pubs/fips/204/final), and [FIPS-205](https://csrc.nist.gov/pubs/fips/205/final).
 The PEM and DER formats are only supported for ML-DSA keys.
@@ -489,8 +489,8 @@ Replace the following:
 - ` LOCATION `: the Cloud KMS location of the key ring.
 
 - ` PUBLIC_KEY_FORMAT `: the format in which you want to export
-the public key. For NIST PQC algorithms
-([Preview](https://berlin.devsitetest.how/products#product-launch-stages)), use `nist-pqc` and for X-Wing use `xwing-raw-bytes`. For all other
+the public key. For NIST PQC algorithms, use `nist-pqc` and
+for X-Wing use `xwing-raw-bytes`. For all other
 keys, you can use `pem`, `der`, or omit this parameter.
 
 - ` OUTPUT_FILE_PATH `: the path where you want to save the
@@ -1252,7 +1252,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the key version name. 
 key_version_name = client . [ crypto_key_version_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , 
@@ -1329,8 +1329,7 @@ Replace the following:
 - ` KEY_VERSION `: the key version number.
 
 - ` PUBLIC_KEY_FORMAT `: the format in which you want to export
-the public key. For PQC algorithms
-([Preview](https://berlin.devsitetest.how/products#product-launch-stages)), use `NIST_PQC`. For all other
+the public key. For PQC algorithms, use `NIST_PQC`. For all other
 keys, you can use `PEM` or omit this parameter.
 
 If the public key format is omitted for a non-PQC key, the output is similar to

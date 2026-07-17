@@ -1,7 +1,7 @@
 # Compute Engine documentation
 
 Source: https://berlin.devsitetest.how/compute/docs
-Last updated: 2026-07-14
+Last updated: 2026-07-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -613,7 +613,7 @@ VM instance lifecycle
 [
 
 
-documentation
+Shielded VM documentation
 
 
 ](/compute/shielded-vm/docs)
@@ -647,7 +647,7 @@ documentation
 [
 
 
-documentation
+VM Manager documentation
 
 
 ](/compute/vm-manager/docs)
