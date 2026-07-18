@@ -1,7 +1,7 @@
 # Enable and disable services
 
 Source: https://berlin.devsitetest.how/service-usage/docs/enable-disable
-Last updated: 2026-07-10
+Last updated: 2026-07-15
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -290,10 +290,11 @@ Enable the Service Usage API.
 **Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which
-contains the `serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 
@@ -520,10 +521,11 @@ Enable the Service Usage API:
 Roles required to enable APIs**
 
 
-To enable APIs, you need the Service Usage Admin IAM
-role (`roles/serviceusage.serviceUsageAdmin`), which contains the
-`serviceusage.services.enable` permission. [Learn how to grant
-roles](/iam/docs/granting-changing-revoking-access).
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
 
 
 ```

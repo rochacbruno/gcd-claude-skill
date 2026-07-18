@@ -1,7 +1,7 @@
 # Authenticate with REST
 
 Source: https://berlin.devsitetest.how/docs/authentication/rest
-Last updated: 2026-07-15
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 

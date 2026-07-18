@@ -1,7 +1,7 @@
 # API Keys release notes
 
 Source: https://berlin.devsitetest.how/api-keys/docs/release-notes
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/api-keys/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Best practices for managing API keys
 
 Source: https://berlin.devsitetest.how/docs/authentication/api-keys-best-practices
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
