@@ -1,7 +1,7 @@
 # Quickstart: Publish and receive messages in Pub/Sub using the Google Cloud Dedicated console
 
 Source: https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-console
-Last updated: 2026-07-16
+Last updated: 2026-07-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 

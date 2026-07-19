@@ -88,7 +88,7 @@
     "filename": "api-keys_tpc-differences.md",
     "size": 22058,
     "url": "https://berlin.devsitetest.how/api-keys/docs/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/artifact-registry/docs": {
     "title": "Artifact Registry documentation",
@@ -158,14 +158,14 @@
     "filename": "bigquery_create-machine-learning-model.md",
     "size": 37782,
     "url": "https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/bigquery/docs/custom-quotas": {
     "title": "Create custom query quotas",
     "filename": "bigquery_custom-quotas.md",
     "size": 7958,
     "url": "https://berlin.devsitetest.how/bigquery/docs/custom-quotas",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/bigquery/docs/dataframes-quickstart": {
     "title": "Try BigQuery DataFrames",
@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39463,
+    "size": 39462,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-17"
   },
@@ -284,84 +284,84 @@
     "filename": "dns.md",
     "size": 2604,
     "url": "https://berlin.devsitetest.how/dns/docs",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/overview": {
     "title": "Cloud DNS overview",
     "filename": "dns_overview.md",
     "size": 11108,
     "url": "https://berlin.devsitetest.how/dns/docs/overview",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/policies": {
     "title": "Configure DNS server policies",
     "filename": "dns_policies.md",
     "size": 18145,
     "url": "https://berlin.devsitetest.how/dns/docs/policies",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/records": {
     "title": "Add, update, and delete records",
     "filename": "dns_records.md",
     "size": 24388,
     "url": "https://berlin.devsitetest.how/dns/docs/records",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/release-notes": {
     "title": "Cloud DNS release notes",
     "filename": "dns_release-notes.md",
     "size": 2433,
     "url": "https://berlin.devsitetest.how/dns/docs/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/set-up-dns-records-domain-name": {
     "title": "Quickstart: Set up DNS records for a domain name with Cloud DNS",
     "filename": "dns_set-up-dns-records-domain-name.md",
     "size": 9649,
     "url": "https://berlin.devsitetest.how/dns/docs/set-up-dns-records-domain-name",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/tpc-differences": {
     "title": "Cloud DNS in Google Cloud Dedicated versus Google Cloud",
     "filename": "dns_tpc-differences.md",
     "size": 4139,
     "url": "https://berlin.devsitetest.how/dns/docs/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/dns/docs/zones": {
     "title": "Create, modify, and delete zones",
     "filename": "dns_zones.md",
     "size": 13941,
     "url": "https://berlin.devsitetest.how/dns/docs/zones",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs": {
     "title": "Google Cloud Dedicated Documentation",
     "filename": "index.md",
     "size": 7235,
     "url": "https://berlin.devsitetest.how/docs",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/access-resources": {
     "title": "Access and resource management",
     "filename": "access-resources.md",
     "size": 2402,
     "url": "https://berlin.devsitetest.how/docs/access-resources",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/application-development": {
     "title": "Application development",
     "filename": "application-development.md",
     "size": 3365,
     "url": "https://berlin.devsitetest.how/docs/application-development",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/application-hosting": {
     "title": "Application hosting",
     "filename": "application-hosting.md",
     "size": 1788,
     "url": "https://berlin.devsitetest.how/docs/application-hosting",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/authentication": {
     "title": "Authentication for Google Cloud Dedicated in Germany APIs and services",
@@ -515,35 +515,35 @@
     "filename": "compute-area.md",
     "size": 3025,
     "url": "https://berlin.devsitetest.how/docs/compute-area",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/cross-product-overviews": {
     "title": "Access and resource management",
     "filename": "cross-product-overviews.md",
     "size": 2409,
     "url": "https://berlin.devsitetest.how/docs/cross-product-overviews",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/data": {
     "title": "Data analytics",
     "filename": "data.md",
     "size": 2374,
     "url": "https://berlin.devsitetest.how/docs/data",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/databases": {
     "title": "Databases",
     "filename": "databases.md",
     "size": 1372,
     "url": "https://berlin.devsitetest.how/docs/databases",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/devtools": {
     "title": "Google Cloud Dedicated SDK, languages, frameworks, and tools",
     "filename": "devtools.md",
     "size": 3939,
     "url": "https://berlin.devsitetest.how/docs/devtools",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/discovery": {
     "title": "Overview of the Discovery API",
@@ -569,7 +569,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -585,7 +585,7 @@
     "filename": "discovery_tpc-differences.md",
     "size": 22059,
     "url": "https://berlin.devsitetest.how/docs/discovery/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/discovery/type-format": {
     "title": "Type and format",
@@ -606,49 +606,49 @@
     "filename": "get-started-tpc.md",
     "size": 3602,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/regions-and-zones": {
     "title": "Regions and zones in Google Cloud Dedicated",
     "filename": "get-started-tpc_regions-and-zones.md",
     "size": 3353,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/regions-and-zones",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/set-up-identity-provider": {
     "title": "Set up an identity provider",
     "filename": "get-started-tpc_set-up-identity-provider.md",
     "size": 9259,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/set-up-identity-provider",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/set-up-organization": {
     "title": "Set up your organization",
     "filename": "get-started-tpc_set-up-organization.md",
     "size": 7567,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/set-up-organization/basic-setup": {
     "title": "Basic setup with the Fabric FAST toolkit",
     "filename": "get-started-tpc_set-up-organization_basic-setup.md",
     "size": 13281,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization/basic-setup",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/set-up-organization/enterprise-setup": {
     "title": "Enterprise setup with the Fabric FAST toolkit",
     "filename": "get-started-tpc_set-up-organization_enterprise-setup.md",
     "size": 11310,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization/enterprise-setup",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/set-up-organization/minimal-setup": {
     "title": "Minimal setup",
     "filename": "get-started-tpc_set-up-organization_minimal-setup.md",
     "size": 2778,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization/minimal-setup",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/setup-gcloud": {
     "title": "Set up the Google Cloud CLI for Google Cloud Dedicated",
@@ -662,14 +662,14 @@
     "filename": "get-started-tpc_suggested-tutorials.md",
     "size": 5061,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/suggested-tutorials",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started-tpc/use-client-libraries": {
     "title": "Use client libraries in Google Cloud Dedicated",
     "filename": "get-started-tpc_use-client-libraries.md",
     "size": 3705,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/use-client-libraries",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started/access-apis": {
     "title": "Set up API access",
@@ -683,14 +683,14 @@
     "filename": "get-started_authentication.md",
     "size": 9126,
     "url": "https://berlin.devsitetest.how/docs/get-started/authentication",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started/authorization-access-control": {
     "title": "Authorization and access control",
     "filename": "get-started_authorization-access-control.md",
     "size": 5269,
     "url": "https://berlin.devsitetest.how/docs/get-started/authorization-access-control",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started/developer-tools": {
     "title": "Use developer tools",
@@ -704,91 +704,91 @@
     "filename": "get-started_interact-with-resources.md",
     "size": 10913,
     "url": "https://berlin.devsitetest.how/docs/get-started/interact-with-resources",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started/required-domains": {
     "title": "Allow access to Google Cloud Dedicated console domains",
     "filename": "get-started_required-domains.md",
     "size": 2402,
     "url": "https://berlin.devsitetest.how/docs/get-started/required-domains",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/get-started/tpc-differences": {
     "title": "Key differences between Google Cloud Dedicated and Google Cloud",
     "filename": "get-started_tpc-differences.md",
     "size": 22061,
     "url": "https://berlin.devsitetest.how/docs/get-started/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/iac": {
     "title": "Infrastructure as code",
     "filename": "iac.md",
     "size": 2347,
     "url": "https://berlin.devsitetest.how/docs/iac",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/networking": {
     "title": "Networking technologies",
     "filename": "networking.md",
     "size": 5875,
     "url": "https://berlin.devsitetest.how/docs/networking",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/observability": {
     "title": "Observability and monitoring",
     "filename": "observability.md",
     "size": 2306,
     "url": "https://berlin.devsitetest.how/docs/observability",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/overview/gcd-documentation": {
     "title": "About Google Cloud Dedicated in Germany documentation",
     "filename": "overview_gcd-documentation.md",
     "size": 3957,
     "url": "https://berlin.devsitetest.how/docs/overview/gcd-documentation",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/overview/gcd-support": {
     "title": "Get support",
     "filename": "overview_gcd-support.md",
     "size": 10538,
     "url": "https://berlin.devsitetest.how/docs/overview/gcd-support",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/overview/tpc-billing": {
     "title": "Google Cloud Dedicated billing and pricing",
     "filename": "overview_tpc-billing.md",
     "size": 1399,
     "url": "https://berlin.devsitetest.how/docs/overview/tpc-billing",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/overview/tpc-key-differences": {
     "title": "Key differences between Google Cloud Dedicated and Google Cloud",
     "filename": "overview_tpc-key-differences.md",
     "size": 22062,
     "url": "https://berlin.devsitetest.how/docs/overview/tpc-key-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/overview/tpc-overview": {
     "title": "Google Cloud Dedicated in Germany overview",
     "filename": "overview_tpc-overview.md",
     "size": 9840,
     "url": "https://berlin.devsitetest.how/docs/overview/tpc-overview",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas": {
     "title": "Cloud Quotas documentation",
     "filename": "quotas.md",
     "size": 1881,
     "url": "https://berlin.devsitetest.how/docs/quotas",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/api-overview": {
     "title": "Cloud Quotas API overview",
     "filename": "quotas_api-overview.md",
     "size": 15728,
     "url": "https://berlin.devsitetest.how/docs/quotas/api-overview",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/apis": {
     "title": "APIs and reference",
@@ -802,175 +802,175 @@
     "filename": "quotas_audit-logging.md",
     "size": 12306,
     "url": "https://berlin.devsitetest.how/docs/quotas/audit-logging",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/configure-dimensions": {
     "title": "Configure Cloud Quotas dimensions",
     "filename": "quotas_configure-dimensions.md",
     "size": 9280,
     "url": "https://berlin.devsitetest.how/docs/quotas/configure-dimensions",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/configure-vpc-service-controls": {
     "title": "Configure VPC Service Controls for Cloud Quotas",
     "filename": "quotas_configure-vpc-service-controls.md",
     "size": 3592,
     "url": "https://berlin.devsitetest.how/docs/quotas/configure-vpc-service-controls",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/custom-constraints": {
     "title": "Use custom organization policies",
     "filename": "quotas_custom-constraints.md",
     "size": 26772,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
     "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/gcloud-cli-examples": {
     "title": "Manage quotas using the gcloud beta CLI",
     "filename": "quotas_gcloud-cli-examples.md",
     "size": 23324,
     "url": "https://berlin.devsitetest.how/docs/quotas/gcloud-cli-examples",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19109,
+    "size": 19111,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/implement-common-use-cases": {
     "title": "Implement common use cases",
     "filename": "quotas_implement-common-use-cases.md",
     "size": 23523,
     "url": "https://berlin.devsitetest.how/docs/quotas/implement-common-use-cases",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/known-issues": {
     "title": "Known issues",
     "filename": "quotas_known-issues.md",
     "size": 3795,
     "url": "https://berlin.devsitetest.how/docs/quotas/known-issues",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/monitor": {
     "title": "Set up quota alerts and monitoring",
     "filename": "quotas_monitor.md",
     "size": 9459,
     "url": "https://berlin.devsitetest.how/docs/quotas/monitor",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/overview": {
     "title": "Cloud Quotas overview",
     "filename": "quotas_overview.md",
     "size": 9637,
     "url": "https://berlin.devsitetest.how/docs/quotas/overview",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/permissions": {
     "title": "Quota permissions",
     "filename": "quotas_permissions.md",
     "size": 4569,
     "url": "https://berlin.devsitetest.how/docs/quotas/permissions",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
     "size": 26968,
     "url": "https://berlin.devsitetest.how/docs/quotas/quota-adjuster",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
     "filename": "quotas_quota-project.md",
     "size": 6861,
     "url": "https://berlin.devsitetest.how/docs/quotas/quota-project",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/quotas": {
     "title": "Quotas and system limits",
     "filename": "quotas_quotas.md",
     "size": 3183,
     "url": "https://berlin.devsitetest.how/docs/quotas/quotas",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 134047,
+    "size": 134121,
     "url": "https://berlin.devsitetest.how/docs/quotas/reference/libraries",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/release-notes": {
     "title": "Cloud Quotas release notes",
     "filename": "quotas_release-notes.md",
     "size": 2193,
     "url": "https://berlin.devsitetest.how/docs/quotas/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/set-quota-project": {
     "title": "Set the quota project",
     "filename": "quotas_set-quota-project.md",
     "size": 9929,
     "url": "https://berlin.devsitetest.how/docs/quotas/set-quota-project",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/set-up-quota-alerts": {
     "title": "Set up quota alerts and monitoring",
     "filename": "quotas_set-up-quota-alerts.md",
     "size": 9471,
     "url": "https://berlin.devsitetest.how/docs/quotas/set-up-quota-alerts",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/terminology": {
     "title": "Quota and system limit terminology",
     "filename": "quotas_terminology.md",
     "size": 4104,
     "url": "https://berlin.devsitetest.how/docs/quotas/terminology",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/terraform-support-for-cloud-quotas": {
     "title": "Terraform support for Cloud Quotas",
     "filename": "quotas_terraform-support-for-cloud-quotas.md",
     "size": 3952,
     "url": "https://berlin.devsitetest.how/docs/quotas/terraform-support-for-cloud-quotas",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/tpc-differences": {
     "title": "Cloud Quotas in Google Cloud Dedicated versus Google Cloud",
     "filename": "quotas_tpc-differences.md",
     "size": 3586,
     "url": "https://berlin.devsitetest.how/docs/quotas/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
     "filename": "quotas_troubleshoot.md",
     "size": 7330,
     "url": "https://berlin.devsitetest.how/docs/quotas/troubleshoot",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/view-manage": {
     "title": "View and manage quotas",
     "filename": "quotas_view-manage.md",
     "size": 19095,
     "url": "https://berlin.devsitetest.how/docs/quotas/view-manage",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/quotas/view-ongoing-rollouts": {
     "title": "View ongoing rollouts",
     "filename": "quotas_view-ongoing-rollouts.md",
     "size": 7311,
     "url": "https://berlin.devsitetest.how/docs/quotas/view-ongoing-rollouts",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/security": {
     "title": "Security",
@@ -984,14 +984,14 @@
     "filename": "storage.md",
     "size": 794,
     "url": "https://berlin.devsitetest.how/docs/storage",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform": {
     "title": "Terraform on Google Cloud documentation",
     "filename": "terraform.md",
     "size": 2430,
     "url": "https://berlin.devsitetest.how/docs/terraform",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/api": {
     "title": "Resources",
@@ -1005,182 +1005,182 @@
     "filename": "terraform_authentication.md",
     "size": 9885,
     "url": "https://berlin.devsitetest.how/docs/terraform/authentication",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/basic-commands": {
     "title": "Basic Terraform commands",
     "filename": "terraform_basic-commands.md",
     "size": 4510,
     "url": "https://berlin.devsitetest.how/docs/terraform/basic-commands",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices-for-terraform": {
     "title": "Best practices for general style and structure",
     "filename": "terraform_best-practices-for-terraform.md",
     "size": 12304,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices-for-terraform",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/cross-config-communication": {
     "title": "Best practices for cross-configuration communication",
     "filename": "terraform_best-practices_cross-config-communication.md",
     "size": 2797,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/cross-config-communication",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/dependency-management": {
     "title": "Best practices on dependency management",
     "filename": "terraform_best-practices_dependency-management.md",
     "size": 8434,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/dependency-management",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/general-style-structure": {
     "title": "Best practices for general style and structure",
     "filename": "terraform_best-practices_general-style-structure.md",
     "size": 12314,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/general-style-structure",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/operations": {
     "title": "Best practices for Terraform operations",
     "filename": "terraform_best-practices_operations.md",
     "size": 5355,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/operations",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/reusable-modules": {
     "title": "Best practices for reusable modules",
     "filename": "terraform_best-practices_reusable-modules.md",
     "size": 5945,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/reusable-modules",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/root-modules": {
     "title": "Best practices for root modules",
     "filename": "terraform_best-practices_root-modules.md",
     "size": 8234,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/root-modules",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/security": {
     "title": "Best practices for security",
     "filename": "terraform_best-practices_security.md",
     "size": 4924,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/security",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/testing": {
     "title": "Best practices for testing",
     "filename": "terraform_best-practices_testing.md",
     "size": 7198,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/testing",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/version-control": {
     "title": "Best practices for version control",
     "filename": "terraform_best-practices_version-control.md",
     "size": 6194,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/version-control",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/best-practices/working-with-resources": {
     "title": "Best practices when working with Google Cloud Dedicated resources",
     "filename": "terraform_best-practices_working-with-resources.md",
     "size": 3733,
     "url": "https://berlin.devsitetest.how/docs/terraform/best-practices/working-with-resources",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/blueprints/terraform-blueprints": {
     "title": "Terraform blueprints and modules for Google Cloud Dedicated",
     "filename": "terraform_blueprints_terraform-blueprints.md",
     "size": 17318,
     "url": "https://berlin.devsitetest.how/docs/terraform/blueprints/terraform-blueprints",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/create-vm-instance": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_create-vm-instance.md",
     "size": 8309,
     "url": "https://berlin.devsitetest.how/docs/terraform/create-vm-instance",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/deploy-flask-web-server": {
     "title": "Deploy a basic Flask web server by using Terraform",
     "filename": "terraform_deploy-flask-web-server.md",
     "size": 12687,
     "url": "https://berlin.devsitetest.how/docs/terraform/deploy-flask-web-server",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/get-started-with-terraform": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_get-started-with-terraform.md",
     "size": 8317,
     "url": "https://berlin.devsitetest.how/docs/terraform/get-started-with-terraform",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/getting-support": {
     "title": "Get support for Terraform issues",
     "filename": "terraform_getting-support.md",
     "size": 4355,
     "url": "https://berlin.devsitetest.how/docs/terraform/getting-support",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/iac-overview": {
     "title": "Infrastructure as Code on Google Cloud Dedicated",
     "filename": "terraform_iac-overview.md",
     "size": 7536,
     "url": "https://berlin.devsitetest.how/docs/terraform/iac-overview",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4465,
+    "size": 4466,
     "url": "https://berlin.devsitetest.how/docs/terraform/install-configure-terraform",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/maturity": {
     "title": "Terraform on Google Cloud Dedicated maturity model",
     "filename": "terraform_maturity.md",
     "size": 9573,
     "url": "https://berlin.devsitetest.how/docs/terraform/maturity",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/release-notes": {
     "title": "Terraform on Google Cloud release notes",
     "filename": "terraform_release-notes.md",
     "size": 2291,
     "url": "https://berlin.devsitetest.how/docs/terraform/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/resource-management/export": {
     "title": "Export your Google Cloud Dedicated in Germany resources to Terraform format",
     "filename": "terraform_resource-management_export.md",
     "size": 9469,
     "url": "https://berlin.devsitetest.how/docs/terraform/resource-management/export",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/resource-management/import": {
     "title": "Import your Google Cloud Dedicated in Germany resources into Terraform state",
     "filename": "terraform_resource-management_import.md",
     "size": 13134,
     "url": "https://berlin.devsitetest.how/docs/terraform/resource-management/import",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/resource-management/managing-infrastructure-as-code": {
     "title": "Managing infrastructure as code with Terraform, Cloud Build, and GitOps",
     "filename": "terraform_resource-management_managing-infrastructure-as-code.md",
     "size": 30019,
     "url": "https://berlin.devsitetest.how/docs/terraform/resource-management/managing-infrastructure-as-code",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/resource-management/store-state": {
     "title": "Store Terraform state in a Cloud Storage bucket",
     "filename": "terraform_resource-management_store-state.md",
     "size": 11180,
     "url": "https://berlin.devsitetest.how/docs/terraform/resource-management/store-state",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/resources": {
     "title": "Resources",
@@ -1194,28 +1194,28 @@
     "filename": "terraform_terraform-overview.md",
     "size": 6015,
     "url": "https://berlin.devsitetest.how/docs/terraform/terraform-overview",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/tpc-differences": {
     "title": "Terraform in Google Cloud Dedicated versus Google Cloud",
     "filename": "terraform_tpc-differences.md",
     "size": 4139,
     "url": "https://berlin.devsitetest.how/docs/terraform/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/terraform/understanding-apis-and-terraform": {
     "title": "Understanding Google Cloud Dedicated in Germany APIs and Terraform",
     "filename": "terraform_understanding-apis-and-terraform.md",
     "size": 7603,
     "url": "https://berlin.devsitetest.how/docs/terraform/understanding-apis-and-terraform",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/docs/tpc-differences": {
     "title": "Key differences between Google Cloud Dedicated and Google Cloud",
     "filename": "tpc-differences.md",
     "size": 22049,
     "url": "https://berlin.devsitetest.how/docs/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/iam/docs": {
     "title": "Identity and Access Management documentation",
@@ -1327,28 +1327,28 @@
     "filename": "kms.md",
     "size": 3585,
     "url": "https://berlin.devsitetest.how/kms/docs",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
     "size": 165957,
     "url": "https://berlin.devsitetest.how/kms/docs/creating-keys",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
     "size": 38286,
     "url": "https://berlin.devsitetest.how/kms/docs/destroy-restore",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/kms/docs/importing-a-key": {
     "title": "Import a key version into Cloud KMS",
     "filename": "kms_importing-a-key.md",
     "size": 95053,
     "url": "https://berlin.devsitetest.how/kms/docs/importing-a-key",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-17"
   },
   "/kms/docs/reference/rest": {
     "title": "Cloud Key Management Service (KMS) API",
@@ -1362,63 +1362,63 @@
     "filename": "kms_release-notes.md",
     "size": 4409,
     "url": "https://berlin.devsitetest.how/kms/docs/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
     "size": 22562,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Google Cloud Dedicated versus Google Cloud",
     "filename": "kms_tpc-differences.md",
     "size": 5644,
     "url": "https://berlin.devsitetest.how/kms/docs/tpc-differences",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs": {
     "title": "Google Kubernetes Engine documentation",
     "filename": "kubernetes-engine.md",
     "size": 3756,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
     "size": 7043,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
     "size": 8189,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
     "filename": "kubernetes-engine_how-to_cluster-access-for-kubectl.md",
     "size": 14836,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/cluster-access-for-kubectl",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/how-to/workload-identity": {
     "title": "Authenticate to Google Cloud Dedicated APIs from GKE workloads",
     "filename": "kubernetes-engine_how-to_workload-identity.md",
     "size": 27959,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/workload-identity",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/quickstarts/create-cluster": {
     "title": "Quickstart: Create a cluster and deploy a workload",
     "filename": "kubernetes-engine_quickstarts_create-cluster.md",
     "size": 9796,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/quickstarts/create-cluster",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
@@ -1432,42 +1432,42 @@
     "filename": "kubernetes-engine_release-notes.md",
     "size": 1280959,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
     "size": 13212,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs": {
     "title": "Cloud Logging documentation",
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21409,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27685,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28189,
+    "size": 28215,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-07-14"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1481,63 +1481,63 @@
     "filename": "logging_release-notes.md",
     "size": 3355,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze logs",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 44016,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39435,
+    "size": 39367,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/monitoring/docs/release-notes": {
     "title": "Monitoring release notes",
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/pubsub/docs": {
     "title": "Pub/Sub documentation",
@@ -1572,7 +1572,7 @@
     "filename": "pubsub_publish-receive-messages-console.md",
     "size": 8353,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-console",
-    "last_updated": "2026-07-16"
+    "last_updated": "2026-07-17"
   },
   "/pubsub/docs/publish-receive-messages-gcloud": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub by using the gcloud CLI",
@@ -1593,7 +1593,7 @@
     "filename": "pubsub_release-notes.md",
     "size": 3414,
     "url": "https://berlin.devsitetest.how/pubsub/docs/release-notes",
-    "last_updated": "2026-07-10"
+    "last_updated": "2026-07-17"
   },
   "/pubsub/docs/resource-location-restriction": {
     "title": "Configure message storage policies",
@@ -1768,7 +1768,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-18"
+    "last_updated": "2026-07-19"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

@@ -1,7 +1,7 @@
 # Logging in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/logging/docs/tpc-differences
-Last updated: 2026-07-16
+Last updated: 2026-07-17
 
 - 
 

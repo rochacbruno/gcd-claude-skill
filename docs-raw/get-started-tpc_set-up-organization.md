@@ -1,7 +1,7 @@
 # Set up your organization
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/set-up-organization
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 - 
 

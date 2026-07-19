@@ -1,7 +1,7 @@
 # Get support
 
 Source: https://berlin.devsitetest.how/docs/overview/gcd-support
-Last updated: 2026-07-10
+Last updated: 2026-07-17
 
 - 
 
