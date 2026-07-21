@@ -1,7 +1,7 @@
 # Quickstart: Set up Service Usage for a development environment
 
 Source: https://berlin.devsitetest.how/service-usage/docs/set-up-development-environment
-Last updated: 2026-07-17
+Last updated: 2026-07-20
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -126,7 +126,7 @@ Guides
 
 
 
-- On this page 
+- On this page ** 
 - [ Set up to call the API directly ](#api)
 
 - [ Enable the Service Usage API ](#enable)
@@ -173,42 +173,133 @@ Service Usage API.
 
 ### Enable the Service Usage API
 
-To use the Service Usage API, you must first enable it in the
-Google Cloud Dedicated project you want to use it for:
+To use the Service Usage API, you must first enable it in your
+Google Cloud Dedicated project.
 
-- Go to the Google Cloud Dedicated console **API Library** page.
 
-[Go to the API Library page](https://console.cloud.berlin-build0.goog/project/_/apis/library/serviceusage.googleapis.com) 
 
-- Select the Google Cloud Dedicated project that you want to use to
-access the service.
 
-- On the API Library page, click **Enable**.
 
-- Ensure that your user account has the [Service Usage Admin](https://berlin.devsitetest.how/iam/docs/roles-permissions/serviceusage) role.
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+In the Google Cloud Dedicated console, on the project selector page,
+select or create a Google Cloud Dedicated project.
+
+
+
+
+Roles required to select or create a project**
+
+
+
+
+
+- 
+**Select a project**: Selecting a project doesn't require a specific
+IAM role—you can select any project that you've been
+granted a role on.
+
+
+- 
+**Create a project**: To create a project, you need the Project Creator role
+(`roles/resourcemanager.projectCreator`), which contains the
+`resourcemanager.projects.create` permission. [Learn how to grant
+roles](/iam/docs/granting-changing-revoking-access).
+
+
+
+
+
+
+
+
+
+
+
+
+[Go to project selector](https://console.cloud.berlin-build0.goog/projectselector2/home/dashboard)
+
+
+
+
+
+
+
+
+
+
+
+
+
+- 
+
+
+
+
+Enable the Service Usage API.
+
+
+
+
+
+
+**Roles required to enable APIs**
+
+
+To enable APIs, you need the `serviceusage.services.enable` permission. If you
+created the project, then you likely already have this permission through the
+Owner role (`roles/owner`). Otherwise, you can get this permission through the
+Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
+[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
+
+
+
+[Enable the API](https://console.cloud.berlin-build0.goog/apis/enableflow?apiid=serviceusage.googleapis.com)
+
+
+
+
+
+
+
+
+
+
+
+
+- Ensure that your user account has been granted the
+[Service Usage Admin](/iam/docs/roles-permissions/serviceusage) role.
 
 ### Test with curl
 
 - 
 
-Define a convenient shell alias for calling Google REST APIs:
-
-
-```
-alias gcurl='curl -H "Authorization: Bearer $(gcloud auth print-access-token)" -H "Content-Type: application/json"'
-```
-
-
-- 
-
 Set an environment variable `PROJECT_ID` with the identifier of your
-project. This can be the project id or number:
+project:
 
 
 ```
-PROJECT_ID="my-project-id"
+PROJECT_ID= PROJECT_ID 
 ```
 
+
+Replace PROJECT_ID with your Google Cloud Dedicated project ID or
+number.
 
 - 
 
@@ -226,7 +317,7 @@ List the enabled APIs and services in this project:
 
 
 ```
-gcurl "https://serviceusage.googleapis.com/v1/projects/ ${ PROJECT_ID } /services?filter=state:ENABLED&fields=services.config.title,services.config.name"
+curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/ ${ PROJECT_ID } /services?filter=state:ENABLED&fields=services.config.title,services.config.name"
 ```
 
 
@@ -254,5 +345,5 @@ If you see output like this, then your setup is successful:
 
 ## Next steps
 
-Follow [Listing Services](/service-usage/docs/list-services) to list the APIs
-and services that are enabled or available in your Google Cloud Dedicated projects.
+To list the APIs and services that are enabled or available in your
+Google Cloud Dedicated projects, see [List services](/service-usage/docs/list-services).

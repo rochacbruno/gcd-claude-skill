@@ -1774,7 +1774,7 @@ series . [ resource ](https://berlin.devsitetest.how/ruby/docs/reference/google-
 point = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: Point . new 
 point . value = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TypedValue . new double_value : 3 . 14 
 now = Time . now 
-end_time = Google :: Protobuf :: [ Timestamp ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-talent-v4beta1/latest/Google-Protobuf-Timestamp.html) . new seconds : now . to_i , nanos : now . nsec 
+end_time = Google :: Protobuf :: [ Timestamp ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-vision-v1p3beta1/latest/Google-Protobuf-Timestamp.html) . new seconds : now . to_i , nanos : now . nsec 
 point . interval = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeInterval . new end_time : end_time 
 series . [ points ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) point 
 

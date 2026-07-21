@@ -1,7 +1,7 @@
 # List services
 
 Source: https://berlin.devsitetest.how/service-usage/docs/list-services
-Last updated: 2026-07-17
+Last updated: 2026-07-20
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -307,7 +307,7 @@ command:
 
 
 ```
-gcurl "https://serviceusage.googleapis.com/v1/projects/${PROJECT_NUMBER}/services?filter=state:ENABLED" 
+curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/${PROJECT_NUMBER}/services?filter=state:ENABLED" 
 ```
 
 
@@ -396,7 +396,7 @@ To list the available APIs and services in your project, run the following comma
 
 
 ```
-gcurl "https://serviceusage.googleapis.com/v1/projects/${PROJECT_NUMBER}/services" 
+curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/${PROJECT_NUMBER}/services" 
 ```
 
 

@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ July 20, 2026 ](#July_20_2026)
 - [ June 17, 2026 ](#June_17_2026)
 - [ May 28, 2026 ](#May_28_2026)
 - [ April 20, 2026 ](#April_20_2026)
@@ -214,7 +215,19 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## June 17, 2026 
+## July 20, 2026 
+
+
+Feature 
+
+
+Object Lifecycle Management conditions for
+[`sizeAboveBytes` and `sizeBelowBytes`](/storage/docs/lifecycle#size-above-below-bytes)
+let you define a minimum and maximum size threshold for lifecycle actions.
+
+
+
+## June 17, 2026
 
 
 Feature 
