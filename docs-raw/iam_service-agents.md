@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-07-17
+Last updated: 2026-07-21
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1912,7 +1912,18 @@ None
 
 | 
 
-None
+
+
+[Business AI Code Service Agent](/iam/docs/roles-permissions/businessaicode#businessaicode.serviceAgent)
+
+(`roles/businessaicode.serviceAgent`)
+
+
+
+
+Granted on the project.
+
+
 | 
 |
 
@@ -4014,6 +4025,22 @@ Granted on the project.
 Granted on the project.
 
 
+| 
+|
+
+| 
+
+
+#### Data Lineage Service Agent
+
+[Primary service agent](/iam/docs/service-account-types#primary) for `datalineage.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-datalineage.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
 | 
 |
 

@@ -1,7 +1,7 @@
 # Cloud Storage documentation
 
 Source: https://berlin.devsitetest.how/storage/docs
-Last updated: 2026-07-17
+Last updated: 2026-07-21
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 

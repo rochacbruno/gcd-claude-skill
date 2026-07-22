@@ -448,7 +448,9 @@ add the following to your dependencies:
 
 
 ```
-implementation ' com . google . cloud : google - cloud - monitoring : 3.95.0 ' 
+implementation platform ( ' com . google . cloud : libraries - bom : 26.83.0 ' ) 
+
+implementation ' com . google . cloud : google - cloud - monitoring ' 
 ```
 
 
@@ -1758,24 +1760,24 @@ require "google/cloud/monitoring"
 # metric_label = "my-value" 
 
 # Instantiates a client 
-metric_service_client = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) . [ metric_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring/latest/Google-Cloud-Monitoring.html)
+metric_service_client = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-metrics_scope-v1/latest/Google-Cloud-Monitoring.html) . [ metric_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring/latest/Google-Cloud-Monitoring.html)
 project_path = metric_service_client . project_path project : project_id 
 
-series = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeSeries . new 
-series . [ metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) = Google :: Api :: [ Metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Api-Metric.html) . new type : "custom.googleapis.com/my_metric" , 
+series = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-metrics_scope-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeSeries . new 
+series . [ metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) = Google :: Api :: [ Metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-migration-v2/latest/Google-Api-Metric.html) . new type : "custom.googleapis.com/my_metric" , 
 labels : { "my_key" = > metric_label } 
 
-resource = Google :: Api :: [ MonitoredResource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Api-MonitoredResource.html) . new type : "gce_instance" 
+resource = Google :: Api :: [ MonitoredResource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging-v2/latest/Google-Api-MonitoredResource.html) . new type : "gce_instance" 
 resource . labels [ "project_id" ] = project_id 
 resource . labels [ "instance_id" ] = "1234567890123456789" 
 resource . labels [ "zone" ] = "us-central1-f" 
 series . [ resource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) = resource 
 
-point = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: Point . new 
-point . value = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TypedValue . new double_value : 3 . 14 
+point = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-metrics_scope-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: Point . new 
+point . value = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-metrics_scope-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TypedValue . new double_value : 3 . 14 
 now = Time . now 
-end_time = Google :: Protobuf :: [ Timestamp ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-vision-v1p3beta1/latest/Google-Protobuf-Timestamp.html) . new seconds : now . to_i , nanos : now . nsec 
-point . interval = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeInterval . new end_time : end_time 
+end_time = Google :: Protobuf :: [ Timestamp ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-parallelstore-v1/latest/Google-Protobuf-Timestamp.html) . new seconds : now . to_i , nanos : now . nsec 
+point . interval = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-metrics_scope-v1/latest/Google-Cloud-Monitoring.html) :: [ V3 ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3.html) :: TimeInterval . new end_time : end_time 
 series . [ points ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) point 
 
 metric_service_client . create_time_series name : project_path , time_series : [ series ] 

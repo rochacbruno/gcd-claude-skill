@@ -1,7 +1,7 @@
 # Set up the Google Cloud CLI for Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud
-Last updated: 2026-07-17
+Last updated: 2026-07-21
 
 - 
 
@@ -170,8 +170,8 @@ Linux 64-bit
 (x86_64) 
 | 
 [google-cloud-cli-linux-x86_64.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86_64.tar.gz) | 
-88.3 MB | 
-a9561d76ee0fcbceff4caa8dc84376a5b1586d1bd25cc7f89f29fdb2a4e92ed4 | 
+88.5 MB | 
+1c478abfe0fbe256b8ecaba2faeff154e44c308064b1c69d9ec15b879a4944bd | 
 |
 
 | 
@@ -180,8 +180,8 @@ Linux 64-bit
 (Arm) 
 | 
 [google-cloud-cli-linux-arm.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-arm.tar.gz) | 
-61.1 MB | 
-8bf879c65b2ca542150943e17b74ea41a006e900cb23283831476eeb4ced4544 | 
+61.3 MB | 
+ef8ded3afd45c89bc3900e32579bddfa406b44f7837d993adac417f00b41aa8f | 
 |
 
 | 
@@ -190,8 +190,8 @@ Linux 32-bit
 (x86) 
 | 
 [google-cloud-cli-linux-x86.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86.tar.gz) | 
-61.2 MB | 
-1f0f69ad802e3e945745fa2976e3753d5055bebc71cc8d100efd12d5e10af977 | 
+61.4 MB | 
+52164ff332756c784df60ffcca7f6fd89c5465431b2019cbcd117631b76898c2 | 
 |
 
 
@@ -308,9 +308,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86_64.tar.gz)
 
 | 
-61.3 MB | 
+61.5 MB | 
 
-ad36a0750439eeaf15d8c2fb16720d4874a1713539de08271a3d1db9df6c1634 
+c755c6ed2deb167c7d7a96909739e8faed855b728f3496e7e57d139243699b0c 
 | 
 |
 
@@ -328,9 +328,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-arm.tar.gz)
 
 | 
-61.2 MB | 
+61.4 MB | 
 
-dd88182311d3936c2b6fc7cf315db82d56e2a98c7f4b2d89a12c74b897eb6ff0 
+99b96b1f78ed4e7e925a1f6f1b55191e3f77cdc811ba0f907c62c19fc58caa10 
 | 
 |
 
@@ -348,9 +348,9 @@ macOS 32-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86.tar.gz)
 
 | 
-59.6 MB | 
+59.9 MB | 
 
-33a8cc483ecbbb87697ae6b6094763229697dc356d67cd06dec45b6cc58e417d 
+dd1f6d136d27fde99ff1eb92d37e09985b2e2c7547bf93556e1c121c68310524 
 | 
 |
 

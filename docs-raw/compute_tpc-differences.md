@@ -1,7 +1,7 @@
 # Compute Engine in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/compute/docs/tpc-differences
-Last updated: 2026-07-17
+Last updated: 2026-07-21
 
 - 
 
@@ -178,7 +178,7 @@ Some notable differences include the following:
 
 - 
 
-Only three machine type series are available in
+Only four machine series are available in
 Google Cloud Dedicated
 
 
@@ -225,7 +225,7 @@ Google Cloud Dedicated.
 
 
 
-Only the following machine types are available in
+Only the following machine series and machine types are available in
 Google Cloud Dedicated:
 
 
@@ -240,6 +240,25 @@ machine types with up to 128 vCPUs.
 
 - [A3](/compute/docs/accelerator-optimized-machines#a3-vms)
 Edge machine type: `a3-edgegpu-8g-nolssd`
+
+- 
+
+[A3](/compute/docs/accelerator-optimized-machines#a3-vms)
+High machine types:
+
+
+
+
+- `a3-highgpu-1g-nolssd`
+
+- `a3-highgpu-2g-nolssd`
+
+- `a3-highgpu-4g-nolssd`
+
+- `a3-highgpu-8g-nolssd`
+
+
+
 
 
 
@@ -259,10 +278,12 @@ Google Cloud Dedicated:
 
 - [Virtual machine (VM) instances](/compute/docs/instances)
 
-- [Managed and unmanaged instance
-groups](/compute/docs/instance-groups)
+
+- [Managed and unmanaged
+instance groups](/compute/docs/instance-groups)
 
 - [Sole tenant nodes](/compute/docs/nodes/sole-tenant-nodes)
+
 
 
 
@@ -291,18 +312,49 @@ Google Cloud Dedicated:
 
 
 
-- NVIDIA H100 GPUs are available with the
-[A3 Edge machine type](/compute/docs/gpus#h100-gpus), with
-the following differences:
+- NVIDIA H100 GPUs (`nvidia-h100-80gb`) are available with
+the [A3 Edge machine type](/compute/docs/gpus#h100-gpus),
+with the following differences:
 
 
 
-- Machine type: `a3-edgegpu-8g-nolssd`
+- Supported machine type: `a3-edgegpu-8g-nolssd`
 
 - Attached Local SSD (Gib): 0. Local SSD isn't supported in
 Google Cloud Dedicated
 
 - Maximum network bandwidth (Gbps): 800
+
+
+
+
+- NVIDIA H100 GPUs (`nvidia-h100-80gb`) are available with
+the [A3 High machine type](/compute/docs/gpus#h100-gpus),
+with the following differences:
+
+
+
+- 
+
+Supported machine types:
+
+
+
+
+- `a3-highgpu-1g-nolssd`
+
+- `a3-highgpu-2g-nolssd`
+
+- `a3-highgpu-4g-nolssd`
+
+- `a3-highgpu-8g-nolssd`
+
+
+
+
+- Attached Local SSD (Gib): 0. Local SSD isn't supported in
+Google Cloud Dedicated
+
 
 
 
@@ -731,8 +783,9 @@ If you need large amounts of memory, we recommend that you use M3.
 - 
 
 
-If you need to use GPUs, we recommend that you use A3 Edge. Consider
-doing CPU inferencing if A3 Edge is too large for your workload.
+If you need to use GPUs to accelerate your computations, we
+recommend that you use A3 High or A3 Edge. Consider doing CPU
+inferencing if A3 High or A3 Edge is too large for your workload.
 
 
 
