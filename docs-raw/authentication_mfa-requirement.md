@@ -1,7 +1,7 @@
 # 2-step verification requirement for Google Cloud Dedicated in Germany
 
 Source: https://berlin.devsitetest.how/docs/authentication/mfa-requirement
-Last updated: 2026-07-21
+Last updated: 2026-07-22
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -66,9 +66,9 @@ Documentation
 
 [
 
-Application development
+Developer tools
 
-](https://berlin.devsitetest.how/docs/application-development)
+](https://berlin.devsitetest.how/docs/costs-usage)
 
 
 
@@ -149,8 +149,8 @@ Guides
 
 
 - On this page 
-- [ Timelines for 2SV enforcement ](#timelines)
-- [ Scope of 2SV enforcement ](#scope)
+- [ Interfaces that require 2SV ](#scope)
+- [ Timelines for 2SV requirement ](#timelines)
 - [ Enable 2SV for Google Accounts ](#enable-google)
 
 - [ Additional factors for Google Accounts ](#additional-factors)
@@ -158,6 +158,15 @@ Guides
 - [ Enable 2SV in Google Workspace ](#enable-workspace)
 - [ Enable 2SV for third-party identity providers ](#enable-idp)
 - [ Recover account access if a factor is lost or stolen ](#recover)
+- [ Monitor 2SV conformance ](#monitor_2sv_conformance)
+
+- [ Understand conformance log entries ](#understand-conformance-log)
+
+- [ Cloud Identity: extend the deadline for the 2SV requirement ](#extend)
+- [ Cloud Identity: opt out of the 2SV requirement ](#opt-out)
+
+- [ Opt back in to 2SV ](#opt-in)
+
 - 
 
 
@@ -189,23 +198,67 @@ your account by opening the **Security** tab of your
 **How you sign in to Google** section.
 
 If you're using a third-party identity provider (IdP) to manage single sign-on
-(SSO) in to Google Cloud Dedicated, you can use the 2SV provided by that IdP to
+(SSO) into Google Cloud Dedicated, you can use the 2SV provided by that IdP to
 comply with Google Cloud Dedicated's 2SV requirement.
 
 If you have questions that aren't answered in this document, contact
 [Cloud Customer Care](https://berlin.devsitetest.how/support-hub).
 
-## Timelines for 2SV enforcement
+## Interfaces that require 2SV
 
-The timeline for 2SV enforcement for Google Cloud Dedicated depends on your account
-type, as shown in the following table.
+When 2SV is required for specific account types in your organization, those
+accounts must have 2SV enabled to access the following Google Cloud Dedicated in Germany interfaces:
+
+- 
+
+The [Google Cloud Dedicated console](/cloud-console)
+
+- 
+
+The [Firebase console](https://console.firebase.google.com/)
+
+User accounts that don't have 2SV enabled are prompted to set it up before they
+can proceed to these interfaces.
+
+Access to the following interfaces and services is **not** affected by the
+Google Cloud Dedicated 2SV requirement:
+
+- 
+
+Google Workspace, including Gmail, Google Drive, Google Sheets,
+and Google Slides. However, Google Workspace has a separate 2SV
+requirement. Contact
+[your Google Workspace administrator](https://support.google.com/a/answer/6208960)
+for more information.
+
+- 
+
+YouTube.
+
+Your applications and workloads running on Google Cloud Dedicated, including
+applications secured by Identity-Aware Proxy (IAP), aren't affected by the 2SV
+requirement. However, your developers won't be able to use the
+Google Cloud Dedicated console to manage those applications. In other words, your
+control plane is affected by the 2SV requirement, but not your data plane.
+
+Other Google Cloud Dedicated in Germany interfaces like the gcloud CLI don't have a 2SV
+requirement. However, after a user account enables 2SV, 2SV becomes part of the
+account's regular sign-in flow. For example, if you enable 2SV for your account
+and then
+[authenticate for the gcloud CLI](/sdk/docs/authenticate#user-accounts),
+you are prompted for your second factor as part of the sign-in process.
+
+## Timelines for 2SV requirement
+
+When you need to enable 2SV for your user account in Google Cloud Dedicated in Germany depends on
+your account type, as shown in the following table.
 
 
 
 | 
 Account type | 
 Description | 
-Enforcement start date | 
+Requirement start date | 
 |
 
 | 
@@ -224,7 +277,7 @@ Enterprise Cloud Identity accounts (not using SSO) |
 User accounts with usernames and passwords created and managed by your
 Google Workspace administrator in Cloud Identity.
 | 
-On or after September 15, 2026 | 
+On or after October 20, 2026 | 
 |
 
 | 
@@ -250,55 +303,17 @@ On or after April 28, 2025 |
 
 
 If you don't have 2SV enabled, an email reminder is sent at least 90 days before
-2SV enforcement. The Google Cloud Dedicated console also begins displaying reminders 90
-days before 2SV is enforced.
+the 2SV requirement starts. The Google Cloud Dedicated console also begins displaying
+reminders 90 days before the 2SV requirement starts.
 
 For resellers and their users, the Google Cloud Dedicated console displays reminders to
-enable 2SV at least 60 days before, and leading up to 2SV enforcement.
-Similarly, an email reminder is sent at least 60 days before 2SV enforcement.
+enable 2SV at least 60 days before, and leading up to the 2SV requirement.
+Similarly, an email reminder is sent at least 60 days before the 2SV requirement
+starts.
 
-When the requirement is enforced for your account, you must have 2SV enabled to
-sign in to the Google Cloud Dedicated console or the Firebase console.
-
-## Scope of 2SV enforcement
-
-When the Google Cloud Dedicated 2SV requirement is enforced for your account, if you
-don't have 2SV enabled, you won't be able to use the following Google Cloud Dedicated in Germany
-interfaces:
-
-- 
-
-The [Google Cloud Dedicated console](/cloud-console)
-
-- 
-
-The [Firebase console](https://console.firebase.google.com/)
-
-Google Cloud Dedicated 2SV enforcement doesn't directly affect service accounts.
-However, Google Accounts [impersonating service accounts](/docs/authentication/use-service-account-impersonation),
-*are* affected. If 2SV is enforced on your Google Account, you must enable 2SV
-to successfully complete the impersonation flow.
-
-Access to the following interfaces and services is **not** affected by the
-Google Cloud Dedicated 2SV enforcement:
-
-- 
-
-Google Workspace, including Gmail, Google Drive, Google Sheets,
-and Google Slides. However, Google Workspace has a separate 2SV
-requirement. Contact
-[your Google Workspace administrator](https://support.google.com/a/answer/6208960)
-for more information.
-
-- 
-
-YouTube.
-
-Your applications and workloads running on Google Cloud Dedicated, including
-applications secured by Identity-Aware Proxy (IAP), aren't affected by 2SV
-enforcement. However, your developers won't be able to use the
-Google Cloud Dedicated console to manage those applications. In other words, your
-control plane is affected by 2SV enforcement, but not your data plane.
+User accounts added after the 2SV requirement is enabled for an organization
+don't receive reminders, and are prompted to enable 2SV to access the
+Google Cloud Dedicated console or the Firebase console.
 
 ## Enable 2SV for Google Accounts
 
@@ -367,3 +382,202 @@ Refer to your third-party IdP's documentation to learn how to enable 2SV.
 
 See [Fix common issues with 2-Step verification](https://support.google.com/accounts/answer/185834)
 for steps to recover your account.
+
+## Monitor 2SV conformance
+
+Administrators can monitor user account 2SV conformance when they interact with
+the Google Cloud Dedicated console in Logs Explorer:
+
+- 
+
+In the Google Cloud Dedicated console, go to the **Logs Explorer** page:
+
+[Go to Logs Explorer](https://console.cloud.berlin-build0.goog/projectselector2/logs/query?supportedpurview=organizationId)
+
+- 
+
+Select your organization.
+
+- 
+
+Pick a time range for the logs you want to query.
+
+- 
+
+Add the following query:
+
+
+```
+jsonPayload.@type="type.googleapis.com/google.identity.mfaforall.LogEntry"
+```
+
+
+- 
+
+Click **Run query**.
+
+You can filter the log results using the **Fields** pane. Alternatively, you
+can expand your query to require other fields, such as in the following example:
+
+
+```
+jsonPayload.@type="type.googleapis.com/google.identity.mfaforall.LogEntry"
+jsonPayload.enforcementState="ENFORCEMENT_STATE_UPCOMING_ENFORCEMENT"
+jsonPayload.userEmail: " PRINCIPAL_IDENTIFIER "
+jsonPayload.mfaEligibility: "MFA_ELIGIBILITY_ELIGIBLE"
+```
+
+
+For the fields you can filter by and their definitions, see
+[Understand conformance log entries](#understand-conformance-log).
+
+### Understand conformance log entries
+
+Conformance log entries look similar to the following:
+
+
+```
+{ 
+i nsert Id : "00000000" 
+jso n Payload : { 
+@ t ype : "type.googleapis.com/google.identity.mfaforall.LogEntry" 
+e nf orceme nt S tate : "ENFORCEMENT_STATE_UPCOMING_ENFORCEMENT" 
+m fa Eligibili t y : "MFA_ELIGIBILITY_ELIGIBLE" 
+userEmail : " PRINCIPAL_IDENTIFIER " 
+} 
+logName : "organizations/ ORGANIZATION_ID /logs/mfaforall.googleapis.com%2Fmfa_conformance_check" 
+receiveTimes ta mp : "2026-06-02T21:52:21.150677295Z" 
+resource : { 
+labels : { 
+loca t io n : "global" 
+resource_co nta i ner : "organizations/ ORGANIZATION_ID " 
+} 
+t ype : "mfaforall.googleapis.com/Location" 
+} 
+severi t y : "INFO" 
+t imes ta mp : "2026-06-02T21:52:20.838Z" 
+} 
+```
+
+
+The following fields can help you to monitor 2SV conformance for user accounts:
+
+- 
+
+`userEmail`: This key's value is the principal identifier for the monitored
+user account, which is an email address.
+
+- 
+
+`mfaEligibility`: This key's value is one of following:
+
+- 
+
+`MFA_ELIGIBILITY_ELIGIBLE`: The user account is eligible for the 2SV
+requirement.
+
+- 
+
+`MFA_ELIGIBILITY_INELIGIBLE`: The user account is blocked from enrolling in
+2SV due to their organization's policy settings in Google Workspace.
+
+- 
+
+`MFA_ELIGIBILITY_UNSPECIFIED`: The user account's eligibility for the 2SV
+requirement is unknown. This value is returned when the user is
+authenticated through a third-party IdP using single sign-on.
+
+- 
+
+`enforcementState`: This key's value is one of the following:
+
+- 
+
+`ENFORCEMENT_STATE_UPCOMING_ENFORCEMENT`: The user account is in the
+[reminder window](#timelines) for the 2SV requirement.
+
+- 
+
+`ENFORCEMENT_STATE_ENFORCED`: 2SV is required for this user account. Users
+attempting to access the Google Cloud Dedicated console or the
+Firebase console are prompted to enable 2SV to continue.
+
+- 
+
+`ENFORCEMENT_STATE_MFA_COMPLIANT`: The user is compliant with the 2SV
+requirement.
+
+- 
+
+`ENFORCEMENT_STATE_NO_ENFORCEMENT_ORG_OPTED_OUT`: The organization is opted
+out of the 2SV requirement. The user account doesn't require 2SV.
+
+- 
+
+`ENFORCEMENT_STATE_NO_ENFORCEMENT_SSO_USER`: The user authenticated through
+a third-party IdP using single sign-on, and 2SV must be managed there.
+
+## Cloud Identity: extend the deadline for the 2SV requirement
+
+Organizations that use Enterprise [Cloud Identity](/identity) (non-SSO) and
+were created before the 2SV requirement can enable a one-time, 90-day extension
+to the 2SV requirement at the organization level in the Google Cloud Dedicated console.
+
+To do so, principals with the
+[Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
+(`roles/resourcemanager.organizationAdmin`) role must complete the following
+steps:
+
+- 
+
+In the Google Cloud Dedicated console, go to the **Organizations** page.
+
+[Go to Organizations](https://console.cloud.berlin-build0.goog/projectselector2/organizations/details?supportedpurview=organizationId)
+
+- 
+
+Select your organization.
+
+- 
+
+In the 2SV notification, click **Extend by 90 days**, and then confirm the
+extension. It might take a few minutes for the change to take effect.
+
+After the extension expires, the 2SV requirement is reenabled.
+
+## Cloud Identity: opt out of the 2SV requirement
+
+We don't recommend opting out of the 2SV requirement. However, organizations
+that use Enterprise [Cloud Identity](/identity) (non-SSO) can choose to opt
+out of the requirement at the organization level in the Google Cloud Dedicated console.
+Opting out only bypasses the 2SV requirement; it doesn't disable 2SV for users
+who already have it enabled, and users can still enable 2SV for themselves.
+
+Principals with the
+[Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
+(`roles/resourcemanager.organizationAdmin`) role at the organization level can
+opt out of the 2SV requirement by completing the following steps:
+
+- 
+
+In the Google Cloud Dedicated console, go to the **Organizations** page.
+
+[Go to Organizations](https://console.cloud.berlin-build0.goog/projectselector2/organizations/details?supportedpurview=organizationId)
+
+- 
+
+Select your organization.
+
+- 
+
+Disable **Enforce 2SV**. It might take a few minutes for the settings change
+to take effect.
+
+After an organization has opted out of the 2SV requirement, users with 2SV
+disabled are no longer required to enable it to use the Google Cloud Dedicated console
+or the Firebase console.
+
+### Opt back in to 2SV
+
+If you choose to opt in to 2SV again, a minimum 30-day grace period takes place
+before 2SV is required.

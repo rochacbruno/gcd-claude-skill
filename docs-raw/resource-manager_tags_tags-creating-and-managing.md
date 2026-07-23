@@ -1,7 +1,7 @@
 # Create and manage tags
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/tags/tags-creating-and-managing
-Last updated: 2026-07-17
+Last updated: 2026-07-22
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Service Usage in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/service-usage/docs/tpc-differences
-Last updated: 2026-07-17
+Last updated: 2026-07-22
 
 - 
 

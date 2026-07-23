@@ -1,7 +1,7 @@
 # Quickstart: Set up Service Usage for a development environment
 
 Source: https://berlin.devsitetest.how/service-usage/docs/set-up-development-environment
-Last updated: 2026-07-20
+Last updated: 2026-07-22
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
