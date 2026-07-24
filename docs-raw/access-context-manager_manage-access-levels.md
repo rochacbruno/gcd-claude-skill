@@ -1,7 +1,7 @@
 # Managing access levels
 
 Source: https://berlin.devsitetest.how/access-context-manager/docs/manage-access-levels
-Last updated: 2026-07-17
+Last updated: 2026-07-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/access-context-manager/docs/tpc-differences) for more details.
 
@@ -135,6 +135,10 @@ Guides
 - [ Describe an access level ](#describe_an_access_level)
 - [ Update an access level ](#update_an_access_level)
 - [ Delete an access level ](#delete_an_access_level)
+
+- [ Check access level dependencies ](#check-access-level-dependencies)
+- [ Delete an individual access level ](#delete-an-individual-access-level)
+
 - 
 
 
@@ -227,9 +231,9 @@ gcloud access-context-manager levels list \
 ```
 
 
-Where:
+Replace the following:
 
-- POLICY_NAME is the name of your organization's access policy.
+- ` POLICY_NAME ` is the name of your organization's access policy.
 This value is required only if you haven't set a
 [default access policy](/access-context-manager/docs/manage-access-policy#set-default).
 
@@ -253,9 +257,9 @@ GET https://accesscontextmanager.googleapis.com/v1alpha/accessPolicies/ POLICY_N
 ```
 
 
-Where:
+Replace the following:
 
-- POLICY_NAME is the name of your organization's access policy.
+- ` POLICY_NAME ` is the name of your organization's access policy.
 
 ### Request body
 
@@ -298,7 +302,8 @@ You can use this parameter to modify the number of access levels
 that are returned per page.
 
 
-| |
+| 
+|
 
 | 
 
@@ -379,7 +384,7 @@ gcloud access-context-manager levels list \
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
@@ -395,7 +400,7 @@ FORMAT is one of the following values:
 
 - 
 
-POLICY_NAME is the name of your organization's access policy.
+` POLICY_NAME ` is the name of your organization's access policy.
 This value is required only if you haven't set a
 [default access policy](/access-context-manager/docs/manage-access-policy#set-default).
 
@@ -478,16 +483,16 @@ gcloud access-context-manager levels describe LEVEL_NAME \
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
-LEVEL_NAME is the name of the access level you want to
+` LEVEL_NAME ` is the name of the access level you want to
 describe.
 
 - 
 
-POLICY_NAME is the name of your organization's access policy.
+` POLICY_NAME ` is the name of your organization's access policy.
 This value is required only if you haven't set a
 [default access policy](/access-context-manager/docs/manage-access-policy#set-default).
 
@@ -527,15 +532,15 @@ GET https://accesscontextmanager.googleapis.com/v1alpha/accessPolicies/ POLICY_N
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
-POLICY_NAME is the name of your organization's access policy.
+` POLICY_NAME ` is the name of your organization's access policy.
 
 - 
 
-LEVEL_NAME is the name of the access level you want to
+` LEVEL_NAME ` is the name of the access level you want to
 describe.
 
 ### Request body
@@ -628,11 +633,11 @@ gcloud access-context-manager levels update LEVEL_NAME \
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
-LEVEL_NAME is the name of the access level that you want to
+` LEVEL_NAME ` is the name of the access level that you want to
 update.
 
 - 
@@ -648,7 +653,7 @@ read about [access level attributes](/access-context-manager/docs/access-level-a
 
 - 
 
-POLICY_NAME is the name of your organization's access policy.
+` POLICY_NAME ` is the name of your organization's access policy.
 This value is required only if you haven't set a
 [default access policy](/access-context-manager/docs/manage-access-policy#set-default).
 
@@ -730,15 +735,15 @@ PATCH https://accesscontextmanager.googleapis.com/v1/accessPolicies/ POLICY_NAME
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
-POLICY_NAME is the name of your organization's access policy.
+` POLICY_NAME ` is the name of your organization's access policy.
 
 - 
 
-LEVEL_NAME is the name of the access level you want to
+` LEVEL_NAME ` is the name of the access level you want to
 describe.
 
 - 
@@ -760,6 +765,89 @@ patch operation.
 
 
 ## Delete an access level
+
+This section describes how to delete Access Context Manager access levels.
+Deleting an access level is a two-step process:
+
+- 
+
+[Check access level dependencies](#check-access-level-dependencies).
+
+- 
+
+[Delete an individual access level](#delete-an-individual-access-level).
+
+### Check access level dependencies
+
+Before you delete an access level, ensure that it's not referenced by other
+access levels.
+
+To find all access levels that reference the one that you want to delete, do the following:
+
+- 
+
+Make sure that you have installed `jq`. To verify that `jq` is installed, run `jq --version`. [Install `jq`](https://jqlang.org/download/).
+
+- 
+
+Check for access level dependencies. This command lists
+all access levels, then uses `jq` to filter for access levels that
+reference LEVEL_NAME in basic or custom level
+definitions.
+
+
+```
+echo "Searching for Access Levels referencing: accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME " 
+echo "" 
+
+gcloud access-context-manager levels list \ 
+--policy = " POLICY_NAME " \ 
+--format = json | \ 
+jq -r ' 
+.[] | 
+select( 
+# Check basic levels: Is the target access level present as an element in any requiredAccessLevels array? 
+(.basic.conditions // []) | .[] | .requiredAccessLevels | index("accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ") != null 
+or 
+# Check custom levels: Does the expression string contain the target access level? 
+(.custom.expr.expression // "") | contains("accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ") 
+) | 
+" - \(.title) (Name: \(.name))" 
+' 
+
+echo "" 
+echo "If any levels are listed, they reference LEVEL_NAME . You must update these referencing levels before you delete LEVEL_NAME ." 
+```
+
+
+Replace the following:
+
+- 
+
+` POLICY_NAME ` is the name of your organization's
+access policy. This value is required only if you haven't set a
+[default access policy](/access-context-manager/docs/manage-access-policy#set-default).
+
+- 
+
+` LEVEL_NAME ` is the name of the access level that you want
+to delete—for example, `my_level`.
+
+In the output, any access levels that reference `accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ` are listed, along with their `title` and `name`. This includes
+both basic levels (where `accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ` is in
+`requiredAccessLevels`) and custom levels (where
+`accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ` appears in the `custom.expr.expression` string).
+
+- 
+
+If the command lists any referencing access
+levels, you must first update those levels to remove the dependency. For
+instructions, see [Update an access level](#update_an_access_level).
+
+After all references are removed, you can proceed with [deleting the individual
+access level](#delete-an-individual-access-level).
+
+### Delete an individual access level
 
 
 [ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
@@ -810,16 +898,16 @@ gcloud access-context-manager levels delete LEVEL_NAME \
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
-LEVEL_NAME is the name of the access level that you want
+` LEVEL_NAME ` is the name of the access level that you want
 to delete.
 
 - 
 
-POLICY_NAME is the name of your organization's
+` POLICY_NAME ` is the name of your organization's
 access policy. This value is required only if you haven't set a
 [default access policy](/access-context-manager/docs/manage-access-policy#set-default).
 
@@ -834,16 +922,16 @@ For example:
 You are about to delete level Device_Trust
 
 Do you want to continue (Y/n)?
+```
 
 
 You should see output similar to the following:
 
 
-
+```
 Waiting for operation [accessPolicies/330193482019/accessLevels/Device_Trust/delete/1531171874311645] to complete...done.
 Deleted level [Device_Trust].
 ```
-
 
 
 
@@ -857,15 +945,15 @@ DELETE https://accesscontextmanager.googleapis.com/v1alpha/accessPolicies/ POLIC
 ```
 
 
-Where:
+Replace the following:
 
 - 
 
-POLICY_NAME is the name of your organization's access policy.
+` POLICY_NAME ` is the name of your organization's access policy.
 
 - 
 
-LEVEL_NAME is the name of the access level you want to
+` LEVEL_NAME ` is the name of the access level you want to
 describe.
 
 ### Request body
