@@ -1,7 +1,7 @@
 # Ways to interact with Google Cloud Dedicated in Germany
 
 Source: https://berlin.devsitetest.how/docs/get-started/interact-with-resources
-Last updated: 2026-07-17
+Last updated: 2026-07-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -105,7 +105,7 @@ Get started
 
 - [ Google Cloud SDK ](#cloud-sdk)
 - [ AI-powered command-line tools ](#cli-tools)
-- [ MCP servers and Agent Skills ](#mcp-servers)
+- [ MCP servers and Agents ](#mcp-servers)
 - [ Infrastructure as code (IaC) tools ](#iac-tools)
 
 - [ Integrated AI assistance ](#integrated-ai-assistance)
@@ -235,7 +235,7 @@ and develop applications using natural language. For example, the
 command-line tool that supports coding, code generation, research, task
 management, and cloud orchestration.
 
-### MCP servers and Agent Skills
+### MCP servers and Agents
 
 The [Model Context Protocol (MCP)](/discover/what-is-model-context-protocol) is
 an open standard that acts as a bridge between AI models and your data
@@ -243,21 +243,19 @@ sources or tools. Connect your AI applications (such as Antigravity
 IDE, VS Code, or Cursor) to remote MCP servers to gather more context, ground
 responses in product data, or perform specific tasks:
 
-- **Developer Knowledge MCP**: Provide your AI tools with direct access to the
+- **Developer Knowledge MCP server**: Provide your AI tools with direct access to the
 latest Google Cloud Dedicated documentation and best practices. For more
-information, see [Developer Knowledge MCP](https://developers.google.com/knowledge/mcp).
+information, see
+[Connect to the Developer Knowledge MCP server](https://developers.google.com/knowledge/mcp).
 
 - **Google Cloud Dedicated remote MCP servers**: Enable large language models (LLMs)
 to use Google and Google Cloud Dedicated services in your AI applications through
 remote MCP servers and product-specific tools. For an overview of MCP
-architecture and capabilities, see [Google Cloud Dedicated MCP servers](/mcp/overview).
+architecture and capabilities, see [Google Cloud Dedicated MCP servers overview](/mcp/overview).
 
-- **Agent Skills and Agent Registry**: Use
-[Agent Registry](/agent-registry/overview) to discover, reuse, and
-govern autonomous AI agents and MCP tools across your organization. Agent
-Skills represent high-level capabilities possessed by autonomous agents (such
-as Agent2Agent capabilities) that your AI orchestrators can discover and
-consume, removing the need to build custom integrations for each new workflow.
+- **Agent Registry**: Discover, reuse, and govern autonomous AI agents
+and MCP tools across your organization using
+[Agent Registry](/agent-registry/overview) as a centralized catalog.
 
 #### Discover remote MCP servers and Agent Skills
 
@@ -279,6 +277,10 @@ programmatically discover the server's capabilities—such as available tools,
 prompts, and data resources—using standard MCP discovery methods (for example,
 `tools/list`, `prompts/list`, and `resources/list`) or by querying the
 Agent Registry API.
+
+- **Explore the [Google Agent Skills](https://github.com/google/skills)
+repository on GitHub**: This repository contains Agent Skills for
+products and technologies, including Google Cloud Dedicated.
 
 ### Infrastructure as code (IaC) tools
 

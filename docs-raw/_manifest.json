@@ -123,7 +123,7 @@
     "filename": "artifact-registry_release-notes.md",
     "size": 6873,
     "url": "https://berlin.devsitetest.how/artifact-registry/docs/release-notes",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-07-24"
   },
   "/artifact-registry/docs/tpc-differences": {
     "title": "Artifact Registry in Google Cloud Dedicated versus Google Cloud",
@@ -270,7 +270,7 @@
     "filename": "compute_release-notes.md",
     "size": 33819,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-07-22"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
@@ -674,9 +674,9 @@
   "/docs/get-started/access-apis": {
     "title": "Set up API access",
     "filename": "get-started_access-apis.md",
-    "size": 3552,
+    "size": 3463,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-07-21"
+    "last_updated": "2026-07-24"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -692,19 +692,12 @@
     "url": "https://berlin.devsitetest.how/docs/get-started/authorization-access-control",
     "last_updated": "2026-07-17"
   },
-  "/docs/get-started/developer-tools": {
-    "title": "Use developer tools",
-    "filename": "get-started_developer-tools.md",
-    "size": 5164,
-    "url": "https://berlin.devsitetest.how/docs/get-started/developer-tools",
-    "last_updated": "2026-07-21"
-  },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Google Cloud Dedicated in Germany",
     "filename": "get-started_interact-with-resources.md",
-    "size": 10913,
+    "size": 10910,
     "url": "https://berlin.devsitetest.how/docs/get-started/interact-with-resources",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-07-24"
   },
   "/docs/get-started/required-domains": {
     "title": "Allow access to Google Cloud Dedicated console domains",
@@ -821,9 +814,9 @@
   "/docs/quotas/custom-constraints": {
     "title": "Use custom organization policies",
     "filename": "quotas_custom-constraints.md",
-    "size": 26772,
+    "size": 26589,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-07-23"
+    "last_updated": "2026-07-24"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -1430,9 +1423,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1280959,
+    "size": 1296108,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-07-24"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
@@ -1740,7 +1733,7 @@
     "filename": "service-usage_release-notes.md",
     "size": 1721,
     "url": "https://berlin.devsitetest.how/service-usage/docs/release-notes",
-    "last_updated": "2026-07-22"
+    "last_updated": "2026-07-24"
   },
   "/service-usage/docs/set-up-development-environment": {
     "title": "Quickstart: Set up Service Usage for a development environment",
@@ -1768,7 +1761,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-24"
+    "last_updated": "2026-07-25"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

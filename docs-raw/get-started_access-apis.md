@@ -1,7 +1,7 @@
 # Set up API access
 
 Source: https://berlin.devsitetest.how/docs/get-started/access-apis
-Last updated: 2026-07-21
+Last updated: 2026-07-24
 
 - 
 
@@ -149,10 +149,6 @@ To choose and install a library, see
 [Cloud Client Libraries](/apis/docs/cloud-client-libraries).
 
 ## What's next?
-
-- 
-
-[Streamline your workflows with developer tools](/docs/get-started/developer-tools)
 
 - 
 
