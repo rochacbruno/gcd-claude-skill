@@ -1,7 +1,7 @@
 # Create folders
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/creating-managing-folders
-Last updated: 2026-07-22
+Last updated: 2026-07-27
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -135,6 +135,9 @@ Guides
 
 - [ Add tags during folder creation ](#add_tags_during_folder_creation)
 
+- [ Retrieve your folder ID ](#retrieve_folder_id)
+- [ Propagation delay ](#propagation-delay)
+- [ Delete folders ](#delete)
 - [ Configure access to folders ](#folder-access)
 
 - [ Handle long-running operations ](#handle-long-running-operations)
@@ -167,14 +170,16 @@ used to group resources that share common allow or deny policies. While a folder
 can contain multiple folders or resources, a given folder or resource can have
 exactly one parent.
 
-In the following diagram, the organization resource, "Company", has folders representing two
-departments, "Dept X" and "Dept Y", and a folder, "Shared Infrastructure", for
-items that might be common to both departments. Under "Dept Y", they have
-organized into two teams, and within the team folders, they further organize by
-products. The folder for "Product 1" further contains three projects, each with
-the resources needed for the project. This provides them with a high degree of
-flexibility in assigning allow, deny, or organization policies at the right
-level of granularity.
+In the following diagram, the organization resource, "Company", has folders
+representing "Standard Workloads", "Regulated Workloads", and
+"Shared infrastructure". Under "Regulated Workloads", folders are organized by
+environment into "Non-Prod Environment" and "Production Environment". The
+"Production Environment" folder is further organized into "Customer-Facing
+(Restricted)" and "Internal-Only (Standard)" folders to enforce policy-centric
+access controls. Projects such as "Test project", "Development project", and
+"Production project" contain the resources needed for the project. This
+provides a high degree of flexibility in assigning allow, deny, or
+organization policies at the right level of granularity.
 
 
 
@@ -462,6 +467,9 @@ you're creating the folder, for example `organizations/123`.
 
 The Create Folder response:
 
+If a call successfully registers an operation, the response body contains
+an instance of Operation.
+
 
 ```
 { 
@@ -554,7 +562,7 @@ tags to it.
 
 
 ```
-POST https://cloudresourcemanager.googleapis.com/v3/projects/
+POST https://cloudresourcemanager.googleapis.com/v3/folders/
 Authorization: ********** *** 
 Content-Type: application/json
 
@@ -562,17 +570,58 @@ Content-Type: application/json
 "display_name": "our-folder-456",
 "parent": "organizations/123",
 "tags": {
-"key": "123/environment"
-"value": "production"
-},
-"tags": {
-"key": "123/costCenter"
-"value": "marketing"
+"123/environment": "production",
+"123/costCenter": "marketing"
 }
 }
 ```
 
 
+
+## Retrieve your folder ID
+
+You can retrieve the ID of a folder using the Google Cloud Dedicated console or
+Google Cloud CLI.
+
+
+[Console](#console) [gcloud](#gcloud) 
+More 
+
+
+
+
+- In the Google Cloud Dedicated console, open the **Manage resources** page.
+
+- Locate your folder in the resource list. The folder ID is displayed in
+the **ID** column next to the folder's display name.
+
+
+
+
+To locate your folder ID, run the following command:
+
+
+```
+gcloud resource-manager folders list --organization = ORGANIZATION_ID 
+```
+
+
+
+## Propagation delay
+
+When you create a new folder, it might take some time for the folder to
+propagate through our global systems and become visible in the Google Cloud Dedicated console.
+This propagation delay typically resolves within a few minutes, but in rare
+cases can take longer. You can verify the folder's creation immediately using
+the `gcloud` command-line tool or the API.
+
+## Delete folders
+
+To delete a folder, you must have the Folder Admin role
+(`roles/resourcemanager.folderAdmin`) or Folder Editor role
+(`roles/resourcemanager.folderEditor`). The folder must be empty before you can
+delete it. For detailed instructions, see
+[Delete folders](/resource-manager/docs/manage-folders#delete-folder).
 
 ## Configure access to folders
 
