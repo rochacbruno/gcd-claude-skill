@@ -1,7 +1,7 @@
 # Token types
 
 Source: https://berlin.devsitetest.how/docs/authentication/token-types
-Last updated: 2026-07-21
+Last updated: 2026-07-28
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -1343,12 +1343,12 @@ and authenticate an agent that has been assigned an
 An agent can obtain an ID token from the Compute Engine metadata server.
 Optionally, the agent can request the token to be bound to its X.509 client
 certificate. A bound agent identity ID token contains the fingerprint of the
-X.509 client certificate and is only valid when used over a mutual TLS connection
-that is authenticated using the same X.509 client certificate.
+X.509 client certificate in the `cnf` claim.
 
 Unlike [user ID tokens](#user-id-tokens) and
 [service account ID tokens](#sa-id-tokens), agent identity ID tokens are not
-signed by the Google JSON Web Key Set (JWKS) and they can't be verified.
+signed by the Google JSON Web Key Set (JWKS). Instead, agent identity ID tokens
+are signed by a JWKS that is specific to an agent identity pool.
 
 A decoded agent identity ID token looks similar to the following, with
 ` SIGNATURE ` replaced by the token's signature:
