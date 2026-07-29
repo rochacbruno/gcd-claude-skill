@@ -1,7 +1,7 @@
 # Set up the Google Cloud CLI for Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud
-Last updated: 2026-07-21
+Last updated: 2026-07-28
 
 - 
 
@@ -170,8 +170,8 @@ Linux 64-bit
 (x86_64) 
 | 
 [google-cloud-cli-linux-x86_64.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86_64.tar.gz) | 
-88.5 MB | 
-1c478abfe0fbe256b8ecaba2faeff154e44c308064b1c69d9ec15b879a4944bd | 
+88.6 MB | 
+701b255dceb20d360d95ac066db1edede63b708cd309c575fb91a82de3054a8e | 
 |
 
 | 
@@ -180,8 +180,8 @@ Linux 64-bit
 (Arm) 
 | 
 [google-cloud-cli-linux-arm.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-arm.tar.gz) | 
-61.3 MB | 
-ef8ded3afd45c89bc3900e32579bddfa406b44f7837d993adac417f00b41aa8f | 
+61.4 MB | 
+d0e3c244f67f5b276b2ad17c8443153c82f12bc8e1b7ae2423cc9e53ee397eb5 | 
 |
 
 | 
@@ -190,8 +190,8 @@ Linux 32-bit
 (x86) 
 | 
 [google-cloud-cli-linux-x86.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86.tar.gz) | 
-61.4 MB | 
-52164ff332756c784df60ffcca7f6fd89c5465431b2019cbcd117631b76898c2 | 
+61.5 MB | 
+e12e46d95197dd5ab2dac44b3c91e5538e2af62a6ea0364878fb9f28082f4f45 | 
 |
 
 
@@ -308,9 +308,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86_64.tar.gz)
 
 | 
-61.5 MB | 
+61.6 MB | 
 
-c755c6ed2deb167c7d7a96909739e8faed855b728f3496e7e57d139243699b0c 
+34c5f6f25cccb561bb00d8a2ca78b222571f0ee622943da802cac8fd1b92eb77 
 | 
 |
 
@@ -328,9 +328,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-arm.tar.gz)
 
 | 
-61.4 MB | 
+61.5 MB | 
 
-99b96b1f78ed4e7e925a1f6f1b55191e3f77cdc811ba0f907c62c19fc58caa10 
+1b5f2b91b73f289979dbce012d5308ceaae473797956a0c7b1baa5edc267bf35 
 | 
 |
 
@@ -350,7 +350,7 @@ macOS 32-bit
 | 
 59.9 MB | 
 
-dd1f6d136d27fde99ff1eb92d37e09985b2e2c7547bf93556e1c121c68310524 
+eaed1856e0964b7abd84d5617c615fa89773fa7a81fc00708dab98abc420ab2c 
 | 
 |
 

@@ -655,7 +655,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16541,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-07-21"
+    "last_updated": "2026-07-28"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -676,7 +676,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3463,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-07-24"
+    "last_updated": "2026-07-28"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -835,7 +835,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19109,
+    "size": 19111,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-07-17"
   },
@@ -1297,9 +1297,9 @@
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
-    "size": 107945,
+    "size": 107515,
     "url": "https://berlin.devsitetest.how/iam/docs/service-agents",
-    "last_updated": "2026-07-21"
+    "last_updated": "2026-07-28"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Google Cloud Dedicated versus Google Cloud",
@@ -1376,7 +1376,7 @@
     "filename": "kubernetes-engine.md",
     "size": 3756,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs",
-    "last_updated": "2026-07-21"
+    "last_updated": "2026-07-28"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
@@ -1430,9 +1430,9 @@
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13212,
+    "size": 13544,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-07-28"
   },
   "/logging/docs": {
     "title": "Cloud Logging documentation",
@@ -1761,7 +1761,7 @@
     "filename": "sql_release-notes.md",
     "size": 61812,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-07-28"
+    "last_updated": "2026-07-29"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

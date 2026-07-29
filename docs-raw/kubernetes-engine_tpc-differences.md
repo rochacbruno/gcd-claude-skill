@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-07-17
+Last updated: 2026-07-28
 
 - 
 
@@ -307,6 +307,23 @@ Some cost optimization recommendations might be unavailable.
 | 
 |
 
+| 
+**Committed use discounts (CUDs)** | 
+
+
+
+Google Cloud Dedicated in Germany offers compute flexible
+committed use discounts (CUDs) for eligible spend on GKE.
+To purchase compute flexible commitments, contact
+[
+Google Cloud Dedicated in Germany billing support]().
+For more information, see the
+[billing differences page](/billing/docs/tpc-differences).
+
+
+| 
+|
+
 
 ### Integrations
 
@@ -478,8 +495,6 @@ The following customization options for network isolation are unavailable:
 
 
 - Disabling internal and external endpoints of the control plane.
-
-- Adding authorized networks.
 
 - Controlling communication between cluster Pods and Services with GKE network policies.
 

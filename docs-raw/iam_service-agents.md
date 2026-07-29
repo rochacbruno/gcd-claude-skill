@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-07-21
+Last updated: 2026-07-28
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -2964,33 +2964,6 @@ For the organization:
 | 
 
 None
-| 
-|
-
-| 
-
-
-#### Cloud Optimization Service Agent
-
-[Primary service agent](/iam/docs/service-account-types#primary) for `cloudoptimization.googleapis.com`. 
-
-
-`service- PROJECT_NUMBER @gcp-sa-cloudoptim.eu0-system.iam.gserviceaccount.com`
-
-| 
-
-
-
-[Cloud Optimization Service Agent](/iam/docs/roles-permissions/cloudoptimization#cloudoptimization.serviceAgent)
-
-(`roles/cloudoptimization.serviceAgent`)
-
-
-
-
-Granted on the project.
-
-
 | 
 |
 
