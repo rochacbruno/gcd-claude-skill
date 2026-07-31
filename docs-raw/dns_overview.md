@@ -1,7 +1,7 @@
 # Cloud DNS overview
 
 Source: https://berlin.devsitetest.how/dns/docs/overview
-Last updated: 2026-07-17
+Last updated: 2026-07-31
 
 - 
 

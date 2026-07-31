@@ -1,7 +1,7 @@
 # Upload objects from a file system
 
 Source: https://berlin.devsitetest.how/storage/docs/uploading-objects
-Last updated: 2026-07-22
+Last updated: 2026-07-31
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
