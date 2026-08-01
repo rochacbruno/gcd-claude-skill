@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://berlin.devsitetest.how/sql/docs/release-notes
-Last updated: 2026-07-31
+Last updated: 2026-08-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -129,6 +129,8 @@ Resources
 
 
 - On this page 
+- [ July 31, 2026 ](#July_31_2026)
+- [ July 29, 2026 ](#July_29_2026)
 - [ June 29, 2026 ](#June_29_2026)
 - [ June 24, 2026 ](#June_24_2026)
 - [ June 22, 2026 ](#June_22_2026)
@@ -241,7 +243,100 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## June 29, 2026 
+## July 31, 2026 
+
+**Cloud SQL for MySQL**
+
+Change 
+
+
+Starting on August 1, 2026, when you create or clone a Cloud SQL instance
+enabled with Private Service Connect, or when you enable Private Service Connect
+for an existing instance, then [connection reconciliation](/vpc/docs/about-controlling-access-published-services#connection-reconciliation)
+behavior is enabled by default and can't be disabled.
+
+When you remove a project from the list of allowed projects, all existing
+Private Service Connect connections from the removed project are immediately
+closed (reconciled). This means that applications using Private Service
+Connect endpoints in those removed projects can't continue to connect to the
+Cloud SQL instance using those endpoints.
+
+For more information, see [Allowed Private Service Connect projects](/sql/docs/mysql/about-private-service-connect#allowed-psc-projects).
+
+
+**Cloud SQL for PostgreSQL**
+
+Change 
+
+
+Starting on August 1, 2026, when you create or clone a Cloud SQL instance
+enabled with Private Service Connect, or when you enable Private Service Connect
+for an existing instance, then [connection reconciliation](/vpc/docs/about-controlling-access-published-services#connection-reconciliation)
+behavior is enabled by default and can't be disabled.
+
+When you remove a project from the list of allowed projects, all existing
+Private Service Connect connections from the removed project are immediately
+closed (reconciled). This means that applications using Private Service
+Connect endpoints in those removed projects can't continue to connect to the
+Cloud SQL instance using those endpoints.
+
+For more information, see [Allowed Private Service Connect projects](/sql/docs/postgres/about-private-service-connect#allowed-psc-projects).
+
+
+**Cloud SQL for SQL Server**
+
+Change 
+
+
+Starting on August 1, 2026, when you create or clone a Cloud SQL instance
+enabled with Private Service Connect, or when you enable Private Service Connect
+for an existing instance, then [connection reconciliation](/vpc/docs/about-controlling-access-published-services#connection-reconciliation)
+behavior is enabled by default and can't be disabled.
+
+When you remove a project from the list of allowed projects, all existing
+Private Service Connect connections from the removed project are immediately
+closed (reconciled). This means that applications using Private Service
+Connect endpoints in those removed projects can't continue to connect to the
+Cloud SQL instance using those endpoints.
+
+For more information, see [Allowed Private Service Connect projects](/sql/docs/sqlserver/about-private-service-connect#allowed-psc-projects).
+
+
+
+## July 29, 2026
+
+**Cloud SQL for MySQL**
+
+Feature 
+
+
+Cloud SQL for MySQL now supports significantly faster re-encryption of
+instances and replicas protected by customer-managed encryption keys (CMEKs),
+and re-encryption now completes with zero downtime. The steps to re-encrypt your
+instances and replicas are unchanged, but the operation now re-encrypts the
+underlying disks in-place, without creating re-encryption backups.
+
+For more information, see [Re-encrypt an existing CMEK-enabled instance or
+replica](https://berlin.devsitetest.how/sql/docs/mysql/configure-cmek#reencrypt).
+
+
+**Cloud SQL for PostgreSQL**
+
+Feature 
+
+
+Cloud SQL for PostgreSQL now supports significantly faster re-encryption of
+instances and replicas protected by customer-managed encryption keys (CMEKs),
+and re-encryption now completes with zero downtime. The steps to re-encrypt your
+instances and replicas are unchanged, but the operation now re-encrypts the
+underlying disks in-place, without creating re-encryption backups.
+
+For more information, see [Re-encrypt an existing CMEK-enabled instance or
+replica](https://berlin.devsitetest.how/sql/docs/postgres/configure-cmek#reencrypt).
+
+
+
+## June 29, 2026
 
 **Cloud SQL for MySQL**
 

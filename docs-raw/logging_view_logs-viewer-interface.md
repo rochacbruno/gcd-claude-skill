@@ -1,7 +1,7 @@
-# View and analyze logs
+# View and analyze log entries
 
 Source: https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface
-Last updated: 2026-07-17
+Last updated: 2026-07-31
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -121,7 +121,7 @@ Guides
 
 
 
-# View and analyze logs 
+# View and analyze log entries 
 
 
 
@@ -136,7 +136,7 @@ Guides
 
 - [ View recent, saved, and suggested queries ](#view-save-queries)
 - [ Set preferences for viewing log data ](#preferences)
-- [ View logs by time range ](#time-range)
+- [ Filter log entries by time range ](#time-range)
 
 - [ Query pane ](#query-builder)
 
@@ -145,26 +145,23 @@ Guides
 - [ Fields pane ](#logs-field-panel)
 
 - [ Refine your query ](#refine_your_query)
-- [ Add fields to Fields pane ](#custom-fields)
+- [ Add fields to the Fields pane ](#custom-fields)
 
 - [ Timeline ](#histogram-panel)
 
 - [ Timeline features ](#using_histogram_panel)
-- [ Analyze logs using time controls ](#analyzing_logs_histogram)
+- [ Analyze log entries using time controls ](#analyzing_logs_histogram)
 
 - [ View your query results ](#query-results)
 
-- [ Highlight search terms, monitor and download your logs ](#actions)
-- [ Summarize a log entry by using Gemini assistance ](#explain-log-gemini)
-- [ Troubleshoot an issue by using Gemini assistance ](#troubleshoot-log-gemini)
-- [ View similar log entries ](#view-hide-similar-logs)
-- [ Hide similar log entries ](#hide-similar-logs)
+- [ Highlight search terms, monitor and download your log entries ](#actions)
+- [ Investigate a log entry by using Gemini Cloud Assist ](#explain-log-gemini)
 - [ View or hide log entries that match a field ](#log-entries-field-match)
 - [ Pin log entries ](#pin-logs)
 - [ Copy a link to a log entry ](#copy-link)
 
 - [ Example Logs Explorer queries ](#example_queries)
-- [ View Compute Engine logs ](#compute-engine)
+- [ View Compute Engine log entries ](#compute-engine)
 - [ Troubleshoot logging issues ](#troubleshooting)
 
 - [ The all resources and all log name menus are disabled ](#resource-menu-disabled)
@@ -336,7 +333,7 @@ on your project, folder, or organization.
 - 
 To view and download log entries stored in a [log view](/logging/docs/logs-views) on a log bucket:
 [Logs View Accessor ](/iam/docs/roles-permissions/logging#logging.viewAccessor) (`roles/logging.viewAccessor`)
-on the project, folder, or organization that contains the log bucket. For information about how to get access only to a specific log view, see [Control access to a log view](/logging/docs/logs-views#about-iam-policies)
+on the project, folder, or organization that contains the log bucket. For information about how to get access only to a specific log view, see [Control access to a log view](/logging/docs/logs-views#about-iam-policies).
 
 
 
@@ -401,7 +398,7 @@ following:
 
 - Your Identity and Access Management (IAM) roles on the searched resources.
 
-- Your query filters the search results.
+- The filters applied to the search results.
 For example, adding the query `severity>=ERROR` results in
 the display listing only those log entries with a severity level of at
 least `ERROR`.
@@ -456,13 +453,13 @@ more information, see [Set preferences for viewing log data](#preferences).
 
 - **Time-range selector**: Specify a time range for the log entries that you
 want to view. For more information, see
-[use the time-range selector](/logging/docs/view/building-queries#time-range).
+[Use the time-range selector](/logging/docs/view/building-queries#time-range).
 
 - *school* **Learn**: View links to relevant documentation and topics.
 
 ### View recent, saved, and suggested queries
 
-To view queries that you recently run, queries that you saved for
+To view queries that you have recently run, queries that you saved for
 future use, and suggested queries, click the *menu_book*
 **Query library** button.
 
@@ -495,15 +492,15 @@ information, see [Select queries from the library](/logging/docs/view/building-q
 
 ### Set preferences for viewing log data
 
-To customize how your logs data is presented in the query results, click the
+To customize how your log entries are presented in the query results, click the
 *settings* **Preferences** button, and select **View**, **Format**, or
 **Manage summary fields**:
 
 - 
 
 To show or hide the **Timeline** and **Fields** panes, to hide summary
-chips in your query results, or to change the sorting order of your logs,
-select **View**.
+chips in your query results, or to change the sorting order of your
+log entries, select **View**.
 
 - 
 
@@ -518,9 +515,9 @@ fit into one line. Blank spaces are preserved in each log entry.
 
 - 
 
-To find patterns in your logs by using summary fields, select **Manage
-summary fields**. For more information, see
-[Find patterns in your logs by using summary fields](#add_summary_fields).
+To find patterns in your log entries by using summary fields, select
+**Manage summary fields**. For more information, see
+[Find patterns in your log entries by using summary fields](#add_summary_fields).
 
 #### Configure the **Time** column
 
@@ -545,7 +542,7 @@ Date and time (default)
 
 Time only
 
-#### Find patterns in your logs by using summary fields
+#### Find patterns in your log entries by using summary fields
 
 Suppose you're looking through the log entries in your query results and want to
 quickly skim the results by a certain [`LogEntry`](/logging/docs/reference/v2/rest/v2/LogEntry) field. Or perhaps
@@ -558,7 +555,7 @@ Default summary fields depend on your current query results, and custom summary
 fields let you select any field in the [`LogEntry`](/logging/docs/reference/v2/rest/v2/LogEntry).
 
 To show or hide all summary field chips in your query results, click
-*settings* **Preferences** button, select **View**, then
+*settings* **Preferences** , select **View**, and then
 **Show summary chips**. When this option is enabled, the results are
 displayed in raw-text format.
 
@@ -611,7 +608,7 @@ Click **Apply**.
 
 Your summary fields are now updated in your query results.
 
-### View logs by time range
+### Filter log entries by time range
 
 To specify a time range for the log entries that you want to view, use
 the [time-range selector](/logging/docs/view/building-queries#time-range).
@@ -639,9 +636,8 @@ For more information, see [Search for text across log fields](/logging/docs/view
 - 
 
 Filter menus: Build queries by using various menus to select resources,
-log names, severity levels, and correlation to other logs.
-For more information, see
-[Use filter menus](/logging/docs/view/building-queries#query-builder-menus).
+log names, severity levels, and correlation to other log entries.
+For more information, see [Use filter menus](/logging/docs/view/building-queries#query-builder-menus).
 
 - 
 
@@ -650,7 +646,7 @@ Logging query language. If you don't see the query-editor field, enable
 **Show query**. For more information, see
 [Write advanced queries using the Logging query language](/logging/docs/view/building-queries#queries-by-expression).
 
-After you review your query, click **Run query**. Logs that match
+After you review your query, click **Run query**. Log entries that match
 your query are listed under the [**Query results**](#query-results) pane. The
 [**Timeline**](#histogram-panel) and [**Fields**](#logs-field-panel) panes
 also adjust according to the query expression.
@@ -752,9 +748,9 @@ the project.
 
 ## **Fields** pane
 
-The **Fields** pane offers a high-level summary of logs data and
+The **Fields** pane offers a high-level summary of log entries and
 provides an efficient way to refine a query. The entries in this pane also list
-the approximate number of log entries that match the corresponding filter. 
+the approximate number of log entries that match the corresponding filter.
 
 After you execute a query in the query-editor field, the **Fields** pane is
 populated based on the results of the query. The pane is divided into the
@@ -782,7 +778,7 @@ available:
 
 Resource type
 
-If you use BindPlane to write on-premise and hybrid cloud logs,
+If you use BindPlane to write on-premise and hybrid cloud log data,
 then select the resource type
 [**Generic Node**](/logging/docs/api/v2/resource-list#tag_generic_node).
 
@@ -793,9 +789,9 @@ Severity
 If you want your query to filter
 by multiple severity levels, then use the **Severity** menu.
 
-Some dimensions are dynamically populated based on the labels in your log
-data. For example, you might see a **Workload / Service** or **Application**
-dimension:
+Some dimensions are dynamically populated based on the labels in your
+log entries. For example, you might see a **Workload / Service** or
+**Application** dimension:
 
 - 
 
@@ -803,11 +799,11 @@ The **Workload / Service** dimension is shown in the following scenarios:
 
 - 
 
-You have log data whose resource type is
+You have log entries whose resource type is
 [**Kubernetes Container**](/logging/docs/api/v2/resource-list#tag_k8s_container)
-and you haven't filtered your logs by resource type.
+and you haven't filtered your log entries by resource type.
 The values in the `labels.k8s-pod/app` label contribute to the
-the entries in the **Workload / Service** dimension.
+entries in the **Workload / Service** dimension.
 
 For example, if a log entry similar to the following is displayed as a result
 of your query, then the service menu includes the service named `myservice`:
@@ -857,7 +853,7 @@ environmentType: "STAGING"
 You filter your log data by the resource type of
 [**Audited Resource**](/logging/docs/api/v2/resource-list#tag_audited_resource).
 The values in the `resource.labels.service` label contribute to the
-the entries in the **Workload / Service** dimension.
+entries in the **Workload / Service** dimension.
 
 - 
 
@@ -898,7 +894,7 @@ query pane is updated to include `severity=ERROR`.
 
 To remove a selection, click the **Clear** button.
 
-### Add fields to **Fields** pane
+### Add fields to the **Fields** pane
 
 You can add certain [`LogEntry`](/logging/docs/reference/v2/rest/v2/LogEntry) key-value pairs to the **Logs field**
 pane from the log entries populated in the **Query results** pane. For example,
@@ -914,14 +910,14 @@ Select a log entry and click *chevron_right* **Expand**.
 - 
 
 Find the field that you want to add to the panel, select the value, and in
-the menu, select **Pin to Fields panel**.
+the menu, select **Pin to Fields pane**.
 
 The custom field appears in the **Fields** pane as a list of
 key-value pairs.
 
-If the **Pin to Fields** panel isn't listed, then you can't add the field to
-the pane. For example, you can't add the `insertID` field to the **Fields**
-pane.
+If the **Pin to Fields pane** entry isn't listed in the menu, then you can't
+add the field to the **Fields** pane. For example, you can't add the
+`insertID` field to the **Fields** pane.
 
 To remove a custom field from the **Fields** pane, click **Remove** next to
 the field.
@@ -940,10 +936,9 @@ pane:
 
 ## Timeline
 
-With the **Timeline** pane, you can visualize the distribution of logs over
-time.
-The timeline regenerates when you run a query, making it easier to see trends
-in your logs data and troubleshoot problems.
+With the **Timeline** pane, you can visualize the distribution of log entries
+over time. The timeline regenerates when you run a query, making it easier to
+see trends in your log entries and troubleshoot problems.
 
 To show or hide the **Timeline** pane, click keyboard_capslock 
 **Collapse timeline**.
@@ -965,25 +960,25 @@ and **Notice**.
 **Emergency**.
 
 Each bar in the **Timeline** features a menu with options to
-analyze your logs.
+analyze your log entries.
 
 - 
 
-Time controls: Let you adjust the time range of the logs you see in
+Time controls: Let you adjust the time range of the log entries you see in
 the **Query results** pane. For details on
 these options, see
-[Analyze logs using time controls](#analyzing_logs_histogram).
+[Analyze log entries using time controls](#analyzing_logs_histogram).
 
 - 
 
-Time range: Shows you the time range of the logs, represented by
-histogram bars. The timeline helps to orient you to the logs you're viewing
-within the larger time range of your query.
+Time range: Shows you the time range of the log entries, represented by
+histogram bars. The timeline helps to orient you to the log entries
+you're viewing within the larger time range of your query.
 
-### Analyze logs using time controls
+### Analyze log entries using time controls
 
 You can use time controls in the timeline to help you investigate and
-analyze your logs data.
+analyze your log entries.
 
 #### Adjust time controls
 
@@ -1026,21 +1021,21 @@ the timeline provides the **Scroll to
 time** and **Zoom to time** features to give you more in-depth control of the
 timeline and the data that you see in other panes in the Logs Explorer.
 Perhaps a particular bar in the timeline interests you based on its relative
-size or severity levels. You can select that bar to adjust the logs data you
+size or severity levels. You can select that bar to adjust the log entries you
 see in the Logs Explorer.
 
-You can use the **Scroll to time** feature to browse your logs data without changing
-the values in the **Timeline** and **Fields** panes. When you select the
+You can use the **Scroll to time** feature to browse your log entries without
+changing the values in the **Timeline** and **Fields** panes. When you select the
 **Scroll to time** feature, the following happens:
 
 - 
 
-The logs data that you see in the **Query results** pane adjusts
+The log entries that you see in the **Query results** pane adjusts
 according to the time range captured by the selected timeline bar.
 
 The query isn't run, but a partial reload of the data might occur to ensure
-you're seeing logs in the **Query results** pane that correspond with the
-selected timeline bar's time range.
+you're seeing log entries in the **Query results** pane that correspond with
+the selected timeline bar's time range.
 
 - 
 
@@ -1053,7 +1048,7 @@ To select the **Scroll to time** feature, do the following:
 
 Hold the pointer over a bar in the timeline.
 A pane containing summary
-information about the logs data for the specified time range appears.
+information about the log entries for the specified time range appears.
 
 - 
 
@@ -1063,19 +1058,19 @@ Alternatively, clicking on a timeline bar is
 equivalent to selecting **Scroll to time**.
 
 The **Zoom to time** feature is similar to **Scroll to time**, but it runs a
-query on your logs data based on the time range captured by a selected timeline
-bar. When you select the **Zoom to time** feature, the following happens:
+query on your log entries based on the time range captured by a selected
+timeline bar. When you select the **Zoom to time** feature, the following
+happens:
 
-- The logs data that you see in the **Query results** pane reloads and
+- The log entries that you see in the **Query results** pane reloads and
 narrows according to the time-range restriction of the selected timeline
 bar.
 
 - The console URL updates to contain the `timestamp` of the most recent log
 captured by the time range of the selected timeline bar.
 
-- The timeline changes to show only logs that have a `timestamp` value that
-falls within the time range of the selected timeline bar.
-by the selected timeline bar.
+- The timeline changes to show only log entries that have a `timestamp` value
+that falls within the time range of the selected timeline bar.
 
 - The data in the **Fields** pane adjusts according to the time range
 captured by the selected timeline bar.
@@ -1086,7 +1081,7 @@ To select the **Zoom to time** feature, do the following:
 
 Hold the pointer over a bar in the timeline.
 A pane containing summary
-information about the logs data for the specified time range appears.
+information about the log entries for the specified time range appears.
 
 - 
 
@@ -1096,12 +1091,12 @@ In the pane, select **Zoom to time**.
 
 The **Query results** pane displays the result of your query. This pane also
 includes features that help you troubleshoot your applications. For example,
-you can view more details for each log entry, view similar log entries, and
-search for patterns and strings in your log entries.
+you can view more details for each log entry, and search for patterns and
+strings in your log entries.
 
-### Highlight search terms, monitor and download your logs
+### Highlight search terms, monitor and download your log entries
 
-There are various options to analyze your logs data by selecting the
+There are various options to analyze your log entries by selecting the
 **Actions** menu of the **Query results** toolbar:
 
 - ink_highlighter **Highlight in results**: Enter text to be
@@ -1110,10 +1105,10 @@ highlighted in your query results.
 - *call_merge* **Create sink**: Create a log sink that auto-populates
 the sink's inclusion filter with the current query expression.
 
-- *download* **Download**: Download your logs in CSV or JSON format.
-For more information, see [Download logs](#download_logs).
+- *download* **Download**: Download your log entries in CSV or
+JSON format. For more information, see [Download log entries](#download_logs).
 
-#### Download logs
+#### Download log entries
 
 
 
@@ -1149,7 +1144,7 @@ For more information, see [Download logs](#download_logs).
 
 
 To get the permissions that
-you need to download logs,
+you need to download log entries,
 
 ask your administrator to grant you the
 [Logs View Accessor ](/iam/docs/roles-permissions/logging#logging.viewAccessor) (`roles/logging.viewAccessor`) IAM role on your project.
@@ -1168,7 +1163,7 @@ For more information about granting roles, see [Manage access to projects, folde
 This role contains the `logging.logEntries.download` permission.
 You can also grant a role that contains the
 `logging.logEntries.list` permission, which lets
-a principal view and download logs.
+a principal view and download log entries.
 
 
 
@@ -1188,7 +1183,7 @@ other [predefined roles](/iam/docs/roles-overview#predefined).
 
 
 
-To download your logs, do the following:
+To download your log entries, do the following:
 
 - 
 
@@ -1201,7 +1196,7 @@ click **Download**.
 
 - 
 
-Select what to do with the log data. You have the following options:
+Select what to do with the log entries. You have the following options:
 
 - Download the data to your computer.
 
@@ -1212,13 +1207,21 @@ Select what to do with the log data. You have the following options:
 When you save a CSV and select Google Drive, you can open the file in
 Google Sheets.
 
-For troubleshooting information, see [Download of logs fails](#download-fails).
+For troubleshooting information, see
+[Download of log entries fails](#download-fails).
 
-### Summarize a log entry by using Gemini assistance
+### Investigate a log entry by using Gemini Cloud Assist
 
-When investigating an issue, you can use Gemini to generate
-a summary of the log entry. To generate a summary of a log entry, do the
-following:
+You can use Gemini Cloud Assist to convert a log entry into
+natural language. For example, for an audit log,
+Gemini Cloud Assist displays a summary, information about who
+initiated the action, the action they attempted, whether the action was allowed,
+and when the action was performed. For a log entry with a severity of at least
+`ERROR`, Gemini Cloud Assist might summarize the issue, provide
+a list of potential causes, and suggest remediation steps.
+
+To have Gemini Cloud Assist generate a summary of a log entry,
+do the following:
 
 - 
 
@@ -1228,37 +1231,17 @@ Select the log entry you want to summarize, and click
 - 
 
 In the toolbar for the log entry, click
-**Explain this log entry**.
+**Investigate log**.
 
 Cloud Logging sends the text of the log entry to
 Gemini Cloud Assist with a prompt to summarize the
 contents of the log entry.
 Gemini Cloud Assist responds with a generated summary in the
-**Gemini** pane. The summary is based only on the
+**Cloud Assist** pane. The summary is based only on the
 text of the log entry without any additional context.
 
-For more information about summarizing your log
-entries by using Gemini Cloud Assist, see
-[Summarize log entries with Gemini assistance](/logging/docs/view/summarize-log-entries-gemini).
-
-### Troubleshoot an issue by using Gemini assistance
-
-To get help with troubleshooting an issue, create a
-Gemini Cloud Assist investigation. Investigations use log and metric
-data to gather insights about your complex and distributed environments and
-they can help you understand, diagnose, and resolve issues in your Google Cloud Dedicated in Germany
-infrastructure and applications.
-
-To create an investigation, do the following:
-
-- Select a log entry that has a severity level of at least `WARNING`.
-
-- Go to the toolbar for the log entry and click **Investigate**.
-
-You might create an investigation to determine probable causes of issues and
-apply Gemini Cloud Assist-recommended solutions to help you resolve
-these issues. For more information about investigations, see the following
-documentation:
+For more information about using Gemini Cloud Assist investigations,
+see the following documents:
 
 - [Troubleshoot issues with Gemini Cloud Assist investigations](/cloud-assist/investigations)
 
@@ -1266,90 +1249,7 @@ documentation:
 
 - [Manage Gemini Cloud Assist investigations](/cloud-assist/manage-investigations)
 
-### View similar log entries
-
-You can view log entries that are similar to a selected log entry, which lets
-you focus on logs of interest.
-
-To show similar log entries, do the following:
-
-- 
-
-Select a log entry and click *chevron_right* **Expand**.
-
-- 
-
-Click **Similar entries**, and select **Show similar entries**.
-
-The query updates with a query similar to the following and reloads the
-query results:
-
-
-```
---Show similar entries
-protoPayload.methodName="io.k8s.core.v1.configmaps.update"
---End of show similar entries
-```
-
-
-To see a preview of the similar log entries, do the following:
-
-- 
-
-Select a log entry and click *chevron_right* **Expand**.
-
-- 
-
-Expand the **Similar entries** menu, and then select
-**Preview similar entries**.
-
-A separate dialog opens with the following information:
-
-- The pattern that was found
-
-- The percentage of log entries that contain the pattern
-
-- Example log entries that contain the pattern
-
-### Hide similar log entries
-
-You can hide similar log entries, which lets you remove logs from your query
-results.
-
-There are two ways to hide similar log entries:
-
-- 
-
-Hide large amounts of automatically grouped log entries. When you
-run a query, the query results are analyzed for
-patterns and log entries are then automatically grouped based on similar log
-field content.
-
-If a significant pattern is detected, a banner appears in the
-**Query results** pane showing the percentage of results that can be
-hidden.
-
-**Hide similar entries**: This button adds a clause to the query and reloads
-the query results.
-
-**Preview**: A separate window opens which describes the pattern found, and
-shows examples of the entries.
-
-When you hide similar logs, no information is saved outside of the
-Logs Explorer session. Each query produces a new analysis, based
-only on the logs shown. Different queries analyze different portions of the
-log entries depending on the types of logs returned.
-
-- 
-
-Hide log entries similar to a specific log entry.
-
-To hide log entries similar to a log entry, click *chevron_right*
-**Expand**, click the **Similar entries** menu and then select
-**Hide similar entries**.
-
-The query updates and the **Query results** pane reloads. Log entries
-similar to the selected log entry aren't displayed.
+- [Summarize log entries with Gemini assistance](/logging/docs/view/summarize-log-entries-gemini)
 
 ### View or hide log entries that match a field
 
@@ -1395,7 +1295,7 @@ also appears on the **Timeline** pane based on the pinned log entry's
 
 To unpin a log entry, click the pin icon again.
 
-#### Show logs that match the resource of a pinned log entry
+#### Show log entries that match the resource of a pinned log entry
 
 After you pin a log entry, you can run a new query that displays log entries
 that match the resource type or resource labels of the pinned log.
@@ -1440,11 +1340,11 @@ and then choose from the following menu options:
 
 - **Scroll to log entry**: Bring the log entry into the current
 **Query results** pane and view the pinned log entry in the
-context of nearby logs.
+context of nearby log entries.
 
 - **Zoom to log entry**: Narrow the time range that the
 **Timeline** pane displays and refine your query to isolate the
-logs near the pinned log.
+log entries near the pinned log.
 
 - **Unpin**: Unpin a log entry.
 
@@ -1463,9 +1363,9 @@ For suggested queries, arranged by Google Cloud Dedicated product and use case, 
 [Sample queries using the Logs Explorer](/logging/docs/view/query-library).
 For example, you can run
 [Kubernetes-related queries](/logging/docs/view/query-library#kubernetes-filters) to find
-Google Kubernetes Engine logs.
+Google Kubernetes Engine log entries.
 
-## View Compute Engine logs
+## View Compute Engine log entries
 
 For certain Compute Engine resource types, such as `gce_instance` and
 `gce_network`, you see the resource name with the resource ID as subtext in
@@ -1482,19 +1382,20 @@ subtext.
 - [Fields](#logs-field-panel): Compute Engine resource types
 show the resource name, rather than the resource ID, in the field dimensions.
 
-- [Query results](#query-results): For Compute Engine VM instance logs, the
+- [Query results](#query-results): For Compute Engine VM instance
+log entries, the
 `resource.labels` field shows metadata with the corresponding resource name.
 
 - [Summary fields](#add_summary_fields): For Compute Engine VM instance
-logs, the chip shows the resource name instead of the resource ID.
+log entries, the chip shows the resource name instead of the resource ID.
 
 ## Troubleshoot logging issues
 
 This section provides instructions for troubleshooting common issues when
 using the Logs Explorer.
 
-If you're experiencing issues when trying to view logs in sink destinations,
-see [Troubleshoot routing and sinks](/logging/docs/export/troubleshoot).
+If you're experiencing issues when trying to view log entries in sink
+destinations, see [Troubleshoot routing and sinks](/logging/docs/export/troubleshoot).
 
 ### The all resources and all log name menus are disabled
 
