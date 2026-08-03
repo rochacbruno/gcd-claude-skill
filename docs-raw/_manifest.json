@@ -149,7 +149,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 51066,
+    "size": 51065,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-07-17"
   },
@@ -205,7 +205,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39476,
+    "size": 39475,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-17"
   },
@@ -569,7 +569,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -835,7 +835,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19109,
+    "size": 19111,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-07-17"
   },
@@ -1761,7 +1761,7 @@
     "filename": "sql_release-notes.md",
     "size": 65692,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-02"
+    "last_updated": "2026-08-03"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
