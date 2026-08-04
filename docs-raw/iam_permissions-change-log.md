@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-07-27
+Last updated: 2026-07-29
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -169,6 +169,482 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-07-28
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+Google Kubernetes Engine
+| 
+
+
+
+The following permissions have been added to the Kubernetes Engine Admin role (`roles/container.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Google Kubernetes Engine
+| 
+
+
+
+The following permissions have been added to the Kubernetes Engine Cluster Admin role (`roles/container.clusterAdmin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Cloud Data Fusion
+| 
+
+
+
+The following permissions have been removed from the Cloud Data Fusion API Service Agent role (`roles/datafusion.serviceAgent`):
+
+
+
+`dataplex.locations.get`
+
+`dataplex.locations.list`
+
+`dataplex.operations.cancel`
+
+`dataplex.operations.delete`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been removed from the Data Scientist role (`roles/iam.dataScientist`):
+
+
+
+`dataplex.locations.get`
+
+`dataplex.locations.list`
+
+
+
+| 
+|
+
+| 
+
+AI Platform
+| 
+
+
+
+The AI Platform Editor role (`roles/ml.editor`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Spanner
+| 
+
+
+
+The following permissions have been removed from the Cloud Spanner Database Reader role (`roles/spanner.databaseReader`):
+
+
+
+`dataplex.locations.get`
+
+`dataplex.locations.list`
+
+`dataplex.operations.get`
+
+`dataplex.operations.list`
+
+
+
+| 
+|
+
+| 
+
+Spanner
+| 
+
+
+
+The following permissions have been removed from the Cloud Spanner Database Reader with DataBoost role (`roles/spanner.databaseReaderWithDataBoost`):
+
+
+
+`dataplex.locations.get`
+
+`dataplex.locations.list`
+
+`dataplex.operations.get`
+
+`dataplex.operations.list`
+
+
+
+| 
+|
+
+| 
+
+Spanner
+| 
+
+
+
+The following permissions have been removed from the Cloud Spanner Database User role (`roles/spanner.databaseUser`):
+
+
+
+`dataplex.locations.get`
+
+`dataplex.locations.list`
+
+`dataplex.operations.cancel`
+
+`dataplex.operations.delete`
+
+`dataplex.operations.get`
+
+`dataplex.operations.list`
+
+
+
+| 
+|
+
+| 
+
+Spanner
+| 
+
+
+
+The following permissions have been removed from the Cloud Spanner Database Graph Intelligence features user role (`roles/spanner.graphIntelligenceUser`):
+
+
+
+`dataplex.locations.get`
+
+`dataplex.locations.list`
+
+`dataplex.operations.get`
+
+`dataplex.operations.list`
+
+
+
+| 
+|
+
+| 
+
+Cloud TPU
+| 
+
+
+
+The TPU Editor role (`roles/tpu.editor`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+VM Migration
+| 
+
+
+
+The following permissions have been added to the VM Migration Administrator role (`roles/vmmigration.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Cloud Billing
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`billing.budgets.configureSpendCap`
+
+`billing.resourcebudgets.configureSpendCap`
+
+
+
+| 
+|
+
+| 
+
+Cloud Billing
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`billing.budgets.configureSpendCap`
+
+`billing.resourcebudgets.configureSpendCap`
+
+
+
+| 
+|
+
+| 
+
+Cloud Billing
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`billing.budgets.configureSpendCap`
+
+`billing.resourcebudgets.configureSpendCap`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`chronicle.queryMetrics.get`
+
+`chronicle.queryMetrics.list`
+
+
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`chronicle.queryMetrics.get`
+
+`chronicle.queryMetrics.list`
+
+
+
+| 
+|
+
+| 
+
+Cloud SQL
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`cloudsql.instances.cancelAgentSession`
+
+`cloudsql.instances.createTestingAgentSession`
+
+`cloudsql.instances.getAgentSession`
+
+`cloudsql.instances.listAgentSessions`
+
+
+
+| 
+|
+
+| 
+
+Cloud SQL
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`cloudsql.instances.cancelAgentSession`
+
+`cloudsql.instances.createTestingAgentSession`
+
+`cloudsql.instances.getAgentSession`
+
+`cloudsql.instances.listAgentSessions`
+
+
+
+| 
+|
+
+| 
+
+Cloud SQL
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`cloudsql.instances.cancelAgentSession`
+
+`cloudsql.instances.createTestingAgentSession`
+
+`cloudsql.instances.getAgentSession`
+
+`cloudsql.instances.listAgentSessions`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`compute.globalFrontendSettings.get`
+
+`compute.globalFrontendSettings.update`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`compute.globalFrontendSettings.get`
+
+`compute.globalFrontendSettings.update`
+
+
+
+| 
+|
 
 
 

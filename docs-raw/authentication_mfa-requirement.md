@@ -1,7 +1,7 @@
 # 2-step verification requirement for Google Cloud Dedicated in Germany
 
 Source: https://berlin.devsitetest.how/docs/authentication/mfa-requirement
-Last updated: 2026-07-22
+Last updated: 2026-08-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -473,17 +473,17 @@ user account, which is an email address.
 
 - 
 
-`MFA_ELIGIBILITY_ELIGIBLE`: The user account is eligible for the 2SV
+`MFA_ELIGIBILITY_ELIGIBLE`: This user account is eligible for the 2SV
 requirement.
 
 - 
 
-`MFA_ELIGIBILITY_INELIGIBLE`: The user account is blocked from enrolling in
+`MFA_ELIGIBILITY_INELIGIBLE`: This user account is blocked from enrolling in
 2SV due to their organization's policy settings in Google Workspace.
 
 - 
 
-`MFA_ELIGIBILITY_UNSPECIFIED`: The user account's eligibility for the 2SV
+`MFA_ELIGIBILITY_UNSPECIFIED`: This user account's eligibility for the 2SV
 requirement is unknown. This value is returned when the user is
 authenticated through a third-party IdP using single sign-on.
 
@@ -493,29 +493,30 @@ authenticated through a third-party IdP using single sign-on.
 
 - 
 
-`ENFORCEMENT_STATE_UPCOMING_ENFORCEMENT`: The user account is in the
-[reminder window](#timelines) for the 2SV requirement.
+`ENFORCEMENT_STATE_UPCOMING_ENFORCEMENT`: User action is required. This user
+account is in the [reminder window](#timelines) for the 2SV requirement.
 
 - 
 
-`ENFORCEMENT_STATE_ENFORCED`: 2SV is required for this user account. Users
-attempting to access the Google Cloud Dedicated console or the
-Firebase console are prompted to enable 2SV to continue.
+`ENFORCEMENT_STATE_ENFORCED`: User action is required. 2SV is required for
+this user account. Users attempting to access the Google Cloud Dedicated console or
+the Firebase console are prompted to enable 2SV to continue.
 
 - 
 
-`ENFORCEMENT_STATE_MFA_COMPLIANT`: The user is compliant with the 2SV
-requirement.
+`ENFORCEMENT_STATE_MFA_COMPLIANT`: This user account is compliant with the
+2SV requirement.
 
 - 
 
 `ENFORCEMENT_STATE_NO_ENFORCEMENT_ORG_OPTED_OUT`: The organization is opted
-out of the 2SV requirement. The user account doesn't require 2SV.
+out of the 2SV requirement. This user account doesn't require 2SV.
 
 - 
 
 `ENFORCEMENT_STATE_NO_ENFORCEMENT_SSO_USER`: The user authenticated through
-a third-party IdP using single sign-on, and 2SV must be managed there.
+a third-party IdP using single sign-on. This user account doesn't require
+2SV.
 
 ## Cloud Identity: extend the deadline for the 2SV requirement
 

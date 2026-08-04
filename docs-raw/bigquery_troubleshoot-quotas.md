@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-07-17
+Last updated: 2026-07-31
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -871,7 +871,7 @@ specific error with exponential backoff.
 - 
 
 If you frequently insert data, consider using the
-[BigQuery Storage Write API](/bigquery/docs/write-api-streaming). Streaming
+[BigQuery Storage Write API (gRPC)](/bigquery/docs/write-api-streaming). Streaming
 data with this API isn't affected by the BigQuery API quota.
 
 - 
@@ -1222,8 +1222,8 @@ actions.
 
 - 
 To append data at a high rate, consider using
-[BigQuery Storage Write API](/bigquery/docs/write-api). It is a recommended solution for
-high-performance data ingestion. The BigQuery Storage Write API has robust features, including
+[BigQuery Storage Write API (gRPC)](/bigquery/docs/write-api). It is a recommended solution for
+high-performance data ingestion. The BigQuery Storage Write API (gRPC) has robust features, including
 exactly-once delivery semantics. To learn about limits and quotas, see
 [Storage Write API](https://berlin.devsitetest.how/bigquery/quotas#write-api-limits) and to
 see costs of using this API, see
@@ -1358,8 +1358,8 @@ actions.
 
 - 
 To append data at a high rate, consider using
-[BigQuery Storage Write API](/bigquery/docs/write-api). It is a recommended solution for
-high-performance data ingestion. The BigQuery Storage Write API has robust features, including
+[BigQuery Storage Write API (gRPC)](/bigquery/docs/write-api). It is a recommended solution for
+high-performance data ingestion. The BigQuery Storage Write API (gRPC) has robust features, including
 exactly-once delivery semantics. To learn about limits and quotas, see
 [Storage Write API](https://berlin.devsitetest.how/bigquery/quotas#write-api-limits) and to
 see costs of using this API, see
@@ -1457,8 +1457,8 @@ actions.
 
 - 
 To append data at a high rate, consider using
-[BigQuery Storage Write API](/bigquery/docs/write-api). It is a recommended solution for
-high-performance data ingestion. The BigQuery Storage Write API has robust features, including
+[BigQuery Storage Write API (gRPC)](/bigquery/docs/write-api). It is a recommended solution for
+high-performance data ingestion. The BigQuery Storage Write API (gRPC) has robust features, including
 exactly-once delivery semantics. To learn about limits and quotas, see
 [Storage Write API](https://berlin.devsitetest.how/bigquery/quotas#write-api-limits) and to
 see costs of using this API, see

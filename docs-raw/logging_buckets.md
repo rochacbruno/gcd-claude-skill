@@ -1,7 +1,7 @@
 # Configure log buckets
 
 Source: https://berlin.devsitetest.how/logging/docs/buckets
-Last updated: 2026-07-17
+Last updated: 2026-08-03
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -130,6 +130,10 @@ Guides
 
 - On this page ** 
 - [ Before you begin ](#before-you-begin)
+
+- [ Configure your project and roles ](#configure_your_project_and_roles)
+- [ Select the interface you plan to use ](#select_the_interface_you_plan_to_use)
+
 - [ Create a bucket ](#create_bucket)
 - [ List and view details of log buckets ](#list-and-view)
 
@@ -174,6 +178,11 @@ customer-managed encryption key (CMEK). If you want to configure CMEK, then see
 [Configure CMEK for logs storage](/logging/docs/routing/managed-encryption-storage).
 
 ## Before you begin 
+
+Configure your project, your IAM roles, and select the interface
+that you plan to use.
+
+### Configure your project and roles
 
 To get started with buckets, do the following:
 
@@ -278,36 +287,28 @@ For the full list of permissions and roles, see
 in which you can store your logs.
 
 
-- 
+- If you plan to use the Google Cloud CLI or Cloud Logging API to
+create or manage your log buckets, then understand the
+[`LogBucket`](/logging/docs/reference/v2/rest/v2/locations.buckets) formatting requirements.
 
 
+### Select the interface you plan to use
 
 
-
-
-
-
-
-
-
-
-
-
-
-Select the tab for how you plan to use the samples on this page:
-
-
-
-
-
-
-
-
-
-
-
-[Console](#console) [gcloud](#gcloud) [REST](#rest) 
+[ Google Cloud Dedicated console ](#google-cloud-dedicated-console) [gcloud](#gcloud) [REST](#rest) 
 More 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,6 +318,62 @@ More
 
 When you use the Google Cloud Dedicated console to access Google Cloud Dedicated in Germany services and
 APIs, you don't need to set up authentication.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -364,6 +421,64 @@ After signing in,
 ```
 gcloud init
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -483,13 +598,6 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
-
-
-
-
-- If you plan to use the Google Cloud CLI or Cloud Logging API to
-create or manage your log buckets, then understand the
-[`LogBucket`](/logging/docs/reference/v2/rest/v2/locations.buckets) formatting requirements.
 
 
 ## Create a bucket

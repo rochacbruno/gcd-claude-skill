@@ -1,7 +1,7 @@
-# Loading CSV data from Cloud Storage
+# Load CSV data from Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv
-Last updated: 2026-07-31
+Last updated: 2026-08-03
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -165,7 +165,7 @@ Guides
 
 
 
-# Loading CSV data from Cloud Storage 
+# Load CSV data from Cloud Storage 
 
 
 
@@ -2062,7 +2062,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/bigquery" 
 
 def load_table_gcs_csv dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_policies-v1beta1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 gcs_uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
 table_id = "us_states" 
@@ -4015,7 +4015,7 @@ print ( "Loaded {} rows." . format ( destination_table . [ num_rows ](https://be
 BigQuery supports loading hive-partitioned CSV data stored on
 Cloud Storage and will populate the hive partitioning columns as columns in
 the destination BigQuery managed table. For more information, see
-[Loading Externally Partitioned Data from Cloud Storage](/bigquery/docs/hive-partitioned-loads-gcs).
+[Load externally partitioned data](/bigquery/docs/hive-partitioned-loads-gcs).
 
 ## Details of loading CSV data
 
