@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Scrape Google Cloud Dedicated documentation from berlin.devsitetest.how.
+"""Scrape sovereign cloud documentation.
+
+Supports multiple regions:
+  - berlin: Google Cloud Dedicated in Germany (berlin.devsitetest.how)
+  - s3ns:   Cloud de Confiance by S3NS in France (documentation.s3ns.fr)
 
 Uses Playwright for headless browser rendering (JS-rendered content).
 Crawls:
-  1. All pages under /docs/* (the cross-cutting GCD docs)
+  1. All pages under /docs/* (cross-cutting docs)
   2. Per-product landing pages (/<product>/docs)
   3. Per-product tpc-differences pages (/<product>/docs/tpc-differences)
-  4. First-level sub-pages linked from each product landing page
+  4. Explicit product sub-pages known to contain sovereign-cloud-specific content
 
 Tracks last-updated dates for incremental re-scrapes.
 
@@ -15,7 +19,7 @@ Requirements:
     playwright install chromium
 
 Usage:
-    python3 scripts/scrape-gcd-docs.py [--output-dir docs-raw]
+    python3 scripts/scrape-gcd-docs.py [--region berlin|s3ns|all] [--output-dir DIR]
 """
 
 import argparse
@@ -29,18 +33,36 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright, TimeoutError as PwTimeout
 
-BASE_URL = "https://berlin.devsitetest.how"
-EXTRA_HEADERS = {"X-DevSite-Proxy": "gcd"}
+# -- Region configurations ----------------------------------------------------
+
+REGIONS = {
+    "berlin": {
+        "name": "Google Cloud Dedicated in Germany",
+        "base_url": "https://berlin.devsitetest.how",
+        "extra_headers": {"X-DevSite-Proxy": "gcd"},
+        "default_output_dir": "docs-raw",
+    },
+    "s3ns": {
+        "name": "Cloud de Confiance by S3NS",
+        "base_url": "https://documentation.s3ns.fr",
+        "extra_headers": {},
+        "default_output_dir": "docs-raw-s3ns",
+    },
+}
+
 MAX_RETRIES = 3
 PAGE_TIMEOUT = 30_000
 NETWORK_IDLE_TIMEOUT = 10_000
 
-# Products available in GCD
-GCD_PRODUCTS = [
+# -- Product lists -------------------------------------------------------------
+
+# Core products available in both regions
+CORE_PRODUCTS = [
     "access-context-manager",
     "api-keys",
     "artifact-registry",
     "bigquery",
+    "billing",
     "compute",
     "dns",
     "iam",
@@ -55,6 +77,40 @@ GCD_PRODUCTS = [
     "storage",
 ]
 
+# Networking products available in both regions (referenced in both regions'
+# key-differences documentation)
+NETWORKING_PRODUCTS = [
+    "armor",
+    "firewall",
+    "load-balancing",
+    "nat",
+    "network-connectivity",
+    "network-tiers",
+    "vpc",
+    "vpc-service-controls",
+]
+
+# Products documented only in the S3NS region
+S3NS_EXTRA_PRODUCTS = [
+    "api-registry",
+    "code",
+    "container-optimized-os",
+    "lakehouse",
+    "marketplace",
+    "organization-policy",
+    "sdk",
+    "service-directory",
+]
+
+
+def get_products(region: str) -> list[str]:
+    """Return the product list for a given region."""
+    products = CORE_PRODUCTS + NETWORKING_PRODUCTS
+    if region == "s3ns":
+        products = products + S3NS_EXTRA_PRODUCTS
+    return sorted(products)
+
+
 # Paths that are deep GCP docs trees we should NOT recurse into.
 # We only want the landing page and tpc-differences from these.
 DEEP_CRAWL_BLOCKLIST = {
@@ -62,13 +118,12 @@ DEEP_CRAWL_BLOCKLIST = {
     "pricing", "quotas-limits", "resources", "api",
 }
 
-# Product sub-pages known to contain GCD-specific content (rewritten with
-# GCD endpoints, project prefixes, etc.). Discovered by scanning all product
-# sub-pages for GCD markers (apis-berlin, eu0:, universe_domain, etc.).
-# These are added as explicit seeds rather than discovered via crawl,
-# because crawling product sub-pages expands into thousands of standard
-# GCP docs pages.
-GCD_PRODUCT_PAGES = [
+# Product sub-pages known to contain sovereign-cloud-specific content
+# (rewritten with region endpoints, project prefixes, etc.). Discovered by
+# scanning all product sub-pages for region-specific markers. These are added
+# as explicit seeds rather than discovered via crawl, because crawling product
+# sub-pages expands into thousands of standard GCP docs pages.
+COMMON_PRODUCT_PAGES = [
     "/access-context-manager/docs/create-access-level",
     "/access-context-manager/docs/create-access-policy",
     "/access-context-manager/docs/create-basic-access-level",
@@ -177,19 +232,54 @@ GCD_PRODUCT_PAGES = [
     "/storage/docs/xml-api/overview",
 ]
 
+# Networking sub-pages that require explicit seeding because the auto-seed
+# (/<product>/docs and /<product>/docs/tpc-differences) does not cover
+# sub-products under network-connectivity or important VPC sub-pages.
+NETWORKING_PRODUCT_PAGES = [
+    "/network-connectivity/docs/interconnect",
+    "/network-connectivity/docs/interconnect/tpc-differences",
+    "/network-connectivity/docs/router",
+    "/network-connectivity/docs/router/tpc-differences",
+    "/network-connectivity/docs/vpn",
+    "/network-connectivity/docs/vpn/concepts/tpc-differences",
+    "/vpc/docs/create-modify-vpc-networks",
+    "/vpc/docs/flow-logs",
+    "/vpc/docs/shared-vpc",
+    "/vpc/docs/vpc-peering",
+]
 
-def is_crawlable_link(link: str, source_path: str = "") -> bool:
+# Sub-pages for products only in the S3NS region
+S3NS_EXTRA_PRODUCT_PAGES = [
+    "/code/docs/intellij",
+    "/code/docs/vscode",
+    "/compute/docs/disks/hyperdisks",
+    "/compute/docs/gpus",
+    "/compute/shielded-vm/docs",
+    "/organization-policy/overview",
+]
+
+
+def get_product_pages(region: str) -> list[str]:
+    """Return the product sub-pages list for a given region."""
+    pages = COMMON_PRODUCT_PAGES + NETWORKING_PRODUCT_PAGES
+    if region == "s3ns":
+        pages = pages + S3NS_EXTRA_PRODUCT_PAGES
+    return pages
+
+
+def is_crawlable_link(link: str, products: list[str]) -> bool:
     """Decide whether to follow a link during crawl.
 
     Rules:
-    - /docs/* paths: always follow (GCD-specific cross-cutting docs)
-    - /<product>/docs: follow if it's a known GCD product (landing page)
-    - /<product>/docs/tpc-differences: always follow (GCD-specific diffs)
+    - /docs/* paths: always follow (sovereign-cloud-specific cross-cutting docs)
+    - /<product>/docs: follow if it's a known product (landing page)
+    - /<product>/docs/tpc-differences: always follow (sovereign-cloud diffs)
     - Other /<product>/docs/* sub-pages: do NOT follow (standard GCP docs)
 
     The per-product sub-pages under /<product>/docs/ are standard GCP
-    documentation served through the GCD proxy. They are not GCD-specific.
-    Only the tpc-differences pages contain GCD-specific content.
+    documentation served through the sovereign cloud proxy. They are not
+    sovereign-cloud-specific. Only the tpc-differences pages contain
+    sovereign-cloud-specific content.
     """
     if link.startswith("/docs"):
         return True
@@ -199,7 +289,7 @@ def is_crawlable_link(link: str, source_path: str = "") -> bool:
         return False
 
     product = parts[0]
-    if product not in GCD_PRODUCTS:
+    if product not in products:
         return False
 
     # Product landing: /<product>/docs
@@ -207,8 +297,8 @@ def is_crawlable_link(link: str, source_path: str = "") -> bool:
         return True
 
     # Only follow tpc-differences sub-pages during crawl.
-    # Other GCD-specific product sub-pages are added as explicit seeds
-    # via GCD_PRODUCT_PAGES (discovered by scanning for GCD markers).
+    # Other sovereign-cloud-specific product sub-pages are added as explicit
+    # seeds via get_product_pages() (discovered by scanning for region markers).
     sub_page = parts[2] if len(parts) > 2 else ""
     return sub_page == "tpc-differences"
 
@@ -363,8 +453,14 @@ def path_to_filename(path: str) -> str:
 
 # -- Main crawl ----------------------------------------------------------------
 
-def crawl_and_scrape(output_dir: Path) -> dict:
-    """Crawl and scrape all GCD documentation pages using Playwright."""
+def crawl_and_scrape(output_dir: Path, region: str) -> dict:
+    """Crawl and scrape all documentation pages for a region using Playwright."""
+    region_config = REGIONS[region]
+    base_url = region_config["base_url"]
+    extra_headers = region_config["extra_headers"]
+    products = get_products(region)
+    product_pages = get_product_pages(region)
+
     output_dir.mkdir(parents=True, exist_ok=True)
 
     discovered: set[str] = set()
@@ -374,16 +470,18 @@ def crawl_and_scrape(output_dir: Path) -> dict:
 
     # Seed paths
     seeds = ["/docs"]
-    for product in GCD_PRODUCTS:
+    for product in products:
         seeds.append(f"/{product}/docs")
         seeds.append(f"/{product}/docs/tpc-differences")
-    seeds.extend(GCD_PRODUCT_PAGES)
+    seeds.extend(product_pages)
 
     for p in seeds:
         discovered.add(p)
         to_visit.append(p)
 
-    print(f"Starting crawl from {BASE_URL}")
+    print(f"Starting crawl: {region_config['name']}")
+    print(f"Base URL: {base_url}")
+    print(f"Products: {len(products)}")
     print(f"Seed pages: {len(seeds)}")
     print(f"Output directory: {output_dir}")
     print()
@@ -391,12 +489,12 @@ def crawl_and_scrape(output_dir: Path) -> dict:
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=True)
         context = browser.new_context(
-            extra_http_headers=EXTRA_HEADERS,
+            extra_http_headers=extra_headers,
             user_agent="GCD-Docs-Scraper/2.0 (Playwright)",
         )
 
         def fetch(path: str) -> dict | None:
-            url = BASE_URL + path
+            url = base_url + path
             for attempt in range(MAX_RETRIES):
                 page = context.new_page()
                 try:
@@ -448,8 +546,6 @@ def crawl_and_scrape(output_dir: Path) -> dict:
                 continue
 
             page_html = result["html"]
-            # Only discover new links from /docs/* pages and product landing/tpc-differences pages.
-            # Product sub-pages link deep into GCP docs; don't follow those.
             should_discover = (
                 path.startswith("/docs")
                 or path.endswith("/docs")
@@ -459,7 +555,7 @@ def crawl_and_scrape(output_dir: Path) -> dict:
             if should_discover:
                 new_links = extract_links(page_html)
                 for link in new_links:
-                    if link not in discovered and is_crawlable_link(link, path):
+                    if link not in discovered and is_crawlable_link(link, products):
                         discovered.add(link)
                         to_visit.append(link)
                         new_count += 1
@@ -493,7 +589,7 @@ def crawl_and_scrape(output_dir: Path) -> dict:
         filepath = output_dir / filename
 
         header = f"# {title}\n\n" if title else ""
-        header += f"Source: {BASE_URL}{path}\n"
+        header += f"Source: {base_url}{path}\n"
         if last_updated:
             header += f"Last updated: {last_updated}\n"
         header += "\n"
@@ -505,7 +601,7 @@ def crawl_and_scrape(output_dir: Path) -> dict:
             "title": title,
             "filename": filename,
             "size": len(full_content),
-            "url": f"{BASE_URL}{path}",
+            "url": f"{base_url}{path}",
             "last_updated": last_updated,
         }
         date_tag = f" [{last_updated}]" if last_updated else ""
@@ -535,21 +631,33 @@ def crawl_and_scrape(output_dir: Path) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scrape GCD documentation")
-    parser.add_argument("--output-dir", default="docs-raw",
-                        help="Output directory (default: docs-raw)")
+    parser = argparse.ArgumentParser(description="Scrape sovereign cloud docs")
+    parser.add_argument("--region", default="berlin",
+                        choices=["berlin", "s3ns", "all"],
+                        help="Region to scrape (default: berlin)")
+    parser.add_argument("--output-dir", default=None,
+                        help="Output directory (default: per-region)")
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent.parent
-    output_dir = script_dir / args.output_dir
 
-    manifest = crawl_and_scrape(output_dir)
+    regions_to_scrape = list(REGIONS.keys()) if args.region == "all" else [args.region]
 
-    if not manifest:
-        print("\nERROR: No pages were scraped!", file=sys.stderr)
-        sys.exit(1)
+    for region in regions_to_scrape:
+        if args.output_dir and len(regions_to_scrape) == 1:
+            output_dir = script_dir / args.output_dir
+        else:
+            output_dir = script_dir / REGIONS[region]["default_output_dir"]
 
-    print(f"\nDone! Scraped {len(manifest)} pages to {output_dir}")
+        manifest = crawl_and_scrape(output_dir, region)
+
+        if not manifest:
+            print(f"\nERROR: No pages were scraped for {region}!",
+                  file=sys.stderr)
+            sys.exit(1)
+
+        print(f"\nDone! Scraped {len(manifest)} pages for {region} to {output_dir}")
+        print()
 
 
 if __name__ == "__main__":

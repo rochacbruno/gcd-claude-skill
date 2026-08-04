@@ -1,17 +1,24 @@
 # Google Cloud Dedicated (GCD) Agent Skill
 
-An [Agent Skill](https://agentskills.io) that gives AI coding agents expertise in Google Cloud Dedicated - Google's sovereign cloud platform. Works with Claude Code, Cursor, Gemini CLI, VS Code Copilot, and any other agent that supports the agentskills standard.
+An [Agent Skill](https://agentskills.io) that gives AI coding agents expertise in Google Cloud's sovereign cloud platforms - Google Cloud Dedicated (Berlin) and Cloud de Confiance by S3NS (France). Works with Claude Code, Cursor, Gemini CLI, VS Code Copilot, and any other agent that supports the agentskills standard.
 
-GCD is a separate product from public Google Cloud, running in isolated sovereign regions with strict data residency guarantees. Developers moving from GCP to GCD regularly hit differences in service availability, API endpoints, authentication, and tooling. This skill catches those issues before they become wasted hours.
+These sovereign clouds are separate products from public Google Cloud, running in isolated regions with strict data residency guarantees. Developers moving from GCP regularly hit differences in service availability, API endpoints, authentication, and tooling. This skill catches those issues before they become wasted hours.
+
+## Supported regions
+
+| Region | Product name | Identifier | Docs |
+|---|---|---|---|
+| Berlin, Germany | Google Cloud Dedicated in Germany | `u-germany-northeast1` | `berlin.devsitetest.how` |
+| France | Cloud de Confiance by S3NS | `u-france-east1` | `documentation.s3ns.fr` |
 
 ## What it does
 
 When activated, the skill provides:
 
-- GCD-specific guidance for architecture, authentication, Terraform, and developer tooling
-- Automatic detection of public GCP patterns that won't work in GCD (wrong endpoints, unavailable services, missing universe domain config)
-- Per-product difference details for all 16 available GCD services
-- Region-agnostic advice - Berlin (`u-germany-northeast1`) is the reference region, but the skill adapts to any GCD region
+- Sovereign-cloud-specific guidance for architecture, authentication, Terraform, and developer tooling
+- Automatic detection of public GCP patterns that won't work in sovereign clouds (wrong endpoints, unavailable services, missing universe domain config)
+- Per-product difference details for available services in each region
+- Multi-region awareness with region-specific identifiers (endpoints, project prefixes, SA domains, image projects)
 
 ## Installation
 
@@ -28,7 +35,7 @@ mkdir -p .claude/skills
 ln -s /path/to/gcd-claude-skill .claude/skills/gcd
 ```
 
-The skill activates automatically when Claude detects GCD-related work in that project. You can also invoke it directly with `/gcd`.
+The skill activates automatically when Claude detects sovereign-cloud-related work in that project. You can also invoke it directly with `/gcd`.
 
 To share with your team, commit the symlink:
 
@@ -73,26 +80,31 @@ gcd-claude-skill/
     plugin.json                         # Claude Code plugin manifest
   references/
     overview.md                         # Architecture, regions, zones, sovereignty model
-    key-differences.md                  # Top-level GCD vs public GCP differences
+    key-differences.md                  # Top-level sovereign cloud vs public GCP differences
     services.md                         # Available services and limitations
-    product-differences.md              # Per-product GCD vs GCP differences
+    product-differences.md              # Per-product sovereign cloud vs GCP differences
     authentication.md                   # Identity, credentials, ADC, tokens
     developer-guide.md                  # gcloud CLI, client libraries, API endpoints
-    terraform.md                        # Terraform/IaC configuration for GCD
+    terraform.md                        # Terraform/IaC configuration
     organization-setup.md               # Org setup, IdP, Fabric FAST toolkit
     quotas.md                           # Quota management, monitoring, CLI
     gotchas.md                          # Critical pitfalls and common mistakes
   scripts/
     scrape-gcd-docs.py                  # Documentation scraper (Playwright)
-  docs-raw/                             # Scraped raw docs (264 pages)
+  docs-raw/                             # Scraped Berlin (GCD) docs
     _manifest.json                      # Page inventory with metadata
     _last_updated.json                  # Per-page last-updated dates
+  docs-raw-s3ns/                        # Scraped S3NS (Cloud de Confiance) docs
+    _manifest.json
+    _last_updated.json
   LICENSE                               # Apache-2.0
 ```
 
 ## Documentation coverage
 
-The skill's reference files are synthesized from 264 scraped pages covering the full GCD documentation site: 126 cross-cutting GCD docs, 16 product landing pages, 16 per-product tpc-differences pages, and 106 product sub-pages with GCD-specific content.
+The skill's reference files are synthesized from scraped pages covering both sovereign cloud documentation sites.
+
+### Berlin (GCD) - scraped from berlin.devsitetest.how
 
 | Reference file | Pages covered | Content |
 |---|---|---|
@@ -107,9 +119,13 @@ The skill's reference files are synthesized from 264 scraped pages covering the 
 | `key-differences.md` | 1 | Comprehensive top-level GCD vs GCP differences |
 | `gotchas.md` | -- | Synthesized from all sources |
 
+### S3NS (Cloud de Confiance) - scraped from documentation.s3ns.fr
+
+The S3NS region has a broader product catalog including additional networking products (VPC, Cloud NAT, Cloud VPN, Cloud Interconnect, Cloud Router, Cloud Load Balancing, Cloud NGFW, VPC Service Controls, Cloud Armor, Network Service Tiers) and tools (Cloud Code, Lakehouse, Cloud Billing, API Registry, Cloud Marketplace, Organization Policy, Service Directory). The scraped docs are in `docs-raw-s3ns/`.
+
 ### Technology Areas covered
 
-Every item in the GCD docs "Technology Areas" menu is covered:
+Every item in the sovereign cloud docs "Technology Areas" menu is covered:
 
 - Access and resource management
 - Application development
@@ -126,7 +142,7 @@ Every item in the GCD docs "Technology Areas" menu is covered:
 
 ### Per-product differences covered
 
-Each available GCD service has its `tpc-differences` page plus GCD-specific sub-pages scraped and synthesized into `references/product-differences.md`:
+Each available service has its `tpc-differences` page plus region-specific sub-pages scraped and synthesized into `references/product-differences.md`:
 
 | Product | Pages | Includes |
 |---|---|---|
@@ -149,7 +165,7 @@ Each available GCD service has its `tpc-differences` page plus GCD-specific sub-
 
 ## Updating the docs
 
-The scraper uses Playwright to render JS-heavy DevSite pages and tracks last-updated dates for each page.
+The scraper uses Playwright to render JS-heavy DevSite pages and tracks last-updated dates for each page. It supports scraping both regions independently.
 
 ### Prerequisites
 
@@ -162,10 +178,17 @@ playwright install chromium
 ### Run the scraper
 
 ```bash
-python3 scripts/scrape-gcd-docs.py
+# Scrape Berlin only (default)
+python3 scripts/scrape-gcd-docs.py --region berlin
+
+# Scrape S3NS only
+python3 scripts/scrape-gcd-docs.py --region s3ns
+
+# Scrape both regions
+python3 scripts/scrape-gcd-docs.py --region all
 ```
 
-This re-scrapes all 264 pages into `docs-raw/`, updating `_manifest.json` and `_last_updated.json`. Compare `_last_updated.json` against a previous run to identify which pages changed.
+Each region's docs are scraped into their respective output directory (`docs-raw/` for Berlin, `docs-raw-s3ns/` for S3NS). Compare `_last_updated.json` against a previous run to identify which pages changed.
 
 After scraping, the reference files in `references/` should be regenerated to incorporate any documentation updates.
 

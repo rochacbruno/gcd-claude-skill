@@ -1,4 +1,4 @@
-name: Update GCD docs
+name: Update sovereign cloud docs
 
 on:
   schedule:
@@ -23,29 +23,41 @@ jobs:
           pip install playwright
           playwright install chromium --with-deps
 
-      - name: Save previous update tracker
-        run: cp docs-raw/_last_updated.json /tmp/previous_tracker.json 2>/dev/null || echo "{}" > /tmp/previous_tracker.json
+      - name: Save previous update trackers
+        run: |
+          cp docs-raw/_last_updated.json /tmp/previous_tracker_berlin.json 2>/dev/null || echo "{}" > /tmp/previous_tracker_berlin.json
+          cp docs-raw-s3ns/_last_updated.json /tmp/previous_tracker_s3ns.json 2>/dev/null || echo "{}" > /tmp/previous_tracker_s3ns.json
 
-      - name: Run scraper
-        run: python3 -u scripts/scrape-gcd-docs.py
+      - name: Scrape Berlin (GCD) docs
+        run: python3 -u scripts/scrape-gcd-docs.py --region berlin
 
-      - name: Diff update tracker
+      - name: Scrape S3NS (Cloud de Confiance) docs
+        run: python3 -u scripts/scrape-gcd-docs.py --region s3ns
+
+      - name: Diff update trackers
         id: diff
         run: |
-          if diff -q /tmp/previous_tracker.json docs-raw/_last_updated.json > /dev/null 2>&1; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No documentation changes detected."
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "Documentation changes detected:"
-            diff /tmp/previous_tracker.json docs-raw/_last_updated.json || true
+          CHANGED=false
+          if ! diff -q /tmp/previous_tracker_berlin.json docs-raw/_last_updated.json > /dev/null 2>&1; then
+            CHANGED=true
+            echo "Berlin documentation changes detected:"
+            diff /tmp/previous_tracker_berlin.json docs-raw/_last_updated.json || true
           fi
+          if ! diff -q /tmp/previous_tracker_s3ns.json docs-raw-s3ns/_last_updated.json > /dev/null 2>&1; then
+            CHANGED=true
+            echo "S3NS documentation changes detected:"
+            diff /tmp/previous_tracker_s3ns.json docs-raw-s3ns/_last_updated.json || true
+          fi
+          if [ "$CHANGED" = "false" ]; then
+            echo "No documentation changes detected in either region."
+          fi
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
 
       - name: Commit updated docs
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs-raw/
+          git add docs-raw/ docs-raw-s3ns/
           git commit -m "chore: update scraped GCD docs ($(date -u +%Y-%m-%d))"
           git push
