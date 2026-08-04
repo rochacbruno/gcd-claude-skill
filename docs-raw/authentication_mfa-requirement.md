@@ -250,8 +250,8 @@ you are prompted for your second factor as part of the sign-in process.
 
 ## Timelines for 2SV requirement
 
-When you need to enable 2SV for your user account in Google Cloud Dedicated in Germany depends on
-your account type, as shown in the following table.
+When 2SV is required for your user account in Google Cloud Dedicated in Germany depends on your
+account type, as shown in the following table.
 
 
 
@@ -272,12 +272,27 @@ On or after May 12, 2025 |
 |
 
 | 
-Enterprise Cloud Identity accounts (not using SSO) | 
+
+Enterprise Cloud Identity accounts (not using SSO), for organizations
+created before August 3, 2026
+| 
 
 User accounts with usernames and passwords created and managed by your
 Google Workspace administrator in Cloud Identity.
 | 
 On or after October 20, 2026 | 
+|
+
+| 
+
+Enterprise Cloud Identity accounts (not using SSO), for organizations
+created on or after August 3, 2026
+| 
+
+User accounts with usernames and passwords created and managed by your
+Google Workspace administrator in Cloud Identity.
+| 
+30 days after the organization creation date | 
 |
 
 | 
@@ -521,8 +536,8 @@ a third-party IdP using single sign-on. This user account doesn't require
 ## Cloud Identity: extend the deadline for the 2SV requirement
 
 Organizations that use Enterprise [Cloud Identity](/identity) (non-SSO) and
-were created before the 2SV requirement can enable a one-time, 90-day extension
-to the 2SV requirement at the organization level in the Google Cloud Dedicated console.
+were created before August 3, 2026, can enable a one-time, 90-day extension to
+the 2SV requirement at the organization level in the Google Cloud Dedicated console.
 
 To do so, principals with the
 [Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
