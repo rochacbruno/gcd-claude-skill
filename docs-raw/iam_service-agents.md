@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-07-29
+Last updated: 2026-08-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -4489,6 +4489,22 @@ Granted on the project.
 
 
 `service- PROJECT_NUMBER @gcp-sa-ekms.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### FTP Service Agent
+
+Service agent for `ftp.googleapis.com`. 
+
+
+`p- PROJECT_NUMBER - IDENTIFIER @gcp-sa-ftp.eu0-system.iam.gserviceaccount.com`
 
 | 
 

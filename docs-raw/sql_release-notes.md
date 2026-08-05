@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://berlin.devsitetest.how/sql/docs/release-notes
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ August 04, 2026 ](#August_04_2026)
 - [ July 31, 2026 ](#July_31_2026)
 - [ July 29, 2026 ](#July_29_2026)
 - [ June 29, 2026 ](#June_29_2026)
@@ -243,7 +244,27 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## July 31, 2026 
+## August 04, 2026 
+
+**Cloud SQL for MySQL**
+
+Feature 
+
+
+Cloud SQL for MySQL supports [resource groups](https://dev.mysql.com/doc/refman/8.0/en/resource-groups.html).
+MySQL resource groups let you manage resource allocation for different workloads
+on your Cloud SQL for MySQL instance. By using resource groups, you can prevent
+less important workloads from consuming excessive CPU or memory resources.
+
+To use MySQL resource groups, you must have maintenance version
+[*MYSQL_VERSION*.R20260320.00_20](/sql/docs/mysql/maintenance-changelog)
+or later installed on your instance.
+
+For more information, see [Manage CPU allocation with MySQL resource groups](/sql/docs/mysql/resource-groups).
+
+
+
+## July 31, 2026
 
 **Cloud SQL for MySQL**
 

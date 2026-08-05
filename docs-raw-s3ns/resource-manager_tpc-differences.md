@@ -1,7 +1,7 @@
 # Resource Manager in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/tpc-differences
-Last updated: 2026-07-22
+Last updated: 2026-07-29
 
 - 
 

@@ -1,7 +1,7 @@
 # XML API overview
 
 Source: https://documentation.s3ns.fr/storage/docs/xml-api/overview
-Last updated: 2026-07-22
+Last updated: 2026-07-29
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 

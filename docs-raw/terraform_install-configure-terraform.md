@@ -279,7 +279,7 @@ Terraform.
 
 
 
-## What's next 
+## What's next
 
 - Work through the
 [Terraform for Google Cloud Dedicated quickstart](/docs/terraform/create-vm-instance)

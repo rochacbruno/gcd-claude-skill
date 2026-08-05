@@ -1,7 +1,7 @@
 # Compute Engine release notes
 
 Source: https://berlin.devsitetest.how/compute/docs/release-notes
-Last updated: 2026-07-29
+Last updated: 2026-08-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ July 24, 2026 ](#July_24_2026)
 - [ July 16, 2026 ](#July_16_2026)
 - [ July 13, 2026 ](#July_13_2026)
 - [ July 09, 2026 ](#July_09_2026)
@@ -249,6 +250,22 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## July 24, 2026
+
+
+Feature 
+
+
+**Generally available**: A3 High machine types with 1, 2, 4, or 8 NVIDIA H100
+GPUs attached. These machine types are ideal for high performance computing
+(HPC) and machine learning (ML) workloads such as model inference, model
+training and fine tuning, and simulations.
+
+To get started, see the
+[Accelerator-optimized machine family guide](/compute/docs/machine-resource#accelerator-optimized_machine_family_guides).
 
 
 
