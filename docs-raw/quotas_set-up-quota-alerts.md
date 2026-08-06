@@ -1,7 +1,7 @@
 # Set up quota alerts and monitoring
 
 Source: https://berlin.devsitetest.how/docs/quotas/set-up-quota-alerts
-Last updated: 2026-07-17
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -336,7 +336,7 @@ gcloud CLI
 
 
 ```
-gcloud beta quotas info list --project= PROJECT_ID_OR_NUMBER \
+gcloud quotas info list --project= PROJECT_ID_OR_NUMBER \
 --service= SERVICE_NAME --format="value(metric)"
 ```
 

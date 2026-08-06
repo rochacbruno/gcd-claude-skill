@@ -191,14 +191,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71773,
+    "size": 71756,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-07-31"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139516,
+    "size": 139508,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-08-03"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39485,
+    "size": 39476,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-31"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160729,
+    "size": 160713,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-07-31"
   },
@@ -270,21 +270,21 @@
     "filename": "compute.md",
     "size": 3305,
     "url": "https://berlin.devsitetest.how/compute/docs",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
     "filename": "compute_instances_create-start-instance.md",
     "size": 24215,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/create-start-instance",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/instances/ssh": {
     "title": "About SSH connections",
     "filename": "compute_instances_ssh.md",
     "size": 5426,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/ssh",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
@@ -298,14 +298,14 @@
     "filename": "compute_release-notes.md",
     "size": 34304,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-08-04"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
     "filename": "compute_tpc-differences.md",
     "size": 13645,
     "url": "https://berlin.devsitetest.how/compute/docs/tpc-differences",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-05"
   },
   "/dns/docs": {
     "title": "Cloud DNS documentation",
@@ -382,7 +382,7 @@
     "filename": "application-development.md",
     "size": 3365,
     "url": "https://berlin.devsitetest.how/docs/application-development",
-    "last_updated": "2026-07-27"
+    "last_updated": "2026-08-05"
   },
   "/docs/application-hosting": {
     "title": "Application hosting",
@@ -629,6 +629,27 @@
     "url": "https://berlin.devsitetest.how/docs/discovery/use-api",
     "last_updated": "2025-06-16"
   },
+  "/docs/gcd-solutions/health-insurance": {
+    "title": "Health insurance risk analysis with BigQuery ML and Gemma",
+    "filename": "gcd-solutions_health-insurance.md",
+    "size": 4322,
+    "url": "https://berlin.devsitetest.how/docs/gcd-solutions/health-insurance",
+    "last_updated": "2026-08-05"
+  },
+  "/docs/gcd-solutions/overview": {
+    "title": "Solutions for Google Cloud Dedicated",
+    "filename": "gcd-solutions_overview.md",
+    "size": 3269,
+    "url": "https://berlin.devsitetest.how/docs/gcd-solutions/overview",
+    "last_updated": "2026-08-05"
+  },
+  "/docs/gcd-solutions/tax-enforcement": {
+    "title": "Tax anomaly detection with BigQuery ML and Gemma",
+    "filename": "gcd-solutions_tax-enforcement.md",
+    "size": 4450,
+    "url": "https://berlin.devsitetest.how/docs/gcd-solutions/tax-enforcement",
+    "last_updated": "2026-08-05"
+  },
   "/docs/get-started-tpc": {
     "title": "Get started with Google Cloud Dedicated",
     "filename": "get-started-tpc.md",
@@ -814,7 +835,7 @@
   "/docs/quotas/apis": {
     "title": "APIs and reference",
     "filename": "quotas_apis.md",
-    "size": 1084,
+    "size": 991,
     "url": "https://berlin.devsitetest.how/docs/quotas/apis",
     "last_updated": ""
   },
@@ -828,9 +849,9 @@
   "/docs/quotas/configure-dimensions": {
     "title": "Configure Cloud Quotas dimensions",
     "filename": "quotas_configure-dimensions.md",
-    "size": 9280,
+    "size": 9270,
     "url": "https://berlin.devsitetest.how/docs/quotas/configure-dimensions",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/configure-vpc-service-controls": {
     "title": "Configure VPC Service Controls for Cloud Quotas",
@@ -842,9 +863,9 @@
   "/docs/quotas/custom-constraints": {
     "title": "Use custom organization policies",
     "filename": "quotas_custom-constraints.md",
-    "size": 26601,
+    "size": 26596,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-08-04"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -854,18 +875,18 @@
     "last_updated": "2026-07-17"
   },
   "/docs/quotas/gcloud-cli-examples": {
-    "title": "Manage quotas using the gcloud beta CLI",
+    "title": "Manage quotas using the gcloud CLI",
     "filename": "quotas_gcloud-cli-examples.md",
-    "size": 23324,
+    "size": 23193,
     "url": "https://berlin.devsitetest.how/docs/quotas/gcloud-cli-examples",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19109,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/implement-common-use-cases": {
     "title": "Implement common use cases",
@@ -884,9 +905,9 @@
   "/docs/quotas/monitor": {
     "title": "Set up quota alerts and monitoring",
     "filename": "quotas_monitor.md",
-    "size": 9459,
+    "size": 9454,
     "url": "https://berlin.devsitetest.how/docs/quotas/monitor",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/overview": {
     "title": "Cloud Quotas overview",
@@ -905,9 +926,9 @@
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
-    "size": 26968,
+    "size": 26908,
     "url": "https://berlin.devsitetest.how/docs/quotas/quota-adjuster",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
@@ -947,9 +968,9 @@
   "/docs/quotas/set-up-quota-alerts": {
     "title": "Set up quota alerts and monitoring",
     "filename": "quotas_set-up-quota-alerts.md",
-    "size": 9471,
+    "size": 9466,
     "url": "https://berlin.devsitetest.how/docs/quotas/set-up-quota-alerts",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/terminology": {
     "title": "Quota and system limit terminology",
@@ -975,16 +996,16 @@
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
     "filename": "quotas_troubleshoot.md",
-    "size": 7330,
+    "size": 7315,
     "url": "https://berlin.devsitetest.how/docs/quotas/troubleshoot",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/view-manage": {
     "title": "View and manage quotas",
     "filename": "quotas_view-manage.md",
-    "size": 19095,
+    "size": 19050,
     "url": "https://berlin.devsitetest.how/docs/quotas/view-manage",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/view-ongoing-rollouts": {
     "title": "View ongoing rollouts",
@@ -1894,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-06"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

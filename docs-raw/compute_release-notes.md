@@ -1,7 +1,7 @@
 # Compute Engine release notes
 
 Source: https://berlin.devsitetest.how/compute/docs/release-notes
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 

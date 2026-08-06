@@ -1,7 +1,7 @@
 # Troubleshoot quota errors
 
 Source: https://berlin.devsitetest.how/docs/quotas/troubleshoot
-Last updated: 2026-07-17
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -313,8 +313,8 @@ gcloud components update
 ```
 
 
-For more details about `gcloud beta quotas` commands and flags, see the
-[gcloud beta quotas](/sdk/gcloud/reference/beta/quotas) 
+For more details about `gcloud quotas` commands and flags, see the
+[gcloud quotas](/sdk/gcloud/reference/quotas) 
 section of the Google Cloud CLI reference.
 
 ## What's next

@@ -1,7 +1,7 @@
 # Use custom organization policies
 
 Source: https://documentation.s3ns.fr/docs/quotas/custom-constraints
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -3048,7 +3048,7 @@ a quota preference for Compute Engine:
 
 
 ```
-gcloud beta quotas preferences create \ 
+gcloud quotas preferences create \ 
 --service = compute.googleapis.com \ 
 --quota-id = CPUS-per-project-region \ 
 --preferred-value = 30 \ 

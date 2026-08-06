@@ -176,16 +176,9 @@ these examples.
 
 
 
-For more about the syntax of `gcloud beta quotas`
+For more about the syntax of `gcloud quotas`
 commands, see the Google Cloud SDK reference.
 
 
 
-**Important**: These commands are in
-preview and might change without notice.
-
-
-
-
-
-](/sdk/gcloud/reference/beta/quotas)
+](/sdk/gcloud/reference/quotas)

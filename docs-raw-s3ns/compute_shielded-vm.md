@@ -1,7 +1,7 @@
 # Shielded VM documentation
 
 Source: https://documentation.s3ns.fr/compute/shielded-vm/docs
-Last updated: 2026-07-31
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/shielded-vm/docs/tpc-differences) for more details.
 

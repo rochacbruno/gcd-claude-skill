@@ -1,7 +1,7 @@
 # View and manage quotas
 
 Source: https://berlin.devsitetest.how/docs/quotas/view-manage
-Last updated: 2026-07-17
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -889,19 +889,19 @@ See the following sections for more information:
 
 - 
 
-For example `gcloud beta quotas info` and `gcloud beta quotas preferences`
+For example `gcloud quotas info` and `gcloud quotas preferences`
 commands, see
 [Use the gcloud CLI to view and manage quotas](/docs/quotas/gcloud-cli-examples).
 
 - 
 
-For a complete list of `gcloud beta quotas` commands and flags, see the
-[gcloud beta quotas](/sdk/gcloud/reference/beta/quotas) 
+For a complete list of `gcloud quotas` commands and flags, see the
+[gcloud quotas](/sdk/gcloud/reference/quotas) 
 section of the Google Cloud CLI reference.
 
-- [gcloud beta quotas info](/sdk/gcloud/reference/beta/quotas/info)
+- [gcloud quotas info](/sdk/gcloud/reference/quotas/info)
 
-- [gcloud beta quotas preferences](/sdk/gcloud/reference/beta/quotas/preferences)
+- [gcloud quotas preferences](/sdk/gcloud/reference/quotas/preferences)
 
 ## Request project quota
 

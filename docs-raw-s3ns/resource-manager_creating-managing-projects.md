@@ -128,6 +128,18 @@ Guides
 
 
 
+- On this page 
+- [ Before you begin ](#before_you_begin)
+- [ Create a project ](#creating_a_project)
+
+- [ Add tags during project creation ](#add_tags_during_project_creation)
+- [ Designate project environments with tags ](#designate_project_environments_with_tags)
+- [ Creating a project using a service account ](#creating_a_project_using_a_service_account)
+
+- [ Managing project quotas ](#managing_project_quotas)
+- [ What's next ](#whats_next)
+- 
+
 
 
 
@@ -254,8 +266,11 @@ the [`projects.create()`](/resource-manager/reference/rest/v3/projects/create)
 method.
 
 
+[Console](#console) [gcloud](#gcloud) [REST](#rest) 
+More 
 
-### Console
+
+
 
 To create a new project, do the following:
 
@@ -302,7 +317,6 @@ will be the hierarchical parent of the new project.
 
 
 
-### gcloud
 
 - 
 
@@ -366,7 +380,6 @@ gcloud projects create PROJECT_ID --folder = FOLDER_ID
 
 
 
-### REST
 
 You can't use certain words in the project ID when you create a new project
 with the `projects.create()` method. Some examples include `google`, `null`, `undefined`, and `ssl`.
@@ -452,8 +465,11 @@ to this role, see [Manage tags on resources](/resource-manager/docs/tags/tags-cr
 You can only add the namespace for the tag key-value pairs in one of the following ways:
 
 
+[gcloud](#gcloud) [REST](#rest) 
+More 
 
-### gcloud
+
+
 
 To add tags during project creation, run the following command:
 
@@ -476,7 +492,6 @@ where the tag keys are defined.
 
 
 
-### REST
 
 The following snippet is a JSON request where you create a project and
 add tags to it.

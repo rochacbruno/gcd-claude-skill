@@ -1,7 +1,7 @@
 # Use the quota adjuster
 
 Source: https://berlin.devsitetest.how/docs/quotas/quota-adjuster
-Last updated: 2026-07-17
+Last updated: 2026-08-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -1119,7 +1119,7 @@ gcloud auth login
 - 
 
 To enable quota adjuster settings, use the
-[`gcloud beta quotas adjuster settings update` command](/sdk/gcloud/reference/beta/quotas/adjuster/settings/update).
+[`gcloud quotas adjuster settings update` command](/sdk/gcloud/reference/quotas/adjuster/settings/update).
 
 ### Enable quota adjuster on a project
 
@@ -1127,7 +1127,7 @@ To specify a *project*, use the `--project` flag:
 
 
 ```
-gcloud beta quotas adjuster settings update --project= PROJECT_ID_OR_NUMBER --enablement=enabled
+gcloud quotas adjuster settings update --project= PROJECT_ID_OR_NUMBER --enablement=enabled
 ```
 
 
@@ -1141,7 +1141,7 @@ To specify a *folder*, use the `--folder` flag:
 
 
 ```
-gcloud beta quotas adjuster settings update --folder= FOLDER_ID --enablement=enabled
+gcloud quotas adjuster settings update --folder= FOLDER_ID --enablement=enabled
 ```
 
 
@@ -1154,7 +1154,7 @@ To specify an *organization*, use the `--organization` flag:
 
 
 ```
-gcloud beta quotas adjuster settings update --organization= ORGANIZATION_ID --enablement=enabled
+gcloud quotas adjuster settings update --organization= ORGANIZATION_ID --enablement=enabled
 ```
 
 
@@ -1167,7 +1167,7 @@ Verify the enablement status:
 
 
 ```
-gcloud beta quotas adjuster settings describe -- RESOURCE_CONTAINER_TYPE = ID 
+gcloud quotas adjuster settings describe -- RESOURCE_CONTAINER_TYPE = ID 
 ```
 
 
@@ -1376,7 +1376,7 @@ gcloud auth login
 - 
 
 To disable quota adjuster settings, use the
-[`gcloud beta quotas adjuster settings update` command](/sdk/gcloud/reference/beta/quotas/adjuster/settings/update).
+[`gcloud quotas adjuster settings update` command](/sdk/gcloud/reference/quotas/adjuster/settings/update).
 
 ### Disable quota adjuster on a project
 
@@ -1384,7 +1384,7 @@ To specify a *project*, use the `--project` flag:
 
 
 ```
-gcloud beta quotas adjuster settings update --project= PROJECT_ID_OR_NUMBER --enablement=disabled
+gcloud quotas adjuster settings update --project= PROJECT_ID_OR_NUMBER --enablement=disabled
 ```
 
 
@@ -1398,7 +1398,7 @@ To specify a *folder*, use the `--folder` flag:
 
 
 ```
-gcloud beta quotas adjuster settings update --folder= FOLDER_ID --enablement=disabled
+gcloud quotas adjuster settings update --folder= FOLDER_ID --enablement=disabled
 ```
 
 
@@ -1411,7 +1411,7 @@ To specify an *organization*, use the `--organization` flag:
 
 
 ```
-gcloud beta quotas adjuster settings update --organization= ORGANIZATION_ID --enablement=disabled
+gcloud quotas adjuster settings update --organization= ORGANIZATION_ID --enablement=disabled
 ```
 
 
@@ -1424,7 +1424,7 @@ Verify the enablement status:
 
 
 ```
-gcloud beta quotas adjuster settings describe -- RESOURCE_CONTAINER_TYPE = ID 
+gcloud quotas adjuster settings describe -- RESOURCE_CONTAINER_TYPE = ID 
 ```
 
 

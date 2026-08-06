@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50882,
+    "size": 50881,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-07-31"
   },
@@ -205,14 +205,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71499,
+    "size": 71482,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
     "last_updated": "2026-07-31"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139042,
+    "size": 139034,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-08-03"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39338,
+    "size": 39330,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-31"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160048,
+    "size": 160032,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-07-31"
   },
@@ -312,35 +312,35 @@
     "filename": "compute.md",
     "size": 3302,
     "url": "https://documentation.s3ns.fr/compute/docs",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/disks/hyperdisks": {
     "title": "Google Cloud Hyperdisk overview",
     "filename": "compute_disks_hyperdisks.md",
     "size": 32551,
     "url": "https://documentation.s3ns.fr/compute/docs/disks/hyperdisks",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/gpus": {
     "title": "GPU machine types",
     "filename": "compute_gpus.md",
     "size": 38600,
     "url": "https://documentation.s3ns.fr/compute/docs/gpus",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
     "filename": "compute_instances_create-start-instance.md",
     "size": 24159,
     "url": "https://documentation.s3ns.fr/compute/docs/instances/create-start-instance",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/instances/ssh": {
     "title": "About SSH connections",
     "filename": "compute_instances_ssh.md",
     "size": 5402,
     "url": "https://documentation.s3ns.fr/compute/docs/instances/ssh",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
@@ -354,21 +354,21 @@
     "filename": "compute_release-notes.md",
     "size": 34256,
     "url": "https://documentation.s3ns.fr/compute/docs/release-notes",
-    "last_updated": "2026-08-04"
+    "last_updated": "2026-08-05"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Cloud de Confiance versus Google Cloud",
     "filename": "compute_tpc-differences.md",
     "size": 13402,
     "url": "https://documentation.s3ns.fr/compute/docs/tpc-differences",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-05"
   },
   "/compute/shielded-vm/docs": {
     "title": "Shielded VM documentation",
     "filename": "compute_shielded-vm.md",
     "size": 1968,
     "url": "https://documentation.s3ns.fr/compute/shielded-vm/docs",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/container-optimized-os/docs": {
     "title": "Container-Optimized OS from Google documentation",
@@ -459,7 +459,7 @@
     "filename": "application-development.md",
     "size": 3357,
     "url": "https://documentation.s3ns.fr/docs/application-development",
-    "last_updated": "2026-07-27"
+    "last_updated": "2026-08-05"
   },
   "/docs/application-hosting": {
     "title": "Application hosting",
@@ -706,6 +706,27 @@
     "url": "https://documentation.s3ns.fr/docs/discovery/use-api",
     "last_updated": "2025-06-16"
   },
+  "/docs/gcd-solutions/health-insurance": {
+    "title": "Health insurance risk analysis with BigQuery ML and Gemma",
+    "filename": "gcd-solutions_health-insurance.md",
+    "size": 4297,
+    "url": "https://documentation.s3ns.fr/docs/gcd-solutions/health-insurance",
+    "last_updated": "2026-08-05"
+  },
+  "/docs/gcd-solutions/overview": {
+    "title": "Solutions for Cloud de Confiance",
+    "filename": "gcd-solutions_overview.md",
+    "size": 3422,
+    "url": "https://documentation.s3ns.fr/docs/gcd-solutions/overview",
+    "last_updated": "2026-08-05"
+  },
+  "/docs/gcd-solutions/tax-enforcement": {
+    "title": "Tax anomaly detection with BigQuery ML and Gemma",
+    "filename": "gcd-solutions_tax-enforcement.md",
+    "size": 4425,
+    "url": "https://documentation.s3ns.fr/docs/gcd-solutions/tax-enforcement",
+    "last_updated": "2026-08-05"
+  },
   "/docs/get-started-tpc": {
     "title": "Get started with Cloud de Confiance",
     "filename": "get-started-tpc.md",
@@ -884,7 +905,7 @@
   "/docs/quotas/apis": {
     "title": "APIs and reference",
     "filename": "quotas_apis.md",
-    "size": 1083,
+    "size": 990,
     "url": "https://documentation.s3ns.fr/docs/quotas/apis",
     "last_updated": ""
   },
@@ -898,9 +919,9 @@
   "/docs/quotas/configure-dimensions": {
     "title": "Configure Cloud Quotas dimensions",
     "filename": "quotas_configure-dimensions.md",
-    "size": 9236,
+    "size": 9226,
     "url": "https://documentation.s3ns.fr/docs/quotas/configure-dimensions",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/configure-vpc-service-controls": {
     "title": "Configure VPC Service Controls for Cloud Quotas",
@@ -912,30 +933,30 @@
   "/docs/quotas/custom-constraints": {
     "title": "Use custom organization policies",
     "filename": "quotas_custom-constraints.md",
-    "size": 26494,
+    "size": 26489,
     "url": "https://documentation.s3ns.fr/docs/quotas/custom-constraints",
-    "last_updated": "2026-08-04"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2680,
+    "size": 2681,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-07-17"
   },
   "/docs/quotas/gcloud-cli-examples": {
-    "title": "Manage quotas using the gcloud beta CLI",
+    "title": "Manage quotas using the gcloud CLI",
     "filename": "quotas_gcloud-cli-examples.md",
-    "size": 23265,
+    "size": 23134,
     "url": "https://documentation.s3ns.fr/docs/quotas/gcloud-cli-examples",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18922,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/implement-common-use-cases": {
     "title": "Implement common use cases",
@@ -954,9 +975,9 @@
   "/docs/quotas/monitor": {
     "title": "Set up quota alerts and monitoring",
     "filename": "quotas_monitor.md",
-    "size": 9401,
+    "size": 9396,
     "url": "https://documentation.s3ns.fr/docs/quotas/monitor",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/overview": {
     "title": "Cloud Quotas overview",
@@ -975,9 +996,9 @@
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
-    "size": 26851,
+    "size": 26791,
     "url": "https://documentation.s3ns.fr/docs/quotas/quota-adjuster",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
@@ -1017,9 +1038,9 @@
   "/docs/quotas/set-up-quota-alerts": {
     "title": "Set up quota alerts and monitoring",
     "filename": "quotas_set-up-quota-alerts.md",
-    "size": 9413,
+    "size": 9408,
     "url": "https://documentation.s3ns.fr/docs/quotas/set-up-quota-alerts",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/terminology": {
     "title": "Quota and system limit terminology",
@@ -1045,16 +1066,16 @@
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
     "filename": "quotas_troubleshoot.md",
-    "size": 7269,
+    "size": 7254,
     "url": "https://documentation.s3ns.fr/docs/quotas/troubleshoot",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/view-manage": {
     "title": "View and manage quotas",
     "filename": "quotas_view-manage.md",
-    "size": 18911,
+    "size": 18866,
     "url": "https://documentation.s3ns.fr/docs/quotas/view-manage",
-    "last_updated": "2026-07-17"
+    "last_updated": "2026-08-05"
   },
   "/docs/quotas/view-ongoing-rollouts": {
     "title": "View ongoing rollouts",
@@ -1227,7 +1248,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4400,
+    "size": 4399,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
     "last_updated": "2026-07-29"
   },
@@ -1787,7 +1808,7 @@
   "/resource-manager/docs/creating-managing-projects": {
     "title": "Create projects",
     "filename": "resource-manager_creating-managing-projects.md",
-    "size": 13163,
+    "size": 13666,
     "url": "https://documentation.s3ns.fr/resource-manager/docs/creating-managing-projects",
     "last_updated": "2026-07-29"
   },
@@ -1936,7 +1957,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-06"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

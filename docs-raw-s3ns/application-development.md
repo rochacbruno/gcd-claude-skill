@@ -1,7 +1,7 @@
 # Application development
 
 Source: https://documentation.s3ns.fr/docs/application-development
-Last updated: 2026-07-27
+Last updated: 2026-08-05
 
 - 
 
