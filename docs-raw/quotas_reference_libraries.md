@@ -1,7 +1,7 @@
 # Cloud Quotas client libraries
 
 Source: https://berlin.devsitetest.how/docs/quotas/reference/libraries
-Last updated: 2026-07-17
+Last updated: 2026-07-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -337,7 +337,7 @@ dependencies >
 dependency >
 groupId>com . google . cloud / groupId >
 artifactId>libraries - bom / artifactId >
-version>26 .83.0 / version >
+version>26 .86.0 / version >
 type>pom / type >
 scope>import / scope >
 / dependency >
@@ -381,7 +381,7 @@ add the following to your dependencies:
 
 
 ```
-implementation platform ( ' com . google . cloud : libraries - bom : 26.83.0 ' ) 
+implementation platform ( ' com . google . cloud : libraries - bom : 26.86.0 ' ) 
 
 implementation ' com . google . cloud : google - cloud - cloudquotas ' 
 ```
@@ -415,7 +415,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-cloudquotas" % "0.62.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-cloudquotas" % "0.63.0" 
 ```
 
 
@@ -2036,7 +2036,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 // TODO: Use client. 
 _ = c 
@@ -2053,7 +2053,7 @@ c , err := cloudquotas . [ NewRESTClient ](https://berlin.devsitetest.how/go/doc
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 // TODO: Use client. 
 _ = c 
@@ -2070,7 +2070,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 req := & cloudquotaspb . CreateQuotaPreferenceRequest { 
 // TODO: Fill request struct fields. 
@@ -2095,7 +2095,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 req := & cloudquotaspb . GetQuotaInfoRequest { 
 // TODO: Fill request struct fields. 
@@ -2120,7 +2120,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 req := & cloudquotaspb . GetQuotaPreferenceRequest { 
 // TODO: Fill request struct fields. 
@@ -2145,7 +2145,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 req := & cloudquotaspb . ListQuotaInfosRequest { 
 // TODO: Fill request struct fields. 
@@ -2182,7 +2182,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 req := & cloudquotaspb . ListQuotaPreferencesRequest { 
 // TODO: Fill request struct fields. 
@@ -2219,7 +2219,7 @@ c , err := cloudquotas . [ NewClient ](https://berlin.devsitetest.how/go/docs/re
 if err != nil { 
 // TODO: Handle error. 
 } 
-defer c . [ Close ](https://berlin.devsitetest.how/go/docs/reference/cloud.google.com/go/cloudquotas/latest/apiv1.html#cloud_google_com_go_cloudquotas_apiv1_Client_Close) () 
+defer c . Close () 
 
 req := & cloudquotaspb . UpdateQuotaPreferenceRequest { 
 // TODO: Fill request struct fields. 
@@ -2445,7 +2445,7 @@ function main ( name ) {
 * TODO(developer): Uncomment these variables before running the sample. 
 */ 
 /** 
-* Required. The resource name of the quota info. 
+* Required. Identifier. The resource name of the quota info. 
 * An example name: 
 * `projects/123/locations/global/services/compute.googleapis.com/quotaInfos/CpusPerProjectPerRegion` 
 */ 
@@ -2576,7 +2576,7 @@ use Google\Cloud\CloudQuotas\V1\QuotaInfo;
 /** 
 * Retrieve the QuotaInfo of a quota for a project, folder or organization. 
 * 
-* @param string $formattedName The resource name of the quota info. 
+* @param string $formattedName Identifier. The resource name of the quota info. 
 * 
 * An example name: 
 * `projects/123/locations/global/services/compute.googleapis.com/quotaInfos/CpusPerProjectPerRegion` 

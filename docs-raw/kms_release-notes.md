@@ -1,7 +1,7 @@
 # Cloud KMS release notes
 
 Source: https://berlin.devsitetest.how/kms/docs/release-notes
-Last updated: 2026-07-29
+Last updated: 2026-08-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ August 06, 2026 ](#August_06_2026)
 - [ July 16, 2026 ](#July_16_2026)
 - [ February 21, 2025 ](#February_21_2025)
 - [ October 18, 2024 ](#October_18_2024)
@@ -192,7 +193,27 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## July 16, 2026 
+## August 06, 2026 
+
+
+Feature 
+
+
+**Preview:** Cloud KMS supports quantum-safe key import. You can use the
+following quantum-safe import methods:
+
+- `HPKE_KEM_XWING_HKDF_SHA256_AES_256_GCM`
+
+- `HPKE_KEM_ML_KEM_768_HKDF_SHA256_AES_256_GCM`
+
+- `HPKE_KEM_ML_KEM_1024_HKDF_SHA256_AES_256_GCM`
+
+For more information about quantum-safe key import, see [Quantum-safe key
+import](/kms/docs/quantum-safe-key-import).
+
+
+
+## July 16, 2026
 
 
 Feature 

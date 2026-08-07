@@ -1,7 +1,7 @@
 # About Cloud de Confiance by S3NS documentation
 
 Source: https://documentation.s3ns.fr/docs/overview/gcd-documentation
-Last updated: 2026-07-17
+Last updated: 2026-07-29
 
 - 
 

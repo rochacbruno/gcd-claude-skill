@@ -1,7 +1,7 @@
 # Create and manage tags
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/tags/tags-creating-and-managing
-Last updated: 2026-07-30
+Last updated: 2026-08-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -170,6 +170,12 @@ Guides
 - [ Organization policies and tags ](#organization_policies_tags)
 
 - [ System tags ](#system_tags)
+- [ View and manage semantic tags ](#view_and_manage_semantic_tags)
+
+- [ View synced semantic tags ](#view_synced_semantic_tags)
+- [ Fetch resource semantics ](#fetch_resource_semantics)
+- [ View the Semantic Catalog ](#view_semantic_catalog)
+
 - [ Supported services ](#supported_services)
 - 
 
@@ -332,7 +338,7 @@ on the organization
 - 
 Attach and remove tags from resources:
 [Tag User ](/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser) (`roles/resourcemanager.tagUser`)
-on the tag value and the resources that you are attaching or removing the tag value to
+on the tag value and the resources that you are attaching or removing the tag value to. To fetch resource semantics, the API utilizes the existing resource-specific ` .listEffectiveTags` IAM permission.
 
 
 
@@ -3228,6 +3234,133 @@ automatically attach to resources that it profiles to indicate the discovered da
 sensitivity level of the resource. For more information, see
 [Enable the automatic tagging in the discovery configuration](/sensitive-data-protection/docs/control-access-based-on-data-sensitivity#enable-automatic-tagging-discovery). | 
 |
+
+| 
+`google:AppHub/environment` | 
+`PRODUCTION, STAGING, TEST, DEVELOPMENT` | 
+System semantic tags ([Preview](https://cloud.google.com/products#product-launch-stages)) replicated automatically from App Hub for the
+environment attribute. | 
+|
+
+| 
+`google:AppHub/criticality` | 
+`MISSION_CRITICAL, HIGH, MEDIUM, LOW` | 
+System semantic tags ([Preview](https://cloud.google.com/products#product-launch-stages)) replicated automatically from App Hub for the
+criticality attribute. | 
+|
+
+
+
+## View and manage semantic tags
+
+
+
+You can view and list specific semantics synchronized from App Hub.
+
+### View synced semantic tags
+
+Use the following method to verify that App Hub attributes have
+propagated as read-only system semantic tags to underlying resources.
+
+
+[ gcloud ](#gcloud) 
+More 
+
+
+
+
+To view bindings on the underlying resource (for example, a MIG or
+Cloud Run job), use the
+`gcloud resource-manager tags bindings list` command:
+
+
+```
+gcloud resource-manager tags bindings list \
+--parent=// API_DOMAIN /projects/ PROJECT_NUMBER /... \
+--location= LOCATION 
+```
+
+
+Output example showing App Hub system tags:
+
+
+```
+--- 
+namespacedTagKey : google:AppHub/criticality 
+namespacedTagValue : google:AppHub/criticality/low 
+parent : //compute.googleapis.com/projects/my-project-id/zones/us-central1-a/instances/my-instance 
+tagKey : tagKeys/345678901234 
+tagValue : tagValues/456789012345 
+--- 
+```
+
+
+
+### Fetch resource semantics
+
+Use the following method to retrieve authoritative semantic mappings associated
+with a resource. To fetch resource semantics, the API uses the
+existing resource-specific ` RESOURCE .listEffectiveTags`
+IAM permission.
+
+
+[ gcloud ](#gcloud) 
+More 
+
+
+
+
+To view effective semantic mappings (for example, confirming
+`ENVIRONMENT:STAGING` or `CRITICALITY:LOW`), use the
+`gcloud alpha resource-manager tags semantics list` command:
+
+
+```
+gcloud alpha resource-manager tags semantics list \
+--parent=// API_DOMAIN /projects/ PROJECT_NUMBER /... \
+--location= LOCATION 
+```
+
+
+Output example:
+
+
+```
+--- 
+semanticKey : CRITICALITY 
+semanticValue : LOW 
+--- 
+```
+
+
+
+### View the Semantic Catalog
+
+You can browse the Semantic Catalog in the Google Cloud Dedicated console to view
+available semantics and their mapping to OpenTelemetry (OTel) attributes.
+
+
+[ Console ](#console) 
+More 
+
+
+
+
+To access the Semantic Catalog using the Google Cloud Dedicated console, do the
+following:
+
+- 
+
+Open the **Tags** page in the Google Cloud Dedicated console.
+
+[Open Tags page](https://console.cloud.berlin-build0.goog/iam-admin/tags) 
+
+- 
+
+Click the **Semantic Catalog** tab located in the main dashboard area
+to view the table mapping internal semantic keys to OpenTelemetry
+standards.
+
 
 
 

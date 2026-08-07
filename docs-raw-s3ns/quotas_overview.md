@@ -1,7 +1,7 @@
 # Cloud Quotas overview
 
 Source: https://documentation.s3ns.fr/docs/quotas/overview
-Last updated: 2026-07-17
+Last updated: 2026-07-29
 
 - 
 

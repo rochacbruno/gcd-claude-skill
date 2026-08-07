@@ -1,7 +1,7 @@
 # Manage API keys
 
 Source: https://berlin.devsitetest.how/docs/authentication/api-keys
-Last updated: 2026-07-21
+Last updated: 2026-07-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -1366,7 +1366,7 @@ try ( [ ApiKeysClient ](https://berlin.devsitetest.how/java/docs/reference/googl
 . build (); 
 
 // Make the request and wait for the operation to complete. 
-[ Key ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apikeys/latest/com.google.api.apikeys.v2.Key.html) result = apiKeysClient . [ createKeyAsync ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apikeys/latest/com.google.api.apikeys.v2.ApiKeysClient.html#com_google_api_apikeys_v2_ApiKeysClient_createKeyAsync_com_google_api_apikeys_v2_CreateKeyRequest_) ( createKeyRequest ). get ( 3 , TimeUnit . MINUTES ); 
+[ Key ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apikeys/latest/com.google.api.apikeys.v2.Key.html) result = apiKeysClient . [ createKeyAsync ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apikeys/latest/com.google.api.apikeys.v2.ApiKeysClient.html#com_google_api_apikeys_v2_ApiKeysClient_createKeyAsync__org_jspecify_annotations_Nullable_com_google_api_apikeys_v2_LocationName_com_google_api_apikeys_v2_Key_java_lang_String_) ( createKeyRequest ). get ( 3 , TimeUnit . MINUTES ); 
 
 // For authenticating with the API key, use the value in "result.getKeyString()". 
 // To restrict the usage of this API key, use the value in "result.getName()". 

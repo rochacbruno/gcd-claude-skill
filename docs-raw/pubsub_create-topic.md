@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://berlin.devsitetest.how/pubsub/docs/create-topic
-Last updated: 2026-07-30
+Last updated: 2026-08-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -137,7 +137,7 @@ Guides
 
 - [ Add a default subscription ](#add_a_default_subscription)
 - [ Enable ingestion ](#enable_ingestion)
-- [ Enable message retention ](#enable_message_retention)
+- [ Enable topic message retention ](#enable_message_retention)
 - [ Export message data to BigQuery ](#export_bigquery)
 - [ Backup message data to Cloud Storage ](#export_storage)
 - [ Transforms ](#transforms)
@@ -399,20 +399,33 @@ ingestion, see the following:
 
 [Create a Confluent Cloud topic](/pubsub/docs/create-confluent-cloud-import-topic)
 
-### Enable message retention
+### Enable topic message retention
 
-Specifies how long the Pub/Sub topic retains messages
-after publication. After the message retention duration is over,
-Pub/Sub might discard the message regardless of its
-acknowledgment state. Message storage fees are charged for storing all
-messages published to the topic
+By default, a Pub/Sub topic discards messages as soon as they are
+acknowledged by all subscriptions attached to the topic. Optionally, you can
+configure a topic to retain messages for a period of up to 31 days, with a
+minimum retention period of 10 minutes.
 
+Message retention lets subscriptions replay previously acknowledged messages or
+replay messages that were published before you created the subscription. For
+more information, see
+[Replay and purge messages with seek](/pubsub/docs/replay-overview).
 
-- Default = Not enabled
+Storage costs for the messages retained by the topic are billed to the topic's
+project. After the message retention period has elapsed, Pub/Sub
+might discard the message regardless of its acknowledgment state.
 
-- Minimum value = 10 minutes
+To view metrics about retained messages, use the following Cloud Monitoring
+metrics:
 
-- Maximum value = 31 days
+- [`topic/num_retained_messages`](/monitoring/api/metrics_gcp_p_z#pubsub/topic/num_retained_messages):
+The number of retained messages
+
+- [`topic/oldest_retained_message_age`](/monitoring/api/metrics_gcp_p_z#pubsub/topic/oldest_retained_message_age):
+The age of the oldest retained message
+
+- [`topic/retained_bytes`](/monitoring/api/metrics_gcp_p_z#pubsub/topic/retained_bytes):
+The total size of the retained messages, in bytes
 
 ### Export message data to BigQuery
 

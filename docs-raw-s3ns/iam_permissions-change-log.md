@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://documentation.s3ns.fr/iam/docs/permissions-change-log
-Last updated: 2026-07-29
+Last updated: 2026-08-06
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -169,6 +169,654 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-08-04
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+Agent Identity API
+| 
+
+
+
+The Agent Identity Admin role (`roles/agentidentity.admin`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Agent Identity API
+| 
+
+
+
+The Agent Identity Editor role (`roles/agentidentity.editor`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Agent Identity API
+| 
+
+
+
+The Agent Identity User role (`roles/agentidentity.user`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Agent Identity API
+| 
+
+
+
+The Agent Identity Viewer role (`roles/agentidentity.viewer`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Gemini Enterprise Agent Platform
+| 
+
+
+
+The following permissions have been added to the Vertex AI Service Agent role (`roles/aiplatform.serviceAgent`):
+
+
+
+`agentregistry.operations.cancel`
+
+`agentregistry.operations.delete`
+
+`agentregistry.operations.get`
+
+`agentregistry.operations.list`
+
+`agentregistry.skills.create`
+
+`agentregistry.skills.delete`
+
+
+
+| 
+|
+
+| 
+
+Backup and Disaster Recovery
+| 
+
+
+
+The following permissions have been added to the Backup and DR Service Agent role (`roles/backupdr.serviceAgent`):
+
+
+
+`file.operations.get`
+
+
+
+| 
+|
+
+| 
+
+BigQuery
+| 
+
+
+
+The following permissions have been added to the BigQuery Studio Admin role (`roles/bigquery.studioAdmin`):
+
+
+
+`geminidataanalytics.dataAgents.create`
+
+`geminidataanalytics.locations.chat`
+
+`geminidataanalytics.operations.get`
+
+
+
+| 
+|
+
+| 
+
+BigQuery
+| 
+
+
+
+The following permissions have been added to the BigQuery Studio User role (`roles/bigquery.studioUser`):
+
+
+
+`geminidataanalytics.dataAgents.get`
+
+`geminidataanalytics.dataAgents.list`
+
+`geminidataanalytics.locations.chat`
+
+
+
+| 
+|
+
+| 
+
+Data Lineage API
+| 
+
+
+
+The following permissions have been added to the Data Lineage Editor role (`roles/datalineage.editor`):
+
+
+
+`datalineage.processes.delete`
+
+`datalineage.runs.delete`
+
+
+
+| 
+|
+
+| 
+
+Database Migration Service
+| 
+
+
+
+The following permissions have been added to the Database Migration Admin role (`roles/datamigration.admin`):
+
+
+
+`compute.networkAttachments.use`
+
+
+
+| 
+|
+
+| 
+
+Database Migration Service
+| 
+
+
+
+The following permissions have been added to the Datamigration Editor role (`roles/datamigration.editor`):
+
+
+
+`compute.networkAttachments.use`
+
+
+
+| 
+|
+
+| 
+
+Datastream
+| 
+
+
+
+The following permissions have been added to the Datastream Admin role (`roles/datastream.admin`):
+
+
+
+`compute.networkAttachments.use`
+
+
+
+| 
+|
+
+| 
+
+Distributed Cloud Edge Container
+| 
+
+
+
+The following permissions have been added to the Edge Container Service Agent role (`roles/edgecontainer.serviceAgent`):
+
+
+
+`gke.fleets.create`
+
+`gke.fleets.delete`
+
+`gke.fleets.get`
+
+`gkehub.endpoints.connect`
+
+`gkehub.features.list`
+
+`gkehub.fleet.create`
+
+`gkehub.fleet.delete`
+
+`gkehub.fleet.get`
+
+`gkehub.locations.get`
+
+`gkehub.locations.list`
+
+`gkehub.operations.delete`
+
+`gkehub.operations.list`
+
+
+
+| 
+|
+
+| 
+
+Cluster Director
+| 
+
+
+
+The following permissions have been added to the Cluster Director Service Agent role (`roles/hypercomputecluster.serviceAgent`):
+
+
+
+`hypercomputecluster.locations.get`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been added to the Data Scientist role (`roles/iam.dataScientist`):
+
+
+
+`geminidataanalytics.dataAgents.get`
+
+`geminidataanalytics.dataAgents.list`
+
+`geminidataanalytics.locations.chat`
+
+
+
+| 
+|
+
+| 
+
+Agent Identity API
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`agentidentity.accessSummaries.get`
+
+`agentidentity.accessSummaries.list`
+
+`agentidentity.authProviders.create`
+
+`agentidentity.authProviders.delete`
+
+`agentidentity.authProviders.get`
+
+`agentidentity.authProviders.getIamPolicy`
+
+`agentidentity.authProviders.list`
+
+`agentidentity.authProviders.queryWorkloads`
+
+`agentidentity.authProviders.retrieveCredentials`
+
+`agentidentity.authProviders.revokeAuthorizations`
+
+`agentidentity.authProviders.setIamPolicy`
+
+`agentidentity.authProviders.undelete`
+
+`agentidentity.authProviders.update`
+
+`agentidentity.authorizations.delete`
+
+`agentidentity.authorizations.get`
+
+`agentidentity.authorizations.list`
+
+`agentidentity.locations.get`
+
+`agentidentity.locations.list`
+
+
+
+| 
+|
+
+| 
+
+Agent Registry
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`agentregistry.publishers.get`
+
+`agentregistry.publishers.list`
+
+`agentregistry.skillRevisions.create`
+
+`agentregistry.skillRevisions.delete`
+
+`agentregistry.skillRevisions.get`
+
+`agentregistry.skillRevisions.list`
+
+`agentregistry.skills.create`
+
+`agentregistry.skills.delete`
+
+`agentregistry.skills.get`
+
+`agentregistry.skills.list`
+
+`agentregistry.skills.search`
+
+`agentregistry.skills.update`
+
+
+
+| 
+|
+
+| 
+
+Agent Registry
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`agentregistry.publishers.get`
+
+`agentregistry.publishers.list`
+
+`agentregistry.skillRevisions.create`
+
+`agentregistry.skillRevisions.delete`
+
+`agentregistry.skillRevisions.get`
+
+`agentregistry.skillRevisions.list`
+
+`agentregistry.skills.create`
+
+`agentregistry.skills.delete`
+
+`agentregistry.skills.get`
+
+`agentregistry.skills.list`
+
+`agentregistry.skills.search`
+
+`agentregistry.skills.update`
+
+
+
+| 
+|
+
+| 
+
+Cloud Key Management Service
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`cloudkms.importJobs.delete`
+
+`cloudkms.keyRings.delete`
+
+
+
+| 
+|
+
+| 
+
+Cloud Key Management Service
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`cloudkms.importJobs.delete`
+
+`cloudkms.keyRings.delete`
+
+
+
+| 
+|
+
+| 
+
+Cloud Key Management Service
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`cloudkms.importJobs.delete`
+
+`cloudkms.keyRings.delete`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`discoveryengine.collections.getIamPolicy`
+
+`discoveryengine.collections.setIamPolicy`
+
+`discoveryengine.dataStores.getIamPolicy`
+
+`discoveryengine.dataStores.setIamPolicy`
+
+`discoveryengine.projectOverageConfigs.get`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`discoveryengine.collections.getIamPolicy`
+
+`discoveryengine.collections.setIamPolicy`
+
+`discoveryengine.dataStores.getIamPolicy`
+
+`discoveryengine.dataStores.setIamPolicy`
+
+`discoveryengine.projectOverageConfigs.get`
+
+
+
+| 
+|
+
+| 
+
+Firebase App Check
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`firebaseappcheck.tokens.mint`
+
+
+
+| 
+|
+
+| 
+
+Firebase App Check
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`firebaseappcheck.tokens.mint`
+
+
+
+| 
+|
+
+| 
+
+Firebase App Check
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`firebaseappcheck.tokens.mint`
+
+
+
+| 
+|
+
+| 
+
+Firebase Data Connect
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`firebasedataconnect.services.generateQuery`
+
+`firebasedataconnect.services.generateSchema`
+
+
+
+| 
+|
+
+| 
+
+Firebase Data Connect
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`firebasedataconnect.services.generateQuery`
+
+`firebasedataconnect.services.generateSchema`
+
+
+
+| 
+|
 
 
 

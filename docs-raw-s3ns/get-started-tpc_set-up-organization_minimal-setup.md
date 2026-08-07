@@ -1,7 +1,7 @@
 # Minimal setup
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/set-up-organization/minimal-setup
-Last updated: 2026-07-17
+Last updated: 2026-07-29
 
 - 
 

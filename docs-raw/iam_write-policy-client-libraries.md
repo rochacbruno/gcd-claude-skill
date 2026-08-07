@@ -1476,7 +1476,7 @@ public static [ Policy ](https://berlin.devsitetest.how/java/docs/reference/prot
 [ GetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) request = [ GetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) . newBuilder () 
 . setResource ( [ ServiceAccountName ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ServiceAccountName.html) . of ( projectId , serviceAccount ). toString ()) 
 . build (); 
-return iamClient . [ getIamPolicy ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.cloud.iam.admin.v1.IAMClient.html#com_google_cloud_iam_admin_v1_IAMClient_getIamPolicy_com_google_api_resourcenames_ResourceName_) ( request ); 
+return iamClient . [ getIamPolicy ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.cloud.iam.admin.v1.IAMClient.html#com_google_cloud_iam_admin_v1_IAMClient_getIamPolicy__org_jspecify_annotations_Nullable_com_google_api_resourcenames_ResourceName_) ( request ); 
 } 
 
 private static void setPolicy ( [ IAMClient ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.cloud.iam.admin.v1.IAMClient.html) iamClient , String projectId , 
@@ -1492,7 +1492,7 @@ List paths = Arrays . asList ( "bindings" , "etag" );
 // `paths: "bindings, etag"` 
 . setUpdateMask ( [ FieldMask ](https://berlin.devsitetest.how/java/docs/reference/protobuf/latest/com.google.protobuf.FieldMask.html) . newBuilder (). [ addAllPaths ](https://berlin.devsitetest.how/java/docs/reference/protobuf/latest/com.google.protobuf.FieldMask.Builder.html#com_google_protobuf_FieldMask_Builder_addAllPaths_java_lang_Iterable_java_lang_String__) ( paths ). build ()) 
 . build (); 
-iamClient . [ setIamPolicy ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.cloud.iam.admin.v1.IAMClient.html#com_google_cloud_iam_admin_v1_IAMClient_setIamPolicy_com_google_api_resourcenames_ResourceName_com_google_iam_v1_Policy_) ( request ); 
+iamClient . [ setIamPolicy ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.cloud.iam.admin.v1.IAMClient.html#com_google_cloud_iam_admin_v1_IAMClient_setIamPolicy__org_jspecify_annotations_Nullable_com_google_api_resourcenames_ResourceName_com_google_iam_v1_Policy_) ( request ); 
 } 
 } 
 ```

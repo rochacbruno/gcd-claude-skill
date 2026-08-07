@@ -1,7 +1,7 @@
 # Create an ML model in BigQuery ML by using SQL
 
 Source: https://documentation.s3ns.fr/bigquery/docs/create-machine-learning-model
-Last updated: 2026-07-31
+Last updated: 2026-08-06
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -480,7 +480,7 @@ Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
 
 ## Create a dataset
 
-Create a BigQuery dataset to store your ML model.
+To create a BigQuery dataset, follow these steps.
 
 
 [Console](#console) [bq](#bq) [ API ](#api) [ BigQuery DataFrames ](#bigquery-dataframes) 
@@ -497,11 +497,22 @@ In the Cloud de Confiance console, go to the **BigQuery** page.
 
 - 
 
-In the **Explorer** pane, click your project name.
+In the left pane, click explore 
+**Explorer**:
+
+
+
+If you don't see the left pane, click last_page 
+**Expand left pane** to open the pane.
 
 - 
 
-Click more_vert **View actions > Create dataset**
+In **Explorer**, expand your project, and then click **Datasets**.
+
+- 
+
+On the **Datasets** page, click add 
+**Create dataset**.
 
 - 
 
@@ -513,8 +524,7 @@ For **Dataset ID**, enter `bqml_tutorial`.
 
 - 
 
-For **Location type**, select **Multi-region**, and then select
-**US**.
+For **Data location**, select **US**.
 
 - 
 

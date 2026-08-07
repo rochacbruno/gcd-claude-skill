@@ -1,7 +1,7 @@
 # Import a key version into Cloud KMS
 
 Source: https://documentation.s3ns.fr/kms/docs/importing-a-key
-Last updated: 2026-07-30
+Last updated: 2026-08-06
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -702,6 +702,7 @@ you want to use for the key.
 
 
 
+
 To run this code, first [set up a Go development environment](/go/docs/setup) and
 [install the Cloud KMS Go SDK](/kms/docs/reference/libraries#client-libraries-install-go).
 
@@ -1136,6 +1137,7 @@ request = {
 ) 
 print ( f "Created hsm key: { created_key . name } " ) 
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 # Security
 
 Source: https://berlin.devsitetest.how/docs/security
-Last updated: 2026-07-29
+Last updated: 2026-08-06
 
 - 
 
@@ -308,6 +308,24 @@ Collect, store, analyze, and monitor your organization's aggregated platform and
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+Access Transparency
+](/cloud-provider-access-management/access-transparency/docs)
+
+
+Get visibility over your organization's cloud provider through near real-time logs.
 
 
 

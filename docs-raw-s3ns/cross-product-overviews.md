@@ -1,7 +1,7 @@
 # Access and resource management
 
 Source: https://documentation.s3ns.fr/docs/cross-product-overviews
-Last updated: 2026-07-27
+Last updated: 2026-07-29
 
 - 
 

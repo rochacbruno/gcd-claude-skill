@@ -1,7 +1,7 @@
 # Cloud Quotas in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/docs/quotas/tpc-differences
-Last updated: 2026-07-17
+Last updated: 2026-07-29
 
 - 
 

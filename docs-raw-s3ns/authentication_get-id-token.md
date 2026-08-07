@@ -1,7 +1,7 @@
 # Get an ID token
 
 Source: https://documentation.s3ns.fr/docs/authentication/get-id-token
-Last updated: 2026-07-21
+Last updated: 2026-07-30
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -508,7 +508,7 @@ Set the `GOOGLE_CLOUD_UNIVERSE_DOMAIN` environment variable to
 
 
 ```
-import [ google ](https://documentation.s3ns.fr/python/docs/reference/googleapis-common-protos/latest)
+import [ google ](https://documentation.s3ns.fr/python/docs/reference/pubsub/latest)
 from google.auth import compute_engine 
 import google.auth.transport.requests 
 import google.oauth2.credentials 
@@ -524,7 +524,7 @@ url: The url or target audience to obtain the ID token for.
 Examples: http://www.example.com 
 """ 
 
-request = [ google ](https://documentation.s3ns.fr/python/docs/reference/googleapis-common-protos/latest) . auth . transport . [ requests ](https://documentation.s3ns.fr/python/docs/reference/google-resumable-media/latest/google.resumable_media.requests.html) . [ Request ](https://documentation.s3ns.fr/python/docs/reference/policytroubleshooter-iam/latest/google.cloud.policytroubleshooter_iam_v3.types.ConditionContext.Request.html) () 
+request = [ google ](https://documentation.s3ns.fr/python/docs/reference/pubsub/latest) . auth . transport . [ requests ](https://documentation.s3ns.fr/python/docs/reference/google-resumable-media/latest/google.resumable_media.requests.html) . [ Request ](https://documentation.s3ns.fr/python/docs/reference/policytroubleshooter-iam/latest/google.cloud.policytroubleshooter_iam_v3.types.ConditionContext.Request.html) () 
 # Set the target audience. 
 # Setting "use_metadata_identity_endpoint" to "True" will make the request use the default application 
 # credentials. Optionally, you can also specify a specific service account to use by mentioning 
