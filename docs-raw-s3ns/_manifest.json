@@ -2,7 +2,7 @@
   "/access-context-manager/docs": {
     "title": "Access Context Manager documentation",
     "filename": "access-context-manager.md",
-    "size": 2973,
+    "size": 2974,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs",
     "last_updated": "2026-07-31"
   },
@@ -205,9 +205,9 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71482,
+    "size": 71848,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-07"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39330,
+    "size": 39331,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-31"
   },
@@ -506,14 +506,14 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13649,
+    "size": 13657,
     "url": "https://documentation.s3ns.fr/docs/authentication/client-libraries",
     "last_updated": "2026-07-30"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13672,
+    "size": 13680,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-07-30"
   },
@@ -898,9 +898,9 @@
   "/docs/quotas/api-overview": {
     "title": "Cloud Quotas API overview",
     "filename": "quotas_api-overview.md",
-    "size": 15652,
+    "size": 15570,
     "url": "https://documentation.s3ns.fr/docs/quotas/api-overview",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-07"
   },
   "/docs/quotas/apis": {
     "title": "APIs and reference",
@@ -954,7 +954,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18880,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-05"
   },
@@ -996,9 +996,9 @@
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
-    "size": 26791,
+    "size": 26783,
     "url": "https://documentation.s3ns.fr/docs/quotas/quota-adjuster",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-07"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
@@ -1017,7 +1017,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132206,
+    "size": 132508,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-07-30"
   },
@@ -1381,7 +1381,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91136,
+    "size": 91280,
     "url": "https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-07-31"
   },
@@ -1911,11 +1911,11 @@
     "last_updated": "2026-07-29"
   },
   "/service-usage/docs/quotas": {
-    "title": "Quotas and limits",
+    "title": "Quotas and system limits",
     "filename": "service-usage_quotas.md",
-    "size": 1353,
+    "size": 5679,
     "url": "https://documentation.s3ns.fr/service-usage/docs/quotas",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-07"
   },
   "/service-usage/docs/reference/rest": {
     "title": "Service Usage API",
@@ -1957,7 +1957,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-07"
+    "last_updated": "2026-08-08"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2081,9 +2081,9 @@
   "/vpc/docs/tpc-differences": {
     "title": "VPC in Cloud de Confiance versus Google Cloud",
     "filename": "vpc_tpc-differences.md",
-    "size": 6378,
+    "size": 6369,
     "url": "https://documentation.s3ns.fr/vpc/docs/tpc-differences",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   },
   "/vpc/docs/vpc-peering": {
     "title": "VPC Network Peering",

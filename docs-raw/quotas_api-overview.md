@@ -1,7 +1,7 @@
 # Cloud Quotas API overview
 
 Source: https://berlin.devsitetest.how/docs/quotas/api-overview
-Last updated: 2026-07-29
+Last updated: 2026-08-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -664,21 +664,20 @@ For more details on the `QuotaPreference` queries, see
 
 ### Quota adjuster settings
 
-The `QuotaAdjusterSettings` resource ([Preview](https://berlin.devsitetest.how/products#product-launch-stages))
-represents your quota adjuster settings for a particular project. When enabled,
-the quota adjuster monitors your usage of the specified resources and issues
+The `QuotaAdjusterSettings` resource represents your quota adjuster settings for a particular project.
+When enabled, the quota adjuster monitors your usage of the specified resources and issues
 quota adjustment requests when resource use approaches its quota value.
 
 - 
 
 To view the current quota adjuster settings for a project, use a
-[GET](/docs/quotas/reference/rest/v1beta/projects.locations.quotaAdjusterSettings/getQuotaAdjusterSettings)
+[GET](/docs/quotas/reference/rest/v1/projects.locations.quotaAdjusterSettings/getQuotaAdjusterSettings)
 operation to retrieve the `QuotaAdjusterSettings` resource.
 
 - 
 
 To enable quota adjuster for a project, use an
-[PATCH](/docs/quotas/reference/rest/v1beta/projects.locations.quotaAdjusterSettings/updateQuotaAdjusterSettings)
+[PATCH](/docs/quotas/reference/rest/v1/projects.locations.quotaAdjusterSettings/updateQuotaAdjusterSettings)
 operation to set the following `QuotaAdjusterSettings` resource options:
 
 

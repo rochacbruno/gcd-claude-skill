@@ -1,7 +1,7 @@
 # Use the quota adjuster
 
 Source: https://berlin.devsitetest.how/docs/quotas/quota-adjuster
-Last updated: 2026-08-05
+Last updated: 2026-08-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -1063,7 +1063,7 @@ Make an HTTP request to update quota adjuster settings:
 
 
 ```
-PATCH https://cloudquotas.googleapis.com/v1beta/ RESOURCE_CONTAINER / ID /locations/global/quotaAdjusterSettings
+PATCH https://cloudquotas.googleapis.com/v1/ RESOURCE_CONTAINER / ID /locations/global/quotaAdjusterSettings
 ```
 
 
@@ -1320,7 +1320,7 @@ Make an HTTP request to update quota adjuster settings:
 
 
 ```
-PATCH https://cloudquotas.googleapis.com/v1beta/ RESOURCE_CONTAINER / ID /locations/global/quotaAdjusterSettings
+PATCH https://cloudquotas.googleapis.com/v1/ RESOURCE_CONTAINER / ID /locations/global/quotaAdjusterSettings
 ```
 
 

@@ -1,7 +1,7 @@
 # VPC in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/vpc/docs/tpc-differences
-Last updated: 2026-08-03
+Last updated: 2026-08-07
 
 - 
 
@@ -218,8 +218,8 @@ Not available
 
 
 Only Premium Tier is available.
-
-| |
+| 
+|
 
 | 
 **Routing**
@@ -241,7 +241,7 @@ have published service targets.
 
 
 
-- Endpoints with global or regional Google API targets aren't available.
+- Endpoints with regional Google API targets aren't available.
 
 - Backends with global or regional Google API targets aren't available.
 
@@ -256,7 +256,7 @@ aren't available.
 endpoints isn't available.
 
 - Cross-regional failover for published services, including
-Composite Health, is not available.
+Composite Health, isn't available.
 
 
 | 
@@ -281,6 +281,7 @@ The IP addresses for Private Google Access are different:
 
 
 
+
 - `restricted.s3nsapis.fr` VIP (equivalent to `restricted.googleapis.com`):
 
 
@@ -288,6 +289,7 @@ The IP addresses for Private Google Access are different:
 - IPv4: `177.222.88.4/30`
 
 - IPv6: `2a13:7500:8302:1::/64`
+
 
 
 

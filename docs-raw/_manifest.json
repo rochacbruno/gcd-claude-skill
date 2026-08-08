@@ -191,9 +191,9 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71756,
+    "size": 72122,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-07"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
@@ -429,14 +429,14 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13700,
+    "size": 13708,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-07-30"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13723,
+    "size": 13731,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-07-30"
   },
@@ -828,9 +828,9 @@
   "/docs/quotas/api-overview": {
     "title": "Cloud Quotas API overview",
     "filename": "quotas_api-overview.md",
-    "size": 15728,
+    "size": 15645,
     "url": "https://berlin.devsitetest.how/docs/quotas/api-overview",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-07"
   },
   "/docs/quotas/apis": {
     "title": "APIs and reference",
@@ -884,7 +884,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-08-05"
   },
@@ -926,9 +926,9 @@
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
-    "size": 26908,
+    "size": 26900,
     "url": "https://berlin.devsitetest.how/docs/quotas/quota-adjuster",
-    "last_updated": "2026-08-05"
+    "last_updated": "2026-08-07"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
@@ -947,7 +947,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132603,
+    "size": 132905,
     "url": "https://berlin.devsitetest.how/docs/quotas/reference/libraries",
     "last_updated": "2026-07-30"
   },
@@ -1311,7 +1311,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91505,
+    "size": 91649,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-07-31"
   },
@@ -1869,11 +1869,11 @@
     "last_updated": "2026-07-29"
   },
   "/service-usage/docs/quotas": {
-    "title": "Quotas and limits",
+    "title": "Quotas and system limits",
     "filename": "service-usage_quotas.md",
-    "size": 1365,
+    "size": 5741,
     "url": "https://berlin.devsitetest.how/service-usage/docs/quotas",
-    "last_updated": "2026-07-29"
+    "last_updated": "2026-08-07"
   },
   "/service-usage/docs/reference/rest": {
     "title": "Service Usage API",
@@ -1915,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-07"
+    "last_updated": "2026-08-08"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -2039,9 +2039,9 @@
   "/vpc/docs/tpc-differences": {
     "title": "VPC in Google Cloud Dedicated versus Google Cloud",
     "filename": "vpc_tpc-differences.md",
-    "size": 6511,
+    "size": 6502,
     "url": "https://berlin.devsitetest.how/vpc/docs/tpc-differences",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   },
   "/vpc/docs/vpc-peering": {
     "title": "VPC Network Peering",

@@ -1,7 +1,7 @@
 # Export table data to Cloud Storage
 
 Source: https://documentation.s3ns.fr/bigquery/docs/exporting-data
-Last updated: 2026-07-31
+Last updated: 2026-08-07
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1606,7 +1606,7 @@ require "google/cloud/bigquery"
 def extract_table bucket_name = "my-bucket" , 
 dataset_id = "my_dataset_id" , 
 table_id = "my_table_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-data_policies/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-data_exchange/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 table = dataset . table table_id 
 
@@ -1833,6 +1833,12 @@ String |
 |
 
 | 
+JSON | 
+`BYTE_ARRAY` | 
+`STRING` `(UTF8)` | 
+|
+
+| 
 Bytes | 
 `BYTE_ARRAY` | 
 `NONE` | 
@@ -1874,6 +1880,12 @@ The Parquet schema represents nested data as a group and repeated records as
 repeated groups. For more information about using nested and repeated data in
 BigQuery, see
 [Specifying nested and repeated columns](/bigquery/docs/nested-repeated).
+
+When you export a `JSON` column to Parquet format, it is exported as a `STRING`
+field. To load this Parquet file back into a `JSON` column in
+BigQuery, you must specify the schema in the load job (for
+example, by using the `--schema` flag). Auto schema detection with Parquet
+infers the column as a `STRING` type.
 
 You can use the following workarounds for `DATETIME` types:
 
