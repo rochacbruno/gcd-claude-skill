@@ -371,7 +371,7 @@ dependencies >
 dependency >
 groupId>com . google . cloud / groupId >
 artifactId>libraries - bom / artifactId >
-version>26 .83.0 / version >
+version>26 .86.0 / version >
 type>pom / type >
 scope>import / scope >
 / dependency >
@@ -419,7 +419,7 @@ add the following to your dependencies:
 
 
 ```
-implementation platform ( ' com . google . cloud : libraries - bom : 26.83.0 ' ) 
+implementation platform ( ' com . google . cloud : libraries - bom : 26.86.0 ' ) 
 
 implementation ' com . google . cloud : google - cloud - storage ' 
 ```
@@ -453,7 +453,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.70.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.71.0" 
 ```
 
 
@@ -1505,7 +1505,7 @@ def quickstart bucket_name :
 require "google/cloud/storage" 
 
 # Instantiates a client 
-storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
 
 # The ID to give your GCS bucket 
 # bucket_name = "your-unique-bucket-name" 

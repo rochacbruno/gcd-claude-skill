@@ -191,14 +191,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72128,
+    "size": 72122,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-08-07"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139505,
+    "size": 139508,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-08-03"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39474,
+    "size": 39477,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-31"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160707,
+    "size": 160713,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-07-31"
   },
@@ -429,21 +429,21 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13700,
+    "size": 13708,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-07-30"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13723,
+    "size": 13731,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-07-30"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 18117,
+    "size": 18081,
     "url": "https://berlin.devsitetest.how/docs/authentication/get-id-token",
     "last_updated": "2026-07-30"
   },
@@ -597,7 +597,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -870,7 +870,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2714,
+    "size": 2713,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-07-29"
   },
@@ -947,7 +947,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132603,
+    "size": 132905,
     "url": "https://berlin.devsitetest.how/docs/quotas/reference/libraries",
     "last_updated": "2026-07-30"
   },
@@ -1178,7 +1178,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4465,
+    "size": 4466,
     "url": "https://berlin.devsitetest.how/docs/terraform/install-configure-terraform",
     "last_updated": "2026-07-29"
   },
@@ -1311,7 +1311,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91649,
+    "size": 91601,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-07-31"
   },
@@ -1516,21 +1516,21 @@
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21409,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 28090,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
@@ -1551,47 +1551,47 @@
     "filename": "logging_release-notes.md",
     "size": 3355,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41470,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-07-31"
+    "last_updated": "2026-08-05"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39502,
+    "size": 39525,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
     "last_updated": "2026-07-30"
   },
@@ -1600,14 +1600,14 @@
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-05"
   },
   "/nat/docs": {
     "title": "Cloud NAT documentation",
@@ -1915,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-09"
+    "last_updated": "2026-08-10"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1934,7 +1934,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30586,
+    "size": 30575,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
     "last_updated": "2026-07-31"
   },
@@ -1955,7 +1955,7 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22422,
+    "size": 22419,
     "url": "https://berlin.devsitetest.how/storage/docs/reference/libraries",
     "last_updated": "2026-07-31"
   },
@@ -1976,14 +1976,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41719,
+    "size": 41708,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
     "last_updated": "2026-07-29"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46900,
+    "size": 46897,
     "url": "https://berlin.devsitetest.how/storage/docs/uploading-objects",
     "last_updated": "2026-07-31"
   },
@@ -2013,28 +2013,28 @@
     "filename": "vpc.md",
     "size": 2669,
     "url": "https://berlin.devsitetest.how/vpc/docs",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   },
   "/vpc/docs/create-modify-vpc-networks": {
     "title": "Quickstart: Create and manage VPC networks",
     "filename": "vpc_create-modify-vpc-networks.md",
     "size": 83141,
     "url": "https://berlin.devsitetest.how/vpc/docs/create-modify-vpc-networks",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   },
   "/vpc/docs/flow-logs": {
     "title": "VPC Flow Logs",
     "filename": "vpc_flow-logs.md",
     "size": 12150,
     "url": "https://berlin.devsitetest.how/vpc/docs/flow-logs",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   },
   "/vpc/docs/shared-vpc": {
     "title": "Shared VPC",
     "filename": "vpc_shared-vpc.md",
     "size": 33455,
     "url": "https://berlin.devsitetest.how/vpc/docs/shared-vpc",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   },
   "/vpc/docs/tpc-differences": {
     "title": "VPC in Google Cloud Dedicated versus Google Cloud",
@@ -2048,6 +2048,6 @@
     "filename": "vpc_vpc-peering.md",
     "size": 35043,
     "url": "https://berlin.devsitetest.how/vpc/docs/vpc-peering",
-    "last_updated": "2026-08-03"
+    "last_updated": "2026-08-07"
   }
 }

@@ -1,7 +1,7 @@
 # Virtual Private Cloud documentation
 
 Source: https://berlin.devsitetest.how/vpc/docs
-Last updated: 2026-08-03
+Last updated: 2026-08-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 

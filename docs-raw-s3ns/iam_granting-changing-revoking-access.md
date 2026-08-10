@@ -5815,7 +5815,7 @@ documentation](/resource-manager/docs/libraries) for your programming language.
 
 ```
 import com.google.cloud.resourcemanager.v3.[ProjectsClient](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) ; 
-import com.google.iam.admin.v1.[ProjectName](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) ; 
+import com.google.iam.admin.v1.[ProjectName](https://documentation.s3ns.fr/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) ; 
 import com.google.iam.v1.[Policy](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.Policy.html) ; 
 import com.google.iam.v1.[SetIamPolicyRequest](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.html) ; 
 import com.google.protobuf.[FieldMask](https://documentation.s3ns.fr/java/docs/reference/protobuf/latest/com.google.protobuf.FieldMask.html) ; 
@@ -5843,7 +5843,7 @@ throws IOException {
 try ( [ ProjectsClient ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) projectsClient = [ ProjectsClient ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) . create ()) { 
 List paths = Arrays . asList ( "bindings" , "etag" ); 
 [ SetIamPolicyRequest ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.html) request = [ SetIamPolicyRequest ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.html) . newBuilder () 
-. setResource ( [ ProjectName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) . of ( projectId ). toString ()) 
+. setResource ( [ ProjectName ](https://documentation.s3ns.fr/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) . of ( projectId ). toString ()) 
 . [ setPolicy ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.Builder.html#com_google_iam_v1_SetIamPolicyRequest_Builder_setPolicy_com_google_iam_v1_Policy_) ( policy ) 
 // A FieldMask specifying which fields of the policy to modify. Only 
 // the fields in the mask will be modified. If no mask is provided, the 

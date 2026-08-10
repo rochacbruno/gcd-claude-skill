@@ -1,7 +1,7 @@
 # Quickstart: Create and manage VPC networks
 
 Source: https://documentation.s3ns.fr/vpc/docs/create-modify-vpc-networks
-Last updated: 2026-08-03
+Last updated: 2026-08-07
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 
