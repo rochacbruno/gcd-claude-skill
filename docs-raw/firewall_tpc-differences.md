@@ -1,7 +1,7 @@
 # Cloud NGFW in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/firewall/docs/tpc-differences
-Last updated: 2026-07-29
+Last updated: 2026-08-10
 
 - 
 

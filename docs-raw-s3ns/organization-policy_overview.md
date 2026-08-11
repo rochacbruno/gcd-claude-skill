@@ -135,6 +135,8 @@ Guides
 - [ How organization policy works ](#how_organization_policy_works)
 - [ Constraints ](#constraints)
 
+- [ Managed constraints ](#managed-constraints)
+- [ Custom constraints ](#custom-constraints)
 - [ Managed constraints (legacy) ](#legacy-constraints)
 
 - [ Conditional organization policies ](#conditional_organization_policies)
@@ -232,10 +234,83 @@ enforces and optionally by the conditions under which the constraint is
 enforced. Each organization policy enforces exactly one constraint in active
 mode, dry-run mode, or both.
 
+Managed constraints have list or boolean parameters that are determined by
+the enforcing Cloud de Confiance service.
+
+Custom constraints are functionally similar to managed constraints with boolean
+parameters, and are either enforced or not enforced.
+
 Legacy managed constraints have one or more list rules or boolean rules based on
 the constraint type. List rules are a collection of allowed or denied values.
 Boolean rules can allow all values, deny all values, or determine if a
 constraint is enforced or not enforced.
+
+### Managed constraints
+
+Managed constraints are designed to replace equivalent legacy managed
+constraints, but with additional flexibility and greater insight from
+[Policy Intelligence tools](#policy-intelligence). These constraints
+have similar structure to custom organization policy constraints, but are
+managed by Google.
+
+If the equivalent legacy managed constraint has a constraint type of boolean,
+the managed constraint can either be enforced or not in the same way. For
+example, the following organization policy enforces
+`iam.managed.disableServiceAccountCreation`, which is the equivalent constraint
+to `iam.disableServiceAccountCreation`:
+
+
+```
+name : organizations/1234567890123/policies/iam.managed.disableServiceAccountCreation 
+spec : 
+rules : 
+- enforce : true 
+```
+
+
+If the equivalent legacy managed constraint has a constraint type of list, the
+managed constraint supports defining parameters that define the resources and
+behaviors that are restricted by the constraint. For example, the following
+organization policy enforces a managed constraint that only allows the
+`example.com` and `altostrat.com` domains to be added to
+Essential Contacts for `organizations/1234567890123`:
+
+
+```
+name : organizations/1234567890123/policies/essentialcontacts.managed.allowedContactDomains 
+spec : 
+rules : 
+- enforce : true 
+parameters : 
+allowedDomains : 
+- @ example.com 
+- @ altostrat.com 
+```
+
+
+By default, managed constraints support simulation in [Policy Simulator
+for Organization Policy](/policy-intelligence/docs/test-organization-policies).
+If a managed constraint doesn't support simulation, it's noted in the
+[table of constraints](/organization-policy/reference/org-policy-constraints), and
+by the `simulation_disabled` field being set to `true` in the
+constraint definition.
+
+### Custom constraints
+
+Like managed constraints, custom constraints allow or restrict resource creation
+and updates. However, custom constraints are managed by your organization
+instead of by Google. You can use
+[Policy Intelligence tools](#policy-intelligence) to test and analyze
+your custom organization policies.
+
+For a list of service resources that support custom constraints, see
+[Custom constraint supported services](/organization-policy/reference/custom-constraint-supported-services).
+
+To learn more about using custom organization policies, see
+[Create custom constraints](/organization-policy/create-custom-constraints).
+
+For a list of sample custom constraints, see the
+[custom organization policy library](https://github.com/GoogleCloudPlatform/professional-services/tree/main/tools/custom-organization-policy-library) on GitHub.
 
 ### Managed constraints (legacy)
 
