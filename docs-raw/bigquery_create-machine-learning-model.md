@@ -1,7 +1,7 @@
 # Create an ML model in BigQuery ML by using SQL
 
 Source: https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model
-Last updated: 2026-08-06
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -480,7 +480,8 @@ Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
 
 ## Create a dataset
 
-To create a BigQuery dataset, follow these steps.
+To create a BigQuery dataset, select one of the following
+options:
 
 
 [Console](#console) [bq](#bq) [ API ](#api) [ BigQuery DataFrames ](#bigquery-dataframes) 
@@ -493,7 +494,7 @@ To create a BigQuery dataset, follow these steps.
 
 In the Google Cloud Dedicated console, go to the **BigQuery** page.
 
-[Go to the BigQuery page](https://console.cloud.berlin-build0.goog/bigquery) 
+[Go to BigQuery](https://console.cloud.berlin-build0.goog/bigquery) 
 
 - 
 
@@ -516,7 +517,7 @@ On the **Datasets** page, click add
 
 - 
 
-On the **Create dataset** page, do the following:
+In the **Create dataset** pane, do the following:
 
 - 
 
@@ -526,10 +527,11 @@ For **Dataset ID**, enter `bqml_tutorial`.
 
 For **Data location**, select **US**.
 
+Leave the remaining default settings as they are.
+
 - 
 
-Leave the remaining default settings as they are, and click
-**Create dataset**.
+Click **Create dataset**.
 
 
 
@@ -539,7 +541,7 @@ To create a new dataset, use the
 
 - 
 
-Create a dataset named `bqml_tutorial` with the data location set to `US`.
+Create a dataset named `bqml_tutorial` with the data location set to `US`:
 
 
 ```
@@ -564,7 +566,7 @@ bq ls
 
 
 Call the [`datasets.insert`](/bigquery/docs/reference/rest/v2/datasets/insert)
-method with a defined [dataset resource](/bigquery/docs/reference/rest/v2/datasets).
+method with a defined [dataset resource](/bigquery/docs/reference/rest/v2/datasets):
 
 
 ```

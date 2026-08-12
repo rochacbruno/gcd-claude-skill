@@ -1,7 +1,7 @@
 # Security
 
 Source: https://documentation.s3ns.fr/docs/security
-Last updated: 2026-08-06
+Last updated: 2026-08-11
 
 - 
 
@@ -322,7 +322,7 @@ Collect, store, analyze, and monitor your organization's aggregated platform and
 
 #### [
 Access Transparency
-](/cloud-provider-access-management/access-transparency/docs)
+](/assured-workloads/access-transparency/docs)
 
 
 Get visibility over your organization's cloud provider through near real-time logs.

@@ -1,7 +1,7 @@
 # Application development
 
 Source: https://berlin.devsitetest.how/docs/application-development
-Last updated: 2026-08-05
+Last updated: 2026-08-11
 
 - 
 
@@ -525,6 +525,15 @@ Cloud Code for VS Code
 
 
 Provides IDE support for the full development cycle of Kubernetes and Cloud Run applications.
+
+
+
+
+
+
+
+
+
 
 
 
