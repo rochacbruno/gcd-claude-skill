@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50881,
+    "size": 50882,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-07-31"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39331,
+    "size": 39330,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-07-31"
   },
@@ -954,7 +954,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18879,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-05"
   },
@@ -1248,7 +1248,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4400,
+    "size": 4399,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
     "last_updated": "2026-07-29"
   },
@@ -1556,9 +1556,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1311166,
+    "size": 1327267,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-07-30"
+    "last_updated": "2026-08-12"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
@@ -1580,6 +1580,76 @@
     "size": 7641,
     "url": "https://documentation.s3ns.fr/load-balancing/docs/tpc-differences",
     "last_updated": "2026-07-29"
+  },
+  "/logging/docs": {
+    "title": "Cloud Logging documentation",
+    "filename": "logging.md",
+    "size": 3399,
+    "url": "https://documentation.s3ns.fr/logging/docs",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/audit": {
+    "title": "Cloud Audit Logs overview",
+    "filename": "logging_audit.md",
+    "size": 21215,
+    "url": "https://documentation.s3ns.fr/logging/docs/audit",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/buckets": {
+    "title": "Configure log buckets",
+    "filename": "logging_buckets.md",
+    "size": 27824,
+    "url": "https://documentation.s3ns.fr/logging/docs/buckets",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/reference/libraries": {
+    "title": "Logging client libraries",
+    "filename": "logging_reference_libraries.md",
+    "size": 28042,
+    "url": "https://documentation.s3ns.fr/logging/docs/reference/libraries",
+    "last_updated": "2026-07-17"
+  },
+  "/logging/docs/reference/v2/rest": {
+    "title": "Cloud Logging API",
+    "filename": "logging_reference_v2_rest.md",
+    "size": 67838,
+    "url": "https://documentation.s3ns.fr/logging/docs/reference/v2/rest",
+    "last_updated": "2025-11-13"
+  },
+  "/logging/docs/release-notes": {
+    "title": "Logging release notes",
+    "filename": "logging_release-notes.md",
+    "size": 3326,
+    "url": "https://documentation.s3ns.fr/logging/docs/release-notes",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/tpc-differences": {
+    "title": "Logging in Cloud de Confiance versus Google Cloud",
+    "filename": "logging_tpc-differences.md",
+    "size": 5717,
+    "url": "https://documentation.s3ns.fr/logging/docs/tpc-differences",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/view/building-queries": {
+    "title": "Build and save queries by using the Logging query language",
+    "filename": "logging_view_building-queries.md",
+    "size": 23728,
+    "url": "https://documentation.s3ns.fr/logging/docs/view/building-queries",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/view/logs-viewer-interface": {
+    "title": "View and analyze log entries",
+    "filename": "logging_view_logs-viewer-interface.md",
+    "size": 41358,
+    "url": "https://documentation.s3ns.fr/logging/docs/view/logs-viewer-interface",
+    "last_updated": "2026-08-05"
+  },
+  "/logging/docs/write-query-log-entries-gcloud": {
+    "title": "Quickstart: Write and query log entries with the gcloud CLI",
+    "filename": "logging_write-query-log-entries-gcloud.md",
+    "size": 12223,
+    "url": "https://documentation.s3ns.fr/logging/docs/write-query-log-entries-gcloud",
+    "last_updated": "2026-08-05"
   },
   "/marketplace/docs": {
     "title": "Key differences between Cloud de Confiance and Google Cloud",
@@ -1957,7 +2027,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-13"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
