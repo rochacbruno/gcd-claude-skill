@@ -1,7 +1,7 @@
 # Access control with IAM
 
 Source: https://documentation.s3ns.fr/artifact-registry/docs/access-control
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 

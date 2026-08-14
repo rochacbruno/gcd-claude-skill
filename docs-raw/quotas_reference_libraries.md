@@ -1,7 +1,7 @@
 # Cloud Quotas client libraries
 
 Source: https://berlin.devsitetest.how/docs/quotas/reference/libraries
-Last updated: 2026-07-30
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 

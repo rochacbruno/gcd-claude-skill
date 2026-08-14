@@ -1,7 +1,7 @@
 # Access and resource management
 
 Source: https://documentation.s3ns.fr/docs/access-resources
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 - 
 

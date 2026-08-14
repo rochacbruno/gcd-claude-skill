@@ -1,7 +1,7 @@
 # Key differences between Cloud de Confiance and Google Cloud
 
 Source: https://documentation.s3ns.fr/docs/overview/tpc-key-differences
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 - 
 

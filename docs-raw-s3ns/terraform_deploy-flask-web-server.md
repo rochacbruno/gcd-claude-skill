@@ -1,7 +1,7 @@
 # Deploy a basic Flask web server by using Terraform
 
 Source: https://documentation.s3ns.fr/docs/terraform/deploy-flask-web-server
-Last updated: 2026-07-30
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 

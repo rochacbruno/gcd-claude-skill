@@ -1,7 +1,7 @@
 # Monitoring in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/monitoring/docs/tpc-differences
-Last updated: 2026-08-05
+Last updated: 2026-08-12
 
 - 
 

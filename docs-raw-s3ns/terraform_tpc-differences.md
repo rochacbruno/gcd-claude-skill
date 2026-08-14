@@ -1,7 +1,7 @@
 # Terraform in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/docs/terraform/tpc-differences
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 - 
 

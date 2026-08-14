@@ -1,7 +1,7 @@
 # Manage access to projects, folders, and organizations
 
 Source: https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access
-Last updated: 2026-07-31
+Last updated: 2026-08-13
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1545,7 +1545,7 @@ documentation](/resource-manager/docs/libraries) for your programming language.
 
 ```
 import com.google.cloud.resourcemanager.v3.[ProjectsClient](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) ; 
-import com.google.iam.admin.v1.[ProjectName](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) ; 
+import com.google.iam.admin.v1.[ProjectName](https://documentation.s3ns.fr/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) ; 
 import com.google.iam.v1.[GetIamPolicyRequest](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) ; 
 import com.google.iam.v1.[Policy](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.Policy.html) ; 
 import java.io.IOException ; 
@@ -1565,7 +1565,7 @@ public static [ Policy ](https://documentation.s3ns.fr/java/docs/reference/proto
 // This client only needs to be created once, and can be reused for multiple requests. 
 try ( [ ProjectsClient ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) projectsClient = [ ProjectsClient ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) . create ()) { 
 [ GetIamPolicyRequest ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) request = [ GetIamPolicyRequest ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) . newBuilder () 
-. setResource ( [ ProjectName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) . of ( projectId ). toString ()) 
+. setResource ( [ ProjectName ](https://documentation.s3ns.fr/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) . of ( projectId ). toString ()) 
 . build (); 
 return projectsClient . getIamPolicy ( request ); 
 } 
@@ -3053,7 +3053,7 @@ documentation](/resource-manager/docs/libraries) for your programming language.
 
 ```
 import com.google.cloud.resourcemanager.v3.[ProjectsClient](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) ; 
-import com.google.iam.admin.v1.[ProjectName](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) ; 
+import com.google.iam.admin.v1.[ProjectName](https://documentation.s3ns.fr/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) ; 
 import com.google.iam.v1.[GetIamPolicyRequest](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) ; 
 import com.google.iam.v1.[Policy](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.Policy.html) ; 
 import java.io.IOException ; 
@@ -3073,7 +3073,7 @@ public static [ Policy ](https://documentation.s3ns.fr/java/docs/reference/proto
 // This client only needs to be created once, and can be reused for multiple requests. 
 try ( [ ProjectsClient ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) projectsClient = [ ProjectsClient ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) . create ()) { 
 [ GetIamPolicyRequest ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) request = [ GetIamPolicyRequest ](https://documentation.s3ns.fr/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) . newBuilder () 
-. setResource ( [ ProjectName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) . of ( projectId ). toString ()) 
+. setResource ( [ ProjectName ](https://documentation.s3ns.fr/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) . of ( projectId ). toString ()) 
 . build (); 
 return projectsClient . getIamPolicy ( request ); 
 } 

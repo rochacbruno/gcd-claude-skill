@@ -1,7 +1,7 @@
 # Create an access policy
 
 Source: https://documentation.s3ns.fr/access-context-manager/docs/create-access-policy
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/access-context-manager/docs/tpc-differences) for more details.
 

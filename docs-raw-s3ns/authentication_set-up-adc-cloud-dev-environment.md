@@ -1,7 +1,7 @@
 # Set up ADC for a cloud-based development environment
 
 Source: https://documentation.s3ns.fr/docs/authentication/set-up-adc-cloud-dev-environment
-Last updated: 2026-07-29
+Last updated: 2026-08-13
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 

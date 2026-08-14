@@ -1,7 +1,7 @@
 # Solutions for Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/overview
-Last updated: 2026-08-05
+Last updated: 2026-08-11
 
 - 
 

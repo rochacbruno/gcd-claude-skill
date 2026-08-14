@@ -1,7 +1,7 @@
 # Create and use tables
 
 Source: https://documentation.s3ns.fr/bigquery/docs/tables
-Last updated: 2026-07-31
+Last updated: 2026-08-12
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -2001,7 +2001,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/bigquery" 
 
 def create_table dataset_id = "my_dataset" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-connection-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-analytics_hub-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 table_id = "my_table" 
 
@@ -7643,7 +7643,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/bigquery" 
 
 def list_tables dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-connection-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-analytics_hub-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 
 puts "Tables in dataset #{ dataset_id } :" 

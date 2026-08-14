@@ -1,7 +1,7 @@
 # Load CSV data from Cloud Storage
 
 Source: https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv
-Last updated: 2026-08-03
+Last updated: 2026-08-12
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -2062,7 +2062,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/bigquery" 
 
 def load_table_gcs_csv dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-connection-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-analytics_hub-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 gcs_uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
 table_id = "us_states" 

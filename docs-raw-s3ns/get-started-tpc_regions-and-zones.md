@@ -1,7 +1,7 @@
 # Regions and zones in Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/regions-and-zones
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 - 
 

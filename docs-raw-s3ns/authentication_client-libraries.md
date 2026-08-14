@@ -1,7 +1,7 @@
 # Authenticate with client libraries
 
 Source: https://documentation.s3ns.fr/docs/authentication/client-libraries
-Last updated: 2026-07-30
+Last updated: 2026-08-13
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -575,7 +575,7 @@ require "google/cloud/storage"
 # *NOTE*: Replace the client created below with the client required for your application. 
 # Note that the credentials are not specified when constructing the client. 
 # Hence, the client library will look for credentials using ADC. 
-storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) project_id : project_id 
+storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) project_id : project_id 
 buckets = storage . buckets 
 puts "Buckets: " 
 buckets . [ each ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Policy-Bindings.html) do | bucket | 
