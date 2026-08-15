@@ -1,7 +1,7 @@
 # Quotas and system limits
 
 Source: https://berlin.devsitetest.how/service-usage/docs/quotas
-Last updated: 2026-08-07
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 

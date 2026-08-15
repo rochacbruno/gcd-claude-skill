@@ -1,7 +1,7 @@
 # Retrieve a public key
 
 Source: https://documentation.s3ns.fr/kms/docs/retrieve-public-key
-Last updated: 2026-08-06
+Last updated: 2026-08-12
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 

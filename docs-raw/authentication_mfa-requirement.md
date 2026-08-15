@@ -1,7 +1,7 @@
 # 2-step verification requirement for Google Cloud Dedicated in Germany
 
 Source: https://berlin.devsitetest.how/docs/authentication/mfa-requirement
-Last updated: 2026-08-13
+Last updated: 2026-08-14
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -158,14 +158,11 @@ Guides
 - [ Enable 2SV in Google Workspace ](#enable-workspace)
 - [ Enable 2SV for third-party identity providers ](#enable-idp)
 - [ Recover account access if a factor is lost or stolen ](#recover)
-- [ Monitor 2SV conformance ](#monitor_2sv_conformance)
+- [ Enterprise Cloud Identity (non-SSO) features ](#cloudid)
 
-- [ Understand conformance log entries ](#understand-conformance-log)
-
-- [ Cloud Identity: extend the deadline for the 2SV requirement ](#extend)
-- [ Cloud Identity: opt out of the 2SV requirement ](#opt-out)
-
-- [ Opt back in to 2SV ](#opt-in)
+- [ Monitor 2SV conformance ](#monitor)
+- [ Extend the deadline for the 2SV requirement ](#extend)
+- [ Opt out of the 2SV requirement ](#opt-out)
 
 - 
 
@@ -398,10 +395,33 @@ Refer to your third-party IdP's documentation to learn how to enable 2SV.
 See [Fix common issues with 2-Step verification](https://support.google.com/accounts/answer/185834)
 for steps to recover your account.
 
-## Monitor 2SV conformance
+## Enterprise Cloud Identity (non-SSO) features
 
-Administrators can monitor user account 2SV conformance when they interact with
-the Google Cloud Dedicated console in Logs Explorer:
+Organizations that use Enterprise [Cloud Identity](/identity) (non-SSO) have
+the following features available to them:
+
+- 
+
+[2SV conformance monitoring](#monitor)
+
+- 
+
+[2SV requirement deadline extension](#extend)
+
+- 
+
+[2SV opt out](#opt-out)
+
+### Monitor 2SV conformance
+
+Organizations that use Enterprise Cloud Identity (non-SSO) can monitor user
+account 2SV conformance by checking logs for when users interact with the
+Google Cloud Dedicated console.
+
+Principals with the
+[Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
+(`roles/resourcemanager.organizationAdmin`) role at the organization level can
+view conformance log entries using Logs Explorer:
 
 - 
 
@@ -446,7 +466,7 @@ jsonPayload.mfaEligibility: "MFA_ELIGIBILITY_ELIGIBLE"
 For the fields you can filter by and their definitions, see
 [Understand conformance log entries](#understand-conformance-log).
 
-### Understand conformance log entries
+#### Understand conformance log entries
 
 Conformance log entries look similar to the following:
 
@@ -533,11 +553,11 @@ out of the 2SV requirement. This user account doesn't require 2SV.
 a third-party IdP using single sign-on. This user account doesn't require
 2SV.
 
-## Cloud Identity: extend the deadline for the 2SV requirement
+### Extend the deadline for the 2SV requirement
 
-Organizations that use Enterprise [Cloud Identity](/identity) (non-SSO) and
-were created before August 3, 2026, can enable a one-time, 90-day extension to
-the 2SV requirement at the organization level in the Google Cloud Dedicated console.
+Organizations that use Enterprise Cloud Identity (non-SSO) and were created
+before August 3, 2026, can enable a one-time, 90-day extension to the 2SV
+requirement at the organization level in the Google Cloud Dedicated console.
 
 To do so, principals with the
 [Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
@@ -561,13 +581,13 @@ extension. It might take a few minutes for the change to take effect.
 
 After the extension expires, the 2SV requirement is reenabled.
 
-## Cloud Identity: opt out of the 2SV requirement
+### Opt out of the 2SV requirement
 
 We don't recommend opting out of the 2SV requirement. However, organizations
-that use Enterprise [Cloud Identity](/identity) (non-SSO) can choose to opt
-out of the requirement at the organization level in the Google Cloud Dedicated console.
-Opting out only bypasses the 2SV requirement; it doesn't disable 2SV for users
-who already have it enabled, and users can still enable 2SV for themselves.
+that use Enterprise Cloud Identity (non-SSO) can choose to opt out of the
+requirement at the organization level in the Google Cloud Dedicated console. Opting out
+only bypasses the 2SV requirement; it doesn't disable 2SV for users who already
+have it enabled, and users can still enable 2SV for themselves.
 
 Principals with the
 [Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
@@ -593,7 +613,7 @@ After an organization has opted out of the 2SV requirement, users with 2SV
 disabled are no longer required to enable it to use the Google Cloud Dedicated console
 or the Firebase console.
 
-### Opt back in to 2SV
+#### Opt back in to 2SV
 
 If you choose to opt in to 2SV again, a minimum 30-day grace period takes place
 before 2SV is required.

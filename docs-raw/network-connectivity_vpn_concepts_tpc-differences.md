@@ -1,7 +1,7 @@
 # Cloud VPN in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/network-connectivity/docs/vpn/concepts/tpc-differences
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 - 
 

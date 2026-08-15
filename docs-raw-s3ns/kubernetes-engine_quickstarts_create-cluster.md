@@ -1,7 +1,7 @@
 # Quickstart: Create a cluster and deploy a workload
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/quickstarts/create-cluster
-Last updated: 2026-07-29
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 

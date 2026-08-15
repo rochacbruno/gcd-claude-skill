@@ -1,7 +1,7 @@
 # Enable and disable services
 
 Source: https://documentation.s3ns.fr/service-usage/docs/enable-disable
-Last updated: 2026-07-29
+Last updated: 2026-08-14
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -169,7 +169,7 @@ Before enabling and disabling services, you must set up your
 Cloud de Confiance project and environment for Service Usage.
 
 
-[Console](#console) [ gcloud ](#gcloud) 
+[Console](#console) [ gcloud ](#gcloud) [ REST API ](#rest-api) 
 More 
 
 
@@ -255,50 +255,6 @@ project, then you already have the required permissions.
 
 
 
-
-
-
-
-
-- 
-
-
-
-[Verify that billing is enabled for your Cloud de Confiance project](/billing/docs/how-to/verify-billing-enabled#confirm_billing_is_enabled_on_a_project).
-
-
-
-
-
-
-
-
-
-
-- 
-
-
-
-
-Enable the Service Usage API.
-
-
-
-
-
-
-**Roles required to enable APIs**
-
-
-To enable APIs, you need the `serviceusage.services.enable` permission. If you
-created the project, then you likely already have this permission through the
-Owner role (`roles/owner`). Otherwise, you can get this permission through the
-Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
-[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-
-
-
-[Enable the API](https://console.cloud.s3nscloud.fr/apis/enableflow?apiid=serviceusage.googleapis.com)
 
 
 
@@ -441,7 +397,7 @@ Create a Cloud de Confiance project:
 
 
 ```
-gcloud projects create ** PROJECT_ID 
+gcloud projects create PROJECT_ID 
 ```
 
 
@@ -493,16 +449,6 @@ then you already have the required permissions.
 
 
 
-- 
-
-
-
-[Verify that billing is enabled for your Cloud de Confiance project](/billing/docs/how-to/verify-billing-enabled#confirm_billing_is_enabled_on_a_project).
-
-
-
-
-
 
 
 
@@ -510,34 +456,15 @@ then you already have the required permissions.
 
 - 
 
+Have a Cloud de Confiance project for which you want to enable or disable
+APIs.
 
+- 
 
-Enable the Service Usage API:
-
-
-
-
-
-Roles required to enable APIs**
-
-
-To enable APIs, you need the `serviceusage.services.enable` permission. If you
-created the project, then you likely already have this permission through the
-Owner role (`roles/owner`). Otherwise, you can get this permission through the
-Service Usage Admin role (`roles/serviceusage.serviceUsageAdmin`).
-[Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-
-
-```
-gcloud services enable serviceusage.googleapis.com
-```
-
-
-
-
-
-
-
+Verify that you have the
+[permissions required to complete this guide](#required-roles).
+If you're using a project you created, then you typically already have
+the required permissions.
 
 
 

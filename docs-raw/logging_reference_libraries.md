@@ -1602,7 +1602,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/logging" 
 
 # Instantiates a client 
-logging = Google :: Cloud :: [ Logging ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-service_control-v1/latest/Google-Cloud-Logging.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
+logging = Google :: Cloud :: [ Logging ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging-v2/latest/Google-Cloud-Logging.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
 
 # Prepares a log entry 
 entry = logging . [ entry ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging-Project.html)

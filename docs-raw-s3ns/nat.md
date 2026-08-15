@@ -1,7 +1,7 @@
 # Cloud NAT documentation
 
 Source: https://documentation.s3ns.fr/nat/docs
-Last updated: 2026-07-31
+Last updated: 2026-08-11
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/nat/docs/tpc-differences) for more details.
 
