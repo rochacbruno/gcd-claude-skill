@@ -575,7 +575,7 @@ require "google/cloud/storage"
 # *NOTE*: Replace the client created below with the client required for your application. 
 # Note that the credentials are not specified when constructing the client. 
 # Hence, the client library will look for credentials using ADC. 
-storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) project_id : project_id 
+storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) project_id : project_id 
 buckets = storage . buckets 
 puts "Buckets: " 
 buckets . [ each ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Policy-Bindings.html) do | bucket | 
@@ -590,7 +590,7 @@ end
 
 
 
-## Use API keys with client libraries 
+## Use API keys with client libraries
 
 You can use an API keys only with client libraries for APIs that accept API
 keys. In addition, the API key must not have an API restriction that prevents it
