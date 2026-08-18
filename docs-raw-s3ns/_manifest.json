@@ -513,7 +513,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13683,
+    "size": 13684,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-08-13"
   },
@@ -898,9 +898,9 @@
   "/docs/quotas/api-overview": {
     "title": "Cloud Quotas API overview",
     "filename": "quotas_api-overview.md",
-    "size": 15570,
+    "size": 15688,
     "url": "https://documentation.s3ns.fr/docs/quotas/api-overview",
-    "last_updated": "2026-08-12"
+    "last_updated": "2026-08-18"
   },
   "/docs/quotas/apis": {
     "title": "APIs and reference",
@@ -940,7 +940,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-08-11"
   },
@@ -954,16 +954,16 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18879,
+    "size": 18880,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-12"
   },
   "/docs/quotas/implement-common-use-cases": {
     "title": "Implement common use cases",
     "filename": "quotas_implement-common-use-cases.md",
-    "size": 23451,
+    "size": 23502,
     "url": "https://documentation.s3ns.fr/docs/quotas/implement-common-use-cases",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-18"
   },
   "/docs/quotas/known-issues": {
     "title": "Known issues",
@@ -1334,14 +1334,14 @@
     "filename": "firewall.md",
     "size": 3113,
     "url": "https://documentation.s3ns.fr/firewall/docs",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-17"
   },
   "/firewall/docs/tpc-differences": {
     "title": "Cloud NGFW in Cloud de Confiance versus Google Cloud",
     "filename": "firewall_tpc-differences.md",
     "size": 4490,
     "url": "https://documentation.s3ns.fr/firewall/docs/tpc-differences",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-17"
   },
   "/iam/docs": {
     "title": "Identity and Access Management documentation",
@@ -1514,16 +1514,16 @@
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
-    "size": 7091,
+    "size": 7100,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-17"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
-    "size": 8417,
+    "size": 8426,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-17"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
@@ -1794,7 +1794,7 @@
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24448,
+    "size": 24451,
     "url": "https://documentation.s3ns.fr/pubsub/docs/create-topic",
     "last_updated": "2026-08-12"
   },
@@ -1843,9 +1843,9 @@
   "/pubsub/docs/tpc-differences": {
     "title": "Pub/Sub in Cloud de Confiance versus Google Cloud",
     "filename": "pubsub_tpc-differences.md",
-    "size": 5677,
+    "size": 4923,
     "url": "https://documentation.s3ns.fr/pubsub/docs/tpc-differences",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-17"
   },
   "/pubsub/docs/troubleshooting": {
     "title": "General troubleshooting",
@@ -2027,14 +2027,14 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-17"
+    "last_updated": "2026-08-18"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
     "filename": "sql_tpc-differences.md",
     "size": 6670,
     "url": "https://documentation.s3ns.fr/sql/docs/tpc-differences",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-17"
   },
   "/storage/docs": {
     "title": "Cloud Storage documentation",
@@ -2046,7 +2046,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30362,
+    "size": 30365,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-08-11"
   },
@@ -2067,14 +2067,14 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22347,
+    "size": 22350,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
     "last_updated": "2026-08-11"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
     "filename": "storage_release-notes.md",
-    "size": 13683,
+    "size": 14163,
     "url": "https://documentation.s3ns.fr/storage/docs/release-notes",
     "last_updated": "2026-08-11"
   },
@@ -2088,14 +2088,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41573,
+    "size": 41576,
     "url": "https://documentation.s3ns.fr/storage/docs/troubleshooting",
     "last_updated": "2026-08-11"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46655,
+    "size": 46658,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
     "last_updated": "2026-08-11"
   },

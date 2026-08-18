@@ -1,7 +1,7 @@
 # Cloud Next Generation Firewall documentation
 
 Source: https://berlin.devsitetest.how/firewall/docs
-Last updated: 2026-08-11
+Last updated: 2026-08-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/firewall/docs/tpc-differences) for more details.
 

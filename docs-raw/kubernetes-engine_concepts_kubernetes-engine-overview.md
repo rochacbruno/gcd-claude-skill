@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-08-11
+Last updated: 2026-08-17
 
 - 
 
@@ -375,4 +375,4 @@ Standard clusters are unavailable in Google Cloud Dedicated.
 
 - [Explore the GKE documentation](/kubernetes-engine/docs/about).
 
-- [Design and optimize your GKE cluster with Gemini](/kubernetes-engine/docs/design-with-gemini).
+- [Design and optimize your GKE cluster with Gemini](/kubernetes-engine/docs/concepts/design-with-gemini).

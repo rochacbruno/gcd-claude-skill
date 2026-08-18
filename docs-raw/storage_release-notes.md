@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ August 17, 2026 ](#August_17_2026)
 - [ July 20, 2026 ](#July_20_2026)
 - [ June 17, 2026 ](#June_17_2026)
 - [ May 28, 2026 ](#May_28_2026)
@@ -215,7 +216,23 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## July 20, 2026 
+## August 17, 2026 
+
+
+Feature 
+
+
+If you delete your project, buckets that have soft delete enabled are
+now retained for a limited amount of time before being permanently deleted.
+If you restore a deleted project during this time period, these buckets are
+restored to the state that they were in when the project was deleted.
+
+For more information about soft delete and the restoration window, see
+[Soft delete](/storage/docs/soft-delete).
+
+
+
+## July 20, 2026
 
 
 Feature 

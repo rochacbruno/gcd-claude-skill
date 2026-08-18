@@ -1,7 +1,7 @@
 # Cloud Quotas API overview
 
 Source: https://berlin.devsitetest.how/docs/quotas/api-overview
-Last updated: 2026-08-12
+Last updated: 2026-08-18
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -456,10 +456,11 @@ This is the value that was specified when the quota preference was created.
 - ` PROJECT `: the ID or number of your Google Cloud Dedicated in Germany
 project.
 
-If you made a quota adjustment request and the request is partially approved,
-a `stateDetail` field appears after the `grantedValue` field. The
+If you made a quota adjustment request and the request is partially approved
+or denied, a `stateDetail` field appears after the `grantedValue` field. The
 `grantedValue` shows the adjustment that was made, and the `stateDetail` field
-describes the partially approved state.
+provides more context about the final state of the request-for example,
+explaining a partially approved state or detailing the reason for a denial.
 
 To see if the granted value is the final value approved, look at the
 `reconciling` field. If your request is still undergoing evaluation, the

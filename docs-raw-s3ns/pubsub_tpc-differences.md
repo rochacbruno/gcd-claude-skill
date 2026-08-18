@@ -1,7 +1,7 @@
 # Pub/Sub in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/pubsub/docs/tpc-differences
-Last updated: 2026-08-11
+Last updated: 2026-08-17
 
 - 
 
@@ -118,7 +118,7 @@ Guides
 
 - [ Features ](#features-differences)
 - [ Availability and disaster recovery ](#availability-differences)
-- [ Architecture ](#integrations-differences)
+- [ Architecture ](#architecture)
 - [ Integrations ](#integrations-differences)
 
 - [ Related guides ](#related-guides)
@@ -164,20 +164,17 @@ Some notable differences include the following:
 
 
 - 
-Some types of subscriptions are unavailable in Cloud de Confiance.
+Some types of import topics are unavailable in Cloud de Confiance.
 
 
 - 
-Some types of import topics are unavailable in Cloud de Confiance.
+Some features, like schemas or AI Inference SMTs, are unavailable in
+Cloud de Confiance.
 
 
 - 
 Pub/Sub Lite is unavailable in Cloud de Confiance.
 
-
-- 
-Some features, like ordering keys or dead-letter queues are unavailable
-in Cloud de Confiance.
 
 
 
@@ -213,46 +210,10 @@ Authentication for push subscriptions is unavailable.
 |
 
 | 
-**Dead-letter queues**
-| 
-Dead-letter queues are unavailable.
-| 
-|
-
-| 
-**Exactly-once delivery**
-| 
-Exactly-once delivery is unavailable.
-| 
-|
-
-| 
-**Filtering**
-| 
-Filtering is unavailable.
-| 
-|
-
-| 
 **Import topics**
 | 
-Import topics are not available for use. Including Amazon Kinesis
-Data Streams import topics, Cloud Storage import topics, Azure Event
-Hubs import topics, MSK import topics, and Confluent Cloud import topics.
-| 
-|
-
-| 
-**Ordering keys**
-| 
-Ordering keys are unavailable.
-| 
-|
-
-| 
-**Payload unwrapping for push subscriptions**
-| 
-Payload unwrapping for push subscriptions is unavailable.
+The following types of import topics are unavailable: Amazon Kinesis
+Data Streams, Azure Event Hubs, Amazon MSK, Confluent Cloud.
 | 
 |
 
@@ -264,19 +225,8 @@ Schemas are unavailable.
 |
 
 | 
-**Snapshots and seek**
-| 
-Snapshots and seek are unavailable.
-| 
-|
-
-| 
-**Subscriptions**
-| 
-BigQuery subscriptions and Cloud Storage subscriptions
-are unavailable. Ingesting data from sources like
-Amazon Web Services (AWS) or Cloud Storage is also unavailable.
-| 
+**Single Message Transforms (SMTs)** | 
+AI Inference SMTs are unavailable. | 
 |
 
 
@@ -330,14 +280,14 @@ Resource location restrictions are not supported.
 | 
 **Core integrations**
 | 
-The following core integrations aren't supported in
+The following core integrations are unsupported in
 Cloud de Confiance: Dataflow,
-BigQuery subscriptions, Cloud Functions, App Engine,
-and Cloud Run.
+Cloud Functions, App Engine, and Cloud Run.
 | 
 |
 
-| **Third-party integrations**
+| 
+**Third-party integrations**
 | 
 Third-party integrations might not be supported. To determine if a
 third-party integration is supported in Cloud de Confiance,

@@ -1,7 +1,7 @@
 # Implement common use cases
 
 Source: https://berlin.devsitetest.how/docs/quotas/implement-common-use-cases
-Last updated: 2026-08-11
+Last updated: 2026-08-18
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -366,10 +366,11 @@ While Google Cloud Dedicated in Germany evaluates the requested quota value, the
 of your quota is set to `true`.
 
 Sometimes Google Cloud Dedicated in Germany approves part of your increase request instead of
-approving the full increase. If the request is partially approved, the quota
-preference includes a `stateDetail` field. The `stateDetail` field describes
-the partially approved state. The `grantedValue` field shows the adjustment
-that was made to partially fulfill your request.
+approving the full increase, or denies the request entirely. The quota
+preference includes a `stateDetail` field to describe the final state of the
+request-for example, explaining a partially approved state or detailing the
+reason for a denial. The `grantedValue` field shows the adjustment that was
+made to fulfill your request.
 
 To see if the granted value is the final value approved, look at the
 `reconciling` field. If your request is still undergoing evaluation, the
