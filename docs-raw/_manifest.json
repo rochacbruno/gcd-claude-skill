@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 486471,
+    "size": 486478,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-08-14"
   },
@@ -557,14 +557,14 @@
     "filename": "data.md",
     "size": 2374,
     "url": "https://berlin.devsitetest.how/docs/data",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-18"
   },
   "/docs/databases": {
     "title": "Databases",
     "filename": "databases.md",
     "size": 1372,
     "url": "https://berlin.devsitetest.how/docs/databases",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-18"
   },
   "/docs/devtools": {
     "title": "Google Cloud Dedicated SDK, languages, frameworks, and tools",
@@ -704,7 +704,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16541,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-18"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -725,7 +725,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3463,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-18"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -1325,9 +1325,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2098739,
+    "size": 2098858,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-18"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1915,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-18"
+    "last_updated": "2026-08-19"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

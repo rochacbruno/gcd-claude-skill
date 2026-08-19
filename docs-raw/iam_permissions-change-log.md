@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-08-13
+Last updated: 2026-08-18
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -13610,7 +13610,7 @@ The Parametermanager Viewer role (`roles/parametermanager.viewer`) has reached G
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 
@@ -50410,7 +50410,7 @@ The following permissions have reached General Availability (GA):
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 
@@ -50434,7 +50434,7 @@ The following permissions have been added:
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 
@@ -89142,7 +89142,7 @@ The following permissions have been added:
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 
@@ -89168,7 +89168,7 @@ The following permissions have been added:
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 
@@ -91100,7 +91100,7 @@ The following permissions have been added:
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 
@@ -150999,7 +150999,7 @@ Supported In Custom Roles
 
 | 
 
-reCAPTCHA
+Google Cloud Fraud Defense
 | 
 
 Added
