@@ -1,7 +1,7 @@
 # Security
 
 Source: https://documentation.s3ns.fr/docs/security
-Last updated: 2026-08-11
+Last updated: 2026-08-19
 
 - 
 
@@ -697,3 +697,57 @@ Cloud External Key Manager
 
 
 Control the location and distribution of your externally-managed keys.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+Secret Manager
+](/secret-manager/docs)
+
+
+Store API keys, passwords, certificates, and other sensitive data.

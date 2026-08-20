@@ -1,7 +1,7 @@
 # Quickstart: Write and query log entries with the gcloud CLI
 
 Source: https://documentation.s3ns.fr/logging/docs/write-query-log-entries-gcloud
-Last updated: 2026-08-12
+Last updated: 2026-08-18
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 

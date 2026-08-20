@@ -1,7 +1,7 @@
 # 2-step verification requirement for Cloud de Confiance by S3NS
 
 Source: https://documentation.s3ns.fr/docs/authentication/mfa-requirement
-Last updated: 2026-08-14
+Last updated: 2026-08-20
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -419,9 +419,9 @@ account 2SV conformance by checking logs for when users interact with the
 Cloud de Confiance console.
 
 Principals with the
-[Organization Administrator](/iam/docs/roles-permissions/resourcemanager#resourcemanager.organizationAdmin)
-(`roles/resourcemanager.organizationAdmin`) role at the organization level can
-view conformance log entries using Logs Explorer:
+[Logs Viewer](/iam/docs/roles-permissions/logging#logging.viewer)
+(`roles/logging.viewer`) role at the organization level can view conformance log
+entries using Logs Explorer:
 
 - 
 
