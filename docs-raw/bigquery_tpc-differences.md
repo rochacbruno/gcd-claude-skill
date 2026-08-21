@@ -1,7 +1,7 @@
 # BigQuery in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/bigquery/docs/tpc-differences
-Last updated: 2026-08-11
+Last updated: 2026-08-20
 
 - 
 
@@ -232,8 +232,26 @@ Cross region replication and failover are not available in Trusted Cloud.
 | 
 **Cost saving features**
 | 
-Committed use discounts (CUDs) are unavailable in
-Google Cloud Dedicated. | 
+
+
+
+Google Cloud Dedicated in Germany offers spend-based
+committed use discounts (CUDs) for BigQuery reservations.
+To purchase spend-based commitments, contact
+[
+Google Cloud Dedicated in Germany billing support]().
+For more information, see the
+[billing differences page](/billing/docs/tpc-differences).
+
+
+
+
+All other cost-saving features aren't available in
+Google Cloud Dedicated, including
+capacity commitments.
+
+
+| 
 |
 
 

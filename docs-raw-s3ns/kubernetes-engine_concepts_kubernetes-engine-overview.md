@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-08-17
+Last updated: 2026-08-20
 
 - 
 

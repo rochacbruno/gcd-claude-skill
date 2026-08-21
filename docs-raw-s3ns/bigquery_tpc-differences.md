@@ -1,7 +1,7 @@
 # BigQuery in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/bigquery/docs/tpc-differences
-Last updated: 2026-08-11
+Last updated: 2026-08-20
 
 - 
 
@@ -232,8 +232,26 @@ Cross region replication and failover are not available in Trusted Cloud.
 | 
 **Cost saving features**
 | 
-Committed use discounts (CUDs) are unavailable in
-Cloud de Confiance. | 
+
+
+
+Cloud de Confiance by S3NS offers spend-based
+committed use discounts (CUDs) for BigQuery reservations.
+To purchase spend-based commitments, contact
+[
+Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+For more information, see the
+[billing differences page](/billing/docs/tpc-differences).
+
+
+
+
+All other cost-saving features aren't available in
+Cloud de Confiance, including
+capacity commitments.
+
+
+| 
 |
 
 

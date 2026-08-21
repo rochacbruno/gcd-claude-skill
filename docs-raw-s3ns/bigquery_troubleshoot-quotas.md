@@ -106,9 +106,9 @@ BigQuery
 
 [
 
-Reference
+Guides
 
-](https://documentation.s3ns.fr/bigquery/quotas)
+](https://documentation.s3ns.fr/bigquery/docs/introduction)
 
 
 

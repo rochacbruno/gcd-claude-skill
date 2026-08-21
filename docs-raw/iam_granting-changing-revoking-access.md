@@ -1545,7 +1545,7 @@ documentation](/resource-manager/docs/libraries) for your programming language.
 
 ```
 import com.google.cloud.resourcemanager.v3.[ProjectsClient](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) ; 
-import com.google.iam.admin.v1.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) ; 
+import com.google.iam.admin.v1.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) ; 
 import com.google.iam.v1.[GetIamPolicyRequest](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) ; 
 import com.google.iam.v1.[Policy](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.Policy.html) ; 
 import java.io.IOException ; 
@@ -1565,7 +1565,7 @@ public static [ Policy ](https://berlin.devsitetest.how/java/docs/reference/prot
 // This client only needs to be created once, and can be reused for multiple requests. 
 try ( [ ProjectsClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) projectsClient = [ ProjectsClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) . create ()) { 
 [ GetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) request = [ GetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) . newBuilder () 
-. setResource ( [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) . of ( projectId ). toString ()) 
+. setResource ( [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) . of ( projectId ). toString ()) 
 . build (); 
 return projectsClient . getIamPolicy ( request ); 
 } 
@@ -3053,7 +3053,7 @@ documentation](/resource-manager/docs/libraries) for your programming language.
 
 ```
 import com.google.cloud.resourcemanager.v3.[ProjectsClient](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) ; 
-import com.google.iam.admin.v1.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) ; 
+import com.google.iam.admin.v1.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) ; 
 import com.google.iam.v1.[GetIamPolicyRequest](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) ; 
 import com.google.iam.v1.[Policy](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.Policy.html) ; 
 import java.io.IOException ; 
@@ -3073,7 +3073,7 @@ public static [ Policy ](https://berlin.devsitetest.how/java/docs/reference/prot
 // This client only needs to be created once, and can be reused for multiple requests. 
 try ( [ ProjectsClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) projectsClient = [ ProjectsClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) . create ()) { 
 [ GetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) request = [ GetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.GetIamPolicyRequest.html) . newBuilder () 
-. setResource ( [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) . of ( projectId ). toString ()) 
+. setResource ( [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) . of ( projectId ). toString ()) 
 . build (); 
 return projectsClient . getIamPolicy ( request ); 
 } 
@@ -5815,7 +5815,7 @@ documentation](/resource-manager/docs/libraries) for your programming language.
 
 ```
 import com.google.cloud.resourcemanager.v3.[ProjectsClient](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) ; 
-import com.google.iam.admin.v1.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) ; 
+import com.google.iam.admin.v1.[ProjectName](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) ; 
 import com.google.iam.v1.[Policy](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.Policy.html) ; 
 import com.google.iam.v1.[SetIamPolicyRequest](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.html) ; 
 import com.google.protobuf.[FieldMask](https://berlin.devsitetest.how/java/docs/reference/protobuf/latest/com.google.protobuf.FieldMask.html) ; 
@@ -5843,7 +5843,7 @@ throws IOException {
 try ( [ ProjectsClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) projectsClient = [ ProjectsClient ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectsClient.html) . create ()) { 
 List paths = Arrays . asList ( "bindings" , "etag" ); 
 [ SetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.html) request = [ SetIamPolicyRequest ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.html) . newBuilder () 
-. setResource ( [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-resourcemanager/latest/com.google.cloud.resourcemanager.v3.ProjectName.html) . of ( projectId ). toString ()) 
+. setResource ( [ ProjectName ](https://berlin.devsitetest.how/java/docs/reference/google-iam-admin/latest/com.google.iam.admin.v1.ProjectName.html) . of ( projectId ). toString ()) 
 . [ setPolicy ](https://berlin.devsitetest.how/java/docs/reference/proto-google-iam-v1/latest/com.google.iam.v1.SetIamPolicyRequest.Builder.html#com_google_iam_v1_SetIamPolicyRequest_Builder_setPolicy_com_google_iam_v1_Policy_) ( policy ) 
 // A FieldMask specifying which fields of the policy to modify. Only 
 // the fields in the mask will be modified. If no mask is provided, the 

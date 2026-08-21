@@ -106,9 +106,9 @@ BigQuery
 
 [
 
-Reference
+Guides
 
-](https://berlin.devsitetest.how/bigquery/quotas)
+](https://berlin.devsitetest.how/bigquery/docs/introduction)
 
 
 

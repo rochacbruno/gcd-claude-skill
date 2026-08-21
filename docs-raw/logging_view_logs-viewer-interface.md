@@ -1,7 +1,7 @@
 # View and analyze log entries
 
 Source: https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
