@@ -1,7 +1,7 @@
 # Enable and disable services
 
 Source: https://berlin.devsitetest.how/service-usage/docs/enable-disable
-Last updated: 2026-08-14
+Last updated: 2026-08-21
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -1118,9 +1118,19 @@ see the [Getting started](https://support.google.com/cloud/answer/6158867) guide
 for Cloud APIs.
 
 Many services, such as Cloud Storage and BigQuery, charge for data
-storage. Disabling a service's API doesn't delete your data, and you'll continue
-to be billed for it. To stop future charges and discontinue using a service,
-delete all associated data before disabling its API.
+storage, and disabling the API for these service's doesn't delete your data. For
+these services, you'll continue to be billed for data storage even after the
+API is disabled. In contrast, when you disable the Cloud Run API, the
+resources associated with Cloud Run are deleted, which you might
+not intend to do.
+
+In both cases, and as a general best practice, you should take inventory of
+resources associated with your service prior to disabling the service. For
+services such as Cloud Storage and BigQuery, to stop
+future charges and discontinue using the service, delete all associated data
+before disabling its API. For Cloud Run, don't disable the API
+until you've confirmed that any Cloud Run resources that exist
+are safe to delete.
 
 If you disable the Kubernetes Engine API, running clusters in the project become
 suspended. After 30 days, these suspended clusters are deleted. To reactivate

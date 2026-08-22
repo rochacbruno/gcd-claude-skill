@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-08-20
+Last updated: 2026-08-21
 
 - 
 
@@ -345,25 +345,19 @@ The [Cloud Storage FUSE](/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi
 
 
 
-To use the driver, complete the following tasks:
+Configuration requirements depend on your GKE version:
 
 
 
 
-- 
+- **GKE version 1.36.0-gke.2684000 or later**: specify the `skipCSIBucketAccessCheck: "true"` volume attribute. The `custom-endpoint` mount option is not required because the CSI driver automatically discovers the storage endpoint.
 
-Specify the `custom-endpoint` mount option in the volume's `mountOptions`, either in a Pod's ephemeral storage volume or in a PersistentVolume, to point to the Cloud Storage API endpoint for your environment. The endpoint value follows the format `storage.apis-berlin-build0.goog:443`.
-
-
-
-You can use either the [CLI flag format](/storage/docs/cloud-storage-fuse/cli-options#custom-endpoint) or the [configuration file format](/storage/docs/cloud-storage-fuse/config-file#format-and-fields). Both formats are parsed directly by the driver as mount options, so you don't need to supply a separate configuration file.
+- **GKE versions between 1.36.0-gke.1266000 and 1.36.0-gke.2684000**: specify both the `skipCSIBucketAccessCheck: "true"` volume attribute and the `custom-endpoint` mount option.
 
 
 
 
-- **CLI format**: `custom-endpoint=storage.apis-berlin-build0.goog:443`
-
-- **Configuration file format**: `gcs-connection:custom-endpoint:storage.apis-berlin-build0.goog:443`
+To configure these settings:
 
 
 
@@ -377,6 +371,24 @@ Specify the `skipCSIBucketAccessCheck: "true"` volume attribute in the Persisten
 volumeAttributes : 
 skipCSIBucketAccessCheck : "true" 
 ```
+
+
+
+- 
+
+*(Versions between 1.36.0-gke.1266000 and 1.36.0-gke.2684000 only)* Specify the `custom-endpoint` mount option in the volume's `mountOptions`, either in a Pod's ephemeral storage volume or in a PersistentVolume, to point to the Cloud Storage API endpoint for your environment: `storage.apis-berlin-build0.goog:443`.
+
+
+
+You can use either the [CLI flag format](/storage/docs/cloud-storage-fuse/cli-options#custom-endpoint) or the [configuration file format](/storage/docs/cloud-storage-fuse/config-file#format-and-fields). Both formats are parsed directly by the driver as mount options, so you don't need to supply a separate configuration file.
+
+
+
+
+- **CLI format**: `custom-endpoint=storage.apis-berlin-build0.goog:443`
+
+- **Configuration file format**: `gcs-connection:custom-endpoint:storage.apis-berlin-build0.goog:443`
+
 
 
 
