@@ -163,7 +163,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 51066,
+    "size": 51065,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-08-11"
   },
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 508326,
+    "size": 486475,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-08-14"
   },
@@ -396,147 +396,147 @@
     "filename": "authentication.md",
     "size": 16321,
     "url": "https://berlin.devsitetest.how/docs/authentication",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/api-keys": {
     "title": "Manage API keys",
     "filename": "authentication_api-keys.md",
     "size": 121169,
     "url": "https://berlin.devsitetest.how/docs/authentication/api-keys",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/api-keys-best-practices": {
     "title": "Best practices for managing API keys",
     "filename": "authentication_api-keys-best-practices.md",
     "size": 5020,
     "url": "https://berlin.devsitetest.how/docs/authentication/api-keys-best-practices",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/api-keys-use": {
     "title": "Use API keys to access APIs",
     "filename": "authentication_api-keys-use.md",
     "size": 7720,
     "url": "https://berlin.devsitetest.how/docs/authentication/api-keys-use",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/application-default-credentials": {
     "title": "How Application Default Credentials works",
     "filename": "authentication_application-default-credentials.md",
     "size": 6921,
     "url": "https://berlin.devsitetest.how/docs/authentication/application-default-credentials",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13708,
+    "size": 13711,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13731,
+    "size": 13734,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
     "size": 18117,
     "url": "https://berlin.devsitetest.how/docs/authentication/get-id-token",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/mfa-requirement": {
     "title": "2-step verification requirement for Google Cloud Dedicated in Germany",
     "filename": "authentication_mfa-requirement.md",
     "size": 15942,
     "url": "https://berlin.devsitetest.how/docs/authentication/mfa-requirement",
-    "last_updated": "2026-08-20"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/provide-credentials-adc": {
     "title": "Set up Application Default Credentials",
     "filename": "authentication_provide-credentials-adc.md",
     "size": 2933,
     "url": "https://berlin.devsitetest.how/docs/authentication/provide-credentials-adc",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/reauthentication": {
     "title": "Reauthentication",
     "filename": "authentication_reauthentication.md",
     "size": 4080,
     "url": "https://berlin.devsitetest.how/docs/authentication/reauthentication",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/rest": {
     "title": "Authenticate with REST",
     "filename": "authentication_rest.md",
     "size": 16365,
     "url": "https://berlin.devsitetest.how/docs/authentication/rest",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-attached-service-account": {
     "title": "Set up ADC for a resource with an attached service account",
     "filename": "authentication_set-up-adc-attached-service-account.md",
     "size": 4323,
     "url": "https://berlin.devsitetest.how/docs/authentication/set-up-adc-attached-service-account",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-cloud-dev-environment": {
     "title": "Set up ADC for a cloud-based development environment",
     "filename": "authentication_set-up-adc-cloud-dev-environment.md",
     "size": 1838,
     "url": "https://berlin.devsitetest.how/docs/authentication/set-up-adc-cloud-dev-environment",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-containerized-environment": {
     "title": "Set up ADC for a containerized development environment",
     "filename": "authentication_set-up-adc-containerized-environment.md",
     "size": 2382,
     "url": "https://berlin.devsitetest.how/docs/authentication/set-up-adc-containerized-environment",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-local-dev-environment": {
     "title": "Set up ADC for a local development environment",
     "filename": "authentication_set-up-adc-local-dev-environment.md",
     "size": 7317,
     "url": "https://berlin.devsitetest.how/docs/authentication/set-up-adc-local-dev-environment",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-on-premises": {
     "title": "Set up ADC for on-premises or another cloud provider",
     "filename": "authentication_set-up-adc-on-premises.md",
     "size": 3740,
     "url": "https://berlin.devsitetest.how/docs/authentication/set-up-adc-on-premises",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/token-types": {
     "title": "Token types",
     "filename": "authentication_token-types.md",
     "size": 31961,
     "url": "https://berlin.devsitetest.how/docs/authentication/token-types",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/tokens": {
     "title": "Tokens overview",
     "filename": "authentication_tokens.md",
     "size": 5402,
     "url": "https://berlin.devsitetest.how/docs/authentication/tokens",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/troubleshoot-adc": {
     "title": "Troubleshoot your ADC setup",
     "filename": "authentication_troubleshoot-adc.md",
     "size": 5281,
     "url": "https://berlin.devsitetest.how/docs/authentication/troubleshoot-adc",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/use-service-account-impersonation": {
     "title": "Use service account impersonation",
     "filename": "authentication_use-service-account-impersonation.md",
     "size": 8290,
     "url": "https://berlin.devsitetest.how/docs/authentication/use-service-account-impersonation",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/compute-area": {
     "title": "Compute",
@@ -870,7 +870,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2713,
+    "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-08-11"
   },
@@ -1278,56 +1278,56 @@
     "filename": "iam.md",
     "size": 4119,
     "url": "https://berlin.devsitetest.how/iam/docs",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/attach-service-accounts": {
     "title": "Attach service accounts to resources",
     "filename": "iam_attach-service-accounts.md",
     "size": 21196,
     "url": "https://berlin.devsitetest.how/iam/docs/attach-service-accounts",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/configuring-temporary-access": {
     "title": "Configure temporary access",
     "filename": "iam_configuring-temporary-access.md",
     "size": 28188,
     "url": "https://berlin.devsitetest.how/iam/docs/configuring-temporary-access",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/creating-custom-roles": {
     "title": "Create and manage custom roles",
     "filename": "iam_creating-custom-roles.md",
     "size": 150389,
     "url": "https://berlin.devsitetest.how/iam/docs/creating-custom-roles",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/grant-role-console": {
     "title": "Quickstart: Grant roles in the Google Cloud Dedicated console",
     "filename": "iam_grant-role-console.md",
     "size": 7724,
     "url": "https://berlin.devsitetest.how/iam/docs/grant-role-console",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
     "size": 91505,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/manage-access-other-resources": {
     "title": "Manage access to other resources",
     "filename": "iam_manage-access-other-resources.md",
     "size": 25417,
     "url": "https://berlin.devsitetest.how/iam/docs/manage-access-other-resources",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
     "size": 2106184,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-08-19"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1341,35 +1341,35 @@
     "filename": "iam_release-notes.md",
     "size": 5599,
     "url": "https://berlin.devsitetest.how/iam/docs/release-notes",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/roles-overview": {
     "title": "Roles and permissions",
     "filename": "iam_roles-overview.md",
     "size": 21853,
     "url": "https://berlin.devsitetest.how/iam/docs/roles-overview",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/service-accounts-create": {
     "title": "Create service accounts",
     "filename": "iam_service-accounts-create.md",
     "size": 29666,
     "url": "https://berlin.devsitetest.how/iam/docs/service-accounts-create",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
     "size": 107683,
     "url": "https://berlin.devsitetest.how/iam/docs/service-agents",
-    "last_updated": "2026-08-20"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Google Cloud Dedicated versus Google Cloud",
     "filename": "iam_tpc-differences.md",
     "size": 5538,
     "url": "https://berlin.devsitetest.how/iam/docs/tpc-differences",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/write-policy-client-libraries": {
     "title": "Quickstart: Write an allow policy by using client libraries",
@@ -1535,7 +1535,7 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28092,
+    "size": 28081,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
     "last_updated": "2026-08-21"
   },
@@ -1591,7 +1591,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39434,
+    "size": 39442,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
     "last_updated": "2026-08-11"
   },
@@ -1696,14 +1696,14 @@
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115049,
+    "size": 115031,
     "url": "https://berlin.devsitetest.how/pubsub/docs/access-control",
     "last_updated": "2026-08-11"
   },
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24502,
+    "size": 24499,
     "url": "https://berlin.devsitetest.how/pubsub/docs/create-topic",
     "last_updated": "2026-08-12"
   },
@@ -1731,7 +1731,7 @@
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 70166,
+    "size": 70157,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publisher",
     "last_updated": "2026-08-12"
   },
@@ -1915,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-22"
+    "last_updated": "2026-08-23"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1934,7 +1934,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30586,
+    "size": 30583,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
     "last_updated": "2026-08-11"
   },
@@ -1976,14 +1976,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41719,
+    "size": 41716,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
     "last_updated": "2026-08-11"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46900,
+    "size": 46897,
     "url": "https://berlin.devsitetest.how/storage/docs/uploading-objects",
     "last_updated": "2026-08-11"
   },

@@ -1,7 +1,7 @@
 # IAM in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/iam/docs/tpc-differences
-Last updated: 2026-08-13
+Last updated: 2026-08-22
 
 - 
 

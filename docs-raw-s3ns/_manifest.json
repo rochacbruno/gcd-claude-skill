@@ -2,7 +2,7 @@
   "/access-context-manager/docs": {
     "title": "Access Context Manager documentation",
     "filename": "access-context-manager.md",
-    "size": 2973,
+    "size": 2974,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs",
     "last_updated": "2026-08-11"
   },
@@ -473,147 +473,147 @@
     "filename": "authentication.md",
     "size": 16198,
     "url": "https://documentation.s3ns.fr/docs/authentication",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/api-keys": {
     "title": "Manage API keys",
     "filename": "authentication_api-keys.md",
     "size": 120423,
     "url": "https://documentation.s3ns.fr/docs/authentication/api-keys",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/api-keys-best-practices": {
     "title": "Best practices for managing API keys",
     "filename": "authentication_api-keys-best-practices.md",
     "size": 5010,
     "url": "https://documentation.s3ns.fr/docs/authentication/api-keys-best-practices",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/api-keys-use": {
     "title": "Use API keys to access APIs",
     "filename": "authentication_api-keys-use.md",
     "size": 7679,
     "url": "https://documentation.s3ns.fr/docs/authentication/api-keys-use",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/application-default-credentials": {
     "title": "How Application Default Credentials works",
     "filename": "authentication_application-default-credentials.md",
     "size": 6887,
     "url": "https://documentation.s3ns.fr/docs/authentication/application-default-credentials",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13657,
+    "size": 13660,
     "url": "https://documentation.s3ns.fr/docs/authentication/client-libraries",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13680,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
     "size": 18015,
     "url": "https://documentation.s3ns.fr/docs/authentication/get-id-token",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/mfa-requirement": {
     "title": "2-step verification requirement for Cloud de Confiance by S3NS",
     "filename": "authentication_mfa-requirement.md",
     "size": 15787,
     "url": "https://documentation.s3ns.fr/docs/authentication/mfa-requirement",
-    "last_updated": "2026-08-20"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/provide-credentials-adc": {
     "title": "Set up Application Default Credentials",
     "filename": "authentication_provide-credentials-adc.md",
     "size": 2923,
     "url": "https://documentation.s3ns.fr/docs/authentication/provide-credentials-adc",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/reauthentication": {
     "title": "Reauthentication",
     "filename": "authentication_reauthentication.md",
     "size": 4041,
     "url": "https://documentation.s3ns.fr/docs/authentication/reauthentication",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/rest": {
     "title": "Authenticate with REST",
     "filename": "authentication_rest.md",
     "size": 16300,
     "url": "https://documentation.s3ns.fr/docs/authentication/rest",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-attached-service-account": {
     "title": "Set up ADC for a resource with an attached service account",
     "filename": "authentication_set-up-adc-attached-service-account.md",
     "size": 4314,
     "url": "https://documentation.s3ns.fr/docs/authentication/set-up-adc-attached-service-account",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-cloud-dev-environment": {
     "title": "Set up ADC for a cloud-based development environment",
     "filename": "authentication_set-up-adc-cloud-dev-environment.md",
     "size": 1827,
     "url": "https://documentation.s3ns.fr/docs/authentication/set-up-adc-cloud-dev-environment",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-containerized-environment": {
     "title": "Set up ADC for a containerized development environment",
     "filename": "authentication_set-up-adc-containerized-environment.md",
     "size": 2363,
     "url": "https://documentation.s3ns.fr/docs/authentication/set-up-adc-containerized-environment",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-local-dev-environment": {
     "title": "Set up ADC for a local development environment",
     "filename": "authentication_set-up-adc-local-dev-environment.md",
     "size": 7314,
     "url": "https://documentation.s3ns.fr/docs/authentication/set-up-adc-local-dev-environment",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/set-up-adc-on-premises": {
     "title": "Set up ADC for on-premises or another cloud provider",
     "filename": "authentication_set-up-adc-on-premises.md",
     "size": 3721,
     "url": "https://documentation.s3ns.fr/docs/authentication/set-up-adc-on-premises",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/token-types": {
     "title": "Token types",
     "filename": "authentication_token-types.md",
     "size": 31858,
     "url": "https://documentation.s3ns.fr/docs/authentication/token-types",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/tokens": {
     "title": "Tokens overview",
     "filename": "authentication_tokens.md",
     "size": 5340,
     "url": "https://documentation.s3ns.fr/docs/authentication/tokens",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/troubleshoot-adc": {
     "title": "Troubleshoot your ADC setup",
     "filename": "authentication_troubleshoot-adc.md",
     "size": 5270,
     "url": "https://documentation.s3ns.fr/docs/authentication/troubleshoot-adc",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/authentication/use-service-account-impersonation": {
     "title": "Use service account impersonation",
     "filename": "authentication_use-service-account-impersonation.md",
     "size": 8277,
     "url": "https://documentation.s3ns.fr/docs/authentication/use-service-account-impersonation",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/docs/compute-area": {
     "title": "Compute",
@@ -1348,56 +1348,56 @@
     "filename": "iam.md",
     "size": 4101,
     "url": "https://documentation.s3ns.fr/iam/docs",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/attach-service-accounts": {
     "title": "Attach service accounts to resources",
     "filename": "iam_attach-service-accounts.md",
     "size": 21161,
     "url": "https://documentation.s3ns.fr/iam/docs/attach-service-accounts",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/configuring-temporary-access": {
     "title": "Configure temporary access",
     "filename": "iam_configuring-temporary-access.md",
     "size": 28131,
     "url": "https://documentation.s3ns.fr/iam/docs/configuring-temporary-access",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/creating-custom-roles": {
     "title": "Create and manage custom roles",
     "filename": "iam_creating-custom-roles.md",
     "size": 149526,
     "url": "https://documentation.s3ns.fr/iam/docs/creating-custom-roles",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/grant-role-console": {
     "title": "Quickstart: Grant roles in the Cloud de Confiance console",
     "filename": "iam_grant-role-console.md",
     "size": 7614,
     "url": "https://documentation.s3ns.fr/iam/docs/grant-role-console",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
     "size": 91136,
     "url": "https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/manage-access-other-resources": {
     "title": "Manage access to other resources",
     "filename": "iam_manage-access-other-resources.md",
     "size": 25328,
     "url": "https://documentation.s3ns.fr/iam/docs/manage-access-other-resources",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
     "size": 2106118,
     "url": "https://documentation.s3ns.fr/iam/docs/permissions-change-log",
-    "last_updated": "2026-08-19"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1411,35 +1411,35 @@
     "filename": "iam_release-notes.md",
     "size": 5565,
     "url": "https://documentation.s3ns.fr/iam/docs/release-notes",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/roles-overview": {
     "title": "Roles and permissions",
     "filename": "iam_roles-overview.md",
     "size": 21674,
     "url": "https://documentation.s3ns.fr/iam/docs/roles-overview",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/service-accounts-create": {
     "title": "Create service accounts",
     "filename": "iam_service-accounts-create.md",
     "size": 29489,
     "url": "https://documentation.s3ns.fr/iam/docs/service-accounts-create",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
     "size": 107973,
     "url": "https://documentation.s3ns.fr/iam/docs/service-agents",
-    "last_updated": "2026-08-20"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Cloud de Confiance versus Google Cloud",
     "filename": "iam_tpc-differences.md",
     "size": 5424,
     "url": "https://documentation.s3ns.fr/iam/docs/tpc-differences",
-    "last_updated": "2026-08-13"
+    "last_updated": "2026-08-22"
   },
   "/iam/docs/write-policy-client-libraries": {
     "title": "Quickstart: Write an allow policy by using client libraries",
@@ -1605,7 +1605,7 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 27920,
+    "size": 27909,
     "url": "https://documentation.s3ns.fr/logging/docs/reference/libraries",
     "last_updated": "2026-08-21"
   },
@@ -1675,7 +1675,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39219,
+    "size": 39227,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
     "last_updated": "2026-08-11"
   },
@@ -1787,14 +1787,14 @@
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 114741,
+    "size": 114723,
     "url": "https://documentation.s3ns.fr/pubsub/docs/access-control",
     "last_updated": "2026-08-11"
   },
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24451,
+    "size": 24448,
     "url": "https://documentation.s3ns.fr/pubsub/docs/create-topic",
     "last_updated": "2026-08-12"
   },
@@ -1822,7 +1822,7 @@
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 69978,
+    "size": 69969,
     "url": "https://documentation.s3ns.fr/pubsub/docs/publisher",
     "last_updated": "2026-08-12"
   },
@@ -2027,7 +2027,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-22"
+    "last_updated": "2026-08-23"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2046,7 +2046,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30365,
+    "size": 30362,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-08-11"
   },
@@ -2088,14 +2088,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41576,
+    "size": 41573,
     "url": "https://documentation.s3ns.fr/storage/docs/troubleshooting",
     "last_updated": "2026-08-11"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46658,
+    "size": 46655,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
     "last_updated": "2026-08-11"
   },

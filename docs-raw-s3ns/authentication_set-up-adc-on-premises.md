@@ -1,7 +1,7 @@
 # Set up ADC for on-premises or another cloud provider
 
 Source: https://documentation.s3ns.fr/docs/authentication/set-up-adc-on-premises
-Last updated: 2026-08-13
+Last updated: 2026-08-22
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
