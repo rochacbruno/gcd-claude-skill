@@ -1211,8 +1211,8 @@ import com.google.cloud.[MonitoredResource](https://documentation.s3ns.fr/java/d
 import com.google.cloud.logging.[LogEntry](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) ; 
 import com.google.cloud.logging.[Logging](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Logging.html) ; 
 import com.google.cloud.logging.[LoggingOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LoggingOptions.html) ; 
-import com.google.cloud.logging.[Payload](https://documentation.s3ns.fr/java/docs/reference/google-cloud-apigee-connect/latest/com.google.cloud.apigeeconnect.v1.Payload.html).StringPayload ; 
-import com.google.cloud.logging.[Severity](https://documentation.s3ns.fr/java/docs/reference/google-cloud-apihub/latest/com.google.cloud.apihub.v1.Severity.html) ; 
+import com.google.cloud.logging.[Payload](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Payload.html).StringPayload ; 
+import com.google.cloud.logging.[Severity](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Severity.html) ; 
 import java.util.Collections ; 
 
 /** 
@@ -1236,7 +1236,7 @@ try ( [ Logging ](https://documentation.s3ns.fr/java/docs/reference/google-cloud
 
 [ LogEntry ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) entry = 
 [ LogEntry ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) . newBuilder ( StringPayload . of ( textPayload )) 
-. setSeverity ( [ Severity ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-apihub/latest/com.google.cloud.apihub.v1.Severity.html) . ERROR ) 
+. setSeverity ( [ Severity ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Severity.html) . ERROR ) 
 . setLogName ( logName ) 
 . setResource ( [ MonitoredResource ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-core/latest/com.google.cloud.MonitoredResource.html) . newBuilder ( "global" ). build ()) 
 . build (); 

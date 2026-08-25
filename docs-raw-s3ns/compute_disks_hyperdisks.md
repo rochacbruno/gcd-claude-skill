@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-08-21
+Last updated: 2026-08-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -142,6 +142,7 @@ Guides
 
 - [ Machine series support for Hyperdisk ](#machine-type-support)
 
+- [ Design for flexibility on older machine series ](#gen2-hyperdisk_name_short)
 - [ Restrictions for machine series support ](#machine_type_restrictions)
 
 - [ Regional availability for Hyperdisk ](#hyperdisk_regions)
@@ -787,7 +788,7 @@ Hyperdisk ML |
 | 
 [A2](/compute/docs/accelerator-optimized-machines#a2-vms) | 
 
-—** 
+**—** 
 | 
 
 **—** 
@@ -913,10 +914,10 @@ Hyperdisk ML |
 | 
 [C2D](/compute/docs/compute-optimized-machines#c2d_machine_types) | 
 
-**—** 
+** 1 **
 | 
 
-**—** 
+** 1 **
 | 
 
 **—** 
@@ -1039,10 +1040,10 @@ Hyperdisk ML |
 | 
 [E2](/compute/docs/general-purpose-machines#e2_machine_types) | 
 
-**—** 
+** 1 **
 | 
 
-**—** 
+** 1 **
 | 
 
 **—** 
@@ -1219,10 +1220,10 @@ Hyperdisk ML |
 | 
 [N1](/compute/docs/general-purpose-machines#n1_machines) | 
 
-**—** 
+** 1 **
 | 
 
-**—** 
+** 1 **
 | 
 
 **—** 
@@ -1255,10 +1256,10 @@ Hyperdisk ML |
 | 
 [N2](/compute/docs/general-purpose-machines#n2_series) | 
 
-**—** 
+** 1 **
 | 
 
-**—** 
+** 1 **
 | 
 
 
@@ -1273,10 +1274,10 @@ Hyperdisk ML |
 | 
 [N2D](/compute/docs/general-purpose-machines#n2d_machines) | 
 
-**—** 
+** 1 **
 | 
 
-**—** 
+** 1 **
 | 
 
 **—** 
@@ -1542,7 +1543,32 @@ Hyperdisk ML |
 | 
 
 
+1 To design your workload for flexibility
+and use Hyperdisk Balanced or Hyperdisk Balanced High Availability with this machine series,
+[contact your account team](/tam).
 
+
+
+### Design for flexibility on older machine series
+
+Hyperdisk Balanced and Hyperdisk Balanced High Availability are also available with select previous generation
+machine families to help you design for flexibility across multiple generations.
+
+- 
+
+Hyperdisk Balanced and Hyperdisk Balanced High Availability on previous generations are intended for long-term
+disks that will survive beyond the duration of the instance.
+
+- 
+
+For use-cases in which the life of the disk coincides with the life of the
+instance, for example a boot disk, use the block storage defaults: Persistent Disk
+with 1st- and 2nd-generation machine series, and Hyperdisk with
+more recent generation instances. For example, if you need a boot disk with an
+N2 instance, then you should use a Balanced or SSD Persistent Disk volume instead of
+a Hyperdisk volume.
+
+To use Hyperdisk with these machine series, [contact your account team](/tam).
 
 ### Restrictions for machine series support
 
@@ -1583,6 +1609,26 @@ A4X Max bare metal instances.
 including C4, C4A, and N4. For more information, see
 [
 Limitations for attaching Hyperdisk Throughput volumes to 4th-generation instances](/compute/docs/disks/hd-types/hyperdisk-throughput#gen4-vm-issues).
+
+
+
+
+
+- To use Hyperdisk Balanced and Hyperdisk Balanced High Availability with the following machine series, you must
+[contact your account team](/tam):
+
+
+
+- C2D
+
+- E2
+
+- N1
+
+- N2
+
+- N2D
+
 
 
 
@@ -1733,7 +1779,7 @@ Hyperdisk pools:
 
 - 
 
-Example workloads for **Hyperdisk Exapools**:
+Example workloads for Hyperdisk Exapools**:
 
 
 - AI/ML workloads spanning 4,000 TPU VMs and using 2 PiB of Hyperdisk Balanced with provisioned

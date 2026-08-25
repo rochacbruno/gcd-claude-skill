@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ August 24, 2026 ](#August_24_2026)
 - [ August 20, 2026 ](#August_20_2026)
 - [ August 14, 2026 ](#August_14_2026)
 - [ August 12, 2026 ](#August_12_2026)
@@ -513,6 +514,33 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## August 24, 2026
+
+
+Feature 
+
+
+This entry clarifies the [May 26, 2026](#gcsfuse-tpc-20260526) announcement
+regarding Cloud Storage FUSE CSI driver support.
+
+To use the driver with GKE versions 1.36.0-gke.2684000 and later, specify the
+`skipCSIBucketAccessCheck: "true"` volume attribute. Specifying
+`custom-endpoint` isn't required because the CSI driver automatically determines
+the storage endpoint.
+
+For GKE versions between 1.36.0-gke.1266000 and 1.36.0-gke.2684000, you must
+specify both the `skipCSIBucketAccessCheck: "true"` volume attribute and the
+`custom-endpoint` mount option by using either the [gcsfuse
+CLI](/storage/docs/cloud-storage-fuse/cli-options#options) or the [configuration
+file](/storage/docs/cloud-storage-fuse/config-file#format-and-fields) format.
+
+For more information, see [About Cloud Storage FUSE CSI driver for
+GKE](/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi-driver) and [Google
+Cloud Dedicated differences for
+GKE](/kubernetes-engine/docs/tpc-differences#integrations-differences).
 
 
 
@@ -4208,6 +4236,10 @@ More
 
 Feature 
 
+
+
+This note has been clarified. For the corrected note, see the entry
+for [August 24, 2026](#August_24_2026).
 
 Cloud Storage FUSE CSI driver is now supported for Google Cloud Dedicated
 clusters and node pools running GKE version 1.36.0-gke.1266000 and higher. To
