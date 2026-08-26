@@ -361,7 +361,7 @@ This page includes release notes for all
 [channels](https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/release-channels)
 and releases.
 
-## Current versions
+## Current versions 
 
 The following table lists the current versions for each [release
 channel](/kubernetes-engine/docs/concepts/release-channels). To learn more about

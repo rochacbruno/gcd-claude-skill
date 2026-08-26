@@ -1,7 +1,7 @@
 # Set up the Google Cloud CLI for Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/setup-gcloud
-Last updated: 2026-08-18
+Last updated: 2026-08-25
 
 - 
 
@@ -170,8 +170,8 @@ Linux 64-bit
 (x86_64) 
 | 
 [google-cloud-cli-linux-x86_64.tar.gz](https://storage.s3nsapis.fr/cloud-sdk-release/google-cloud-cli-linux-x86_64.tar.gz) | 
-96.6 MB | 
-42e4b1a6a687ee96ae3919f2917d854f1d4b97f0c62581b6568728f83fd378a7 | 
+86.7 MB | 
+b4832487d3e7f87fb5520143d23bf56293189bfc21d4600b9e69059f3ed9bde8 | 
 |
 
 | 
@@ -180,8 +180,8 @@ Linux 64-bit
 (Arm) 
 | 
 [google-cloud-cli-linux-arm.tar.gz](https://storage.s3nsapis.fr/cloud-sdk-release/google-cloud-cli-linux-arm.tar.gz) | 
-62.1 MB | 
-caed087877643852ddbe9f7eedba5057431006971a9f0970cffc247f86eef09c | 
+52.2 MB | 
+c708889791d7799dfa35101631e600a0da15c0ca9ad4f4fc08e04164482aa7a6 | 
 |
 
 | 
@@ -190,8 +190,8 @@ Linux 32-bit
 (x86) 
 | 
 [google-cloud-cli-linux-x86.tar.gz](https://storage.s3nsapis.fr/cloud-sdk-release/google-cloud-cli-linux-x86.tar.gz) | 
-62.1 MB | 
-a95e21de373341cce14edb3d29913ef99fad6a3fa5179d989ff13114aaab1494 | 
+52.2 MB | 
+57d94dd2946b243fe327029887439d2f1846779b67ba7fa7b8d86a59702d4948 | 
 |
 
 
@@ -308,9 +308,9 @@ macOS 64-bit
 ](https://storage.s3nsapis.fr/cloud-sdk-release/google-cloud-cli-darwin-x86_64.tar.gz)
 
 | 
-62.2 MB | 
+52.3 MB | 
 
-1809104f7900debf41eac9c9b4fb3dca83526858b735c7f2e4bd25a60598e292 
+cf366d92cda5e0e10d9ed78ac56bf3e0e9b1aec805028be67631760135c696fb 
 | 
 |
 
@@ -328,9 +328,9 @@ macOS 64-bit
 ](https://storage.s3nsapis.fr/cloud-sdk-release/google-cloud-cli-darwin-arm.tar.gz)
 
 | 
-62.1 MB | 
+52.3 MB | 
 
-89980880b079c4d3e6379c38e8a797c63eadccd77571651e92610100d5c70dea 
+15d17b0d82cbea10645fb5523f6cecdee9bb946040c4c22b1f52b1bd4b9ab3dd 
 | 
 |
 
@@ -348,9 +348,9 @@ macOS 32-bit
 ](https://storage.s3nsapis.fr/cloud-sdk-release/google-cloud-cli-darwin-x86.tar.gz)
 
 | 
-60.6 MB | 
+50.7 MB | 
 
-923e5add1045a942f6c2684aa0f7db2ccfff9274e599dda428d9766d8e45ab14 
+a18734a723cfef579c5f3fcd7398baf5bad0c724ff3eac8e50b93b5d88e429e0 
 | 
 |
 

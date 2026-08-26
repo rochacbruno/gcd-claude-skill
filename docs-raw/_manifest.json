@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39480,
+    "size": 39479,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-08-11"
   },
@@ -228,7 +228,7 @@
     "filename": "bigquery_release-notes.md",
     "size": 1818,
     "url": "https://berlin.devsitetest.how/bigquery/docs/release-notes",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-25"
   },
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 508326,
+    "size": 486475,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-08-14"
   },
@@ -704,7 +704,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16541,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-08-18"
+    "last_updated": "2026-08-25"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -725,7 +725,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3463,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-08-18"
+    "last_updated": "2026-08-25"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -870,7 +870,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2713,
+    "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-08-11"
   },
@@ -884,7 +884,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-08-12"
   },
@@ -1523,21 +1523,21 @@
     "filename": "logging_audit.md",
     "size": 21227,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-08-24"
+    "last_updated": "2026-08-25"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
-    "size": 28090,
+    "size": 27565,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-08-24"
+    "last_updated": "2026-08-25"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
     "size": 28063,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-08-21"
+    "last_updated": "2026-08-25"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1565,21 +1565,21 @@
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-08-24"
+    "last_updated": "2026-08-25"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41470,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-08-24"
+    "last_updated": "2026-08-25"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-08-24"
+    "last_updated": "2026-08-25"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
@@ -1915,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-25"
+    "last_updated": "2026-08-26"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1934,7 +1934,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30583,
+    "size": 30586,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
     "last_updated": "2026-08-11"
   },
@@ -1976,14 +1976,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41716,
+    "size": 41719,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
     "last_updated": "2026-08-11"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46897,
+    "size": 46900,
     "url": "https://berlin.devsitetest.how/storage/docs/uploading-objects",
     "last_updated": "2026-08-11"
   },

@@ -1,7 +1,7 @@
 # Configure log buckets
 
 Source: https://documentation.s3ns.fr/logging/docs/buckets
-Last updated: 2026-08-24
+Last updated: 2026-08-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -146,11 +146,7 @@ Guides
 - [ Configure custom retention ](#custom-retention)
 - [ Lock a bucket ](#locking-logs-buckets)
 - [ Delete a bucket ](#deleting-logs-bucket)
-- [ Restore a deleted bucket ](#restore-logs-bucket)
 
-- [ Read and write log entries ](#writing)
-- [ Troubleshoot common issues ](#troubleshooting)
-- [ What's next ](#whats_next)
 - 
 
 
@@ -161,28 +157,19 @@ Guides
 
 
 
-This document describes how to create and manage Cloud Logging buckets using
-the Cloud de Confiance console, the [Google Cloud CLI](/sdk/docs), and the
-[Logging API](/logging/docs/reference/v2/rest/v2/projects.locations.buckets).
-It also provides instructions for creating and managing log buckets at the
-Cloud de Confiance project level. You can't create log buckets at the folder
-or organization level; however, Cloud Logging automatically creates
-`_Default` and `_Required` log buckets at the folder and organization level for
-you.
+You can create, view, and manage Cloud Logging buckets to store and centralize
+your log data using the Cloud de Confiance console, [Google Cloud CLI](/sdk/docs),
+or the [Logging API](/logging/docs/reference/v2/rest/v2/projects.locations.buckets). You can also configure
+custom retention periods to control storage costs and compliance.
 
-For a conceptual overview of buckets, see
-[Store log entries](/logging/docs/store-log-entries).
-
-This document doesn't describe how to create a log bucket that uses a
-customer-managed encryption key (CMEK). If you want to configure CMEK, then see
-[Configure CMEK for logs storage](/logging/docs/routing/managed-encryption-storage).
+For conceptual information, see [Store log entries](/logging/docs/store-log-entries).
 
 ## Before you begin 
 
 Configure your project, your IAM roles, and select the interface
 that you plan to use.
 
-### Configure your project and roles
+### Configure your project and roles 
 
 To get started with buckets, do the following:
 
@@ -275,7 +262,6 @@ roles](/iam/docs/roles-overview#predefined).
 
 For the full list of permissions and roles, see
 [Access control with IAM](/logging/docs/access-control).
-
 
 
 
@@ -602,6 +588,10 @@ in the Cloud de Confiance authentication documentation.
 
 ## Create a bucket
 
+These instructions assume that you are using Google-managed encryption.
+If you prefer to use customer-managed encryption keys (CMEK), then see
+[Configure CMEK for logs storage](/logging/docs/routing/managed-encryption-storage).
+
 You can create a maximum of 100 buckets per
 Cloud de Confiance project. You can't create log buckets in folders or
 organizations.
@@ -702,7 +692,7 @@ The variable LOCATION refers to the
 want your logs to be stored.
 
 For example, if you want to create a bucket for project `my-project` in
-the in the `global` region, your `parent` parameter would look like
+the `global` region, your `parent` parameter would look like
 this: `projects/my-project/locations/global`
 
 - 
@@ -818,6 +808,10 @@ in the Logging API.
 
 
 ### View a bucket's details
+
+The details of a log bucket include the name, description, location,
+and retention period. You can also view information about when the
+log bucket was created and when it was last updated.
 
 To view the details of a single log bucket, do the following:
 
@@ -1115,9 +1109,10 @@ You can delete log buckets that satisfy one of the following:
 - The log bucket is [locked](#locking-logs-buckets) and all log entries in
 the log bucket have fulfilled the bucket's retention period.
 
-You can't delete a log bucket that is locked against updates
-when that log bucket stores log entries that haven't fulfilled the bucket's
-retention period.
+You can't delete a log bucket in any of the following situations:
+
+- The log bucket is locked against updates and it stores log entries that
+haven't fulfilled the bucket's retention period.
 
 After you issue the delete command, the log bucket transitions to the
 [`DELETE_REQUESTED` state](/logging/docs/reference/v2/rest/v2/LifecycleState), and it stays in that state
@@ -1131,7 +1126,7 @@ that is in the `DELETE_REQUESTED` state.
 To delete a log bucket, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
+[ Cloud de Confiance console ](#cloud-de-confiance-console) 
 More 
 
 
@@ -1169,6 +1164,10 @@ pending deletion. The bucket, including all the logs in it, is deleted
 after 7 days.
 
 
+[ gcloud ](#gcloud) [ REST ](#rest) 
+**More 
+
+
 
 
 To delete a log bucket, run the
@@ -1176,26 +1175,14 @@ To delete a log bucket, run the
 
 
 ```
-gcloud logging buckets delete ** BUCKET_ID --location= LOCATION 
+gcloud logging buckets delete BUCKET_ID --location= LOCATION 
 ```
-
-
-You can't delete a log bucket when that bucket has a linked
-BigQuery dataset:
-
-- To list the links associated with a log bucket, run the
-[`gcloud logging links list`](/sdk/gcloud/reference/logging/links/list) command.
-
-- To delete a linked BigQuery dataset, run the
-[`gcloud logging links delete`](/sdk/gcloud/reference/logging/links/delete) command.
-
 
 
 
 To delete a bucket, use
 [`projects.locations.buckets.delete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/delete)
 in the Logging API.
-
 
 
 
@@ -1259,7 +1246,7 @@ in the Logging API.
 
 ## Read and write log entries
 
-You don't directly write logs to a log bucket. Rather, you write logs to
+You don't directly write logs to a log bucket. Rather, you write logs to a
 Cloud de Confiance resource: a Cloud de Confiance project, folder, or organization.
 The sinks in the parent resource then route the logs to destinations, including
 log buckets. A sink routes logs to a log bucket destination when the logs match
