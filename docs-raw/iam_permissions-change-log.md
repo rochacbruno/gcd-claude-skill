@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-08-22
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -169,6 +169,358 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-08-25
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+BigQuery sharing
+| 
+
+
+
+The Analytics Hub Service Agent role (`roles/analyticshub.serviceAgent`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Google Security Operations
+| 
+
+
+
+The following permissions have been added to the Chronicle Service Agent role (`roles/chronicle.serviceAgent`):
+
+
+
+`chronicle.caseAlerts.get`
+
+`chronicle.integrationInstances.get`
+
+`chronicle.integrations.get`
+
+`chronicle.legacyCases.runManualAction`
+
+`cloudaicompanion.geminiGcpEnablementSettings.get`
+
+`cloudaicompanion.geminiGcpEnablementSettings.list`
+
+`geminicloudassist.agents.invoke`
+
+`geminicloudassist.locations.get`
+
+`geminicloudassist.locations.list`
+
+`serviceusage.services.use`
+
+
+
+| 
+|
+
+| 
+
+Database Migration Service
+| 
+
+
+
+The following permissions have been added to the Database Migration Service Agent role (`roles/datamigration.serviceAgent`):
+
+
+
+`datamigration.connectionprofiles.create`
+
+`datamigration.connectionprofiles.delete`
+
+`datamigration.connectionprofiles.get`
+
+`datamigration.connectionprofiles.list`
+
+`datamigration.connectionprofiles.update`
+
+`datamigration.operations.get`
+
+
+
+| 
+|
+
+| 
+
+Memorystore
+| 
+
+
+
+The following permissions have been added to the Memorystore Admin role (`roles/memorystore.admin`):
+
+
+
+`cloudkms.keyHandles.create`
+
+`cloudkms.keyHandles.get`
+
+`cloudkms.keyHandles.list`
+
+`cloudkms.operations.get`
+
+`cloudkms.projects.showEffectiveAutokeyConfig`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`compute.instances.getVmExtensionState`
+
+`compute.instances.listVmExtensionStates`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`compute.instances.getVmExtensionState`
+
+`compute.instances.listVmExtensionStates`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`discoveryengine.ideaForgeInstances.stop`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`discoveryengine.ideaForgeInstances.stop`
+
+
+
+| 
+|
+
+| 
+
+Identity-Aware Proxy
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`iap.resources.egressViaIAP`
+
+
+
+| 
+|
+
+| 
+
+Identity-Aware Proxy
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`iap.resources.egressViaIAP`
+
+
+
+| 
+|
+
+| 
+
+Identity-Aware Proxy
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`iap.resources.egressViaIAP`
+
+
+
+| 
+|
+
+| 
+
+Roads Management Insights
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`roads.selectedRoutes.batchDelete`
+
+`roads.selectedRoutes.batchUpdate`
+
+`roads.selectedRoutes.update`
+
+
+
+| 
+|
+
+| 
+
+Roads Management Insights
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`roads.selectedRoutes.batchDelete`
+
+`roads.selectedRoutes.batchUpdate`
+
+`roads.selectedRoutes.update`
+
+
+
+| 
+|
+
+| 
+
+Roads Management Insights
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`roads.selectedRoutes.batchDelete`
+
+`roads.selectedRoutes.batchUpdate`
+
+`roads.selectedRoutes.update`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`run.locations.uploadSource`
+
+
+
+| 
+|
+
+| 
+
+Cloud Run
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`run.locations.uploadSource`
+
+
+
+| 
+|
 
 
 

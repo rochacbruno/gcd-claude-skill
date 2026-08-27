@@ -1,7 +1,7 @@
 # Security
 
 Source: https://documentation.s3ns.fr/docs/security
-Last updated: 2026-08-19
+Last updated: 2026-08-26
 
 - 
 

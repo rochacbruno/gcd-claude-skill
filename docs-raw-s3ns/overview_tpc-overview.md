@@ -1,7 +1,7 @@
 # Cloud de Confiance by S3NS overview
 
 Source: https://documentation.s3ns.fr/docs/overview/tpc-overview
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

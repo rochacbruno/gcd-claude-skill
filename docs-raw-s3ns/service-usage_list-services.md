@@ -1,7 +1,7 @@
 # List services
 
 Source: https://documentation.s3ns.fr/service-usage/docs/list-services
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -128,10 +128,10 @@ Guides
 
 - On this page 
 - [ Before you begin ](#before)
-- [ List enabled services in an organization ](#org-list-enabled)
+- [ List enabled services in an organization or folder ](#org-list-enabled)
 - [ List enabled services in a project ](#enabled)
 - [ List available services in a project ](#available)
-- [ Next steps ](#next)
+- [ What's next ](#next)
 - 
 
 
@@ -147,92 +147,116 @@ Guides
 
 
 This document describes how to list the APIs and services that are enabled or
-available in a Cloud de Confiance project.
+available in a Cloud de Confiance project, folder, or organization.
 
-- To get or monitor the enabled services for an organization,
-see [List enabled services in an organization](#org-list-enabled).
-
-- To list services in a project, we recommend that you use the
-Cloud de Confiance console or the Google Cloud CLI. This document describes how
-to use both interfaces.
-
-- To program against the Service Usage API, use one of our provided
-[client libraries](/service-usage/docs/libraries).
-
-- To experiment with the API, we recommend that you use the `curl` command.
-You don't need to set up a full application environment; however, there is
-some required setup.
+To program against the Service Usage API, you can also use one of the
+[Service Usage client libraries](/service-usage/docs/libraries).
 
 ## Before you begin 
 
-To list the enabled and available APIs and services you need:
+To list the enabled and available APIs and services, you need:
 
 - A Cloud de Confiance project. To learn how to create a Cloud de Confiance project, see
-[Creating and Managing Projects](/resource-manager/docs/creating-managing-projects).
+[Create projects](/resource-manager/docs/creating-managing-projects).
 
-- The correct [Identity and Access Management](/iam) permissions. To learn
-about the IAM requirements for Service Usage,
-see [Access Control](/service-usage/docs/access-control).
+- The correct [Identity and Access Management (IAM)](/iam) permissions. To learn
+about the IAM requirements for Service Usage, see
+[Access control with IAM](/service-usage/docs/access-control).
 
-- To install the [Google Cloud CLI](/sdk/docs/install).
+- If you plan to use the Google Cloud CLI or REST API instructions on this page,
+you also need to [install the Google Cloud CLI](/sdk/docs/install).
 
-- If you want to use the `curl` examples in this guide, make sure you follow the
-instructions to complete the initial setup in
-[Getting Started](/service-usage/docs/set-up-development-environment). These steps include
-defining `gcurl`, which is an authenticated alias for the standard `curl`
-command, and defining the environment variable `PROJECT_NUMBER`.
-
-## List enabled services in an organization
-
-To list which services are enabled across an organization use
-[Cloud Asset Inventory](/asset-inventory/docs/overview), which allows exporting
-the state of all projects under the control of an organization in a single RPC
-call. Cloud Asset Inventory can also be used to
-[monitor for state changes](/asset-inventory/docs/monitoring-asset-changes).
-To export all enabled services for a particular organization, follow the Cloud Asset Inventory docs for [Listing Assets](/asset-inventory/docs/listing-assets).
-
-To list the enabled APIs for an organization, run the following command after
-you set your organization and billing project IDs:
+## List enabled services in an organization or folder
 
 
-```
-NOW=$(TZ=GMT date +"%Y-%m-%dT%H:%M:%SZ")
-gcloud asset list \
---organization=' ORGANIZATION_ID ' \
---billing-project=' BILLING_PROJECT_ID ' \
---asset-types='serviceusage.googleapis.com/Service' \
---snapshot-time=$NOW \
---content-type='resource'
-```
+
+To list the enabled services in an organization or folder, complete the
+following steps:
 
 
-Executing the previous command lets a sufficiently privileged user list the set
-of enabled services for all projects in an organization.
+[ gcloud ](#gcloud) [REST API](#rest-api) 
+More 
 
-To experiment with Cloud Asset Inventory commands, apply these commands to a
-specific project. For example, the following command
-lists all enabled services for a particular project:
+
+
+
+To list the enabled APIs and services for an organization or folder, use the
+[`gcloud beta services list`](/sdk/gcloud/reference/beta/services/list)
+command:
 
 
 ```
-NOW=$(TZ=GMT date +"%Y-%m-%dT%H:%M:%SZ")
-gcloud asset list \
---project=' PROJECT_ID ' \
---billing-project=' BILLING_PROJECT_ID ' \
---asset-types='serviceusage.googleapis.com/Service' \
---snapshot-time=$NOW \
---content-type='resource'
+gcloud beta services list RESOURCE_TYPE = RESOURCE_ID 
 ```
+
+
+Replace the following:
+
+- 
+
+` RESOURCE_TYPE `: use `--organization` or `--folder`
+to list the enabled services for an organization or folder, respectively.
+
+- 
+
+` RESOURCE_ID `: enter the ID of the organization or
+folder that you want to list enabled services for.
+
+
+
+
+To list enabled services for an organization or folder, call the
+[`consumerPolicies.get`](/service-usage/docs/reference/rest/v2beta/consumerPolicies/get)
+method:
+
+
+```
+curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v2beta/ RESOURCE_TYPE / RESOURCE_ID /consumerPolicies/default?filter=state:ENABLED"
+```
+
+
+Replace the following:
+
+- 
+
+` RESOURCE_TYPE `: use `organizations` or `folders`
+to list the enabled services for an organization or folder, respectively.
+
+- 
+
+` RESOURCE_ID `: enter the ID of the organization or
+folder that you want to list enabled services for.
+
+If successful, the response body contains a
+[`ConsumerPolicy`](/service-usage/docs/reference/rest/v2beta/consumerPolicies#ConsumerPolicy),
+which contains a list of enabled APIs:
+
+
+```
+{
+"name": "organizations/organization-name/consumerPolicies/default",
+...
+"enableRules": [
+{
+"services": [
+"services/apphub.googleapis.com",
+"services/appoptimize.googleapis.com",
+"services/artifactregistry.googleapis.com",
+...
+]
+}
+]
+}
+```
+
 
 
 ## List enabled services in a project
 
-Listing enabled services uses quota from the
-`serviceusage.googleapis.com/list_enabled_requests` quota metric. The default
-available quota is 10 queries per second (QPS).
+To list the enabled services in a project, complete the following steps:
 
 
-[console](#console) [gcloud](#gcloud) [curl](#curl) 
+[Console](#console) [ gcloud ](#gcloud) [REST API](#rest-api) 
 More 
 
 
@@ -240,39 +264,33 @@ More
 
 To list the enabled APIs and services in a project:
 
-- Go to the Cloud de Confiance console
-[API Dashboard](https://console.cloud.s3nscloud.fr/project/_/apis/dashboard) 
-page.
+- 
 
-[go to the API Dashboard page](https://console.cloud.s3nscloud.fr/project/_/apis/dashboard) 
+In the Cloud de Confiance console, go to the **APIs & Services** page.
+
+[Go to APIs & Services](https://console.cloud.s3nscloud.fr/project/_/apis/dashboard)
 
 - 
 
-Select your Cloud de Confiance project by performing one of the following:
+Select the Cloud de Confiance project by doing one of the following:
 
 - 
 
-Click on a Cloud de Confiance project under **Select a recent project**.
+Select a recent project from the available list.
 
 - 
 
-Use the Cloud de Confiance project browser by performing the following
-steps:
+Click **Select project**, find your project, and click the name
+of the project.
 
-- Click **Select project** to open the Cloud de Confiance project browser.
-
-- Find your project and then click on the Cloud de Confiance project name.
-
-- Click **Open** to open the project.
-
-The **APIs & Services** page appears. You can find the list of APIs
-enabled in your Cloud de Confiance project in the table on this page.
+The **APIs & Services** page opens, listing the APIs enabled in your
+Cloud de Confiance project.
 
 
 
 
-To list the enabled APIs and services in your current project, run the
-following command:
+To list the enabled APIs and services in your current project, use the
+[`gcloud services list`](/sdk/gcloud/reference/services/list) command:
 
 
 ```
@@ -280,47 +298,49 @@ gcloud services list
 ```
 
 
-The command produces output similar to the following:
+The output is similar to the following:
 
 
 ```
-NAME TITLE
-pubsub.googleapis.com Google Cloud Pub/Sub API
-bigquery.googleapis.com BigQuery API
-cloudtrace.googleapis.com Stackdriver Trace API
-servicemanagement.googleapis.com Google Service Management API
-monitoring.googleapis.com Stackdriver Monitoring API
-storage-api.googleapis.com Google Cloud Storage JSON API
-logging.googleapis.com Stackdriver Logging API
-clouddebugger.googleapis.com Stackdriver Debugger API
+NAME: analyticshub.googleapis.com
+TITLE: Analytics Hub API
+
+NAME: appoptimize.googleapis.com
+TITLE: App Optimize API
+
+NAME: artifactregistry.googleapis.com
+TITLE: Artifact Registry API
+
+NAME: bigquery.googleapis.com
+TITLE: BigQuery API
 ...
 ```
 
 
 
-To list enabled services, call the
+To list enabled services for your project, call the
 [`services.list`](/service-usage/docs/reference/rest/v1/services/list)
-method with the `state:ENABLED` filter.
-
-To list the enabled APIs and services in your project, run the following
-command:
+method with the `state:ENABLED` filter:
 
 
 ```
-curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/${PROJECT_NUMBER}/services?filter=state:ENABLED" 
+curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/ PROJECT_ID /services?filter=state:ENABLED"
 ```
+
+
+Replace ` PROJECT_ID ` with your Cloud de Confiance project ID or
+number.
 
 
 
 ## List available services in a project
 
-Listing all available services uses quota from the
-`serviceusage.googleapis.com/list_available_requests` quota. The default
-available quota is 1 QPS. The set of available services rarely changes and
-can be cached for extended periods of time.
+To list the available services in a project, complete the following steps. The
+set of available services rarely changes and can be cached for extended periods
+of time.
 
 
-[console](#console) [gcloud](#gcloud) [curl](#curl) 
+[Console](#console) [ gcloud ](#gcloud) [REST API](#rest-api) 
 More 
 
 
@@ -328,39 +348,35 @@ More
 
 To list the APIs and services available to you in a project:
 
-- Go to the Cloud de Confiance console
-[API Library](https://console.cloud.s3nscloud.fr/project/_/apis/library) 
-page.
+- 
 
-[Go to the API Library page](https://console.cloud.s3nscloud.fr/project/_/apis/library) 
+In the Cloud de Confiance console, go to the **API Library** page.
+
+[Go to API Library](https://console.cloud.s3nscloud.fr/project/_/apis/library)
 
 - 
 
-Select your Cloud de Confiance project by performing one of the following:
+Select the Cloud de Confiance project by doing one of the following:
 
 - 
 
-Click on a Cloud de Confiance project under **Select a recent project**.
+Select a recent project from the available list.
 
 - 
 
-Use the Cloud de Confiance project browser by performing the following
-steps:
+Click **Select project**, find your project, and click the name
+of the project.
 
-- Click **Select project** to open the Cloud de Confiance project browser.
-
-- Find your project and then click on the Cloud de Confiance project name.
-
-- Click **Open** to open the project.
-
-The **API Library** screen appears. You can search for or scroll through
-available APIs from this screen.
+The **API Library** page opens. You can search for or browse through
+available APIs.
 
 
 
 
 To list the APIs and services available to you in
-your current project, run the following command:
+your current project, use the
+[`gcloud services list`](/sdk/gcloud/reference/services/list) command with
+the `--available` flag:
 
 
 ```
@@ -370,47 +386,56 @@ gcloud services list --available
 
 The results include any services that have already been enabled, as
 well as services that are available to be enabled for the current project.
-The command produces output similar to the following:
+The output is similar to the following:
 
 
 ```
-NAME TITLE
-places-backend.googleapis.com Google Places API Web Service
-clouderrorreporting.googleapis.com Stackdriver Error Reporting API
-analyticsreporting.googleapis.com Google Analytics Reporting API
-youtube.googleapis.com YouTube Data API v3
-adsense.googleapis.com AdSense Management API
-sqladmin.googleapis.com Google Cloud SQL API
-genomics.googleapis.com Genomics API
-adexchangebuyer.googleapis.com Ad Exchange Buyer API II
+NAME: places-backend.googleapis.com
+TITLE: Google Places API Web Service
+
+NAME: clouderrorreporting.googleapis.com
+TITLE: Stackdriver Error Reporting API
+
+NAME: analyticsreporting.googleapis.com
+TITLE: Google Analytics Reporting API
+
+NAME: youtube.googleapis.com
+TITLE: YouTube Data API v3
 ...
 ```
 
 
 
-To list available services, call the
+To list available services for your project, call the
 [`services.list`](/service-usage/docs/reference/rest/v1/services/list)
-method.
-
-To list the available APIs and services in your project, run the following command:
+method:
 
 
 ```
-curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/${PROJECT_NUMBER}/services" 
+curl -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://serviceusage.googleapis.com/v1/projects/ PROJECT_ID /services"
 ```
 
+
+Replace ` PROJECT_ID ` with your Cloud de Confiance project ID or
+number.
 
 The result includes all public services, all services for which the calling
 user has the `servicemanagement.services.bind` permission, and all services
 that have already been enabled on the project.
 
-It is possible to exclude the services that are currently active on the
-project by passing `filter=state:DISABLED` to the previous call.
+You can filter the results to exclude the services that are enabled on the
+project by including the query parameter `?filter=state:DISABLED` as part
+of the request.
 
 
 
-## Next steps
+## What's next
 
-For information about how to enable or disable services in your
-Cloud de Confiance project, see
-[Enabling and Disabling Services](/service-usage/docs/enable-disable).
+- 
+
+[Enable and disable services](/service-usage/docs/enable-disable) in your
+Cloud de Confiance project.
+
+- 
+
+[Review quotas and system limits](/service-usage/docs/quotas).

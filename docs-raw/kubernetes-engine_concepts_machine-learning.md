@@ -1,7 +1,7 @@
 # Introduction to AI/ML workloads on GKE
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning
-Last updated: 2026-08-20
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -245,7 +245,7 @@ and store the predictions in Cloud Storage.
 - Read [About accelerator consumption options for AI/ML workloads](/kubernetes-engine/docs/concepts/consumption-option), which has guidance and resources for planning
 and obtaining accelerators (GPUs and TPUs) for your platform.
 
-- Get AI-powered assistance to plan and design the infrastructure for your GKE clusters by prompting Gemini in the Google Cloud Dedicated console. For more information, see [Design and optimize your GKE cluster with Gemini](/kubernetes-engine/docs/concepts/design-with-gemini).
+- Get AI-powered assistance to plan and design the infrastructure for your GKE clusters by prompting Gemini in the Google Cloud Dedicated console. For more information, see [Design and optimize GKE clusters with Compute Advisor](/kubernetes-engine/docs/concepts/design-with-gemini).
 
 ## Common use cases
 

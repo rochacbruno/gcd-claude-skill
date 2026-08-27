@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-08-20
+Last updated: 2026-08-26
 
 - 
 
@@ -375,4 +375,4 @@ Standard clusters are unavailable in Cloud de Confiance.
 
 - [Explore the GKE documentation](/kubernetes-engine/docs/about).
 
-- [Design and optimize your GKE cluster with Gemini](/kubernetes-engine/docs/concepts/design-with-gemini).
+- [Design and optimize GKE clusters with Compute Advisor](/kubernetes-engine/docs/concepts/design-with-gemini).

@@ -1,7 +1,7 @@
 # Allow access to Cloud de Confiance console domains
 
 Source: https://documentation.s3ns.fr/docs/get-started/required-domains
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Destroy and restore key versions
 
 Source: https://berlin.devsitetest.how/kms/docs/destroy-restore
-Last updated: 2026-08-12
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -174,8 +174,9 @@ for destruction. The key version remains in the scheduled for destruction
 [state](/kms/docs/key-states) for a configurable time. During the scheduled for destruction duration,
 you can restore a key version to cancel its destruction.
 
-The default scheduled for destruction duration is 30 days. You can [set a
-custom scheduled for destruction duration for a key during key
+The default scheduled for destruction duration is
+30 days. You can [set a custom scheduled for
+destruction duration for a key during key
 creation](/kms/docs/creating-keys#soft_delete). Your organization can enforce
 a minimum scheduled for destruction duration by setting the **Minimum destroy
 scheduled duration per key** constraint in your organization policies.
@@ -421,6 +422,7 @@ Destruction**.
 
 
 
+
 To use Cloud KMS on the command line, first
 [Install or upgrade to the latest version of Google Cloud CLI](/sdk/install).
 
@@ -428,29 +430,31 @@ To use Cloud KMS on the command line, first
 
 
 
-
 ```
-gcloud kms keys versions destroy KEY_VERSION \
---key KEY_NAME \
---keyring KEY_RING \
+gcloud kms keys versions destroy KEY_VERSION \ 
+--key KEY_NAME \ 
+--keyring KEY_RING \ 
 --location LOCATION 
 ```
 
 
 Replace the following:
 
-- ` KEY_VERSION `: the version number of the key version that you want
-to destroy.
+- ` KEY_VERSION `: the number of the key version that you want to
+destroy.
 
-- ` KEY_NAME `: the name of the key for which you want to destroy a key
-version.
+- ` KEY_NAME `: the name of the key that contains the key version that
+you want to destroy.
 
-- ` KEY_RING `: the name of the key ring that contains the key.
+- ` KEY_RING `: the name of the key ring that contains the key version
+that you want to destroy.
 
-- ` LOCATION `: the Cloud KMS location of the key ring.
+- ` LOCATION `: the location of the key ring that contains the key
+version that you want to destroy.
 
 For information on all flags and possible values, run the command with the
 `--help` flag.
+
 
 
 
@@ -1144,7 +1148,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-inventory/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the key version name. 
 key_version_name = client . [ crypto_key_version_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , 
@@ -1195,7 +1199,6 @@ to demonstrate using the API. For more information about access control, see
 
 
 
-
 Destroy a key version by calling the
 [CryptoKeyVersions.destroy](/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions/destroy)
 method.
@@ -1206,6 +1209,24 @@ curl "https://cloudkms.googleapis.com/v1/projects/ PROJECT_ID /locations/ LOCATI
 --request "POST" \
 --header "authorization: Bearer TOKEN "
 ```
+
+
+Replace the following:
+
+- ` PROJECT_ID `: the identifier of the project that contains the key
+version that you want to destroy.
+
+- ` LOCATION `: the location of the key ring that contains the key
+version that you want to destroy.
+
+- ` KEY_RING `: the name of the key ring that contains the key version
+that you want to destroy.
+
+- ` KEY_NAME `: the name of the key that contains the key version that
+you want to destroy.
+
+- ` KEY_VERSION `: the number of the key version that you want to
+destroy.
 
 
 
@@ -1233,7 +1254,7 @@ scheduled for destruction. After the key's [configured
 scheduled for destruction duration](/kms/docs/creating-keys#soft_delete) has
 passed, the state of the key version becomes destroyed, meaning
 [logical deletion of the key material from active
-systems](/security/deletion#stage_3_-_logical_deletion_from_active_systems)
+systems](https://berlin.devsitetest.how/docs/security/deletion#stage_3_-_logical_deletion_from_active_systems)
 has started, and the key material can't be recovered by the customer. Key
 material can remain in Google systems for up to [45 days](#timeline) from the
 scheduled destruction time.
@@ -1290,18 +1311,25 @@ More
 
 - 
 
-Go to the **Key Management** page in the Google Cloud Dedicated console.
 
-[Go to the Key Management page](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 
-Click the name of the key ring that contains the key whose key version you
-will restore.
+Click the name of the key ring that contains the key version that you want
+to restore.
 
 - 
 
-Click the key whose key version you want to restore.
+Click the key that contains the key version that you want to restore.
 
 - 
 
@@ -1342,6 +1370,7 @@ In the confirmation prompt, click **Restore**.
 
 
 
+
 To use Cloud KMS on the command line, first
 [Install or upgrade to the latest version of Google Cloud CLI](/sdk/install).
 
@@ -1349,22 +1378,31 @@ To use Cloud KMS on the command line, first
 
 
 
-
 ```
-gcloud kms keys versions restore key-version \
---key key \
---keyring key-ring \
---location location 
+gcloud kms keys versions restore KEY_VERSION \ 
+--key KEY_NAME \ 
+--keyring KEY_RING \ 
+--location LOCATION 
 ```
 
 
-Replace key-version with the version of the key to restore. Replace
-key with the name of the key. Replace key-ring with
-the name of the key ring where the key is located. Replace location 
-with the Cloud KMS location for the key ring.
+Replace the following:
+
+- ` KEY_VERSION `: the number of the key version that you want to
+restore.
+
+- ` KEY_NAME `: the name of the key that contains the key version that
+you want to restore.
+
+- ` KEY_RING `: the name of the key ring that contains the key version
+that you want to restore.
+
+- ` LOCATION `: the location of the key ring that contains the key
+version that you want to restore.
 
 For information on all flags and possible values, run the command with the
 `--help` flag.
+
 
 
 
@@ -2057,7 +2095,7 @@ To run this code, first [set up a Ruby development environment](/ruby/docs/setup
 require "google/cloud/kms" 
 
 # Create the client. 
-client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
+client = Google :: Cloud :: [ Kms ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-inventory/latest/Google-Cloud-Kms.html) . [ key_management_service ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms/latest/Google-Cloud-Kms.html)
 
 # Build the key version name. 
 key_version_name = client . [ crypto_key_version_path ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-kms-v1/latest/Google-Cloud-Kms-V1-KeyManagementService-Paths.html) project : project_id , 
@@ -2108,17 +2146,34 @@ to demonstrate using the API. For more information about access control, see
 
 
 
-
 Restore a key version by calling the
 [CryptoKeyVersions.restore](/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys.cryptoKeyVersions/restore)
 method.
 
 
 ```
-curl "https://cloudkms.googleapis.com/v1/projects/ project-id /locations/ location-id /keyRings/ key-ring-id /cryptoKeys/ crypto-key-id /cryptoKeyVersions/ version-id :restore" \
+curl "https://cloudkms.googleapis.com/v1/projects/ PROJECT_ID /locations/ LOCATION /keyRings/ KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/ KEY_VERSION :restore" \
 --request "POST" \
---header "authorization: Bearer token "
+--header "authorization: Bearer TOKEN "
 ```
+
+
+Replace the following:
+
+- ` PROJECT_ID `: the identifier of the project that contains the key
+version that you want to restore.
+
+- ` LOCATION `: the location of the key ring that contains the key
+version that you want to restore.
+
+- ` KEY_RING `: the name of the key ring that contains the key version
+that you want to restore.
+
+- ` KEY_NAME `: the name of the key that contains the key version that
+you want to restore.
+
+- ` KEY_VERSION `: the number of the key version that you want to
+restore.
 
 
 
@@ -2158,5 +2213,5 @@ Cloud KMS commits to deleting customer key material from all Google
 infrastructure within 45 days of the scheduled destruction time. This includes
 removal of data from both active systems and data center backups. Other customer
 data is subject to the standard
-[Google Cloud deletion timeline](/security/deletion#deletion_timeline)
+[Google Cloud Dedicated deletion timeline](https://berlin.devsitetest.how/docs/security/deletion#deletion_timeline)
 of 180 days.

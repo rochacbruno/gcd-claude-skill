@@ -1,7 +1,7 @@
 # Compute
 
 Source: https://documentation.s3ns.fr/docs/compute-area
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

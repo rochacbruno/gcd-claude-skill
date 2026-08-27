@@ -1,7 +1,7 @@
 # Observability and monitoring
 
 Source: https://documentation.s3ns.fr/docs/observability
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

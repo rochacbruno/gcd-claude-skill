@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://documentation.s3ns.fr/iam/docs/service-agents
-Last updated: 2026-08-22
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -673,7 +673,18 @@ None
 
 | 
 
-None
+
+
+[Analytics Hub Service Agent](/iam/docs/roles-permissions/analyticshub#analyticshub.serviceAgent)
+
+(`roles/analyticshub.serviceAgent`)
+
+
+
+
+Granted on the project.
+
+
 | 
 |
 
@@ -971,22 +982,6 @@ Granted on the project.
 Granted on the project.
 
 
-| 
-|
-
-| 
-
-
-#### Apigee Registry Service Account
-
-[Primary service agent](/iam/docs/service-account-types#primary) for `apigeeregistry.googleapis.com`. 
-
-
-`service- PROJECT_NUMBER @gcp-sa-apigeeregistry.s3ns-system.iam.gserviceaccount.com`
-
-| 
-
-None
 | 
 |
 
@@ -3977,33 +3972,6 @@ Granted on the project.
 | 
 
 
-#### Data Labeling Service Account
-
-[Primary service agent](/iam/docs/service-account-types#primary) for `datalabeling.googleapis.com`. 
-
-
-`service- PROJECT_NUMBER @gcp-sa-datalabeling.s3ns-system.iam.gserviceaccount.com`
-
-| 
-
-
-
-[Data Labeling Service Agent](/iam/docs/roles-permissions/datalabeling#datalabeling.serviceAgent)
-
-(`roles/datalabeling.serviceAgent`)
-
-
-
-
-Granted on the project.
-
-
-| 
-|
-
-| 
-
-
 #### Data Lineage Service Agent
 
 [Primary service agent](/iam/docs/service-account-types#primary) for `datalineage.googleapis.com`. 
@@ -4283,6 +4251,22 @@ None
 Granted on the project.
 
 
+| 
+|
+
+| 
+
+
+#### Discovery Engine Customer Service Agent
+
+Service agent for `discoveryengine.googleapis.com`. 
+
+
+`service-workspace-C GOOGLE_WORKSPACE_CUSTOMER_ID @gcp-sa-discoveryengine.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
 | 
 |
 
@@ -4818,6 +4802,22 @@ Granted on the project.
 
 
 `service- PROJECT_NUMBER @gcp-sa-gsuiteaddons.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### GCS Malware Scanning Service Account
+
+Service agent for `storage.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-gcs-malware.s3ns-system.iam.gserviceaccount.com`
 
 | 
 

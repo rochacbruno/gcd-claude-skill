@@ -1,7 +1,7 @@
 # Google Cloud Dedicated billing and pricing
 
 Source: https://berlin.devsitetest.how/docs/overview/tpc-billing
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

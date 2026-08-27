@@ -1,7 +1,7 @@
 # Best practices for reusable modules
 
 Source: https://documentation.s3ns.fr/docs/terraform/best-practices/reusable-modules
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 

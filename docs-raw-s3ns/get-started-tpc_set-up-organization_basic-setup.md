@@ -1,7 +1,7 @@
 # Basic setup with the Fabric FAST toolkit
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/set-up-organization/basic-setup
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

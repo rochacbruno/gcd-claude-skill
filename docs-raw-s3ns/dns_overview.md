@@ -1,7 +1,7 @@
 # Cloud DNS overview
 
 Source: https://documentation.s3ns.fr/dns/docs/overview
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

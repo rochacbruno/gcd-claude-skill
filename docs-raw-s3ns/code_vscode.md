@@ -1,7 +1,7 @@
 # Key differences between Cloud de Confiance and Google Cloud
 
 Source: https://documentation.s3ns.fr/code/docs/vscode
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 
