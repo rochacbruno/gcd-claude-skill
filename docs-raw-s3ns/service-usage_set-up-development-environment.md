@@ -1,7 +1,7 @@
 # Quickstart: Set up Service Usage for a development environment
 
 Source: https://documentation.s3ns.fr/service-usage/docs/set-up-development-environment
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 

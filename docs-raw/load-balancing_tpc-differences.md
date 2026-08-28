@@ -1,7 +1,7 @@
 # Cloud Load Balancing in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/load-balancing/docs/tpc-differences
-Last updated: 2026-08-18
+Last updated: 2026-08-26
 
 - 
 

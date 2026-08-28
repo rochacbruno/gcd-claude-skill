@@ -1,7 +1,7 @@
 # VPC Service Controls documentation
 
 Source: https://documentation.s3ns.fr/vpc-service-controls/docs
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/vpc-service-controls/docs/tpc-differences) for more details.
 

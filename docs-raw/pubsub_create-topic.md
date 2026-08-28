@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://berlin.devsitetest.how/pubsub/docs/create-topic
-Last updated: 2026-08-12
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Cloud NAT in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/nat/docs/tpc-differences
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 - 
 

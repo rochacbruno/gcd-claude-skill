@@ -1,7 +1,7 @@
 # Security
 
 Source: https://berlin.devsitetest.how/docs/security
-Last updated: 2026-08-26
+Last updated: 2026-08-27
 
 - 
 
@@ -539,7 +539,7 @@ Manage your resources in a secure and compliant way with visibility and control 
 
 #### [
 Organization Policy Service
-](/resource-manager/docs/organization-policy/overview)
+](/organization-policy)
 
 
 Centralized and programmatic control over your organization's cloud resources.

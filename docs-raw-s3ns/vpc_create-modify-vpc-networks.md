@@ -1,7 +1,7 @@
 # Quickstart: Create and manage VPC networks
 
 Source: https://documentation.s3ns.fr/vpc/docs/create-modify-vpc-networks
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 
@@ -1949,7 +1949,7 @@ value higher than `1460`, review [Maximum transmission unit](/vpc/docs/mtu).
 ```
 module "test-vpc-module" {
 source = "terraform-google-modules/network/google"
-version = "~> 16.0"
+version = "~> 18.0"
 project_id = var.project_id # Replace this with your project ID in quotes
 network_name = "my-custom-mode-network"
 mtu = 1460

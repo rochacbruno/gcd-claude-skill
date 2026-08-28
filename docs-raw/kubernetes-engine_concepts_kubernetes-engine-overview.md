@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-08-26
+Last updated: 2026-08-27
 
 - 
 
@@ -349,9 +349,12 @@ For more information, see [About GKE cluster upgrades](/kubernetes-engine/upgrad
 
 Best practice**:
 
-If you want to try less stable Kubernetes features in the *alpha* or *beta* stages, use
-[alpha clusters](/kubernetes-engine/docs/concepts/alpha-clusters), or [use Kubernetes beta APIs with GKE clusters](/kubernetes-engine/docs/how-to/use-beta-apis).
-Review the [implications](/kubernetes-engine/docs/how-to/use-beta-apis#considerations-for-beta-apis) before enabling beta APIs in production clusters.
+To try less stable Kubernetes features in the *alpha* and *beta*
+stages or to test upcoming Kubernetes minor versions, use
+[alpha clusters](/kubernetes-engine/docs/concepts/alpha-clusters).
+You can also selectively [use Kubernetes beta APIs with GKE clusters](/kubernetes-engine/docs/how-to/use-beta-apis).
+Before you enable beta APIs in production clusters, review the
+[implications](/kubernetes-engine/docs/how-to/use-beta-apis#considerations-for-beta-apis).
 
 
 

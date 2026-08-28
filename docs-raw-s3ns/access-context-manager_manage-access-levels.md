@@ -172,7 +172,7 @@ This page describes how to manage existing access levels. You can:
 
 [Delete an access level](#delete_an_access_level)
 
-## Before you begin 
+## Before you begin
 
 - 
 

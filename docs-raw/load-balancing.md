@@ -1,7 +1,7 @@
 # Cloud Load Balancing documentation
 
 Source: https://berlin.devsitetest.how/load-balancing/docs
-Last updated: 2026-08-18
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/load-balancing/docs/tpc-differences) for more details.
 

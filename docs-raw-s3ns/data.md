@@ -1,7 +1,7 @@
 # Data analytics
 
 Source: https://documentation.s3ns.fr/docs/data
-Last updated: 2026-08-26
+Last updated: 2026-08-28
 
 - 
 

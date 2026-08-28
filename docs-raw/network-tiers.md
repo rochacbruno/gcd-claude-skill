@@ -1,7 +1,7 @@
 # Network Service Tiers documentation
 
 Source: https://berlin.devsitetest.how/network-tiers/docs
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/network-tiers/docs/tpc-differences) for more details.
 

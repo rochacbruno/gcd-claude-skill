@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ August 27, 2026 ](#August_27_2026)
 - [ August 26, 2026 ](#August_26_2026)
 - [ August 24, 2026 ](#August_24_2026)
 - [ August 20, 2026 ](#August_20_2026)
@@ -515,6 +516,24 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## August 27, 2026
+
+
+Feature 
+
+
+Network Endpoint Group (NEG) pre-provisioning is now available in Preview. With
+this feature, you can force the creation of empty zonal `GCE_VM_IP_PORT` NEGs in
+specified zones (or all zones within a region) during Service creation,
+regardless of whether the cluster has nodes in those zones. By extending the
+`cloud.google.com/neg` Service annotation with a custom zones parameter, you can
+seamlessly automate infrastructure deployments (such as attaching NEGs to
+backend services) without waiting for workloads to deploy. For more information,
+see [Pre-provisioning empty
+NEGs](/kubernetes-engine/docs/how-to/standalone-neg#pre-provisioning).
 
 
 

@@ -1,7 +1,7 @@
 # Quickstart: Publish and receive messages in Pub/Sub by using the gcloud CLI
 
 Source: https://documentation.s3ns.fr/pubsub/docs/publish-receive-messages-gcloud
-Last updated: 2026-08-12
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # List all projects and folders in your hierarchy
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/listing-all-resources
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
