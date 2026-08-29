@@ -191,14 +191,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72159,
+    "size": 72161,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-08-26"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139509,
+    "size": 139511,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-08-26"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39478,
+    "size": 39480,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-08-26"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160715,
+    "size": 160719,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-08-26"
   },
@@ -298,7 +298,7 @@
     "filename": "compute_release-notes.md",
     "size": 34304,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
@@ -380,9 +380,9 @@
   "/docs/application-development": {
     "title": "Application development",
     "filename": "application-development.md",
-    "size": 3374,
+    "size": 3522,
     "url": "https://berlin.devsitetest.how/docs/application-development",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/docs/application-hosting": {
     "title": "Application hosting",
@@ -429,21 +429,21 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13700,
+    "size": 13708,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-08-26"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13723,
+    "size": 13731,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-08-26"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 18117,
+    "size": 18081,
     "url": "https://berlin.devsitetest.how/docs/authentication/get-id-token",
     "last_updated": "2026-08-26"
   },
@@ -947,9 +947,9 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132905,
+    "size": 132603,
     "url": "https://berlin.devsitetest.how/docs/quotas/reference/libraries",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-26"
   },
   "/docs/quotas/release-notes": {
     "title": "Cloud Quotas release notes",
@@ -1285,21 +1285,21 @@
     "filename": "iam_attach-service-accounts.md",
     "size": 21196,
     "url": "https://berlin.devsitetest.how/iam/docs/attach-service-accounts",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/configuring-temporary-access": {
     "title": "Configure temporary access",
     "filename": "iam_configuring-temporary-access.md",
     "size": 28188,
     "url": "https://berlin.devsitetest.how/iam/docs/configuring-temporary-access",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/creating-custom-roles": {
     "title": "Create and manage custom roles",
     "filename": "iam_creating-custom-roles.md",
     "size": 150389,
     "url": "https://berlin.devsitetest.how/iam/docs/creating-custom-roles",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/grant-role-console": {
     "title": "Quickstart: Grant roles in the Google Cloud Dedicated console",
@@ -1313,14 +1313,14 @@
     "filename": "iam_granting-changing-revoking-access.md",
     "size": 91505,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/manage-access-other-resources": {
     "title": "Manage access to other resources",
     "filename": "iam_manage-access-other-resources.md",
     "size": 25417,
     "url": "https://berlin.devsitetest.how/iam/docs/manage-access-other-resources",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
@@ -1348,21 +1348,21 @@
     "filename": "iam_roles-overview.md",
     "size": 21853,
     "url": "https://berlin.devsitetest.how/iam/docs/roles-overview",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/service-accounts-create": {
     "title": "Create service accounts",
     "filename": "iam_service-accounts-create.md",
     "size": 29666,
     "url": "https://berlin.devsitetest.how/iam/docs/service-accounts-create",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
     "size": 107617,
     "url": "https://berlin.devsitetest.how/iam/docs/service-agents",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Google Cloud Dedicated versus Google Cloud",
@@ -1915,7 +1915,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-08-28"
+    "last_updated": "2026-08-29"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

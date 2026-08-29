@@ -1,7 +1,7 @@
 # Application development
 
 Source: https://documentation.s3ns.fr/docs/application-development
-Last updated: 2026-08-26
+Last updated: 2026-08-28
 
 - 
 
@@ -840,6 +840,24 @@ Real-time log-management system with storage, search, analysis, and monitoring s
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+What is Cloud Run?
+](/run/docs/overview/what-is-cloud-run)
+
+
+Run containers directly on top of Google's scalable infrastructure.
 
 
 

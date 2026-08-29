@@ -1,7 +1,7 @@
 # Manage access to other resources
 
 Source: https://documentation.s3ns.fr/iam/docs/manage-access-other-resources
-Last updated: 2026-08-26
+Last updated: 2026-08-28
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
