@@ -1153,7 +1153,7 @@ variable to `s3nsapis.fr`.
 
 
 ```
-using [ Google.Cloud.BigQuery.V2 ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.html) ; 
+using Google.Cloud.BigQuery.V2 ; 
 using System ; 
 
 public class BigQueryLoadTableGcsCsv 
@@ -1163,32 +1163,32 @@ string projectId = "your-project-id" ,
 string datasetId = "your_dataset_id" 
 ) 
 { 
-[ BigQueryClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryClient.html) client = [ BigQueryClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryClient.html) . [ Create ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryClient.html#Google_Cloud_BigQuery_V2_BigQueryClient_Create_System_String_Google_Apis_Auth_OAuth2_GoogleCredential_) ( projectId ); 
+BigQueryClient client = BigQueryClient . Create ( projectId ); 
 var gcsURI = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" ; 
-var dataset = client . [ GetDataset ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryClient.html#Google_Cloud_BigQuery_V2_BigQueryClient_GetDataset_Google_Apis_Bigquery_v2_Data_DatasetReference_Google_Cloud_BigQuery_V2_GetDatasetOptions_) ( datasetId ); 
-var schema = new [ TableSchemaBuilder ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.TableSchemaBuilder.html) { 
-{ "name" , [ BigQueryDbType ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryDbType.html) . [ String ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryDbType.html#Google_Cloud_BigQuery_V2_BigQueryDbType_String) }, 
-{ "post_abbr" , [ BigQueryDbType ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryDbType.html) . [ String ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryDbType.html#Google_Cloud_BigQuery_V2_BigQueryDbType_String) } 
+var dataset = client . GetDataset ( datasetId ); 
+var schema = new TableSchemaBuilder { 
+{ "name" , BigQueryDbType . String }, 
+{ "post_abbr" , BigQueryDbType . String } 
 }. Build (); 
 var destinationTableRef = dataset . GetTableReference ( 
 tableId : "us_states" ); 
 // Create job configuration 
-var jobOptions = new [ CreateLoadJobOptions ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.CreateLoadJobOptions.html) () 
+var jobOptions = new CreateLoadJobOptions () 
 { 
 // The source format defaults to CSV; line below is optional. 
-SourceFormat = [ FileFormat ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.FileFormat.html) . [ Csv ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.FileFormat.html#Google_Cloud_BigQuery_V2_FileFormat_Csv) , 
+SourceFormat = FileFormat . Csv , 
 SkipLeadingRows = 1 
 }; 
 // Create and run job 
-var loadJob = client . [ CreateLoadJob ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryClient.html#Google_Cloud_BigQuery_V2_BigQueryClient_CreateLoadJob_System_Collections_Generic_IEnumerable_System_String__Google_Apis_Bigquery_v2_Data_TableReference_Google_Apis_Bigquery_v2_Data_TableSchema_Google_Cloud_BigQuery_V2_CreateLoadJobOptions_) ( 
+var loadJob = client . CreateLoadJob ( 
 sourceUri : gcsURI , destination : destinationTableRef , 
 schema : schema , options : jobOptions ); 
-loadJob = loadJob . [ PollUntilCompleted ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryJob.html#Google_Cloud_BigQuery_V2_BigQueryJob_PollUntilCompleted_Google_Cloud_BigQuery_V2_GetJobOptions_Google_Api_Gax_PollSettings_) (). ThrowOnAnyError (); // Waits for the job to complete. 
+loadJob = loadJob . PollUntilCompleted (). ThrowOnAnyError (); // Waits for the job to complete. 
 
 // Display the number of rows uploaded 
-[ BigQueryTable ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryTable.html) table = client . [ GetTable ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryClient.html#Google_Cloud_BigQuery_V2_BigQueryClient_GetTable_Google_Apis_Bigquery_v2_Data_TableReference_Google_Cloud_BigQuery_V2_GetTableOptions_) ( destinationTableRef ); 
+BigQueryTable table = client . GetTable ( destinationTableRef ); 
 Console . WriteLine ( 
-$"Loaded {table.[Resource](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryTable.html#Google_Cloud_BigQuery_V2_BigQueryTable_Resource).NumRows} rows to {table.[FullyQualifiedId](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.BigQuery.V2/latest/Google.Cloud.BigQuery.V2.BigQueryTable.html#Google_Cloud_BigQuery_V2_BigQueryTable_FullyQualifiedId)}" ); 
+$"Loaded {table.Resource.NumRows} rows to {table.FullyQualifiedId}" ); 
 } 
 } 
 ```
@@ -1316,14 +1316,14 @@ return fmt . Errorf ( "bigquery.NewClient: %v" , err )
 } 
 defer client . Close () 
 
-gcsRef := bigquery . [ NewGCSReference ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_GCSReference_NewGCSReference) ( "gs://cloud-samples-data/bigquery/us-states/us-states.csv" ) 
+gcsRef := bigquery . NewGCSReference ( "gs://cloud-samples-data/bigquery/us-states/us-states.csv" ) 
 gcsRef . SkipLeadingRows = 1 
-gcsRef . [ Schema ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Schema) = bigquery . [ Schema ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Schema) { 
-{ Name : "name" , Type : bigquery . [ StringFieldType ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_StringFieldType_BytesFieldType_IntegerFieldType_FloatFieldType_BooleanFieldType_TimestampFieldType_RecordFieldType_DateFieldType_TimeFieldType_DateTimeFieldType_NumericFieldType_GeographyFieldType_BigNumericFieldType_IntervalFieldType_JSONFieldType_RangeFieldType) }, 
-{ Name : "post_abbr" , Type : bigquery . [ StringFieldType ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_StringFieldType_BytesFieldType_IntegerFieldType_FloatFieldType_BooleanFieldType_TimestampFieldType_RecordFieldType_DateFieldType_TimeFieldType_DateTimeFieldType_NumericFieldType_GeographyFieldType_BigNumericFieldType_IntervalFieldType_JSONFieldType_RangeFieldType) }, 
+gcsRef . Schema = bigquery . Schema { 
+{ Name : "name" , Type : bigquery . StringFieldType }, 
+{ Name : "post_abbr" , Type : bigquery . StringFieldType }, 
 } 
-loader := client . Dataset ( datasetID ). Table ( tableID ). [ LoaderFrom ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Table_LoaderFrom) ( gcsRef ) 
-loader . WriteDisposition = bigquery . [ WriteEmpty ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_WriteAppend_WriteTruncate_WriteTruncateData_WriteEmpty)
+loader := client . Dataset ( datasetID ). Table ( tableID ). LoaderFrom ( gcsRef ) 
+loader . WriteDisposition = bigquery . WriteEmpty 
 
 job , err := loader . Run ( ctx ) 
 if err != nil { 
@@ -1334,8 +1334,8 @@ if err != nil {
 return err 
 } 
 
-if status . [ Err ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_JobStatus_Err) () != nil { 
-return fmt . Errorf ( "job completed with error: %v" , status . [ Err ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_JobStatus_Err) ()) 
+if status . Err () != nil { 
+return fmt . Errorf ( "job completed with error: %v" , status . Err ()) 
 } 
 return nil 
 } 
@@ -1445,17 +1445,17 @@ variable to `s3nsapis.fr`.
 
 
 ```
-import com.google.cloud.bigquery.[BigQuery](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) ; 
-import com.google.cloud.bigquery.[BigQueryException](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) ; 
-import com.google.cloud.bigquery.[BigQueryOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) ; 
-import com.google.cloud.bigquery.[CsvOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.CsvOptions.html) ; 
-import com.google.cloud.bigquery.[Field](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) ; 
-import com.google.cloud.bigquery.[Job](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) ; 
-import com.google.cloud.bigquery.[JobInfo](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobInfo.html) ; 
-import com.google.cloud.bigquery.[LoadJobConfiguration](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) ; 
-import com.google.cloud.bigquery.[Schema](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) ; 
-import com.google.cloud.bigquery.[StandardSQLTypeName](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) ; 
-import com.google.cloud.bigquery.[TableId](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) ; 
+import com.google.cloud.bigquery.BigQuery ; 
+import com.google.cloud.bigquery.BigQueryException ; 
+import com.google.cloud.bigquery.BigQueryOptions ; 
+import com.google.cloud.bigquery.CsvOptions ; 
+import com.google.cloud.bigquery.Field ; 
+import com.google.cloud.bigquery.Job ; 
+import com.google.cloud.bigquery.JobInfo ; 
+import com.google.cloud.bigquery.LoadJobConfiguration ; 
+import com.google.cloud.bigquery.Schema ; 
+import com.google.cloud.bigquery.StandardSQLTypeName ; 
+import com.google.cloud.bigquery.TableId ; 
 
 // Sample to load CSV data from Cloud Storage into a new BigQuery table 
 public class LoadCsvFromGcs { 
@@ -1465,39 +1465,39 @@ public static void runLoadCsvFromGcs () throws Exception {
 String datasetName = "MY_DATASET_NAME" ; 
 String tableName = "MY_TABLE_NAME" ; 
 String sourceUri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" ; 
-[ Schema ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) schema = 
-[ Schema ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) . of ( 
-[ Field ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) . of ( "name" , [ StandardSQLTypeName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) . STRING ), 
-[ Field ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) . of ( "post_abbr" , [ StandardSQLTypeName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) . STRING )); 
+Schema schema = 
+Schema . of ( 
+Field . of ( "name" , StandardSQLTypeName . STRING ), 
+Field . of ( "post_abbr" , StandardSQLTypeName . STRING )); 
 loadCsvFromGcs ( datasetName , tableName , sourceUri , schema ); 
 } 
 
 public static void loadCsvFromGcs ( 
-String datasetName , String tableName , String sourceUri , [ Schema ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) schema ) { 
+String datasetName , String tableName , String sourceUri , Schema schema ) { 
 try { 
 // Initialize client that will be used to send requests. This client only needs to be created 
 // once, and can be reused for multiple requests. 
-[ BigQuery ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) bigquery = [ BigQueryOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) . getDefaultInstance (). getService (); 
+BigQuery bigquery = BigQueryOptions . getDefaultInstance (). getService (); 
 
 // Skip header row in the file. 
-[ CsvOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.CsvOptions.html) csvOptions = [ CsvOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.CsvOptions.html) . newBuilder (). setSkipLeadingRows ( 1 ). build (); 
+CsvOptions csvOptions = CsvOptions . newBuilder (). setSkipLeadingRows ( 1 ). build (); 
 
-[ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) tableId = [ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) . of ( datasetName , tableName ); 
-[ LoadJobConfiguration ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) loadConfig = 
-[ LoadJobConfiguration ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) . newBuilder ( tableId , sourceUri , csvOptions ). setSchema ( schema ). build (); 
+TableId tableId = TableId . of ( datasetName , tableName ); 
+LoadJobConfiguration loadConfig = 
+LoadJobConfiguration . newBuilder ( tableId , sourceUri , csvOptions ). setSchema ( schema ). build (); 
 
 // Load data from a GCS CSV file into the table 
-[ Job ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) job = bigquery . [ create ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html#com_google_cloud_bigquery_BigQuery_create_com_google_cloud_bigquery_DatasetInfo_com_google_cloud_bigquery_BigQuery_DatasetOption____) ( JobInfo . of ( loadConfig )); 
+Job job = bigquery . create ( JobInfo . of ( loadConfig )); 
 // Blocks until this load table job completes its execution, either failing or succeeding. 
-job = job . [ waitFor ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html#com_google_cloud_bigquery_Job_waitFor_com_google_cloud_bigquery_BigQueryRetryConfig_com_google_cloud_RetryOption____) (); 
-if ( job . [ isDone ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html#com_google_cloud_bigquery_Job_isDone__) ()) { 
+job = job . waitFor (); 
+if ( job . isDone ()) { 
 System . out . println ( "CSV from GCS successfully added during load append job" ); 
 } else { 
 System . out . println ( 
 "BigQuery was unable to load into the table due to an error:" 
 + job . getStatus (). getError ()); 
 } 
-} catch ( [ BigQueryException ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) | InterruptedException e ) { 
+} catch ( BigQueryException | InterruptedException e ) { 
 System . out . println ( "Column not added during load append \n" + e . toString ()); 
 } 
 } 
@@ -1609,12 +1609,12 @@ variable to `s3nsapis.fr`.
 
 ```
 // Import the Google Cloud client libraries 
-const { BigQuery } = require ( '[@google-cloud/bigquery](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/overview.html)' ); 
-const { Storage } = require ( '[@google-cloud/storage](https://documentation.s3ns.fr/nodejs/docs/reference/storage/latest/overview.html)' ); 
+const { BigQuery } = require ( '@google-cloud/bigquery' ); 
+const { Storage } = require ( '@google-cloud/storage' ); 
 
 // Instantiate clients 
-const bigquery = new [ BigQuery ](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/bigquery.html) (); 
-const storage = new [ Storage ](https://documentation.s3ns.fr/nodejs/docs/reference/storage-control/latest/storage-control/protos.google.storage.v2.storage-class.html) (); 
+const bigquery = new BigQuery (); 
+const storage = new Storage (); 
 
 /** 
 * This sample loads the CSV file at 
@@ -1652,7 +1652,7 @@ location : 'US' ,
 const [ job ] = await bigquery 
 . dataset ( datasetId ) 
 . table ( tableId ) 
-. [ load ](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/table.html) ( storage . bucket ( bucketName ). file ( filename ), metadata ); 
+. load ( storage . bucket ( bucketName ). file ( filename ), metadata ); 
 
 // load() waits for the job to finish 
 console . log ( `Job ${ job . id } completed.` ); 
@@ -1926,33 +1926,33 @@ objects.
 
 
 ```
-from google.cloud import [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest)
+from google.cloud import bigquery 
 
 # Construct a BigQuery client object. 
-client = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ Client ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html) () 
+client = bigquery . Client () 
 
 # TODO(developer): Set table_id to the ID of the table to create. 
 # table_id = "your-project.your_dataset.your_table_name" 
 
-job_config = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ LoadJobConfig ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.job.LoadJobConfig.html) ( 
+job_config = bigquery . LoadJobConfig ( 
 schema = [ 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "name" , "STRING" ), 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "post_abbr" , "STRING" ), 
+bigquery . SchemaField ( "name" , "STRING" ), 
+bigquery . SchemaField ( "post_abbr" , "STRING" ), 
 ], 
 skip_leading_rows = 1 , 
 # The source format defaults to CSV, so the line below is optional. 
-source_format = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SourceFormat ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.enums.SourceFormat.html) . CSV , 
+source_format = bigquery . SourceFormat . CSV , 
 ) 
 uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
 
-load_job = client . [ load_table_from_uri ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_load_table_from_uri) ( 
+load_job = client . load_table_from_uri ( 
 uri , table_id , job_config = job_config 
 ) # Make an API request. 
 
 load_job . result () # Waits for the job to complete. 
 
-destination_table = client . [ get_table ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_get_table) ( table_id ) # Make an API request. 
-print ( "Loaded {} rows." . format ( destination_table . [ num_rows ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.Table.html#google_cloud_bigquery_table_Table_num_rows) )) 
+destination_table = client . get_table ( table_id ) # Make an API request. 
+print ( "Loaded {} rows." . format ( destination_table . num_rows )) 
 ```
 
 
@@ -2062,7 +2062,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/bigquery" 
 
 def load_table_gcs_csv dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-data_transfer-v1/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: Bigquery . new 
 dataset = bigquery . dataset dataset_id 
 gcs_uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
 table_id = "us_states" 
@@ -2071,13 +2071,13 @@ load_job = dataset . load_job table_id , gcs_uri , skip_leading : 1 do | schema 
 schema . string "name" 
 schema . string "post_abbr" 
 end 
-puts "Starting job #{ load_job . [ job_id ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery-Job.html) } " 
+puts "Starting job #{ load_job . job_id } " 
 
 load_job . wait_until_done! # Waits for table load to complete. 
 puts "Job finished." 
 
 table = dataset . table table_id 
-puts "Loaded #{ table . [ rows_count ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery-Table.html) } rows to table #{ table . id } " 
+puts "Loaded #{ table . rows_count } rows to table #{ table . id } " 
 end 
 ```
 
@@ -2219,19 +2219,19 @@ return fmt . Errorf ( "bigquery.NewClient: %v" , err )
 } 
 defer client . Close () 
 
-gcsRef := bigquery . [ NewGCSReference ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_GCSReference_NewGCSReference) ( "gs://cloud-samples-data/bigquery/us-states/us-states-by-date.csv" ) 
+gcsRef := bigquery . NewGCSReference ( "gs://cloud-samples-data/bigquery/us-states/us-states-by-date.csv" ) 
 gcsRef . SkipLeadingRows = 1 
-gcsRef . [ Schema ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Schema) = bigquery . [ Schema ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Schema) { 
-{ Name : "name" , Type : bigquery . [ StringFieldType ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_StringFieldType_BytesFieldType_IntegerFieldType_FloatFieldType_BooleanFieldType_TimestampFieldType_RecordFieldType_DateFieldType_TimeFieldType_DateTimeFieldType_NumericFieldType_GeographyFieldType_BigNumericFieldType_IntervalFieldType_JSONFieldType_RangeFieldType) }, 
-{ Name : "post_abbr" , Type : bigquery . [ StringFieldType ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_StringFieldType_BytesFieldType_IntegerFieldType_FloatFieldType_BooleanFieldType_TimestampFieldType_RecordFieldType_DateFieldType_TimeFieldType_DateTimeFieldType_NumericFieldType_GeographyFieldType_BigNumericFieldType_IntervalFieldType_JSONFieldType_RangeFieldType) }, 
-{ Name : "date" , Type : bigquery . [ DateFieldType ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_StringFieldType_BytesFieldType_IntegerFieldType_FloatFieldType_BooleanFieldType_TimestampFieldType_RecordFieldType_DateFieldType_TimeFieldType_DateTimeFieldType_NumericFieldType_GeographyFieldType_BigNumericFieldType_IntervalFieldType_JSONFieldType_RangeFieldType) }, 
+gcsRef . Schema = bigquery . Schema { 
+{ Name : "name" , Type : bigquery . StringFieldType }, 
+{ Name : "post_abbr" , Type : bigquery . StringFieldType }, 
+{ Name : "date" , Type : bigquery . DateFieldType }, 
 } 
-loader := client . Dataset ( destDatasetID ). Table ( destTableID ). [ LoaderFrom ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Table_LoaderFrom) ( gcsRef ) 
-loader . [ TimePartitioning ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_TimePartitioning) = & bigquery . [ TimePartitioning ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_TimePartitioning) { 
+loader := client . Dataset ( destDatasetID ). Table ( destTableID ). LoaderFrom ( gcsRef ) 
+loader . TimePartitioning = & bigquery . TimePartitioning { 
 Field : "date" , 
 Expiration : 90 * 24 * time . Hour , 
 } 
-loader . WriteDisposition = bigquery . [ WriteEmpty ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_WriteAppend_WriteTruncate_WriteTruncateData_WriteEmpty)
+loader . WriteDisposition = bigquery . WriteEmpty 
 
 job , err := loader . Run ( ctx ) 
 if err != nil { 
@@ -2242,8 +2242,8 @@ if err != nil {
 return err 
 } 
 
-if status . [ Err ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_JobStatus_Err) () != nil { 
-return fmt . Errorf ( "job completed with error: %v" , status . [ Err ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_JobStatus_Err) ()) 
+if status . Err () != nil { 
+return fmt . Errorf ( "job completed with error: %v" , status . Err ()) 
 } 
 return nil 
 } 
@@ -2354,21 +2354,21 @@ variable to `s3nsapis.fr`.
 
 
 ```
-import com.google.cloud.bigquery.[BigQuery](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) ; 
-import com.google.cloud.bigquery.[BigQueryException](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) ; 
-import com.google.cloud.bigquery.[BigQueryOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) ; 
-import com.google.cloud.bigquery.[Field](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) ; 
-import com.google.cloud.bigquery.[FormatOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.FormatOptions.html) ; 
-import com.google.cloud.bigquery.[Job](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) ; 
-import com.google.cloud.bigquery.[JobId](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobId.html) ; 
-import com.google.cloud.bigquery.[JobInfo](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobInfo.html) ; 
-import com.google.cloud.bigquery.[LoadJobConfiguration](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) ; 
-import com.google.cloud.bigquery.[Schema](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) ; 
-import com.google.cloud.bigquery.[StandardSQLTypeName](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) ; 
-import com.google.cloud.bigquery.[TableId](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) ; 
-import com.google.cloud.bigquery.[TimePartitioning](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TimePartitioning.html) ; 
-import java.[time](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.QueryParameterValue.html#com_google_cloud_bigquery_QueryParameterValue_time_java_lang_String_).Duration ; 
-import java.[time](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.QueryParameterValue.html#com_google_cloud_bigquery_QueryParameterValue_time_java_lang_String_).temporal.ChronoUnit ; 
+import com.google.cloud.bigquery.BigQuery ; 
+import com.google.cloud.bigquery.BigQueryException ; 
+import com.google.cloud.bigquery.BigQueryOptions ; 
+import com.google.cloud.bigquery.Field ; 
+import com.google.cloud.bigquery.FormatOptions ; 
+import com.google.cloud.bigquery.Job ; 
+import com.google.cloud.bigquery.JobId ; 
+import com.google.cloud.bigquery.JobInfo ; 
+import com.google.cloud.bigquery.LoadJobConfiguration ; 
+import com.google.cloud.bigquery.Schema ; 
+import com.google.cloud.bigquery.StandardSQLTypeName ; 
+import com.google.cloud.bigquery.TableId ; 
+import com.google.cloud.bigquery.TimePartitioning ; 
+import java.time.Duration ; 
+import java.time.temporal.ChronoUnit ; 
 import java.util.UUID ; 
 
 public class LoadPartitionedTable { 
@@ -2386,38 +2386,38 @@ throws Exception {
 try { 
 // Initialize client that will be used to send requests. This client only needs to be created 
 // once, and can be reused for multiple requests. 
-[ BigQuery ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) bigquery = [ BigQueryOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) . getDefaultInstance (). getService (); 
+BigQuery bigquery = BigQueryOptions . getDefaultInstance (). getService (); 
 
-[ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) tableId = [ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) . of ( datasetName , tableName ); 
+TableId tableId = TableId . of ( datasetName , tableName ); 
 
-[ Schema ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) schema = 
-[ Schema ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) . of ( 
-[ Field ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) . of ( "name" , [ StandardSQLTypeName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) . STRING ), 
-[ Field ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) . of ( "post_abbr" , [ StandardSQLTypeName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) . STRING ), 
-[ Field ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Field.html) . of ( "date" , [ StandardSQLTypeName ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardSQLTypeName.html) . DATE )); 
+Schema schema = 
+Schema . of ( 
+Field . of ( "name" , StandardSQLTypeName . STRING ), 
+Field . of ( "post_abbr" , StandardSQLTypeName . STRING ), 
+Field . of ( "date" , StandardSQLTypeName . DATE )); 
 
 // Configure time partitioning. For full list of options, see: 
 // https://cloud.google.com/bigquery/docs/reference/rest/v2/tables#TimePartitioning 
-[ TimePartitioning ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TimePartitioning.html) partitioning = 
-[ TimePartitioning ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TimePartitioning.html) . newBuilder ( [ TimePartitioning ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TimePartitioning.html) . Type . DAY ) 
+TimePartitioning partitioning = 
+TimePartitioning . newBuilder ( TimePartitioning . Type . DAY ) 
 . setField ( "date" ) 
-. [ setExpirationMs ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TimePartitioning.Builder.html#com_google_cloud_bigquery_TimePartitioning_Builder_setExpirationMs_java_lang_Long_) ( Duration . of ( 90 , ChronoUnit . DAYS ). toMillis ()) 
+. setExpirationMs ( Duration . of ( 90 , ChronoUnit . DAYS ). toMillis ()) 
 . build (); 
 
-[ LoadJobConfiguration ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) loadJobConfig = 
-[ LoadJobConfiguration ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) . builder ( tableId , sourceUri ) 
-. setFormatOptions ( [ FormatOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.FormatOptions.html) . [ csv ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.FormatOptions.html#com_google_cloud_bigquery_FormatOptions_csv__) ()) 
+LoadJobConfiguration loadJobConfig = 
+LoadJobConfiguration . builder ( tableId , sourceUri ) 
+. setFormatOptions ( FormatOptions . csv ()) 
 . setSchema ( schema ) 
 . setTimePartitioning ( partitioning ) 
 . build (); 
 
 // Create a job ID so that we can safely retry. 
-[ JobId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobId.html) jobId = [ JobId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobId.html) . of ( UUID . randomUUID (). toString ()); 
-[ Job ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) loadJob = bigquery . [ create ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html#com_google_cloud_bigquery_BigQuery_create_com_google_cloud_bigquery_DatasetInfo_com_google_cloud_bigquery_BigQuery_DatasetOption____) ( JobInfo . newBuilder ( loadJobConfig ). setJobId ( jobId ). build ()); 
+JobId jobId = JobId . of ( UUID . randomUUID (). toString ()); 
+Job loadJob = bigquery . create ( JobInfo . newBuilder ( loadJobConfig ). setJobId ( jobId ). build ()); 
 
 // Load data from a GCS parquet file into the table 
 // Blocks until this load table job completes its execution, either failing or succeeding. 
-[ Job ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) completedJob = loadJob . [ waitFor ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html#com_google_cloud_bigquery_Job_waitFor_com_google_cloud_bigquery_BigQueryRetryConfig_com_google_cloud_RetryOption____) (); 
+Job completedJob = loadJob . waitFor (); 
 
 // Check for errors 
 if ( completedJob == null ) { 
@@ -2430,7 +2430,7 @@ throw new Exception (
 + loadJob . getStatus (). getError ()); 
 } 
 System . out . println ( "Data successfully loaded into time partitioned table during load job" ); 
-} catch ( [ BigQueryException ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) | InterruptedException e ) { 
+} catch ( BigQueryException | InterruptedException e ) { 
 System . out . println ( 
 "Data not loaded into time partitioned table during load job \n" + e . toString ()); 
 } 
@@ -2544,12 +2544,12 @@ variable to `s3nsapis.fr`.
 
 ```
 // Import the Google Cloud client libraries 
-const { BigQuery } = require ( '[@google-cloud/bigquery](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/overview.html)' ); 
-const { Storage } = require ( '[@google-cloud/storage](https://documentation.s3ns.fr/nodejs/docs/reference/storage/latest/overview.html)' ); 
+const { BigQuery } = require ( '@google-cloud/bigquery' ); 
+const { Storage } = require ( '@google-cloud/storage' ); 
 
 // Instantiate clients 
-const bigquery = new [ BigQuery ](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/bigquery.html) (); 
-const storage = new [ Storage ](https://documentation.s3ns.fr/nodejs/docs/reference/storage-control/latest/storage-control/protos.google.storage.v2.storage-class.html) (); 
+const bigquery = new BigQuery (); 
+const storage = new Storage (); 
 
 /** 
 * This sample loads the CSV file at 
@@ -2574,7 +2574,7 @@ async function loadTablePartitioned () {
 const partitionConfig = { 
 type : 'DAY' , 
 expirationMs : '7776000000' , // 90 days 
-field : '[date](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/bigquery.html)' , 
+field : 'date' , 
 }; 
 
 const metadata = { 
@@ -2584,7 +2584,7 @@ schema : {
 fields : [ 
 { name : 'name' , type : 'STRING' }, 
 { name : 'post_abbr' , type : 'STRING' }, 
-{ name : '[date](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/bigquery.html)' , type : 'DATE' }, 
+{ name : 'date' , type : 'DATE' }, 
 ], 
 }, 
 location : 'US' , 
@@ -2595,7 +2595,7 @@ timePartitioning : partitionConfig ,
 const [ job ] = await bigquery 
 . dataset ( datasetId ) 
 . table ( tableId ) 
-. [ load ](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/table.html) ( storage . bucket ( bucketName ). file ( filename ), metadata ); 
+. load ( storage . bucket ( bucketName ). file ( filename ), metadata ); 
 
 // load() waits for the job to finish 
 console . log ( `Job ${ job . id } completed.` ); 
@@ -2707,37 +2707,37 @@ variable to `s3nsapis.fr`.
 
 
 ```
-from google.cloud import [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest)
+from google.cloud import bigquery 
 
 # Construct a BigQuery client object. 
-client = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ Client ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html) () 
+client = bigquery . Client () 
 
 # TODO(developer): Set table_id to the ID of the table to create. 
 # table_id = "your-project.your_dataset.your_table_name" 
 
-job_config = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ LoadJobConfig ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.job.LoadJobConfig.html) ( 
+job_config = bigquery . LoadJobConfig ( 
 schema = [ 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "name" , "STRING" ), 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "post_abbr" , "STRING" ), 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "date" , "DATE" ), 
+bigquery . SchemaField ( "name" , "STRING" ), 
+bigquery . SchemaField ( "post_abbr" , "STRING" ), 
+bigquery . SchemaField ( "date" , "DATE" ), 
 ], 
 skip_leading_rows = 1 , 
-time_partitioning = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ TimePartitioning ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.TimePartitioning.html) ( 
-type_ = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ TimePartitioningType ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.TimePartitioningType.html) . [ DAY ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.TimePartitioningType.html#google_cloud_bigquery_table_TimePartitioningType_DAY) , 
+time_partitioning = bigquery . TimePartitioning ( 
+type_ = bigquery . TimePartitioningType . DAY , 
 field = "date" , # Name of the column to use for partitioning. 
 expiration_ms = 7776000000 , # 90 days. 
 ), 
 ) 
 uri = "gs://cloud-samples-data/bigquery/us-states/us-states-by-date.csv" 
 
-load_job = client . [ load_table_from_uri ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_load_table_from_uri) ( 
+load_job = client . load_table_from_uri ( 
 uri , table_id , job_config = job_config 
 ) # Make an API request. 
 
 load_job . result () # Wait for the job to complete. 
 
-table = client . [ get_table ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_get_table) ( table_id ) 
-print ( "Loaded {} rows to table {} " . format ( table . [ num_rows ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.Table.html#google_cloud_bigquery_table_Table_num_rows) , table_id )) 
+table = client . get_table ( table_id ) 
+print ( "Loaded {} rows to table {} " . format ( table . num_rows , table_id )) 
 ```
 
 
@@ -3365,12 +3365,12 @@ return fmt . Errorf ( "bigquery.NewClient: %v" , err )
 } 
 defer client . Close () 
 
-gcsRef := bigquery . [ NewGCSReference ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_GCSReference_NewGCSReference) ( "gs://cloud-samples-data/bigquery/us-states/us-states.csv" ) 
-gcsRef . SourceFormat = bigquery . [ CSV ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_CSV_Avro_JSON_DatastoreBackup_GoogleSheets_Bigtable_Parquet_ORC_TFSavedModel_XGBoostBooster_Iceberg)
+gcsRef := bigquery . NewGCSReference ( "gs://cloud-samples-data/bigquery/us-states/us-states.csv" ) 
+gcsRef . SourceFormat = bigquery . CSV 
 gcsRef . AutoDetect = true 
 gcsRef . SkipLeadingRows = 1 
-loader := client . Dataset ( datasetID ). Table ( tableID ). [ LoaderFrom ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_Table_LoaderFrom) ( gcsRef ) 
-loader . WriteDisposition = bigquery . [ WriteTruncate ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_WriteAppend_WriteTruncate_WriteTruncateData_WriteEmpty)
+loader := client . Dataset ( datasetID ). Table ( tableID ). LoaderFrom ( gcsRef ) 
+loader . WriteDisposition = bigquery . WriteTruncate 
 
 job , err := loader . Run ( ctx ) 
 if err != nil { 
@@ -3381,8 +3381,8 @@ if err != nil {
 return err 
 } 
 
-if status . [ Err ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_JobStatus_Err) () != nil { 
-return fmt . Errorf ( "job completed with error: %v" , status . [ Err ](https://documentation.s3ns.fr/go/docs/reference/cloud.google.com/go/bigquery/latest/index.html#cloud_google_com_go_bigquery_JobStatus_Err) ()) 
+if status . Err () != nil { 
+return fmt . Errorf ( "job completed with error: %v" , status . Err ()) 
 } 
 return nil 
 } 
@@ -3492,15 +3492,15 @@ variable to `s3nsapis.fr`.
 
 
 ```
-import com.google.cloud.bigquery.[BigQuery](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) ; 
-import com.google.cloud.bigquery.[BigQueryException](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) ; 
-import com.google.cloud.bigquery.[BigQueryOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) ; 
-import com.google.cloud.bigquery.[FormatOptions](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.FormatOptions.html) ; 
-import com.google.cloud.bigquery.[Job](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) ; 
-import com.google.cloud.bigquery.[JobInfo](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobInfo.html) ; 
-import com.google.cloud.bigquery.[JobInfo](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobInfo.html).[WriteDisposition](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobInfo.WriteDisposition.html) ; 
-import com.google.cloud.bigquery.[LoadJobConfiguration](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) ; 
-import com.google.cloud.bigquery.[TableId](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) ; 
+import com.google.cloud.bigquery.BigQuery ; 
+import com.google.cloud.bigquery.BigQueryException ; 
+import com.google.cloud.bigquery.BigQueryOptions ; 
+import com.google.cloud.bigquery.FormatOptions ; 
+import com.google.cloud.bigquery.Job ; 
+import com.google.cloud.bigquery.JobInfo ; 
+import com.google.cloud.bigquery.JobInfo.WriteDisposition ; 
+import com.google.cloud.bigquery.LoadJobConfiguration ; 
+import com.google.cloud.bigquery.TableId ; 
 
 // Sample to overwrite the BigQuery table data by loading a CSV file from GCS 
 public class LoadCsvFromGcsTruncate { 
@@ -3518,25 +3518,25 @@ throws Exception {
 try { 
 // Initialize client that will be used to send requests. This client only needs to be created 
 // once, and can be reused for multiple requests. 
-[ BigQuery ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) bigquery = [ BigQueryOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) . getDefaultInstance (). getService (); 
+BigQuery bigquery = BigQueryOptions . getDefaultInstance (). getService (); 
 
-[ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) tableId = [ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) . of ( datasetName , tableName ); 
+TableId tableId = TableId . of ( datasetName , tableName ); 
 
-[ LoadJobConfiguration ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) configuration = 
-[ LoadJobConfiguration ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.LoadJobConfiguration.html) . builder ( tableId , sourceUri ) 
-. setFormatOptions ( [ FormatOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.FormatOptions.html) . [ csv ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.FormatOptions.html#com_google_cloud_bigquery_FormatOptions_csv__) ()) 
+LoadJobConfiguration configuration = 
+LoadJobConfiguration . builder ( tableId , sourceUri ) 
+. setFormatOptions ( FormatOptions . csv ()) 
 // Set the write disposition to overwrite existing table data 
-. setWriteDisposition ( [ WriteDisposition ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobInfo.WriteDisposition.html) . WRITE_TRUNCATE ) 
+. setWriteDisposition ( WriteDisposition . WRITE_TRUNCATE ) 
 . build (); 
 
 // For more information on Job see: 
 // https://googleapis.dev/java/google-cloud-clients/latest/index.html?com/google/cloud/bigquery/package-summary.html 
 // Load the table 
-[ Job ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) loadJob = bigquery . [ create ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html#com_google_cloud_bigquery_BigQuery_create_com_google_cloud_bigquery_DatasetInfo_com_google_cloud_bigquery_BigQuery_DatasetOption____) ( JobInfo . of ( configuration )); 
+Job loadJob = bigquery . create ( JobInfo . of ( configuration )); 
 
 // Load data from a GCS parquet file into the table 
 // Blocks until this load table job completes its execution, either failing or succeeding. 
-[ Job ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html) completedJob = loadJob . [ waitFor ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Job.html#com_google_cloud_bigquery_Job_waitFor_com_google_cloud_bigquery_BigQueryRetryConfig_com_google_cloud_RetryOption____) (); 
+Job completedJob = loadJob . waitFor (); 
 
 // Check for errors 
 if ( completedJob == null ) { 
@@ -3549,7 +3549,7 @@ throw new Exception (
 + loadJob . getStatus (). getError ()); 
 } 
 System . out . println ( "Table is successfully overwritten by CSV file loaded from GCS" ); 
-} catch ( [ BigQueryException ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) | InterruptedException e ) { 
+} catch ( BigQueryException | InterruptedException e ) { 
 System . out . println ( "Column not added during load append \n" + e . toString ()); 
 } 
 } 
@@ -3655,12 +3655,12 @@ value in the `metadata` parameter to `'WRITE_TRUNCATE'`.
 
 ```
 // Import the Google Cloud client libraries 
-const { BigQuery } = require ( '[@google-cloud/bigquery](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/overview.html)' ); 
-const { Storage } = require ( '[@google-cloud/storage](https://documentation.s3ns.fr/nodejs/docs/reference/storage/latest/overview.html)' ); 
+const { BigQuery } = require ( '@google-cloud/bigquery' ); 
+const { Storage } = require ( '@google-cloud/storage' ); 
 
 // Instantiate clients 
-const bigquery = new [ BigQuery ](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/bigquery.html) (); 
-const storage = new [ Storage ](https://documentation.s3ns.fr/nodejs/docs/reference/storage-control/latest/storage-control/protos.google.storage.v2.storage-class.html) (); 
+const bigquery = new BigQuery (); 
+const storage = new Storage (); 
 
 /** 
 * This sample loads the CSV file at 
@@ -3703,7 +3703,7 @@ location : 'US' ,
 const [ job ] = await bigquery 
 . dataset ( datasetId ) 
 . table ( tableId ) 
-. [ load ](https://documentation.s3ns.fr/nodejs/docs/reference/bigquery/latest/bigquery/table.html) ( storage . bucket ( bucketName ). file ( filename ), metadata ); 
+. load ( storage . bucket ( bucketName ). file ( filename ), metadata ); 
 // load() waits for the job to finish 
 console . log ( `Job ${ job . id } completed.` ); 
 
@@ -3954,41 +3954,41 @@ constant `WRITE_TRUNCATE`.
 ```
 import six 
 
-from google.cloud import [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest)
+from google.cloud import bigquery 
 
 # Construct a BigQuery client object. 
-client = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ Client ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html) () 
+client = bigquery . Client () 
 
 # TODO(developer): Set table_id to the ID of the table to create. 
 # table_id = "your-project.your_dataset.your_table_name 
 
-job_config = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ LoadJobConfig ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.job.LoadJobConfig.html) ( 
+job_config = bigquery . LoadJobConfig ( 
 schema = [ 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "name" , "STRING" ), 
-[ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SchemaField ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.schema.SchemaField.html) ( "post_abbr" , "STRING" ), 
+bigquery . SchemaField ( "name" , "STRING" ), 
+bigquery . SchemaField ( "post_abbr" , "STRING" ), 
 ], 
 ) 
 
 body = six . BytesIO ( b "Washington,WA" ) 
-client . [ load_table_from_file ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_load_table_from_file) ( body , table_id , job_config = job_config ) . result () 
-previous_rows = client . [ get_table ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_get_table) ( table_id ) . [ num_rows ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.Table.html#google_cloud_bigquery_table_Table_num_rows)
+client . load_table_from_file ( body , table_id , job_config = job_config ) . result () 
+previous_rows = client . get_table ( table_id ) . num_rows 
 assert previous_rows > 0 
 
-job_config = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ LoadJobConfig ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.job.LoadJobConfig.html) ( 
-write_disposition = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ WriteDisposition ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.enums.WriteDisposition.html) . [ WRITE_TRUNCATE ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.enums.WriteDisposition.html#google_cloud_bigquery_enums_WriteDisposition_WRITE_TRUNCATE) , 
-source_format = [ bigquery ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest) . [ SourceFormat ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.enums.SourceFormat.html) . CSV , 
+job_config = bigquery . LoadJobConfig ( 
+write_disposition = bigquery . WriteDisposition . WRITE_TRUNCATE , 
+source_format = bigquery . SourceFormat . CSV , 
 skip_leading_rows = 1 , 
 ) 
 
 uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
-load_job = client . [ load_table_from_uri ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_load_table_from_uri) ( 
+load_job = client . load_table_from_uri ( 
 uri , table_id , job_config = job_config 
 ) # Make an API request. 
 
 load_job . result () # Waits for the job to complete. 
 
-destination_table = client . [ get_table ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.client.Client.html#google_cloud_bigquery_client_Client_get_table) ( table_id ) 
-print ( "Loaded {} rows." . format ( destination_table . [ num_rows ](https://documentation.s3ns.fr/python/docs/reference/bigquery/latest/google.cloud.bigquery.table.Table.html#google_cloud_bigquery_table_Table_num_rows) )) 
+destination_table = client . get_table ( table_id ) 
+print ( "Loaded {} rows." . format ( destination_table . num_rows )) 
 ```
 
 

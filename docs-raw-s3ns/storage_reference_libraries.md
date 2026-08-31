@@ -1,7 +1,7 @@
 # Cloud Storage client libraries
 
 Source: https://documentation.s3ns.fr/storage/docs/reference/libraries
-Last updated: 2026-08-11
+Last updated: 2026-08-26
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -453,7 +453,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.71.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.72.0" 
 ```
 
 
@@ -691,7 +691,7 @@ For more information, see [Setting Up a Ruby Development Environment](/ruby/docs
 
 
 
-## Set up authentication 
+## Set up authentication
 
 To authenticate calls to Cloud de Confiance by S3NS APIs, client libraries support
 [Application Default Credentials (ADC)](/docs/authentication/application-default-credentials);

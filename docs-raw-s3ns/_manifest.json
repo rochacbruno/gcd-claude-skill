@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50882,
+    "size": 50881,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-08-26"
   },
@@ -205,14 +205,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71887,
+    "size": 71892,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
     "last_updated": "2026-08-26"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139037,
+    "size": 108509,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-08-26"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39334,
+    "size": 39338,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-08-26"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160038,
+    "size": 160048,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-08-26"
   },
@@ -345,7 +345,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 515129,
+    "size": 515131,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
     "last_updated": "2026-08-14"
   },
@@ -940,7 +940,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-08-26"
   },
@@ -954,7 +954,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18880,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1017,7 +1017,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132206,
+    "size": 132508,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-08-26"
   },
@@ -1780,7 +1780,7 @@
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24448,
+    "size": 24451,
     "url": "https://documentation.s3ns.fr/pubsub/docs/create-topic",
     "last_updated": "2026-08-26"
   },
@@ -2013,14 +2013,14 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-30"
+    "last_updated": "2026-08-31"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
     "filename": "sql_tpc-differences.md",
     "size": 6670,
     "url": "https://documentation.s3ns.fr/sql/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-28"
   },
   "/storage/docs": {
     "title": "Cloud Storage documentation",
@@ -2032,7 +2032,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30354,
+    "size": 30362,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-08-26"
   },
@@ -2053,9 +2053,9 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22351,
+    "size": 22350,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
-    "last_updated": "2026-08-11"
+    "last_updated": "2026-08-26"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
@@ -2074,14 +2074,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41565,
+    "size": 41576,
     "url": "https://documentation.s3ns.fr/storage/docs/troubleshooting",
     "last_updated": "2026-08-26"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46647,
+    "size": 46655,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
     "last_updated": "2026-08-26"
   },
