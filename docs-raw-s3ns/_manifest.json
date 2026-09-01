@@ -205,14 +205,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71892,
+    "size": 71884,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
     "last_updated": "2026-08-26"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 108509,
+    "size": 139034,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-08-26"
   },
@@ -233,9 +233,9 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 39338,
+    "size": 42479,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/bigquery/docs/release-notes": {
     "title": "BigQuery release notes",
@@ -247,9 +247,9 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 160048,
+    "size": 161117,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/bigquery/docs/tpc-differences": {
     "title": "BigQuery in Cloud de Confiance versus Google Cloud",
@@ -345,9 +345,9 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 515131,
+    "size": 515826,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
-    "last_updated": "2026-08-14"
+    "last_updated": "2026-08-31"
   },
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
@@ -506,21 +506,21 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13657,
+    "size": 13660,
     "url": "https://documentation.s3ns.fr/docs/authentication/client-libraries",
     "last_updated": "2026-08-26"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13680,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-08-26"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 17979,
+    "size": 18015,
     "url": "https://documentation.s3ns.fr/docs/authentication/get-id-token",
     "last_updated": "2026-08-26"
   },
@@ -954,7 +954,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18877,
+    "size": 18880,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1556,7 +1556,7 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1378845,
+    "size": 1379928,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
     "last_updated": "2026-08-26"
   },
@@ -1586,21 +1586,21 @@
     "filename": "logging.md",
     "size": 3399,
     "url": "https://documentation.s3ns.fr/logging/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21037,
     "url": "https://documentation.s3ns.fr/logging/docs/audit",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27303,
     "url": "https://documentation.s3ns.fr/logging/docs/buckets",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
@@ -1621,42 +1621,42 @@
     "filename": "logging_release-notes.md",
     "size": 3326,
     "url": "https://documentation.s3ns.fr/logging/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Cloud de Confiance versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5717,
     "url": "https://documentation.s3ns.fr/logging/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23728,
     "url": "https://documentation.s3ns.fr/logging/docs/view/building-queries",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41358,
     "url": "https://documentation.s3ns.fr/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12223,
     "url": "https://documentation.s3ns.fr/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2792,
     "url": "https://documentation.s3ns.fr/monitoring/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
@@ -1670,14 +1670,14 @@
     "filename": "monitoring_release-notes.md",
     "size": 3572,
     "url": "https://documentation.s3ns.fr/monitoring/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Cloud de Confiance versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4322,
     "url": "https://documentation.s3ns.fr/monitoring/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-08-31"
   },
   "/nat/docs": {
     "title": "Cloud NAT documentation",
@@ -2013,7 +2013,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-01"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

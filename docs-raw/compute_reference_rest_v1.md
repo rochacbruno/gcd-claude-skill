@@ -1,7 +1,7 @@
 # Compute Engine API
 
 Source: https://berlin.devsitetest.how/compute/docs/reference/rest/v1
-Last updated: 2026-08-14
+Last updated: 2026-08-31
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -493,6 +493,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: beta.machineTypes](#beta.machineTypes)
 
+- [REST Resource: beta.managedRulesets](#beta.managedRulesets)
+
 - [REST Resource: beta.networkAttachments](#beta.networkAttachments)
 
 - [REST Resource: beta.networkEdgeSecurityServices](#beta.networkEdgeSecurityServices)
@@ -722,7 +724,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-**global 
+global 
 
 - `https://compute.apis-berlin-build0.goog` 
 
@@ -748,9 +750,9 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
+`[aggregated List](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
 
-The method `compute.v1.AcceleratorTypesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+The method `compute. v1. Accelerator Types Service. Aggregated List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -5432,7 +5434,7 @@ The method `compute.v1.ProjectsService.ListXpnHosts` is not available in Google 
 | 
 
 `[moveDisk](/compute/docs/reference/rest/v1/projects/moveDisk) 
-(deprecated)**` | 
+**(deprecated)**` | 
 
 The method `compute.v1.ProjectsService.MoveDisk` is not available in Google Cloud Dedicated in Germany. | 
 |
@@ -14250,6 +14252,41 @@ The method `compute.beta.MachineTypesService.Get` is not available in Google Clo
 `[list](/compute/docs/reference/rest/beta/machineTypes/list)` | 
 
 The method `compute.beta.MachineTypesService.List` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
+## REST Resource: [beta.managedRulesets](/compute/docs/reference/rest/beta/managedRulesets)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/managedRulesets/get)` | 
+
+The method `compute.beta.ManagedRulesetsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/beta/managedRulesets/list)` | 
+
+The method `compute.beta.ManagedRulesetsService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 

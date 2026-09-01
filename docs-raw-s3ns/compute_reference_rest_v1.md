@@ -1,7 +1,7 @@
 # Compute Engine API
 
 Source: https://documentation.s3ns.fr/compute/docs/reference/rest/v1
-Last updated: 2026-08-14
+Last updated: 2026-08-31
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -309,6 +309,7 @@ APIs & Reference
 - [ REST Resource: beta.licenses ](#rest-resource:-beta.licenses)
 - [ REST Resource: beta.machineImages ](#rest-resource:-beta.machineimages)
 - [ REST Resource: beta.machineTypes ](#rest-resource:-beta.machinetypes)
+- [ REST Resource: beta.managedRulesets ](#rest-resource:-beta.managedrulesets)
 - [ REST Resource: beta.networkAttachments ](#rest-resource:-beta.networkattachments)
 - [ REST Resource: beta.networkEdgeSecurityServices ](#rest-resource:-beta.networkedgesecurityservices)
 - [ REST Resource: beta.networkEndpointGroups ](#rest-resource:-beta.networkendpointgroups)
@@ -766,6 +767,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: beta.machineTypes](#beta.machineTypes)
 
+- [REST Resource: beta.managedRulesets](#beta.managedRulesets)
+
 - [REST Resource: beta.networkAttachments](#beta.networkAttachments)
 
 - [REST Resource: beta.networkEdgeSecurityServices](#beta.networkEdgeSecurityServices)
@@ -995,7 +998,10 @@ A [service endpoint](https://documentation.s3ns.fr/apis/design/glossary#api_serv
 
 
 A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-global 
+global Select an option global 
+
+- [global](?rep_location=global)
+
 
 - `https://compute.s3nsapis.fr` 
 
@@ -1021,9 +1027,9 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
+`[aggregated List](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
 
-`GET /compute/v1/projects/{project}/aggregated/acceleratorTypes` 
+`GET / compute/ v1/ projects/ {project}/ aggregated/ accelerator Types` 
 
 Retrieves an aggregated list of accelerator types. | 
 |
@@ -15531,6 +15537,41 @@ The method `compute.beta.MachineTypesService.Get` is not available in Cloud de C
 `[list](/compute/docs/reference/rest/beta/machineTypes/list)` | 
 
 The method `compute.beta.MachineTypesService.List` is not available in Cloud de Confiance by S3NS. | 
+|
+
+
+
+
+
+
+## REST Resource: [beta.managedRulesets](/compute/docs/reference/rest/beta/managedRulesets)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/managedRulesets/get)` | 
+
+The method `compute.beta.ManagedRulesetsService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/beta/managedRulesets/list)` | 
+
+The method `compute.beta.ManagedRulesetsService.List` is not available in Cloud de Confiance by S3NS. | 
 |
 
 
