@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-08-28
+Last updated: 2026-09-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -4058,6 +4058,22 @@ Granted on the project.
 | 
 
 
+#### Database Insights Service Agent
+
+[Primary service agent](/iam/docs/service-account-types#primary) for `databaseinsights.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-dbinsights.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
 #### Dataform Service Account
 
 [Primary service agent](/iam/docs/service-account-types#primary) for `dataform.googleapis.com`. 
@@ -4208,6 +4224,22 @@ Granted on the project.
 Granted on the project.
 
 
+| 
+|
+
+| 
+
+
+#### Device Run Service Agent
+
+[Primary service agent](/iam/docs/service-account-types#primary) for `devicerun.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-devicerun.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
 | 
 |
 

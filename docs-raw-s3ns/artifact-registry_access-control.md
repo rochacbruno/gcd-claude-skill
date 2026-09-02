@@ -1,7 +1,7 @@
 # Access control with IAM
 
 Source: https://documentation.s3ns.fr/artifact-registry/docs/access-control
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -154,7 +154,7 @@ Guides
 - [ Granting access to Compute Engine instances ](#compute)
 - [ Granting access to Google Kubernetes Engine clusters ](#gke)
 
-- [ Artifact Registry service account ](#gcr-sa)
+- [ Artifact Registry Service Agent ](#gcr-sa)
 - [ What's next ](#whats_next)
 - 
 
@@ -671,7 +671,7 @@ account with the resource name `repo-account` and grants it read access to a
 repository with the resource name `my-repo`.
 
 If you're new to using Terraform for Cloud de Confiance by S3NS, see the
-[Get Started - Cloud de Confiance by S3NS](https://learn.hashicorp.com/collections/terraform/gcp-get-started) page on the
+[Get Started - Cloud de Confiance by S3NS](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started) page on the
 HashiCorp website.
 
 
@@ -1431,12 +1431,12 @@ imagePullSecrets:
 Now, any new pods created in the current `default` namespace will have the
 `imagePullSecret` secret defined.
 
-## Artifact Registry service account
+## Artifact Registry Service Agent
 
 The Artifact Registry Service Agent is a Google-managed service account that
 acts on behalf of Artifact Registry when interacting with Cloud de Confiance by S3NS
 services. For more information about the account and its permissions, see
-[Artifact Registry service account](/artifact-registry/docs/ar-service-account).
+[Artifact Registry Service Agent](/artifact-registry/docs/ar-service-account).
 
 ## What's next
 

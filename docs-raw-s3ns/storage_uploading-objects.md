@@ -1,7 +1,7 @@
 # Upload objects from a file system
 
 Source: https://documentation.s3ns.fr/storage/docs/uploading-objects
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -1693,7 +1693,7 @@ def upload_file bucket_name :, local_file_path :, file_name : nil
 
 require "google/cloud/storage" 
 
-storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
 bucket = storage . bucket bucket_name , skip_lookup : true 
 
 file = bucket . [ create_file ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Bucket.html) local_file_path , file_name 
@@ -1867,9 +1867,8 @@ request.
 
 - 
 
-Have gcloud CLI [installed and initialized](/sdk/docs/install) , which lets
-you generate an access token for the `Authorization` header. 
-
+Have gcloud CLI [installed and initialized](/sdk/docs/install), which lets
+you generate an access token for the `Authorization` header.
 
 - 
 
@@ -1904,9 +1903,8 @@ URL-encoded as `pets%2Fdog.png`.
 
 - 
 
-Have gcloud CLI [installed and initialized](/sdk/docs/install) , which lets
-you generate an access token for the `Authorization` header. 
-
+Have gcloud CLI [installed and initialized](/sdk/docs/install), which lets
+you generate an access token for the `Authorization` header.
 
 - 
 
@@ -1999,9 +1997,8 @@ code along with the file's metadata.
 
 - 
 
-Have gcloud CLI [installed and initialized](/sdk/docs/install) , which lets
-you generate an access token for the `Authorization` header. 
-
+Have gcloud CLI [installed and initialized](/sdk/docs/install), which lets
+you generate an access token for the `Authorization` header.
 
 - 
 

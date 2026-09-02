@@ -1,7 +1,7 @@
 # Set up the Google Cloud CLI for Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 - 
 
@@ -171,7 +171,7 @@ Linux 64-bit
 | 
 [google-cloud-cli-linux-x86_64.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86_64.tar.gz) | 
 86.7 MB | 
-b4832487d3e7f87fb5520143d23bf56293189bfc21d4600b9e69059f3ed9bde8 | 
+22b5fdd0ff16adf8bb4e02e025365eb5c373922e181c768a46b973d3a8bb2eea | 
 |
 
 | 
@@ -180,8 +180,8 @@ Linux 64-bit
 (Arm) 
 | 
 [google-cloud-cli-linux-arm.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-arm.tar.gz) | 
-52.2 MB | 
-c708889791d7799dfa35101631e600a0da15c0ca9ad4f4fc08e04164482aa7a6 | 
+52.3 MB | 
+8bdb58368fffe2faf2119ffbb66070b5da6fa98a4af55eb5baab33f93cdea880 | 
 |
 
 | 
@@ -190,8 +190,8 @@ Linux 32-bit
 (x86) 
 | 
 [google-cloud-cli-linux-x86.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86.tar.gz) | 
-52.2 MB | 
-57d94dd2946b243fe327029887439d2f1846779b67ba7fa7b8d86a59702d4948 | 
+52.3 MB | 
+680b228b27c18f6219245c9d4c77ea3275b845ec0b70681c7bd4e4bea81b1897 | 
 |
 
 
@@ -308,9 +308,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86_64.tar.gz)
 
 | 
-52.3 MB | 
+52.4 MB | 
 
-cf366d92cda5e0e10d9ed78ac56bf3e0e9b1aec805028be67631760135c696fb 
+dea293e822cf7f3e3b8934be4801fcf30ce117cbbcee95709ba123ad51e665f2 
 | 
 |
 
@@ -330,7 +330,7 @@ macOS 64-bit
 | 
 52.3 MB | 
 
-15d17b0d82cbea10645fb5523f6cecdee9bb946040c4c22b1f52b1bd4b9ab3dd 
+07f017de9b4e0dcf2765058ad9fea6a632a82ab26f3e14736cf4652daf8373c7 
 | 
 |
 
@@ -348,9 +348,9 @@ macOS 32-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86.tar.gz)
 
 | 
-50.7 MB | 
+50.8 MB | 
 
-a18734a723cfef579c5f3fcd7398baf5bad0c724ff3eac8e50b93b5d88e429e0 
+074576747f08e295a2c6ed5c0eb9205ed3e8ee58826cf6e86c34d9ef1b985e51 
 | 
 |
 

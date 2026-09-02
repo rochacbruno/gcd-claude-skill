@@ -1,7 +1,7 @@
 # Import a key version into Cloud KMS
 
 Source: https://berlin.devsitetest.how/kms/docs/importing-a-key
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Cloud KMS release notes
 
 Source: https://documentation.s3ns.fr/kms/docs/release-notes
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ August 24, 2026 ](#August_24_2026)
 - [ August 06, 2026 ](#August_06_2026)
 - [ July 16, 2026 ](#July_16_2026)
 - [ February 21, 2025 ](#February_21_2025)
@@ -193,7 +194,20 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## August 06, 2026 
+## August 24, 2026 
+
+
+Feature 
+
+
+Cloud KMS supports deleting key rings in General Availability.
+
+For more information about deleting Cloud KMS resources, see [Delete Cloud KMS
+resources](/kms/docs/delete-kms-resources).
+
+
+
+## August 06, 2026
 
 
 Feature 

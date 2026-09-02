@@ -128,9 +128,9 @@
   "/artifact-registry/docs/access-control": {
     "title": "Access control with IAM",
     "filename": "artifact-registry_access-control.md",
-    "size": 36169,
+    "size": 36165,
     "url": "https://documentation.s3ns.fr/artifact-registry/docs/access-control",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/artifact-registry/docs/quickstarts": {
     "title": "Quickstart: Store Docker container images in Artifact Registry",
@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50881,
+    "size": 50882,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-08-26"
   },
@@ -270,7 +270,7 @@
     "filename": "billing.md",
     "size": 2270,
     "url": "https://documentation.s3ns.fr/billing/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/billing/docs/tpc-differences": {
     "title": "Cloud Billing in Cloud de Confiance versus Google Cloud",
@@ -781,7 +781,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16313,
     "url": "https://documentation.s3ns.fr/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -802,7 +802,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3381,
     "url": "https://documentation.s3ns.fr/docs/get-started/access-apis",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -940,7 +940,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2680,
+    "size": 2681,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-08-26"
   },
@@ -954,7 +954,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18880,
+    "size": 18879,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1248,7 +1248,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4399,
+    "size": 4400,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
     "last_updated": "2026-08-26"
   },
@@ -1430,16 +1430,16 @@
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
-    "size": 107907,
+    "size": 108386,
     "url": "https://documentation.s3ns.fr/iam/docs/service-agents",
-    "last_updated": "2026-08-28"
+    "last_updated": "2026-09-01"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Cloud de Confiance versus Google Cloud",
     "filename": "iam_tpc-differences.md",
-    "size": 5424,
+    "size": 5583,
     "url": "https://documentation.s3ns.fr/iam/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/iam/docs/write-policy-client-libraries": {
     "title": "Quickstart: Write an allow policy by using client libraries",
@@ -1453,28 +1453,28 @@
     "filename": "kms.md",
     "size": 3575,
     "url": "https://documentation.s3ns.fr/kms/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 165780,
+    "size": 165840,
     "url": "https://documentation.s3ns.fr/kms/docs/creating-keys",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39520,
+    "size": 39540,
     "url": "https://documentation.s3ns.fr/kms/docs/destroy-restore",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kms/docs/importing-a-key": {
     "title": "Import a key version into Cloud KMS",
     "filename": "kms_importing-a-key.md",
     "size": 94887,
     "url": "https://documentation.s3ns.fr/kms/docs/importing-a-key",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kms/docs/reference/rest": {
     "title": "Cloud Key Management Service (KMS) API",
@@ -1486,23 +1486,23 @@
   "/kms/docs/release-notes": {
     "title": "Cloud KMS release notes",
     "filename": "kms_release-notes.md",
-    "size": 4827,
+    "size": 5088,
     "url": "https://documentation.s3ns.fr/kms/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22516,
+    "size": 22526,
     "url": "https://documentation.s3ns.fr/kms/docs/retrieve-public-key",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Cloud de Confiance versus Google Cloud",
     "filename": "kms_tpc-differences.md",
     "size": 5469,
     "url": "https://documentation.s3ns.fr/kms/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/kubernetes-engine/docs": {
     "title": "Google Kubernetes Engine documentation",
@@ -1642,7 +1642,7 @@
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41358,
     "url": "https://documentation.s3ns.fr/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-01"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
@@ -1661,7 +1661,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39219,
+    "size": 39290,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
     "last_updated": "2026-08-26"
   },
@@ -1780,7 +1780,7 @@
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24451,
+    "size": 24448,
     "url": "https://documentation.s3ns.fr/pubsub/docs/create-topic",
     "last_updated": "2026-08-26"
   },
@@ -2013,7 +2013,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-02"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2032,9 +2032,9 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30362,
+    "size": 30359,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/storage/docs/discover-object-storage-console": {
     "title": "Quickstart: Discover object storage with the Cloud de Confiance console",
@@ -2081,9 +2081,9 @@
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46655,
+    "size": 46649,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-01"
   },
   "/storage/docs/xml-api/overview": {
     "title": "XML API overview",

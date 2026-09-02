@@ -1,7 +1,7 @@
 # IAM in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/iam/docs/tpc-differences
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 - 
 
@@ -248,7 +248,13 @@ supported when creating policies in Cloud de Confiance:
 
 - GKE service accounts
 
+
 | 
+|
+
+| 
+**SCIM provisioning for Workforce Identity Federation** | 
+SCIM provisioning for Workforce Identity Federation is unavailable in Cloud de Confiance. | 
 |
 
 | 

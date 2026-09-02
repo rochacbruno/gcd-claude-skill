@@ -1,7 +1,7 @@
 # IAM in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/iam/docs/tpc-differences
-Last updated: 2026-08-26
+Last updated: 2026-09-01
 
 - 
 
@@ -248,7 +248,13 @@ supported when creating policies in Google Cloud Dedicated:
 
 - GKE service accounts
 
+
 | 
+|
+
+| 
+**SCIM provisioning for Workforce Identity Federation** | 
+SCIM provisioning for Workforce Identity Federation is unavailable in Google Cloud Dedicated. | 
 |
 
 | 
