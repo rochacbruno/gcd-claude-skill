@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://berlin.devsitetest.how/iam/docs/permissions-change-log
-Last updated: 2026-08-26
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -18402,7 +18402,7 @@ The Privilegedaccessmanager Editor role (`roles/privilegedaccessmanager.editor`)
 
 | 
 
-Proxmity Beacon
+Proximity Beacon
 | 
 
 
@@ -18414,7 +18414,7 @@ The Proximitybeacon Admin role (`roles/proximitybeacon.admin`) has reached Gener
 
 | 
 
-Proxmity Beacon
+Proximity Beacon
 | 
 
 
@@ -18426,7 +18426,7 @@ The Proximitybeacon Editor role (`roles/proximitybeacon.editor`) has reached Gen
 
 | 
 
-Proxmity Beacon
+Proximity Beacon
 | 
 
 

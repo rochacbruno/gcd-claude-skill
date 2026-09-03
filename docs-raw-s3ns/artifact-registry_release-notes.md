@@ -1,7 +1,7 @@
 # Artifact Registry release notes
 
 Source: https://documentation.s3ns.fr/artifact-registry/docs/release-notes
-Last updated: 2026-08-26
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 

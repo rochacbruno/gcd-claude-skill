@@ -1,7 +1,7 @@
 # Load CSV data from Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv
-Last updated: 2026-08-26
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -177,10 +177,6 @@ partition. When your data is loaded into BigQuery, it is
 converted into columnar format for
 [Capacitor](https://berlin.devsitetest.how/blog/products/bigquery/inside-capacitor-bigquerys-next-generation-columnar-storage-format)
 (BigQuery's storage format).
-
-When you load data from Cloud Storage into a BigQuery table,
-the dataset that contains the table must be in the same regional or multi-
-regional location as the Cloud Storage bucket.
 
 For information about loading CSV data from a local file, see
 [Loading data into BigQuery from a local data source](/bigquery/docs/batch-loading-data#loading_data_from_local_files).
@@ -2062,7 +2058,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/bigquery" 
 
 def load_table_gcs_csv dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-analytics_hub/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-migration-v2/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 gcs_uri = "gs://cloud-samples-data/bigquery/us-states/us-states.csv" 
 table_id = "us_states" 

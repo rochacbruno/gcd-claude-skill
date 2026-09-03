@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://berlin.devsitetest.how/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Cloud Key Management Service
 
 ](https://berlin.devsitetest.how/kms)

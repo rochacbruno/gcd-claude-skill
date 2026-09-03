@@ -1,7 +1,7 @@
 # Kubernetes Engine API
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/reference/rest
-Last updated: 2026-04-15
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -1418,6 +1418,13 @@ Updates the master for a specific cluster. |
 
 | 
 
+`[completeControlPlaneUpgrade](/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters/completeControlPlaneUpgrade)` | 
+
+The method `google.container.v1.ClusterManager.CompleteControlPlaneUpgrade` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[fetchClusterUpgradeInfo](/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters/fetchClusterUpgradeInfo)` | 
 
 The method `google.container.v1.ClusterManager.FetchClusterUpgradeInfo` is not available in Google Cloud Dedicated in Germany. | 
@@ -1823,6 +1830,13 @@ Starts master IP rotation. |
 
 Zonal clusters are not supported.
 Updates the settings of a specific cluster. | 
+|
+
+| 
+
+`[completeControlPlaneUpgrade](/kubernetes-engine/docs/reference/rest/v1/projects.zones.clusters/completeControlPlaneUpgrade)` | 
+
+The method `google.container.v1.ClusterManager.CompleteControlPlaneUpgrade` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 

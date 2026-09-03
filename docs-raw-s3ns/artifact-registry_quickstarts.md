@@ -1,7 +1,7 @@
 # Quickstart: Store Docker container images in Artifact Registry
 
 Source: https://documentation.s3ns.fr/artifact-registry/docs/quickstarts
-Last updated: 2026-08-26
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -556,7 +556,7 @@ Where
 
 - DOMAIN is your Windows domain.
 
-- USERNAME is your user name.
+- USERNAME is your username.
 
 
 
@@ -628,8 +628,8 @@ The repository is added to the repository list.
 - 
 
 Run the following command to create a new Docker repository named
-`quickstart-docker-repo` in the location `u-france-east1` with the description "docker
-repository".
+`quickstart-docker-repo` in the location `u-france-east1` with the
+description "Docker repository".
 
 
 ```
@@ -667,7 +667,7 @@ run the following command:
 
 
 ```
-gcloud auth configure-docker u-france-east1-docker.s3nsregistry.fr
+gcloud config set artifacts/allow_unrecognized_registry True && gcloud auth configure-docker u-france-east1-docker.s3nsregistry.fr
 ```
 
 
@@ -680,28 +680,26 @@ For information about other authentication methods, see
 ## Obtain an image to push
 
 For this quickstart, you will push a sample image named
-`hello-app`.
+`nginx-unprivileged`.
 
-Run the following command to pull version 1.0 of the image.
+Run the following command to pull the image.
 
 
 ```
-docker pull us-docker.s3nsregistry.fr/google-samples/containers/gke/hello-app:1.0
+docker pull docker.io/nginxinc/nginx-unprivileged:alpine
 ```
 
 
-Image paths in Artifact Registry include multiple parts. For this sample
+Image paths in Docker Hub include multiple parts. For this sample
 image:
 
-- `us-docker.s3nsregistry.fr` is the hostname for container images stored in
-Artifact Registry Docker repositories, which includes the location of the
-repository (`us`).
+- `docker.io` is the hostname for container images stored in Docker Hub.
 
-- `google-samples` is the project ID.
+- `nginxinc` is the namespace or organization name.
 
-- `containers` is the repository ID.
+- `nginx-unprivileged` is the image name.
 
-- `/gke/hello-app` is the path to the image in the repository `containers`.
+- `alpine` is the image tag.
 
 ## Add the image to the repository
 
@@ -719,7 +717,7 @@ Run the following command to tag the image as
 
 
 ```
-docker tag us-docker.s3nsregistry.fr/google-samples/containers/gke/hello-app:1.0 \ 
+docker tag docker.io/nginxinc/nginx-unprivileged:alpine \ 
 u-france-east1-docker.s3nsregistry.fr/ PROJECT /quickstart-docker-repo/quickstart-image:tag1
 ```
 
@@ -732,7 +730,8 @@ Where:
 - `u-france-east1-docker.s3nsregistry.fr` is the hostname for the Docker repository you created.
 
 
-- PROJECT is your Cloud de Confiance by S3NS [project ID](/resource-manager/docs/creating-managing-projects#identifying_projects).
+- PROJECT is your Cloud de Confiance by S3NS project ID. Because of how
+Docker treats colons, you must replace colons (`:`) in your project ID with a forward slash (`/`). For example, if your project ID is `s3ns:my-project`, use `s3ns/my-project`.
 
 
 - `quickstart-docker-repo` is the ID of the repository you created.
@@ -756,8 +755,10 @@ docker push u-france-east1-docker.s3nsregistry.fr/ PROJECT /quickstart-docker-re
 ```
 
 
-Replace PROJECT with your Cloud de Confiance by S3NS
-[project ID](/resource-manager/docs/creating-managing-projects#identifying_projects).
+Replace PROJECT with your Cloud de Confiance by S3NS project ID. Because of how
+Docker treats colons, you must replace colons (`:`) in your project ID with a
+forward slash (`/`). For example, if your project ID is `s3ns:my-project`, use
+`s3ns/my-project`.
 
 ## Pull the image from Artifact Registry
 
@@ -770,8 +771,10 @@ docker pull u-france-east1-docker.s3nsregistry.fr/ PROJECT /quickstart-docker-re
 ```
 
 
-Replace PROJECT with your Cloud de Confiance by S3NS
-[project ID](/resource-manager/docs/creating-managing-projects#identifying_projects).
+Replace PROJECT with your Cloud de Confiance by S3NS project ID. Because of how
+Docker treats colons, you must replace colons (`:`) in your project ID with a
+forward slash (`/`). For example, if your project ID is `s3ns:my-project`, use
+`s3ns/my-project`.
 
 
 ```

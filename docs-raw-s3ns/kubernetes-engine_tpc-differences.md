@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://documentation.s3ns.fr/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Google Kubernetes Engine (GKE)
 
 ](https://documentation.s3ns.fr/kubernetes-engine)

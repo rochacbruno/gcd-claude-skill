@@ -1,7 +1,7 @@
 # VPC Flow Logs
 
 Source: https://berlin.devsitetest.how/vpc/docs/flow-logs
-Last updated: 2026-08-26
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 
@@ -373,9 +373,10 @@ annotations](/vpc/docs/about-flow-logs-records#metadata).
 - **Write to Logging**. The final log entries are written to
 Cloud Logging.
 
-Because VPC Flow Logs doesn't capture every packet, it compensates
-for missed packets by interpolating from the captured packets. This happens for
-packets missed because of initial and user-configurable sampling settings.
+VPC Flow Logs doesn't capture every packet. Instead, it estimates
+total traffic based on the sampled packets, accounting for missed packets.
+For more information, see
+[VPC Flow Logs: Understanding byte and packet counts](https://services.google.com/fh/files/misc/vpc_flow_logs_understanding_byte_and_packet_counts.pdf).
 
 Even though Google Cloud Dedicated doesn't capture every packet, log record captures
 can be quite large. You can balance your traffic visibility and storage cost

@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://documentation.s3ns.fr/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Container-Optimized OS
 
 ](https://documentation.s3ns.fr/container-optimized-os/docs)

@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://documentation.s3ns.fr/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Cloud Key Management Service
 
 ](https://documentation.s3ns.fr/kms)

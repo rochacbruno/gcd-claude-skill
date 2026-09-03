@@ -11,26 +11,6 @@ Last updated: 2026-08-26
 
 [
 
-Technology areas
-
-](https://documentation.s3ns.fr/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Guides
 
 ](https://documentation.s3ns.fr/docs/terraform/terraform-overview)

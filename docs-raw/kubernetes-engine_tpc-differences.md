@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://berlin.devsitetest.how/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Google Kubernetes Engine (GKE)
 
 ](https://berlin.devsitetest.how/kubernetes-engine)

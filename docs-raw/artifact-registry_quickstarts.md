@@ -1,7 +1,7 @@
 # Quickstart: Store Docker container images in Artifact Registry
 
 Source: https://berlin.devsitetest.how/artifact-registry/docs/quickstarts
-Last updated: 2026-08-26
+Last updated: 2026-09-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -556,7 +556,7 @@ Where
 
 - DOMAIN is your Windows domain.
 
-- USERNAME is your user name.
+- USERNAME is your username.
 
 
 
@@ -628,8 +628,8 @@ The repository is added to the repository list.
 - 
 
 Run the following command to create a new Docker repository named
-`quickstart-docker-repo` in the location `u-germany-northeast1` with the description "docker
-repository".
+`quickstart-docker-repo` in the location `u-germany-northeast1` with the
+description "Docker repository".
 
 
 ```
@@ -665,12 +665,6 @@ Google Cloud CLI to authenticate requests to Artifact Registry.
 To set up authentication to Docker repositories in the region `u-germany-northeast1`,
 run the following command:
 
-
-```
-gcloud auth configure-docker u-germany-northeast1-docker.pkg-berlin-build0.goog
-```
-
-
 The command updates your Docker configuration. You can now connect with
 Artifact Registry in your Google Cloud Dedicated project to push and pull images.
 
@@ -678,30 +672,6 @@ For information about other authentication methods, see
 [Authentication methods](/artifact-registry/docs/docker/authentication).
 
 ## Obtain an image to push
-
-For this quickstart, you will push a sample image named
-`hello-app`.
-
-Run the following command to pull version 1.0 of the image.
-
-
-```
-docker pull us-docker.pkg-berlin-build0.goog/google-samples/containers/gke/hello-app:1.0
-```
-
-
-Image paths in Artifact Registry include multiple parts. For this sample
-image:
-
-- `us-docker.pkg-berlin-build0.goog` is the hostname for container images stored in
-Artifact Registry Docker repositories, which includes the location of the
-repository (`us`).
-
-- `google-samples` is the project ID.
-
-- `containers` is the repository ID.
-
-- `/gke/hello-app` is the path to the image in the repository `containers`.
 
 ## Add the image to the repository
 
@@ -717,22 +687,12 @@ location is `u-germany-northeast1-docker.pkg-berlin-build0.goog`.
 Run the following command to tag the image as
 `quickstart-image:tag1`:
 
-
-```
-docker tag us-docker.pkg-berlin-build0.goog/google-samples/containers/gke/hello-app:1.0 \ 
-u-germany-northeast1-docker.pkg-berlin-build0.goog/ PROJECT /quickstart-docker-repo/quickstart-image:tag1
-```
-
-
 Where:
 
 
 - `u-germany-northeast1` is the repository location.
 
 - `u-germany-northeast1-docker.pkg-berlin-build0.goog` is the hostname for the Docker repository you created.
-
-
-- PROJECT is your Google Cloud Dedicated in Germany [project ID](/resource-manager/docs/creating-managing-projects#identifying_projects).
 
 
 - `quickstart-docker-repo` is the ID of the repository you created.
@@ -756,9 +716,6 @@ docker push u-germany-northeast1-docker.pkg-berlin-build0.goog/ PROJECT /quickst
 ```
 
 
-Replace PROJECT with your Google Cloud Dedicated in Germany
-[project ID](/resource-manager/docs/creating-managing-projects#identifying_projects).
-
 ## Pull the image from Artifact Registry
 
 To pull the image from Artifact Registry onto your local machine, run
@@ -769,9 +726,6 @@ the following command:
 docker pull u-germany-northeast1-docker.pkg-berlin-build0.goog/ PROJECT /quickstart-docker-repo/quickstart-image:tag1
 ```
 
-
-Replace PROJECT with your Google Cloud Dedicated in Germany
-[project ID](/resource-manager/docs/creating-managing-projects#identifying_projects).
 
 
 ```

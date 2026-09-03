@@ -724,10 +724,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-global Select an option global 
-
-- [global](?rep_location=global)
-
+global 
 
 - `https://compute.apis-berlin-build0.goog` 
 

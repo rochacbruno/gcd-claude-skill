@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://documentation.s3ns.fr/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Service Usage
 
 ](https://documentation.s3ns.fr/service-usage)

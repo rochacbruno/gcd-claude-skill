@@ -123,21 +123,21 @@
     "filename": "artifact-registry.md",
     "size": 2338,
     "url": "https://documentation.s3ns.fr/artifact-registry/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/artifact-registry/docs/access-control": {
     "title": "Access control with IAM",
     "filename": "artifact-registry_access-control.md",
     "size": 36165,
     "url": "https://documentation.s3ns.fr/artifact-registry/docs/access-control",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-02"
   },
   "/artifact-registry/docs/quickstarts": {
     "title": "Quickstart: Store Docker container images in Artifact Registry",
     "filename": "artifact-registry_quickstarts.md",
-    "size": 13148,
+    "size": 13374,
     "url": "https://documentation.s3ns.fr/artifact-registry/docs/quickstarts",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/artifact-registry/docs/reference/rest": {
     "title": "Artifact Registry API",
@@ -151,14 +151,14 @@
     "filename": "artifact-registry_release-notes.md",
     "size": 6841,
     "url": "https://documentation.s3ns.fr/artifact-registry/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/artifact-registry/docs/tpc-differences": {
     "title": "Artifact Registry in Cloud de Confiance versus Google Cloud",
     "filename": "artifact-registry_tpc-differences.md",
     "size": 4361,
     "url": "https://documentation.s3ns.fr/artifact-registry/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/bigquery/docs": {
     "title": "BigQuery documentation",
@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50882,
+    "size": 50881,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-08-26"
   },
@@ -212,9 +212,9 @@
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139034,
+    "size": 138849,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/bigquery/docs/quickstarts/load-data-bq": {
     "title": "Use the bq tool",
@@ -319,7 +319,7 @@
     "filename": "compute_disks_hyperdisks.md",
     "size": 33896,
     "url": "https://documentation.s3ns.fr/compute/docs/disks/hyperdisks",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/compute/docs/gpus": {
     "title": "GPU machine types",
@@ -380,7 +380,7 @@
   "/container-optimized-os/docs/tpc-differences": {
     "title": "Container-Optimized OS in Cloud de Confiance versus Google Cloud",
     "filename": "container-optimized-os_tpc-differences.md",
-    "size": 7230,
+    "size": 7154,
     "url": "https://documentation.s3ns.fr/container-optimized-os/docs/tpc-differences",
     "last_updated": "2026-08-26"
   },
@@ -445,7 +445,7 @@
     "filename": "index.md",
     "size": 7154,
     "url": "https://documentation.s3ns.fr/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-03"
   },
   "/docs/access-resources": {
     "title": "Access and resource management",
@@ -639,9 +639,9 @@
   "/docs/databases": {
     "title": "Databases",
     "filename": "databases.md",
-    "size": 1368,
+    "size": 1377,
     "url": "https://documentation.s3ns.fr/docs/databases",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/docs/devtools": {
     "title": "Cloud de Confiance SDK, languages, frameworks, and tools",
@@ -726,6 +726,13 @@
     "size": 4425,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/tax-enforcement",
     "last_updated": "2026-08-26"
+  },
+  "/docs/get-started": {
+    "title": "Get started with Google Cloud",
+    "filename": "get-started.md",
+    "size": 9435,
+    "url": "https://documentation.s3ns.fr/docs/get-started",
+    "last_updated": "2026-09-02"
   },
   "/docs/get-started-tpc": {
     "title": "Get started with Cloud de Confiance",
@@ -818,11 +825,25 @@
     "url": "https://documentation.s3ns.fr/docs/get-started/authorization-access-control",
     "last_updated": "2026-08-26"
   },
+  "/docs/get-started/developer-environment": {
+    "title": "Set up a local development environment",
+    "filename": "get-started_developer-environment.md",
+    "size": 3374,
+    "url": "https://documentation.s3ns.fr/docs/get-started/developer-environment",
+    "last_updated": "2026-09-01"
+  },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Cloud de Confiance by S3NS",
     "filename": "get-started_interact-with-resources.md",
     "size": 10753,
     "url": "https://documentation.s3ns.fr/docs/get-started/interact-with-resources",
+    "last_updated": "2026-08-26"
+  },
+  "/docs/get-started/learn-about-billing": {
+    "title": "Learn about Cloud Billing",
+    "filename": "get-started_learn-about-billing.md",
+    "size": 8290,
+    "url": "https://documentation.s3ns.fr/docs/get-started/learn-about-billing",
     "last_updated": "2026-08-26"
   },
   "/docs/get-started/required-domains": {
@@ -888,6 +909,13 @@
     "url": "https://documentation.s3ns.fr/docs/overview/tpc-overview",
     "last_updated": "2026-08-26"
   },
+  "/docs/product-list": {
+    "title": "Google Cloud products at a glance",
+    "filename": "product-list.md",
+    "size": 13139,
+    "url": "https://documentation.s3ns.fr/docs/product-list",
+    "last_updated": "2026-04-22"
+  },
   "/docs/quotas": {
     "title": "Cloud Quotas documentation",
     "filename": "quotas.md",
@@ -940,7 +968,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-08-26"
   },
@@ -954,7 +982,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18879,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1213,7 +1241,7 @@
   "/docs/terraform/create-vm-instance": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_create-vm-instance.md",
-    "size": 8249,
+    "size": 8173,
     "url": "https://documentation.s3ns.fr/docs/terraform/create-vm-instance",
     "last_updated": "2026-08-26"
   },
@@ -1227,7 +1255,7 @@
   "/docs/terraform/get-started-with-terraform": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_get-started-with-terraform.md",
-    "size": 8257,
+    "size": 8181,
     "url": "https://documentation.s3ns.fr/docs/terraform/get-started-with-terraform",
     "last_updated": "2026-08-26"
   },
@@ -1248,7 +1276,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4400,
+    "size": 4399,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
     "last_updated": "2026-08-26"
   },
@@ -1290,7 +1318,7 @@
   "/docs/terraform/resource-management/store-state": {
     "title": "Store Terraform state in a Cloud Storage bucket",
     "filename": "terraform_resource-management_store-state.md",
-    "size": 11766,
+    "size": 11690,
     "url": "https://documentation.s3ns.fr/docs/terraform/resource-management/store-state",
     "last_updated": "2026-08-26"
   },
@@ -1311,7 +1339,7 @@
   "/docs/terraform/tpc-differences": {
     "title": "Terraform in Cloud de Confiance versus Google Cloud",
     "filename": "terraform_tpc-differences.md",
-    "size": 4026,
+    "size": 3950,
     "url": "https://documentation.s3ns.fr/docs/terraform/tpc-differences",
     "last_updated": "2026-08-26"
   },
@@ -1395,9 +1423,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2109418,
+    "size": 2109421,
     "url": "https://documentation.s3ns.fr/iam/docs/permissions-change-log",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1500,7 +1528,7 @@
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Cloud de Confiance versus Google Cloud",
     "filename": "kms_tpc-differences.md",
-    "size": 5469,
+    "size": 5393,
     "url": "https://documentation.s3ns.fr/kms/docs/tpc-differences",
     "last_updated": "2026-09-01"
   },
@@ -1549,21 +1577,21 @@
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
     "filename": "kubernetes-engine_reference_rest.md",
-    "size": 47114,
+    "size": 47648,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/reference/rest",
-    "last_updated": "2026-04-15"
+    "last_updated": "2026-09-02"
   },
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1379928,
+    "size": 1379949,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13913,
+    "size": 13837,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/tpc-differences",
     "last_updated": "2026-08-26"
   },
@@ -1976,7 +2004,7 @@
   "/service-usage/docs/reference/rest": {
     "title": "Service Usage API",
     "filename": "service-usage_reference_rest.md",
-    "size": 12548,
+    "size": 12472,
     "url": "https://documentation.s3ns.fr/service-usage/docs/reference/rest",
     "last_updated": "2026-02-09"
   },
@@ -2013,7 +2041,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-02"
+    "last_updated": "2026-09-03"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2032,7 +2060,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30359,
+    "size": 30356,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-09-01"
   },
@@ -2074,14 +2102,14 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41576,
+    "size": 41573,
     "url": "https://documentation.s3ns.fr/storage/docs/troubleshooting",
     "last_updated": "2026-08-26"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46649,
+    "size": 46646,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
     "last_updated": "2026-09-01"
   },
@@ -2123,9 +2151,9 @@
   "/vpc/docs/flow-logs": {
     "title": "VPC Flow Logs",
     "filename": "vpc_flow-logs.md",
-    "size": 12121,
+    "size": 12219,
     "url": "https://documentation.s3ns.fr/vpc/docs/flow-logs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-02"
   },
   "/vpc/docs/shared-vpc": {
     "title": "Shared VPC",

@@ -11,26 +11,6 @@ Last updated: 2026-08-26
 
 [
 
-Technology areas
-
-](https://berlin.devsitetest.how/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Guides
 
 ](https://berlin.devsitetest.how/docs/terraform/terraform-overview)

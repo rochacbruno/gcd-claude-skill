@@ -31,26 +31,6 @@ Home
 
 [
 
-Technology areas
-
-](https://berlin.devsitetest.how/docs)
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-
-
-[
-
 Service Usage
 
 ](https://berlin.devsitetest.how/service-usage)
