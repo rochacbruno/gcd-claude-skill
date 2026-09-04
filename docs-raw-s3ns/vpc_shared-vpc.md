@@ -1,7 +1,7 @@
 # Shared VPC
 
 Source: https://documentation.s3ns.fr/vpc/docs/shared-vpc
-Last updated: 2026-08-26
+Last updated: 2026-09-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 
@@ -682,6 +682,12 @@ Shared VPC architecture](/load-balancing/docs/network/networklb-backend-service#
 | 
 |
 
+| 
+[Global external passthrough Network Load Balancer](/load-balancing/docs/network) | 
+[
+Shared VPC architecture](/load-balancing/docs/network/global-networklb-architecture#xpn-architecture)
+| 
+|
 
 
 

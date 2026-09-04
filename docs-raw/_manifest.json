@@ -228,7 +228,7 @@
     "filename": "bigquery_release-notes.md",
     "size": 1818,
     "url": "https://berlin.devsitetest.how/bigquery/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-03"
   },
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 487047,
+    "size": 508973,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-08-31"
   },
@@ -543,7 +543,7 @@
     "filename": "compute-area.md",
     "size": 3025,
     "url": "https://berlin.devsitetest.how/docs/compute-area",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-03"
   },
   "/docs/cross-product-overviews": {
     "title": "Access and resource management",
@@ -597,7 +597,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -893,7 +893,7 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26602,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-03"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -912,7 +912,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19064,
+    "size": 19066,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1514,7 +1514,7 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1381195,
+    "size": 1396812,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
     "last_updated": "2026-09-02"
   },
@@ -1943,7 +1943,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-04"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1992,7 +1992,7 @@
     "filename": "storage_release-notes.md",
     "size": 14196,
     "url": "https://berlin.devsitetest.how/storage/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-03"
   },
   "/storage/docs/tpc-differences": {
     "title": "Cloud Storage in Google Cloud Dedicated versus Google Cloud",
@@ -2004,9 +2004,9 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 41716,
+    "size": 37126,
     "url": "https://berlin.devsitetest.how/storage/docs/troubleshooting",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
@@ -2060,9 +2060,9 @@
   "/vpc/docs/shared-vpc": {
     "title": "Shared VPC",
     "filename": "vpc_shared-vpc.md",
-    "size": 33455,
+    "size": 33652,
     "url": "https://berlin.devsitetest.how/vpc/docs/shared-vpc",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-03"
   },
   "/vpc/docs/tpc-differences": {
     "title": "VPC in Google Cloud Dedicated versus Google Cloud",

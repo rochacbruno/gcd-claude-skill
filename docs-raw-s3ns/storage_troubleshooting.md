@@ -1,7 +1,7 @@
 # Troubleshooting
 
 Source: https://documentation.s3ns.fr/storage/docs/troubleshooting
-Last updated: 2026-08-26
+Last updated: 2026-09-04
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -135,7 +135,7 @@ Guides
 - [ Error codes ](#error_codes)
 
 - [ 400: Bad Request ](#400_bad_request)
-- [ 400: Storage Intelligence Specific Errors ](#storage-intelligence-errors)
+- [ 400: Storage Intelligence specific errors ](#storage-intelligence-errors)
 - [ 401: Unauthorized ](#401_unauthorized)
 - [ 403: Account Disabled ](#account-disabled)
 - [ 403: Forbidden ](#access-permission)
@@ -191,7 +191,7 @@ Guides
 This page describes troubleshooting methods for common errors you may encounter
 while using Cloud Storage.
 
-See the [Cloud de Confiance by S3NS Service Health Dashboard](https://status.cloud.google.com/summary) for information about
+See the [Cloud de Confiance by S3NS Personalized Service Health Dashboard](https://status.cloud.google.com/summary) for information about
 incidents affecting Cloud de Confiance by S3NS services such as Cloud Storage.
 
 ## Logging raw requests 
@@ -259,7 +259,7 @@ logging of each RPC.
 
 
 
-Add a logger via `ApplicationContext.RegisterLogger`, and set logging
+Add a logger by using the `ApplicationContext.RegisterLogger` method, and set logging
 options on the `HttpClient` message handler. For more information, see
 the [C# client library reference documentation](/dotnet/docs/reference/Google.Cloud.Storage.V1/latest).
 
@@ -644,98 +644,11 @@ example, `Content-Range: */*` is invalid and instead should be specified as
 `Content-Range: bytes */*`. If you receive this error, your current resumable
 upload is no longer active, and you must start a new resumable upload.
 
-### 400: Storage Intelligence Specific Errors
+### 400: Storage Intelligence specific errors
 
-The following sections describe common errors that you might encounter when you
-[configure or manage Storage Intelligence](/storage/docs/storage-intelligence/configure-and-manage-storage-intelligence) for a resource.
-
-#### 400: Invalid Bucket Name
-
-**Issue**: When you configure or manage Storage Intelligence for a resource, you
-might receive this error and the message `The specific bucket is not valid.`
-
-**Solution**: The URL that you used in the request is invalid. The URL must meet
-the following requirements:
-
-- `locations/global` is the only supported location for
-Storage Intelligence. Using any other location is unsupported.
-
-- `Storage Intelligence` is singular in the URL, not plural.
-
-The following is an example of a valid URL:
-
-
-```
-curl -X PATCH -H "Content-Type: application/json" -d
-'{"edition_config": "STANDARD" }'
--H "Authorization: Bearer $(gcloud auth print-access-token)" "https://storage.s3nsapis.fr/v2/projects/my-project/locations/global/storageIntelligence?updateMask=edition_config"
-```
-
-
-#### 400: Invalid Argument - Empty Update Mask
-
-**Issue**: When you configure or manage Storage Intelligence for a resource, you
-might receive this error and the message `Empty UPDATE_MASK in the request.`
-
-**Solution**: `UPDATE_MASK` is the comma-separated list of field names that the
-request updates. The field names use the
-[`FieldMask`](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.FieldMask)
-format and are part of the
-[`intelligenceConfig`](/storage/docs/json_api/v1/intelligenceConfig)
-resource. To update the Storage Intelligence configuration of a resource, use a valid `UPDATE_MASK` in the request. An
-empty value is not supported.
-
-#### 400: Invalid Update Mask Path
-
-**Issue**: When you configure or manage Storage Intelligence for a resource, you
-might receive this error and the message `Invalid UPDATE_MASK paths.`
-
-**Solution**: If you use an invalid field name in the `UPDATE_MASK`, you get an
-error message. `UPDATE_MASK` is the comma-separated list of field names that the
-request updates. The field names use the
-[`FieldMask`](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.FieldMask)
-format and are part of the
-[`IntelligenceConfig`](/storage/docs/json_api/v1/intelligenceConfig) resource.
-To update the Storage Intelligence configuration of a resource, ensure
-that every field name listed in the `UPDATE_MASK` is a valid field within the
-`IntelligenceConfig` resource.
-
-#### 400: Field Is Not Editable
-
-**Issue**: When you configure or manage Storage Intelligence for a resource, you
-might receive this error and the message `Invalid UPDATE_MASK: UPDATE_TIME field is not editable.`
-
-**Solution**: `UPDATE_MASK` is the comma-separated list of field names that the
-request updates. The field names use the
-[`FieldMask`](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#google.protobuf.FieldMask)
-format and are part of the
-[`IntelligenceConfig`](/storage/docs/json_api/v1/intelligenceConfig) resource. If you try to update a field that is not editable, you get an error message. Remove the uneditable field from the `Update_Mask` and try again.
-
-#### 400: Invalid Value
-
-**Issue**: When you configure or manage Storage Intelligence for a resource, you
-might receive this error and the message `Invalid value at storage_intelligence.edition_config.`
-
-**Solution**: If you try to use an invalid value for the [`edition_config`](/storage/docs/storage-intelligence/overview#edition-configuration) field,
-you get an error message. The allowed values are `INHERIT`, `STANDARD`, and
-`DISABLED`. Review the value and try again.
-
-#### 400: Non-empty Filter
-
-**Issue**: When you update the Storage Intelligence configuration for a resource, you
-might receive this error and the message `Non-empty filter cannot be specified for INHERIT or DISABLED edition configuration.`
-
-**Solution**: When you update the Storage Intelligence [`edition_config`](/storage/docs/storage-intelligence/overview#edition-configuration) to `INHERIT` or `DISABLED`, you can't use any [bucket filters](/storage/docs/storage-intelligence/overview#bucket-filters) in the request. Remove the filters from the request and try again.
-
-#### 400: Empty Location Or Bucket Values In Filter
-
-**Issue**: When you update the Storage Intelligence configuration for a resource, you
-might receive this error and the message `Empty location or bucket values in filter.`
-
-**Solution**: When you update the Storage Intelligence configuration and use a [bucket
-filter](/storage/docs/storage-intelligence/overview#bucket-filters) in the request, an error occurs if the value of `location` or
-`bucket` is an empty string. Provide a valid value for `location` or `bucket` and
-try again.
+For solutions to common errors encountered when configuring or managing
+Storage Intelligence, Storage Insights, and Storage batch operations,
+see [Troubleshooting Storage Intelligence issues](/storage/docs/storage-intelligence/troubleshooting).
 
 ### 401: Unauthorized
 
@@ -806,7 +719,7 @@ For example, say jane@example.com has the Owner (`roles/owner`)
 basic role for a project named `my-example-project`, and the project's
 IAM policy grants the Storage Object Creator
 (`roles/storage.objectCreator`) role to the convenience value
-`projectOwner:my-example-project`. This means that jane@example.com has the
+`projectOwner:my-example-project`. Consequently, jane@example.com has the
 permissions associated with the Storage Object Creator role for buckets
 within `my-example-project`. If this grant gets removed, jane@example.com
 loses the permissions associated with the Storage Object Creator role.
@@ -824,11 +737,11 @@ find out whether an IAM Deny policy has been put in place.
 ### 403: Permission Denied
 
 **Issue**: Permission denied error when you configure or manage the
-[Storage Intelligence](/storage/docs/storage-intelligence/configure-and-manage-storage-intelligence) configuration for a resource.
+[Storage Intelligence](/storage/docs/storage-intelligence/troubleshooting) configuration for a resource.
 
 **Solution**: If you receive a permission denied error with a message similar to `permission
 storage.intelligenceConfigs.update` when you [configure and manage
-Storage Intelligence](/storage/docs/storage-intelligence/configure-and-manage-storage-intelligence) for a resource, see the permission section for the
+Storage Intelligence](/storage/docs/storage-intelligence/troubleshooting) for a resource, see the permission section for the
 operation you want to perform. To resolve this issue,
 grant the appropriate permissions. You can grant permissions in *any* of the following
 ways:
