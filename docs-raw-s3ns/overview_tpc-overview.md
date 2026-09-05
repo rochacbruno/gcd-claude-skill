@@ -1,7 +1,7 @@
 # Cloud de Confiance by S3NS overview
 
 Source: https://documentation.s3ns.fr/docs/overview/tpc-overview
-Last updated: 2026-08-26
+Last updated: 2026-09-04
 
 - 
 
@@ -291,5 +291,7 @@ and Google Cloud in [Key differences from
 Google Cloud](/docs/overview/tpc-key-differences).
 
 - Explore our available [products and services](https://documentation.s3ns.fr/products).
+
+- Learn more about Cloud de Confiance use cases in our [Solutions and examples](/docs/gcd-solutions/overview).
 
 - Find out how to [get started with Cloud de Confiance](/docs/get-started-tpc).

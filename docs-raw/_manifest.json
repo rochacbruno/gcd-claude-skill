@@ -212,14 +212,14 @@
   "/bigquery/docs/quickstarts/query-public-dataset-console": {
     "title": "Try BigQuery using the sandbox",
     "filename": "bigquery_quickstarts_query-public-dataset-console.md",
-    "size": 9648,
+    "size": 9725,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/query-public-dataset-console",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42625,
+    "size": 42626,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-08-31"
   },
@@ -247,9 +247,9 @@
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
     "filename": "bigquery_troubleshoot-quotas.md",
-    "size": 59551,
+    "size": 60477,
     "url": "https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/billing/docs": {
     "title": "Cloud Billing documentation",
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 508973,
+    "size": 487044,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-08-31"
   },
@@ -639,9 +639,16 @@
   "/docs/gcd-solutions/overview": {
     "title": "Solutions for Google Cloud Dedicated",
     "filename": "gcd-solutions_overview.md",
-    "size": 3269,
+    "size": 3963,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/overview",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
+  },
+  "/docs/gcd-solutions/sovereign-standby": {
+    "title": "\"Sovereign standby\" with multiple universes",
+    "filename": "gcd-solutions_sovereign-standby.md",
+    "size": 6469,
+    "url": "https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-standby",
+    "last_updated": "2026-09-04"
   },
   "/docs/gcd-solutions/tax-enforcement": {
     "title": "Tax anomaly detection with BigQuery ML and Gemma",
@@ -835,16 +842,16 @@
   "/docs/overview/tpc-overview": {
     "title": "Google Cloud Dedicated in Germany overview",
     "filename": "overview_tpc-overview.md",
-    "size": 9840,
+    "size": 9956,
     "url": "https://berlin.devsitetest.how/docs/overview/tpc-overview",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/docs/product-list": {
     "title": "Google Cloud products at a glance",
     "filename": "product-list.md",
-    "size": 13138,
+    "size": 16929,
     "url": "https://berlin.devsitetest.how/docs/product-list",
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-09-04"
   },
   "/docs/quotas": {
     "title": "Cloud Quotas documentation",
@@ -912,7 +919,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1943,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-09-05"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

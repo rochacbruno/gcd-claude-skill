@@ -1,7 +1,7 @@
 # Google Cloud products at a glance
 
 Source: https://berlin.devsitetest.how/docs/product-list
-Last updated: 2026-04-22
+Last updated: 2026-09-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/tpc-differences) for more details.
 
@@ -74,6 +74,7 @@ Documentation
 - [ Databases ](#databases)
 - [ Distributed, hybrid, and multicloud ](#distributed,-hybrid,-and-multicloud)
 - [ Industry solutions ](#industry-solutions)
+- [ Migration ](#migration)
 - [ Networking ](#networking)
 - [ Observability and monitoring ](#observability-and-monitoring)
 - [ Security ](#security)
@@ -163,6 +164,14 @@ A quick reference for Google Cloud products
 
 - 
 [
+Access Approval 
+Require explicit consent for data access 
+](/assured-workloads/access-approval/docs)
+
+
+
+- 
+[
 Cloud Billing 
 Billing & cost management tools 
 ](/billing/docs)
@@ -171,9 +180,25 @@ Billing & cost management tools
 
 - 
 [
+Cloud Hub 
+Centralized resource management platform 
+](/hub/docs)
+
+
+
+- 
+[
 Cloud Identity 
 Manage users, devices & apps 
 ](/identity/docs)
+
+
+
+- 
+[
+Cloud Marketplace 
+Deploy ready-to-use software solutions 
+](/marketplace/docs)
 
 
 
@@ -195,9 +220,9 @@ Kubernetes add-on to manage resources
 
 - 
 [
-Deployment Manager 
-Templated infrastructure deployment 
-](/deployment-manager/docs)
+gcloud CLI 
+Command-line tools for Google Cloud 
+](/sdk/gcloud)
 
 
 
@@ -262,6 +287,14 @@ Manage APIs & services in projects
 
 - 
 [
+Agent Platform Vision 
+Ingest, analyze & store video data 
+](/vision-ai/docs)
+
+
+
+- 
+[
 Cloud TPU 
 Hardware acceleration for ML 
 ](/tpu/docs)
@@ -294,6 +327,14 @@ Preconfigured VMs for deep learning
 
 - 
 [
+Dialogflow ES 
+Standard conversational AI builder 
+](/dialogflow/es/docs)
+
+
+
+- 
+[
 DocAI 
 Analyze, classify, search documents 
 ](/document-ai/docs)
@@ -305,6 +346,22 @@ Analyze, classify, search documents
 Enterprise Knowledge Graph 
 Consolidate & reconcile organizational knowledge 
 ](/enterprise-knowledge-graph/docs)
+
+
+
+- 
+[
+Gemini Enterprise Agent Platform 
+Build & manage autonomous AI agents 
+](/gemini-enterprise-agent-platform)
+
+
+
+- 
+[
+Live Stream API 
+Live video streaming & transcoding 
+](/livestream/docs)
 
 
 
@@ -334,6 +391,14 @@ Convert text to audio
 
 - 
 [
+Transcoder API 
+Convert video files for web playback 
+](/transcoder/docs)
+
+
+
+- 
+[
 Translation 
 Language detection & translation 
 ](/translate/docs)
@@ -342,25 +407,17 @@ Language detection & translation
 
 - 
 [
-Vertex AI 
-Managed platform for ML 
-](/vertex-ai/docs)
+Video Intelligence API 
+Extract metadata & insights from video 
+](/video-intelligence/docs)
 
 
 
 - 
 [
-Vertex AI Vision 
-Ingest, analyze & store video data 
-](/vision-ai/docs)
-
-
-
-- 
-[
-Vertex AI Workbench 
-Jupyter-based environment for data science 
-](/vertex-ai/docs/workbench/instances)
+Video Stitcher API 
+Dynamically insert ads into video 
+](/video-stitcher/docs)
 
 
 
@@ -401,6 +458,14 @@ Native API management platform
 
 - 
 [
+App Design Center 
+Tools for cloud application architecture 
+](/application-design-center/docs)
+
+
+
+- 
+[
 App Hub 
 View & understand app resources 
 ](/app-hub/docs)
@@ -425,6 +490,14 @@ Automated security scanning
 
 - 
 [
+Artifact Registry 
+Store & manage build artifacts & images 
+](/artifact-registry/docs)
+
+
+
+- 
+[
 Cloud Build 
 DevOps automation platform 
 ](/build/docs)
@@ -434,8 +507,8 @@ DevOps automation platform
 - 
 [
 Cloud Code 
-IntelliJ Google Cloud tools 
-](/code/docs/intellij)
+IDE extensions for cloud development 
+](/code/docs)
 
 
 
@@ -465,6 +538,14 @@ Browser-based terminal/CLI
 
 - 
 [
+Cloud Source Repositories 
+Host private Git repositories 
+](/source-repositories/docs)
+
+
+
+- 
+[
 Cloud Tasks 
 Asynchronous task execution 
 ](/tasks/docs)
@@ -489,6 +570,14 @@ Connect source control systems
 
 - 
 [
+Developer Device Platform 
+Remote device orchestration suite 
+](/developer-device-platform)
+
+
+
+- 
+[
 Eventarc 
 Asynchronous event delivery 
 ](/eventarc/docs)
@@ -497,25 +586,9 @@ Asynchronous event delivery
 
 - 
 [
-gcloud CLI 
-Google Cloud command-line tool 
-](/sdk/docs)
-
-
-
-- 
-[
 Integration Connectors 
 Enterprise application connectivity 
 ](/integration-connectors/docs)
-
-
-
-- 
-[
-Pub/Sub 
-Global real-time messaging 
-](/pubsub/docs)
 
 
 
@@ -580,9 +653,9 @@ Fully-managed blockchain nodes
 
 - 
 [
-Blockchain RPC 
-Read/write to multiple blockchains 
-](/blockchain-rpc/docs)
+Buildpacks 
+Transform source code to containers 
+](/docs/buildpacks)
 
 
 
@@ -639,7 +712,15 @@ View & forecast compute usage
 
 - 
 [
-Cluster toolkit 
+Cluster Director 
+Manage fleets of Kubernetes clusters 
+](/cluster-director/docs)
+
+
+
+- 
+[
+Cluster Toolkit 
 Deploy HPC, AI & ML workloads 
 ](/cluster-toolkit/docs)
 
@@ -655,25 +736,17 @@ VMs, GPUs, TPUs, disks
 
 - 
 [
-Migrate to Containers 
-Migrate VMs to Kubernetes Engine 
-](/migrate/containers/docs)
+Container-Optimized OS 
+OS built specifically for Docker tasks 
+](/container-optimized-os/docs)
 
 
 
 - 
 [
-Migrate to VMs 
-Migrate VMs to Compute Engine 
-](/migrate/virtual-machines/docs/5.0)
-
-
-
-- 
-[
-Migration Center 
-Accelerate end-to-end migration 
-](/migration-center/docs)
+Oracle on Google Cloud Compute 
+Run Oracle workloads on Google Cloud 
+](/oracle/compute)
 
 
 
@@ -746,6 +819,22 @@ Graphically manage data pipelines
 
 - 
 [
+Cortex Framework 
+Data foundation for enterprise analytics 
+](/cortex/docs)
+
+
+
+- 
+[
+Data Studio 
+Interactive dashboards & data reporting 
+](/data-studio)
+
+
+
+- 
+[
 Dataflow 
 Stream/batch data processing 
 ](/dataflow/docs)
@@ -757,6 +846,14 @@ Stream/batch data processing
 Dataform 
 ELT & SQL workflow tool 
 ](/dataform/docs)
+
+
+
+- 
+[
+Dataproc Metastore 
+Fully managed Apache Hive metastore 
+](/dataproc-metastore/docs)
 
 
 
@@ -802,9 +899,33 @@ Managed workflow orchestration service
 
 - 
 [
+Managed Service for Apache Kafka 
+Stream processing with Apache Kafka 
+](/managed-service-for-apache-kafka/docs)
+
+
+
+- 
+[
 Managed Service for Apache Spark 
-Managed Spark & Hadoop 
-](/dataproc/docs)
+Serverless analytics using Apache Spark 
+](/managed-spark/docs)
+
+
+
+- 
+[
+Manufacturing Data Engine 
+Analyze & contextualize factory data 
+](/manufacturing-data-engine/docs)
+
+
+
+- 
+[
+Pub/Sub 
+Global real-time messaging 
+](/pubsub/docs)
 
 
 
@@ -824,9 +945,17 @@ Managed Spark & Hadoop
 
 - 
 [
-AlloyDB for PostgreSQL 
-Scalable & performant PostgreSQL-compatible DB 
+AlloyDB 
+Scalable PostgreSQL-compatible database 
 ](/alloydb/docs)
+
+
+
+- 
+[
+AlloyDB Omni 
+Downloadable AlloyDB for run-anywhere 
+](/alloydb/omni/docs)
 
 
 
@@ -856,17 +985,33 @@ Migrate to Google Cloud databases
 
 - 
 [
-Firestore 
-Serverless NoSQL document DB 
-](/firestore/docs)
+Firestore in Datastore mode 
+Highly scalable NoSQL database 
+](/datastore/docs)
 
 
 
 - 
 [
-Memorystore for Memcached 
-Managed Memcached service 
-](/memorystore/docs/memcached)
+Firestore with MongoDB compatibility 
+Run MongoDB apps on scalable Firestore 
+](/firestore/mongodb-compatibility/docs)
+
+
+
+- 
+[
+Memorystore for Redis Cluster 
+Fully managed Redis Cluster service 
+](/memorystore/docs/cluster)
+
+
+
+- 
+[
+Memorystore for Valkey 
+Managed Valkey in-memory data store 
+](/memorystore/docs/valkey)
 
 
 
@@ -891,9 +1036,49 @@ Horizontally scalable relational DB
 
 - 
 [
+Cloud Location Finder 
+Identify optimal Google Cloud regions 
+](/location-finder/docs)
+
+
+
+- 
+[
+Config Controller 
+Manage resources via declarative models 
+](/kubernetes-engine/config-controller/docs)
+
+
+
+- 
+[
+Config Sync 
+Sync clusters from a source of truth 
+](/kubernetes-engine/config-sync/docs)
+
+
+
+- 
+[
 GKE Multi-Cloud 
 Multi-cloud cluster creation 
 ](/kubernetes-engine/multi-cloud/docs)
+
+
+
+- 
+[
+Policy Controller 
+Enforce compliance across K8s fleets 
+](/kubernetes-engine/policy-controller/docs)
+
+
+
+- 
+[
+Service Directory 
+Publish & discover services at scale 
+](/service-directory/docs)
 
 
 
@@ -905,6 +1090,14 @@ Multi-cloud cluster creation
 ## Industry solutions
 
 
+
+
+
+- 
+[
+AI Commerce Search 
+Personalized search for retail 
+](/retail/docs)
 
 
 
@@ -950,9 +1143,68 @@ Insights for communication service providers
 
 - 
 [
-Vertex AI Search for retail 
-Personalized search for retail 
-](/retail/docs)
+Vision API Product Search 
+Search product catalogs via images 
+](/vision/product-search/docs)
+
+
+
+
+
+
+
+
+## Migration
+
+
+
+
+
+- 
+[
+Dual Run 
+Parallel processing for migrations 
+](/mainframe-dual-run/docs)
+
+
+
+- 
+[
+Mainframe Assessment Tool 
+Assess mainframe migration readiness 
+](/mainframe-assessment-tool/docs)
+
+
+
+- 
+[
+Mainframe Connector 
+Connect mainframes with Google Cloud 
+](/mainframe-connector/docs)
+
+
+
+- 
+[
+Migrate to Containers 
+Migrate VMs to Kubernetes Engine 
+](/migrate/containers/docs)
+
+
+
+- 
+[
+Migrate to VMs 
+Migrate VMs to Compute Engine 
+](/migrate/virtual-machines/docs/5.0)
+
+
+
+- 
+[
+Migration Center 
+Accelerate end-to-end migration 
+](/migration-center/docs)
 
 
 
@@ -964,6 +1216,14 @@ Personalized search for retail
 ## Networking
 
 
+
+
+
+- 
+[
+Cloud Armor 
+DDoS protection & WAF 
+](/armor/docs)
 
 
 
@@ -985,7 +1245,15 @@ Programmable DNS serving
 
 - 
 [
-Cloud Intrusion Detection System (Cloud IDS) 
+Cloud Domains 
+Register & manage custom domain names 
+](/domains/docs)
+
+
+
+- 
+[
+Cloud IDS 
 Detect network-based threats 
 ](/intrusion-detection-system/docs)
 
@@ -1017,7 +1285,7 @@ Network address translation service
 
 - 
 [
-Cloud Next Generation Firewall (Cloud NGFW) 
+Cloud NGFW 
 Fully-distributed firewall service 
 ](/firewall/docs)
 
@@ -1049,9 +1317,9 @@ Virtual private network connection
 
 - 
 [
-Google Cloud Armor 
-DDoS protection & WAF 
-](/armor/docs)
+Data Transfer Essentials 
+Tools for moving data to Google Cloud 
+](/data-transfer-essentials/docs)
 
 
 
@@ -1065,7 +1333,7 @@ CDN for streaming & videos
 
 - 
 [
-Network Connectivity Center 
+Network Connectivity Center (NCC) 
 Connect VPC & on-prem 
 ](/network-connectivity/docs/network-connectivity-center)
 
@@ -1081,9 +1349,25 @@ Network monitoring & topology
 
 - 
 [
+Network Security Integration 
+Integrate 3rd-party security tools 
+](/network-security-integration/docs)
+
+
+
+- 
+[
 Network Service Tiers 
 Price versus performance tiering 
 ](/network-tiers/docs)
+
+
+
+- 
+[
+Secure Access Connect 
+Securely connect on-premises workloads 
+](/secure-access-connect/docs)
 
 
 
@@ -1215,6 +1499,22 @@ Get verified open-source packages
 
 - 
 [
+Assured Workloads 
+Regulated compliance environments 
+](/assured-workloads/docs)
+
+
+
+- 
+[
+Audit Manager 
+Centralized audit compliance tracking 
+](/audit-manager/docs)
+
+
+
+- 
+[
 Binary Authorization 
 Kubernetes deploy-time security 
 ](/binary-authorization/docs)
@@ -1223,7 +1523,7 @@ Kubernetes deploy-time security
 
 - 
 [
-Certificate Authority 
+CA Service 
 Create & manage private CAs 
 ](/certificate-authority-service/docs)
 
@@ -1263,17 +1563,9 @@ Hosted key management service
 
 - 
 [
-Confidential VM 
-Encrypt data in-use 
-](/confidential-computing/confidential-vm/docs)
-
-
-
-- 
-[
-Endpoint Verification 
-Access control for business devices 
-](/endpoint-verification/docs)
+Fraud Defense 
+Advanced bot & fraud detection 
+](/recaptcha/docs)
 
 
 
@@ -1303,17 +1595,17 @@ Identity-based app access
 
 - 
 [
-Policy Intelligence 
-Understand policies & usage 
-](/policy-intelligence/docs)
+Model Armor 
+Security & compliance validation for AI 
+](/model-armor)
 
 
 
 - 
 [
-reCAPTCHA 
-Advanced bot & fraud detection 
-](/recaptcha/docs)
+Policy Intelligence 
+Understand policies & usage 
+](/policy-intelligence/docs)
 
 
 
@@ -1359,6 +1651,30 @@ Identify cloud service disruptions
 
 - 
 [
+Sovereign Controls by Partners 
+External key mgmt & data sovereignty 
+](/sovereign-controls-by-partners/docs)
+
+
+
+- 
+[
+Spectrum Access System 
+Manage automated spectrum sharing 
+](/spectrum-access-system/docs)
+
+
+
+- 
+[
+Unified Maintenance 
+Central management of updates & patches 
+](/unified-maintenance/docs)
+
+
+
+- 
+[
 Web Risk 
 Check URLs for safety 
 ](/web-risk/docs)
@@ -1397,3 +1713,11 @@ Multi-class multi-region object storage
 Filestore 
 Managed network-attached storage 
 ](/filestore/docs)
+
+
+
+- 
+[
+NetApp Volumes 
+Fully managed NetApp ONTAP file storage 
+](/netapp/volumes/docs)

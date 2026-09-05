@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50881,
+    "size": 50882,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-08-26"
   },
@@ -226,9 +226,9 @@
   "/bigquery/docs/quickstarts/query-public-dataset-console": {
     "title": "Try BigQuery using the sandbox",
     "filename": "bigquery_quickstarts_query-public-dataset-console.md",
-    "size": 9574,
+    "size": 9651,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/query-public-dataset-console",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
@@ -261,9 +261,9 @@
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
     "filename": "bigquery_troubleshoot-quotas.md",
-    "size": 59442,
+    "size": 60368,
     "url": "https://documentation.s3ns.fr/bigquery/docs/troubleshoot-quotas",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/billing/docs": {
     "title": "Cloud Billing documentation",
@@ -513,7 +513,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13684,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-08-26"
   },
@@ -716,9 +716,16 @@
   "/docs/gcd-solutions/overview": {
     "title": "Solutions for Cloud de Confiance",
     "filename": "gcd-solutions_overview.md",
-    "size": 3422,
+    "size": 4102,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/overview",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
+  },
+  "/docs/gcd-solutions/sovereign-standby": {
+    "title": "\"Sovereign standby\" with multiple universes",
+    "filename": "gcd-solutions_sovereign-standby.md",
+    "size": 6430,
+    "url": "https://documentation.s3ns.fr/docs/gcd-solutions/sovereign-standby",
+    "last_updated": "2026-09-04"
   },
   "/docs/gcd-solutions/tax-enforcement": {
     "title": "Tax anomaly detection with BigQuery ML and Gemma",
@@ -905,16 +912,16 @@
   "/docs/overview/tpc-overview": {
     "title": "Cloud de Confiance by S3NS overview",
     "filename": "overview_tpc-overview.md",
-    "size": 9917,
+    "size": 10029,
     "url": "https://documentation.s3ns.fr/docs/overview/tpc-overview",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-04"
   },
   "/docs/product-list": {
     "title": "Google Cloud products at a glance",
     "filename": "product-list.md",
-    "size": 13139,
+    "size": 16930,
     "url": "https://documentation.s3ns.fr/docs/product-list",
-    "last_updated": "2026-04-22"
+    "last_updated": "2026-09-04"
   },
   "/docs/quotas": {
     "title": "Cloud Quotas documentation",
@@ -982,7 +989,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18880,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -2041,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-09-05"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

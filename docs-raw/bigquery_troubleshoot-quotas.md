@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-08-26
+Last updated: 2026-09-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -144,6 +144,7 @@ Guides
 
 - [ Troubleshoot quotas or limits that can't be increased ](#troubleshoot_quotas_or_limits_that_cant_be_increased)
 
+- [ Table snapshot limit exceeded ](#ts-table-snapshot-limit)
 - [ Maximum number of pending jobs errors ](#ts-max-pending-jobs)
 - [ Query queue limit errors ](#ts-query-queue-limit)
 - [ Shuffle size limit errors ](#ts-shuffle-limit-errors)
@@ -958,6 +959,33 @@ project ID in the request.
 
 You can't increase the following quotas or limits, but you can apply the
 suggested workarounds or best practices to mitigate them.
+
+### Table snapshot limit exceeded
+
+This error occurs when a BigQuery table exceeds the maximum number of
+table snapshots allowed within a 24-hour period. This is a table-level limit,
+which means that it applies to each individual table in your project.
+
+For more information about the limits on table operations per day, see [Standard
+tables](/bigquery/quotas#standard_tables).
+
+This limit [cannot be increased](/bigquery/quotas#table_snapshots).
+
+**Error message**
+
+
+```
+Your table exceeded quota for SNAPSHOT operations per table
+```
+
+
+#### Resolution
+
+To resolve this error, consider the following actions:
+
+- Reduce the number of snapshot operations performed on the affected table within a 24-hour window.
+
+- If reducing the snapshot frequency isn't an option, contact [Cloud Customer Care](/bigquery/docs/getting-support) or your technical account manager.
 
 ### Maximum number of pending jobs errors
 

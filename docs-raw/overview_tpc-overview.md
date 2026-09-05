@@ -1,7 +1,7 @@
 # Google Cloud Dedicated in Germany overview
 
 Source: https://berlin.devsitetest.how/docs/overview/tpc-overview
-Last updated: 2026-08-26
+Last updated: 2026-09-04
 
 - 
 
@@ -286,5 +286,7 @@ and Google Cloud in [Key differences from
 Google Cloud](/docs/overview/tpc-key-differences).
 
 - Explore our available [products and services](https://berlin.devsitetest.how/products).
+
+- Learn more about Google Cloud Dedicated use cases in our [Solutions and examples](/docs/gcd-solutions/overview).
 
 - Find out how to [get started with Google Cloud Dedicated](/docs/get-started-tpc).

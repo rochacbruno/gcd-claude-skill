@@ -1,7 +1,7 @@
 # Try BigQuery using the sandbox
 
 Source: https://berlin.devsitetest.how/bigquery/docs/quickstarts/query-public-dataset-console
-Last updated: 2026-08-26
+Last updated: 2026-09-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -276,9 +276,12 @@ The BigQuery sandbox is subject to the following limits:
 
 - All BigQuery [quotas and limits](/bigquery/quotas) apply.
 
-- You are granted the same free usage limits as the BigQuery
-[free tier](https://berlin.devsitetest.how/bigquery/pricing#free-tier), including 10 GB of active storage
-and 1 TB of processed query data each month.
+- You are granted a lifetime limit of 10 GiB of storage. This quota is not
+refunded upon data deletion.
+
+- You are granted the same free compute limit as the BigQuery
+[free tier](https://berlin.devsitetest.how/bigquery/pricing#free-usage-tier) of 1 TiB of
+processed query data each month.
 
 - All BigQuery [datasets](/bigquery/docs/datasets-intro) have a
 [default table expiration time](/bigquery/docs/updating-datasets#table-expiration),
