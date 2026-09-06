@@ -679,7 +679,7 @@ Creates and runs virtual machines on Cloud Platform.
 
 
 
-## Service: compute. googleapis. com
+## Service: compute. googleapis. com ** 
 
 
 
@@ -687,7 +687,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document
+### Discovery document 
 
 
 
@@ -5434,7 +5434,7 @@ The method `compute.v1.ProjectsService.ListXpnHosts` is not available in Google 
 | 
 
 `[moveDisk](/compute/docs/reference/rest/v1/projects/moveDisk) 
-**(deprecated)**` | 
+(deprecated)**` | 
 
 The method `compute.v1.ProjectsService.MoveDisk` is not available in Google Cloud Dedicated in Germany. | 
 |
