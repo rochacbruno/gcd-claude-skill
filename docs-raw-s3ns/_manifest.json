@@ -2,7 +2,7 @@
   "/access-context-manager/docs": {
     "title": "Access Context Manager documentation",
     "filename": "access-context-manager.md",
-    "size": 2974,
+    "size": 2973,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs",
     "last_updated": "2026-08-26"
   },
@@ -345,9 +345,9 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 515826,
+    "size": 522339,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-07"
   },
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
@@ -513,7 +513,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13684,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-08-26"
   },
@@ -975,7 +975,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2680,
+    "size": 2681,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-08-26"
   },
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-06"
+    "last_updated": "2026-09-07"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

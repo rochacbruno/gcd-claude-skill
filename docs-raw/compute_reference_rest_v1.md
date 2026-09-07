@@ -1,7 +1,7 @@
 # Compute Engine API
 
 Source: https://berlin.devsitetest.how/compute/docs/reference/rest/v1
-Last updated: 2026-08-31
+Last updated: 2026-09-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -413,6 +413,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: beta.crossSiteNetworks](#beta.crossSiteNetworks)
 
+- [REST Resource: beta.dhcpOptionsConfigs](#beta.dhcpOptionsConfigs)
+
 - [REST Resource: beta.diskSettings](#beta.diskSettings)
 
 - [REST Resource: beta.diskTypes](#beta.diskTypes)
@@ -432,6 +434,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: beta.globalAddresses](#beta.globalAddresses)
 
 - [REST Resource: beta.globalForwardingRules](#beta.globalForwardingRules)
+
+- [REST Resource: beta.globalFrontendSettings](#beta.globalFrontendSettings)
 
 - [REST Resource: beta.globalNetworkEndpointGroups](#beta.globalNetworkEndpointGroups)
 
@@ -519,6 +523,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: beta.organizationSecurityPolicies](#beta.organizationSecurityPolicies)
 
+- [REST Resource: beta.organizationSnapshotRecycleBinPolicy](#beta.organizationSnapshotRecycleBinPolicy)
+
 - [REST Resource: beta.packetMirrorings](#beta.packetMirrorings)
 
 - [REST Resource: beta.previewFeatures](#beta.previewFeatures)
@@ -530,6 +536,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: beta.publicAdvertisedPrefixes](#beta.publicAdvertisedPrefixes)
 
 - [REST Resource: beta.publicDelegatedPrefixes](#beta.publicDelegatedPrefixes)
+
+- [REST Resource: beta.recoverableSnapshots](#beta.recoverableSnapshots)
 
 - [REST Resource: beta.regionAutoscalers](#beta.regionAutoscalers)
 
@@ -630,6 +638,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: beta.serviceAttachments](#beta.serviceAttachments)
 
 - [REST Resource: beta.snapshotGroups](#beta.snapshotGroups)
+
+- [REST Resource: beta.snapshotRecycleBinPolicy](#beta.snapshotRecycleBinPolicy)
 
 - [REST Resource: beta.snapshotSettings](#beta.snapshotSettings)
 
@@ -8081,6 +8091,13 @@ The method `compute.v1.ReservationSlotsService.Get` is not available in Google C
 
 | 
 
+`[getHealth](/compute/docs/reference/rest/v1/reservationSlots/getHealth)` | 
+
+The method `compute.v1.ReservationSlotsService.GetHealth` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[getVersion](/compute/docs/reference/rest/v1/reservationSlots/getVersion)` | 
 
 The method `compute.v1.ReservationSlotsService.GetVersion` is not available in Google Cloud Dedicated in Germany. | 
@@ -11003,6 +11020,69 @@ The method `compute.beta.CrossSiteNetworksService.Patch` is not available in Goo
 
 
 
+## REST Resource: [beta.dhcpOptionsConfigs](/compute/docs/reference/rest/beta/dhcpOptionsConfigs)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[delete](/compute/docs/reference/rest/beta/dhcpOptionsConfigs/delete)` | 
+
+The method `compute.beta.DhcpOptionsConfigsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/dhcpOptionsConfigs/get)` | 
+
+The method `compute.beta.DhcpOptionsConfigsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/beta/dhcpOptionsConfigs/insert)` | 
+
+The method `compute.beta.DhcpOptionsConfigsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/beta/dhcpOptionsConfigs/list)` | 
+
+The method `compute.beta.DhcpOptionsConfigsService.List` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/beta/dhcpOptionsConfigs/patch)` | 
+
+The method `compute.beta.DhcpOptionsConfigsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[testIamPermissions](/compute/docs/reference/rest/beta/dhcpOptionsConfigs/testIamPermissions)` | 
+
+The method `compute.beta.DhcpOptionsConfigsService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
 ## REST Resource: [beta.diskSettings](/compute/docs/reference/rest/beta/diskSettings)
 
 
@@ -11843,6 +11923,41 @@ The method `compute.beta.GlobalForwardingRulesService.SetTarget` is not availabl
 `[testIamPermissions](/compute/docs/reference/rest/beta/globalForwardingRules/testIamPermissions)` | 
 
 The method `compute.beta.GlobalForwardingRulesService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
+## REST Resource: [beta.globalFrontendSettings](/compute/docs/reference/rest/beta/globalFrontendSettings)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/globalFrontendSettings/get)` | 
+
+The method `compute.beta.GlobalFrontendSettingsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/beta/globalFrontendSettings/patch)` | 
+
+The method `compute.beta.GlobalFrontendSettingsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -13192,6 +13307,13 @@ The method `compute.beta.InstancesService.GetShieldedVmIdentity` is not availabl
 
 | 
 
+`[getVmExtensionState](/compute/docs/reference/rest/beta/instances/getVmExtensionState)` | 
+
+The method `compute.beta.InstancesService.GetVmExtensionState` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[insert](/compute/docs/reference/rest/beta/instances/insert)` | 
 
 The method `compute.beta.InstancesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
@@ -13209,6 +13331,13 @@ The method `compute.beta.InstancesService.List` is not available in Google Cloud
 `[listReferrers](/compute/docs/reference/rest/beta/instances/listReferrers)` | 
 
 The method `compute.beta.InstancesService.ListReferrers` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[listVmExtensionStates](/compute/docs/reference/rest/beta/instances/listVmExtensionStates)` | 
+
+The method `compute.beta.InstancesService.ListVmExtensionStates` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -15337,6 +15466,41 @@ The method `compute.beta.OrganizationSecurityPoliciesService.RemoveRule` is not 
 
 
 
+## REST Resource: [beta.organizationSnapshotRecycleBinPolicy](/compute/docs/reference/rest/beta/organizationSnapshotRecycleBinPolicy)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/organizationSnapshotRecycleBinPolicy/get)` | 
+
+The method `compute.beta.OrganizationSnapshotRecycleBinPolicyService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/beta/organizationSnapshotRecycleBinPolicy/patch)` | 
+
+The method `compute.beta.OrganizationSnapshotRecycleBinPolicyService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
 ## REST Resource: [beta.packetMirrorings](/compute/docs/reference/rest/beta/packetMirrorings)
 
 
@@ -15745,6 +15909,76 @@ The method `compute.beta.PublicDelegatedPrefixesService.Patch` is not available 
 `[withdraw](/compute/docs/reference/rest/beta/publicDelegatedPrefixes/withdraw)` | 
 
 The method `compute.beta.PublicDelegatedPrefixesService.Withdraw` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
+## REST Resource: [beta.recoverableSnapshots](/compute/docs/reference/rest/beta/recoverableSnapshots)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[delete](/compute/docs/reference/rest/beta/recoverableSnapshots/delete)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/recoverableSnapshots/get)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[getIamPolicy](/compute/docs/reference/rest/beta/recoverableSnapshots/getIamPolicy)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/beta/recoverableSnapshots/list)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.List` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[recover](/compute/docs/reference/rest/beta/recoverableSnapshots/recover)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.Recover` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[setIamPolicy](/compute/docs/reference/rest/beta/recoverableSnapshots/setIamPolicy)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[testIamPermissions](/compute/docs/reference/rest/beta/recoverableSnapshots/testIamPermissions)` | 
+
+The method `compute.beta.RecoverableSnapshotsService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -18543,6 +18777,13 @@ The method `compute.beta.ReservationSlotsService.Get` is not available in Google
 
 | 
 
+`[getHealth](/compute/docs/reference/rest/beta/reservationSlots/getHealth)` | 
+
+The method `compute.beta.ReservationSlotsService.GetHealth` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[getVersion](/compute/docs/reference/rest/beta/reservationSlots/getVersion)` | 
 
 The method `compute.beta.ReservationSlotsService.GetVersion` is not available in Google Cloud Dedicated in Germany. | 
@@ -19449,6 +19690,41 @@ The method `compute.beta.SnapshotGroupsService.TestPermissions` is not available
 
 
 
+## REST Resource: [beta.snapshotRecycleBinPolicy](/compute/docs/reference/rest/beta/snapshotRecycleBinPolicy)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/beta/snapshotRecycleBinPolicy/get)` | 
+
+The method `compute.beta.SnapshotRecycleBinPolicyService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/beta/snapshotRecycleBinPolicy/patch)` | 
+
+The method `compute.beta.SnapshotRecycleBinPolicyService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
 ## REST Resource: [beta.snapshotSettings](/compute/docs/reference/rest/beta/snapshotSettings)
 
 
@@ -19519,6 +19795,13 @@ The method `compute.beta.SnapshotsService.Delete` is not available in Google Clo
 `[get](/compute/docs/reference/rest/beta/snapshots/get)` | 
 
 The method `compute.beta.SnapshotsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[getEffectiveRecycleBinRule](/compute/docs/reference/rest/beta/snapshots/getEffectiveRecycleBinRule)` | 
+
+The method `compute.beta.SnapshotsService.GetEffectiveRecycleBinRule` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 

@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42625,
+    "size": 42626,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-08-31"
   },
@@ -289,9 +289,9 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 487047,
+    "size": 493238,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-07"
   },
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
@@ -919,7 +919,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19064,
+    "size": 19066,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-08-26"
   },
@@ -1213,7 +1213,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4466,
+    "size": 4465,
     "url": "https://berlin.devsitetest.how/docs/terraform/install-configure-terraform",
     "last_updated": "2026-08-26"
   },
@@ -1950,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-06"
+    "last_updated": "2026-09-07"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
