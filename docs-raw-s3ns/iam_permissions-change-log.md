@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://documentation.s3ns.fr/iam/docs/permissions-change-log
-Last updated: 2026-09-02
+Last updated: 2026-09-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -128,6 +128,186 @@ Resources
 
 
 
+- On this page 
+- [ IAM changes for the week of 2026-09-01 ](#2026-09-01)
+- [ IAM changes for the week of 2026-08-25 ](#2026-08-25)
+- [ IAM changes for the week of 2026-08-18 ](#2026-08-18)
+- [ IAM changes for the week of 2026-08-11 ](#2026-08-11)
+- [ IAM changes for the week of 2026-08-04 ](#2026-08-04)
+- [ IAM changes for the week of 2026-07-28 ](#2026-07-28)
+- [ IAM changes for the week of 2026-07-21 ](#2026-07-21)
+- [ IAM changes for the week of 2026-07-14 ](#2026-07-14)
+- [ IAM changes for the week of 2026-07-07 ](#2026-07-07)
+- [ IAM changes for the week of 2026-06-30 ](#2026-06-30)
+- [ IAM changes for the week of 2026-06-23 ](#2026-06-23)
+- [ IAM changes for the week of 2026-06-09 ](#2026-06-09)
+- [ IAM changes for the week of 2026-06-02 ](#2026-06-02)
+- [ IAM changes for the week of 2026-05-27 ](#2026-05-27)
+- [ IAM changes for the week of 2026-05-19 ](#2026-05-20)
+- [ IAM changes for the week of 2026-04-21 ](#2026-04-21)
+- [ IAM changes for the week of 2026-04-07 ](#2026-04-07)
+- [ IAM changes for the week of 2026-03-17 ](#2026-03-17)
+- [ IAM changes for the week of 2026-03-10 ](#2026-03-10)
+- [ IAM changes for the week of 2026-03-03 ](#2026-03-03)
+- [ IAM changes for the week of 2026-02-24 ](#2026-02-24)
+- [ IAM changes for the week of 2026-02-10 ](#2026-02-10)
+- [ IAM changes as of 2026-02-07 ](#2026-02-07)
+- [ IAM changes as of 2026-01-31 ](#2026-01-31)
+- [ IAM changes as of 2026-01-24 ](#2026-01-24)
+- [ IAM changes as of 2026-01-17 ](#2026-01-17)
+- [ IAM changes as of 2025-12-20 ](#2025-12-20)
+- [ IAM changes as of 2025-11-22 ](#2025-11-22)
+- [ IAM changes as of 2025-11-07 ](#2025-11-07)
+- [ IAM changes as of 2025-10-24 ](#2025-10-24)
+- [ IAM changes as of 2025-10-17 ](#2025-10-17)
+- [ IAM changes as of 2025-10-10 ](#2025-10-10)
+- [ IAM Changes as of 2025-09-22 ](#2025-09-22)
+- [ IAM changes as of 2025-09-19 ](#2025-09-19)
+- [ IAM changes as of 2025-09-12 ](#2025-09-12)
+- [ IAM changes as of 2025-09-05 ](#2025-09-05)
+- [ IAM changes as of 2025-08-29 ](#2025-08-29)
+- [ Cloud IAM changes as of 2025-08-08 ](#2025-08-08)
+- [ IAM changes as of 2025-08-01 ](#2025-08-01)
+- [ IAM changes as of 2025-07-25 ](#2025-07-25)
+- [ IAM changes as of 2025-07-18 ](#2025-07-18)
+- [ IAM changes as of 2025-07-11 ](#2025-07-11)
+- [ IAM changes as of 2025-06-27 ](#2025-06-27)
+- [ IAM changes as of 2025-06-20 ](#2025-06-20)
+- [ IAM changes as of 2025-06-13 ](#2025-06-13)
+- [ IAM changes as of 2025-06-06 ](#2025-06-06)
+- [ IAM changes as of 2025-05-30 ](#2025-05-30)
+- [ IAM changes as of 2025-05-23 ](#2025-05-23)
+- [ IAM changes as of 2025-05-16 ](#2025-05-16)
+- [ IAM changes as of 2025-05-09 ](#2025-05-09)
+- [ IAM changes as of 2025-05-02 ](#2025-05-02)
+- [ IAM changes as of 2025-04-04 ](#2025-04-04)
+- [ IAM changes as of 2025-03-28 ](#2025-03-28)
+- [ IAM changes as of 2025-03-21 ](#2025-03-21)
+- [ IAM changes as of 2025-03-15 ](#2025-03-15)
+- [ IAM changes as of 2025-03-07 ](#2025-03-07)
+- [ IAM changes as of 2025-02-28 ](#2025-02-28)
+- [ IAM changes as of 2025-02-21 ](#2025-02-21)
+- [ IAM changes as of 2025-02-16 ](#2025-02-16)
+- [ IAM changes as of 2025-02-10 ](#2025-02-12)
+- [ IAM changes as of 2024-11-12 ](#2024-11-12)
+- [ IAM changes as of 2024-11-01 ](#2024-11-01)
+- [ IAM changes as of 2024-10-25 ](#2024-10-25)
+- [ IAM changes as of 2024-10-18 ](#2024-10-18)
+- [ IAM changes as of 2024-10-11 ](#2024-10-11)
+- [ IAM changes as of 2024-10-04 ](#2024-10-04)
+- [ IAM changes as of 2024-09-27 ](#2024-09-27)
+- [ IAM changes as of 2024-09-20 ](#2024-09-20)
+- [ IAM changes as of 2024-09-13 ](#2024-09-13)
+- [ IAM changes as of 2024-09-06 ](#2024-09-06)
+- [ IAM changes as of 2024-08-30 ](#2024-08-30)
+- [ IAM changes as of 2024-08-23 ](#2024-08-23)
+- [ IAM changes as of 2024-08-16 ](#2024-08-16)
+- [ IAM changes as of 2024-08-09 ](#2024-08-09)
+- [ IAM changes as of 2024-08-02 ](#2024-08-02)
+- [ IAM changes as of 2024-07-26 ](#2024-07-26)
+- [ IAM changes as of 2024-07-19 ](#2024-07-19)
+- [ IAM changes as of 2024-07-12 ](#2024-07-12)
+- [ IAM changes as of 2024-07-05 ](#2024-07-05)
+- [ IAM changes as of 2024-06-14 ](#2024-06-14)
+- [ IAM changes as of 2024-05-31 ](#2024-05-31)
+- [ IAM changes as of 2024-05-24 ](#2024-05-24)
+- [ IAM changes as of 2024-05-10 ](#2024-05-10)
+- [ IAM changes as of 2024-04-26 ](#2024-04-26)
+- [ IAM changes as of 2024-04-19 ](#2024-04-19)
+- [ IAM changes as of 2024-03-29 ](#2024-03-29)
+- [ IAM changes as of 2024-03-22 ](#2024-03-22)
+- [ IAM changes as of 2024-03-15 ](#2024-03-15)
+- [ IAM changes as of 2024-03-08 ](#2024-03-08)
+- [ IAM changes as of 2024-03-01 ](#2024-03-01)
+- [ IAM changes as of 2024-02-23 ](#2024-02-23)
+- [ IAM changes as of 2024-02-16 ](#2024-02-16)
+- [ IAM changes as of 2024-02-09 ](#2024-02-09)
+- [ IAM changes as of 2024-02-02 ](#2024-02-02)
+- [ IAM changes as of 2024-01-26 ](#2024-01-26)
+- [ IAM changes as of 2024-01-19 ](#2024-01-19)
+- [ IAM changes as of 2024-01-05 ](#2024-01-05)
+- [ IAM changes as of 2023-12-15 ](#2023-12-15)
+- [ IAM changes as of 2023-12-08 ](#2023-12-08)
+- [ IAM changes as of 2023-11-17 ](#2023-11-17)
+- [ IAM changes as of 2023-11-10 ](#2023-11-10)
+- [ IAM changes as of 2023-11-03 ](#2023-11-03)
+- [ IAM changes as of 2023-10-27 ](#2023-10-27)
+- [ IAM changes as of 2023-10-20 ](#2023-10-20)
+- [ IAM changes as of 2023-10-13 ](#2023-10-13)
+- [ IAM changes as of 2023-10-06 ](#2023-10-06)
+- [ IAM changes as of 2023-09-29 ](#2023-09-29)
+- [ IAM changes as of 2023-09-22 ](#2023-09-22)
+- [ IAM changes as of 2023-09-17 ](#2023-09-17)
+- [ IAM changes as of 2023-08-18 ](#2023-08-18)
+- [ IAM changes as of 2023-08-11 ](#2023-08-11)
+- [ IAM changes as of 2023-08-04 ](#2023-08-04)
+- [ IAM changes as of 2023-07-28 ](#2023-07-28)
+- [ IAM changes as of 2023-07-21 ](#2023-07-21)
+- [ IAM changes as of 2023-07-14 ](#2023-07-14)
+- [ IAM changes as of 2023-06-30 ](#2023-06-30)
+- [ IAM changes as of 2023-06-23 ](#2023-06-23)
+- [ IAM changes as of 2023-06-16 ](#2023-06-16)
+- [ IAM changes as of 2023-06-09 ](#2023-06-09)
+- [ Cloud IAM changes as of 2023-06-02 ](#2023-06-02)
+- [ Cloud IAM changes as of 2023-05-26 ](#2023-05-26)
+- [ Cloud IAM changes as of 2023-05-19 ](#2023-05-19)
+- [ Cloud IAM changes as of 2023-05-12 ](#2023-05-12)
+- [ Cloud IAM changes as of 2023-05-05 ](#2023-05-05)
+- [ Cloud IAM changes as of 2023-04-28 ](#2023-04-28)
+- [ Cloud IAM changes as of 2023-04-21 ](#2023-04-21)
+- [ Cloud IAM changes as of 2023-04-14 ](#2023-04-14)
+- [ Cloud IAM changes as of 2023-04-07 ](#2023-04-07)
+- [ Cloud IAM changes as of 2023-03-31 ](#2023-03-31)
+- [ Cloud IAM changes as of 2023-03-24 ](#2023-03-24)
+- [ Cloud IAM changes as of 2023-03-17 ](#2023-03-17)
+- [ Cloud IAM changes as of 2023-03-10 ](#2023-03-06)
+- [ Cloud IAM changes as of 2023-03-03 ](#2023-03-03)
+- [ Cloud IAM changes as of 2023-02-24 ](#2023-02-24)
+- [ Cloud IAM changes as of 2023-02-17 ](#2023-02-17)
+- [ Cloud IAM changes as of 2023-02-03 ](#2023-02-03)
+- [ Cloud IAM changes as of 2023-01-27 ](#2023-01-27)
+- [ Cloud IAM changes as of 2023-01-20 ](#2023-01-20)
+- [ Cloud IAM changes as of 2023-01-06 ](#2023-01-06)
+- [ Cloud IAM changes as of 2022-12-16 ](#2022-12-16)
+- [ Cloud IAM changes as of 2022-12-09 ](#2022-12-09)
+- [ Cloud IAM changes as of 2022-12-02 ](#2022-12-02)
+- [ Cloud IAM changes as of 2022-11-04 ](#2022-11-04)
+- [ Cloud IAM changes as of 2022-10-28 ](#2022-10-28)
+- [ Cloud IAM changes as of 2022-10-21 ](#2022-10-21)
+- [ Cloud IAM changes as of 2022-09-30 ](#2022-09-30)
+- [ Cloud IAM changes as of 2022-09-23 ](#2022-09-23)
+- [ Cloud IAM changes as of 2022-09-10 ](#2022-09-10)
+- [ Cloud IAM changes as of 2022-09-02 ](#2022-09-02)
+- [ Cloud IAM changes as of 2022-08-26 ](#2022-08-26)
+- [ Cloud IAM changes as of 2022-08-19 ](#2022-08-19)
+- [ Cloud IAM changes as of 2022-08-12 ](#2022-08-12)
+- [ Cloud IAM changes as of 2022-08-05 ](#2022-08-05)
+- [ Cloud IAM changes as of 2022-07-29 ](#2022-07-29)
+- [ Cloud IAM changes as of 2022-07-22 ](#2022-07-22)
+- [ Cloud IAM changes as of 2022-07-15 ](#2022-07-15)
+- [ Cloud IAM changes as of 2022-06-24 ](#2022-06-24)
+- [ Cloud IAM changes as of 2022-06-17 ](#2022-06-17)
+- [ Cloud IAM changes as of 2022-06-10 ](#2022-06-10)
+- [ Cloud IAM changes as of 2022-05-27 ](#2022-05-27)
+- [ Cloud IAM changes as of 2022-05-20 ](#2022-05-20)
+- [ Cloud IAM changes as of 2022-05-13 ](#2022-05-13)
+- [ Cloud IAM changes as of 2022-05-06 ](#2022-05-06)
+- [ Cloud IAM changes as of 2022-04-29 ](#2022-04-29)
+- [ Cloud IAM changes as of 2022-04-22 ](#2022-04-22)
+- [ Cloud IAM changes as of 2022-04-15 ](#2022-04-15)
+- [ Cloud IAM changes as of 2022-04-08 ](#2022-04-08)
+- [ Cloud IAM changes as of 2022-04-01 ](#2022-04-01)
+- [ Cloud IAM changes as of 2022-03-25 ](#2022-03-25)
+- [ Cloud IAM changes as of 2022-03-18 ](#2022-03-18)
+- [ Cloud IAM changes as of 2022-03-11 ](#2022-03-11)
+- [ Cloud IAM changes as of 2022-03-04 ](#2022-03-04)
+- [ Cloud IAM changes as of 2022-02-25 ](#2022-02-25)
+- [ Cloud IAM changes as of 2022-02-18 ](#2022-02-18)
+- [ Cloud IAM changes as of 2022-02-11 ](#2022-02-11)
+- [ Cloud IAM changes as of 2022-01-28 ](#2022-01-28)
+- [ Cloud IAM changes as of 2022-01-14 ](#2022-01-14)
+- 
+
 
 
 
@@ -169,6 +349,868 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-09-01 
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+Audit Manager
+| 
+
+
+
+The following permissions have been added to the Audit Manager Auditing Service Agent role (`roles/auditmanager.serviceAgent`):
+
+
+
+`cloudsql.instances.connect`
+
+
+
+| 
+|
+
+| 
+
+Gemini Enterprise for Customer Experience
+| 
+
+
+
+The following permissions have been added to the Customer Engagement Suite Service Agent role (`roles/ces.serviceAgent`):
+
+
+
+`discoveryengine.collections.get`
+
+
+
+| 
+|
+
+| 
+
+Cloud Security Compliance
+| 
+
+
+
+The following permissions have been added to the Cloud Security Compliance Service Agent role (`roles/cloudsecuritycompliance.serviceAgent`):
+
+
+
+`cloudsql.instances.connect`
+
+
+
+| 
+|
+
+| 
+
+Dataflow
+| 
+
+
+
+The following permissions have been added to the Cloud Dataflow Service Agent role (`roles/dataflow.serviceAgent`):
+
+
+
+`monitoring.alertPolicies.create`
+
+`monitoring.alertPolicies.delete`
+
+`monitoring.alertPolicies.update`
+
+
+
+| 
+|
+
+| 
+
+Data Studio
+| 
+
+
+
+The following permissions have been added to the Data Studio Managed Storage Service Agent role (`roles/datastudio.managedStorageServiceAgent`):
+
+
+
+`bigquery.tables.update`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Discovery Engine Admin role (`roles/discoveryengine.admin`):
+
+
+
+`discoveryengine.accounts.create`
+
+`discoveryengine.audioOverviews.create`
+
+`discoveryengine.audioOverviews.delete`
+
+`discoveryengine.audioOverviews.get`
+
+`discoveryengine.audioOverviews.getIceConfig`
+
+`discoveryengine.audioOverviews.sendSdpOffer`
+
+`discoveryengine.notebooks.create`
+
+`discoveryengine.notebooks.generateGuide`
+
+`discoveryengine.notebooks.get`
+
+`discoveryengine.notebooks.getAnalytics`
+
+`discoveryengine.notebooks.getIamPolicy`
+
+`discoveryengine.notebooks.interactSources`
+
+`discoveryengine.notebooks.list`
+
+`discoveryengine.notebooks.removeSelf`
+
+`discoveryengine.notebooks.setIamPolicy`
+
+`discoveryengine.notebooks.update`
+
+`discoveryengine.notes.create`
+
+`discoveryengine.notes.delete`
+
+`discoveryengine.notes.get`
+
+`discoveryengine.notes.update`
+
+`discoveryengine.sources.checkFreshness`
+
+`discoveryengine.sources.create`
+
+`discoveryengine.sources.delete`
+
+`discoveryengine.sources.generateDocumentGuide`
+
+`discoveryengine.sources.get`
+
+`discoveryengine.sources.refresh`
+
+`discoveryengine.sources.update`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Gemini Enterprise Admin role (`roles/discoveryengine.agentspaceAdmin`):
+
+
+
+`discoveryengine.accounts.create`
+
+`discoveryengine.audioOverviews.create`
+
+`discoveryengine.audioOverviews.delete`
+
+`discoveryengine.audioOverviews.get`
+
+`discoveryengine.audioOverviews.getIceConfig`
+
+`discoveryengine.audioOverviews.sendSdpOffer`
+
+`discoveryengine.notebooks.create`
+
+`discoveryengine.notebooks.generateGuide`
+
+`discoveryengine.notebooks.get`
+
+`discoveryengine.notebooks.getAnalytics`
+
+`discoveryengine.notebooks.getIamPolicy`
+
+`discoveryengine.notebooks.interactSources`
+
+`discoveryengine.notebooks.list`
+
+`discoveryengine.notebooks.removeSelf`
+
+`discoveryengine.notebooks.setIamPolicy`
+
+`discoveryengine.notebooks.update`
+
+`discoveryengine.notes.create`
+
+`discoveryengine.notes.delete`
+
+`discoveryengine.notes.get`
+
+`discoveryengine.notes.update`
+
+`discoveryengine.sources.checkFreshness`
+
+`discoveryengine.sources.create`
+
+`discoveryengine.sources.delete`
+
+`discoveryengine.sources.generateDocumentGuide`
+
+`discoveryengine.sources.get`
+
+`discoveryengine.sources.refresh`
+
+`discoveryengine.sources.update`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added to the Gemini Enterprise Restricted User role (`roles/discoveryengine.agentspaceRestrictedUser`):
+
+
+
+`discoveryengine.collections.get`
+
+`discoveryengine.dataStores.get`
+
+
+
+| 
+|
+
+| 
+
+Vector Search
+| 
+
+
+
+The following permissions have been added to the Vector Search Service Agent role (`roles/vectorsearch.serviceAgent`):
+
+
+
+`vectorsearch.collections.create`
+
+`vectorsearch.collections.delete`
+
+`vectorsearch.dataObjects.create`
+
+`vectorsearch.dataObjects.delete`
+
+`vectorsearch.dataObjects.import`
+
+`vectorsearch.dataObjects.update`
+
+`vectorsearch.indexes.delete`
+
+
+
+| 
+|
+
+| 
+
+App Topology
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`apptopology.devOpsDomainTopologies.generate`
+
+`apptopology.securityDomainTopologies.generate`
+
+`apptopology.sreDomainTopologies.generate`
+
+
+
+| 
+|
+
+| 
+
+Backup and Disaster Recovery
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`backupdr.resourceBackupConfigs.fetch`
+
+
+
+| 
+|
+
+| 
+
+Backup and Disaster Recovery
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`backupdr.resourceBackupConfigs.fetch`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`compute.instances.getVmExtensionState`
+
+`compute.instances.listVmExtensionStates`
+
+
+
+| 
+|
+
+| 
+
+Dataform
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`dataform.repositories.createTagBinding`
+
+`dataform.repositories.deleteTagBinding`
+
+`dataform.repositories.listEffectiveTags`
+
+`dataform.repositories.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Dataform
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`dataform.repositories.createTagBinding`
+
+`dataform.repositories.deleteTagBinding`
+
+`dataform.repositories.listEffectiveTags`
+
+`dataform.repositories.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Data Lineage API
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`datalineage.processes.markAsDeleted`
+
+
+
+| 
+|
+
+| 
+
+Data Lineage API
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`datalineage.processes.markAsDeleted`
+
+
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`dataplex.entryGroups.createTagBinding`
+
+`dataplex.entryGroups.deleteTagBinding`
+
+`dataplex.entryGroups.listEffectiveTags`
+
+`dataplex.entryGroups.listTagBindings`
+
+`dataplex.entryTypes.createTagBinding`
+
+`dataplex.entryTypes.deleteTagBinding`
+
+`dataplex.entryTypes.listEffectiveTags`
+
+`dataplex.entryTypes.listTagBindings`
+
+`dataplex.governanceRules.createTagBinding`
+
+`dataplex.governanceRules.deleteTagBinding`
+
+`dataplex.governanceRules.listEffectiveTags`
+
+`dataplex.governanceRules.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`dataplex.entryGroups.createTagBinding`
+
+`dataplex.entryGroups.deleteTagBinding`
+
+`dataplex.entryGroups.listEffectiveTags`
+
+`dataplex.entryGroups.listTagBindings`
+
+`dataplex.entryTypes.createTagBinding`
+
+`dataplex.entryTypes.deleteTagBinding`
+
+`dataplex.entryTypes.listEffectiveTags`
+
+`dataplex.entryTypes.listTagBindings`
+
+`dataplex.governanceRules.createTagBinding`
+
+`dataplex.governanceRules.deleteTagBinding`
+
+`dataplex.governanceRules.listEffectiveTags`
+
+`dataplex.governanceRules.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`discoveryengine.cmekConfigs.delete`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`discoveryengine.cmekConfigs.delete`
+
+
+
+| 
+|
+
+| 
+
+Notebooks
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`notebooks.instances.createTagBinding`
+
+`notebooks.instances.deleteTagBinding`
+
+`notebooks.instances.listEffectiveTags`
+
+`notebooks.instances.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Notebooks
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`notebooks.instances.createTagBinding`
+
+`notebooks.instances.deleteTagBinding`
+
+`notebooks.instances.listEffectiveTags`
+
+`notebooks.instances.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Oracle Database@Google Cloud
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`oracledatabase.dbSystems.update`
+
+`oracledatabase.exascaleDbStorageVaults.update`
+
+`oracledatabase.goldenGateConnectionAssignments.update`
+
+`oracledatabase.goldenGateConnections.update`
+
+`oracledatabase.goldenGateDeployments.update`
+
+`oracledatabase.odbNetworks.update`
+
+`oracledatabase.odbSubnets.update`
+
+
+
+| 
+|
+
+| 
+
+Oracle Database@Google Cloud
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`oracledatabase.dbSystems.update`
+
+`oracledatabase.exascaleDbStorageVaults.update`
+
+`oracledatabase.goldenGateConnectionAssignments.update`
+
+`oracledatabase.goldenGateConnections.update`
+
+`oracledatabase.goldenGateDeployments.update`
+
+`oracledatabase.odbNetworks.update`
+
+`oracledatabase.odbSubnets.update`
+
+
+
+| 
+|
+
+| 
+
+Oracle Database@Google Cloud
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`oracledatabase.dbSystems.update`
+
+`oracledatabase.exascaleDbStorageVaults.update`
+
+`oracledatabase.goldenGateConnectionAssignments.update`
+
+`oracledatabase.goldenGateConnections.update`
+
+`oracledatabase.goldenGateDeployments.update`
+
+`oracledatabase.odbNetworks.update`
+
+`oracledatabase.odbSubnets.update`
+
+
+
+| 
+|
+
+| 
+
+Memorystore for Redis
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`redis.clusters.createTagBinding`
+
+`redis.clusters.deleteTagBinding`
+
+`redis.clusters.listEffectiveTags`
+
+`redis.clusters.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Memorystore for Redis
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`redis.clusters.createTagBinding`
+
+`redis.clusters.deleteTagBinding`
+
+`redis.clusters.listEffectiveTags`
+
+`redis.clusters.listTagBindings`
+
+
+
+| 
+|
+
+| 
+
+Cloud Storage
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`storage.buckets.viewSecurityIntelligenceDetails`
+
+
+
+| 
+|
+
+| 
+
+Cloud Storage
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`storage.buckets.viewSecurityIntelligenceDetails`
+
+
+
+| 
+|
+
+| 
+
+Vector Search
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`vectorsearch.dataObjects.export`
+
+`vectorsearch.indexes.update`
+
+
+
+| 
+|
+
+| 
+
+Vector Search
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`vectorsearch.dataObjects.export`
+
+`vectorsearch.indexes.update`
+
+
+
+| 
+|
+
+| 
+
+Vector Search
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`vectorsearch.dataObjects.export`
+
+`vectorsearch.indexes.update`
+
+
+
+| 
+|
 
 
 

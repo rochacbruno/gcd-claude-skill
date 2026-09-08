@@ -1,7 +1,7 @@
 # Load CSV data from Cloud Storage
 
 Source: https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv
-Last updated: 2026-09-02
+Last updated: 2026-09-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Access Context Manager in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/access-context-manager/docs/tpc-differences
-Last updated: 2026-08-26
+Last updated: 2026-09-03
 
 - 
 
@@ -112,14 +112,6 @@ Guides
 
 
 
-
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Security and access control ](#security-differences)
-
-- [ Related guides ](#related-guides)
-- 
 
 
 

@@ -1,7 +1,7 @@
 # Create folders
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/creating-managing-folders
-Last updated: 2026-08-26
+Last updated: 2026-09-07
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -350,8 +350,7 @@ More
 
 
 
-Folders can be created in the UI using the "Manage Projects and
-Folders" section.
+To create folders, do the following:
 
 - 
 
@@ -362,14 +361,9 @@ page](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
 
 - 
 
-Make sure that your organization resource name is selected in the
-organization drop-down list at the top of the page.
-
-- 
-
 Click **Create folder**, and select one of the following options:
 
-- **Standard folder**: A standard
+- **Standard Google Cloud folder**: A standard
 [folder resource](/resource-manager/docs/cloud-platform-resource-hierarchy#folders).
 
 - **Compliant folder**: An
@@ -385,7 +379,7 @@ In the **Folder name** box, enter your new folder's name.
 
 - 
 
-Under **Destination**, click **Browse**, then select the organization
+Under **Parent resource**, click **Browse**, then select the organization
 resource or folder under which you want to create your new folder.
 
 - Click **Create**.

@@ -1,7 +1,7 @@
 # Create projects
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/creating-managing-projects
-Last updated: 2026-08-26
+Last updated: 2026-09-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -292,28 +292,26 @@ The remaining steps appear in the Google Cloud Dedicated console.
 
 
 
-- 
-On the **Select organization** drop-down list at the top of the page, select the
-organization resource in which you want to create a project. If you are a free trial user, skip this
-step, as this list does not appear.
-
-
-- Click **Create Project**.
+- Click **Create project**.
 
 
 - 
-In the **New Project** window that appears, enter a project name and select a
-billing account as applicable. A project name can contain only letters, numbers, single
-quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.
+In the **New project** window that appears, enter a project
+name and select a billing account as applicable. A project name can contain
+only letters, numbers, single quotes, hyphens, spaces, or exclamation
+points, and must be between 4 and 30 characters.
+
 
 
 - 
-Enter the parent organization or folder resource in the **Location** box. That resource
-will be the hierarchical parent of the new project.
+Enter the parent organization or folder resource in the **Parent
+resource** box. That resource will be the hierarchical parent of
+the new project.
 
 
 
-- When you're finished entering new project details, click **Create**.
+- When you're finished entering new project details, click
+**Create**.
 
 
 

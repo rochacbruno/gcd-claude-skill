@@ -1,7 +1,7 @@
 # Create and manage tags
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/tags/tags-creating-and-managing
-Last updated: 2026-08-26
+Last updated: 2026-09-07
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -198,7 +198,7 @@ specific tag.
 For more information about what tags are and how they work, see the
 [Tags overview](/resource-manager/docs/tags/tags-overview).
 
-### Required roles 
+### Required roles
 
 
 
@@ -338,7 +338,7 @@ on the organization
 - 
 Attach and remove tags from resources:
 [Tag User ](/iam/docs/roles-permissions/resourcemanager#resourcemanager.tagUser) (`roles/resourcemanager.tagUser`)
-on the tag value and the resources that you are attaching or removing the tag value to. To fetch resource semantics, the API utilizes the existing resource-specific ` .listEffectiveTags` IAM permission.
+on the tag value and target resource. To attach or remove tags on specific service resources, principals also need the resource-specific tag binding permissions (such as `compute.instances.createTagBinding` or `storage.buckets.createTagBinding`).
 
 
 
@@ -1254,6 +1254,43 @@ Resources inherit dynamic tag value bindings from their parent resources.
 
 Note that tag keys that support dynamic tag values *can't* also have predefined tag values.
 
+#### Create hierarchical tag values for Data Governance tags
+
+For tag keys created with `--purpose=DATA_GOVERNANCE`, you can define
+hierarchical tag values (child tag values parented by an existing tag value).
+
+To create a child tag value using gcloud CLI, specify the parent
+tag value ID or namespaced path in the `--parent` flag:
+
+
+```
+gcloud resource-manager tags values create CHILD_TAGVALUE_SHORTNAME \
+--parent= PARENT_TAGVALUE_ID_OR_PATH 
+```
+
+
+Where:
+
+- 
+
+` CHILD_TAGVALUE_SHORTNAME ` is the short name for your
+child tag value; for example: `confidential`.
+
+- 
+
+` PARENT_TAGVALUE_ID_OR_PATH ` is the ID or namespaced
+path of the parent tag value; for example: `tagValues/281478880204285` or
+`my-project/my_key/my_value`.
+
+To list child tag values under a parent tag value, use:
+
+
+```
+gcloud resource-manager tags values list \
+--parent= PARENT_TAGVALUE_ID_OR_PATH 
+```
+
+
 ### Retrieve tag values
 
 You can find information about a particular tag value using the permanent ID or
@@ -2053,18 +2090,25 @@ provide only the namespaced name because dynamic tag values don't have an ID.
 - 
 
 ` RESOURCE_ID ` is the full ID of the resource,
-including the API domain name to identify the type of resource
-(`//cloudresourcemanager.googleapis.com/`). For
-example, to attach a tag to `projects/7890123456`, the full ID would be:
-`//cloudresourcemanager.googleapis.com/projects/7890123456`.
+including the API domain name to identify the type of resource. For
+global resources like projects, use
+`//cloudresourcemanager.googleapis.com/projects/`
+` PROJECT_NUMBER `. For zonal resources like
+Compute Engine VM instances, use
+`//compute.googleapis.com/projects/`
+` PROJECT_NUMBER ``/zones/`
+` ZONE ``/instances/`
+` INSTANCE_ID `. For more information, see
+[Full Resource Names](/iam/docs/full-resource-names).
 
 - 
 
-` LOCATION ` is the location of your resource. If you
-are attaching a tag to a global resource, such as a folder or a project,
-you should omit this flag. If you are attaching a tag to a regional
-resource, such as a Compute Engine instance, you must specify the
-location; for example: `us-central1`.
+` LOCATION ` is the location of your resource. Omit
+this flag for global resources (such as folders or projects). For
+regional resources (such as subnetworks), specify the region (for
+example: `us-central1`). For zonal resources (such as
+Compute Engine VM instances), specify the zone (for example:
+`us-central1-a`).
 
 
 
@@ -2086,9 +2130,10 @@ POST https://cloudresourcemanager.googleapis.com/v3/tagBindings
 ```
 
 
-If you are attaching the tag to a regional resource, such as a
-Compute Engine instance, use the `tagBindings.create` method with
-the regional endpoint where your resource is located.
+If you are attaching the tag to a regional or zonal resource (such as a
+Compute Engine VM instance), use the `tagBindings.create` method
+with the regional or zonal endpoint where your resource is located (for
+example: `https://us-central1-a-cloudresourcemanager.googleapis.com/v3/tagBindings`).
 
 
 ```
@@ -2101,8 +2146,8 @@ Request JSON body:
 
 ```
 {
-"parent": RESOURCE_ID ,
-"tagValue": TAGVALUE_NAME ,
+"parent": " RESOURCE_ID ",
+"tagValue": " TAGVALUE_NAME "
 }
 ```
 
@@ -2112,8 +2157,8 @@ OR
 
 ```
 {
-"parent": RESOURCE_ID ,
-"tagValueNamespacedName": TAGVALUE_NAMESPACED_NAME ,
+"parent": " RESOURCE_ID ",
+"tagValueNamespacedName": " TAGVALUE_NAMESPACED_NAME "
 }
 ```
 
@@ -2123,10 +2168,16 @@ Where:
 - 
 
 ` RESOURCE_ID ` is the full ID of the resource,
-including the API domain name to identify the type of resource
-(`//cloudresourcemanager.googleapis.com/`). For
-example, to attach a tag to `projects/7890123456`, the full ID would be:
-`//cloudresourcemanager.googleapis.com/projects/7890123456`.
+including the API domain name to identify the type of resource. For
+global resources like projects, use
+`//cloudresourcemanager.googleapis.com/projects/`
+` PROJECT_NUMBER `. For zonal resources like
+Compute Engine VM instances, use
+`//compute.googleapis.com/projects/`
+` PROJECT_NUMBER ``/zones/`
+` ZONE ``/instances/`
+` INSTANCE_ID `. For more information, see
+[Full Resource Names](/iam/docs/full-resource-names).
 
 - 
 
@@ -2330,11 +2381,10 @@ example: `//cloudresourcemanager.googleapis.com/projects/7890123456`
 
 - 
 
-` LOCATION ` is the location of your resource. If you
-are listing the tags attached to a global resource, such as a folder or
-a project, you should omit this flag. If you are attaching a tag to a
-regional resource, such as a Compute Engine instance, you must
-specify the location; for example: `us-central1`.
+` LOCATION ` is the location of your resource. Omit
+this flag for global resources (such as folders or projects). For
+regional or zonal resources (such as a Compute Engine VM
+instance), specify the location; for example: `us-central1-a`.
 
 You should get a response similar to the following:
 
@@ -2411,9 +2461,10 @@ GET https://cloudresourcemanager.googleapis.com/v3/tagBindings
 ```
 
 
-If you want to list the tag bindings attached to a regional resource,
-such as Compute Engine instances, use the `tagBindings.list` method
-with the regional endpoint where your resource is located.
+If you want to list the tag bindings attached to a regional or zonal
+resource, such as a Compute Engine VM instance, use the
+`tagBindings.list` method with the regional or zonal endpoint where your
+resource is located.
 
 
 ```
@@ -2422,6 +2473,17 @@ GET https:// LOCATION -cloudresourcemanager.googleapis.com/v3/tagBindings
 {
 "parent": " RESOURCE_ID "
 }
+```
+
+
+To list effective tags (including inherited tags) attached to a resource,
+use the
+[effectiveTags.list](/resource-manager/reference/rest/v3/effectiveTags/list)
+method:
+
+
+```
+GET https://cloudresourcemanager.googleapis.com/v3/effectiveTags?parent= RESOURCE_ID 
 ```
 
 
@@ -3196,6 +3258,62 @@ always be conditionally granted to require the attachment of the
 resource.hasTagKey('123456789012/costCenter')
 ```
 
+
+To grant IAM roles conditionally using tags in the
+Google Cloud Dedicated console, do the following:
+
+- 
+
+Open the **IAM** page in the Google Cloud Dedicated console.
+
+[Open IAM page](https://console.cloud.berlin-build0.goog/iam-admin/iam) 
+
+- 
+
+Click **Grant Access** (or click edit 
+**Edit principal** next to an existing principal).
+
+- 
+
+In the **New principals** field, enter the principal's email address.
+
+- 
+
+In the **Select a role** drop-down menu, select the role you want to
+grant.
+
+- 
+
+Click **Add IAM condition**.
+
+- 
+
+In the **Title** field, enter a name for the condition.
+
+- 
+
+In the **Condition builder**, under **Condition type**, select
+**Resource** > **Tag**.
+
+- 
+
+Enter the namespaced tag key and tag value (or select from the list).
+
+- 
+
+Click **Save** to apply the condition, then click **Save** to save the
+role binding.
+
+For example, in an organization with multiple engineering teams (`team-a`
+and `team-b`), each team manages resources across `development` and
+`production` environments. You can attach `environment: development` to
+development folders and projects, and `environment: production` to
+production folders and projects. Then, grant `team-a` members the
+Developer role conditionally on resources tagged with
+`environment: development` (using
+`resource.matchTag('123456789012/environment', 'development')`), ensuring
+developers have write access in development while restricting production
+access to designated operations engineers.
 
 Now, any time a project is created, your developers must attach the `costCenter`
 tag to it before they're able to perform the actions in it that are granted by

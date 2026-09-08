@@ -1,7 +1,7 @@
 # Quickstart: Create your Cloud de Confiance by S3NS resource hierarchy
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/manage-google-cloud-resources
-Last updated: 2026-08-26
+Last updated: 2026-09-07
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -129,9 +129,9 @@ Guides
 - On this page ** 
 - [ Before you begin ](#before-you-begin)
 - [ View your resources ](#view_your_resources)
-- [ Create a Project resource ](#create_a_project_resource)
-- [ Create a Folder resource ](#create_a_folder_resource)
-- [ Grant IAM roles at the organization level ](#grant_roles_at_the_organization_level)
+- [ Create a project resource ](#create_a_project_resource)
+- [ Create a folder resource ](#create_a_folder_resource)
+- [ Grant IAM roles at the organization level ](#grant-iam-roles-org)
 - [ Create a billing account ](#create_a_billing_account)
 - [ Migrate existing billing accounts ](#migrate_existing_billing_accounts)
 - [ View billing accounts under the organization resource ](#view_billing_accounts_under_the_organization_resource)
@@ -192,10 +192,12 @@ Cloud de Confiance console and accept the terms and conditions.
 - 
 
 
-If you are an existing Cloud de Confiance user, the organization resource will
-be created for you when you create a new project or billing account. Any projects you created
-previously will be listed under "No organization", and this is normal. The organization
-resource will appear and the new project you created will be linked to it automatically.
+If you are an existing Cloud de Confiance user, the organization
+resource will be created for you when you create a new project or
+billing account (if one doesn't already exist). Any projects you
+created previously will be listed under "No organization", and this
+is normal. The organization resource will appear and the new project
+you created will be linked to it automatically.
 
 
 
@@ -221,6 +223,11 @@ For information about how to migrate pre-existing projects, see
 Each Google Workspace or Cloud Identity account is associated with exactly
 one organization resource. An organization resource is associated with exactly
 one domain, which is set when the organization resource is created.
+
+**Note:** Trying to register an organization with a domain that
+already exists will result in a "This domain is already in use" error. To
+resolve this, follow the steps in
+[Resolve "This domain is already in use"](https://support.google.com/a/answer/80610#zippy=%2Cthis-domain-is-already-in-use%2Cthis-domain-has-been-registered-and-is-in-the-process-of-ownership-verification).
 
 - 
 
@@ -353,21 +360,19 @@ Click **Save**.
 
 ## View your resources
 
-To view your Cloud de Confiance resources, follow the steps below:
+To view your Cloud de Confiance resources, follow these steps:
 
 - Go to the Cloud de Confiance console
 [Manage resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
 page.
 
 
-[Go to Manage Resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
+[Go to Manage resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
 
-- On the dropdown at the top of the page, select the organization resource
-for which you want to manage resources.
+- All projects and folders in the organization resource are listed on the
+page.
 
-- All Projects and Folders in the organization resource are listed on the page.
-
-## Create a Project resource
+## Create a project resource
 
 To create a new project, do the following:
 
@@ -389,37 +394,35 @@ The remaining steps appear in the Cloud de Confiance console.
 
 
 
-- 
-On the **Select organization** drop-down list at the top of the page, select the
-organization resource in which you want to create a project. If you are a free trial user, skip this
-step, as this list does not appear.
-
-
-- Click **Create Project**.
+- Click **Create project**.
 
 
 - 
-In the **New Project** window that appears, enter a project name and select a
-billing account as applicable. A project name can contain only letters, numbers, single
-quotes, hyphens, spaces, or exclamation points, and must be between 4 and 30 characters.
+In the **New project** window that appears, enter a project
+name and select a billing account as applicable. A project name can contain
+only letters, numbers, single quotes, hyphens, spaces, or exclamation
+points, and must be between 4 and 30 characters.
+
 
 
 - 
-Enter the parent organization or folder resource in the **Location** box. That resource
-will be the hierarchical parent of the new project.
+Enter the parent organization or folder resource in the **Parent
+resource** box. That resource will be the hierarchical parent of
+the new project.
 
 
 
-- When you're finished entering new project details, click **Create**.
+- When you're finished entering new project details, click
+**Create**.
 
-Once you have created your first Project, your organization resource will be
+Once you have created your first project, your organization resource will be
 provisioned automatically.
 
-## Create a Folder resource
+## Create a folder resource
 
-Once you have an organization resource, you can create Folder resources and
-begin to organize your resource hierarchy. To create a Folder in your
-organization resource, follow the steps below:
+Once you have an organization resource, you can create folder resources and
+begin to organize your resource hierarchy. To create a folder in your
+organization resource, follow these steps:
 
 - Go to the
 Cloud de Confiance console
@@ -427,39 +430,37 @@ Cloud de Confiance console
 page.
 
 
-[Go to Manage Resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
+[Go to Manage resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
 
-- On the dropdown at the top of the page, select the organization resource
-for which you want to create a Folder resource.
+- Click **Create folder**, and select one of the following options:
 
-- Click **Create Folder**.
+- **Standard Google Cloud folder**: A standard
+[folder resource](/resource-manager/docs/cloud-platform-resource-hierarchy#folders).
 
-- In the **Create Folder** window that appears, enter a Folder name.
+- **Compliant folder**: An
+[Assured Workloads folder](/assured-workloads/docs/key-concepts#folders),
+which provides additional regulatory, regional, or sovereign controls
+for Cloud de Confiance by S3NS resources. Selecting this option will take you to
+Assured Workloads to
+[create a folder](/assured-workloads/docs/create-folder).
 
-- If you want to create the Folder resource inside a Folder that already
-exists, enter the parent Folder name in the **Destination** box.
+- In the **Folder name** box, enter your new folder's name.
 
-- When you're finished entering new Folder details, click **Create**.
+- Under **Parent resource**, click **Browse**, then select the organization
+resource or folder under which you want to create your new folder.
+
+- When you're finished entering new folder details, click **Create**.
 
 ## Grant IAM roles at the organization level
 
-To grant organization-level roles, follow the steps below:
+To grant organization-level roles, follow these steps:
 
-- 
-
-Go to the Cloud de Confiance console
+- Go to the Cloud de Confiance console
 [IAM & admin](https://console.cloud.s3nscloud.fr/iam-admin/iam/)
 page:
 
 
 [Go to IAM & Admin](https://console.cloud.s3nscloud.fr/iam-admin/iam/)
-
-- 
-
-Click **Select**, then use the drop-down to select the organization resource for
-which you want to manage IAM permissions.
-
-- In the list of resources that appears, click the name of the organization resource.
 
 - The **IAM** page that appears shows the following details:
 
@@ -472,7 +473,7 @@ organization resource, including your account and domain.
 under **Role(s)**.
 
 - Next to the domain account, you should see **Project Creator** under
-**Roles(s)**.
+**Role(s)**.
 
 - If you see **Multiple** under **Role(s)**, the account has more than
 one role. Click the drop-down to see what roles a principal has.
@@ -485,7 +486,7 @@ one role. Click the drop-down to see what roles a principal has.
 - To add a new principal, click **Add** at the top of the page. In the **Add
 principals** dialog that appears:
 
-- Enter an email address in the **Principals** box.
+- Enter an email address in the **Principals** field.
 
 - Under **Roles**, select each role you want the principal to have.
 
@@ -499,14 +500,11 @@ selected.
 - Go to the Cloud de Confiance console [Billing](https://console.cloud.s3nscloud.fr/billing) page:
 
 
-[GO TO THE BILLING PAGE](https://console.cloud.s3nscloud.fr/billing)
-
-- In the drop-down at the top of the page, select the organization resource
-for which you want to add a billing account.
+[Go to the Billing page](https://console.cloud.s3nscloud.fr/billing)
 
 - Click **Create account**.
 
-- On the **Create a new billing account** window that appears, enter the
+- In the **Create a new billing account** dialog that appears, enter the
 appropriate details, including a billing account name and your billing
 information.
 
@@ -580,15 +578,12 @@ migrate the Cloud Billing account.
 
 ## View billing accounts under the organization resource
 
-To view billing accounts under an organization resource, follow the steps below:
+To view billing accounts under an organization resource, follow these steps:
 
 - Go to the Cloud de Confiance console [Billing](https://console.cloud.s3nscloud.fr/billing) page:
 
 
-[GO TO THE BILLING PAGE](https://console.cloud.s3nscloud.fr/billing)
-
-- In the drop-down at the top of the page, select the organization resource
-for which you want to view billing accounts.
+[Go to the Billing page](https://console.cloud.s3nscloud.fr/billing)
 
 All billing accounts for the organization resource are listed on the page.
 
@@ -602,7 +597,7 @@ All billing accounts for the organization resource are listed on the page.
 
 
 
-To delete the Project you just created for this quickstart:
+To delete the project you created for this quickstart:
 
 - 
 
@@ -610,18 +605,22 @@ Go to the Cloud de Confiance console
 [Manage resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
 page.
 
-[Go to Manage Resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
+[Go to Manage resources](https://console.cloud.s3nscloud.fr/cloud-resource-manager)
 
-- In the drop-down at the top of the page, select the organization resource
-in which you want to delete Project resources.
+- 
 
-- In the list of Project resources that appears, select the Project that you
-want to delete, then click **Delete**.
+In the list of resources, select the project that you want to delete.
 
-- On the **Shut down project** dialog that appears, enter the Project ID,
-then click **Shut down**.
+- 
 
-The Project resources you selected are deleted and all billing and traffic
+Click **Delete**.
+
+- 
+
+In the **Shut down project** dialog that appears, enter the project ID,
+and then click **Shut down**.
+
+The project resources you selected are deleted and all billing and traffic
 serving stops.
 
 
@@ -636,7 +635,7 @@ serving stops.
 - Try
 [Migrating existing projects into the organization resource](/resource-manager/docs/migrating-projects-billing).
 
-- You don't have to move all your Project resources at the same time.
+- You don't have to move all your project resources at the same time.
 
-- It's best to start by moving a test Project first, and then move the rest
-of the Projects later.
+- It's best to start by moving a test project first, and then move the rest
+of the projects later.
