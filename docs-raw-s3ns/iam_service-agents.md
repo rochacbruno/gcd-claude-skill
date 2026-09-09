@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://documentation.s3ns.fr/iam/docs/service-agents
-Last updated: 2026-09-03
+Last updated: 2026-09-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1215,6 +1215,49 @@ Service agent for `assuredoss.googleapis.com`.
 
 
 `service-org- ORGANIZATION_NUMBER @gcp-sa-assuredoss.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### Assured Workloads Monitoring Service Agent
+
+Service agent for `assuredworkloads.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-dbmonitoring.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+
+
+[Assured Workloads Monitoring Service Agent](/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.monitoringServiceAgent)
+
+(`roles/assuredworkloads.monitoringServiceAgent`)
+
+
+
+
+Granted on the project.
+
+
+| 
+|
+
+| 
+
+
+#### Assured Workloads Monitoring Service Agent
+
+Service agent for `assuredworkloads.googleapis.com`. 
+
+
+`service-folder- FOLDER_NUMBER @gcp-sa-dbmonitoring.s3ns-system.iam.gserviceaccount.com`
 
 | 
 

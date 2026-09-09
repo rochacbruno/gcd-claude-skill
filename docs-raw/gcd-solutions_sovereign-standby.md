@@ -1,7 +1,7 @@
 # "Sovereign standby" with multiple universes
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-standby
-Last updated: 2026-09-04
+Last updated: 2026-09-08
 
 - 
 
@@ -102,9 +102,9 @@ environment is maintained on Google Cloud Dedicated in Germany.
 
 If primary global cloud connectivity is severed,
 organizations can invoke a planned failover protocol. All live
-production traffic can be diverted to Google Cloud Dedicated in Germany, enabling core
-banking operations to run isolated without losing data or dropping
-customer sessions.
+production traffic can be diverted to Google Cloud Dedicated in Germany, enabling core banking
+operations to run in isolation to avoid data loss, and ensuring continued production
+access.
 
 You can deploy this example by following the accompanying [reference
 implementation](#reference_implementation) with Terraform, with a choice

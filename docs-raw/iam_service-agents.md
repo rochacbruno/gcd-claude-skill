@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-09-03
+Last updated: 2026-09-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1215,6 +1215,49 @@ Service agent for `assuredoss.googleapis.com`.
 
 
 `service-org- ORGANIZATION_NUMBER @gcp-sa-assuredoss.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### Assured Workloads Monitoring Service Agent
+
+Service agent for `assuredworkloads.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-dbmonitoring.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+
+
+[Assured Workloads Monitoring Service Agent](/iam/docs/roles-permissions/assuredworkloads#assuredworkloads.monitoringServiceAgent)
+
+(`roles/assuredworkloads.monitoringServiceAgent`)
+
+
+
+
+Granted on the project.
+
+
+| 
+|
+
+| 
+
+
+#### Assured Workloads Monitoring Service Agent
+
+Service agent for `assuredworkloads.googleapis.com`. 
+
+
+`service-folder- FOLDER_NUMBER @gcp-sa-dbmonitoring.eu0-system.iam.gserviceaccount.com`
 
 | 
 

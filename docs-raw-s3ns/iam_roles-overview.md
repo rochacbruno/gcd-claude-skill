@@ -1,7 +1,7 @@
-# Roles and permissions
+# Roles overview
 
 Source: https://documentation.s3ns.fr/iam/docs/roles-overview
-Last updated: 2026-09-03
+Last updated: 2026-09-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -121,7 +121,7 @@ Guides
 
 
 
-# Roles and permissions 
+# Roles overview 
 
 
 

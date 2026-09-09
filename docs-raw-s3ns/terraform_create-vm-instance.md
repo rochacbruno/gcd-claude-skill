@@ -1,7 +1,7 @@
 # Quickstart: Create a Compute Engine VM instance using Terraform
 
 Source: https://documentation.s3ns.fr/docs/terraform/create-vm-instance
-Last updated: 2026-09-03
+Last updated: 2026-09-08
 
 - 
 
@@ -73,8 +73,8 @@ manage Cloud de Confiance infrastructure.
 
 - 
 
-To use an online terminal with the gcloud CLI and Terraform
-already set up, activate Cloud Shell:
+To use an online terminal with the gcloud CLI already set up,
+activate Cloud Shell:
 
 
 
@@ -91,6 +91,11 @@ Activate Cloud Shell on this page
 At the bottom of this page, a Cloud Shell session starts and
 displays a command-line prompt. It can take a few seconds for the session to
 initialize.
+
+- 
+
+To install the Terraform CLI, follow the
+[HashiCorp instructions](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli).
 
 - 
 

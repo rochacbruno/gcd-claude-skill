@@ -191,7 +191,7 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72148,
+    "size": 72157,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-09-03"
   },
@@ -646,9 +646,9 @@
   "/docs/gcd-solutions/sovereign-standby": {
     "title": "\"Sovereign standby\" with multiple universes",
     "filename": "gcd-solutions_sovereign-standby.md",
-    "size": 6469,
+    "size": 6484,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-standby",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-09-08"
   },
   "/docs/gcd-solutions/tax-enforcement": {
     "title": "Tax anomaly detection with BigQuery ML and Gemma",
@@ -1178,9 +1178,9 @@
   "/docs/terraform/create-vm-instance": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_create-vm-instance.md",
-    "size": 8232,
+    "size": 8371,
     "url": "https://berlin.devsitetest.how/docs/terraform/create-vm-instance",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/docs/terraform/deploy-flask-web-server": {
     "title": "Deploy a basic Flask web server by using Terraform",
@@ -1192,9 +1192,9 @@
   "/docs/terraform/get-started-with-terraform": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_get-started-with-terraform.md",
-    "size": 8240,
+    "size": 8379,
     "url": "https://berlin.devsitetest.how/docs/terraform/get-started-with-terraform",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/docs/terraform/getting-support": {
     "title": "Get support for Terraform issues",
@@ -1213,9 +1213,9 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4466,
+    "size": 4845,
     "url": "https://berlin.devsitetest.how/docs/terraform/install-configure-terraform",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/docs/terraform/maturity": {
     "title": "Terraform on Google Cloud Dedicated maturity model",
@@ -1339,7 +1339,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91649,
+    "size": 91505,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-09-03"
   },
@@ -1372,11 +1372,11 @@
     "last_updated": "2026-09-03"
   },
   "/iam/docs/roles-overview": {
-    "title": "Roles and permissions",
+    "title": "Roles overview",
     "filename": "iam_roles-overview.md",
-    "size": 21853,
+    "size": 21839,
     "url": "https://berlin.devsitetest.how/iam/docs/roles-overview",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/iam/docs/service-accounts-create": {
     "title": "Create service accounts",
@@ -1388,9 +1388,9 @@
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
-    "size": 108094,
+    "size": 108725,
     "url": "https://berlin.devsitetest.how/iam/docs/service-agents",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Google Cloud Dedicated versus Google Cloud",
@@ -1514,9 +1514,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1396812,
+    "size": 1408423,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-09-02"
+    "last_updated": "2026-09-08"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
@@ -1943,7 +1943,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-08"
+    "last_updated": "2026-09-09"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

@@ -51,7 +51,7 @@
   "/access-context-manager/docs/tpc-differences": {
     "title": "Access Context Manager in Cloud de Confiance versus Google Cloud",
     "filename": "access-context-manager_tpc-differences.md",
-    "size": 3690,
+    "size": 3847,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs/tpc-differences",
     "last_updated": "2026-09-03"
   },
@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50881,
+    "size": 50882,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-09-03"
   },
@@ -205,7 +205,7 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 71874,
+    "size": 71883,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
     "last_updated": "2026-09-03"
   },
@@ -723,9 +723,9 @@
   "/docs/gcd-solutions/sovereign-standby": {
     "title": "\"Sovereign standby\" with multiple universes",
     "filename": "gcd-solutions_sovereign-standby.md",
-    "size": 6430,
+    "size": 6445,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/sovereign-standby",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-09-08"
   },
   "/docs/gcd-solutions/tax-enforcement": {
     "title": "Tax anomaly detection with BigQuery ML and Gemma",
@@ -975,7 +975,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-09-03"
   },
@@ -1248,9 +1248,9 @@
   "/docs/terraform/create-vm-instance": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_create-vm-instance.md",
-    "size": 8173,
+    "size": 8312,
     "url": "https://documentation.s3ns.fr/docs/terraform/create-vm-instance",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/docs/terraform/deploy-flask-web-server": {
     "title": "Deploy a basic Flask web server by using Terraform",
@@ -1262,9 +1262,9 @@
   "/docs/terraform/get-started-with-terraform": {
     "title": "Quickstart: Create a Compute Engine VM instance using Terraform",
     "filename": "terraform_get-started-with-terraform.md",
-    "size": 8181,
+    "size": 8320,
     "url": "https://documentation.s3ns.fr/docs/terraform/get-started-with-terraform",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/docs/terraform/getting-support": {
     "title": "Get support for Terraform issues",
@@ -1283,9 +1283,9 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4399,
+    "size": 4778,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/docs/terraform/maturity": {
     "title": "Terraform on Cloud de Confiance maturity model",
@@ -1409,7 +1409,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91280,
+    "size": 91136,
     "url": "https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-09-03"
   },
@@ -1423,7 +1423,7 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2128531,
+    "size": 2119440,
     "url": "https://documentation.s3ns.fr/iam/docs/permissions-change-log",
     "last_updated": "2026-09-03"
   },
@@ -1442,11 +1442,11 @@
     "last_updated": "2026-09-03"
   },
   "/iam/docs/roles-overview": {
-    "title": "Roles and permissions",
+    "title": "Roles overview",
     "filename": "iam_roles-overview.md",
-    "size": 21674,
+    "size": 21660,
     "url": "https://documentation.s3ns.fr/iam/docs/roles-overview",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/iam/docs/service-accounts-create": {
     "title": "Create service accounts",
@@ -1458,9 +1458,9 @@
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
-    "size": 108386,
+    "size": 109019,
     "url": "https://documentation.s3ns.fr/iam/docs/service-agents",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-08"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Cloud de Confiance versus Google Cloud",
@@ -1584,9 +1584,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1395540,
+    "size": 1407090,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-09-02"
+    "last_updated": "2026-09-08"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
@@ -2041,7 +2041,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-08"
+    "last_updated": "2026-09-09"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
