@@ -1,7 +1,7 @@
 # Artifact Registry in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/artifact-registry/docs/tpc-differences
-Last updated: 2026-09-03
+Last updated: 2026-09-09
 
 - 
 
@@ -116,6 +116,7 @@ Guides
 - On this page 
 - [ Key differences ](#key-differences)
 
+- [ Repository formats and modes ](#repository-formats)
 - [ Workflows and tools ](#workflows-tools)
 - [ Integrations ](#integrations-differences)
 - [ Security and access control ](#security-differences)
@@ -165,17 +166,15 @@ available in Cloud de Confiance by S3NS:
 
 
 
+- Apt
+
 - Docker
 
-- Apt
+- NPM
 
 - Yum
 
 
-
-
-- 
-Only standard mode repositories are available in Cloud de Confiance by S3NS.
 
 
 - 
@@ -209,6 +208,48 @@ Cloud de Confiance.
 
 
 
+### Repository formats and modes
+
+
+
+| 
+**Format** | 
+**Standard** | 
+**Remote** | 
+**Virtual** | 
+|
+
+
+| 
+Apt | 
+Yes | 
+No | 
+No | 
+|
+
+| 
+Docker | 
+Yes | 
+Yes | 
+Yes | 
+|
+
+| 
+NPM | 
+Yes | 
+Yes | 
+Yes | 
+|
+
+| 
+Yum | 
+Yes | 
+No | 
+No | 
+|
+
+
+
 ### Workflows and tools
 
 
@@ -223,19 +264,16 @@ available:
 
 
 
+- Apt
+
 - Docker
 
-- Apt
+- NPM
 
 - Yum
 
 
 | 
-|
-
-| 
-**Repository modes** | 
-Only standard mode Artifact Registry repositories are available. | 
 |
 
 | 

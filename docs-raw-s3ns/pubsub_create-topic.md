@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://documentation.s3ns.fr/pubsub/docs/create-topic
-Last updated: 2026-08-26
+Last updated: 2026-09-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -1086,7 +1086,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # topic_id = "your-topic-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 topic_admin = pubsub . [ topic_admin ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html)
 
 topic = topic_admin . create_topic name : pubsub . topic_path ( topic_id ) 

@@ -142,9 +142,9 @@
   "/artifact-registry/docs/tpc-differences": {
     "title": "Artifact Registry in Google Cloud Dedicated versus Google Cloud",
     "filename": "artifact-registry_tpc-differences.md",
-    "size": 4489,
+    "size": 4611,
     "url": "https://berlin.devsitetest.how/artifact-registry/docs/tpc-differences",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-09"
   },
   "/bigquery/docs": {
     "title": "BigQuery documentation",
@@ -228,7 +228,7 @@
     "filename": "bigquery_release-notes.md",
     "size": 1818,
     "url": "https://berlin.devsitetest.how/bigquery/docs/release-notes",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-09"
   },
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 515654,
+    "size": 493238,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-09-07"
   },
@@ -545,13 +545,6 @@
     "url": "https://berlin.devsitetest.how/docs/compute-area",
     "last_updated": "2026-09-03"
   },
-  "/docs/cross-product-overviews": {
-    "title": "Access and resource management",
-    "filename": "cross-product-overviews.md",
-    "size": 2409,
-    "url": "https://berlin.devsitetest.how/docs/cross-product-overviews",
-    "last_updated": "2026-09-03"
-  },
   "/docs/data": {
     "title": "Data analytics",
     "filename": "data.md",
@@ -597,7 +590,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -718,7 +711,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16541,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-09"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -739,7 +732,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3463,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-09"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -758,9 +751,9 @@
   "/docs/get-started/developer-environment": {
     "title": "Set up a local development environment",
     "filename": "get-started_developer-environment.md",
-    "size": 3409,
+    "size": 5904,
     "url": "https://berlin.devsitetest.how/docs/get-started/developer-environment",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-10"
   },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Google Cloud Dedicated in Germany",
@@ -1308,6 +1301,13 @@
     "url": "https://berlin.devsitetest.how/firewall/docs/tpc-differences",
     "last_updated": "2026-09-03"
   },
+  "/iam/docs": {
+    "title": "Identity and Access Management documentation",
+    "filename": "iam.md",
+    "size": 4119,
+    "url": "https://berlin.devsitetest.how/iam/docs",
+    "last_updated": "2026-09-09"
+  },
   "/iam/docs/attach-service-accounts": {
     "title": "Attach service accounts to resources",
     "filename": "iam_attach-service-accounts.md",
@@ -1353,9 +1353,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2119506,
+    "size": 2131765,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-10"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1369,7 +1369,7 @@
     "filename": "iam_release-notes.md",
     "size": 5599,
     "url": "https://berlin.devsitetest.how/iam/docs/release-notes",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-09"
   },
   "/iam/docs/roles-overview": {
     "title": "Roles overview",
@@ -1411,7 +1411,7 @@
     "filename": "kms.md",
     "size": 3585,
     "url": "https://berlin.devsitetest.how/kms/docs",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-09"
   },
   "/kms/docs/creating-keys": {
     "title": "Create a key",
@@ -1446,63 +1446,63 @@
     "filename": "kms_release-notes.md",
     "size": 5118,
     "url": "https://berlin.devsitetest.how/kms/docs/release-notes",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-09"
   },
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22572,
+    "size": 22569,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-03"
   },
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Google Cloud Dedicated versus Google Cloud",
     "filename": "kms_tpc-differences.md",
     "size": 5567,
     "url": "https://berlin.devsitetest.how/kms/docs/tpc-differences",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs": {
     "title": "Google Kubernetes Engine documentation",
     "filename": "kubernetes-engine.md",
     "size": 3756,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
     "size": 7216,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-08-27"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
     "size": 8473,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
     "filename": "kubernetes-engine_how-to_cluster-access-for-kubectl.md",
     "size": 14836,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/cluster-access-for-kubectl",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/how-to/workload-identity": {
     "title": "Authenticate to Google Cloud Dedicated APIs from GKE workloads",
     "filename": "kubernetes-engine_how-to_workload-identity.md",
     "size": 27959,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/workload-identity",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/quickstarts/create-cluster": {
     "title": "Quickstart: Create a cluster and deploy a workload",
     "filename": "kubernetes-engine_quickstarts_create-cluster.md",
     "size": 9796,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/quickstarts/create-cluster",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
@@ -1516,56 +1516,56 @@
     "filename": "kubernetes-engine_release-notes.md",
     "size": 1408423,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-09-08"
+    "last_updated": "2026-09-09"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
     "size": 13952,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
     "filename": "load-balancing.md",
     "size": 3645,
     "url": "https://berlin.devsitetest.how/load-balancing/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/load-balancing/docs/tpc-differences": {
     "title": "Cloud Load Balancing in Google Cloud Dedicated versus Google Cloud",
     "filename": "load-balancing_tpc-differences.md",
     "size": 7794,
     "url": "https://berlin.devsitetest.how/load-balancing/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs": {
     "title": "Cloud Logging documentation",
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21227,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27565,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28092,
+    "size": 28074,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1579,42 +1579,42 @@
     "filename": "logging_release-notes.md",
     "size": 3355,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41470,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-09-01"
+    "last_updated": "2026-09-09"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
@@ -1628,28 +1628,28 @@
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-08-31"
+    "last_updated": "2026-09-09"
   },
   "/nat/docs": {
     "title": "Cloud NAT documentation",
     "filename": "nat.md",
     "size": 2375,
     "url": "https://berlin.devsitetest.how/nat/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/nat/docs/tpc-differences": {
     "title": "Cloud NAT in Google Cloud Dedicated versus Google Cloud",
     "filename": "nat_tpc-differences.md",
     "size": 5207,
     "url": "https://berlin.devsitetest.how/nat/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-connectivity/docs": {
     "title": "Network Connectivity",
@@ -1663,133 +1663,133 @@
     "filename": "network-connectivity_interconnect.md",
     "size": 4819,
     "url": "https://berlin.devsitetest.how/network-connectivity/docs/interconnect",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-connectivity/docs/interconnect/tpc-differences": {
     "title": "Cloud Interconnect in Google Cloud Dedicated versus Google Cloud",
     "filename": "network-connectivity_interconnect_tpc-differences.md",
     "size": 4279,
     "url": "https://berlin.devsitetest.how/network-connectivity/docs/interconnect/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-connectivity/docs/router": {
     "title": "Cloud Router documentation",
     "filename": "network-connectivity_router.md",
     "size": 4100,
     "url": "https://berlin.devsitetest.how/network-connectivity/docs/router",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-connectivity/docs/router/tpc-differences": {
     "title": "Cloud Router in Google Cloud Dedicated versus Google Cloud",
     "filename": "network-connectivity_router_tpc-differences.md",
     "size": 5007,
     "url": "https://berlin.devsitetest.how/network-connectivity/docs/router/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-connectivity/docs/vpn": {
     "title": "Cloud VPN documentation",
     "filename": "network-connectivity_vpn.md",
     "size": 3474,
     "url": "https://berlin.devsitetest.how/network-connectivity/docs/vpn",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-connectivity/docs/vpn/concepts/tpc-differences": {
     "title": "Cloud VPN in Google Cloud Dedicated versus Google Cloud",
     "filename": "network-connectivity_vpn_concepts_tpc-differences.md",
     "size": 3753,
     "url": "https://berlin.devsitetest.how/network-connectivity/docs/vpn/concepts/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-tiers/docs": {
     "title": "Network Service Tiers documentation",
     "filename": "network-tiers.md",
     "size": 1848,
     "url": "https://berlin.devsitetest.how/network-tiers/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/network-tiers/docs/tpc-differences": {
     "title": "Network Service Tiers in Google Cloud Dedicated versus Google Cloud",
     "filename": "network-tiers_tpc-differences.md",
     "size": 3285,
     "url": "https://berlin.devsitetest.how/network-tiers/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs": {
     "title": "Pub/Sub documentation",
     "filename": "pubsub.md",
     "size": 3982,
     "url": "https://berlin.devsitetest.how/pubsub/docs",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115031,
+    "size": 115049,
     "url": "https://berlin.devsitetest.how/pubsub/docs/access-control",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24499,
+    "size": 24502,
     "url": "https://berlin.devsitetest.how/pubsub/docs/create-topic",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/monitoring": {
     "title": "Monitor Pub/Sub in Cloud Monitoring",
     "filename": "pubsub_monitoring.md",
     "size": 27799,
     "url": "https://berlin.devsitetest.how/pubsub/docs/monitoring",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/publish-receive-messages-console": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub using the Google Cloud Dedicated console",
     "filename": "pubsub_publish-receive-messages-console.md",
     "size": 8353,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-console",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/publish-receive-messages-gcloud": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub by using the gcloud CLI",
     "filename": "pubsub_publish-receive-messages-gcloud.md",
     "size": 4466,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-gcloud",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 70157,
+    "size": 70166,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publisher",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/release-notes": {
     "title": "Pub/Sub release notes",
     "filename": "pubsub_release-notes.md",
     "size": 3414,
     "url": "https://berlin.devsitetest.how/pubsub/docs/release-notes",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/resource-location-restriction": {
     "title": "Configure message storage policies",
     "filename": "pubsub_resource-location-restriction.md",
     "size": 18812,
     "url": "https://berlin.devsitetest.how/pubsub/docs/resource-location-restriction",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/tpc-differences": {
     "title": "Pub/Sub in Google Cloud Dedicated versus Google Cloud",
     "filename": "pubsub_tpc-differences.md",
     "size": 5030,
     "url": "https://berlin.devsitetest.how/pubsub/docs/tpc-differences",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/pubsub/docs/troubleshooting": {
     "title": "General troubleshooting",
     "filename": "pubsub_troubleshooting.md",
     "size": 34380,
     "url": "https://berlin.devsitetest.how/pubsub/docs/troubleshooting",
-    "last_updated": "2026-08-26"
+    "last_updated": "2026-09-09"
   },
   "/resource-manager/docs": {
     "title": "Resource Manager documentation",
@@ -1943,7 +1943,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-09"
+    "last_updated": "2026-09-10"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

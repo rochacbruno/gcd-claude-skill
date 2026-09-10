@@ -1,7 +1,7 @@
 # Set up a local development environment
 
 Source: https://berlin.devsitetest.how/docs/get-started/developer-environment
-Last updated: 2026-09-03
+Last updated: 2026-09-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -92,6 +92,7 @@ Get started
 - [ Before you begin ](#prerequisites)
 - [ Set up the gcloud CLI and authentication ](#cli)
 - [ Install Cloud Client Libraries ](#libraries)
+- [ Install the google-cloud-developer plugin ](#google-cloud-developer)
 - [ Alternative tools and environments ](#alternatives)
 - [ What's next ](#whats_next)
 - 
@@ -104,7 +105,7 @@ Get started
 
 
 
-Learn how to configure a local development environment for 
+Learn how to configure a local development environment for
 Google Cloud Dedicated in Germany. This document covers the core tools required to
 build, test, and run applications with Google Cloud Dedicated services:
 
@@ -114,10 +115,14 @@ set up local Application Default Credentials (ADC).
 - **Cloud Client Libraries**: Access Google Cloud Dedicated APIs programmatically
 using idiomatic libraries in your preferred programming language.
 
+This document also shows how to install the `google-cloud-developer` plugin to
+get help with Google Cloud Dedicated tasks and coding in a number of different
+agents.
+
 For an overview of other tools and interfaces across Google Cloud Dedicated, see
 [Ways to interact with Google Cloud Dedicated](/docs/get-started/interact-with-resources).
 
-## Before you begin 
+## Before you begin
 
 Ask your organization administrator to complete the following prerequisites:
 
@@ -157,6 +162,109 @@ code:
 - Install [Cloud Client Libraries](/apis/docs/cloud-client-libraries) for
 your programming language (such as Java, Python, or Go). Your code
 authenticates automatically using ADC.
+
+## Install the `google-cloud-developer` plugin
+
+If you use an agent such as Claude Code, Antigravity CLI, or Codex CLI to assist
+you in your development work, you can install the `google-cloud-developer`
+plugin to get help with Google Cloud Dedicated tasks and coding. This plugin
+includes:
+
+- Skills to help with account creation, billing setup, project management, and
+authentication to Google Cloud Dedicated services and APIs.
+
+- The `finding-google-skills` skill, which locates and runs the right Google
+product skill on demand, thus avoiding the need to preload Google skills.
+
+- The [Developer Knowledge](https://developers.google.com/knowledge/mcp)
+remote MCP server, which provides the ability to search Google's official
+developer documentation and retrieve information for Google's products such
+as Google Cloud, Firebase, Android, Maps, and more.
+
+Install the `google-cloud-developer` plugin using the following instructions
+based on your agent.
+
+
+[Antigravity CLI](#antigravity-cli) [Claude Code](#claude-code) [Codex CLI](#codex-cli) 
+More 
+
+
+
+
+- 
+
+Install the plugin by specifying its location in the
+[Google Agent Skills](https://g.dev/cloud/agent-plugins) repository:
+
+
+```
+agy plugin install https://github.com/google/skills/plugins/cloud/google-cloud-developer
+```
+
+
+- 
+
+Enable the Developer Knowledge API in your Google Cloud Dedicated project by
+using the gcloud CLI:
+
+
+```
+gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT_ID 
+```
+
+
+
+
+
+- 
+
+Add the Google plugins marketplace and then install the plugin:
+
+
+```
+claude plugin marketplace add google/skills
+claude plugin install google-cloud-developer@google-plugins
+```
+
+
+- 
+
+Enable the Developer Knowledge API in your Google Cloud Dedicated project by
+using the gcloud CLI:
+
+
+```
+gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT_ID 
+```
+
+
+
+
+
+- 
+
+Add the Google plugins marketplace and then install the plugin:
+
+
+```
+codex plugin marketplace add google/skills
+codex plugin add google-cloud-developer@google-plugins
+```
+
+
+- 
+
+Enable the Developer Knowledge API in your Google Cloud Dedicated project by
+using the gcloud CLI:
+
+
+```
+gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT_ID 
+```
+
+
+
+
 
 ## Alternative tools and environments
 
