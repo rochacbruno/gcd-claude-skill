@@ -1,7 +1,7 @@
 # Create and manage tags
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/tags/tags-creating-and-managing
-Last updated: 2026-09-07
+Last updated: 2026-09-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 

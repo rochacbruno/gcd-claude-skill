@@ -1,7 +1,7 @@
 # IAM in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/iam/docs/tpc-differences
-Last updated: 2026-09-03
+Last updated: 2026-09-10
 
 - 
 
@@ -171,7 +171,7 @@ Policy Intelligence capabilities are unavailable.
 
 
 - 
-Principal access boundary (PAB) policies are unavailable.
+Principal Access Boundary (PAB) policies are unavailable.
 
 
 - 
@@ -258,8 +258,8 @@ SCIM provisioning for Workforce Identity Federation is unavailable in Google Clo
 |
 
 | 
-**Principal access boundary policies** | 
-Principal access boundary policies let you define the resources that
+**Principal Access Boundary policies** | 
+Principal Access Boundary policies let you define the resources that
 principals can access. These policies are unavailable in Google Cloud Dedicated. | 
 |
 

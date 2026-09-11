@@ -318,7 +318,7 @@ information.
 Google Cloud doesn't indicate future support in
 Cloud de Confiance.
 
-### Availability and disaster recovery
+### Availability and disaster recovery 
 
 - Cloud de Confiance doesn't have multiple
 regions. Instead, Cloud de Confiance runs in
