@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42625,
+    "size": 42624,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-09-03"
   },
@@ -590,7 +590,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -625,30 +625,37 @@
   "/docs/gcd-solutions/health-insurance": {
     "title": "Health insurance risk analysis with BigQuery ML and Gemma",
     "filename": "gcd-solutions_health-insurance.md",
-    "size": 4322,
+    "size": 4333,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/health-insurance",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-11"
   },
   "/docs/gcd-solutions/overview": {
     "title": "Solutions for Google Cloud Dedicated",
     "filename": "gcd-solutions_overview.md",
-    "size": 3963,
+    "size": 4637,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/overview",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-09-11"
+  },
+  "/docs/gcd-solutions/sovereign-monitoring": {
+    "title": "Open-source software (OSS)-based monitoring",
+    "filename": "gcd-solutions_sovereign-monitoring.md",
+    "size": 6179,
+    "url": "https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-monitoring",
+    "last_updated": "2026-09-11"
   },
   "/docs/gcd-solutions/sovereign-standby": {
     "title": "\"Sovereign standby\" with multiple universes",
     "filename": "gcd-solutions_sovereign-standby.md",
-    "size": 6484,
+    "size": 6495,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-standby",
-    "last_updated": "2026-09-08"
+    "last_updated": "2026-09-11"
   },
   "/docs/gcd-solutions/tax-enforcement": {
     "title": "Tax anomaly detection with BigQuery ML and Gemma",
     "filename": "gcd-solutions_tax-enforcement.md",
-    "size": 4450,
+    "size": 4459,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/tax-enforcement",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-11"
   },
   "/docs/get-started": {
     "title": "Get started with Google Cloud",
@@ -1943,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-11"
+    "last_updated": "2026-09-12"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

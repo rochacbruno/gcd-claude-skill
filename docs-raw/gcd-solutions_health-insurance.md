@@ -1,7 +1,7 @@
 # Health insurance risk analysis with BigQuery ML and Gemma
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/health-insurance
-Last updated: 2026-09-03
+Last updated: 2026-09-11
 
 - 
 
@@ -209,4 +209,4 @@ GitHub. Note that this is a proof-of-concept prototype built for demonstration
 purposes, and the implementation is not audited or secured for production use
 cases.
 
-For prerequisites and deployment instructions, see [Sovereign Health Insurance Risk Analysis with BigQuery ML & Gemma](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/insurance).
+For prerequisites and deployment instructions, see [Sovereign Health Insurance Risk Analysis with BigQuery ML & Gemma](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/health-insurance).

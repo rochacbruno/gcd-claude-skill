@@ -1,7 +1,7 @@
 # Solutions for Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/gcd-solutions/overview
-Last updated: 2026-09-04
+Last updated: 2026-09-11
 
 - 
 
@@ -80,6 +80,7 @@ Get started
 - [ Finance ](#finance)
 - [ Healthcare ](#healthcare)
 - [ Multi-universe ](#multi-universe)
+- [ Observability and monitoring ](#observability_and_monitoring)
 
 - [ Design considerations ](#design_considerations)
 - 
@@ -127,7 +128,7 @@ reference architecture uses BigQuery ML and a retrieval-augmented
 generation (RAG) pipeline with the open-weight Gemma.
 
 - **[Reference
-implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/tax-office).**
+implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/tax-enforcement).**
 
 ### Healthcare
 
@@ -142,15 +143,15 @@ BigQuery ML for health risk modeling and a regional open-weight
 Gemma for claims document verification.
 
 - **[Reference
-implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/insurance).**
+implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/health-insurance).**
 
 ### Multi-universe
 
 - 
 
-[**Multi-universe federation:**](/docs/gcd-solutions/multi-universe-federation) Achieve
-multi-universe digital resilience and data sovereignty by federating
-workloads across Google Cloud and Cloud de Confiance by S3NS
+[**Sovereign standby:**](/docs/gcd-solutions/sovereign-standby) Add
+digital resilience by replicating data
+and workloads across Google Cloud and Cloud de Confiance by S3NS
 environments.
 
 Relevant to any regulated industry, this reference architecture demonstrates
@@ -159,7 +160,23 @@ application running on Google Cloud with a synchronized,
 near-real-time mirror on Cloud de Confiance by S3NS.
 
 - **[Reference
-implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/federation)**
+implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/sovereign-standby)**
+
+### Observability and monitoring
+
+- 
+
+[**Open-source software (OSS)-based monitoring:**](/docs/gcd-solutions/sovereign-monitoring)
+Use open-source software to comprehensively monitor your
+Cloud de Confiance environment and maintain
+data sovereignty.
+
+Built for highly regulated sectors, this reference architecture uses
+open-source software like OpenTelemetry, Grafana, and Fluent Bit to monitor
+your Compute Engine and Google Kubernetes Engine (GKE) workloads, backed by
+Cloud Storage.
+
+- **[Reference implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/monitoring).**
 
 ## Design considerations
 

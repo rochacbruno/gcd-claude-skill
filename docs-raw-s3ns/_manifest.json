@@ -2,7 +2,7 @@
   "/access-context-manager/docs": {
     "title": "Access Context Manager documentation",
     "filename": "access-context-manager.md",
-    "size": 2974,
+    "size": 2973,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs",
     "last_updated": "2026-09-03"
   },
@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 50881,
+    "size": 50882,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-09-03"
   },
@@ -513,7 +513,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13680,
+    "size": 13681,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-09-10"
   },
@@ -702,30 +702,37 @@
   "/docs/gcd-solutions/health-insurance": {
     "title": "Health insurance risk analysis with BigQuery ML and Gemma",
     "filename": "gcd-solutions_health-insurance.md",
-    "size": 4297,
+    "size": 4308,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/health-insurance",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-11"
   },
   "/docs/gcd-solutions/overview": {
     "title": "Solutions for Cloud de Confiance",
     "filename": "gcd-solutions_overview.md",
-    "size": 4102,
+    "size": 4772,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/overview",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-09-11"
+  },
+  "/docs/gcd-solutions/sovereign-monitoring": {
+    "title": "Open-source software (OSS)-based monitoring",
+    "filename": "gcd-solutions_sovereign-monitoring.md",
+    "size": 6147,
+    "url": "https://documentation.s3ns.fr/docs/gcd-solutions/sovereign-monitoring",
+    "last_updated": "2026-09-11"
   },
   "/docs/gcd-solutions/sovereign-standby": {
     "title": "\"Sovereign standby\" with multiple universes",
     "filename": "gcd-solutions_sovereign-standby.md",
-    "size": 6445,
+    "size": 6456,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/sovereign-standby",
-    "last_updated": "2026-09-08"
+    "last_updated": "2026-09-11"
   },
   "/docs/gcd-solutions/tax-enforcement": {
     "title": "Tax anomaly detection with BigQuery ML and Gemma",
     "filename": "gcd-solutions_tax-enforcement.md",
-    "size": 4425,
+    "size": 4434,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/tax-enforcement",
-    "last_updated": "2026-09-03"
+    "last_updated": "2026-09-11"
   },
   "/docs/get-started": {
     "title": "Get started with Google Cloud",
@@ -968,7 +975,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2680,
+    "size": 2681,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-09-03"
   },
@@ -1045,7 +1052,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132509,
+    "size": 132508,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-09-03"
   },
@@ -2041,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-11"
+    "last_updated": "2026-09-12"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2081,7 +2088,7 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22347,
+    "size": 22348,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
     "last_updated": "2026-09-09"
   },

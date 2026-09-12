@@ -1,7 +1,7 @@
 # Tax anomaly detection with BigQuery ML and Gemma
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/tax-enforcement
-Last updated: 2026-09-03
+Last updated: 2026-09-11
 
 - 
 
@@ -212,4 +212,4 @@ GitHub. Note that this is a proof-of-concept prototype built for demonstration
 purposes, and the implementation is not audited or secured for production use
 cases.
 
-For prerequisites and deployment instructions, see [Sovereign Tax Anomaly Detection with BigQuery ML and Gemma](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/tax-office).
+For prerequisites and deployment instructions, see [Sovereign Tax Anomaly Detection with BigQuery ML and Gemma](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/tax-enforcement).

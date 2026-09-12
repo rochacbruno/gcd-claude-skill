@@ -1,7 +1,7 @@
 # "Sovereign standby" with multiple universes
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-standby
-Last updated: 2026-09-08
+Last updated: 2026-09-11
 
 - 
 
@@ -228,4 +228,4 @@ passwords, and public ingress endpoints for testing convenience.
 
 For prerequisites and deployment instructions, see [Sovereign Multi-Universe
 Federation with Bank of
-Anthos](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/federation).
+Anthos](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/sovereign-standby).
