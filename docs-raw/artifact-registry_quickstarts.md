@@ -211,8 +211,8 @@ select or create a Google Cloud Dedicated project.
 
 
 
-Roles required to select or create a project**
 
+Roles required to select or create a project**
 
 
 
@@ -288,7 +288,6 @@ Enable the Artifact Registry API.
 
 **Roles required to enable APIs**
 
-
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
 Owner role (`roles/owner`). Otherwise, you can get this permission through the
@@ -321,8 +320,8 @@ Artifact Registry Administrator
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -360,8 +359,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 
