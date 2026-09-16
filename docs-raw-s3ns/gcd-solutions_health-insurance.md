@@ -1,7 +1,7 @@
 # Health insurance risk analysis with BigQuery ML and Gemma
 
 Source: https://documentation.s3ns.fr/docs/gcd-solutions/health-insurance
-Last updated: 2026-09-11
+Last updated: 2026-09-15
 
 - 
 

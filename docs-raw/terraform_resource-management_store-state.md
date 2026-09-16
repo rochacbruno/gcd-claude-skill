@@ -1,7 +1,7 @@
 # Store Terraform state in a Cloud Storage bucket
 
 Source: https://berlin.devsitetest.how/docs/terraform/resource-management/store-state
-Last updated: 2026-09-03
+Last updated: 2026-09-15
 
 - 
 

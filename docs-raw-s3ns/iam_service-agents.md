@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://documentation.s3ns.fr/iam/docs/service-agents
-Last updated: 2026-09-14
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1431,33 +1431,6 @@ Granted on the project.
 | 
 
 
-#### AutoML Service Agent
-
-[Primary service agent](/iam/docs/service-account-types#primary) for `automl.googleapis.com`. 
-
-
-`service- PROJECT_NUMBER @gcp-sa-automl.s3ns-system.iam.gserviceaccount.com`
-
-| 
-
-
-
-[AutoML Service Agent](/iam/docs/roles-permissions/automl#automl.serviceAgent)
-
-(`roles/automl.serviceAgent`)
-
-
-
-
-Granted on the project.
-
-
-| 
-|
-
-| 
-
-
 #### Backup and DR Runner Service Agent
 
 Service agent for `backupdr.googleapis.com`. 
@@ -1620,6 +1593,22 @@ Service agent for `biglake.googleapis.com`.
 
 
 `blirc- PROJECT_NUMBER - IDENTIFIER @gcp-sa-biglakerestcatalog.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### BigLake Identity Federation Service Agent
+
+Service agent for `biglake.googleapis.com`. 
+
+
+`service-org- ORGANIZATION_NUMBER @gcp-sa-biglakeidentityfed.s3ns-system.iam.gserviceaccount.com`
 
 | 
 
@@ -4282,7 +4271,18 @@ Granted on the project.
 
 | 
 
-None
+
+
+[Device Run Service Agent](/iam/docs/roles-permissions/devicerun#devicerun.serviceAgent)
+
+(`roles/devicerun.serviceAgent`)
+
+
+
+
+Granted on the project.
+
+
 | 
 |
 
@@ -6104,7 +6104,7 @@ Service agent for `networkservices.googleapis.com`.
 
 
 
-[Network Actions Service Agent](/iam/docs/roles-permissions/networkactions#networkactions.serviceAgent)
+[Network Actions Service Agent](/iam/docs/roles-permissions/serviceextensions#networkactions.serviceAgent)
 
 (`roles/networkactions.serviceAgent`)
 
@@ -7439,6 +7439,22 @@ Service agent for `aiplatform.googleapis.com`.
 Granted on the project.
 
 
+| 
+|
+
+| 
+
+
+#### Vertex AI Session Service Agent
+
+Service agent for `aiplatform.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-vertex-session.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
 | 
 |
 

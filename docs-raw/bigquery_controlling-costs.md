@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://berlin.devsitetest.how/bigquery/docs/controlling-costs
-Last updated: 2026-09-14
+Last updated: 2026-09-15
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -280,7 +280,9 @@ number of bytes read. To estimate costs before running a query:
 
 - [Use the query validator](#use-query-validator) in the Google Cloud Dedicated console.
 
-- [Perform a dry run](#perform-dry-run) for queries.
+- [Perform a dry run](#perform-dry-run) for queries, unless the target table is
+masked with row-level security, in which case dry runs always return 0 bytes
+to prevent side-channel attacks.
 
 #### Use the query validator
 

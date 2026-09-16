@@ -1,7 +1,7 @@
 # Google Cloud Dedicated SDK, languages, frameworks, and tools
 
 Source: https://berlin.devsitetest.how/docs/devtools
-Last updated: 2026-09-03
+Last updated: 2026-09-15
 
 - 
 

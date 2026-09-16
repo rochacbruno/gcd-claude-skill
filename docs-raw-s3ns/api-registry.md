@@ -1,7 +1,7 @@
 # Key differences between Cloud de Confiance and Google Cloud
 
 Source: https://documentation.s3ns.fr/api-registry/docs
-Last updated: 2026-09-03
+Last updated: 2026-09-15
 
 - 
 

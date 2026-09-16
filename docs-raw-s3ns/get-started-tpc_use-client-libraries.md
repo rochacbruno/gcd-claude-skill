@@ -1,7 +1,7 @@
 # Use client libraries in Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/use-client-libraries
-Last updated: 2026-09-03
+Last updated: 2026-09-15
 
 - 
 

@@ -1,7 +1,7 @@
 # Set up a local development environment
 
 Source: https://documentation.s3ns.fr/docs/get-started/developer-environment
-Last updated: 2026-09-10
+Last updated: 2026-09-15
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -238,6 +238,26 @@ gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT
 ```
 
 
+- 
+
+Create an API key for the Developer Knowledge API by following the
+instructions [Create and secure the API key](https://developers.google.com/knowledge/quickstart#create-secure-key).
+Save the key you create in a secure location.
+
+- 
+
+Enable authenticated access to the Developer Knowledge MCP server using
+the API key created in the previous step:
+
+
+```
+claude mcp add google-dev-knowledge \
+--scope user \
+--transport http https://developerknowledge.googleapis.com/mcp \
+--header "X-Goog-Api-Key: YOUR_API_KEY "
+```
+
+
 
 
 
@@ -260,6 +280,26 @@ using the gcloud CLI:
 
 ```
 gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT_ID 
+```
+
+
+- 
+
+Create an API key for the Developer Knowledge API by following the
+instructions [Create and secure the API key](https://developers.google.com/knowledge/quickstart#create-secure-key).
+Save the key you create in a secure location.
+
+- 
+
+Enable authenticated access to the Developer Knowledge MCP server by
+updating `~/.codex/config.toml` (or your project's `.codex/config.toml`)
+to include the following lines:
+
+
+```
+[mcp_servers.google-developer-knowledge] 
+url = "https://developerknowledge.googleapis.com/mcp" 
+http_headers = { "X-Goog-Api-Key" = " YOUR_API_KEY " } 
 ```
 
 

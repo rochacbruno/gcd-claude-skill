@@ -1,7 +1,7 @@
 # Compute Engine in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/compute/docs/tpc-differences
-Last updated: 2026-09-03
+Last updated: 2026-09-15
 
 - 
 

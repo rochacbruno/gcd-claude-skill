@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-09-09
+Last updated: 2026-09-15
 
 - 
 
@@ -428,13 +428,6 @@ Workload identity pool domains (and the Kubernetes principal identifiers that us
 
 
 | |
-
-| 
-**Privileged workload admission control**
-| 
-Creating and installing allowlists to run privileged workloads in
-Autopilot clusters is not supported. | 
-|
 
 | 
 **Node security** | 

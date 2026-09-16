@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-09-03
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -591,6 +591,9 @@ performance while the volume is in use.
 - For a Hyperdisk volume to reach its provisioned performance,
 you must attach it to a compute instance that supports the same level
 of performance or higher.
+
+- A new Hyperdisk volume can immediately achieve its provisioned
+performance and doesn't need to be pre-warmed.
 
 
 

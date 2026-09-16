@@ -1,7 +1,7 @@
 # Compute Engine in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/compute/docs/tpc-differences
-Last updated: 2026-09-03
+Last updated: 2026-09-15
 
 - 
 
