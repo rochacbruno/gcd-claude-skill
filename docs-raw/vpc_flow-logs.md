@@ -1,7 +1,7 @@
 # VPC Flow Logs
 
 Source: https://berlin.devsitetest.how/vpc/docs/flow-logs
-Last updated: 2026-09-09
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 
@@ -162,8 +162,10 @@ network to generate flow logs. Flow logs are aggregated by IP connection
 [virtual machine (VM) instances](/compute/docs/instances), including
 instances used as [Google Kubernetes Engine nodes](/kubernetes-engine/docs)
 
-- Packets that are sent from and received by Cloud Run resources
-configured with [Direct VPC egress](/run/docs/configuring/vpc-direct-vpc)
+- Packets that are sent from and received by
+[Cloud Run](/run/docs/configuring/vpc-direct-vpc) or
+[App Engine](/appengine/docs/standard/vpc-direct-vpc) resources configured
+with Direct VPC egress
 
 - Packets that are sent through VLAN attachments for
 [Cloud Interconnect](/network-connectivity/docs/interconnect/concepts/overview)
@@ -251,8 +253,8 @@ Organization |
 
 
 
-- All VM instances and Cloud Run resources in all subnets
-in the organization
+- All VM instances and Cloud Run or App Engine
+resources in all subnets in the organization
 
 - All VLAN attachments in the organization
 
@@ -269,8 +271,8 @@ VPC network |
 
 
 
-- All VM instances and Cloud Run resources in all subnets
-in the VPC network
+- All VM instances and Cloud Run or App Engine
+resources in all subnets in the VPC network
 
 - All VLAN attachments in the VPC network
 
@@ -283,8 +285,8 @@ in the VPC network
 
 | 
 Subnet | 
-All VM instances and Cloud Run resources in a specific
-subnet | 
+All VM instances and Cloud Run or App Engine
+resources in a specific subnet | 
 
 Enable VPC Flow Logs for a subnet:
 

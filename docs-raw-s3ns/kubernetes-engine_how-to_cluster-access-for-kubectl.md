@@ -1,7 +1,7 @@
 # Install kubectl and configure cluster access
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/how-to/cluster-access-for-kubectl
-Last updated: 2026-09-09
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -329,11 +329,11 @@ kubectl version --client
 
 - 
 
-Verify that you have the `cloud-sdk` repository:
+Verify that you have the `google-cloud-cli` repository:
 
 
 ```
-yum repolist | grep "google-cloud-sdk" 
+yum repolist | grep "google-cloud-cli" 
 ```
 
 
@@ -341,7 +341,7 @@ The output is similar to the following:
 
 
 ```
-google-cloud-sdk Google Cloud SDK 2,205
+google-cloud-cli Google Cloud CLI 2,205
 ```
 
 
@@ -417,7 +417,7 @@ Install the `gke-gcloud-auth-plugin` binary:
 
 
 ```
-apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
+apt-get install google-cloud-cli-gke-gcloud-auth-plugin
 ```
 
 
@@ -426,7 +426,7 @@ Install the `gke-gcloud-auth-plugin` binary:
 
 
 ```
-yum install google-cloud-sdk-gke-gcloud-auth-plugin
+yum install google-cloud-cli-gke-gcloud-auth-plugin
 ```
 
 

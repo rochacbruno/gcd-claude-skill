@@ -1,7 +1,7 @@
 # Use the quota adjuster
 
 Source: https://documentation.s3ns.fr/docs/quotas/quota-adjuster
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -675,14 +675,6 @@ Preemptible NVIDIA L4 GPUs |
 | 
 Compute Engine API | 
 Preemptible NVIDIA L4 Virtual Workstation GPUs | 
-|
-| 
-Compute Engine API | 
-Preemptible NVIDIA P100 GPUs | 
-|
-| 
-Compute Engine API | 
-Preemptible NVIDIA P100 Virtual Workstation GPUs | 
 |
 | 
 Compute Engine API | 

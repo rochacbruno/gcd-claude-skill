@@ -1,7 +1,7 @@
 # GPU machine types
 
 Source: https://documentation.s3ns.fr/compute/docs/gpus
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -149,7 +149,6 @@ Guides
 - [ N1+T4 GPUs ](#t4-gpus)
 - [ N1+P4 GPUs ](#p4-gpus)
 - [ N1+V100 GPUs ](#v100-gpus)
-- [ N1+P100 GPUs ](#p100-gpus)
 
 - [ General comparison chart ](#general-comp)
 - [ Tensor Core and standard CUDA core performance ](#cuda-tensor-performance)
@@ -347,12 +346,6 @@ types:
 
 - NVIDIA V100 
 (`nvidia-tesla-v100`)
-
-- NVIDIA P100 
-(`nvidia-tesla-p100`) 
-(`nvidia-tesla-p100-vws`). NVIDIA P100 is approaching end
-of support, see
-[NVIDIA P100 end of support](/compute/docs/eol/p100-eos).
 
 
 | 
@@ -1532,81 +1525,6 @@ aren't supported in `us-east1-c`.
 
 
 
-### N1+P100 GPUs
-
-You can attach [NVIDIA P100](http://www.nvidia.com/object/tesla-p100.html) GPUs
-to N1 general-purpose instances with the following instance configurations.
-
-For some NVIDIA P100 GPUs, the maximum CPU and memory available for some
-configurations depends on the zone in which the GPU resource runs.
-
-
-
-
-| 
-Accelerator type | 
-GPU count | 
-GPU memory 1 (GB HBM2) | 
-Zone | 
-vCPU count | 
-Instance memory (GB) | 
-Local SSD supported | 
-|
-
-
-
-| 
-
-`nvidia-tesla-p100` or 
-
-`nvidia-tesla-p100-vws`
-| 
-1 | 
-16 | 
-All P100 zones | 
-1 to 16 | 
-1 to 104 | 
-Yes | 
-|
-
-| 
-2 | 
-32 | 
-All P100 zones | 
-1 to 32 | 
-1 to 208 | 
-Yes | 
-|
-
-| 
-4 | 
-64 | 
-`us-east1-c`, 
-`europe-west1-d`, 
-`europe-west1-b` | 
-1 to 64 | 
-1 to 208 | 
-Yes | 
-|
-
-| 
-All other P100 zones | 
-1 to 96 | 
-1 to 624 | 
-Yes | 
-|
-
-
-
-
-
-1 GPU memory is the memory available on a GPU device that you can use
-for temporary data storage. It is separate from the instance's memory and is
-specifically designed to handle the higher bandwidth demands of your
-graphics-intensive workloads.
-
-
-
 ## General comparison chart
 
 The following table describes the GPU memory size, feature availability, and
@@ -1726,14 +1644,6 @@ N1 (V100) |
 NVLink Ring @ 300 GBps | 
 | 
 ML Training, Inference, HPC | 
-|
-
-| 
-N1 (P100) | 
-16 GB HBM2 @ 732 GBps | 
-N/A | 
-| 
-ML Training, Inference, HPC, Remote Visualization Workstations | 
 |
 
 
@@ -2094,7 +2004,7 @@ The N1 machine types use the following GPU architectures:
 
 - [Volta](https://www.nvidia.com/en-us/data-center/volta-gpu-architecture/) (V100)
 
-- [Pascal](https://www.nvidia.com/en-us/data-center/pascal-gpu-architecture/) (P100 and P4)
+- [Pascal](https://www.nvidia.com/en-us/data-center/pascal-gpu-architecture/) (P4)
 
 - [Turing](https://developer.nvidia.com/blog/nvidia-turing-architecture-in-depth/) (T4)
 
@@ -2112,8 +2022,8 @@ foundational acceleration for deep learning inference.
 
 These GPUs introduced the first generations of Tensor Cores, used primarily
 for FP16 training and INT8 and INT4 quantization in inference. This
-table doesn't include the N1 (P4) and N1 (P100) machine types because
-they don't have Tensor cores.
+table doesn't include the N1 (P4) machine type because
+it doesn't have Tensor cores.
 
 In the following table, `N/A` indicates that the metric is not applicable or
 not available for this GPU model.
@@ -2168,12 +2078,6 @@ FP32 (TFLOPS) |
 N1 (V100) | 
 7.8 | 
 15.6 | 
-|
-
-| 
-N1 (P100) | 
-5.3 | 
-10.6 | 
 |
 
 | 

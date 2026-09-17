@@ -1,7 +1,7 @@
 # Introduction to AI/ML workloads on GKE
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning
-Last updated: 2026-09-09
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 

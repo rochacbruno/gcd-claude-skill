@@ -1,7 +1,7 @@
 # Service Usage documentation
 
 Source: https://berlin.devsitetest.how/service-usage/docs
-Last updated: 2026-09-09
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
