@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes
-Last updated: 2026-09-16
+Last updated: 2026-09-17
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -401,27 +401,27 @@ Available minor versions |
 
 | 
 Recommended auto-upgrade target | 
-1.36.4-gke.1082000 | 
-1.35.7-gke.1222000 | 
-1.34.9-gke.1655001 | 
-1.32.13-gke.2268000 | 
-1.34.9-gke.1655001 | 
+1.36.4-gke.1247000 | 
+1.35.8-gke.1036000 | 
+1.35.6-gke.1250000 | 
+1.32.13-gke.2337000 | 
+1.35.6-gke.1250000 | 
 |
 
 | 
 Auto-upgrade targets | 
 
 
-- 1.34.11-gke.1044000
-- 1.35.8-gke.1225000
-- 1.36.4-gke.1082000
-- 1.37.0-gke.2941000
+- 1.34.11-gke.1056000
+- 1.35.8-gke.1380000
+- 1.36.4-gke.1247000
+- 1.37.0-gke.3165000
 | 
 
 
-- 1.34.10-gke.1236000
-- 1.35.7-gke.1222000
-- 1.36.3-gke.1640000
+- 1.34.10-gke.1328000
+- 1.35.8-gke.1036000
+- 1.36.3-gke.1767000
 | 
 
 
@@ -430,37 +430,37 @@ Auto-upgrade targets |
 | 
 
 
-- 1.31.14-gke.2579000
-- 1.32.13-gke.2268000
-- 1.33.13-gke.1329000
-- 1.34.10-gke.1236000
-- 1.35.7-gke.1222000
-- 1.36.3-gke.1640000
+- 1.31.14-gke.2630000
+- 1.32.13-gke.2337000
+- 1.33.13-gke.1547000
+- 1.34.10-gke.1328000
+- 1.35.8-gke.1036000
+- 1.36.3-gke.1767000
 | 
 
 
-- 1.34.9-gke.1655001
-- 1.35.7-gke.1222000
-- 1.36.3-gke.1640000
+- 1.34.10-gke.1328000
+- 1.35.6-gke.1250000
+- 1.36.3-gke.1767000
 | 
 |
 
 | 
 Default patch version for cluster creation | 
-1.36.4-gke.1082000 | 
-1.35.7-gke.1222000 | 
+1.36.4-gke.1247000 | 
+1.35.8-gke.1036000 | 
 1.35.6-gke.1250000 | 
-1.35.7-gke.1222000 | 
-1.35.7-gke.1222000 | 
+1.35.8-gke.1036000 | 
+1.35.8-gke.1036000 | 
 |
 
 | 
 COS version of default patch version | 
-[cos-129-19506-299-161](/container-optimized-os/docs/release-notes/m129#cos-129-19506-299-161_) | 
-[cos-125-19216-532-62](/container-optimized-os/docs/release-notes/m125#cos-125-19216-532-62_) | 
+[cos-129-19506-448-8](/container-optimized-os/docs/release-notes/m129#cos-129-19506-448-8_) | 
+[cos-125-19216-532-123](/container-optimized-os/docs/release-notes/m125#cos-125-19216-532-123_) | 
 [cos-125-19216-395-109](/container-optimized-os/docs/release-notes/m125#cos-125-19216-395-109_) | 
-[cos-125-19216-532-62](/container-optimized-os/docs/release-notes/m125#cos-125-19216-532-62_) | 
-[cos-125-19216-532-62](/container-optimized-os/docs/release-notes/m125#cos-125-19216-532-62_) | 
+[cos-125-19216-532-123](/container-optimized-os/docs/release-notes/m125#cos-125-19216-532-123_) | 
+[cos-125-19216-532-123](/container-optimized-os/docs/release-notes/m125#cos-125-19216-532-123_) | 
 |
 
 

@@ -1,7 +1,7 @@
 # Set up API access
 
 Source: https://berlin.devsitetest.how/docs/get-started/access-apis
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 - 
 

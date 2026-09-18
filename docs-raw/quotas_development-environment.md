@@ -1,7 +1,7 @@
 # Set up the Cloud Quotas API
 
 Source: https://berlin.devsitetest.how/docs/quotas/development-environment
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 

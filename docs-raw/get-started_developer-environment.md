@@ -1,7 +1,7 @@
 # Set up a local development environment
 
 Source: https://berlin.devsitetest.how/docs/get-started/developer-environment
-Last updated: 2026-09-15
+Last updated: 2026-09-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -246,15 +246,11 @@ Save the key you create in a secure location.
 
 - 
 
-Enable authenticated access to the Developer Knowledge MCP server using
-the API key created in the previous step:
+Export the API key to your environment before starting Claude Code:
 
 
 ```
-claude mcp add google-dev-knowledge \
---scope user \
---transport http https://developerknowledge.googleapis.com/mcp \
---header "X-Goog-Api-Key: YOUR_API_KEY "
+export DEVELOPERKNOWLEDGE_API_KEY= YOUR_API_KEY 
 ```
 
 
@@ -297,9 +293,19 @@ to include the following lines:
 
 
 ```
-[mcp_servers.google-developer-knowledge] 
+[mcp_servers.developer-knowledge] 
 url = "https://developerknowledge.googleapis.com/mcp" 
-http_headers = { "X-Goog-Api-Key" = " YOUR_API_KEY " } 
+env_http_headers = { "X-Goog-Api-Key" = "DEVELOPERKNOWLEDGE_API_KEY" } 
+```
+
+
+- 
+
+Export the API key to your environment before starting Codex:
+
+
+```
+export DEVELOPERKNOWLEDGE_API_KEY= YOUR_API_KEY 
 ```
 
 

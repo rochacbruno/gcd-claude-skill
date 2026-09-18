@@ -1,7 +1,7 @@
 # Access and resource management
 
 Source: https://berlin.devsitetest.how/docs/access-resources
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 - 
 

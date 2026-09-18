@@ -1,7 +1,7 @@
 # Query a public dataset with the BigQuery client libraries
 
 Source: https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -199,7 +199,7 @@ More
 
 
 
-## Before you begin 
+## Before you begin
 
 
 

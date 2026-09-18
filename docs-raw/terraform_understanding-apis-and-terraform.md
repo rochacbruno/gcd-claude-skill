@@ -1,7 +1,7 @@
 # Understanding Google Cloud Dedicated in Germany APIs and Terraform
 
 Source: https://berlin.devsitetest.how/docs/terraform/understanding-apis-and-terraform
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/iac/tpc-differences) for more details.
 

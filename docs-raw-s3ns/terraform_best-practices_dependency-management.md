@@ -1,7 +1,7 @@
 # Best practices on dependency management
 
 Source: https://documentation.s3ns.fr/docs/terraform/best-practices/dependency-management
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 

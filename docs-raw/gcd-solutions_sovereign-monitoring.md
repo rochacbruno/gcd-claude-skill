@@ -1,7 +1,7 @@
 # Open-source software (OSS)-based monitoring
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/sovereign-monitoring
-Last updated: 2026-09-15
+Last updated: 2026-09-16
 
 - 
 
