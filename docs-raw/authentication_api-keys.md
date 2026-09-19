@@ -1,7 +1,7 @@
 # Manage API keys
 
 Source: https://berlin.devsitetest.how/docs/authentication/api-keys
-Last updated: 2026-09-16
+Last updated: 2026-09-19
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -230,7 +230,7 @@ use an authorization key to access an API, your request is processed as if you
 used the bound service account to make the request.
 
 APIs that support authorization keys include
-[Vertex AI](/vertex-ai/generative-ai/docs/start/api-keys?usertype=standard)
+[AI Platform](/vertex-ai/generative-ai/docs/start/api-keys?usertype=standard)
 (`aiplatform.googleapis.com`) and the
 [Gemini API](https://ai.google.dev/api)
 (`generativelanguage.googleapis.com`).
@@ -905,6 +905,20 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 To get the permissions that
 you need to manage API keys,
 
@@ -922,15 +936,35 @@ following IAM roles on your project:
 
 
 
+- 
+Create API keys:
+
+
+
 
 - [API Keys Admin ](/iam/docs/roles-permissions/serviceusage#serviceusage.apiKeysAdmin) (`roles/serviceusage.apiKeysAdmin`)
+
+
+- [Service Usage Viewer ](/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageViewer) (`roles/serviceusage.serviceUsageViewer`)
+
+
+
 
 
 
 
 - 
-Restrict an API key to specific APIs by using the Google Cloud Dedicated console:
-[Service Usage Viewer ](/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageViewer) (`roles/serviceusage.serviceUsageViewer`)
+Create authorization keys. Add the same roles as you use to create API keys, plus:
+
+
+
+
+- [Service Account User ](/iam/docs/roles-permissions/iam#iam.serviceAccountUser) (`roles/iam.serviceAccountUser`)
+
+
+- [Service Account API Key Binding Admin ](/iam/docs/roles-permissions/serviceAccountApiKeyBindingAdmin#serviceAccountApiKeyBindingAdmin) (`roles/serviceAccountApiKeyBindingAdmin`)
+
+
 
 
 

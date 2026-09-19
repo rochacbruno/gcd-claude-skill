@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://berlin.devsitetest.how/bigquery/docs/controlling-costs
-Last updated: 2026-09-16
+Last updated: 2026-09-18
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1064,7 +1064,7 @@ query by calculating the number of bytes processed.
 
 #### Capacity-based query cost estimation 
 
-When using [capacity-based pricing](/bigquery/docs/reservations-intro#capacity-based-pricing),
+When using [capacity-based pricing](/bigquery/docs/reservations-intro),
 it's not possible to estimate the exact cost of an individual query before
 execution with precise accuracy. Capacity-based costs are calculated based on
 overall reservation slot capacity provisioned or autoscaled over time, rather

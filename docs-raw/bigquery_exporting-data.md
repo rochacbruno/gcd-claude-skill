@@ -1,7 +1,7 @@
 # Export table data to Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/exporting-data
-Last updated: 2026-09-16
+Last updated: 2026-09-18
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -179,10 +179,12 @@ to Cloud Storage.
 
 After you've [loaded your data into
 BigQuery](/bigquery/docs/loading-data), you can export the data
-in several formats. BigQuery can export up to 1 GB of logical data size to a
-single file. If you are exporting more than 1 GB of data, you must export your
-data to [multiple files](#exporting_data_into_one_or_more_files). When you
-export your data to multiple files, the size of the files will vary.
+in several formats. BigQuery can export up to 1 GB of logical
+data size to a single file. If you are exporting more than 1 GB of data, you
+must export your data to [multiple
+files](#exporting_data_into_one_or_more_files). When you export your data to
+multiple files, the size of the files will vary. For more information and
+recommendations about exporting large tables, see [Large table export considerations](/bigquery/docs/export-intro#large_table_export_considerations).
 
 You can also export the results of a query by using the
 [`EXPORT DATA`](/bigquery/docs/reference/standard-sql/export-statements#export_data_statement)
@@ -249,6 +251,12 @@ BigQuery: `gs:// bucket /my//object//name`.
 - Any new data loaded into BigQuery while an extract job is
 running won't be included in that extract job. You must create a new extract job
 to export the new data.
+
+- The Cloud Storage
+[generation number](/storage/docs/metadata#generation-number) might change one
+or more times during the export process. If you run a job on the new
+Cloud Storage object immediately after export, don't specify a
+generation number.
 
 ## Before you begin
 

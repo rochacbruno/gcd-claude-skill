@@ -1,7 +1,7 @@
 # Cloud Interconnect in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/network-connectivity/docs/interconnect/tpc-differences
-Last updated: 2026-09-16
+Last updated: 2026-09-18
 
 - 
 
@@ -184,11 +184,12 @@ Some notable differences include the following:
 are available.
 
 
-Cross-Cloud Interconnect isn't available.
+Cross-Cloud Interconnect (including partner
+Cross-Cloud Interconnect) is unavailable.
 
 
 
-- Multi-region features and cross-region failover aren't available.
+- Multi-region features and cross-region failover are unavailable.
 
 
 
@@ -221,7 +222,8 @@ Google Cloud Dedicated.
 **Cloud Interconnect types** | 
 
 Only Dedicated Interconnect and Partner Interconnect
-are available. Cross-Cloud Interconnect isn't available.
+are available. Cross-Cloud Interconnect (including partner
+Cross-Cloud Interconnect) is unavailable.
 | 
 |
 
@@ -229,15 +231,15 @@ are available. Cross-Cloud Interconnect isn't available.
 **Regions and zones** | 
 
 Google Cloud Dedicated has only a single region, though with multiple zones.
-Multi-region features and cross-region failover are not available.
+Multi-region features and cross-region failover are unavailable.
 Deployment across multiple zones for resiliency is available.
 | 
 |
 
 | 
 **Critical production / 99.99% availability** | 
-Critical production / 99.99% availability connectivity isn't
-available.
+Critical production / 99.99% availability connectivity is
+unavailable.
 | 
 |
 

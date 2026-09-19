@@ -1,7 +1,7 @@
 # 2-step verification requirement for Google Cloud Dedicated in Germany
 
 Source: https://berlin.devsitetest.how/docs/authentication/mfa-requirement
-Last updated: 2026-09-16
+Last updated: 2026-09-19
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -416,7 +416,8 @@ the following features available to them:
 
 Organizations that use Enterprise Cloud Identity (non-SSO) can monitor user
 account 2SV conformance by checking logs for when users interact with the
-Google Cloud Dedicated console.
+Google Cloud Dedicated console. Conformance logs started recording August 1, 2026; logs
+from before this date aren't available.
 
 Principals with the
 [Logs Viewer](/iam/docs/roles-permissions/logging#logging.viewer)
