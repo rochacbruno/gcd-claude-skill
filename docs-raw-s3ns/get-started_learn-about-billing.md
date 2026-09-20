@@ -1,7 +1,7 @@
 # Learn about Cloud Billing
 
 Source: https://documentation.s3ns.fr/docs/get-started/learn-about-billing
-Last updated: 2026-09-16
+Last updated: 2026-09-18
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
