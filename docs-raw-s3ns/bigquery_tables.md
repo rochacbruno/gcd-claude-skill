@@ -2150,22 +2150,20 @@ createTableWithoutSchema ( datasetName , tableName );
 public static void createTableWithoutSchema ( String datasetName , String tableName ) { 
 try { 
 // Initialize client that will be used to send requests. This client only needs to be created 
-// once, and can be reused for multiple requests. 
-[ BigQuery ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html) bigquery = [ BigQueryOptions ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html) . getDefaultInstance (). getService (); 
+// once, and can be reused for multi[ple requ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html)ests. 
+[ BigQuery bigque ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryOptions.html)ry = BigQueryOptions . getDefaultInstance (). g[etServi](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html)ce (); 
 
-[ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) tableId = [ TableId ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) . of ( datasetName , tableName ); 
-[ TableDefinition ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableDefinition.html) tableDefinition = [ StandardTableDefinition ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardTableDefinition.html) . of ( [ Schema ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html) . of ()); 
-[ TableInfo ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableInfo.html) tableInfo = [ TableInfo ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableInfo.html) . newBuilder ( tableId , tableDefinition ). build (); 
+[ ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html) [ Table ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableId.html)Id tableId = TableId . of ( datasetName [ , tableName ); 
+](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableDefinition.html) TableDefinitio[n](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardTableDefinition.html) [ tableDefinition = Sta ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.StandardTableDefinition.html)ndar[dTable](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.Schema.html)Definition . of ( [ Schema . of ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableInfo.html) ()); 
+Ta[bleInfo](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableInfo.html) [ t ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.TableInfo.html)ableInfo = TableInfo . newBuilder ( tableId , tableDefinition ). build [ (); 
 
-bigquery . [ create ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html#com_google_cloud_bigquery_BigQuery_create_com_google_cloud_bigquery_DatasetInfo_com_google_cloud_bigquery_BigQuery_DatasetOption____) ( tableInfo ); 
-System . out . println ( "Table created successfully" ); 
-} catch ( [ BigQueryException ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) e ) { 
-System . out . println ( "Table was not created. \n" + e . toString ()); 
+](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQuery.html#com_google_cloud_bigquery_BigQuery_create_com_google_cloud_bigquery_DatasetInfo_com_google_cloud_bigquery_BigQuery_DatasetOption____) bigquery . create ( tableInfo ); 
+System . out . println ( "Table created succ[essfully"](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) [ ); 
+](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) } catch ( BigQueryException e ) { 
+System . out . println ( "Table was not create d. \n" + e . toString ()); 
 } 
 } 
 } 
-```
-
 
 
 
@@ -2674,7 +2672,7 @@ variable to `s3nsapis.fr`.
 
 
 ```
-import ( 
+` import ( 
 "context" 
 "fmt" 
 "io" 
@@ -2791,7 +2789,7 @@ For more information, see
 
 
 
-Before running code samples, set the `GOOGLE_CLOUD_UNIVERSE_DOMAIN` environment
+Before running code samples, set the GOOGLE_CLOUD_UNIVERSE_DOMAIN` environment
 variable to `s3nsapis.fr`.
 
 
@@ -3395,7 +3393,7 @@ your default project, add the project ID to the dataset in the following
 format: `project_id:dataset`.
 
 
-```
+
 [bq show](/bigquery/docs/reference/bq-cli-reference#bq_show) \ 
 --schema \ 
 --format = prettyjson \ 

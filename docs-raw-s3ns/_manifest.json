@@ -30,7 +30,7 @@
   "/access-context-manager/docs/manage-access-levels": {
     "title": "Managing access levels",
     "filename": "access-context-manager_manage-access-levels.md",
-    "size": 19563,
+    "size": 19560,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs/manage-access-levels",
     "last_updated": "2026-09-18"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 161115,
+    "size": 161617,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-09-18"
   },
@@ -506,21 +506,21 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13649,
+    "size": 13657,
     "url": "https://documentation.s3ns.fr/docs/authentication/client-libraries",
     "last_updated": "2026-09-18"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13673,
+    "size": 13680,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-09-18"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 17979,
+    "size": 18015,
     "url": "https://documentation.s3ns.fr/docs/authentication/get-id-token",
     "last_updated": "2026-09-18"
   },
@@ -989,7 +989,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18877,
+    "size": 18882,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-09-18"
   },
@@ -1052,7 +1052,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132206,
+    "size": 132509,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-09-18"
   },
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-20"
+    "last_updated": "2026-09-21"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

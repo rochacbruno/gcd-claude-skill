@@ -968,7 +968,7 @@ Creates and runs virtual machines on Cloud Platform.
 
 
 
-## Service: compute. googleapis. com 
+## Service: compute. googleapis. com
 
 
 
@@ -976,7 +976,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 

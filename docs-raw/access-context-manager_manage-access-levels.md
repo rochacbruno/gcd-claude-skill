@@ -797,25 +797,26 @@ definitions.
 
 
 ```
-echo "Searching for Access Levels referencing: accessPoli cies/POLICY _NAME/accessLe vels/LEVEL _NAME" 
+echo "Searching for Access Levels referencing: accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME " 
 echo "" 
 
-gcloud access-context-manager levels list \ - -policy = "POLICY_NAME" \ 
+gcloud access-context-manager levels list \ 
+--policy = " POLICY_NAME " \ 
 --format = json | \ 
 jq -r ' 
 .[] | 
 select( 
 # Check basic levels: Is the target access level present as an element in any requiredAccessLevels array? 
-(.basic.conditions // []) | .[] | .requiredAcc essLevels | index("a ccessPolic ies/POLICY_NAME/accessLevels/LEVEL_NAME") != null 
+(.basic.conditions // []) | .[] | .requiredAccessLevels | index("accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ") != null 
 or 
 # Check custom levels: Does the expression string contain the target access level? 
-(.custom.expr.e xpression / / "" ) | contai ns("accessPolicies/POLICY_NAME/accessLevels/LEVEL_NAME") 
+(.custom.expr.expression // "") | contains("accessPolicies/ POLICY_NAME /accessLevels/ LEVEL_NAME ") 
 ) | 
-" - \(.title) (Name: \(.name))& quot; 
+" - \(.title) (Name: \(.name))" 
 ' 
 
 echo "" 
-echo "If any levels are l isted, the y reference LEVEL_NAME. You must update these referencing levels before you delete LEVEL_NAME." 
+echo "If any levels are listed, they reference LEVEL_NAME . You must update these referencing levels before you delete LEVEL_NAME ." 
 ```
 
 
