@@ -108,7 +108,7 @@ Resource Manager
 
 Reference
 
-](https://documentation.s3ns.fr/resource-manager/reference/mcp)
+](https://documentation.s3ns.fr/resource-manager/reference/rest)
 
 
 

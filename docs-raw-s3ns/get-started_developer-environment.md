@@ -1,7 +1,7 @@
 # Set up a local development environment
 
 Source: https://documentation.s3ns.fr/docs/get-started/developer-environment
-Last updated: 2026-09-18
+Last updated: 2026-09-21
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -165,7 +165,7 @@ authenticates automatically using ADC.
 
 ## Install the `google-cloud-developer` plugin
 
-If you use an agent such as Claude Code, Antigravity CLI, or Codex CLI to assist
+If you use an agent such as Claude Code CLI, Antigravity CLI, or Codex CLI to assist
 you in your development work, you can install the `google-cloud-developer`
 plugin to get help with Cloud de Confiance tasks and coding. This plugin
 includes:
@@ -185,7 +185,7 @@ Install the `google-cloud-developer` plugin using the following instructions
 based on your agent.
 
 
-[Antigravity CLI](#antigravity-cli) [Claude Code](#claude-code) [Codex CLI](#codex-cli) 
+[Antigravity CLI](#antigravity-cli) [Claude Code CLI](#claude-code-cli) [Codex CLI](#codex-cli) 
 More 
 
 
@@ -246,7 +246,7 @@ Save the key you create in a secure location.
 
 - 
 
-Export the API key to your environment before starting Claude Code:
+Export the API key to your environment before starting Claude Code CLI:
 
 
 ```

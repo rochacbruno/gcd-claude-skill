@@ -1,7 +1,7 @@
 # Create a key
 
 Source: https://berlin.devsitetest.how/kms/docs/creating-keys
-Last updated: 2026-09-18
+Last updated: 2026-09-21
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -632,9 +632,16 @@ More
 
 - 
 
-In the Google Cloud Dedicated console, go to the **Key Management** page.
 
-[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 
@@ -2563,7 +2570,10 @@ curl "https://cloudkms.googleapis.com/v1/projects/ PROJECT_ID /locations/ LOCATI
 --request "POST" \
 --header "authorization: Bearer TOKEN " \
 --header "content-type: application/json" \
---data '{"purpose": " PURPOSE ", "rotationPeriod": " ROTATION_PERIOD ", "nextRotationTime": " NEXT_ROTATION_TIME "}'
+--data '{
+"purpose": " PURPOSE ", "rotationPeriod": " ROTATION_PERIOD ",
+"nextRotationTime": " NEXT_ROTATION_TIME "
+}'
 ```
 
 
@@ -2653,9 +2663,16 @@ More
 
 - 
 
-In the Google Cloud Dedicated console, go to the **Key Management** page.
 
-[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 
@@ -2805,9 +2822,16 @@ More
 
 - 
 
-In the Google Cloud Dedicated console, go to the **Key Management** page.
 
-[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 
@@ -3827,9 +3851,16 @@ More
 
 - 
 
-In the Google Cloud Dedicated console, go to the **Key Management** page.
 
-[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 
@@ -4991,9 +5022,16 @@ More
 
 - 
 
-In the Google Cloud Dedicated console, go to the **Key Management** page.
 
-[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 
@@ -6440,9 +6478,16 @@ More
 
 - 
 
-In the Google Cloud Dedicated console, go to the **Key Management** page.
 
-[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms) 
+
+In the Google Cloud Dedicated console, go to the
+**Key Management** page.
+
+
+
+[Go to Key Management](https://console.cloud.berlin-build0.goog/security/kms)
+
+
 
 - 
 

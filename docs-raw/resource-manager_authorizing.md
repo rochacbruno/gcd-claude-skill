@@ -108,7 +108,7 @@ Resource Manager
 
 Reference
 
-](https://berlin.devsitetest.how/resource-manager/reference/mcp)
+](https://berlin.devsitetest.how/resource-manager/reference/rest)
 
 
 

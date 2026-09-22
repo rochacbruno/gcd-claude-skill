@@ -1,7 +1,7 @@
 # Cloud NGFW in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/firewall/docs/tpc-differences
-Last updated: 2026-09-18
+Last updated: 2026-09-21
 
 - 
 
@@ -134,7 +134,7 @@ Guides
 
 
 
-Cloud Next Generation Firewall is a fully distributed firewall service with
+Cloud Next Generation Firewall (Cloud NGFW) is a fully distributed firewall service with
 advanced protection capabilities, micro-segmentation, and pervasive coverage
 to protect your workloads from internal and external attacks.
 Cloud NGFW provides a stateful, fully distributed host-based
