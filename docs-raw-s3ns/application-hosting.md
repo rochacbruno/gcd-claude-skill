@@ -1,7 +1,7 @@
 # Application hosting
 
 Source: https://documentation.s3ns.fr/docs/application-hosting
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 - 
 

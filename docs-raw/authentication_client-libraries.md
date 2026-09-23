@@ -1,7 +1,7 @@
 # Authenticate with client libraries
 
 Source: https://berlin.devsitetest.how/docs/authentication/client-libraries
-Last updated: 2026-09-21
+Last updated: 2026-09-22
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Create and use tables
 
 Source: https://berlin.devsitetest.how/bigquery/docs/tables
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 

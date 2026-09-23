@@ -1,7 +1,7 @@
 # Authenticate with client libraries
 
 Source: https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials
-Last updated: 2026-09-21
+Last updated: 2026-09-22
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -590,7 +590,7 @@ end
 
 
 
-## Use API keys with client libraries 
+## Use API keys with client libraries
 
 You can use an API keys only with client libraries for APIs that accept API
 keys. In addition, the API key must not have an API restriction that prevents it

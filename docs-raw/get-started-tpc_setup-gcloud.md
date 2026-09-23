@@ -1,7 +1,7 @@
 # Set up the Google Cloud CLI for Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 - 
 
@@ -144,7 +144,7 @@ More
 
 
 - Confirm that you have a supported version of Python. The Google Cloud CLI requires
-Python 3.10 to 3.14. The x86_64 Linux package includes
+Python 3.10 to 3.15. The x86_64 Linux package includes
 a bundled Python interpreter that will be preferred by default. For
 information on how to choose and configure your Python interpreter, see the 
 [`gcloud topic startup` documentation](/sdk/gcloud/reference/topic/startup).
@@ -170,8 +170,8 @@ Linux 64-bit
 (x86_64) 
 | 
 [google-cloud-cli-linux-x86_64.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86_64.tar.gz) | 
-87.8 MB | 
-82be040c2d899ddb7560c1532e809a685e2c605b97b8c24570a68638d634dcbf | 
+88.0 MB | 
+c1cd1823624a33f2341d0d384aafe2d7b24c1b77c9b131087d772ee0791ff2be | 
 |
 
 | 
@@ -180,8 +180,8 @@ Linux 64-bit
 (Arm) 
 | 
 [google-cloud-cli-linux-arm.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-arm.tar.gz) | 
-53.1 MB | 
-8c98d127fe0dd62bdb56fe42c3579b5d9e1f80242cdc1f8e3e285baddc5439e7 | 
+53.3 MB | 
+67573751523f808db2a7dc9137d8df0faf91f78303e2c346f62ac2db4ae66f9f | 
 |
 
 | 
@@ -190,8 +190,8 @@ Linux 32-bit
 (x86) 
 | 
 [google-cloud-cli-linux-x86.tar.gz](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-linux-x86.tar.gz) | 
-53.1 MB | 
-a207add769ce21341e4262ea7a654f40398b45fdccf6304d8ce2bad154ca0853 | 
+53.3 MB | 
+76ae821a3a11b1b69a394c71c2ffe4d820a109f6acaec95a3f46b767a8a63bcc | 
 |
 
 
@@ -264,7 +264,7 @@ terminal so that the changes take effect.
 
 
 - Confirm that you have a supported version of Python. The Google Cloud CLI requires
-Python 3.10 to 3.14.
+Python 3.10 to 3.15.
 
 
 To check your Python version, run `python3 -V` or `python -V`.
@@ -308,9 +308,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86_64.tar.gz)
 
 | 
-53.3 MB | 
+53.4 MB | 
 
-c8d29252efdd88dbc4018581bd9508742c803856f5fa5a5b70a07a8b82489dd5 
+44534a3af6e454d37328ddea202db52b0c5d7a2fb884878b5f81b325afb556e0 
 | 
 |
 
@@ -328,9 +328,9 @@ macOS 64-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-arm.tar.gz)
 
 | 
-53.2 MB | 
+53.3 MB | 
 
-c7f3470e0bf2a9a9f646bfbf7cd1331b753311638b2db558c3f94a83e4729d22 
+dbe65982ea5958b932da53cb002f39a5f29438963f1013ff90bf5499c937c4a0 
 | 
 |
 
@@ -348,9 +348,9 @@ macOS 32-bit
 ](https://storage.apis-berlin-build0.goog/cloud-sdk-release/google-cloud-cli-darwin-x86.tar.gz)
 
 | 
-51.6 MB | 
+51.8 MB | 
 
-1d394556d9b3ae82604bc6f7e51bde4faee5b07c44486400cb505eec3b3426f5 
+3b87789372d9fb67892189bc1be02d3adecab17f21f011ce3dc1c336c7816cb5 
 | 
 |
 
@@ -402,7 +402,7 @@ answer `Y` when prompted.
 
 
 
-- Install Python 3.13 and recommended modules if needed.
+- Install Python 3.14 and recommended modules if needed.
 
 - Add the gcloud CLI to your `PATH` and enable command completion.
 
@@ -472,7 +472,7 @@ display progress as a percentage, and flatten tables. For more information, see 
 [Accessibility features guide](/sdk/docs/enabling-accessibility-features).
 
 
-- Google Cloud CLI requires Python; supported versions are Python 3.10 to 3.14. By
+- Google Cloud CLI requires Python; supported versions are Python 3.10 to 3.15. By
 default, the Windows version of Google Cloud CLI comes bundled with Python 3. To use
 Google Cloud CLI your operating system must be able to run a supported version of Python.
 

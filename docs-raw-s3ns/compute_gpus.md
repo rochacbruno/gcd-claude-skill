@@ -1,7 +1,7 @@
 # GPU machine types
 
 Source: https://documentation.s3ns.fr/compute/docs/gpus
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -338,11 +338,15 @@ types:
 
 - NVIDIA T4 
 (`nvidia-tesla-t4`) 
-(`nvidia-tesla-t4-vws`)
+(`nvidia-tesla-t4-vws`). NVIDIA T4 is approaching end
+of support, see
+[NVIDIA T4 end of support](/compute/docs/eol/t4-eos).
 
 - NVIDIA P4 
 (`nvidia-tesla-p4`) 
-(`nvidia-tesla-p4-vws`)
+(`nvidia-tesla-p4-vws`). NVIDIA P4 is approaching end
+of support, see
+[NVIDIA P4 end of support](/compute/docs/eol/p4-eos).
 
 - NVIDIA V100 
 (`nvidia-tesla-v100`)

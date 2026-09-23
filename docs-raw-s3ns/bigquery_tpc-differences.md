@@ -1,7 +1,7 @@
 # BigQuery in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/bigquery/docs/tpc-differences
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 - 
 

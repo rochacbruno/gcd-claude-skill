@@ -1,7 +1,7 @@
 # Cloud Armor in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/armor/docs/tpc-differences
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 - 
 

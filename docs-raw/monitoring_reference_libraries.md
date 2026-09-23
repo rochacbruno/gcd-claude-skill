@@ -1,7 +1,7 @@
 # Monitoring client libraries
 
 Source: https://berlin.devsitetest.how/monitoring/docs/reference/libraries
-Last updated: 2026-09-17
+Last updated: 2026-09-22
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/monitoring/docs/tpc-differences) for more details.
 
@@ -1767,7 +1767,7 @@ series = Google :: Cloud :: [ Monitoring ](https://berlin.devsitetest.how/ruby/d
 series . [ metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-v3/latest/Google-Cloud-Monitoring-V3-TimeSeries.html) = Google :: Api :: [ Metric ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-migration-v2/latest/Google-Api-Metric.html) . new type : "custom.googleapis.com/my_metric" , 
 labels : { "my_key" = > metric_label } 
 
-resource = Google :: Api :: [ MonitoredResource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-monitoring-dashboard-v1/latest/Google-Api-MonitoredResource.html) . new type : "gce_instance" 
+resource = Google :: Api :: [ MonitoredResource ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging-v2/latest/Google-Api-MonitoredResource.html) . new type : "gce_instance" 
 resource . labels [ "project_id" ] = project_id 
 resource . labels [ "instance_id" ] = "1234567890123456789" 
 resource . labels [ "zone" ] = "us-central1-f" 
