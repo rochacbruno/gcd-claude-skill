@@ -1,7 +1,7 @@
 # Quickstart: Store Docker container images in Artifact Registry
 
 Source: https://berlin.devsitetest.how/artifact-registry/docs/quickstarts
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -279,7 +279,7 @@ roles](/iam/docs/granting-changing-revoking-access).
 
 
 
-Enable the Artifact Registry API.
+Enable the Artifact Registry API, if it is not already enabled.
 
 
 

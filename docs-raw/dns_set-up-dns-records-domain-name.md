@@ -1,7 +1,7 @@
 # Quickstart: Set up DNS records for a domain name with Cloud DNS
 
 Source: https://berlin.devsitetest.how/dns/docs/set-up-dns-records-domain-name
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/dns/docs/tpc-differences) for more details.
 
@@ -415,7 +415,7 @@ Click **Save**.
 
 
 
-Enable the DNS API.
+Enable the DNS API, if it is not already enabled.
 
 
 

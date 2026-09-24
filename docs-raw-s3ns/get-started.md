@@ -1,7 +1,7 @@
 # Get started with Google Cloud
 
 Source: https://documentation.s3ns.fr/docs/get-started
-Last updated: 2026-09-02
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -365,7 +365,7 @@ Start automating infrastructure and secure collaboration with teammates using Go
 
 - [Observability in Google Cloud](/stackdriver/docs)
 
-- [Terraform and Infrastructure Manager](/infrastructure-manager/docs/terraform)
+- [Terraform and Infrastructure Manager](/infrastructure-manager/docs/infra-manager-terraform)
 
 - [CI/CD pipeline for containerized apps (Architecture Center)](/architecture/app-development-and-delivery-with-cloud-code-gcb-cd-and-gke)
 

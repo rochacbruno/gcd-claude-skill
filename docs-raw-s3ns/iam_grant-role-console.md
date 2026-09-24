@@ -1,7 +1,7 @@
 # Quickstart: Grant roles in the Cloud de Confiance console
 
 Source: https://documentation.s3ns.fr/iam/docs/grant-role-console
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -349,7 +349,7 @@ Click **Save**.
 
 
 
-Enable the IAM and Resource Manager APIs.
+Enable the IAM and Resource Manager APIs, if any are not already enabled.
 
 
 

@@ -1,7 +1,7 @@
 # Create service accounts
 
 Source: https://documentation.s3ns.fr/iam/docs/service-accounts-create
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -157,7 +157,7 @@ line tool.
 
 
 
-Enable the IAM API.
+Enable the IAM API, if it is not already enabled.
 
 
 

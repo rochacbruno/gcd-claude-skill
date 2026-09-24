@@ -1,7 +1,7 @@
 # Quickstart: Create a Compute Engine VM instance using Terraform
 
 Source: https://documentation.s3ns.fr/docs/terraform/create-vm-instance
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 - 
 
@@ -189,7 +189,7 @@ Replace ` PROJECT_ID ` with your Cloud de Confiance project name.
 
 
 
-Enable the Compute Engine API:
+Enable the Compute Engine API, if it is not already enabled:
 
 
 

@@ -1,7 +1,7 @@
 # Deploy a basic Flask web server by using Terraform
 
 Source: https://berlin.devsitetest.how/docs/terraform/deploy-flask-web-server
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 
@@ -292,7 +292,7 @@ Go to the IAM page](https://console.cloud.berlin-build0.goog/iam-admin/iam)
 
 
 
-Enable the Compute Engine API.
+Enable the Compute Engine API, if it is not already enabled.
 
 
 

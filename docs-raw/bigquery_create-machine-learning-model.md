@@ -1,7 +1,7 @@
 # Create an ML model in BigQuery ML by using SQL
 
 Source: https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -453,7 +453,7 @@ To activate BigQuery in a pre-existing project, go to
 
 
 
-Enable the BigQuery API.
+Enable the BigQuery API, if it is not already enabled.
 
 
 

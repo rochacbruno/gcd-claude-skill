@@ -1,7 +1,7 @@
 # Store Terraform state in a Cloud Storage bucket
 
 Source: https://berlin.devsitetest.how/docs/terraform/resource-management/store-state
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 - 
 
@@ -311,7 +311,7 @@ Replace ` PROJECT_ID ` with your Google Cloud Dedicated project name.
 
 
 
-Enable the Cloud Storage API:
+Enable the Cloud Storage API, if it is not already enabled:
 
 
 

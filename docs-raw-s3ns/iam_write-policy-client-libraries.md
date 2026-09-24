@@ -337,7 +337,7 @@ Replace ` PROJECT_ID ` with your Cloud de Confiance project name.
 
 
 
-Enable the Resource Manager API:
+Enable the Resource Manager API, if it is not already enabled:
 
 
 
