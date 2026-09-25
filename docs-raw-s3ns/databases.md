@@ -1,7 +1,7 @@
 # Databases
 
 Source: https://documentation.s3ns.fr/docs/databases
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 
@@ -315,7 +315,7 @@ General information about the Cloud SQL options, each a fully-managed database s
 
 
 #### [
-Big Query
+BigQuery
 ](/bigquery/docs)
 
 
@@ -342,7 +342,7 @@ Understand your data using a fully managed, highly scalable data warehouse with 
 
 
 #### [
-Big Lake in Big Query
+Big Lake in BigQuery
 ](/bigquery/docs/biglake-intro)
 
 
@@ -369,7 +369,7 @@ Query structured data in external data stores with access delegation.
 
 
 #### [
-Big Query Storage
+BigQuery Storage
 ](/bigquery/docs/storage_overview)
 
 

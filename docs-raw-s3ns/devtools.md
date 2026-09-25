@@ -1,7 +1,7 @@
 # Cloud de Confiance SDK, languages, frameworks, and tools
 
 Source: https://documentation.s3ns.fr/docs/devtools
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 
@@ -351,7 +351,7 @@ Learn how to use Cloud de Confiance product libraries and frameworks to build an
 
 
 #### [
-Java Script and Node. js
+JavaScript and Node. js
 ](/nodejs/docs)
 
 

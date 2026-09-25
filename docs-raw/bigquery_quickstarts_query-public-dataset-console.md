@@ -1,7 +1,7 @@
 # Try BigQuery using the sandbox
 
 Source: https://berlin.devsitetest.how/bigquery/docs/quickstarts/query-public-dataset-console
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -151,7 +151,7 @@ Guides
 
 
 
-# Try Big Query using the sandbox 
+# Try BigQuery using the sandbox 
 
 
 
@@ -181,7 +181,7 @@ working with public datasets, see [BigQuery public datasets](/bigquery/public-da
 
 
 
-### Enable the Big Query sandbox
+### Enable the BigQuery sandbox
 
 - 
 

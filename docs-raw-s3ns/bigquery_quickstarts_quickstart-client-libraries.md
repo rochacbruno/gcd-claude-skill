@@ -1,7 +1,7 @@
 # Query a public dataset with the BigQuery client libraries
 
 Source: https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries
-Last updated: 2026-09-23
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -146,7 +146,7 @@ Guides
 
 
 
-# Query a public dataset with the Big Query client libraries 
+# Query a public dataset with the BigQuery client libraries 
 
 
 

@@ -1,7 +1,7 @@
 # Tax anomaly detection with BigQuery ML and Gemma
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/tax-enforcement
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 
@@ -66,7 +66,7 @@ Get started
 
 
 
-# Tax anomaly detection with Big Query ML and Gemma 
+# Tax anomaly detection with BigQuery ML and Gemma 
 
 
 

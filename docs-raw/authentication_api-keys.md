@@ -1,7 +1,7 @@
 # Manage API keys
 
 Source: https://berlin.devsitetest.how/docs/authentication/api-keys
-Last updated: 2026-09-23
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -148,7 +148,7 @@ Guides
 
 
 
-- On this page 
+- On this page ** 
 - [ Introduction to API keys ](#introduction)
 
 - [ Standard API keys ](#standard-api-keys)
@@ -3466,10 +3466,14 @@ have restrictions using Cloud Asset Inventory. To do so, complete the following 
 
 - 
 
-Enable the Cloud Asset Inventory API in the project you're running Cloud Asset Inventory
-commands from.
+Go to the Cloud Asset Inventory library page in the Google Cloud Dedicated console and check
+to see if it's enabled in the project where you're running Cloud Asset Inventory
+commands from. If it's not enabled, enable it.
 
-[Enable the Cloud Asset Inventory API](https://console.cloud.berlin-build0.goog/apis/library/cloudasset.googleapis.com)
+[Go to the Library** page](https://console.cloud.berlin-build0.goog/apis/library/cloudasset.googleapis.com)
+
+If the Cloud Asset Inventory API is already enabled for the current project, you see
+a button labeled **Manage**. Otherwise, you see a button labeled **Enable**.
 
 - 
 

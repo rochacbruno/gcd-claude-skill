@@ -1,7 +1,7 @@
 # Cloud Quotas client libraries
 
 Source: https://berlin.devsitetest.how/docs/quotas/reference/libraries
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -415,7 +415,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-cloudquotas" % "0.65.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-cloudquotas" % "0.66.0" 
 ```
 
 

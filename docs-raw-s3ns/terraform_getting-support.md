@@ -1,7 +1,7 @@
 # Get support for Terraform issues
 
 Source: https://documentation.s3ns.fr/docs/terraform/getting-support
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 
@@ -166,7 +166,7 @@ Cloud Support console:
 
 [Go to Support](https://console.cloud.s3nscloud.fr/support) 
 
-## Open an issue on Git Hub
+## Open an issue on GitHub
 
 On [GitHub](https://github.com/terraform-providers/terraform-provider-google/issues),
 you can open the following types of issues:

@@ -1,7 +1,7 @@
 # Infrastructure as Code on Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/terraform/iac-overview
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 
@@ -164,7 +164,7 @@ the same manner as you handle application code. You can store your provisioning
 configuration logic in source control and you can take advantage of continuous
 integration and continuous deployment (CI/CD) pipelines.
 
-## Benefits of Ia C
+## Benefits of IaC
 
 Using IaC to set up and manage your application infrastructure is a best
 practice for a number of common use cases. [Google manages its
@@ -191,7 +191,7 @@ and reverted.
 
 - You can have a single source of truth for your cloud infrastructure.
 
-## Ia C tools for Google Cloud Dedicated
+## IaC tools for Google Cloud Dedicated
 
 Google Cloud Dedicated in Germany is tightly integrated with many IaC tools. Choose one of the
 following tools depending on your use case:

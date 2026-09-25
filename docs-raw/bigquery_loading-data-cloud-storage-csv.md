@@ -1,7 +1,7 @@
 # Load CSV data from Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -138,7 +138,7 @@ Guides
 - [ Loading CSV data into a table ](#loading_csv_data_into_a_table)
 - [ Loading CSV data into a table that uses column-based time partitioning ](#loading_csv_data_into_a_table_that_uses_column-based_time_partitioning)
 - [ Appending to or overwriting a table with CSV data ](#appending_to_or_overwriting_a_table_with_csv_data)
-- [ Loading hive-partitioned CSV data ](#loading_hive-partitioned_csv_data)
+- [ Load Apache Hive-partitioned CSV data ](#loading-hive-partitioned-csv-data)
 - [ Details of loading CSV data ](#details_of_loading_csv_data)
 
 - [ Encoding ](#encoding)
@@ -146,13 +146,10 @@ Guides
 - [ Data types ](#data_types)
 - [ Schema auto-detection ](#schema_auto-detection)
 
+- [ Troubleshoot loading CSV data ](#troubleshoot-loading-csv-data)
+
 - [ Troubleshoot parsing errors ](#troubleshoot_parsing_errors)
-
-- [ Compressed CSV files ](#compressed_csv_files)
-
 - [ Troubleshoot quota errors ](#troubleshoot_quota_errors)
-
-- [ Loading CSV files quota errors ](#ts-load-csv-files-quota)
 
 - [ CSV options ](#csv-options)
 - 
@@ -166,8 +163,6 @@ Guides
 
 
 # Load CSV data from Cloud Storage 
-
-
 
 
 
@@ -4006,10 +4001,10 @@ print ( "Loaded {} rows." . format ( destination_table . [ num_rows ](https://be
 
 
 
-## Loading hive-partitioned CSV data
+## Load Apache Hive-partitioned CSV data
 
-BigQuery supports loading hive-partitioned CSV data stored on
-Cloud Storage and will populate the hive partitioning columns as columns in
+BigQuery supports loading Apache Hive-partitioned CSV data stored on
+Cloud Storage and populates the Apache Hive partitioning columns as columns in
 the destination BigQuery managed table. For more information, see
 [Load externally partitioned data](/bigquery/docs/hive-partitioned-loads-gcs).
 
@@ -4221,11 +4216,14 @@ BigQuery detects the following delimiters:
 BigQuery infers headers by comparing the first row of the file
 with other rows in the file. If the first line contains only strings, and the
 other lines contain other data types, BigQuery assumes that the
-first row is a header row. BigQuery assigns column names based on the field names in the header row. The names might be modified to meet the [naming rules](/bigquery/docs/schemas#column_names) for columns in BigQuery. For example, spaces will be replaced with underscores.
+first row is a header row. BigQuery assigns column names based
+on the field names in the header row. The names might be modified to meet the
+[naming rules](/bigquery/docs/schemas#column_names) for columns in
+BigQuery. For example, spaces are replaced with underscores.
 
 Otherwise, BigQuery assumes the first row is a data row, and
 assigns generic column names such as `string_field_1`. Note that after a table
-is created, the column names cannot be updated in the schema, although you can
+is created, the column names can't be updated in the schema, although you can
 [change the names
 manually](/bigquery/docs/manually-changing-schemas#changing_a_columns_name)
 after the table is created. Another option is to provide an explicit schema
@@ -4234,13 +4232,13 @@ instead of using autodetect.
 You might have a CSV file with a header row, where all of the data fields are
 strings. In that case, BigQuery won't automatically detect that
 the first row is a header. Use the `--skip_leading_rows` option to skip the
-header row. Otherwise, the header will be imported as data. Also consider
-providing an explicit schema in this case, so that you can assign column names.
+header row. Otherwise, the header is imported as data. Also consider providing
+an explicit schema in this case, so that you can assign column names.
 
 #### CSV quoted new lines
 
 BigQuery detects quoted new line characters within a CSV field
-and does not interpret the quoted new line character as a row boundary.
+and doesn't interpret the quoted new line character as a row boundary.
 
 #### Troubleshooting
 
@@ -4254,17 +4252,23 @@ This error can occur when your CSV file has a header row with string values, and
 BigQuery didn't detect it as a header. You can use the
 `--skip_leading_rows` option to skip the header row.
 
-## Troubleshoot parsing errors
+## Troubleshoot loading CSV data
+
+The following sections explain how to resolve common parsing and quota errors
+when you load CSV files into BigQuery.
+
+### Troubleshoot parsing errors
 
 If there's a problem parsing your CSV files, then the
-load job's [`errors`](/bigquery/docs/reference/rest/v2/ErrorProto) resource is
+load job's [`errors` resource](/bigquery/docs/reference/rest/v2/ErrorProto) is
 populated with the error details.
 
 Generally, these errors identify the start of the problematic line with a byte
-offset. For uncompressed files you can use `gcloud storage` with the
+offset. For uncompressed files, you can use `gcloud storage` with the
 `--recursive` argument to access the relevant line.
 
-For example, you run the [`bq load` command](/bigquery/docs/reference/bq-cli-reference#bq_load)
+For example, you run the
+[`bq load` command](/bigquery/docs/reference/bq-cli-reference#bq_load)
 and receive an error:
 
 
@@ -4301,7 +4305,8 @@ percent: 0
 
 
 Based on the preceding error, there's a format error in the file.
-To view the file's content, run the [`gcloud storage cat` command](/sdk/gcloud/reference/storage/cat):
+To view the file's content, run the
+[`gcloud storage cat` command](/sdk/gcloud/reference/storage/cat):
 
 
 ```
@@ -4319,12 +4324,12 @@ The output is similar to the following:
 ```
 
 
-Based on the output of the file, the problem is a misplaced quote in
+Based on the output of the file, the problem is a misplaced quotation mark in
 `"April 15, "1865`.
 
-### Compressed CSV files
+#### Compressed CSV files
 
-Debugging parsing errors is more challenging for compressed CSV files, since
+Debugging parsing errors is more challenging for compressed CSV files, because
 the reported byte offset refers to the location in the *uncompressed* file.
 The following [`gcloud storage cat` command](/sdk/gcloud/reference/storage/cat)
 streams the file from Cloud Storage, decompresses the file, identifies
@@ -4344,12 +4349,12 @@ The output is similar to the following:
 ```
 
 
-## Troubleshoot quota errors
+
+
+### Troubleshoot quota errors
 
 Use the information in this section to troubleshoot quota or limit errors
 related to loading CSV files into BigQuery.
-
-### Loading CSV files quota errors
 
 If you load a large CSV file using the `bq load` command with the
 [`--allow_quoted_newlines` flag](/bigquery/docs/reference/bq-cli-reference#flags_and_arguments_9),

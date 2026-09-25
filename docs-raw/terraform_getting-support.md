@@ -1,7 +1,7 @@
 # Get support for Terraform issues
 
 Source: https://berlin.devsitetest.how/docs/terraform/getting-support
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 
@@ -166,7 +166,7 @@ Cloud Support console:
 
 [Go to Support](https://console.cloud.berlin-build0.goog/support) 
 
-## Open an issue on Git Hub
+## Open an issue on GitHub
 
 On [GitHub](https://github.com/terraform-providers/terraform-provider-google/issues),
 you can open the following types of issues:

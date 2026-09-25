@@ -1,7 +1,7 @@
 # Get started with Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 

@@ -1,7 +1,7 @@
 # Data analytics
 
 Source: https://documentation.s3ns.fr/docs/data
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 
@@ -167,7 +167,7 @@ Use a serverless, cost-effective, and multi-cloud data and AI platform designed 
 
 
 #### [
-Big Query
+BigQuery
 ](/bigquery/docs)
 
 

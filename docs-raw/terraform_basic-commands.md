@@ -1,7 +1,7 @@
 # Basic Terraform commands
 
 Source: https://berlin.devsitetest.how/docs/terraform/basic-commands
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 

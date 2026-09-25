@@ -1,7 +1,7 @@
 # Try BigQuery DataFrames
 
 Source: https://documentation.s3ns.fr/bigquery/docs/dataframes-quickstart
-Last updated: 2026-09-23
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -145,7 +145,7 @@ Guides
 
 
 
-# Try Big Query Data Frames 
+# Try BigQuery Data Frames 
 
 
 

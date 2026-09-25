@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://documentation.s3ns.fr/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -404,8 +404,10 @@ recommend that you don't include `insertId` and instead use
 For more information, see
 [Ensuring data consistency](/bigquery/docs/streaming-data-into-bigquery#dataconsistency).
 
-When you encounter this error, [diagnose the issue](#ts-streaming-insert-quota-diagnose)
-the issue and then [follow the recommended steps](#ts-streaming-insert-quota-resolution) to resolve it.
+When you encounter this error,
+[diagnose the issue](#ts-streaming-insert-quota-diagnose), and then
+[follow the recommended steps](#ts-streaming-insert-quota-resolution) to resolve
+it.
 
 #### Diagnosis
 

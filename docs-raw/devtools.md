@@ -1,7 +1,7 @@
 # Google Cloud Dedicated SDK, languages, frameworks, and tools
 
 Source: https://berlin.devsitetest.how/docs/devtools
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 
@@ -351,7 +351,7 @@ Learn how to use Google Cloud Dedicated product libraries and frameworks to buil
 
 
 #### [
-Java Script and Node. js
+JavaScript and Node. js
 ](/nodejs/docs)
 
 

@@ -1,7 +1,7 @@
 # Set up API access
 
 Source: https://documentation.s3ns.fr/docs/get-started/access-apis
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 

@@ -1,7 +1,7 @@
 # "Sovereign standby" with multiple universes
 
 Source: https://documentation.s3ns.fr/docs/gcd-solutions/sovereign-standby
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 

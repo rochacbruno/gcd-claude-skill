@@ -1,7 +1,7 @@
 # Regions and zones in Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/regions-and-zones
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 - 
 

@@ -1,7 +1,7 @@
 # Import a key version into Cloud KMS
 
 Source: https://documentation.s3ns.fr/kms/docs/importing-a-key
-Last updated: 2026-09-23
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -283,7 +283,7 @@ roles](/iam/docs/granting-changing-revoking-access).
 
 
 
-Enable the required API.
+Enable the required API, if it is not already enabled.
 
 
 

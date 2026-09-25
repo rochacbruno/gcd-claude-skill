@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://berlin.devsitetest.how/bigquery/docs/controlling-costs
-Last updated: 2026-09-22
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -192,7 +192,7 @@ best practices for cost control. For
 depend on the [storage billing model](/bigquery/docs/datasets-intro#dataset_storage_billing_models)
 configured for each dataset.
 
-## Understand compute pricing for Big Query
+## Understand compute pricing for BigQuery
 
 There are subtle differences in compute pricing for BigQuery that
 affect capacity planning and cost control.
@@ -1089,7 +1089,7 @@ query in slot-milliseconds (`total_slot_ms`) by inspecting the query execution
 details or querying the
 [`INFORMATION_SCHEMA.JOBS` view](/bigquery/docs/information-schema-jobs).
 
-#### Capacity-based cost attribution
+#### Capacity-based cost attribution 
 
 Cost attribution is the process of splitting and attributing reservation
 compute costs across projects, teams, or queries after workloads have run.
@@ -1455,7 +1455,7 @@ based on the business need for archival. As a best practice, consider
 the [physical storage billing model](#storage-billing-model)
 before [exporting data out of BigQuery](/bigquery/docs/exporting-data).
 
-## Troubleshooting Big Query cost discrepancies and unexpected charges
+## Troubleshooting BigQuery cost discrepancies and unexpected charges
 
 Follow these steps to troubleshoot unexpected BigQuery charges or cost discrepancies:
 
@@ -1549,24 +1549,24 @@ Incorrect pricing amounts
 
 The general advice is following the recommended way of calculating the on-demand job usage for billing in our [public documentation](/bigquery/docs/information-schema-jobs#compare_on-demand_job_usage_to_billing_data).
 
-#### Billed for Big Query Reservations API usage even though the API is disabled and not reservations or commitments used
+#### Billed for BigQuery Reservations API usage even though the API is disabled and not reservations or commitments used
 
 Inspect the SKU to better understand what services are charged. If the SKU billed is `BigQuery Governance SKU`—these are charges coming from Knowledge Catalog.
 Some Knowledge Catalog functionalities trigger job execution using BigQuery. These charges are now processed under the corresponding BigQuery Reservations API SKU. 
 
-#### Project is assigned to a reservation, but still seeing Big Query Analysis on-demand costs
+#### Project is assigned to a reservation, but still seeing BigQuery Analysis on-demand costs
 
 Read through the [Troubleshooting issues with reservations](/bigquery/docs/reservations-workload-management#troubleshoot_issues_with_reservations) section to identify where the `Analysis` charges might be coming from.
 
-#### Unexpected charges for pay-as-you go (PAYG) slots for the Big Query Standard edition
+#### Unexpected charges for pay-as-you go (PAYG) slots for the BigQuery Standard edition
 
 In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `BQ_STUDIO_NOTEBOOK`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Standard edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Studio notebook](/bigquery/docs/notebooks-introduction#monitor_slot_usage). Read more about the [BigQuery Studio notebook pricing](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#notebook-runtime-pricing).
 
-#### Unexpected charges for pay-as-you go (PAYG) slots for the Big Query Enterprise edition
+#### Unexpected charges for pay-as-you go (PAYG) slots for the BigQuery Enterprise edition
 
 In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `SPARK_PROCEDURE`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Enterprise edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Apache Spark procedures](/bigquery/docs/spark-procedures#pricing), which are charged this way regardless of the computing model used by the project.
 
-#### Big Query Reservations API charges appearing after the Reservation API is disabled
+#### BigQuery Reservations API charges appearing after the Reservation API is disabled
 
 Disabling the BigQuery won't stop commitment charges. In order to stop commitment charges, you will need to delete a commitment. Set the renewal plan to `NONE`, and the commitment will be automatically deleted when it expires.
 
@@ -1586,7 +1586,7 @@ Scenarios that could lead to storage charge increases:
 
 - Modification of tables that have data in [long-term storage](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#storage-pricing), causing them to become [active storage](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#storage-pricing)
 
-#### Deletion of table( s) or dataset( s) resulted in higher Big Query storage costs
+#### Deletion of table( s) or dataset( s) resulted in higher BigQuery storage costs
 
 The [BigQuery time travel feature](/bigquery/docs/time-travel) retains deleted data for duration of the configured time-travel window and an additional 7 days for fail-safe recovery. During this retention window, the deleted data in physical storage billing model datasets contributes to the active physical storage cost, even though the tables will no longer appear in `INFORMATION_SCHEMA.TABLE_STORAGE` or in the console. If the table data was in long-term storage, deletion causes this data to be moved to active physical storage. This causes the corresponding cost to rise, because active physical bytes are charged approximately 2 times more than long-term physical bytes according to the [BigQuery storage pricing page](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#storage-pricing). The recommended approach to minimize costs caused by data deletion for physical storage billing model datasets is to reduce the time-travel window to 2 days.
 
