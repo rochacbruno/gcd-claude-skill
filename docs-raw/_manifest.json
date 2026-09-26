@@ -919,7 +919,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19064,
+    "size": 19066,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-09-24"
   },
@@ -1360,9 +1360,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2160127,
+    "size": 2168841,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-09-23"
+    "last_updated": "2026-09-25"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1528,9 +1528,9 @@
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13795,
+    "size": 13705,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1551,28 +1551,28 @@
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21227,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27565,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28092,
+    "size": 28081,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-09-22"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1586,42 +1586,42 @@
     "filename": "logging_release-notes.md",
     "size": 3355,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41470,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12317,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
@@ -1635,14 +1635,14 @@
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-25"
   },
   "/nat/docs": {
     "title": "Cloud NAT documentation",
@@ -1726,126 +1726,126 @@
     "filename": "pubsub.md",
     "size": 3982,
     "url": "https://berlin.devsitetest.how/pubsub/docs",
-    "last_updated": "2026-09-21"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115049,
+    "size": 115031,
     "url": "https://berlin.devsitetest.how/pubsub/docs/access-control",
     "last_updated": "2026-09-24"
   },
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24502,
+    "size": 24499,
     "url": "https://berlin.devsitetest.how/pubsub/docs/create-topic",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/monitoring": {
     "title": "Monitor Pub/Sub in Cloud Monitoring",
     "filename": "pubsub_monitoring.md",
     "size": 27799,
     "url": "https://berlin.devsitetest.how/pubsub/docs/monitoring",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/publish-receive-messages-console": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub using the Google Cloud Dedicated console",
     "filename": "pubsub_publish-receive-messages-console.md",
-    "size": 8353,
+    "size": 8383,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-console",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/publish-receive-messages-gcloud": {
     "title": "Quickstart: Publish and receive messages in Pub/Sub by using the gcloud CLI",
     "filename": "pubsub_publish-receive-messages-gcloud.md",
-    "size": 4466,
+    "size": 4496,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-gcloud",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 70166,
+    "size": 70157,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publisher",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/release-notes": {
     "title": "Pub/Sub release notes",
     "filename": "pubsub_release-notes.md",
     "size": 3414,
     "url": "https://berlin.devsitetest.how/pubsub/docs/release-notes",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/resource-location-restriction": {
     "title": "Configure message storage policies",
     "filename": "pubsub_resource-location-restriction.md",
     "size": 18812,
     "url": "https://berlin.devsitetest.how/pubsub/docs/resource-location-restriction",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/tpc-differences": {
     "title": "Pub/Sub in Google Cloud Dedicated versus Google Cloud",
     "filename": "pubsub_tpc-differences.md",
     "size": 5030,
     "url": "https://berlin.devsitetest.how/pubsub/docs/tpc-differences",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/pubsub/docs/troubleshooting": {
     "title": "General troubleshooting",
     "filename": "pubsub_troubleshooting.md",
     "size": 34380,
     "url": "https://berlin.devsitetest.how/pubsub/docs/troubleshooting",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs": {
     "title": "Resource Manager documentation",
     "filename": "resource-manager.md",
     "size": 3006,
     "url": "https://berlin.devsitetest.how/resource-manager/docs",
-    "last_updated": "2026-09-21"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/authorizing": {
     "title": "Authorize requests",
     "filename": "resource-manager_authorizing.md",
     "size": 6482,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/authorizing",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/creating-managing-folders": {
     "title": "Create folders",
     "filename": "resource-manager_creating-managing-folders.md",
     "size": 19707,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/creating-managing-folders",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/creating-managing-projects": {
     "title": "Create projects",
     "filename": "resource-manager_creating-managing-projects.md",
     "size": 13543,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/creating-managing-projects",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/limits": {
     "title": "Quotas and usage limits",
     "filename": "resource-manager_limits.md",
     "size": 4934,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/limits",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/listing-all-resources": {
     "title": "List all projects and folders in your hierarchy",
     "filename": "resource-manager_listing-all-resources.md",
     "size": 9754,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/listing-all-resources",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/manage-google-cloud-resources": {
     "title": "Quickstart: Create your Google Cloud Dedicated in Germany resource hierarchy",
     "filename": "resource-manager_manage-google-cloud-resources.md",
     "size": 13965,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/manage-google-cloud-resources",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/reference/essentialcontacts/rest": {
     "title": "Essential Contacts API",
@@ -1859,21 +1859,21 @@
     "filename": "resource-manager_release-notes.md",
     "size": 2381,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/release-notes",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/tags/tags-creating-and-managing": {
     "title": "Create and manage tags",
     "filename": "resource-manager_tags_tags-creating-and-managing.md",
     "size": 79219,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/tags/tags-creating-and-managing",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/resource-manager/docs/tpc-differences": {
     "title": "Resource Manager in Google Cloud Dedicated versus Google Cloud",
     "filename": "resource-manager_tpc-differences.md",
     "size": 4108,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/tpc-differences",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/service-usage/docs": {
     "title": "Service Usage documentation",
@@ -1950,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-25"
+    "last_updated": "2026-09-26"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

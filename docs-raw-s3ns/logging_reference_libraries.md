@@ -1,7 +1,7 @@
 # Logging client libraries
 
 Source: https://documentation.s3ns.fr/logging/docs/reference/libraries
-Last updated: 2026-09-22
+Last updated: 2026-09-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -1602,7 +1602,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/logging" 
 
 # Instantiates a client 
-logging = Google :: Cloud :: [ Logging ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-service_control-v1/latest/Google-Cloud-Logging.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
+logging = Google :: Cloud :: [ Logging ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
 
 # Prepares a log entry 
 entry = logging . [ entry ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging-Project.html)

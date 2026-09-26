@@ -1,7 +1,7 @@
 # Quickstart: Publish and receive messages in Pub/Sub by using the gcloud CLI
 
 Source: https://berlin.devsitetest.how/pubsub/docs/publish-receive-messages-gcloud
-Last updated: 2026-09-18
+Last updated: 2026-09-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -201,7 +201,7 @@ Click to:
 - 
 
 
-Enable the Pub/Sub API for that project.
+Enable the Pub/Sub API for that project, if it is not already enabled.
 
 
 

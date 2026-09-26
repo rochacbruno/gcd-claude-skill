@@ -1,7 +1,7 @@
 # Logging client libraries
 
 Source: https://berlin.devsitetest.how/logging/docs/reference/libraries
-Last updated: 2026-09-22
+Last updated: 2026-09-25
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -1602,7 +1602,7 @@ variable to `apis-berlin-build0.goog`.
 require "google/cloud/logging" 
 
 # Instantiates a client 
-logging = Google :: Cloud :: [ Logging ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-service_control-v1/latest/Google-Cloud-Logging.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
+logging = Google :: Cloud :: [ Logging ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging.html)
 
 # Prepares a log entry 
 entry = logging . [ entry ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-logging/latest/Google-Cloud-Logging-Project.html)

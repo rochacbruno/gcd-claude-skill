@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-09-24
+Last updated: 2026-09-25
 
 - 
 
@@ -480,8 +480,6 @@ The following customization options for network isolation are unavailable:
 
 
 - Disabling internal and external endpoints of the control plane.
-
-- Controlling communication between cluster Pods and Services with GKE network policies.
 
 - Assigning additional Pod IPv4 ranges to a cluster.
 

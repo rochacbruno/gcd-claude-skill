@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-09-24
+Last updated: 2026-09-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -710,6 +710,7 @@ Select one or more machine series to see the supported Hyperdisk types.
 [TPU v6e](/tpu/docs/v6e) 
 [TPU7x](/tpu/docs/tpu7x) 
 [X4](/compute/docs/memory-optimized-machines#x4_series) 
+[X5](/compute/docs/memory-optimized-machines#x5_series) 
 [Z3](/compute/docs/storage-optimized-machines#z3_series) 
 [Z4D](/compute/docs/storage-optimized-machines#z4d_series) 
 Select one or more options ** Choose a machine series 
@@ -755,6 +756,7 @@ Select one or more options ** Choose a machine series
 - TPU v6e
 - TPU7x
 - X4
+- X5
 - Z3
 - Z4D
 
@@ -1526,6 +1528,24 @@ Hyperdisk ML |
 | 
 
 **—** 
+| 
+|
+| 
+[X5](/compute/docs/memory-optimized-machines#x5_series) | 
+
+
+| 
+
+
+| 
+
+
+| 
+
+
+| 
+
+
 | 
 |
 | 
