@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53145,
+    "size": 53144,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-09-24"
   },
@@ -1640,7 +1640,7 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 27909,
+    "size": 27912,
     "url": "https://documentation.s3ns.fr/logging/docs/reference/libraries",
     "last_updated": "2026-09-25"
   },
@@ -1696,7 +1696,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39244,
+    "size": 39230,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
     "last_updated": "2026-09-24"
   },
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-27"
+    "last_updated": "2026-09-28"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2067,7 +2067,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30359,
+    "size": 30348,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-09-24"
   },
@@ -2088,9 +2088,9 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22347,
+    "size": 22340,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
-    "last_updated": "2026-09-16"
+    "last_updated": "2026-09-24"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
@@ -2111,12 +2111,12 @@
     "filename": "storage_troubleshooting.md",
     "size": 36987,
     "url": "https://documentation.s3ns.fr/storage/docs/troubleshooting",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-24"
   },
   "/storage/docs/uploading-objects": {
     "title": "Upload objects from a file system",
     "filename": "storage_uploading-objects.md",
-    "size": 46649,
+    "size": 46638,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
     "last_updated": "2026-09-24"
   },

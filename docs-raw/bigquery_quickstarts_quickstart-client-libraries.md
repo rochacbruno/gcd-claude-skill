@@ -199,7 +199,7 @@ More
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
