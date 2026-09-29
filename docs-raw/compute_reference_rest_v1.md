@@ -1,7 +1,7 @@
 # Compute Engine API
 
 Source: https://berlin.devsitetest.how/compute/docs/reference/rest/v1
-Last updated: 2026-09-07
+Last updated: 2026-09-28
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -128,285 +128,6 @@ APIs & Reference
 
 
 
-- On this page ** 
-- [ Service: compute.googleapis.com ](#service:-compute.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-- [ Regional service endpoint ](#regional-service-endpoint)
-
-- [ REST Resource: v1.acceleratorTypes ](#rest-resource:-v1.acceleratortypes)
-- [ REST Resource: v1.addresses ](#rest-resource:-v1.addresses)
-- [ REST Resource: v1.advice ](#rest-resource:-v1.advice)
-- [ REST Resource: v1.autoscalers ](#rest-resource:-v1.autoscalers)
-- [ REST Resource: v1.backendBuckets ](#rest-resource:-v1.backendbuckets)
-- [ REST Resource: v1.backendServices ](#rest-resource:-v1.backendservices)
-- [ REST Resource: v1.crossSiteNetworks ](#rest-resource:-v1.crosssitenetworks)
-- [ REST Resource: v1.diskTypes ](#rest-resource:-v1.disktypes)
-- [ REST Resource: v1.disks ](#rest-resource:-v1.disks)
-- [ REST Resource: v1.externalVpnGateways ](#rest-resource:-v1.externalvpngateways)
-- [ REST Resource: v1.firewallPolicies ](#rest-resource:-v1.firewallpolicies)
-- [ REST Resource: v1.firewalls ](#rest-resource:-v1.firewalls)
-- [ REST Resource: v1.forwardingRules ](#rest-resource:-v1.forwardingrules)
-- [ REST Resource: v1.futureReservations ](#rest-resource:-v1.futurereservations)
-- [ REST Resource: v1.globalAddresses ](#rest-resource:-v1.globaladdresses)
-- [ REST Resource: v1.globalForwardingRules ](#rest-resource:-v1.globalforwardingrules)
-- [ REST Resource: v1.globalNetworkEndpointGroups ](#rest-resource:-v1.globalnetworkendpointgroups)
-- [ REST Resource: v1.globalOperations ](#rest-resource:-v1.globaloperations)
-- [ REST Resource: v1.globalOrganizationOperations ](#rest-resource:-v1.globalorganizationoperations)
-- [ REST Resource: v1.globalPublicDelegatedPrefixes ](#rest-resource:-v1.globalpublicdelegatedprefixes)
-- [ REST Resource: v1.globalVmExtensionPolicies ](#rest-resource:-v1.globalvmextensionpolicies)
-- [ REST Resource: v1.healthChecks ](#rest-resource:-v1.healthchecks)
-- [ REST Resource: v1.hosts ](#rest-resource:-v1.hosts)
-- [ REST Resource: v1.httpHealthChecks ](#rest-resource:-v1.httphealthchecks)
-- [ REST Resource: v1.httpsHealthChecks ](#rest-resource:-v1.httpshealthchecks)
-- [ REST Resource: v1.imageFamilyViews ](#rest-resource:-v1.imagefamilyviews)
-- [ REST Resource: v1.images ](#rest-resource:-v1.images)
-- [ REST Resource: v1.instanceGroupManagerResizeRequests ](#rest-resource:-v1.instancegroupmanagerresizerequests)
-- [ REST Resource: v1.instanceGroupManagers ](#rest-resource:-v1.instancegroupmanagers)
-- [ REST Resource: v1.instanceGroups ](#rest-resource:-v1.instancegroups)
-- [ REST Resource: v1.instanceSettings ](#rest-resource:-v1.instancesettings)
-- [ REST Resource: v1.instanceTemplates ](#rest-resource:-v1.instancetemplates)
-- [ REST Resource: v1.instances ](#rest-resource:-v1.instances)
-- [ REST Resource: v1.instantSnapshotGroups ](#rest-resource:-v1.instantsnapshotgroups)
-- [ REST Resource: v1.instantSnapshots ](#rest-resource:-v1.instantsnapshots)
-- [ REST Resource: v1.interconnectAttachmentGroups ](#rest-resource:-v1.interconnectattachmentgroups)
-- [ REST Resource: v1.interconnectAttachments ](#rest-resource:-v1.interconnectattachments)
-- [ REST Resource: v1.interconnectGroups ](#rest-resource:-v1.interconnectgroups)
-- [ REST Resource: v1.interconnectLocations ](#rest-resource:-v1.interconnectlocations)
-- [ REST Resource: v1.interconnectRemoteLocations ](#rest-resource:-v1.interconnectremotelocations)
-- [ REST Resource: v1.interconnects ](#rest-resource:-v1.interconnects)
-- [ REST Resource: v1.licenseCodes ](#rest-resource:-v1.licensecodes)
-- [ REST Resource: v1.licenses ](#rest-resource:-v1.licenses)
-- [ REST Resource: v1.machineImages ](#rest-resource:-v1.machineimages)
-- [ REST Resource: v1.machineTypes ](#rest-resource:-v1.machinetypes)
-- [ REST Resource: v1.networkAttachments ](#rest-resource:-v1.networkattachments)
-- [ REST Resource: v1.networkEdgeSecurityServices ](#rest-resource:-v1.networkedgesecurityservices)
-- [ REST Resource: v1.networkEndpointGroups ](#rest-resource:-v1.networkendpointgroups)
-- [ REST Resource: v1.networkFirewallPolicies ](#rest-resource:-v1.networkfirewallpolicies)
-- [ REST Resource: v1.networkProfiles ](#rest-resource:-v1.networkprofiles)
-- [ REST Resource: v1.networks ](#rest-resource:-v1.networks)
-- [ REST Resource: v1.nodeGroups ](#rest-resource:-v1.nodegroups)
-- [ REST Resource: v1.nodeTemplates ](#rest-resource:-v1.nodetemplates)
-- [ REST Resource: v1.nodeTypes ](#rest-resource:-v1.nodetypes)
-- [ REST Resource: v1.organizationSecurityPolicies ](#rest-resource:-v1.organizationsecuritypolicies)
-- [ REST Resource: v1.packetMirrorings ](#rest-resource:-v1.packetmirrorings)
-- [ REST Resource: v1.previewFeatures ](#rest-resource:-v1.previewfeatures)
-- [ REST Resource: v1.projects ](#rest-resource:-v1.projects)
-- [ REST Resource: v1.publicAdvertisedPrefixes ](#rest-resource:-v1.publicadvertisedprefixes)
-- [ REST Resource: v1.publicDelegatedPrefixes ](#rest-resource:-v1.publicdelegatedprefixes)
-- [ REST Resource: v1.regionAutoscalers ](#rest-resource:-v1.regionautoscalers)
-- [ REST Resource: v1.regionBackendBuckets ](#rest-resource:-v1.regionbackendbuckets)
-- [ REST Resource: v1.regionBackendServices ](#rest-resource:-v1.regionbackendservices)
-- [ REST Resource: v1.regionCommitments ](#rest-resource:-v1.regioncommitments)
-- [ REST Resource: v1.regionCompositeHealthChecks ](#rest-resource:-v1.regioncompositehealthchecks)
-- [ REST Resource: v1.regionDiskTypes ](#rest-resource:-v1.regiondisktypes)
-- [ REST Resource: v1.regionDisks ](#rest-resource:-v1.regiondisks)
-- [ REST Resource: v1.regionHealthAggregationPolicies ](#rest-resource:-v1.regionhealthaggregationpolicies)
-- [ REST Resource: v1.regionHealthCheckServices ](#rest-resource:-v1.regionhealthcheckservices)
-- [ REST Resource: v1.regionHealthChecks ](#rest-resource:-v1.regionhealthchecks)
-- [ REST Resource: v1.regionHealthSources ](#rest-resource:-v1.regionhealthsources)
-- [ REST Resource: v1.regionInstanceGroupManagerResizeRequests ](#rest-resource:-v1.regioninstancegroupmanagerresizerequests)
-- [ REST Resource: v1.regionInstanceGroupManagers ](#rest-resource:-v1.regioninstancegroupmanagers)
-- [ REST Resource: v1.regionInstanceGroups ](#rest-resource:-v1.regioninstancegroups)
-- [ REST Resource: v1.regionInstanceTemplates ](#rest-resource:-v1.regioninstancetemplates)
-- [ REST Resource: v1.regionInstances ](#rest-resource:-v1.regioninstances)
-- [ REST Resource: v1.regionInstantSnapshotGroups ](#rest-resource:-v1.regioninstantsnapshotgroups)
-- [ REST Resource: v1.regionInstantSnapshots ](#rest-resource:-v1.regioninstantsnapshots)
-- [ REST Resource: v1.regionNetworkEndpointGroups ](#rest-resource:-v1.regionnetworkendpointgroups)
-- [ REST Resource: v1.regionNetworkFirewallPolicies ](#rest-resource:-v1.regionnetworkfirewallpolicies)
-- [ REST Resource: v1.regionNotificationEndpoints ](#rest-resource:-v1.regionnotificationendpoints)
-- [ REST Resource: v1.regionOperations ](#rest-resource:-v1.regionoperations)
-- [ REST Resource: v1.regionSecurityPolicies ](#rest-resource:-v1.regionsecuritypolicies)
-- [ REST Resource: v1.regionSnapshotSettings ](#rest-resource:-v1.regionsnapshotsettings)
-- [ REST Resource: v1.regionSnapshots ](#rest-resource:-v1.regionsnapshots)
-- [ REST Resource: v1.regionSslCertificates ](#rest-resource:-v1.regionsslcertificates)
-- [ REST Resource: v1.regionSslPolicies ](#rest-resource:-v1.regionsslpolicies)
-- [ REST Resource: v1.regionTargetHttpProxies ](#rest-resource:-v1.regiontargethttpproxies)
-- [ REST Resource: v1.regionTargetHttpsProxies ](#rest-resource:-v1.regiontargethttpsproxies)
-- [ REST Resource: v1.regionTargetTcpProxies ](#rest-resource:-v1.regiontargettcpproxies)
-- [ REST Resource: v1.regionUrlMaps ](#rest-resource:-v1.regionurlmaps)
-- [ REST Resource: v1.regionZones ](#rest-resource:-v1.regionzones)
-- [ REST Resource: v1.regions ](#rest-resource:-v1.regions)
-- [ REST Resource: v1.reliabilityRisks ](#rest-resource:-v1.reliabilityrisks)
-- [ REST Resource: v1.reservationBlocks ](#rest-resource:-v1.reservationblocks)
-- [ REST Resource: v1.reservationSlots ](#rest-resource:-v1.reservationslots)
-- [ REST Resource: v1.reservationSubBlocks ](#rest-resource:-v1.reservationsubblocks)
-- [ REST Resource: v1.reservations ](#rest-resource:-v1.reservations)
-- [ REST Resource: v1.resourcePolicies ](#rest-resource:-v1.resourcepolicies)
-- [ REST Resource: v1.rolloutPlans ](#rest-resource:-v1.rolloutplans)
-- [ REST Resource: v1.rollouts ](#rest-resource:-v1.rollouts)
-- [ REST Resource: v1.routers ](#rest-resource:-v1.routers)
-- [ REST Resource: v1.routes ](#rest-resource:-v1.routes)
-- [ REST Resource: v1.securityPolicies ](#rest-resource:-v1.securitypolicies)
-- [ REST Resource: v1.serviceAttachments ](#rest-resource:-v1.serviceattachments)
-- [ REST Resource: v1.snapshotSettings ](#rest-resource:-v1.snapshotsettings)
-- [ REST Resource: v1.snapshots ](#rest-resource:-v1.snapshots)
-- [ REST Resource: v1.sslCertificates ](#rest-resource:-v1.sslcertificates)
-- [ REST Resource: v1.sslPolicies ](#rest-resource:-v1.sslpolicies)
-- [ REST Resource: v1.storagePoolTypes ](#rest-resource:-v1.storagepooltypes)
-- [ REST Resource: v1.storagePools ](#rest-resource:-v1.storagepools)
-- [ REST Resource: v1.subnetworks ](#rest-resource:-v1.subnetworks)
-- [ REST Resource: v1.targetGrpcProxies ](#rest-resource:-v1.targetgrpcproxies)
-- [ REST Resource: v1.targetHttpProxies ](#rest-resource:-v1.targethttpproxies)
-- [ REST Resource: v1.targetHttpsProxies ](#rest-resource:-v1.targethttpsproxies)
-- [ REST Resource: v1.targetInstances ](#rest-resource:-v1.targetinstances)
-- [ REST Resource: v1.targetPools ](#rest-resource:-v1.targetpools)
-- [ REST Resource: v1.targetSslProxies ](#rest-resource:-v1.targetsslproxies)
-- [ REST Resource: v1.targetTcpProxies ](#rest-resource:-v1.targettcpproxies)
-- [ REST Resource: v1.targetVpnGateways ](#rest-resource:-v1.targetvpngateways)
-- [ REST Resource: v1.urlMaps ](#rest-resource:-v1.urlmaps)
-- [ REST Resource: v1.vpnGateways ](#rest-resource:-v1.vpngateways)
-- [ REST Resource: v1.vpnTunnels ](#rest-resource:-v1.vpntunnels)
-- [ REST Resource: v1.wireGroups ](#rest-resource:-v1.wiregroups)
-- [ REST Resource: v1.zoneOperations ](#rest-resource:-v1.zoneoperations)
-- [ REST Resource: v1.zoneVmExtensionPolicies ](#rest-resource:-v1.zonevmextensionpolicies)
-- [ REST Resource: v1.zones ](#rest-resource:-v1.zones)
-- [ REST Resource: beta.acceleratorTypes ](#rest-resource:-beta.acceleratortypes)
-- [ REST Resource: beta.addresses ](#rest-resource:-beta.addresses)
-- [ REST Resource: beta.advice ](#rest-resource:-beta.advice)
-- [ REST Resource: beta.autoscalers ](#rest-resource:-beta.autoscalers)
-- [ REST Resource: beta.backendBuckets ](#rest-resource:-beta.backendbuckets)
-- [ REST Resource: beta.backendServices ](#rest-resource:-beta.backendservices)
-- [ REST Resource: beta.crossSiteNetworks ](#rest-resource:-beta.crosssitenetworks)
-- [ REST Resource: beta.dhcpOptionsConfigs ](#rest-resource:-beta.dhcpoptionsconfigs)
-- [ REST Resource: beta.diskSettings ](#rest-resource:-beta.disksettings)
-- [ REST Resource: beta.diskTypes ](#rest-resource:-beta.disktypes)
-- [ REST Resource: beta.disks ](#rest-resource:-beta.disks)
-- [ REST Resource: beta.externalVpnGateways ](#rest-resource:-beta.externalvpngateways)
-- [ REST Resource: beta.firewallPolicies ](#rest-resource:-beta.firewallpolicies)
-- [ REST Resource: beta.firewalls ](#rest-resource:-beta.firewalls)
-- [ REST Resource: beta.forwardingRules ](#rest-resource:-beta.forwardingrules)
-- [ REST Resource: beta.futureReservations ](#rest-resource:-beta.futurereservations)
-- [ REST Resource: beta.globalAddresses ](#rest-resource:-beta.globaladdresses)
-- [ REST Resource: beta.globalForwardingRules ](#rest-resource:-beta.globalforwardingrules)
-- [ REST Resource: beta.globalFrontendSettings ](#rest-resource:-beta.globalfrontendsettings)
-- [ REST Resource: beta.globalNetworkEndpointGroups ](#rest-resource:-beta.globalnetworkendpointgroups)
-- [ REST Resource: beta.globalOperations ](#rest-resource:-beta.globaloperations)
-- [ REST Resource: beta.globalOrganizationOperations ](#rest-resource:-beta.globalorganizationoperations)
-- [ REST Resource: beta.globalPublicDelegatedPrefixes ](#rest-resource:-beta.globalpublicdelegatedprefixes)
-- [ REST Resource: beta.globalVmExtensionPolicies ](#rest-resource:-beta.globalvmextensionpolicies)
-- [ REST Resource: beta.healthChecks ](#rest-resource:-beta.healthchecks)
-- [ REST Resource: beta.hosts ](#rest-resource:-beta.hosts)
-- [ REST Resource: beta.httpHealthChecks ](#rest-resource:-beta.httphealthchecks)
-- [ REST Resource: beta.httpsHealthChecks ](#rest-resource:-beta.httpshealthchecks)
-- [ REST Resource: beta.imageFamilyViews ](#rest-resource:-beta.imagefamilyviews)
-- [ REST Resource: beta.imageViews ](#rest-resource:-beta.imageviews)
-- [ REST Resource: beta.images ](#rest-resource:-beta.images)
-- [ REST Resource: beta.instanceGroupManagerResizeRequests ](#rest-resource:-beta.instancegroupmanagerresizerequests)
-- [ REST Resource: beta.instanceGroupManagers ](#rest-resource:-beta.instancegroupmanagers)
-- [ REST Resource: beta.instanceGroups ](#rest-resource:-beta.instancegroups)
-- [ REST Resource: beta.instanceSettings ](#rest-resource:-beta.instancesettings)
-- [ REST Resource: beta.instanceTemplates ](#rest-resource:-beta.instancetemplates)
-- [ REST Resource: beta.instances ](#rest-resource:-beta.instances)
-- [ REST Resource: beta.instantSnapshotGroups ](#rest-resource:-beta.instantsnapshotgroups)
-- [ REST Resource: beta.instantSnapshots ](#rest-resource:-beta.instantsnapshots)
-- [ REST Resource: beta.interconnectAttachmentGroups ](#rest-resource:-beta.interconnectattachmentgroups)
-- [ REST Resource: beta.interconnectAttachments ](#rest-resource:-beta.interconnectattachments)
-- [ REST Resource: beta.interconnectGroups ](#rest-resource:-beta.interconnectgroups)
-- [ REST Resource: beta.interconnectLocations ](#rest-resource:-beta.interconnectlocations)
-- [ REST Resource: beta.interconnectRemoteLocations ](#rest-resource:-beta.interconnectremotelocations)
-- [ REST Resource: beta.interconnects ](#rest-resource:-beta.interconnects)
-- [ REST Resource: beta.licenseCodes ](#rest-resource:-beta.licensecodes)
-- [ REST Resource: beta.licenses ](#rest-resource:-beta.licenses)
-- [ REST Resource: beta.machineImages ](#rest-resource:-beta.machineimages)
-- [ REST Resource: beta.machineTypes ](#rest-resource:-beta.machinetypes)
-- [ REST Resource: beta.managedRulesets ](#rest-resource:-beta.managedrulesets)
-- [ REST Resource: beta.networkAttachments ](#rest-resource:-beta.networkattachments)
-- [ REST Resource: beta.networkEdgeSecurityServices ](#rest-resource:-beta.networkedgesecurityservices)
-- [ REST Resource: beta.networkEndpointGroups ](#rest-resource:-beta.networkendpointgroups)
-- [ REST Resource: beta.networkFirewallPolicies ](#rest-resource:-beta.networkfirewallpolicies)
-- [ REST Resource: beta.networkProfiles ](#rest-resource:-beta.networkprofiles)
-- [ REST Resource: beta.networks ](#rest-resource:-beta.networks)
-- [ REST Resource: beta.nodeGroups ](#rest-resource:-beta.nodegroups)
-- [ REST Resource: beta.nodeTemplates ](#rest-resource:-beta.nodetemplates)
-- [ REST Resource: beta.nodeTypes ](#rest-resource:-beta.nodetypes)
-- [ REST Resource: beta.organizationRolloutPlans ](#rest-resource:-beta.organizationrolloutplans)
-- [ REST Resource: beta.organizationRollouts ](#rest-resource:-beta.organizationrollouts)
-- [ REST Resource: beta.organizationSecurityPolicies ](#rest-resource:-beta.organizationsecuritypolicies)
-- [ REST Resource: beta.organizationSnapshotRecycleBinPolicy ](#rest-resource:-beta.organizationsnapshotrecyclebinpolicy)
-- [ REST Resource: beta.packetMirrorings ](#rest-resource:-beta.packetmirrorings)
-- [ REST Resource: beta.previewFeatures ](#rest-resource:-beta.previewfeatures)
-- [ REST Resource: beta.projectViews ](#rest-resource:-beta.projectviews)
-- [ REST Resource: beta.projects ](#rest-resource:-beta.projects)
-- [ REST Resource: beta.publicAdvertisedPrefixes ](#rest-resource:-beta.publicadvertisedprefixes)
-- [ REST Resource: beta.publicDelegatedPrefixes ](#rest-resource:-beta.publicdelegatedprefixes)
-- [ REST Resource: beta.recoverableSnapshots ](#rest-resource:-beta.recoverablesnapshots)
-- [ REST Resource: beta.regionAutoscalers ](#rest-resource:-beta.regionautoscalers)
-- [ REST Resource: beta.regionBackendBuckets ](#rest-resource:-beta.regionbackendbuckets)
-- [ REST Resource: beta.regionBackendServices ](#rest-resource:-beta.regionbackendservices)
-- [ REST Resource: beta.regionCommitments ](#rest-resource:-beta.regioncommitments)
-- [ REST Resource: beta.regionCompositeHealthChecks ](#rest-resource:-beta.regioncompositehealthchecks)
-- [ REST Resource: beta.regionDiskSettings ](#rest-resource:-beta.regiondisksettings)
-- [ REST Resource: beta.regionDiskTypes ](#rest-resource:-beta.regiondisktypes)
-- [ REST Resource: beta.regionDisks ](#rest-resource:-beta.regiondisks)
-- [ REST Resource: beta.regionHealthAggregationPolicies ](#rest-resource:-beta.regionhealthaggregationpolicies)
-- [ REST Resource: beta.regionHealthCheckServices ](#rest-resource:-beta.regionhealthcheckservices)
-- [ REST Resource: beta.regionHealthChecks ](#rest-resource:-beta.regionhealthchecks)
-- [ REST Resource: beta.regionHealthSources ](#rest-resource:-beta.regionhealthsources)
-- [ REST Resource: beta.regionInstanceGroupManagerResizeRequests ](#rest-resource:-beta.regioninstancegroupmanagerresizerequests)
-- [ REST Resource: beta.regionInstanceGroupManagers ](#rest-resource:-beta.regioninstancegroupmanagers)
-- [ REST Resource: beta.regionInstanceGroups ](#rest-resource:-beta.regioninstancegroups)
-- [ REST Resource: beta.regionInstanceTemplates ](#rest-resource:-beta.regioninstancetemplates)
-- [ REST Resource: beta.regionInstances ](#rest-resource:-beta.regioninstances)
-- [ REST Resource: beta.regionInstantSnapshotGroups ](#rest-resource:-beta.regioninstantsnapshotgroups)
-- [ REST Resource: beta.regionInstantSnapshots ](#rest-resource:-beta.regioninstantsnapshots)
-- [ REST Resource: beta.regionMultiMigMembers ](#rest-resource:-beta.regionmultimigmembers)
-- [ REST Resource: beta.regionMultiMigs ](#rest-resource:-beta.regionmultimigs)
-- [ REST Resource: beta.regionNetworkEndpointGroups ](#rest-resource:-beta.regionnetworkendpointgroups)
-- [ REST Resource: beta.regionNetworkFirewallPolicies ](#rest-resource:-beta.regionnetworkfirewallpolicies)
-- [ REST Resource: beta.regionNetworkPolicies ](#rest-resource:-beta.regionnetworkpolicies)
-- [ REST Resource: beta.regionNotificationEndpoints ](#rest-resource:-beta.regionnotificationendpoints)
-- [ REST Resource: beta.regionOperations ](#rest-resource:-beta.regionoperations)
-- [ REST Resource: beta.regionSecurityPolicies ](#rest-resource:-beta.regionsecuritypolicies)
-- [ REST Resource: beta.regionSnapshotSettings ](#rest-resource:-beta.regionsnapshotsettings)
-- [ REST Resource: beta.regionSnapshots ](#rest-resource:-beta.regionsnapshots)
-- [ REST Resource: beta.regionSslCertificates ](#rest-resource:-beta.regionsslcertificates)
-- [ REST Resource: beta.regionSslPolicies ](#rest-resource:-beta.regionsslpolicies)
-- [ REST Resource: beta.regionTargetHttpProxies ](#rest-resource:-beta.regiontargethttpproxies)
-- [ REST Resource: beta.regionTargetHttpsProxies ](#rest-resource:-beta.regiontargethttpsproxies)
-- [ REST Resource: beta.regionTargetTcpProxies ](#rest-resource:-beta.regiontargettcpproxies)
-- [ REST Resource: beta.regionUrlMaps ](#rest-resource:-beta.regionurlmaps)
-- [ REST Resource: beta.regionZones ](#rest-resource:-beta.regionzones)
-- [ REST Resource: beta.regions ](#rest-resource:-beta.regions)
-- [ REST Resource: beta.reliabilityRisks ](#rest-resource:-beta.reliabilityrisks)
-- [ REST Resource: beta.reservationBlocks ](#rest-resource:-beta.reservationblocks)
-- [ REST Resource: beta.reservationSlots ](#rest-resource:-beta.reservationslots)
-- [ REST Resource: beta.reservationSubBlocks ](#rest-resource:-beta.reservationsubblocks)
-- [ REST Resource: beta.reservations ](#rest-resource:-beta.reservations)
-- [ REST Resource: beta.resourcePolicies ](#rest-resource:-beta.resourcepolicies)
-- [ REST Resource: beta.rolloutPlans ](#rest-resource:-beta.rolloutplans)
-- [ REST Resource: beta.rollouts ](#rest-resource:-beta.rollouts)
-- [ REST Resource: beta.routers ](#rest-resource:-beta.routers)
-- [ REST Resource: beta.routes ](#rest-resource:-beta.routes)
-- [ REST Resource: beta.securityPolicies ](#rest-resource:-beta.securitypolicies)
-- [ REST Resource: beta.serviceAttachments ](#rest-resource:-beta.serviceattachments)
-- [ REST Resource: beta.snapshotGroups ](#rest-resource:-beta.snapshotgroups)
-- [ REST Resource: beta.snapshotRecycleBinPolicy ](#rest-resource:-beta.snapshotrecyclebinpolicy)
-- [ REST Resource: beta.snapshotSettings ](#rest-resource:-beta.snapshotsettings)
-- [ REST Resource: beta.snapshots ](#rest-resource:-beta.snapshots)
-- [ REST Resource: beta.sslCertificates ](#rest-resource:-beta.sslcertificates)
-- [ REST Resource: beta.sslPolicies ](#rest-resource:-beta.sslpolicies)
-- [ REST Resource: beta.storagePoolTypes ](#rest-resource:-beta.storagepooltypes)
-- [ REST Resource: beta.storagePools ](#rest-resource:-beta.storagepools)
-- [ REST Resource: beta.subnetworks ](#rest-resource:-beta.subnetworks)
-- [ REST Resource: beta.targetGrpcProxies ](#rest-resource:-beta.targetgrpcproxies)
-- [ REST Resource: beta.targetHttpProxies ](#rest-resource:-beta.targethttpproxies)
-- [ REST Resource: beta.targetHttpsProxies ](#rest-resource:-beta.targethttpsproxies)
-- [ REST Resource: beta.targetInstances ](#rest-resource:-beta.targetinstances)
-- [ REST Resource: beta.targetPools ](#rest-resource:-beta.targetpools)
-- [ REST Resource: beta.targetSslProxies ](#rest-resource:-beta.targetsslproxies)
-- [ REST Resource: beta.targetTcpProxies ](#rest-resource:-beta.targettcpproxies)
-- [ REST Resource: beta.targetVpnGateways ](#rest-resource:-beta.targetvpngateways)
-- [ REST Resource: beta.urlMaps ](#rest-resource:-beta.urlmaps)
-- [ REST Resource: beta.vpnGateways ](#rest-resource:-beta.vpngateways)
-- [ REST Resource: beta.vpnTunnels ](#rest-resource:-beta.vpntunnels)
-- [ REST Resource: beta.wireGroups ](#rest-resource:-beta.wiregroups)
-- [ REST Resource: beta.zoneOperations ](#rest-resource:-beta.zoneoperations)
-- [ REST Resource: beta.zoneVmExtensionPolicies ](#rest-resource:-beta.zonevmextensionpolicies)
-- [ REST Resource: beta.zones ](#rest-resource:-beta.zones)
-- 
-
 
 
 
@@ -456,6 +177,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: v1.globalForwardingRules](#v1.globalForwardingRules)
 
+- [REST Resource: v1.globalFrontendSettings](#v1.globalFrontendSettings)
+
 - [REST Resource: v1.globalNetworkEndpointGroups](#v1.globalNetworkEndpointGroups)
 
 - [REST Resource: v1.globalOperations](#v1.globalOperations)
@@ -466,6 +189,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: v1.globalVmExtensionPolicies](#v1.globalVmExtensionPolicies)
 
+- [REST Resource: v1.haControllers](#v1.haControllers)
+
 - [REST Resource: v1.healthChecks](#v1.healthChecks)
 
 - [REST Resource: v1.hosts](#v1.hosts)
@@ -475,6 +200,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: v1.httpsHealthChecks](#v1.httpsHealthChecks)
 
 - [REST Resource: v1.imageFamilyViews](#v1.imageFamilyViews)
+
+- [REST Resource: v1.imageViews](#v1.imageViews)
 
 - [REST Resource: v1.images](#v1.images)
 
@@ -514,6 +241,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: v1.machineTypes](#v1.machineTypes)
 
+- [REST Resource: v1.managedRulesets](#v1.managedRulesets)
+
 - [REST Resource: v1.networkAttachments](#v1.networkAttachments)
 
 - [REST Resource: v1.networkEdgeSecurityServices](#v1.networkEdgeSecurityServices)
@@ -537,6 +266,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: v1.packetMirrorings](#v1.packetMirrorings)
 
 - [REST Resource: v1.previewFeatures](#v1.previewFeatures)
+
+- [REST Resource: v1.projectViews](#v1.projectViews)
 
 - [REST Resource: v1.projects](#v1.projects)
 
@@ -968,7 +699,7 @@ Creates and runs virtual machines on Cloud Platform.
 
 
 
-## Service: compute. googleapis. com 
+## Service: compute. googleapis. com ** 
 
 
 
@@ -1013,10 +744,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-global Select an option global 
-
-- [global](?rep_location=global)
-
+global 
 
 - `https://compute.apis-berlin-build0.goog` 
 
@@ -1044,21 +772,27 @@ Methods |
 
 `[aggregated List](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
 
-The method `compute. v1. Accelerator Types Service. Aggregated List` is not available in Google Cloud Dedicated in Germany. | 
+`GET / compute/ v1/ projects/ {project}/ aggregated/ accelerator Types` 
+
+Retrieves an aggregated list of accelerator types. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/acceleratorTypes/get)` | 
 
-The method `compute.v1.AcceleratorTypesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/acceleratorTypes/{acceleratorType}` 
+
+Returns the specified accelerator type. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/acceleratorTypes/list)` | 
 
-The method `compute.v1.AcceleratorTypesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/acceleratorTypes` 
+
+Retrieves a list of accelerator types that are available to the specified project. | 
 |
 
 
@@ -1166,6 +900,20 @@ Methods |
 The method `compute.v1.AdviceService.CalendarMode` is not available in Google Cloud Dedicated in Germany. | 
 |
 
+| 
+
+`[capacity](/compute/docs/reference/rest/v1/advice/capacity)` | 
+
+The method `compute.v1.AdviceService.Capacity` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[capacityHistory](/compute/docs/reference/rest/v1/advice/capacityHistory)` | 
+
+The method `compute.v1.AdviceService.CapacityHistory` is not available in Google Cloud Dedicated in Germany. | 
+|
+
 
 
 
@@ -1191,42 +939,63 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/autoscalers/aggregatedList)` | 
 
-The method `compute.v1.AutoscalersService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/autoscalers` 
+
+Retrieves an aggregated list of autoscalers. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/autoscalers/delete)` | 
 
-The method `compute.v1.AutoscalersService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/autoscalers/{autoscaler}` 
+
+Deletes the specified autoscaler. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/autoscalers/get)` | 
 
-The method `compute.v1.AutoscalersService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/autoscalers/{autoscaler}` 
+
+Returns the specified autoscaler resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/autoscalers/insert)` | 
 
-The method `compute.v1.AutoscalersService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/autoscalers` 
+
+Creates an autoscaler in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/autoscalers/list)` | 
 
-The method `compute.v1.AutoscalersService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/autoscalers` 
+
+Retrieves a list of autoscalers contained within the specified zone. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/autoscalers/patch)` | 
 
-The method `compute.v1.AutoscalersService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/zones/{zone}/autoscalers` 
+
+Updates an autoscaler in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/autoscalers/update)` | 
+
+`PUT /compute/v1/projects/{project}/zones/{zone}/autoscalers` 
+
+Updates an autoscaler in the specified project using the data included in the request. | 
 |
 
 | 
@@ -1234,13 +1003,6 @@ The method `compute.v1.AutoscalersService.Patch` is not available in Google Clou
 `[testIamPermissions](/compute/docs/reference/rest/v1/autoscalers/testIamPermissions)` | 
 
 The method `compute.v1.AutoscalersService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/autoscalers/update)` | 
-
-The method `compute.v1.AutoscalersService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -1268,7 +1030,72 @@ Methods |
 
 `[addSignedUrlKey](/compute/docs/reference/rest/v1/backendBuckets/addSignedUrlKey)` | 
 
-The method `compute.v1.BackendBucketsService.AddSignedUrlKey` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/backendBuckets/{backendBucket}/addSignedUrlKey` 
+
+Adds a key for validating requests with signed URLs for this backend bucket. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/backendBuckets/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/global/backendBuckets/{backendBucket}` 
+
+Deletes the specified BackendBucket resource. | 
+|
+
+| 
+
+`[deleteSignedUrlKey](/compute/docs/reference/rest/v1/backendBuckets/deleteSignedUrlKey)` | 
+
+`POST /compute/v1/projects/{project}/global/backendBuckets/{backendBucket}/deleteSignedUrlKey` 
+
+Deletes a key for validating requests with signed URLs for this backend bucket. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/backendBuckets/get)` | 
+
+`GET /compute/v1/projects/{project}/global/backendBuckets/{backendBucket}` 
+
+Returns the specified BackendBucket resource. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/backendBuckets/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/backendBuckets` 
+
+Creates a BackendBucket resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/backendBuckets/list)` | 
+
+`GET /compute/v1/projects/{project}/global/backendBuckets` 
+
+Retrieves the list of BackendBucket resources available to the specified project. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/backendBuckets/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/global/backendBuckets/{backendBucket}` 
+
+Updates the specified BackendBucket resource with the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/backendBuckets/update)` | 
+
+`PUT /compute/v1/projects/{project}/global/backendBuckets/{backendBucket}` 
+
+Updates the specified BackendBucket resource with the data included in the request. | 
 |
 
 | 
@@ -1280,27 +1107,6 @@ The method `compute.v1.BackendBucketsService.AggregatedList` is not available in
 
 | 
 
-`[delete](/compute/docs/reference/rest/v1/backendBuckets/delete)` | 
-
-The method `compute.v1.BackendBucketsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[deleteSignedUrlKey](/compute/docs/reference/rest/v1/backendBuckets/deleteSignedUrlKey)` | 
-
-The method `compute.v1.BackendBucketsService.DeleteSignedUrlKey` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/backendBuckets/get)` | 
-
-The method `compute.v1.BackendBucketsService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[getIamPolicy](/compute/docs/reference/rest/v1/backendBuckets/getIamPolicy)` | 
 
 The method `compute.v1.BackendBucketsService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
@@ -1308,30 +1114,9 @@ The method `compute.v1.BackendBucketsService.GetPolicy` is not available in Goog
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/backendBuckets/insert)` | 
-
-The method `compute.v1.BackendBucketsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/backendBuckets/list)` | 
-
-The method `compute.v1.BackendBucketsService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[listUsable](/compute/docs/reference/rest/v1/backendBuckets/listUsable)` | 
 
 The method `compute.v1.BackendBucketsService.ListUsable` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/backendBuckets/patch)` | 
-
-The method `compute.v1.BackendBucketsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -1353,13 +1138,6 @@ The method `compute.v1.BackendBucketsService.SetPolicy` is not available in Goog
 `[testIamPermissions](/compute/docs/reference/rest/v1/backendBuckets/testIamPermissions)` | 
 
 The method `compute.v1.BackendBucketsService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/backendBuckets/update)` | 
-
-The method `compute.v1.BackendBucketsService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -1387,35 +1165,99 @@ Methods |
 
 `[addSignedUrlKey](/compute/docs/reference/rest/v1/backendServices/addSignedUrlKey)` | 
 
-The method `compute.v1.BackendServicesService.AddSignedUrlKey` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/backendServices/{backendService}/addSignedUrlKey` 
+
+Adds a key for validating requests with signed URLs for this backend service. | 
 |
 
 | 
 
 `[aggregatedList](/compute/docs/reference/rest/v1/backendServices/aggregatedList)` | 
 
-The method `compute.v1.BackendServicesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/backendServices` 
+
+Retrieves the list of all BackendService resources, regional and global, available to the specified project. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/backendServices/delete)` | 
 
-The method `compute.v1.BackendServicesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/backendServices/{backendService}` 
+
+Deletes the specified BackendService resource. | 
 |
 
 | 
 
 `[deleteSignedUrlKey](/compute/docs/reference/rest/v1/backendServices/deleteSignedUrlKey)` | 
 
-The method `compute.v1.BackendServicesService.DeleteSignedUrlKey` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/backendServices/{backendService}/deleteSignedUrlKey` 
+
+Deletes a key for validating requests with signed URLs for this backend service. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/backendServices/get)` | 
 
-The method `compute.v1.BackendServicesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/backendServices/{backendService}` 
+
+Returns the specified BackendService resource. | 
+|
+
+| 
+
+`[getHealth](/compute/docs/reference/rest/v1/backendServices/getHealth)` | 
+
+`POST /compute/v1/projects/{project}/global/backendServices/{backendService}/getHealth` 
+
+Gets the most recent health check results for this BackendService. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/backendServices/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/backendServices` 
+
+Creates a BackendService resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/backendServices/list)` | 
+
+`GET /compute/v1/projects/{project}/global/backendServices` 
+
+Retrieves the list of BackendService resources available to the specified project. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/backendServices/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/global/backendServices/{backendService}` 
+
+Patches the specified BackendService resource with the data included in the request. | 
+|
+
+| 
+
+`[setSecurityPolicy](/compute/docs/reference/rest/v1/backendServices/setSecurityPolicy)` | 
+
+`POST /compute/v1/projects/{project}/global/backendServices/{backendService}/setSecurityPolicy` 
+
+Sets the Google Cloud Dedicated Armor security policy for the specified backend service. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/backendServices/update)` | 
+
+`PUT /compute/v1/projects/{project}/global/backendServices/{backendService}` 
+
+Updates the specified BackendService resource with the data included in the request. | 
 |
 
 | 
@@ -1427,13 +1269,6 @@ The method `compute.v1.BackendServicesService.GetEffectiveSecurityPolicies` is n
 
 | 
 
-`[getHealth](/compute/docs/reference/rest/v1/backendServices/getHealth)` | 
-
-The method `compute.v1.BackendServicesService.GetHealth` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[getIamPolicy](/compute/docs/reference/rest/v1/backendServices/getIamPolicy)` | 
 
 The method `compute.v1.BackendServicesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
@@ -1441,30 +1276,9 @@ The method `compute.v1.BackendServicesService.GetPolicy` is not available in Goo
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/backendServices/insert)` | 
-
-The method `compute.v1.BackendServicesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/backendServices/list)` | 
-
-The method `compute.v1.BackendServicesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[listUsable](/compute/docs/reference/rest/v1/backendServices/listUsable)` | 
 
 The method `compute.v1.BackendServicesService.ListUsable` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/backendServices/patch)` | 
-
-The method `compute.v1.BackendServicesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -1483,23 +1297,9 @@ The method `compute.v1.BackendServicesService.SetPolicy` is not available in Goo
 
 | 
 
-`[setSecurityPolicy](/compute/docs/reference/rest/v1/backendServices/setSecurityPolicy)` | 
-
-The method `compute.v1.BackendServicesService.SetSecurityPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[testIamPermissions](/compute/docs/reference/rest/v1/backendServices/testIamPermissions)` | 
 
 The method `compute.v1.BackendServicesService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/backendServices/update)` | 
-
-The method `compute.v1.BackendServicesService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -1583,21 +1383,27 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/diskTypes/aggregatedList)` | 
 
-The method `compute.v1.DiskTypesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/diskTypes` 
+
+Retrieves an aggregated list of disk types. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/diskTypes/get)` | 
 
-The method `compute.v1.DiskTypesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/diskTypes/{diskType}` 
+
+Returns the specified disk type. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/diskTypes/list)` | 
 
-The method `compute.v1.DiskTypesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/diskTypes` 
+
+Retrieves a list of disk types available to the specified project. | 
 |
 
 
@@ -1625,14 +1431,90 @@ Methods |
 
 `[addResourcePolicies](/compute/docs/reference/rest/v1/disks/addResourcePolicies)` | 
 
-The method `compute.v1.DisksService.AddResourcePolicies` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/disks/{disk}/addResourcePolicies` 
+
+Adds existing resource policies to a disk. | 
 |
 
 | 
 
 `[aggregatedList](/compute/docs/reference/rest/v1/disks/aggregatedList)` | 
 
-The method `compute.v1.DisksService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/disks` 
+
+Retrieves an aggregated list of persistent disks. | 
+|
+
+| 
+
+`[createSnapshot](/compute/docs/reference/rest/v1/disks/createSnapshot)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/disks/{disk}/createSnapshot` 
+
+Creates a snapshot of a specified persistent disk. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/disks/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/zones/{zone}/disks/{disk}` 
+
+Deletes the specified persistent disk. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/disks/get)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/disks/{disk}` 
+
+Returns the specified persistent disk. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/disks/insert)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/disks` 
+
+Creates a persistent disk in the specified project using the data in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/disks/list)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/disks` 
+
+Retrieves a list of persistent disks contained within the specified zone. | 
+|
+
+| 
+
+`[removeResourcePolicies](/compute/docs/reference/rest/v1/disks/removeResourcePolicies)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/disks/{disk}/removeResourcePolicies` 
+
+Removes resource policies from a disk. | 
+|
+
+| 
+
+`[resize](/compute/docs/reference/rest/v1/disks/resize)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/disks/{disk}/resize` 
+
+Resizes the specified persistent disk. | 
+|
+
+| 
+
+`[setLabels](/compute/docs/reference/rest/v1/disks/setLabels)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/disks/{resource}/setLabels` 
+
+Sets the labels on a disk. | 
 |
 
 | 
@@ -1651,27 +1533,6 @@ The method `compute.v1.DisksService.BulkSetLabels` is not available in Google Cl
 
 | 
 
-`[createSnapshot](/compute/docs/reference/rest/v1/disks/createSnapshot)` | 
-
-The method `compute.v1.DisksService.CreateSnapshot` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[delete](/compute/docs/reference/rest/v1/disks/delete)` | 
-
-The method `compute.v1.DisksService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/disks/get)` | 
-
-The method `compute.v1.DisksService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[getIamPolicy](/compute/docs/reference/rest/v1/disks/getIamPolicy)` | 
 
 The method `compute.v1.DisksService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
@@ -1679,44 +1540,9 @@ The method `compute.v1.DisksService.GetPolicy` is not available in Google Cloud 
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/disks/insert)` | 
-
-The method `compute.v1.DisksService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/disks/list)` | 
-
-The method `compute.v1.DisksService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[removeResourcePolicies](/compute/docs/reference/rest/v1/disks/removeResourcePolicies)` | 
-
-The method `compute.v1.DisksService.RemoveResourcePolicies` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[resize](/compute/docs/reference/rest/v1/disks/resize)` | 
-
-The method `compute.v1.DisksService.Resize` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setIamPolicy](/compute/docs/reference/rest/v1/disks/setIamPolicy)` | 
 
 The method `compute.v1.DisksService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setLabels](/compute/docs/reference/rest/v1/disks/setLabels)` | 
-
-The method `compute.v1.DisksService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -1786,35 +1612,45 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/externalVpnGateways/delete)` | 
 
-The method `compute.v1.ExternalVpnGatewaysService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/externalVpnGateways/{externalVpnGateway}` 
+
+Deletes the specified externalVpnGateway. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/externalVpnGateways/get)` | 
 
-The method `compute.v1.ExternalVpnGatewaysService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/externalVpnGateways/{externalVpnGateway}` 
+
+Returns the specified externalVpnGateway. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/externalVpnGateways/insert)` | 
 
-The method `compute.v1.ExternalVpnGatewaysService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/externalVpnGateways` 
+
+Creates a ExternalVpnGateway in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/externalVpnGateways/list)` | 
 
-The method `compute.v1.ExternalVpnGatewaysService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/externalVpnGateways` 
+
+Retrieves the list of ExternalVpnGateway available to the specified project. | 
 |
 
 | 
 
 `[setLabels](/compute/docs/reference/rest/v1/externalVpnGateways/setLabels)` | 
 
-The method `compute.v1.ExternalVpnGatewaysService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/externalVpnGateways/{resource}/setLabels` 
+
+Sets the labels on an ExternalVpnGateway. | 
 |
 
 | 
@@ -1849,42 +1685,135 @@ Methods |
 
 `[addAssociation](/compute/docs/reference/rest/v1/firewallPolicies/addAssociation)` | 
 
-The method `compute.v1.FirewallPoliciesService.AddAssociation` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/addAssociation` 
+
+Inserts an association for the specified firewall policy. | 
 |
 
 | 
 
 `[addRule](/compute/docs/reference/rest/v1/firewallPolicies/addRule)` | 
 
-The method `compute.v1.FirewallPoliciesService.AddRule` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/addRule` 
+
+Inserts a rule into a firewall policy. | 
 |
 
 | 
 
 `[cloneRules](/compute/docs/reference/rest/v1/firewallPolicies/cloneRules)` | 
 
-The method `compute.v1.FirewallPoliciesService.CloneRules` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/cloneRules` 
+
+Copies rules to the specified firewall policy. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/firewallPolicies/delete)` | 
 
-The method `compute.v1.FirewallPoliciesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}` 
+
+Deletes the specified policy. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/firewallPolicies/get)` | 
 
-The method `compute.v1.FirewallPoliciesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}` 
+
+Returns the specified firewall policy. | 
 |
 
 | 
 
 `[getAssociation](/compute/docs/reference/rest/v1/firewallPolicies/getAssociation)` | 
 
-The method `compute.v1.FirewallPoliciesService.GetAssociation` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/getAssociation` 
+
+Gets an association with the specified name. | 
+|
+
+| 
+
+`[getRule](/compute/docs/reference/rest/v1/firewallPolicies/getRule)` | 
+
+`GET /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/getRule` 
+
+Gets a rule of the specified priority. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/firewallPolicies/insert)` | 
+
+`POST /compute/v1/locations/global/firewallPolicies` 
+
+Creates a new policy in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/firewallPolicies/list)` | 
+
+`GET /compute/v1/locations/global/firewallPolicies` 
+
+Lists all the policies that have been configured for the specified folder or organization. | 
+|
+
+| 
+
+`[listAssociations](/compute/docs/reference/rest/v1/firewallPolicies/listAssociations)` | 
+
+`GET /compute/v1/locations/global/firewallPolicies/listAssociations` 
+
+Lists associations of a specified target, i.e., organization or folder. | 
+|
+
+| 
+
+`[move](/compute/docs/reference/rest/v1/firewallPolicies/move)` | 
+
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/move` 
+
+Moves the specified firewall policy. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/firewallPolicies/patch)` | 
+
+`PATCH /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}` 
+
+Patches the specified policy with the data included in the request. | 
+|
+
+| 
+
+`[patchRule](/compute/docs/reference/rest/v1/firewallPolicies/patchRule)` | 
+
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/patchRule` 
+
+Patches a rule of the specified priority. | 
+|
+
+| 
+
+`[removeAssociation](/compute/docs/reference/rest/v1/firewallPolicies/removeAssociation)` | 
+
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/removeAssociation` 
+
+Removes an association for the specified firewall policy. | 
+|
+
+| 
+
+`[removeRule](/compute/docs/reference/rest/v1/firewallPolicies/removeRule)` | 
+
+`POST /compute/v1/locations/global/{firewallPolicy=firewallPolicies/*}/removeRule` 
+
+Deletes a rule of the specified priority. | 
 |
 
 | 
@@ -1892,69 +1821,6 @@ The method `compute.v1.FirewallPoliciesService.GetAssociation` is not available 
 `[getIamPolicy](/compute/docs/reference/rest/v1/firewallPolicies/getIamPolicy)` | 
 
 The method `compute.v1.FirewallPoliciesService.GetOrganizationPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getRule](/compute/docs/reference/rest/v1/firewallPolicies/getRule)` | 
-
-The method `compute.v1.FirewallPoliciesService.GetRule` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/firewallPolicies/insert)` | 
-
-The method `compute.v1.FirewallPoliciesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/firewallPolicies/list)` | 
-
-The method `compute.v1.FirewallPoliciesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[listAssociations](/compute/docs/reference/rest/v1/firewallPolicies/listAssociations)` | 
-
-The method `compute.v1.FirewallPoliciesService.ListAssociations` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[move](/compute/docs/reference/rest/v1/firewallPolicies/move)` | 
-
-The method `compute.v1.FirewallPoliciesService.Move` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/firewallPolicies/patch)` | 
-
-The method `compute.v1.FirewallPoliciesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patchRule](/compute/docs/reference/rest/v1/firewallPolicies/patchRule)` | 
-
-The method `compute.v1.FirewallPoliciesService.PatchRule` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[removeAssociation](/compute/docs/reference/rest/v1/firewallPolicies/removeAssociation)` | 
-
-The method `compute.v1.FirewallPoliciesService.RemoveAssociation` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[removeRule](/compute/docs/reference/rest/v1/firewallPolicies/removeRule)` | 
-
-The method `compute.v1.FirewallPoliciesService.RemoveRule` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -1996,35 +1862,54 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/firewalls/delete)` | 
 
-The method `compute.v1.FirewallsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/firewalls/{firewall}` 
+
+Deletes the specified firewall. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/firewalls/get)` | 
 
-The method `compute.v1.FirewallsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/firewalls/{firewall}` 
+
+Returns the specified firewall. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/firewalls/insert)` | 
 
-The method `compute.v1.FirewallsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/firewalls` 
+
+Creates a firewall rule in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/firewalls/list)` | 
 
-The method `compute.v1.FirewallsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/firewalls` 
+
+Retrieves the list of firewall rules available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/firewalls/patch)` | 
 
-The method `compute.v1.FirewallsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/firewalls/{firewall}` 
+
+Updates the specified firewall rule with the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/firewalls/update)` | 
+
+`PUT /compute/v1/projects/{project}/global/firewalls/{firewall}` 
+
+Updates the specified firewall rule with the data included in the request. | 
 |
 
 | 
@@ -2032,13 +1917,6 @@ The method `compute.v1.FirewallsService.Patch` is not available in Google Cloud 
 `[testIamPermissions](/compute/docs/reference/rest/v1/firewalls/testIamPermissions)` | 
 
 The method `compute.v1.FirewallsService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/firewalls/update)` | 
-
-The method `compute.v1.FirewallsService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -2213,28 +2091,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/globalAddresses/delete)` | 
 
-The method `compute.v1.GlobalAddressesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/addresses/{address}` 
+
+Deletes the specified address resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/globalAddresses/get)` | 
 
-The method `compute.v1.GlobalAddressesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/addresses/{address}` 
+
+Returns the specified address resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/globalAddresses/insert)` | 
 
-The method `compute.v1.GlobalAddressesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/addresses` 
+
+Creates an address resource in the specified project by using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/globalAddresses/list)` | 
 
-The method `compute.v1.GlobalAddressesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/addresses` 
+
+Retrieves a list of global addresses. | 
 |
 
 | 
@@ -2283,49 +2169,98 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/globalForwardingRules/delete)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/forwardingRules/{forwardingRule}` 
+
+Deletes the specified GlobalForwardingRule resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/globalForwardingRules/get)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/forwardingRules/{forwardingRule}` 
+
+Returns the specified GlobalForwardingRule resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/globalForwardingRules/insert)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/forwardingRules` 
+
+Creates a GlobalForwardingRule resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/globalForwardingRules/list)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/forwardingRules` 
+
+Retrieves a list of GlobalForwardingRule resources available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/globalForwardingRules/patch)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/forwardingRules/{forwardingRule}` 
+
+Updates the specified forwarding rule with the data included in the request. | 
 |
 
 | 
 
 `[setLabels](/compute/docs/reference/rest/v1/globalForwardingRules/setLabels)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/forwardingRules/{resource}/setLabels` 
+
+Sets the labels on the specified resource. | 
 |
 
 | 
 
 `[setTarget](/compute/docs/reference/rest/v1/globalForwardingRules/setTarget)` | 
 
-The method `compute.v1.GlobalForwardingRulesService.SetTarget` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/forwardingRules/{forwardingRule}/setTarget` 
+
+Changes target URL for the GlobalForwardingRule resource. | 
+|
+
+
+
+
+
+
+## REST Resource: [v1.globalFrontendSettings](/compute/docs/reference/rest/v1/globalFrontendSettings)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/globalFrontendSettings/get)` | 
+
+The method `compute.v1.GlobalFrontendSettingsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/globalFrontendSettings/patch)` | 
+
+The method `compute.v1.GlobalFrontendSettingsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -2353,49 +2288,63 @@ Methods |
 
 `[attachNetworkEndpoints](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/attachNetworkEndpoints)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.AttachNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/networkEndpointGroups/{networkEndpointGroup}/attachNetworkEndpoints` 
+
+Attach a network endpoint to the specified network endpoint group. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/delete)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/networkEndpointGroups/{networkEndpointGroup}` 
+
+Deletes the specified network endpoint group.Note that the NEG cannot be deleted if there are backend services referencing it. | 
 |
 
 | 
 
 `[detachNetworkEndpoints](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/detachNetworkEndpoints)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.DetachNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/networkEndpointGroups/{networkEndpointGroup}/detachNetworkEndpoints` 
+
+Detach the network endpoint from the specified network endpoint group. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/get)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/networkEndpointGroups/{networkEndpointGroup}` 
+
+Returns the specified network endpoint group. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/insert)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/networkEndpointGroups` 
+
+Creates a network endpoint group in the specified project using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/list)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/networkEndpointGroups` 
+
+Retrieves the list of network endpoint groups that are located in the specified project. | 
 |
 
 | 
 
 `[listNetworkEndpoints](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups/listNetworkEndpoints)` | 
 
-The method `compute.v1.GlobalNetworkEndpointGroupsService.ListNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/networkEndpointGroups/{networkEndpointGroup}/listNetworkEndpoints` 
+
+Lists the network endpoints in the specified network endpoint group. | 
 |
 
 
@@ -2423,35 +2372,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/globalOperations/aggregatedList)` | 
 
-The method `compute.v1.GlobalOperationsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/operations` 
+
+Retrieves an aggregated list of all operations. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/globalOperations/delete)` | 
 
-The method `compute.v1.GlobalOperationsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/operations/{operation}` 
+
+Deletes the specified Operations resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/globalOperations/get)` | 
 
-The method `compute.v1.GlobalOperationsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/operations/{operation}` 
+
+Retrieves the specified Operations resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/globalOperations/list)` | 
 
-The method `compute.v1.GlobalOperationsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/operations` 
+
+Retrieves a list of Operation resources contained within the specified project. | 
 |
 
 | 
 
 `[wait](/compute/docs/reference/rest/v1/globalOperations/wait)` | 
 
-The method `compute.v1.GlobalOperationsService.Wait` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/operations/{operation}/wait` 
+
+Waits for the specified Operation resource to return as `DONE` or for the request to approach the 2 minute deadline, and retrieves the specified Operation resource. | 
 |
 
 
@@ -2479,21 +2438,27 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/globalOrganizationOperations/delete)` | 
 
-The method `compute.v1.GlobalOrganizationOperationsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/locations/global/operations/{operation}` 
+
+Deletes the specified Operations resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/globalOrganizationOperations/get)` | 
 
-The method `compute.v1.GlobalOrganizationOperationsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/locations/global/operations/{operation}` 
+
+Retrieves the specified Operations resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/globalOrganizationOperations/list)` | 
 
-The method `compute.v1.GlobalOrganizationOperationsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/locations/global/operations` 
+
+Retrieves a list of Operation resources contained within the specified organization. | 
 |
 
 
@@ -2521,35 +2486,45 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/globalPublicDelegatedPrefixes/delete)` | 
 
-The method `compute.v1.GlobalPublicDelegatedPrefixesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/publicDelegatedPrefixes/{publicDelegatedPrefix}` 
+
+Deletes the specified global PublicDelegatedPrefix. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/globalPublicDelegatedPrefixes/get)` | 
 
-The method `compute.v1.GlobalPublicDelegatedPrefixesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/publicDelegatedPrefixes/{publicDelegatedPrefix}` 
+
+Returns the specified global PublicDelegatedPrefix resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/globalPublicDelegatedPrefixes/insert)` | 
 
-The method `compute.v1.GlobalPublicDelegatedPrefixesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/publicDelegatedPrefixes` 
+
+Creates a global PublicDelegatedPrefix in the specified project using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/globalPublicDelegatedPrefixes/list)` | 
 
-The method `compute.v1.GlobalPublicDelegatedPrefixesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/publicDelegatedPrefixes` 
+
+Lists the global PublicDelegatedPrefixes for a project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/globalPublicDelegatedPrefixes/patch)` | 
 
-The method `compute.v1.GlobalPublicDelegatedPrefixesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/publicDelegatedPrefixes/{publicDelegatedPrefix}` 
+
+Patches the specified global PublicDelegatedPrefix resource with the data included in the request. | 
 |
 
 
@@ -2620,6 +2595,76 @@ The method `compute.v1.GlobalVmExtensionPoliciesService.Update` is not available
 
 
 
+## REST Resource: [v1.haControllers](/compute/docs/reference/rest/v1/haControllers)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/haControllers/aggregatedList)` | 
+
+The method `compute.v1.HaControllersService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/haControllers/delete)` | 
+
+The method `compute.v1.HaControllersService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[failover](/compute/docs/reference/rest/v1/haControllers/failover)` | 
+
+The method `compute.v1.HaControllersService.Failover` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/haControllers/get)` | 
+
+The method `compute.v1.HaControllersService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/haControllers/insert)` | 
+
+The method `compute.v1.HaControllersService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/haControllers/list)` | 
+
+The method `compute.v1.HaControllersService.List` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/haControllers/patch)` | 
+
+The method `compute.v1.HaControllersService.Update` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
 ## REST Resource: [v1.healthChecks](/compute/docs/reference/rest/v1/healthChecks)
 
 
@@ -2640,42 +2685,63 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/healthChecks/aggregatedList)` | 
 
-The method `compute.v1.HealthChecksService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/healthChecks` 
+
+Retrieves the list of all HealthCheck resources, regional and global, available to the specified project. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/healthChecks/delete)` | 
 
-The method `compute.v1.HealthChecksService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/healthChecks/{healthCheck}` 
+
+Deletes the specified HealthCheck resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/healthChecks/get)` | 
 
-The method `compute.v1.HealthChecksService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/healthChecks/{healthCheck}` 
+
+Returns the specified HealthCheck resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/healthChecks/insert)` | 
 
-The method `compute.v1.HealthChecksService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/healthChecks` 
+
+Creates a HealthCheck resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/healthChecks/list)` | 
 
-The method `compute.v1.HealthChecksService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/healthChecks` 
+
+Retrieves the list of HealthCheck resources available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/healthChecks/patch)` | 
 
-The method `compute.v1.HealthChecksService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/healthChecks/{healthCheck}` 
+
+Updates a HealthCheck resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/healthChecks/update)` | 
+
+`PUT /compute/v1/projects/{project}/global/healthChecks/{healthCheck}` 
+
+Updates a HealthCheck resource in the specified project using the data included in the request. | 
 |
 
 | 
@@ -2683,13 +2749,6 @@ The method `compute.v1.HealthChecksService.Patch` is not available in Google Clo
 `[testIamPermissions](/compute/docs/reference/rest/v1/healthChecks/testIamPermissions)` | 
 
 The method `compute.v1.HealthChecksService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/healthChecks/update)` | 
-
-The method `compute.v1.HealthChecksService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -2907,6 +2966,41 @@ The method `compute.v1.ImageFamilyViewsService.Get` is not available in Google C
 
 
 
+## REST Resource: [v1.imageViews](/compute/docs/reference/rest/v1/imageViews)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/imageViews/get)` | 
+
+The method `compute.v1.ImageViewsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/imageViews/list)` | 
+
+The method `compute.v1.ImageViewsService.List` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
 ## REST Resource: [v1.images](/compute/docs/reference/rest/v1/images)
 
 
@@ -2927,28 +3021,72 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/images/delete)` | 
 
-The method `compute.v1.ImagesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/images/{image}` 
+
+Deletes the specified image. | 
 |
 
 | 
 
 `[deprecate](/compute/docs/reference/rest/v1/images/deprecate)` | 
 
-The method `compute.v1.ImagesService.Deprecate` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/images/{image}/deprecate` 
+
+Sets the deprecation status of an image. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/images/get)` | 
 
-The method `compute.v1.ImagesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/images/{image}` 
+
+Returns the specified image. | 
 |
 
 | 
 
 `[getFromFamily](/compute/docs/reference/rest/v1/images/getFromFamily)` | 
 
-The method `compute.v1.ImagesService.GetFromFamily` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/images/family/{family}` 
+
+Returns the latest image that is part of an image family and is not deprecated. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/images/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/images` 
+
+Creates an image in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/images/list)` | 
+
+`GET /compute/v1/projects/{project}/global/images` 
+
+Retrieves the list of [custom images](/compute/docs/images) available to the specified project. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/images/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/global/images/{image}` 
+
+Patches the specified image with the data included in the request. | 
+|
+
+| 
+
+`[setLabels](/compute/docs/reference/rest/v1/images/setLabels)` | 
+
+`POST /compute/v1/projects/{project}/global/images/{resource}/setLabels` 
+
+Sets the labels on an image. | 
 |
 
 | 
@@ -2960,37 +3098,9 @@ The method `compute.v1.ImagesService.GetPolicy` is not available in Google Cloud
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/images/insert)` | 
-
-The method `compute.v1.ImagesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/images/list)` | 
-
-The method `compute.v1.ImagesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/images/patch)` | 
-
-The method `compute.v1.ImagesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setIamPolicy](/compute/docs/reference/rest/v1/images/setIamPolicy)` | 
 
 The method `compute.v1.ImagesService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setLabels](/compute/docs/reference/rest/v1/images/setLabels)` | 
-
-The method `compute.v1.ImagesService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3081,119 +3191,180 @@ Methods |
 
 `[abandonInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/abandonInstances)` | 
 
-The method `compute.v1.InstanceGroupManagersService.AbandonInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/abandonInstances` 
+
+Flags the specified instances to be removed from the managed instance group. | 
 |
 
 | 
 
 `[aggregatedList](/compute/docs/reference/rest/v1/instanceGroupManagers/aggregatedList)` | 
 
-The method `compute.v1.InstanceGroupManagersService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/instanceGroupManagers` 
+
+Retrieves the list of managed instance groups and groups them by zone. | 
 |
 
 | 
 
 `[applyUpdatesToInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/applyUpdatesToInstances)` | 
 
-The method `compute.v1.InstanceGroupManagersService.ApplyUpdatesToInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/applyUpdatesToInstances` 
+
+Applies changes to selected instances on the managed instance group. | 
 |
 
 | 
 
 `[createInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/createInstances)` | 
 
-The method `compute.v1.InstanceGroupManagersService.CreateInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/createInstances` 
+
+Creates instances with per-instance configurations in this managed instance group. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/instanceGroupManagers/delete)` | 
 
-The method `compute.v1.InstanceGroupManagersService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}` 
+
+Deletes the specified managed instance group and all of the instances in that group. | 
 |
 
 | 
 
 `[deleteInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/deleteInstances)` | 
 
-The method `compute.v1.InstanceGroupManagersService.DeleteInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/deleteInstances` 
+
+Flags the specified instances in the managed instance group for immediate deletion. | 
 |
 
 | 
 
 `[deletePerInstanceConfigs](/compute/docs/reference/rest/v1/instanceGroupManagers/deletePerInstanceConfigs)` | 
 
-The method `compute.v1.InstanceGroupManagersService.DeletePerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/deletePerInstanceConfigs` 
+
+Deletes selected per-instance configurations for the managed instance group. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/instanceGroupManagers/get)` | 
 
-The method `compute.v1.InstanceGroupManagersService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}` 
+
+Returns all of the details about the specified managed instance group. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/instanceGroupManagers/insert)` | 
 
-The method `compute.v1.InstanceGroupManagersService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers` 
+
+Creates a managed instance group using the information that you specify in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/instanceGroupManagers/list)` | 
 
-The method `compute.v1.InstanceGroupManagersService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers` 
+
+Retrieves a list of managed instance groups that are contained within the specified project and zone. | 
 |
 
 | 
 
 `[listErrors](/compute/docs/reference/rest/v1/instanceGroupManagers/listErrors)` | 
 
-The method `compute.v1.InstanceGroupManagersService.ListErrors` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/listErrors` 
+
+Lists all errors thrown by actions on instances for a given managed instance group. | 
 |
 
 | 
 
 `[listManagedInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/listManagedInstances)` | 
 
-The method `compute.v1.InstanceGroupManagersService.ListManagedInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/listManagedInstances` 
+
+Lists all of the instances in the managed instance group. | 
 |
 
 | 
 
 `[listPerInstanceConfigs](/compute/docs/reference/rest/v1/instanceGroupManagers/listPerInstanceConfigs)` | 
 
-The method `compute.v1.InstanceGroupManagersService.ListPerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/listPerInstanceConfigs` 
+
+Lists all of the per-instance configurations defined for the managed instance group. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/instanceGroupManagers/patch)` | 
 
-The method `compute.v1.InstanceGroupManagersService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}` 
+
+Updates a managed instance group using the information that you specify in the request. | 
 |
 
 | 
 
 `[patchPerInstanceConfigs](/compute/docs/reference/rest/v1/instanceGroupManagers/patchPerInstanceConfigs)` | 
 
-The method `compute.v1.InstanceGroupManagersService.PatchPerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/patchPerInstanceConfigs` 
+
+Inserts or patches per-instance configurations for the managed instance group. | 
 |
 
 | 
 
 `[recreateInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/recreateInstances)` | 
 
-The method `compute.v1.InstanceGroupManagersService.RecreateInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/recreateInstances` 
+
+Flags the specified VM instances in the managed instance group to be immediately recreated. | 
 |
 
 | 
 
 `[resize](/compute/docs/reference/rest/v1/instanceGroupManagers/resize)` | 
 
-The method `compute.v1.InstanceGroupManagersService.Resize` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/resize` 
+
+Resizes the managed instance group. | 
+|
+
+| 
+
+`[setInstanceTemplate](/compute/docs/reference/rest/v1/instanceGroupManagers/setInstanceTemplate)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/setInstanceTemplate` 
+
+Specifies the instance template to use when creating new instances in this group. | 
+|
+
+| 
+
+`[setTargetPools](/compute/docs/reference/rest/v1/instanceGroupManagers/setTargetPools)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/setTargetPools` 
+
+Modifies the target pools to which all instances in this managed instance group are assigned. | 
+|
+
+| 
+
+`[updatePerInstanceConfigs](/compute/docs/reference/rest/v1/instanceGroupManagers/updatePerInstanceConfigs)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroupManagers/{instanceGroupManager}/updatePerInstanceConfigs` 
+
+Inserts or updates per-instance configurations for the managed instance group. | 
 |
 
 | 
@@ -3201,20 +3372,6 @@ The method `compute.v1.InstanceGroupManagersService.Resize` is not available in 
 `[resumeInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/resumeInstances)` | 
 
 The method `compute.v1.InstanceGroupManagersService.ResumeInstances` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setInstanceTemplate](/compute/docs/reference/rest/v1/instanceGroupManagers/setInstanceTemplate)` | 
-
-The method `compute.v1.InstanceGroupManagersService.SetInstanceTemplate` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setTargetPools](/compute/docs/reference/rest/v1/instanceGroupManagers/setTargetPools)` | 
-
-The method `compute.v1.InstanceGroupManagersService.SetTargetPools` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3236,13 +3393,6 @@ The method `compute.v1.InstanceGroupManagersService.StopInstances` is not availa
 `[suspendInstances](/compute/docs/reference/rest/v1/instanceGroupManagers/suspendInstances)` | 
 
 The method `compute.v1.InstanceGroupManagersService.SuspendInstances` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updatePerInstanceConfigs](/compute/docs/reference/rest/v1/instanceGroupManagers/updatePerInstanceConfigs)` | 
-
-The method `compute.v1.InstanceGroupManagersService.UpdatePerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -3270,63 +3420,81 @@ Methods |
 
 `[addInstances](/compute/docs/reference/rest/v1/instanceGroups/addInstances)` | 
 
-The method `compute.v1.InstanceGroupsService.AddInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroups/{instanceGroup}/addInstances` 
+
+Adds a list of instances to the specified instance group. | 
 |
 
 | 
 
 `[aggregatedList](/compute/docs/reference/rest/v1/instanceGroups/aggregatedList)` | 
 
-The method `compute.v1.InstanceGroupsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/instanceGroups` 
+
+Retrieves the list of instance groups and sorts them by zone. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/instanceGroups/delete)` | 
 
-The method `compute.v1.InstanceGroupsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/instanceGroups/{instanceGroup}` 
+
+Deletes the specified instance group. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/instanceGroups/get)` | 
 
-The method `compute.v1.InstanceGroupsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/instanceGroups/{instanceGroup}` 
+
+Returns the specified zonal instance group. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/instanceGroups/insert)` | 
 
-The method `compute.v1.InstanceGroupsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroups` 
+
+Creates an instance group in the specified project using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/instanceGroups/list)` | 
 
-The method `compute.v1.InstanceGroupsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/instanceGroups` 
+
+Retrieves the list of zonal instance group resources contained within the specified zone. | 
 |
 
 | 
 
 `[listInstances](/compute/docs/reference/rest/v1/instanceGroups/listInstances)` | 
 
-The method `compute.v1.InstanceGroupsService.ListInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroups/{instanceGroup}/listInstances` 
+
+Lists the instances in the specified instance group. | 
 |
 
 | 
 
 `[removeInstances](/compute/docs/reference/rest/v1/instanceGroups/removeInstances)` | 
 
-The method `compute.v1.InstanceGroupsService.RemoveInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroups/{instanceGroup}/removeInstances` 
+
+Removes one or more instances from the specified instance group, but does not delete those instances. | 
 |
 
 | 
 
 `[setNamedPorts](/compute/docs/reference/rest/v1/instanceGroups/setNamedPorts)` | 
 
-The method `compute.v1.InstanceGroupsService.SetNamedPorts` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instanceGroups/{instanceGroup}/setNamedPorts` 
+
+Sets the named ports for the specified instance group. | 
 |
 
 | 
@@ -3394,6 +3562,42 @@ Methods |
 
 | 
 
+`[delete](/compute/docs/reference/rest/v1/instanceTemplates/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/global/instanceTemplates/{instanceTemplate}` 
+
+Deletes the specified instance template. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/instanceTemplates/get)` | 
+
+`GET /compute/v1/projects/{project}/global/instanceTemplates/{instanceTemplate}` 
+
+Returns the specified instance template. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/instanceTemplates/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/instanceTemplates` 
+
+Creates an instance template in the specified project using the data that is included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/instanceTemplates/list)` | 
+
+`GET /compute/v1/projects/{project}/global/instanceTemplates` 
+
+Retrieves a list of instance templates that are contained within the specified project. | 
+|
+
+| 
+
 `[aggregatedList](/compute/docs/reference/rest/v1/instanceTemplates/aggregatedList)` | 
 
 The method `compute.v1.InstanceTemplatesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
@@ -3401,37 +3605,9 @@ The method `compute.v1.InstanceTemplatesService.AggregatedList` is not available
 
 | 
 
-`[delete](/compute/docs/reference/rest/v1/instanceTemplates/delete)` | 
-
-The method `compute.v1.InstanceTemplatesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/instanceTemplates/get)` | 
-
-The method `compute.v1.InstanceTemplatesService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[getIamPolicy](/compute/docs/reference/rest/v1/instanceTemplates/getIamPolicy)` | 
 
 The method `compute.v1.InstanceTemplatesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/instanceTemplates/insert)` | 
-
-The method `compute.v1.InstanceTemplatesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/instanceTemplates/list)` | 
-
-The method `compute.v1.InstanceTemplatesService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3473,7 +3649,357 @@ Methods |
 
 `[addAccessConfig](/compute/docs/reference/rest/v1/instances/addAccessConfig)` | 
 
-The method `compute.v1.InstancesService.AddAccessConfig` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/addAccessConfig` 
+
+Adds an access config to an instance's network interface. | 
+|
+
+| 
+
+`[addResourcePolicies](/compute/docs/reference/rest/v1/instances/addResourcePolicies)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/addResourcePolicies` 
+
+Adds existing resource policies to an instance. | 
+|
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/instances/aggregatedList)` | 
+
+`GET /compute/v1/projects/{project}/aggregated/instances` 
+
+Retrieves an aggregated list of all of the instances in your project across all regions and zones. | 
+|
+
+| 
+
+`[attachDisk](/compute/docs/reference/rest/v1/instances/attachDisk)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/attachDisk` 
+
+Attaches an existing Disk resource to an instance. | 
+|
+
+| 
+
+`[bulkInsert](/compute/docs/reference/rest/v1/instances/bulkInsert)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/bulkInsert` 
+
+Creates multiple instances. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/instances/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/zones/{zone}/instances/{instance}` 
+
+Deletes the specified Instance resource. | 
+|
+
+| 
+
+`[deleteAccessConfig](/compute/docs/reference/rest/v1/instances/deleteAccessConfig)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/deleteAccessConfig` 
+
+Deletes an access config from an instance's network interface. | 
+|
+
+| 
+
+`[detachDisk](/compute/docs/reference/rest/v1/instances/detachDisk)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/detachDisk` 
+
+Detaches a disk from an instance. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/instances/get)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}` 
+
+Returns the specified Instance resource. | 
+|
+
+| 
+
+`[getEffectiveFirewalls](/compute/docs/reference/rest/v1/instances/getEffectiveFirewalls)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/getEffectiveFirewalls` 
+
+Returns effective firewalls applied to an interface of the instance. | 
+|
+
+| 
+
+`[getGuestAttributes](/compute/docs/reference/rest/v1/instances/getGuestAttributes)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/getGuestAttributes` 
+
+Returns the specified guest attributes entry. | 
+|
+
+| 
+
+`[getScreenshot](/compute/docs/reference/rest/v1/instances/getScreenshot)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/screenshot` 
+
+Returns the screenshot from the specified instance. | 
+|
+
+| 
+
+`[getSerialPortOutput](/compute/docs/reference/rest/v1/instances/getSerialPortOutput)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/serialPort` 
+
+Returns the last 1 MB of serial port output from the specified instance. | 
+|
+
+| 
+
+`[getShieldedInstanceIdentity](/compute/docs/reference/rest/v1/instances/getShieldedInstanceIdentity)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/getShieldedInstanceIdentity` 
+
+Returns the Shielded Instance Identity of an instance | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/instances/insert)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances` 
+
+Creates an instance resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/instances/list)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances` 
+
+Retrieves the list of instances contained within the specified zone. | 
+|
+
+| 
+
+`[listReferrers](/compute/docs/reference/rest/v1/instances/listReferrers)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/referrers` 
+
+Retrieves a list of resources that refer to the VM instance specified in the request. | 
+|
+
+| 
+
+`[removeResourcePolicies](/compute/docs/reference/rest/v1/instances/removeResourcePolicies)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/removeResourcePolicies` 
+
+Removes resource policies from an instance. | 
+|
+
+| 
+
+`[reset](/compute/docs/reference/rest/v1/instances/reset)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/reset` 
+
+Performs a reset on the instance. | 
+|
+
+| 
+
+`[setDeletionProtection](/compute/docs/reference/rest/v1/instances/setDeletionProtection)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{resource}/setDeletionProtection` 
+
+Sets deletion protection on the instance. | 
+|
+
+| 
+
+`[setDiskAutoDelete](/compute/docs/reference/rest/v1/instances/setDiskAutoDelete)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setDiskAutoDelete` 
+
+Sets the auto-delete flag for a disk attached to an instance. | 
+|
+
+| 
+
+`[setLabels](/compute/docs/reference/rest/v1/instances/setLabels)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setLabels` 
+
+Sets labels on an instance. | 
+|
+
+| 
+
+`[setMachineResources](/compute/docs/reference/rest/v1/instances/setMachineResources)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setMachineResources` 
+
+Changes the number and/or type of accelerator for a stopped instance to the values specified in the request. | 
+|
+
+| 
+
+`[setMachineType](/compute/docs/reference/rest/v1/instances/setMachineType)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setMachineType` 
+
+Changes the machine type for a stopped instance to the machine type specified in the request. | 
+|
+
+| 
+
+`[setMetadata](/compute/docs/reference/rest/v1/instances/setMetadata)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setMetadata` 
+
+Sets metadata for the specified instance to the data included in the request. | 
+|
+
+| 
+
+`[setMinCpuPlatform](/compute/docs/reference/rest/v1/instances/setMinCpuPlatform)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setMinCpuPlatform` 
+
+Changes the minimum CPU platform that this instance should use. | 
+|
+
+| 
+
+`[setScheduling](/compute/docs/reference/rest/v1/instances/setScheduling)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setScheduling` 
+
+Sets an instance's scheduling options. | 
+|
+
+| 
+
+`[setServiceAccount](/compute/docs/reference/rest/v1/instances/setServiceAccount)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setServiceAccount` 
+
+Sets the service account on the instance. | 
+|
+
+| 
+
+`[setShieldedInstanceIntegrityPolicy](/compute/docs/reference/rest/v1/instances/setShieldedInstanceIntegrityPolicy)` | 
+
+`PATCH /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setShieldedInstanceIntegrityPolicy` 
+
+Sets the Shielded Instance integrity policy for an instance. | 
+|
+
+| 
+
+`[setTags](/compute/docs/reference/rest/v1/instances/setTags)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/setTags` 
+
+Sets [network tags](/vpc/docs/add-remove-network-tags) for the specified instance to the data included in the request. | 
+|
+
+| 
+
+`[simulateMaintenanceEvent](/compute/docs/reference/rest/v1/instances/simulateMaintenanceEvent)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/simulateMaintenanceEvent` 
+
+Simulates a host maintenance event on a VM. | 
+|
+
+| 
+
+`[start](/compute/docs/reference/rest/v1/instances/start)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/start` 
+
+
+
+Starts an instance that was stopped using the [`instances().stop`](/compute/docs/reference/rest/v1/instances/stop) method.
+| 
+|
+
+| 
+
+`[startWithEncryptionKey](/compute/docs/reference/rest/v1/instances/startWithEncryptionKey)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/startWithEncryptionKey` 
+
+
+
+Starts an instance that was stopped using the [`instances().stop`](/compute/docs/reference/rest/v1/instances/stop) method.
+| 
+|
+
+| 
+
+`[stop](/compute/docs/reference/rest/v1/instances/stop)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/stop` 
+
+Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/instances/update)` | 
+
+`PUT /compute/v1/projects/{project}/zones/{zone}/instances/{instance}` 
+
+Updates an instance only if the necessary resources are available. | 
+|
+
+| 
+
+`[updateAccessConfig](/compute/docs/reference/rest/v1/instances/updateAccessConfig)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/updateAccessConfig` 
+
+Updates the specified access config from an instance's network interface with the data included in the request. | 
+|
+
+| 
+
+`[updateDisplayDevice](/compute/docs/reference/rest/v1/instances/updateDisplayDevice)` | 
+
+`PATCH /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/updateDisplayDevice` 
+
+Updates the Display config for a VM instance. | 
+|
+
+| 
+
+`[updateNetworkInterface](/compute/docs/reference/rest/v1/instances/updateNetworkInterface)` | 
+
+`PATCH /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/updateNetworkInterface` 
+
+Updates an instance's network interface. | 
+|
+
+| 
+
+`[updateShieldedInstanceConfig](/compute/docs/reference/rest/v1/instances/updateShieldedInstanceConfig)` | 
+
+`PATCH /compute/v1/projects/{project}/zones/{zone}/instances/{instance}/updateShieldedInstanceConfig` 
+
+Updates the Shielded Instance config for an instance. | 
 |
 
 | 
@@ -3485,79 +4011,9 @@ The method `compute.v1.InstancesService.AddNetworkInterface` is not available in
 
 | 
 
-`[addResourcePolicies](/compute/docs/reference/rest/v1/instances/addResourcePolicies)` | 
-
-The method `compute.v1.InstancesService.AddResourcePolicies` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[aggregatedList](/compute/docs/reference/rest/v1/instances/aggregatedList)` | 
-
-The method `compute.v1.InstancesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[attachDisk](/compute/docs/reference/rest/v1/instances/attachDisk)` | 
-
-The method `compute.v1.InstancesService.AttachDisk` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[bulkInsert](/compute/docs/reference/rest/v1/instances/bulkInsert)` | 
-
-The method `compute.v1.InstancesService.BulkInsert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[delete](/compute/docs/reference/rest/v1/instances/delete)` | 
-
-The method `compute.v1.InstancesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[deleteAccessConfig](/compute/docs/reference/rest/v1/instances/deleteAccessConfig)` | 
-
-The method `compute.v1.InstancesService.DeleteAccessConfig` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[deleteNetworkInterface](/compute/docs/reference/rest/v1/instances/deleteNetworkInterface)` | 
 
 The method `compute.v1.InstancesService.DeleteNetworkInterface` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[detachDisk](/compute/docs/reference/rest/v1/instances/detachDisk)` | 
-
-The method `compute.v1.InstancesService.DetachDisk` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/instances/get)` | 
-
-The method `compute.v1.InstancesService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getEffectiveFirewalls](/compute/docs/reference/rest/v1/instances/getEffectiveFirewalls)` | 
-
-The method `compute.v1.InstancesService.GetEffectiveFirewalls` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getGuestAttributes](/compute/docs/reference/rest/v1/instances/getGuestAttributes)` | 
-
-The method `compute.v1.InstancesService.GetGuestAttributes` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3569,48 +4025,6 @@ The method `compute.v1.InstancesService.GetPolicy` is not available in Google Cl
 
 | 
 
-`[getScreenshot](/compute/docs/reference/rest/v1/instances/getScreenshot)` | 
-
-The method `compute.v1.InstancesService.GetScreenshot` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getSerialPortOutput](/compute/docs/reference/rest/v1/instances/getSerialPortOutput)` | 
-
-The method `compute.v1.InstancesService.GetSerialPortOutput` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getShieldedInstanceIdentity](/compute/docs/reference/rest/v1/instances/getShieldedInstanceIdentity)` | 
-
-The method `compute.v1.InstancesService.GetShieldedInstanceIdentity` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/instances/insert)` | 
-
-The method `compute.v1.InstancesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/instances/list)` | 
-
-The method `compute.v1.InstancesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[listReferrers](/compute/docs/reference/rest/v1/instances/listReferrers)` | 
-
-The method `compute.v1.InstancesService.ListReferrers` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[performMaintenance](/compute/docs/reference/rest/v1/instances/performMaintenance)` | 
 
 The method `compute.v1.InstancesService.PerformMaintenance` is not available in Google Cloud Dedicated in Germany. | 
@@ -3618,23 +4032,9 @@ The method `compute.v1.InstancesService.PerformMaintenance` is not available in 
 
 | 
 
-`[removeResourcePolicies](/compute/docs/reference/rest/v1/instances/removeResourcePolicies)` | 
-
-The method `compute.v1.InstancesService.RemoveResourcePolicies` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[reportHostAsFaulty](/compute/docs/reference/rest/v1/instances/reportHostAsFaulty)` | 
 
 The method `compute.v1.InstancesService.ReportHostAsFaulty` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[reset](/compute/docs/reference/rest/v1/instances/reset)` | 
-
-The method `compute.v1.InstancesService.Reset` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3653,58 +4053,9 @@ The method `compute.v1.InstancesService.SendDiagnosticInterrupt` is not availabl
 
 | 
 
-`[setDeletionProtection](/compute/docs/reference/rest/v1/instances/setDeletionProtection)` | 
-
-The method `compute.v1.InstancesService.SetDeletionProtection` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setDiskAutoDelete](/compute/docs/reference/rest/v1/instances/setDiskAutoDelete)` | 
-
-The method `compute.v1.InstancesService.SetDiskAutoDelete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setIamPolicy](/compute/docs/reference/rest/v1/instances/setIamPolicy)` | 
 
 The method `compute.v1.InstancesService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setLabels](/compute/docs/reference/rest/v1/instances/setLabels)` | 
-
-The method `compute.v1.InstancesService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setMachineResources](/compute/docs/reference/rest/v1/instances/setMachineResources)` | 
-
-The method `compute.v1.InstancesService.SetMachineResources` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setMachineType](/compute/docs/reference/rest/v1/instances/setMachineType)` | 
-
-The method `compute.v1.InstancesService.SetMachineType` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setMetadata](/compute/docs/reference/rest/v1/instances/setMetadata)` | 
-
-The method `compute.v1.InstancesService.SetMetadata` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setMinCpuPlatform](/compute/docs/reference/rest/v1/instances/setMinCpuPlatform)` | 
-
-The method `compute.v1.InstancesService.SetMinCpuPlatform` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3716,65 +4067,9 @@ The method `compute.v1.InstancesService.SetName` is not available in Google Clou
 
 | 
 
-`[setScheduling](/compute/docs/reference/rest/v1/instances/setScheduling)` | 
-
-The method `compute.v1.InstancesService.SetScheduling` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setSecurityPolicy](/compute/docs/reference/rest/v1/instances/setSecurityPolicy)` | 
 
 The method `compute.v1.InstancesService.SetSecurityPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setServiceAccount](/compute/docs/reference/rest/v1/instances/setServiceAccount)` | 
-
-The method `compute.v1.InstancesService.SetServiceAccount` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setShieldedInstanceIntegrityPolicy](/compute/docs/reference/rest/v1/instances/setShieldedInstanceIntegrityPolicy)` | 
-
-The method `compute.v1.InstancesService.SetShieldedInstanceIntegrityPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setTags](/compute/docs/reference/rest/v1/instances/setTags)` | 
-
-The method `compute.v1.InstancesService.SetTags` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[simulateMaintenanceEvent](/compute/docs/reference/rest/v1/instances/simulateMaintenanceEvent)` | 
-
-The method `compute.v1.InstancesService.SimulateMaintenanceEvent` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[start](/compute/docs/reference/rest/v1/instances/start)` | 
-
-The method `compute.v1.InstancesService.Start` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[startWithEncryptionKey](/compute/docs/reference/rest/v1/instances/startWithEncryptionKey)` | 
-
-The method `compute.v1.InstancesService.StartWithEncryptionKey` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[stop](/compute/docs/reference/rest/v1/instances/stop)` | 
-
-The method `compute.v1.InstancesService.Stop` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -3789,41 +4084,6 @@ The method `compute.v1.InstancesService.Suspend` is not available in Google Clou
 `[testIamPermissions](/compute/docs/reference/rest/v1/instances/testIamPermissions)` | 
 
 The method `compute.v1.InstancesService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/instances/update)` | 
-
-The method `compute.v1.InstancesService.Update` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updateAccessConfig](/compute/docs/reference/rest/v1/instances/updateAccessConfig)` | 
-
-The method `compute.v1.InstancesService.UpdateAccessConfig` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updateDisplayDevice](/compute/docs/reference/rest/v1/instances/updateDisplayDevice)` | 
-
-The method `compute.v1.InstancesService.UpdateDisplayDevice` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updateNetworkInterface](/compute/docs/reference/rest/v1/instances/updateNetworkInterface)` | 
-
-The method `compute.v1.InstancesService.UpdateNetworkInterface` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updateShieldedInstanceConfig](/compute/docs/reference/rest/v1/instances/updateShieldedInstanceConfig)` | 
-
-The method `compute.v1.InstancesService.UpdateShieldedInstanceConfig` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -4089,42 +4349,54 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/interconnectAttachments/aggregatedList)` | 
 
-The method `compute.v1.InterconnectAttachmentsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/interconnectAttachments` 
+
+Retrieves an aggregated list of interconnect attachments. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/interconnectAttachments/delete)` | 
 
-The method `compute.v1.InterconnectAttachmentsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/interconnectAttachments/{interconnectAttachment}` 
+
+Deletes the specified interconnect attachment. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/interconnectAttachments/get)` | 
 
-The method `compute.v1.InterconnectAttachmentsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/interconnectAttachments/{interconnectAttachment}` 
+
+Returns the specified interconnect attachment. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/interconnectAttachments/insert)` | 
 
-The method `compute.v1.InterconnectAttachmentsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/interconnectAttachments` 
+
+Creates an InterconnectAttachment in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/interconnectAttachments/list)` | 
 
-The method `compute.v1.InterconnectAttachmentsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/interconnectAttachments` 
+
+Retrieves the list of interconnect attachments contained within the specified region. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/interconnectAttachments/patch)` | 
 
-The method `compute.v1.InterconnectAttachmentsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/interconnectAttachments/{interconnectAttachment}` 
+
+Updates the specified interconnect attachment with the data included in the request. | 
 |
 
 | 
@@ -4250,14 +4522,18 @@ Methods |
 
 `[get](/compute/docs/reference/rest/v1/interconnectLocations/get)` | 
 
-The method `compute.v1.InterconnectLocationsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/interconnectLocations/{interconnectLocation}` 
+
+Returns the details for the specified interconnect location. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/interconnectLocations/list)` | 
 
-The method `compute.v1.InterconnectLocationsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/interconnectLocations` 
+
+Retrieves the list of interconnect locations available to the specified project. | 
 |
 
 
@@ -4320,21 +4596,54 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/interconnects/delete)` | 
 
-The method `compute.v1.InterconnectsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/interconnects/{interconnect}` 
+
+Deletes the specified Interconnect. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/interconnects/get)` | 
 
-The method `compute.v1.InterconnectsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/interconnects/{interconnect}` 
+
+Returns the specified Interconnect. | 
 |
 
 | 
 
 `[getDiagnostics](/compute/docs/reference/rest/v1/interconnects/getDiagnostics)` | 
 
-The method `compute.v1.InterconnectsService.GetDiagnostics` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/interconnects/{interconnect}/getDiagnostics` 
+
+Returns the `interconnectDiagnostics` for the specified Interconnect. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/interconnects/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/interconnects` 
+
+Creates an Interconnect in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/interconnects/list)` | 
+
+`GET /compute/v1/projects/{project}/global/interconnects` 
+
+Retrieves the list of Interconnects available to the specified project. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/interconnects/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/global/interconnects/{interconnect}` 
+
+Updates the specified Interconnect with the data included in the request. | 
 |
 
 | 
@@ -4342,27 +4651,6 @@ The method `compute.v1.InterconnectsService.GetDiagnostics` is not available in 
 `[getMacsecConfig](/compute/docs/reference/rest/v1/interconnects/getMacsecConfig)` | 
 
 The method `compute.v1.InterconnectsService.GetMacsecConfig` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/interconnects/insert)` | 
-
-The method `compute.v1.InterconnectsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/interconnects/list)` | 
-
-The method `compute.v1.InterconnectsService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/interconnects/patch)` | 
-
-The method `compute.v1.InterconnectsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -4397,7 +4685,9 @@ Methods |
 
 `[get](/compute/docs/reference/rest/v1/licenseCodes/get)` | 
 
-The method `compute.v1.LicenseCodesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/licenseCodes/{licenseCode}` 
+
+Return a specified license code. | 
 |
 
 | 
@@ -4446,14 +4736,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/licenses/delete)` | 
 
-The method `compute.v1.LicensesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/licenses/{license}` 
+
+Deletes the specified license. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/licenses/get)` | 
 
-The method `compute.v1.LicensesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/licenses/{license}` 
+
+Returns the specified License resource. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/licenses/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/licenses` 
+
+Create a License resource in the specified project. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/licenses/list)` | 
+
+`GET /compute/v1/projects/{project}/global/licenses` 
+
+Retrieves the list of licenses available in the specified project. | 
 |
 
 | 
@@ -4461,20 +4773,6 @@ The method `compute.v1.LicensesService.Get` is not available in Google Cloud Ded
 `[getIamPolicy](/compute/docs/reference/rest/v1/licenses/getIamPolicy)` | 
 
 The method `compute.v1.LicensesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/licenses/insert)` | 
-
-The method `compute.v1.LicensesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/licenses/list)` | 
-
-The method `compute.v1.LicensesService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -4600,21 +4898,62 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/machineTypes/aggregatedList)` | 
 
-The method `compute.v1.MachineTypesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/machineTypes` 
+
+Retrieves an aggregated list of machine types. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/machineTypes/get)` | 
 
-The method `compute.v1.MachineTypesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/machineTypes/{machineType}` 
+
+Returns the specified machine type. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/machineTypes/list)` | 
 
-The method `compute.v1.MachineTypesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/machineTypes` 
+
+Retrieves a list of machine types available to the specified project. | 
+|
+
+
+
+
+
+
+## REST Resource: [v1.managedRulesets](/compute/docs/reference/rest/v1/managedRulesets)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/managedRulesets/get)` | 
+
+The method `compute.v1.ManagedRulesetsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/managedRulesets/list)` | 
+
+The method `compute.v1.ManagedRulesetsService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -4782,56 +5121,72 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/networkEndpointGroups/aggregatedList)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/networkEndpointGroups` 
+
+Retrieves the list of network endpoint groups and sorts them by zone. | 
 |
 
 | 
 
 `[attachNetworkEndpoints](/compute/docs/reference/rest/v1/networkEndpointGroups/attachNetworkEndpoints)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.AttachNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups/{networkEndpointGroup}/attachNetworkEndpoints` 
+
+Attach a list of network endpoints to the specified network endpoint group. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/networkEndpointGroups/delete)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups/{networkEndpointGroup}` 
+
+Deletes the specified network endpoint group. | 
 |
 
 | 
 
 `[detachNetworkEndpoints](/compute/docs/reference/rest/v1/networkEndpointGroups/detachNetworkEndpoints)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.DetachNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups/{networkEndpointGroup}/detachNetworkEndpoints` 
+
+Detach a list of network endpoints from the specified network endpoint group. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/networkEndpointGroups/get)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups/{networkEndpointGroup}` 
+
+Returns the specified network endpoint group. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/networkEndpointGroups/insert)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups` 
+
+Creates a network endpoint group in the specified project using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/networkEndpointGroups/list)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups` 
+
+Retrieves the list of network endpoint groups that are located in the specified project and zone. | 
 |
 
 | 
 
 `[listNetworkEndpoints](/compute/docs/reference/rest/v1/networkEndpointGroups/listNetworkEndpoints)` | 
 
-The method `compute.v1.NetworkEndpointGroupsService.ListNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/networkEndpointGroups/{networkEndpointGroup}/listNetworkEndpoints` 
+
+Lists the network endpoints in the specified network endpoint group. | 
 |
 
 | 
@@ -5069,7 +5424,99 @@ Methods |
 
 `[addPeering](/compute/docs/reference/rest/v1/networks/addPeering)` | 
 
-The method `compute.v1.NetworksService.AddPeering` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/networks/{network}/addPeering` 
+
+Adds a peering to the specified network. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/networks/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/global/networks/{network}` 
+
+Deletes the specified network. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/networks/get)` | 
+
+`GET /compute/v1/projects/{project}/global/networks/{network}` 
+
+Returns the specified network. | 
+|
+
+| 
+
+`[getEffectiveFirewalls](/compute/docs/reference/rest/v1/networks/getEffectiveFirewalls)` | 
+
+`GET /compute/v1/projects/{project}/global/networks/{network}/getEffectiveFirewalls` 
+
+Returns the effective firewalls on a given network. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/networks/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/networks` 
+
+Creates a network in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/networks/list)` | 
+
+`GET /compute/v1/projects/{project}/global/networks` 
+
+Retrieves the list of networks available to the specified project. | 
+|
+
+| 
+
+`[listPeeringRoutes](/compute/docs/reference/rest/v1/networks/listPeeringRoutes)` | 
+
+`GET /compute/v1/projects/{project}/global/networks/{network}/listPeeringRoutes` 
+
+Lists the peering routes exchanged over peering connection. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/networks/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/global/networks/{network}` 
+
+Patches the specified network with the data included in the request. | 
+|
+
+| 
+
+`[removePeering](/compute/docs/reference/rest/v1/networks/removePeering)` | 
+
+`POST /compute/v1/projects/{project}/global/networks/{network}/removePeering` 
+
+Removes a peering from the specified network. | 
+|
+
+| 
+
+`[switchToCustomMode](/compute/docs/reference/rest/v1/networks/switchToCustomMode)` | 
+
+`POST /compute/v1/projects/{project}/global/networks/{network}/switchToCustomMode` 
+
+Switches the network mode from auto subnet mode to custom subnet mode. | 
+|
+
+| 
+
+`[updatePeering](/compute/docs/reference/rest/v1/networks/updatePeering)` | 
+
+`PATCH /compute/v1/projects/{project}/global/networks/{network}/updatePeering` 
+
+Updates the specified network peering with the data included in the request. | 
 |
 
 | 
@@ -5081,62 +5528,6 @@ The method `compute.v1.NetworksService.CancelRequestRemovePeering` is not availa
 
 | 
 
-`[delete](/compute/docs/reference/rest/v1/networks/delete)` | 
-
-The method `compute.v1.NetworksService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/networks/get)` | 
-
-The method `compute.v1.NetworksService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getEffectiveFirewalls](/compute/docs/reference/rest/v1/networks/getEffectiveFirewalls)` | 
-
-The method `compute.v1.NetworksService.GetEffectiveFirewalls` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/networks/insert)` | 
-
-The method `compute.v1.NetworksService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/networks/list)` | 
-
-The method `compute.v1.NetworksService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[listPeeringRoutes](/compute/docs/reference/rest/v1/networks/listPeeringRoutes)` | 
-
-The method `compute.v1.NetworksService.ListPeeringRoutes` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/networks/patch)` | 
-
-The method `compute.v1.NetworksService.Patch` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[removePeering](/compute/docs/reference/rest/v1/networks/removePeering)` | 
-
-The method `compute.v1.NetworksService.RemovePeering` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[requestRemovePeering](/compute/docs/reference/rest/v1/networks/requestRemovePeering)` | 
 
 The method `compute.v1.NetworksService.RequestRemovePeering` is not available in Google Cloud Dedicated in Germany. | 
@@ -5144,16 +5535,9 @@ The method `compute.v1.NetworksService.RequestRemovePeering` is not available in
 
 | 
 
-`[switchToCustomMode](/compute/docs/reference/rest/v1/networks/switchToCustomMode)` | 
+`[updateNetworkProfile](/compute/docs/reference/rest/v1/networks/updateNetworkProfile)` | 
 
-The method `compute.v1.NetworksService.SwitchToCustomMode` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updatePeering](/compute/docs/reference/rest/v1/networks/updatePeering)` | 
-
-The method `compute.v1.NetworksService.UpdatePeering` is not available in Google Cloud Dedicated in Germany. | 
+The method `compute.v1.NetworksService.UpdateNetworkProfile` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -5181,35 +5565,90 @@ Methods |
 
 `[addNodes](/compute/docs/reference/rest/v1/nodeGroups/addNodes)` | 
 
-The method `compute.v1.NodeGroupsService.AddNodes` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}/addNodes` 
+
+Adds specified number of nodes to the node group. | 
 |
 
 | 
 
 `[aggregatedList](/compute/docs/reference/rest/v1/nodeGroups/aggregatedList)` | 
 
-The method `compute.v1.NodeGroupsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/nodeGroups` 
+
+Retrieves an aggregated list of node groups. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/nodeGroups/delete)` | 
 
-The method `compute.v1.NodeGroupsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}` 
+
+Deletes the specified NodeGroup resource. | 
 |
 
 | 
 
 `[deleteNodes](/compute/docs/reference/rest/v1/nodeGroups/deleteNodes)` | 
 
-The method `compute.v1.NodeGroupsService.DeleteNodes` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}/deleteNodes` 
+
+Deletes specified nodes from the node group. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/nodeGroups/get)` | 
 
-The method `compute.v1.NodeGroupsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}` 
+
+Returns the specified NodeGroup. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/nodeGroups/insert)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/nodeGroups` 
+
+Creates a NodeGroup resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/nodeGroups/list)` | 
+
+`GET /compute/v1/projects/{project}/zones/{zone}/nodeGroups` 
+
+Retrieves a list of node groups available to the specified project. | 
+|
+
+| 
+
+`[listNodes](/compute/docs/reference/rest/v1/nodeGroups/listNodes)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}/listNodes` 
+
+Lists nodes in the node group. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/nodeGroups/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}` 
+
+Updates the specified node group. | 
+|
+
+| 
+
+`[setNodeTemplate](/compute/docs/reference/rest/v1/nodeGroups/setNodeTemplate)` | 
+
+`POST /compute/v1/projects/{project}/zones/{zone}/nodeGroups/{nodeGroup}/setNodeTemplate` 
+
+Updates the node template of the node group. | 
 |
 
 | 
@@ -5217,34 +5656,6 @@ The method `compute.v1.NodeGroupsService.Get` is not available in Google Cloud D
 `[getIamPolicy](/compute/docs/reference/rest/v1/nodeGroups/getIamPolicy)` | 
 
 The method `compute.v1.NodeGroupsService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/nodeGroups/insert)` | 
-
-The method `compute.v1.NodeGroupsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/nodeGroups/list)` | 
-
-The method `compute.v1.NodeGroupsService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[listNodes](/compute/docs/reference/rest/v1/nodeGroups/listNodes)` | 
-
-The method `compute.v1.NodeGroupsService.ListNodes` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/nodeGroups/patch)` | 
-
-The method `compute.v1.NodeGroupsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -5259,13 +5670,6 @@ The method `compute.v1.NodeGroupsService.PerformMaintenance` is not available in
 `[setIamPolicy](/compute/docs/reference/rest/v1/nodeGroups/setIamPolicy)` | 
 
 The method `compute.v1.NodeGroupsService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setNodeTemplate](/compute/docs/reference/rest/v1/nodeGroups/setNodeTemplate)` | 
-
-The method `compute.v1.NodeGroupsService.SetNodeTemplate` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -5307,21 +5711,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/nodeTemplates/aggregatedList)` | 
 
-The method `compute.v1.NodeTemplatesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/nodeTemplates` 
+
+Retrieves an aggregated list of node templates. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/nodeTemplates/delete)` | 
 
-The method `compute.v1.NodeTemplatesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/nodeTemplates/{nodeTemplate}` 
+
+Deletes the specified NodeTemplate resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/nodeTemplates/get)` | 
 
-The method `compute.v1.NodeTemplatesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/nodeTemplates/{nodeTemplate}` 
+
+Returns the specified node template. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/nodeTemplates/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/nodeTemplates` 
+
+Creates a NodeTemplate resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/nodeTemplates/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/nodeTemplates` 
+
+Retrieves a list of node templates available to the specified project. | 
 |
 
 | 
@@ -5329,20 +5757,6 @@ The method `compute.v1.NodeTemplatesService.Get` is not available in Google Clou
 `[getIamPolicy](/compute/docs/reference/rest/v1/nodeTemplates/getIamPolicy)` | 
 
 The method `compute.v1.NodeTemplatesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/nodeTemplates/insert)` | 
-
-The method `compute.v1.NodeTemplatesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/nodeTemplates/list)` | 
-
-The method `compute.v1.NodeTemplatesService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -5384,21 +5798,27 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/nodeTypes/aggregatedList)` | 
 
-The method `compute.v1.NodeTypesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/nodeTypes` 
+
+Retrieves an aggregated list of node types. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/nodeTypes/get)` | 
 
-The method `compute.v1.NodeTypesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/nodeTypes/{nodeType}` 
+
+Returns the specified node type. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/nodeTypes/list)` | 
 
-The method `compute.v1.NodeTypesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/nodeTypes` 
+
+Retrieves a list of node types available to the specified project. | 
 |
 
 
@@ -5559,42 +5979,54 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/packetMirrorings/aggregatedList)` | 
 
-The method `compute.v1.PacketMirroringsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/packetMirrorings` 
+
+Retrieves an aggregated list of packetMirrorings. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/packetMirrorings/delete)` | 
 
-The method `compute.v1.PacketMirroringsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/packetMirrorings/{packetMirroring}` 
+
+Deletes the specified PacketMirroring resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/packetMirrorings/get)` | 
 
-The method `compute.v1.PacketMirroringsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/packetMirrorings/{packetMirroring}` 
+
+Returns the specified PacketMirroring resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/packetMirrorings/insert)` | 
 
-The method `compute.v1.PacketMirroringsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/packetMirrorings` 
+
+Creates a PacketMirroring resource in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/packetMirrorings/list)` | 
 
-The method `compute.v1.PacketMirroringsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/packetMirrorings` 
+
+Retrieves a list of PacketMirroring resources available to the specified project and region. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/packetMirrorings/patch)` | 
 
-The method `compute.v1.PacketMirroringsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/packetMirrorings/{packetMirroring}` 
+
+Patches the specified PacketMirroring resource with the data included in the request. | 
 |
 
 | 
@@ -5651,6 +6083,34 @@ The method `compute.v1.PreviewFeaturesService.Patch` is not available in Google 
 
 
 
+## REST Resource: [v1.projectViews](/compute/docs/reference/rest/v1/projectViews)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/projectViews/get)` | 
+
+The method `compute.v1.ProjectViewsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+
+
+
+
+
 ## REST Resource: [v1.projects](/compute/docs/reference/rest/v1/projects)
 
 
@@ -5671,56 +6131,72 @@ Methods |
 
 `[disableXpnHost](/compute/docs/reference/rest/v1/projects/disableXpnHost)` | 
 
-The method `compute.v1.ProjectsService.DisableXpnHost` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/disableXpnHost` 
+
+Disable this project as a shared VPC host project. | 
 |
 
 | 
 
 `[disableXpnResource](/compute/docs/reference/rest/v1/projects/disableXpnResource)` | 
 
-The method `compute.v1.ProjectsService.DisableXpnResource` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/disableXpnResource` 
+
+Disable a service resource (also known as service project) associated with this host project. | 
 |
 
 | 
 
 `[enableXpnHost](/compute/docs/reference/rest/v1/projects/enableXpnHost)` | 
 
-The method `compute.v1.ProjectsService.EnableXpnHost` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/enableXpnHost` 
+
+Enable this project as a shared VPC host project. | 
 |
 
 | 
 
 `[enableXpnResource](/compute/docs/reference/rest/v1/projects/enableXpnResource)` | 
 
-The method `compute.v1.ProjectsService.EnableXpnResource` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/enableXpnResource` 
+
+Enable service resource (a.k.a service project) for a host project, so that subnets in the host project can be used by instances in the service project. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/projects/get)` | 
 
-The method `compute.v1.ProjectsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}` 
+
+Returns the specified Project resource. | 
 |
 
 | 
 
 `[getXpnHost](/compute/docs/reference/rest/v1/projects/getXpnHost)` | 
 
-The method `compute.v1.ProjectsService.GetXpnHost` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/getXpnHost` 
+
+Gets the shared VPC host project that this project links to. | 
 |
 
 | 
 
 `[getXpnResources](/compute/docs/reference/rest/v1/projects/getXpnResources)` | 
 
-The method `compute.v1.ProjectsService.GetXpnResources` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/getXpnResources` 
+
+Gets service resources (a.k.a service project) associated with this host project. | 
 |
 
 | 
 
 `[listXpnHosts](/compute/docs/reference/rest/v1/projects/listXpnHosts)` | 
 
-The method `compute.v1.ProjectsService.ListXpnHosts` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/listXpnHosts` 
+
+Lists all shared VPC host projects visible to the user in an organization. | 
 |
 
 | 
@@ -5728,7 +6204,9 @@ The method `compute.v1.ProjectsService.ListXpnHosts` is not available in Google 
 `[moveDisk](/compute/docs/reference/rest/v1/projects/moveDisk) 
 (deprecated)**` | 
 
-The method `compute.v1.ProjectsService.MoveDisk` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/moveDisk` 
+
+Moves a persistent disk from one zone to another. | 
 |
 
 | 
@@ -5736,7 +6214,36 @@ The method `compute.v1.ProjectsService.MoveDisk` is not available in Google Clou
 `[moveInstance](/compute/docs/reference/rest/v1/projects/moveInstance) 
 **(deprecated)**` | 
 
-The method `compute.v1.ProjectsService.MoveInstance` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/moveInstance` 
+
+Moves an instance and its attached persistent disks from one zone to another. | 
+|
+
+| 
+
+`[setCommonInstanceMetadata](/compute/docs/reference/rest/v1/projects/setCommonInstanceMetadata)` | 
+
+`POST /compute/v1/projects/{project}/setCommonInstanceMetadata` 
+
+Sets metadata common to all instances within the specified project using the data included in the request. | 
+|
+
+| 
+
+`[setDefaultNetworkTier](/compute/docs/reference/rest/v1/projects/setDefaultNetworkTier)` | 
+
+`POST /compute/v1/projects/{project}/setDefaultNetworkTier` 
+
+Sets the default network tier of the project. | 
+|
+
+| 
+
+`[setUsageExportBucket](/compute/docs/reference/rest/v1/projects/setUsageExportBucket)` | 
+
+`POST /compute/v1/projects/{project}/setUsageExportBucket` 
+
+Enables the usage export feature and sets the [usage export bucket](/compute/docs/usage-export) where reports are stored. | 
 |
 
 | 
@@ -5744,27 +6251,6 @@ The method `compute.v1.ProjectsService.MoveInstance` is not available in Google 
 `[setCloudArmorTier](/compute/docs/reference/rest/v1/projects/setCloudArmorTier)` | 
 
 The method `compute.v1.ProjectsService.SetCloudArmorTier` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setCommonInstanceMetadata](/compute/docs/reference/rest/v1/projects/setCommonInstanceMetadata)` | 
-
-The method `compute.v1.ProjectsService.SetCommonInstanceMetadata` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setDefaultNetworkTier](/compute/docs/reference/rest/v1/projects/setDefaultNetworkTier)` | 
-
-The method `compute.v1.ProjectsService.SetDefaultNetworkTier` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setUsageExportBucket](/compute/docs/reference/rest/v1/projects/setUsageExportBucket)` | 
-
-The method `compute.v1.ProjectsService.SetUsageExportBucket` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -5790,44 +6276,54 @@ Methods |
 
 | 
 
-`[announce](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/announce)` | 
-
-The method `compute.v1.PublicAdvertisedPrefixesService.Announce` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[delete](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/delete)` | 
 
-The method `compute.v1.PublicAdvertisedPrefixesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/publicAdvertisedPrefixes/{publicAdvertisedPrefix}` 
+
+Deletes the specified PublicAdvertisedPrefix | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/get)` | 
 
-The method `compute.v1.PublicAdvertisedPrefixesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/publicAdvertisedPrefixes/{publicAdvertisedPrefix}` 
+
+Returns the specified PublicAdvertisedPrefix resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/insert)` | 
 
-The method `compute.v1.PublicAdvertisedPrefixesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/publicAdvertisedPrefixes` 
+
+Creates a PublicAdvertisedPrefix in the specified project using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/list)` | 
 
-The method `compute.v1.PublicAdvertisedPrefixesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/publicAdvertisedPrefixes` 
+
+Lists the PublicAdvertisedPrefixes for a project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/patch)` | 
 
-The method `compute.v1.PublicAdvertisedPrefixesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/publicAdvertisedPrefixes/{publicAdvertisedPrefix}` 
+
+Patches the specified Router resource with the data included in the request. | 
+|
+
+| 
+
+`[announce](/compute/docs/reference/rest/v1/publicAdvertisedPrefixes/announce)` | 
+
+The method `compute.v1.PublicAdvertisedPrefixesService.Announce` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -5862,7 +6358,54 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/aggregatedList)` | 
 
-The method `compute.v1.PublicDelegatedPrefixesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/publicDelegatedPrefixes` 
+
+Lists all PublicDelegatedPrefix resources owned by the specific project across all scopes. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/regions/{region}/publicDelegatedPrefixes/{publicDelegatedPrefix}` 
+
+Deletes the specified PublicDelegatedPrefix in the given region. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/get)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/publicDelegatedPrefixes/{publicDelegatedPrefix}` 
+
+Returns the specified PublicDelegatedPrefix resource in the given region. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/publicDelegatedPrefixes` 
+
+Creates a PublicDelegatedPrefix in the specified project in the given region using the parameters that are included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/publicDelegatedPrefixes` 
+
+Lists the PublicDelegatedPrefixes for a project in the given region. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/regions/{region}/publicDelegatedPrefixes/{publicDelegatedPrefix}` 
+
+Patches the specified PublicDelegatedPrefix resource with the data included in the request. | 
 |
 
 | 
@@ -5870,41 +6413,6 @@ The method `compute.v1.PublicDelegatedPrefixesService.AggregatedList` is not ava
 `[announce](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/announce)` | 
 
 The method `compute.v1.PublicDelegatedPrefixesService.Announce` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[delete](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/delete)` | 
-
-The method `compute.v1.PublicDelegatedPrefixesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/get)` | 
-
-The method `compute.v1.PublicDelegatedPrefixesService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/insert)` | 
-
-The method `compute.v1.PublicDelegatedPrefixesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/list)` | 
-
-The method `compute.v1.PublicDelegatedPrefixesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/publicDelegatedPrefixes/patch)` | 
-
-The method `compute.v1.PublicDelegatedPrefixesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -5939,35 +6447,54 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionAutoscalers/delete)` | 
 
-The method `compute.v1.RegionAutoscalersService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/autoscalers/{autoscaler}` 
+
+Deletes the specified autoscaler. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionAutoscalers/get)` | 
 
-The method `compute.v1.RegionAutoscalersService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/autoscalers/{autoscaler}` 
+
+Returns the specified autoscaler. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionAutoscalers/insert)` | 
 
-The method `compute.v1.RegionAutoscalersService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/autoscalers` 
+
+Creates an autoscaler in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionAutoscalers/list)` | 
 
-The method `compute.v1.RegionAutoscalersService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/autoscalers` 
+
+Retrieves a list of autoscalers contained within the specified region. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/regionAutoscalers/patch)` | 
 
-The method `compute.v1.RegionAutoscalersService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/autoscalers` 
+
+Updates an autoscaler in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/regionAutoscalers/update)` | 
+
+`PUT /compute/v1/projects/{project}/regions/{region}/autoscalers` 
+
+Updates an autoscaler in the specified project using the data included in the request. | 
 |
 
 | 
@@ -5975,13 +6502,6 @@ The method `compute.v1.RegionAutoscalersService.Patch` is not available in Googl
 `[testIamPermissions](/compute/docs/reference/rest/v1/regionAutoscalers/testIamPermissions)` | 
 
 The method `compute.v1.RegionAutoscalersService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/regionAutoscalers/update)` | 
-
-The method `compute.v1.RegionAutoscalersService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -6093,21 +6613,63 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionBackendServices/delete)` | 
 
-The method `compute.v1.RegionBackendServicesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}` 
+
+Deletes the specified regional BackendService resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionBackendServices/get)` | 
 
-The method `compute.v1.RegionBackendServicesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}` 
+
+Returns the specified regional BackendService resource. | 
 |
 
 | 
 
 `[getHealth](/compute/docs/reference/rest/v1/regionBackendServices/getHealth)` | 
 
-The method `compute.v1.RegionBackendServicesService.GetHealth` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}/getHealth` 
+
+Gets the most recent health check results for this regional BackendService. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/regionBackendServices/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/backendServices` 
+
+Creates a regional BackendService resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/regionBackendServices/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/backendServices` 
+
+Retrieves the list of regional BackendService resources available to the specified project in the given region. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/regionBackendServices/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}` 
+
+Updates the specified regional BackendService resource with the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/regionBackendServices/update)` | 
+
+`PUT /compute/v1/projects/{project}/regions/{region}/backendServices/{backendService}` 
+
+Updates the specified regional BackendService resource with the data included in the request. | 
 |
 
 | 
@@ -6119,30 +6681,9 @@ The method `compute.v1.RegionBackendServicesService.GetPolicy` is not available 
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/regionBackendServices/insert)` | 
-
-The method `compute.v1.RegionBackendServicesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/regionBackendServices/list)` | 
-
-The method `compute.v1.RegionBackendServicesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[listUsable](/compute/docs/reference/rest/v1/regionBackendServices/listUsable)` | 
 
 The method `compute.v1.RegionBackendServicesService.ListUsable` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/regionBackendServices/patch)` | 
-
-The method `compute.v1.RegionBackendServicesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -6164,13 +6705,6 @@ The method `compute.v1.RegionBackendServicesService.SetSecurityPolicy` is not av
 `[testIamPermissions](/compute/docs/reference/rest/v1/regionBackendServices/testIamPermissions)` | 
 
 The method `compute.v1.RegionBackendServicesService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/regionBackendServices/update)` | 
-
-The method `compute.v1.RegionBackendServicesService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -6198,28 +6732,36 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/regionCommitments/aggregatedList)` | 
 
-The method `compute.v1.RegionCommitmentsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/commitments` 
+
+Retrieves an aggregated list of commitments by region. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionCommitments/get)` | 
 
-The method `compute.v1.RegionCommitmentsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/commitments/{commitment}` 
+
+Returns the specified commitment resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionCommitments/insert)` | 
 
-The method `compute.v1.RegionCommitmentsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/commitments` 
+
+Creates a commitment in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionCommitments/list)` | 
 
-The method `compute.v1.RegionCommitmentsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/commitments` 
+
+Retrieves a list of commitments contained within the specified region. | 
 |
 
 | 
@@ -6331,14 +6873,18 @@ Methods |
 
 `[get](/compute/docs/reference/rest/v1/regionDiskTypes/get)` | 
 
-The method `compute.v1.RegionDiskTypesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/diskTypes/{diskType}` 
+
+Returns the specified regional disk type. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionDiskTypes/list)` | 
 
-The method `compute.v1.RegionDiskTypesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/diskTypes` 
+
+Retrieves a list of regional disk types available to the specified project. | 
 |
 
 
@@ -6366,7 +6912,81 @@ Methods |
 
 `[addResourcePolicies](/compute/docs/reference/rest/v1/regionDisks/addResourcePolicies)` | 
 
-The method `compute.v1.RegionDisksService.AddResourcePolicies` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/disks/{disk}/addResourcePolicies` 
+
+Adds existing resource policies to a regional disk. | 
+|
+
+| 
+
+`[createSnapshot](/compute/docs/reference/rest/v1/regionDisks/createSnapshot)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/disks/{disk}/createSnapshot` 
+
+Creates a snapshot of a specified persistent disk. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/regionDisks/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/regions/{region}/disks/{disk}` 
+
+Deletes the specified regional persistent disk. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/regionDisks/get)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/disks/{disk}` 
+
+Returns a specified regional persistent disk. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/regionDisks/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/disks` 
+
+Creates a persistent regional disk in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/regionDisks/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/disks` 
+
+Retrieves the list of persistent disks contained within the specified region. | 
+|
+
+| 
+
+`[removeResourcePolicies](/compute/docs/reference/rest/v1/regionDisks/removeResourcePolicies)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/disks/{disk}/removeResourcePolicies` 
+
+Removes resource policies from a regional disk. | 
+|
+
+| 
+
+`[resize](/compute/docs/reference/rest/v1/regionDisks/resize)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/disks/{disk}/resize` 
+
+Resizes the specified regional persistent disk. | 
+|
+
+| 
+
+`[setLabels](/compute/docs/reference/rest/v1/regionDisks/setLabels)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/disks/{resource}/setLabels` 
+
+Sets the labels on the target regional disk. | 
 |
 
 | 
@@ -6378,27 +6998,6 @@ The method `compute.v1.RegionDisksService.BulkInsert` is not available in Google
 
 | 
 
-`[createSnapshot](/compute/docs/reference/rest/v1/regionDisks/createSnapshot)` | 
-
-The method `compute.v1.RegionDisksService.CreateSnapshot` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[delete](/compute/docs/reference/rest/v1/regionDisks/delete)` | 
-
-The method `compute.v1.RegionDisksService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/regionDisks/get)` | 
-
-The method `compute.v1.RegionDisksService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[getIamPolicy](/compute/docs/reference/rest/v1/regionDisks/getIamPolicy)` | 
 
 The method `compute.v1.RegionDisksService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
@@ -6406,44 +7005,9 @@ The method `compute.v1.RegionDisksService.GetPolicy` is not available in Google 
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/regionDisks/insert)` | 
-
-The method `compute.v1.RegionDisksService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/regionDisks/list)` | 
-
-The method `compute.v1.RegionDisksService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[removeResourcePolicies](/compute/docs/reference/rest/v1/regionDisks/removeResourcePolicies)` | 
-
-The method `compute.v1.RegionDisksService.RemoveResourcePolicies` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[resize](/compute/docs/reference/rest/v1/regionDisks/resize)` | 
-
-The method `compute.v1.RegionDisksService.Resize` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setIamPolicy](/compute/docs/reference/rest/v1/regionDisks/setIamPolicy)` | 
 
 The method `compute.v1.RegionDisksService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setLabels](/compute/docs/reference/rest/v1/regionDisks/setLabels)` | 
-
-The method `compute.v1.RegionDisksService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -6581,44 +7145,54 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/regionHealthCheckServices/aggregatedList)` | 
-
-The method `compute.v1.RegionHealthCheckServicesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[delete](/compute/docs/reference/rest/v1/regionHealthCheckServices/delete)` | 
 
-The method `compute.v1.RegionHealthCheckServicesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/healthCheckServices/{healthCheckService}` 
+
+Deletes the specified regional HealthCheckService. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionHealthCheckServices/get)` | 
 
-The method `compute.v1.RegionHealthCheckServicesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/healthCheckServices/{healthCheckService}` 
+
+Returns the specified regional `HealthCheckService` resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionHealthCheckServices/insert)` | 
 
-The method `compute.v1.RegionHealthCheckServicesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/healthCheckServices` 
+
+Creates a regional `HealthCheckService` resource in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionHealthCheckServices/list)` | 
 
-The method `compute.v1.RegionHealthCheckServicesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/healthCheckServices` 
+
+Lists all the `HealthCheckService` resources that have been configured for the specified project in the given region. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/regionHealthCheckServices/patch)` | 
 
-The method `compute.v1.RegionHealthCheckServicesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/healthCheckServices/{healthCheckService}` 
+
+Updates the specified regional `HealthCheckService` resource with the data included in the request. | 
+|
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/regionHealthCheckServices/aggregatedList)` | 
+
+The method `compute.v1.RegionHealthCheckServicesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -6653,35 +7227,54 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionHealthChecks/delete)` | 
 
-The method `compute.v1.RegionHealthChecksService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/healthChecks/{healthCheck}` 
+
+Deletes the specified HealthCheck resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionHealthChecks/get)` | 
 
-The method `compute.v1.RegionHealthChecksService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/healthChecks/{healthCheck}` 
+
+Returns the specified HealthCheck resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionHealthChecks/insert)` | 
 
-The method `compute.v1.RegionHealthChecksService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/healthChecks` 
+
+Creates a HealthCheck resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionHealthChecks/list)` | 
 
-The method `compute.v1.RegionHealthChecksService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/healthChecks` 
+
+Retrieves the list of HealthCheck resources available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/regionHealthChecks/patch)` | 
 
-The method `compute.v1.RegionHealthChecksService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/healthChecks/{healthCheck}` 
+
+Updates a HealthCheck resource in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/regionHealthChecks/update)` | 
+
+`PUT /compute/v1/projects/{project}/regions/{region}/healthChecks/{healthCheck}` 
+
+Updates a HealthCheck resource in the specified project using the data included in the request. | 
 |
 
 | 
@@ -6689,13 +7282,6 @@ The method `compute.v1.RegionHealthChecksService.Patch` is not available in Goog
 `[testIamPermissions](/compute/docs/reference/rest/v1/regionHealthChecks/testIamPermissions)` | 
 
 The method `compute.v1.RegionHealthChecksService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/regionHealthChecks/update)` | 
-
-The method `compute.v1.RegionHealthChecksService.Update` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -6856,112 +7442,171 @@ Methods |
 
 `[abandonInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/abandonInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.AbandonInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/abandonInstances` 
+
+Flags the specified instances to be immediately removed from the managed instance group. | 
 |
 
 | 
 
 `[applyUpdatesToInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/applyUpdatesToInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.ApplyUpdatesToInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/applyUpdatesToInstances` 
+
+Apply updates to selected instances the managed instance group. | 
 |
 
 | 
 
 `[createInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/createInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.CreateInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/createInstances` 
+
+Creates instances with per-instance configurations in this regional managed instance group. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/delete)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}` 
+
+Deletes the specified managed instance group and all of the instances in that group. | 
 |
 
 | 
 
 `[deleteInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/deleteInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.DeleteInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/deleteInstances` 
+
+Flags the specified instances in the managed instance group to be immediately deleted. | 
 |
 
 | 
 
 `[deletePerInstanceConfigs](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/deletePerInstanceConfigs)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.DeletePerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/deletePerInstanceConfigs` 
+
+Deletes selected per-instance configurations for the managed instance group. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/get)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}` 
+
+Returns all of the details about the specified managed instance group. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/insert)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers` 
+
+Creates a managed instance group using the information that you specify in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/list)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers` 
+
+Retrieves the list of managed instance groups that are contained within the specified region. | 
 |
 
 | 
 
 `[listErrors](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/listErrors)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.ListErrors` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/listErrors` 
+
+Lists all errors thrown by actions on instances for a given regional managed instance group. | 
 |
 
 | 
 
 `[listManagedInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/listManagedInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.ListManagedInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/listManagedInstances` 
+
+Lists the instances in the managed instance group and instances that are scheduled to be created. | 
 |
 
 | 
 
 `[listPerInstanceConfigs](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/listPerInstanceConfigs)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.ListPerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/listPerInstanceConfigs` 
+
+Lists all of the per-instance configurations defined for the managed instance group. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/patch)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}` 
+
+Updates a managed instance group using the information that you specify in the request. | 
 |
 
 | 
 
 `[patchPerInstanceConfigs](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/patchPerInstanceConfigs)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.PatchPerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/patchPerInstanceConfigs` 
+
+Inserts or patches per-instance configurations for the managed instance group. | 
 |
 
 | 
 
 `[recreateInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/recreateInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.RecreateInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/recreateInstances` 
+
+Flags the specified VM instances in the managed instance group to be immediately recreated. | 
 |
 
 | 
 
 `[resize](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/resize)` | 
 
-The method `compute.v1.RegionInstanceGroupManagersService.Resize` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/resize` 
+
+Changes the intended size of the managed instance group. | 
+|
+
+| 
+
+`[setInstanceTemplate](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/setInstanceTemplate)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/setInstanceTemplate` 
+
+Sets the instance template to use when creating new instances or recreating instances in this group. | 
+|
+
+| 
+
+`[setTargetPools](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/setTargetPools)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/setTargetPools` 
+
+Modifies the target pools to which all new instances in this group are assigned. | 
+|
+
+| 
+
+`[updatePerInstanceConfigs](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/updatePerInstanceConfigs)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroupManagers/{instanceGroupManager}/updatePerInstanceConfigs` 
+
+Inserts or updates per-instance configurations for the managed instance group. | 
 |
 
 | 
@@ -6969,20 +7614,6 @@ The method `compute.v1.RegionInstanceGroupManagersService.Resize` is not availab
 `[resumeInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/resumeInstances)` | 
 
 The method `compute.v1.RegionInstanceGroupManagersService.ResumeInstances` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setInstanceTemplate](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/setInstanceTemplate)` | 
-
-The method `compute.v1.RegionInstanceGroupManagersService.SetInstanceTemplate` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setTargetPools](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/setTargetPools)` | 
-
-The method `compute.v1.RegionInstanceGroupManagersService.SetTargetPools` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -7004,13 +7635,6 @@ The method `compute.v1.RegionInstanceGroupManagersService.StopInstances` is not 
 `[suspendInstances](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/suspendInstances)` | 
 
 The method `compute.v1.RegionInstanceGroupManagersService.SuspendInstances` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[updatePerInstanceConfigs](/compute/docs/reference/rest/v1/regionInstanceGroupManagers/updatePerInstanceConfigs)` | 
-
-The method `compute.v1.RegionInstanceGroupManagersService.UpdatePerInstanceConfigs` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -7038,28 +7662,36 @@ Methods |
 
 `[get](/compute/docs/reference/rest/v1/regionInstanceGroups/get)` | 
 
-The method `compute.v1.RegionInstanceGroupsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/instanceGroups/{instanceGroup}` 
+
+Returns the specified instance group resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionInstanceGroups/list)` | 
 
-The method `compute.v1.RegionInstanceGroupsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/instanceGroups` 
+
+Retrieves the list of instance group resources contained within the specified region. | 
 |
 
 | 
 
 `[listInstances](/compute/docs/reference/rest/v1/regionInstanceGroups/listInstances)` | 
 
-The method `compute.v1.RegionInstanceGroupsService.ListInstances` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroups/{instanceGroup}/listInstances` 
+
+Lists the instances in the specified instance group and displays information about the named ports. | 
 |
 
 | 
 
 `[setNamedPorts](/compute/docs/reference/rest/v1/regionInstanceGroups/setNamedPorts)` | 
 
-The method `compute.v1.RegionInstanceGroupsService.SetNamedPorts` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instanceGroups/{instanceGroup}/setNamedPorts` 
+
+Sets the named ports for the specified regional instance group. | 
 |
 
 | 
@@ -7143,7 +7775,9 @@ Methods |
 
 `[bulkInsert](/compute/docs/reference/rest/v1/regionInstances/bulkInsert)` | 
 
-The method `compute.v1.RegionInstancesService.BulkInsert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/instances/bulkInsert` 
+
+Creates multiple instances in a given region. | 
 |
 
 
@@ -7316,6 +7950,42 @@ Methods |
 
 | 
 
+`[delete](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/regions/{region}/networkEndpointGroups/{networkEndpointGroup}` 
+
+Deletes the specified network endpoint group. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/get)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/networkEndpointGroups/{networkEndpointGroup}` 
+
+Returns the specified network endpoint group. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/networkEndpointGroups` 
+
+Creates a network endpoint group in the specified project using the parameters that are included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/networkEndpointGroups` 
+
+Retrieves the list of regional network endpoint groups available to the specified project in the given region. | 
+|
+
+| 
+
 `[attachNetworkEndpoints](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/attachNetworkEndpoints)` | 
 
 The method `compute.v1.RegionNetworkEndpointGroupsService.AttachNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
@@ -7323,37 +7993,9 @@ The method `compute.v1.RegionNetworkEndpointGroupsService.AttachNetworkEndpoints
 
 | 
 
-`[delete](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/delete)` | 
-
-The method `compute.v1.RegionNetworkEndpointGroupsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[detachNetworkEndpoints](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/detachNetworkEndpoints)` | 
 
 The method `compute.v1.RegionNetworkEndpointGroupsService.DetachNetworkEndpoints` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/get)` | 
-
-The method `compute.v1.RegionNetworkEndpointGroupsService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/insert)` | 
-
-The method `compute.v1.RegionNetworkEndpointGroupsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/regionNetworkEndpointGroups/list)` | 
-
-The method `compute.v1.RegionNetworkEndpointGroupsService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -7470,6 +8112,13 @@ The method `compute.v1.RegionNetworkFirewallPoliciesService.Patch` is not availa
 
 | 
 
+`[patchAssociation](/compute/docs/reference/rest/v1/regionNetworkFirewallPolicies/patchAssociation)` | 
+
+The method `compute.v1.RegionNetworkFirewallPoliciesService.PatchAssociation` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[patchRule](/compute/docs/reference/rest/v1/regionNetworkFirewallPolicies/patchRule)` | 
 
 The method `compute.v1.RegionNetworkFirewallPoliciesService.PatchRule` is not available in Google Cloud Dedicated in Germany. | 
@@ -7526,37 +8175,45 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/regionNotificationEndpoints/aggregatedList)` | 
-
-The method `compute.v1.RegionNotificationEndpointsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[delete](/compute/docs/reference/rest/v1/regionNotificationEndpoints/delete)` | 
 
-The method `compute.v1.RegionNotificationEndpointsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/notificationEndpoints/{notificationEndpoint}` 
+
+Deletes the specified NotificationEndpoint in the given region | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionNotificationEndpoints/get)` | 
 
-The method `compute.v1.RegionNotificationEndpointsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/notificationEndpoints/{notificationEndpoint}` 
+
+Returns the specified NotificationEndpoint resource in the given region. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionNotificationEndpoints/insert)` | 
 
-The method `compute.v1.RegionNotificationEndpointsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/notificationEndpoints` 
+
+Create a NotificationEndpoint in the specified project in the given region using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionNotificationEndpoints/list)` | 
 
-The method `compute.v1.RegionNotificationEndpointsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/notificationEndpoints` 
+
+Lists the NotificationEndpoints for a project in the given region. | 
+|
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/regionNotificationEndpoints/aggregatedList)` | 
+
+The method `compute.v1.RegionNotificationEndpointsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -7591,28 +8248,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionOperations/delete)` | 
 
-The method `compute.v1.RegionOperationsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/operations/{operation}` 
+
+Deletes the specified region-specific Operations resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionOperations/get)` | 
 
-The method `compute.v1.RegionOperationsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/operations/{operation}` 
+
+Retrieves the specified region-specific Operations resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionOperations/list)` | 
 
-The method `compute.v1.RegionOperationsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/operations` 
+
+Retrieves a list of Operation resources contained within the specified region. | 
 |
 
 | 
 
 `[wait](/compute/docs/reference/rest/v1/regionOperations/wait)` | 
 
-The method `compute.v1.RegionOperationsService.Wait` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/operations/{operation}/wait` 
+
+Waits for the specified Operation resource to return as `DONE` or for the request to approach the 2 minute deadline, and retrieves the specified Operation resource. | 
 |
 
 
@@ -7850,28 +8515,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionSslCertificates/delete)` | 
 
-The method `compute.v1.RegionSslCertificatesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/sslCertificates/{sslCertificate}` 
+
+Deletes the specified SslCertificate resource in the region. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionSslCertificates/get)` | 
 
-The method `compute.v1.RegionSslCertificatesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/sslCertificates/{sslCertificate}` 
+
+Returns the specified SslCertificate resource in the specified region. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionSslCertificates/insert)` | 
 
-The method `compute.v1.RegionSslCertificatesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/sslCertificates` 
+
+Creates a SslCertificate resource in the specified project and region using the data included in the request | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionSslCertificates/list)` | 
 
-The method `compute.v1.RegionSslCertificatesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/sslCertificates` 
+
+Retrieves the list of SslCertificate resources available to the specified project in the specified region. | 
 |
 
 
@@ -7962,35 +8635,45 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionTargetHttpProxies/delete)` | 
 
-The method `compute.v1.RegionTargetHttpProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/targetHttpProxies/{targetHttpProxy}` 
+
+Deletes the specified TargetHttpProxy resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionTargetHttpProxies/get)` | 
 
-The method `compute.v1.RegionTargetHttpProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetHttpProxies/{targetHttpProxy}` 
+
+Returns the specified TargetHttpProxy resource in the specified region. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionTargetHttpProxies/insert)` | 
 
-The method `compute.v1.RegionTargetHttpProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetHttpProxies` 
+
+Creates a TargetHttpProxy resource in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionTargetHttpProxies/list)` | 
 
-The method `compute.v1.RegionTargetHttpProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetHttpProxies` 
+
+Retrieves the list of TargetHttpProxy resources available to the specified project in the specified region. | 
 |
 
 | 
 
 `[setUrlMap](/compute/docs/reference/rest/v1/regionTargetHttpProxies/setUrlMap)` | 
 
-The method `compute.v1.RegionTargetHttpProxiesService.SetUrlMap` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetHttpProxies/{targetHttpProxy}/setUrlMap` 
+
+Changes the URL map for TargetHttpProxy. | 
 |
 
 
@@ -8018,28 +8701,54 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/delete)` | 
 
-The method `compute.v1.RegionTargetHttpsProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/targetHttpsProxies/{targetHttpsProxy}` 
+
+Deletes the specified TargetHttpsProxy resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/get)` | 
 
-The method `compute.v1.RegionTargetHttpsProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetHttpsProxies/{targetHttpsProxy}` 
+
+Returns the specified TargetHttpsProxy resource in the specified region. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/insert)` | 
 
-The method `compute.v1.RegionTargetHttpsProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetHttpsProxies` 
+
+Creates a TargetHttpsProxy resource in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/list)` | 
 
-The method `compute.v1.RegionTargetHttpsProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetHttpsProxies` 
+
+Retrieves the list of TargetHttpsProxy resources available to the specified project in the specified region. | 
+|
+
+| 
+
+`[setSslCertificates](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/setSslCertificates)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/targetHttpsProxies/{targetHttpsProxy}/setSslCertificates` 
+
+Replaces SslCertificates for TargetHttpsProxy. | 
+|
+
+| 
+
+`[setUrlMap](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/setUrlMap)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/targetHttpsProxies/{targetHttpsProxy}/setUrlMap` 
+
+Changes the URL map for TargetHttpsProxy. | 
 |
 
 | 
@@ -8047,20 +8756,6 @@ The method `compute.v1.RegionTargetHttpsProxiesService.List` is not available in
 `[patch](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/patch)` | 
 
 The method `compute.v1.RegionTargetHttpsProxiesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setSslCertificates](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/setSslCertificates)` | 
-
-The method `compute.v1.RegionTargetHttpsProxiesService.SetSslCertificates` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setUrlMap](/compute/docs/reference/rest/v1/regionTargetHttpsProxies/setUrlMap)` | 
-
-The method `compute.v1.RegionTargetHttpsProxiesService.SetUrlMap` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -8137,49 +8832,63 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/regionUrlMaps/delete)` | 
 
-The method `compute.v1.RegionUrlMapsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/urlMaps/{urlMap}` 
+
+Deletes the specified UrlMap resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/regionUrlMaps/get)` | 
 
-The method `compute.v1.RegionUrlMapsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/urlMaps/{urlMap}` 
+
+Returns the specified UrlMap resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/regionUrlMaps/insert)` | 
 
-The method `compute.v1.RegionUrlMapsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/urlMaps` 
+
+Creates a UrlMap resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regionUrlMaps/list)` | 
 
-The method `compute.v1.RegionUrlMapsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/urlMaps` 
+
+Retrieves the list of UrlMap resources available to the specified project in the specified region. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/regionUrlMaps/patch)` | 
 
-The method `compute.v1.RegionUrlMapsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/regions/{region}/urlMaps/{urlMap}` 
+
+Patches the specified UrlMap resource with the data included in the request. | 
 |
 
 | 
 
 `[update](/compute/docs/reference/rest/v1/regionUrlMaps/update)` | 
 
-The method `compute.v1.RegionUrlMapsService.Update` is not available in Google Cloud Dedicated in Germany. | 
+`PUT /compute/v1/projects/{project}/regions/{region}/urlMaps/{urlMap}` 
+
+Updates the specified UrlMap resource with the data included in the request. | 
 |
 
 | 
 
 `[validate](/compute/docs/reference/rest/v1/regionUrlMaps/validate)` | 
 
-The method `compute.v1.RegionUrlMapsService.Validate` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/urlMaps/{urlMap}/validate` 
+
+Runs static validation for the UrlMap. | 
 |
 
 
@@ -8235,14 +8944,18 @@ Methods |
 
 `[get](/compute/docs/reference/rest/v1/regions/get)` | 
 
-The method `compute.v1.RegionsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}` 
+
+Returns the specified Region resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/regions/list)` | 
 
-The method `compute.v1.RegionsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions` 
+
+Retrieves the list of region resources available to the specified project. | 
 |
 
 
@@ -8599,21 +9312,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/resourcePolicies/aggregatedList)` | 
 
-The method `compute.v1.ResourcePoliciesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/resourcePolicies` 
+
+Retrieves an aggregated list of resource policies. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/resourcePolicies/delete)` | 
 
-The method `compute.v1.ResourcePoliciesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/resourcePolicies/{resourcePolicy}` 
+
+Deletes the specified resource policy. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/resourcePolicies/get)` | 
 
-The method `compute.v1.ResourcePoliciesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/resourcePolicies/{resourcePolicy}` 
+
+Retrieves all information of the specified resource policy. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/resourcePolicies/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/resourcePolicies` 
+
+Creates a new resource policy. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/resourcePolicies/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/resourcePolicies` 
+
+A list all the resource policies that have been configured for the specified project in specified region. | 
 |
 
 | 
@@ -8621,20 +9358,6 @@ The method `compute.v1.ResourcePoliciesService.Get` is not available in Google C
 `[getIamPolicy](/compute/docs/reference/rest/v1/resourcePolicies/getIamPolicy)` | 
 
 The method `compute.v1.ResourcePoliciesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/resourcePolicies/insert)` | 
-
-The method `compute.v1.ResourcePoliciesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/resourcePolicies/list)` | 
-
-The method `compute.v1.ResourcePoliciesService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -8977,28 +9700,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/routes/delete)` | 
 
-The method `compute.v1.RoutesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/routes/{route}` 
+
+Deletes the specified Route resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/routes/get)` | 
 
-The method `compute.v1.RoutesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/routes/{route}` 
+
+Returns the specified Route resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/routes/insert)` | 
 
-The method `compute.v1.RoutesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/routes` 
+
+Creates a Route resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/routes/list)` | 
 
-The method `compute.v1.RoutesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/routes` 
+
+Retrieves the list of Route resources available to the specified project. | 
 |
 
 | 
@@ -9033,7 +9764,90 @@ Methods |
 
 `[addRule](/compute/docs/reference/rest/v1/securityPolicies/addRule)` | 
 
-The method `compute.v1.SecurityPoliciesService.AddRule` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}/addRule` 
+
+Inserts a rule into a security policy. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/securityPolicies/delete)` | 
+
+`DELETE /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}` 
+
+Deletes the specified policy. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/securityPolicies/get)` | 
+
+`GET /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}` 
+
+List all of the ordered rules present in a single specified policy. | 
+|
+
+| 
+
+`[getRule](/compute/docs/reference/rest/v1/securityPolicies/getRule)` | 
+
+`GET /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}/getRule` 
+
+Gets a rule at the specified priority. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/securityPolicies/insert)` | 
+
+`POST /compute/v1/projects/{project}/global/securityPolicies` 
+
+Creates a new policy in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/securityPolicies/list)` | 
+
+`GET /compute/v1/projects/{project}/global/securityPolicies` 
+
+List all the policies that have been configured for the specified project. | 
+|
+
+| 
+
+`[listPreconfiguredExpressionSets](/compute/docs/reference/rest/v1/securityPolicies/listPreconfiguredExpressionSets)` | 
+
+`GET /compute/v1/projects/{project}/global/securityPolicies/listPreconfiguredExpressionSets` 
+
+Gets the current list of preconfigured Web Application Firewall (WAF) expressions. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/securityPolicies/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}` 
+
+Patches the specified policy with the data included in the request. | 
+|
+
+| 
+
+`[patchRule](/compute/docs/reference/rest/v1/securityPolicies/patchRule)` | 
+
+`POST /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}/patchRule` 
+
+Patches a rule at the specified priority. | 
+|
+
+| 
+
+`[removeRule](/compute/docs/reference/rest/v1/securityPolicies/removeRule)` | 
+
+`POST /compute/v1/projects/{project}/global/securityPolicies/{securityPolicy}/removeRule` 
+
+Deletes a rule at the specified priority. | 
 |
 
 | 
@@ -9041,69 +9855,6 @@ The method `compute.v1.SecurityPoliciesService.AddRule` is not available in Goog
 `[aggregatedList](/compute/docs/reference/rest/v1/securityPolicies/aggregatedList)` | 
 
 The method `compute.v1.SecurityPoliciesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[delete](/compute/docs/reference/rest/v1/securityPolicies/delete)` | 
-
-The method `compute.v1.SecurityPoliciesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[get](/compute/docs/reference/rest/v1/securityPolicies/get)` | 
-
-The method `compute.v1.SecurityPoliciesService.Get` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[getRule](/compute/docs/reference/rest/v1/securityPolicies/getRule)` | 
-
-The method `compute.v1.SecurityPoliciesService.GetRule` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[insert](/compute/docs/reference/rest/v1/securityPolicies/insert)` | 
-
-The method `compute.v1.SecurityPoliciesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/securityPolicies/list)` | 
-
-The method `compute.v1.SecurityPoliciesService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[listPreconfiguredExpressionSets](/compute/docs/reference/rest/v1/securityPolicies/listPreconfiguredExpressionSets)` | 
-
-The method `compute.v1.SecurityPoliciesService.ListPreconfiguredExpressionSets` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/securityPolicies/patch)` | 
-
-The method `compute.v1.SecurityPoliciesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patchRule](/compute/docs/reference/rest/v1/securityPolicies/patchRule)` | 
-
-The method `compute.v1.SecurityPoliciesService.PatchRule` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[removeRule](/compute/docs/reference/rest/v1/securityPolicies/removeRule)` | 
-
-The method `compute.v1.SecurityPoliciesService.RemoveRule` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -9257,14 +10008,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/snapshots/delete)` | 
 
-The method `compute.v1.SnapshotsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/snapshots/{snapshot}` 
+
+Deletes the specified Snapshot resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/snapshots/get)` | 
 
-The method `compute.v1.SnapshotsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/snapshots/{snapshot}` 
+
+Returns the specified Snapshot resource. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/snapshots/list)` | 
+
+`GET /compute/v1/projects/{project}/global/snapshots` 
+
+Retrieves the list of Snapshot resources contained within the specified project. | 
+|
+
+| 
+
+`[setLabels](/compute/docs/reference/rest/v1/snapshots/setLabels)` | 
+
+`POST /compute/v1/projects/{project}/global/snapshots/{resource}/setLabels` 
+
+Sets the labels on a snapshot. | 
 |
 
 | 
@@ -9283,23 +10056,9 @@ The method `compute.v1.SnapshotsService.Insert` is not available in Google Cloud
 
 | 
 
-`[list](/compute/docs/reference/rest/v1/snapshots/list)` | 
-
-The method `compute.v1.SnapshotsService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setIamPolicy](/compute/docs/reference/rest/v1/snapshots/setIamPolicy)` | 
 
 The method `compute.v1.SnapshotsService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setLabels](/compute/docs/reference/rest/v1/snapshots/setLabels)` | 
-
-The method `compute.v1.SnapshotsService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -9341,35 +10100,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/sslCertificates/aggregatedList)` | 
 
-The method `compute.v1.SslCertificatesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/sslCertificates` 
+
+Retrieves the list of all SslCertificate resources, regional and global, available to the specified project. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/sslCertificates/delete)` | 
 
-The method `compute.v1.SslCertificatesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/sslCertificates/{sslCertificate}` 
+
+Deletes the specified SslCertificate resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/sslCertificates/get)` | 
 
-The method `compute.v1.SslCertificatesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/sslCertificates/{sslCertificate}` 
+
+Returns the specified SslCertificate resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/sslCertificates/insert)` | 
 
-The method `compute.v1.SslCertificatesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/sslCertificates` 
+
+Creates a SslCertificate resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/sslCertificates/list)` | 
 
-The method `compute.v1.SslCertificatesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/sslCertificates` 
+
+Retrieves the list of SslCertificate resources available to the specified project. | 
 |
 
 
@@ -9395,51 +10164,63 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/sslPolicies/aggregatedList)` | 
-
-The method `compute.v1.SslPoliciesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[delete](/compute/docs/reference/rest/v1/sslPolicies/delete)` | 
 
-The method `compute.v1.SslPoliciesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/sslPolicies/{sslPolicy}` 
+
+Deletes the specified SSL policy. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/sslPolicies/get)` | 
 
-The method `compute.v1.SslPoliciesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/sslPolicies/{sslPolicy}` 
+
+Lists all of the ordered rules present in a single specified policy. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/sslPolicies/insert)` | 
 
-The method `compute.v1.SslPoliciesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/sslPolicies` 
+
+Returns the specified SSL policy resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/sslPolicies/list)` | 
 
-The method `compute.v1.SslPoliciesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/sslPolicies` 
+
+Lists all the SSL policies that have been configured for the specified project. | 
 |
 
 | 
 
 `[listAvailableFeatures](/compute/docs/reference/rest/v1/sslPolicies/listAvailableFeatures)` | 
 
-The method `compute.v1.SslPoliciesService.ListAvailableFeatures` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/sslPolicies/listAvailableFeatures` 
+
+Lists all features that can be specified in the SSL policy when using custom profile. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/sslPolicies/patch)` | 
 
-The method `compute.v1.SslPoliciesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/sslPolicies/{sslPolicy}` 
+
+Patches the specified SSL policy with the data included in the request. | 
+|
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/sslPolicies/aggregatedList)` | 
+
+The method `compute.v1.SslPoliciesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -9600,28 +10381,81 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/subnetworks/aggregatedList)` | 
 
-The method `compute.v1.SubnetworksService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/subnetworks` 
+
+Retrieves an aggregated list of subnetworks. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/subnetworks/delete)` | 
 
-The method `compute.v1.SubnetworksService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}` 
+
+Deletes the specified subnetwork. | 
 |
 
 | 
 
 `[expandIpCidrRange](/compute/docs/reference/rest/v1/subnetworks/expandIpCidrRange)` | 
 
-The method `compute.v1.SubnetworksService.ExpandIpCidrRange` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}/expandIpCidrRange` 
+
+Expands the IP CIDR range of the subnetwork to a specified value. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/subnetworks/get)` | 
 
-The method `compute.v1.SubnetworksService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}` 
+
+Returns the specified subnetwork. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/subnetworks/insert)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/subnetworks` 
+
+Creates a subnetwork in the specified project using the data included in the request. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/subnetworks/list)` | 
+
+`GET /compute/v1/projects/{project}/regions/{region}/subnetworks` 
+
+Retrieves a list of subnetworks available to the specified project. | 
+|
+
+| 
+
+`[listUsable](/compute/docs/reference/rest/v1/subnetworks/listUsable)` | 
+
+`GET /compute/v1/projects/{project}/aggregated/subnetworks/listUsable` 
+
+Retrieves an aggregated list of all usable subnetworks in the project. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/subnetworks/patch)` | 
+
+`PATCH /compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}` 
+
+Patches the specified subnetwork with the data included in the request. | 
+|
+
+| 
+
+`[setPrivateIpGoogleAccess](/compute/docs/reference/rest/v1/subnetworks/setPrivateIpGoogleAccess)` | 
+
+`POST /compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetwork}/setPrivateIpGoogleAccess` 
+
+Set whether VMs in this subnet can access Google Cloud Dedicated services without assigning external IP addresses through Private Google Cloud Dedicated Access. | 
 |
 
 | 
@@ -9633,44 +10467,9 @@ The method `compute.v1.SubnetworksService.GetPolicy` is not available in Google 
 
 | 
 
-`[insert](/compute/docs/reference/rest/v1/subnetworks/insert)` | 
-
-The method `compute.v1.SubnetworksService.Insert` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[list](/compute/docs/reference/rest/v1/subnetworks/list)` | 
-
-The method `compute.v1.SubnetworksService.List` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[listUsable](/compute/docs/reference/rest/v1/subnetworks/listUsable)` | 
-
-The method `compute.v1.SubnetworksService.ListUsable` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[patch](/compute/docs/reference/rest/v1/subnetworks/patch)` | 
-
-The method `compute.v1.SubnetworksService.Patch` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[setIamPolicy](/compute/docs/reference/rest/v1/subnetworks/setIamPolicy)` | 
 
 The method `compute.v1.SubnetworksService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setPrivateIpGoogleAccess](/compute/docs/reference/rest/v1/subnetworks/setPrivateIpGoogleAccess)` | 
-
-The method `compute.v1.SubnetworksService.SetPrivateIpGoogleAccess` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -9705,35 +10504,45 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/targetGrpcProxies/delete)` | 
 
-The method `compute.v1.TargetGrpcProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/targetGrpcProxies/{targetGrpcProxy}` 
+
+Deletes the specified TargetGrpcProxy in the given scope | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetGrpcProxies/get)` | 
 
-The method `compute.v1.TargetGrpcProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetGrpcProxies/{targetGrpcProxy}` 
+
+Returns the specified TargetGrpcProxy resource in the given scope. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetGrpcProxies/insert)` | 
 
-The method `compute.v1.TargetGrpcProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetGrpcProxies` 
+
+Creates a TargetGrpcProxy in the specified project in the given scope using the parameters that are included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetGrpcProxies/list)` | 
 
-The method `compute.v1.TargetGrpcProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetGrpcProxies` 
+
+Lists the TargetGrpcProxies for a project in the given scope. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/targetGrpcProxies/patch)` | 
 
-The method `compute.v1.TargetGrpcProxiesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/targetGrpcProxies/{targetGrpcProxy}` 
+
+Patches the specified TargetGrpcProxy resource with the data included in the request. | 
 |
 
 
@@ -9761,49 +10570,63 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/targetHttpProxies/aggregatedList)` | 
 
-The method `compute.v1.TargetHttpProxiesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/targetHttpProxies` 
+
+Retrieves the list of all TargetHttpProxy resources, regional and global, available to the specified project. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/targetHttpProxies/delete)` | 
 
-The method `compute.v1.TargetHttpProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/targetHttpProxies/{targetHttpProxy}` 
+
+Deletes the specified TargetHttpProxy resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetHttpProxies/get)` | 
 
-The method `compute.v1.TargetHttpProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetHttpProxies/{targetHttpProxy}` 
+
+Returns the specified TargetHttpProxy resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetHttpProxies/insert)` | 
 
-The method `compute.v1.TargetHttpProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetHttpProxies` 
+
+Creates a TargetHttpProxy resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetHttpProxies/list)` | 
 
-The method `compute.v1.TargetHttpProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetHttpProxies` 
+
+Retrieves the list of TargetHttpProxy resources available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/targetHttpProxies/patch)` | 
 
-The method `compute.v1.TargetHttpProxiesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/targetHttpProxies/{targetHttpProxy}` 
+
+Patches the specified TargetHttpProxy resource with the data included in the request. | 
 |
 
 | 
 
 `[setUrlMap](/compute/docs/reference/rest/v1/targetHttpProxies/setUrlMap)` | 
 
-The method `compute.v1.TargetHttpProxiesService.SetUrlMap` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/targetHttpProxies/{targetHttpProxy}/setUrlMap` 
+
+Changes the URL map for TargetHttpProxy. | 
 |
 
 
@@ -9831,42 +10654,90 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/targetHttpsProxies/aggregatedList)` | 
 
-The method `compute.v1.TargetHttpsProxiesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/targetHttpsProxies` 
+
+Retrieves the list of all TargetHttpsProxy resources, regional and global, available to the specified project. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/targetHttpsProxies/delete)` | 
 
-The method `compute.v1.TargetHttpsProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/targetHttpsProxies/{targetHttpsProxy}` 
+
+Deletes the specified TargetHttpsProxy resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetHttpsProxies/get)` | 
 
-The method `compute.v1.TargetHttpsProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetHttpsProxies/{targetHttpsProxy}` 
+
+Returns the specified TargetHttpsProxy resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetHttpsProxies/insert)` | 
 
-The method `compute.v1.TargetHttpsProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetHttpsProxies` 
+
+Creates a TargetHttpsProxy resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetHttpsProxies/list)` | 
 
-The method `compute.v1.TargetHttpsProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetHttpsProxies` 
+
+Retrieves the list of TargetHttpsProxy resources available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/targetHttpsProxies/patch)` | 
 
-The method `compute.v1.TargetHttpsProxiesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/targetHttpsProxies/{targetHttpsProxy}` 
+
+Patches the specified TargetHttpsProxy resource with the data included in the request. | 
+|
+
+| 
+
+`[setQuicOverride](/compute/docs/reference/rest/v1/targetHttpsProxies/setQuicOverride)` | 
+
+`POST /compute/v1/projects/{project}/global/targetHttpsProxies/{targetHttpsProxy}/setQuicOverride` 
+
+Sets the QUIC override policy for TargetHttpsProxy. | 
+|
+
+| 
+
+`[setSslCertificates](/compute/docs/reference/rest/v1/targetHttpsProxies/setSslCertificates)` | 
+
+`POST /compute/v1/projects/{project}/targetHttpsProxies/{targetHttpsProxy}/setSslCertificates` 
+
+Replaces SslCertificates for TargetHttpsProxy. | 
+|
+
+| 
+
+`[setSslPolicy](/compute/docs/reference/rest/v1/targetHttpsProxies/setSslPolicy)` | 
+
+`POST /compute/v1/projects/{project}/global/targetHttpsProxies/{targetHttpsProxy}/setSslPolicy` 
+
+Sets the SSL policy for TargetHttpsProxy. | 
+|
+
+| 
+
+`[setUrlMap](/compute/docs/reference/rest/v1/targetHttpsProxies/setUrlMap)` | 
+
+`POST /compute/v1/projects/{project}/targetHttpsProxies/{targetHttpsProxy}/setUrlMap` 
+
+Changes the URL map for TargetHttpsProxy. | 
 |
 
 | 
@@ -9874,34 +10745,6 @@ The method `compute.v1.TargetHttpsProxiesService.Patch` is not available in Goog
 `[setCertificateMap](/compute/docs/reference/rest/v1/targetHttpsProxies/setCertificateMap)` | 
 
 The method `compute.v1.TargetHttpsProxiesService.SetCertificateMap` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setQuicOverride](/compute/docs/reference/rest/v1/targetHttpsProxies/setQuicOverride)` | 
-
-The method `compute.v1.TargetHttpsProxiesService.SetQuicOverride` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setSslCertificates](/compute/docs/reference/rest/v1/targetHttpsProxies/setSslCertificates)` | 
-
-The method `compute.v1.TargetHttpsProxiesService.SetSslCertificates` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setSslPolicy](/compute/docs/reference/rest/v1/targetHttpsProxies/setSslPolicy)` | 
-
-The method `compute.v1.TargetHttpsProxiesService.SetSslPolicy` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setUrlMap](/compute/docs/reference/rest/v1/targetHttpsProxies/setUrlMap)` | 
-
-The method `compute.v1.TargetHttpsProxiesService.SetUrlMap` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -9929,35 +10772,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/targetInstances/aggregatedList)` | 
 
-The method `compute.v1.TargetInstancesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/targetInstances` 
+
+Retrieves an aggregated list of target instances. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/targetInstances/delete)` | 
 
-The method `compute.v1.TargetInstancesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/targetInstances/{targetInstance}` 
+
+Deletes the specified TargetInstance resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetInstances/get)` | 
 
-The method `compute.v1.TargetInstancesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/targetInstances/{targetInstance}` 
+
+Returns the specified TargetInstance resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetInstances/insert)` | 
 
-The method `compute.v1.TargetInstancesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/targetInstances` 
+
+Creates a TargetInstance resource in the specified project and zone using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetInstances/list)` | 
 
-The method `compute.v1.TargetInstancesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/targetInstances` 
+
+Retrieves a list of TargetInstance resources available to the specified project and zone. | 
 |
 
 | 
@@ -9999,77 +10852,99 @@ Methods |
 
 `[addHealthCheck](/compute/docs/reference/rest/v1/targetPools/addHealthCheck)` | 
 
-The method `compute.v1.TargetPoolsService.AddHealthCheck` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}/addHealthCheck` 
+
+Adds health check URLs to a target pool. | 
 |
 
 | 
 
 `[addInstance](/compute/docs/reference/rest/v1/targetPools/addInstance)` | 
 
-The method `compute.v1.TargetPoolsService.AddInstance` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}/addInstance` 
+
+Adds an instance to a target pool. | 
 |
 
 | 
 
 `[aggregatedList](/compute/docs/reference/rest/v1/targetPools/aggregatedList)` | 
 
-The method `compute.v1.TargetPoolsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/targetPools` 
+
+Retrieves an aggregated list of target pools. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/targetPools/delete)` | 
 
-The method `compute.v1.TargetPoolsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}` 
+
+Deletes the specified target pool. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetPools/get)` | 
 
-The method `compute.v1.TargetPoolsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}` 
+
+Returns the specified target pool. | 
 |
 
 | 
 
 `[getHealth](/compute/docs/reference/rest/v1/targetPools/getHealth)` | 
 
-The method `compute.v1.TargetPoolsService.GetHealth` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}/getHealth` 
+
+Gets the most recent health check results for each IP for the instance that is referenced by the given target pool. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetPools/insert)` | 
 
-The method `compute.v1.TargetPoolsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools` 
+
+Creates a target pool in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetPools/list)` | 
 
-The method `compute.v1.TargetPoolsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetPools` 
+
+Retrieves a list of target pools available to the specified project and region. | 
 |
 
 | 
 
 `[removeHealthCheck](/compute/docs/reference/rest/v1/targetPools/removeHealthCheck)` | 
 
-The method `compute.v1.TargetPoolsService.RemoveHealthCheck` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}/removeHealthCheck` 
+
+Removes health check URL from a target pool. | 
 |
 
 | 
 
 `[removeInstance](/compute/docs/reference/rest/v1/targetPools/removeInstance)` | 
 
-The method `compute.v1.TargetPoolsService.RemoveInstance` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}/removeInstance` 
+
+Removes instance URL from a target pool. | 
 |
 
 | 
 
 `[setBackup](/compute/docs/reference/rest/v1/targetPools/setBackup)` | 
 
-The method `compute.v1.TargetPoolsService.SetBackup` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetPools/{targetPool}/setBackup` 
+
+Changes a backup target pool's configurations. | 
 |
 
 | 
@@ -10111,35 +10986,72 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/targetSslProxies/delete)` | 
 
-The method `compute.v1.TargetSslProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/targetSslProxies/{targetSslProxy}` 
+
+Deletes the specified TargetSslProxy resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetSslProxies/get)` | 
 
-The method `compute.v1.TargetSslProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetSslProxies/{targetSslProxy}` 
+
+Returns the specified TargetSslProxy resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetSslProxies/insert)` | 
 
-The method `compute.v1.TargetSslProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetSslProxies` 
+
+Creates a TargetSslProxy resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetSslProxies/list)` | 
 
-The method `compute.v1.TargetSslProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetSslProxies` 
+
+Retrieves the list of `TargetSslProxy` resources available to the specified project. | 
 |
 
 | 
 
 `[setBackendService](/compute/docs/reference/rest/v1/targetSslProxies/setBackendService)` | 
 
-The method `compute.v1.TargetSslProxiesService.SetBackendService` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetSslProxies/{targetSslProxy}/setBackendService` 
+
+Changes the BackendService for TargetSslProxy. | 
+|
+
+| 
+
+`[setProxyHeader](/compute/docs/reference/rest/v1/targetSslProxies/setProxyHeader)` | 
+
+`POST /compute/v1/projects/{project}/global/targetSslProxies/{targetSslProxy}/setProxyHeader` 
+
+Changes the ProxyHeaderType for TargetSslProxy. | 
+|
+
+| 
+
+`[setSslCertificates](/compute/docs/reference/rest/v1/targetSslProxies/setSslCertificates)` | 
+
+`POST /compute/v1/projects/{project}/global/targetSslProxies/{targetSslProxy}/setSslCertificates` 
+
+Changes SslCertificates for TargetSslProxy. | 
+|
+
+| 
+
+`[setSslPolicy](/compute/docs/reference/rest/v1/targetSslProxies/setSslPolicy)` | 
+
+`POST /compute/v1/projects/{project}/global/targetSslProxies/{targetSslProxy}/setSslPolicy` 
+
+Sets the SSL policy for TargetSslProxy. | 
 |
 
 | 
@@ -10147,27 +11059,6 @@ The method `compute.v1.TargetSslProxiesService.SetBackendService` is not availab
 `[setCertificateMap](/compute/docs/reference/rest/v1/targetSslProxies/setCertificateMap)` | 
 
 The method `compute.v1.TargetSslProxiesService.SetCertificateMap` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setProxyHeader](/compute/docs/reference/rest/v1/targetSslProxies/setProxyHeader)` | 
-
-The method `compute.v1.TargetSslProxiesService.SetProxyHeader` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setSslCertificates](/compute/docs/reference/rest/v1/targetSslProxies/setSslCertificates)` | 
-
-The method `compute.v1.TargetSslProxiesService.SetSslCertificates` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[setSslPolicy](/compute/docs/reference/rest/v1/targetSslProxies/setSslPolicy)` | 
-
-The method `compute.v1.TargetSslProxiesService.SetSslPolicy` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -10200,51 +11091,63 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/targetTcpProxies/aggregatedList)` | 
-
-The method `compute.v1.TargetTcpProxiesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
 `[delete](/compute/docs/reference/rest/v1/targetTcpProxies/delete)` | 
 
-The method `compute.v1.TargetTcpProxiesService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/targetTcpProxies/{targetTcpProxy}` 
+
+Deletes the specified TargetTcpProxy resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetTcpProxies/get)` | 
 
-The method `compute.v1.TargetTcpProxiesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetTcpProxies/{targetTcpProxy}` 
+
+Returns the specified TargetTcpProxy resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetTcpProxies/insert)` | 
 
-The method `compute.v1.TargetTcpProxiesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetTcpProxies` 
+
+Creates a TargetTcpProxy resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetTcpProxies/list)` | 
 
-The method `compute.v1.TargetTcpProxiesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/targetTcpProxies` 
+
+Retrieves the list of `TargetTcpProxy` resources available to the specified project. | 
 |
 
 | 
 
 `[setBackendService](/compute/docs/reference/rest/v1/targetTcpProxies/setBackendService)` | 
 
-The method `compute.v1.TargetTcpProxiesService.SetBackendService` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetTcpProxies/{targetTcpProxy}/setBackendService` 
+
+Changes the BackendService for TargetTcpProxy. | 
 |
 
 | 
 
 `[setProxyHeader](/compute/docs/reference/rest/v1/targetTcpProxies/setProxyHeader)` | 
 
-The method `compute.v1.TargetTcpProxiesService.SetProxyHeader` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/targetTcpProxies/{targetTcpProxy}/setProxyHeader` 
+
+Changes the ProxyHeaderType for TargetTcpProxy. | 
+|
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/targetTcpProxies/aggregatedList)` | 
+
+The method `compute.v1.TargetTcpProxiesService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -10279,35 +11182,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/targetVpnGateways/aggregatedList)` | 
 
-The method `compute.v1.TargetVpnGatewaysService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/targetVpnGateways` 
+
+Retrieves an aggregated list of target VPN gateways. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/targetVpnGateways/delete)` | 
 
-The method `compute.v1.TargetVpnGatewaysService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/targetVpnGateways/{targetVpnGateway}` 
+
+Deletes the specified target VPN gateway. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/targetVpnGateways/get)` | 
 
-The method `compute.v1.TargetVpnGatewaysService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetVpnGateways/{targetVpnGateway}` 
+
+Returns the specified target VPN gateway. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/targetVpnGateways/insert)` | 
 
-The method `compute.v1.TargetVpnGatewaysService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/targetVpnGateways` 
+
+Creates a target VPN gateway in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/targetVpnGateways/list)` | 
 
-The method `compute.v1.TargetVpnGatewaysService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/targetVpnGateways` 
+
+Retrieves a list of target VPN gateways available to the specified project and region. | 
 |
 
 | 
@@ -10342,49 +11255,81 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/urlMaps/aggregatedList)` | 
 
-The method `compute.v1.UrlMapsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/urlMaps` 
+
+Retrieves the list of all UrlMap resources, regional and global, available to the specified project. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/urlMaps/delete)` | 
 
-The method `compute.v1.UrlMapsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/global/urlMaps/{urlMap}` 
+
+Deletes the specified UrlMap resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/urlMaps/get)` | 
 
-The method `compute.v1.UrlMapsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/urlMaps/{urlMap}` 
+
+Returns the specified UrlMap resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/urlMaps/insert)` | 
 
-The method `compute.v1.UrlMapsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/urlMaps` 
+
+Creates a UrlMap resource in the specified project using the data included in the request. | 
 |
 
 | 
 
 `[invalidateCache](/compute/docs/reference/rest/v1/urlMaps/invalidateCache)` | 
 
-The method `compute.v1.UrlMapsService.InvalidateCache` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/global/urlMaps/{urlMap}/invalidateCache` 
+
+Initiates a cache invalidation operation, invalidating the specified path, scoped to the specified UrlMap. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/urlMaps/list)` | 
 
-The method `compute.v1.UrlMapsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/global/urlMaps` 
+
+Retrieves the list of UrlMap resources available to the specified project. | 
 |
 
 | 
 
 `[patch](/compute/docs/reference/rest/v1/urlMaps/patch)` | 
 
-The method `compute.v1.UrlMapsService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+`PATCH /compute/v1/projects/{project}/global/urlMaps/{urlMap}` 
+
+Patches the specified UrlMap resource with the data included in the request. | 
+|
+
+| 
+
+`[update](/compute/docs/reference/rest/v1/urlMaps/update)` | 
+
+`PUT /compute/v1/projects/{project}/global/urlMaps/{urlMap}` 
+
+Updates the specified UrlMap resource with the data included in the request. | 
+|
+
+| 
+
+`[validate](/compute/docs/reference/rest/v1/urlMaps/validate)` | 
+
+`POST /compute/v1/projects/{project}/global/urlMaps/{urlMap}/validate` 
+
+Runs static validation for the UrlMap. | 
 |
 
 | 
@@ -10392,20 +11337,6 @@ The method `compute.v1.UrlMapsService.Patch` is not available in Google Cloud De
 `[testIamPermissions](/compute/docs/reference/rest/v1/urlMaps/testIamPermissions)` | 
 
 The method `compute.v1.UrlMapsService.TestPermissions` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[update](/compute/docs/reference/rest/v1/urlMaps/update)` | 
-
-The method `compute.v1.UrlMapsService.Update` is not available in Google Cloud Dedicated in Germany. | 
-|
-
-| 
-
-`[validate](/compute/docs/reference/rest/v1/urlMaps/validate)` | 
-
-The method `compute.v1.UrlMapsService.Validate` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -10433,49 +11364,63 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/vpnGateways/aggregatedList)` | 
 
-The method `compute.v1.VpnGatewaysService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/vpnGateways` 
+
+Retrieves an aggregated list of VPN gateways. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/vpnGateways/delete)` | 
 
-The method `compute.v1.VpnGatewaysService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/vpnGateways/{vpnGateway}` 
+
+Deletes the specified VPN gateway. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/vpnGateways/get)` | 
 
-The method `compute.v1.VpnGatewaysService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/vpnGateways/{vpnGateway}` 
+
+Returns the specified VPN gateway. | 
 |
 
 | 
 
 `[getStatus](/compute/docs/reference/rest/v1/vpnGateways/getStatus)` | 
 
-The method `compute.v1.VpnGatewaysService.GetStatus` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/vpnGateways/{vpnGateway}/getStatus` 
+
+Returns the status for the specified VPN gateway. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/vpnGateways/insert)` | 
 
-The method `compute.v1.VpnGatewaysService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/vpnGateways` 
+
+Creates a VPN gateway in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/vpnGateways/list)` | 
 
-The method `compute.v1.VpnGatewaysService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/vpnGateways` 
+
+Retrieves a list of VPN gateways available to the specified project and region. | 
 |
 
 | 
 
 `[setLabels](/compute/docs/reference/rest/v1/vpnGateways/setLabels)` | 
 
-The method `compute.v1.VpnGatewaysService.SetLabels` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/vpnGateways/{resource}/setLabels` 
+
+Sets the labels on a VpnGateway. | 
 |
 
 | 
@@ -10510,35 +11455,45 @@ Methods |
 
 `[aggregatedList](/compute/docs/reference/rest/v1/vpnTunnels/aggregatedList)` | 
 
-The method `compute.v1.VpnTunnelsService.AggregatedList` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/aggregated/vpnTunnels` 
+
+Retrieves an aggregated list of VPN tunnels. | 
 |
 
 | 
 
 `[delete](/compute/docs/reference/rest/v1/vpnTunnels/delete)` | 
 
-The method `compute.v1.VpnTunnelsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/regions/{region}/vpnTunnels/{vpnTunnel}` 
+
+Deletes the specified VpnTunnel resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/vpnTunnels/get)` | 
 
-The method `compute.v1.VpnTunnelsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/vpnTunnels/{vpnTunnel}` 
+
+Returns the specified VpnTunnel resource. | 
 |
 
 | 
 
 `[insert](/compute/docs/reference/rest/v1/vpnTunnels/insert)` | 
 
-The method `compute.v1.VpnTunnelsService.Insert` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/regions/{region}/vpnTunnels` 
+
+Creates a VpnTunnel resource in the specified project and region using the data included in the request. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/vpnTunnels/list)` | 
 
-The method `compute.v1.VpnTunnelsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/regions/{region}/vpnTunnels` 
+
+Retrieves a list of VpnTunnel resources contained in the specified project and region. | 
 |
 
 | 
@@ -10629,28 +11584,36 @@ Methods |
 
 `[delete](/compute/docs/reference/rest/v1/zoneOperations/delete)` | 
 
-The method `compute.v1.ZoneOperationsService.Delete` is not available in Google Cloud Dedicated in Germany. | 
+`DELETE /compute/v1/projects/{project}/zones/{zone}/operations/{operation}` 
+
+Deletes the specified zone-specific Operations resource. | 
 |
 
 | 
 
 `[get](/compute/docs/reference/rest/v1/zoneOperations/get)` | 
 
-The method `compute.v1.ZoneOperationsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/operations/{operation}` 
+
+Retrieves the specified zone-specific Operations resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/zoneOperations/list)` | 
 
-The method `compute.v1.ZoneOperationsService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}/operations` 
+
+Retrieves a list of Operation resources contained within the specified zone. | 
 |
 
 | 
 
 `[wait](/compute/docs/reference/rest/v1/zoneOperations/wait)` | 
 
-The method `compute.v1.ZoneOperationsService.Wait` is not available in Google Cloud Dedicated in Germany. | 
+`POST /compute/v1/projects/{project}/zones/{zone}/operations/{operation}/wait` 
+
+Waits for the specified Operation resource to return as `DONE` or for the request to approach the 2 minute deadline, and retrieves the specified Operation resource. | 
 |
 
 
@@ -10734,14 +11697,18 @@ Methods |
 
 `[get](/compute/docs/reference/rest/v1/zones/get)` | 
 
-The method `compute.v1.ZonesService.Get` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones/{zone}` 
+
+Returns the specified Zone resource. | 
 |
 
 | 
 
 `[list](/compute/docs/reference/rest/v1/zones/list)` | 
 
-The method `compute.v1.ZonesService.List` is not available in Google Cloud Dedicated in Germany. | 
+`GET /compute/v1/projects/{project}/zones` 
+
+Retrieves the list of Zone resources available to the specified project. | 
 |
 
 
@@ -10889,6 +11856,13 @@ Methods |
 `[calendarMode](/compute/docs/reference/rest/beta/advice/calendarMode)` | 
 
 The method `compute.beta.AdviceService.CalendarMode` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[calendarModeExtension](/compute/docs/reference/rest/beta/advice/calendarModeExtension)` | 
+
+The method `compute.beta.AdviceService.CalendarModeExtension` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -12842,6 +13816,13 @@ Methods |
 `[get](/compute/docs/reference/rest/beta/imageViews/get)` | 
 
 The method `compute.beta.ImageViewsService.Get` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/beta/imageViews/list)` | 
+
+The method `compute.beta.ImageViewsService.List` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -18555,6 +19536,13 @@ The method `compute.beta.RegionSslPoliciesService.Get` is not available in Googl
 
 | 
 
+`[getIamPolicy](/compute/docs/reference/rest/beta/regionSslPolicies/getIamPolicy)` | 
+
+The method `compute.beta.RegionSslPoliciesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[insert](/compute/docs/reference/rest/beta/regionSslPolicies/insert)` | 
 
 The method `compute.beta.RegionSslPoliciesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
@@ -18579,6 +19567,13 @@ The method `compute.beta.RegionSslPoliciesService.ListAvailableFeatures` is not 
 `[patch](/compute/docs/reference/rest/beta/regionSslPolicies/patch)` | 
 
 The method `compute.beta.RegionSslPoliciesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[setIamPolicy](/compute/docs/reference/rest/beta/regionSslPolicies/setIamPolicy)` | 
+
+The method `compute.beta.RegionSslPoliciesService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
@@ -20242,6 +21237,13 @@ The method `compute.beta.SslPoliciesService.Get` is not available in Google Clou
 
 | 
 
+`[getIamPolicy](/compute/docs/reference/rest/beta/sslPolicies/getIamPolicy)` | 
+
+The method `compute.beta.SslPoliciesService.GetPolicy` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
 `[insert](/compute/docs/reference/rest/beta/sslPolicies/insert)` | 
 
 The method `compute.beta.SslPoliciesService.Insert` is not available in Google Cloud Dedicated in Germany. | 
@@ -20266,6 +21268,13 @@ The method `compute.beta.SslPoliciesService.ListAvailableFeatures` is not availa
 `[patch](/compute/docs/reference/rest/beta/sslPolicies/patch)` | 
 
 The method `compute.beta.SslPoliciesService.Patch` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[setIamPolicy](/compute/docs/reference/rest/beta/sslPolicies/setIamPolicy)` | 
+
+The method `compute.beta.SslPoliciesService.SetPolicy` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 

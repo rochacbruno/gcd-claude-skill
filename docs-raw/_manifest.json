@@ -191,14 +191,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72592,
+    "size": 72578,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-09-24"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139423,
+    "size": 139409,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-09-24"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42662,
+    "size": 42648,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-09-24"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 161814,
+    "size": 161786,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-09-24"
   },
@@ -270,42 +270,42 @@
     "filename": "compute.md",
     "size": 3305,
     "url": "https://berlin.devsitetest.how/compute/docs",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-28"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
     "filename": "compute_instances_create-start-instance.md",
     "size": 24215,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/create-start-instance",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-28"
   },
   "/compute/docs/instances/ssh": {
     "title": "About SSH connections",
     "filename": "compute_instances_ssh.md",
     "size": 5426,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/ssh",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-28"
   },
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 515715,
+    "size": 516931,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
-    "last_updated": "2026-09-07"
+    "last_updated": "2026-09-28"
   },
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
     "filename": "compute_release-notes.md",
     "size": 34304,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-28"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
     "filename": "compute_tpc-differences.md",
     "size": 13645,
     "url": "https://berlin.devsitetest.how/compute/docs/tpc-differences",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-28"
   },
   "/dns/docs": {
     "title": "Cloud DNS documentation",
@@ -590,7 +590,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -905,7 +905,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2713,
+    "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-09-24"
   },
@@ -919,7 +919,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-09-24"
   },
@@ -982,7 +982,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132603,
+    "size": 132905,
     "url": "https://berlin.devsitetest.how/docs/quotas/reference/libraries",
     "last_updated": "2026-09-24"
   },
@@ -1346,7 +1346,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91505,
+    "size": 91649,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-09-24"
   },
@@ -1584,7 +1584,7 @@
   "/logging/docs/release-notes": {
     "title": "Logging release notes",
     "filename": "logging_release-notes.md",
-    "size": 3355,
+    "size": 3692,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
     "last_updated": "2026-09-25"
   },
@@ -1950,14 +1950,14 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-28"
+    "last_updated": "2026-09-29"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
     "filename": "sql_tpc-differences.md",
     "size": 6821,
     "url": "https://berlin.devsitetest.how/sql/docs/tpc-differences",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-28"
   },
   "/storage/docs": {
     "title": "Cloud Storage documentation",

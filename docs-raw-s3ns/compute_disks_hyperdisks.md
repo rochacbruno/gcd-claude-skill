@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-09-25
+Last updated: 2026-09-28
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -1020,7 +1020,7 @@ Hyperdisk ML |
 
 | 
 
-**—** 
+
 | 
 
 
@@ -1645,8 +1645,8 @@ supported
 
 
 
-- You can't use Hyperdisk Throughput on bare metal instances with the exception of
-A4X Max bare metal instances.
+- You can't use Hyperdisk Throughput on bare metal instances, with the exception of
+C4D and A4X Max bare metal instances.
 
 - Additional limitations apply to attaching Hyperdisk Throughput volumes to certain machine series,
 including C4, C4A, and N4. For more information, see

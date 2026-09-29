@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ September 28, 2026 ](#September_28_2026)
 - [ April 30, 2026 ](#April_30_2026)
 - [ June 26, 2024 ](#June_26_2024)
 - [ June 25, 2024 ](#June_25_2024)
@@ -189,6 +190,20 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## September 28, 2026
+
+
+Breaking 
+
+
+Only platform services can write log entries to billing accounts.
+These logs have names with the format
+`billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]`.
+For more information, see
+[`entries.write`](/logging/docs/reference/v2/rest/v2/entries/write).
 
 
 

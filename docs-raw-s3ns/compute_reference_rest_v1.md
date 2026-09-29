@@ -1,7 +1,7 @@
 # Compute Engine API
 
 Source: https://documentation.s3ns.fr/compute/docs/reference/rest/v1
-Last updated: 2026-09-07
+Last updated: 2026-09-28
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -151,16 +151,19 @@ APIs & Reference
 - [ REST Resource: v1.futureReservations ](#rest-resource:-v1.futurereservations)
 - [ REST Resource: v1.globalAddresses ](#rest-resource:-v1.globaladdresses)
 - [ REST Resource: v1.globalForwardingRules ](#rest-resource:-v1.globalforwardingrules)
+- [ REST Resource: v1.globalFrontendSettings ](#rest-resource:-v1.globalfrontendsettings)
 - [ REST Resource: v1.globalNetworkEndpointGroups ](#rest-resource:-v1.globalnetworkendpointgroups)
 - [ REST Resource: v1.globalOperations ](#rest-resource:-v1.globaloperations)
 - [ REST Resource: v1.globalOrganizationOperations ](#rest-resource:-v1.globalorganizationoperations)
 - [ REST Resource: v1.globalPublicDelegatedPrefixes ](#rest-resource:-v1.globalpublicdelegatedprefixes)
 - [ REST Resource: v1.globalVmExtensionPolicies ](#rest-resource:-v1.globalvmextensionpolicies)
+- [ REST Resource: v1.haControllers ](#rest-resource:-v1.hacontrollers)
 - [ REST Resource: v1.healthChecks ](#rest-resource:-v1.healthchecks)
 - [ REST Resource: v1.hosts ](#rest-resource:-v1.hosts)
 - [ REST Resource: v1.httpHealthChecks ](#rest-resource:-v1.httphealthchecks)
 - [ REST Resource: v1.httpsHealthChecks ](#rest-resource:-v1.httpshealthchecks)
 - [ REST Resource: v1.imageFamilyViews ](#rest-resource:-v1.imagefamilyviews)
+- [ REST Resource: v1.imageViews ](#rest-resource:-v1.imageviews)
 - [ REST Resource: v1.images ](#rest-resource:-v1.images)
 - [ REST Resource: v1.instanceGroupManagerResizeRequests ](#rest-resource:-v1.instancegroupmanagerresizerequests)
 - [ REST Resource: v1.instanceGroupManagers ](#rest-resource:-v1.instancegroupmanagers)
@@ -180,6 +183,7 @@ APIs & Reference
 - [ REST Resource: v1.licenses ](#rest-resource:-v1.licenses)
 - [ REST Resource: v1.machineImages ](#rest-resource:-v1.machineimages)
 - [ REST Resource: v1.machineTypes ](#rest-resource:-v1.machinetypes)
+- [ REST Resource: v1.managedRulesets ](#rest-resource:-v1.managedrulesets)
 - [ REST Resource: v1.networkAttachments ](#rest-resource:-v1.networkattachments)
 - [ REST Resource: v1.networkEdgeSecurityServices ](#rest-resource:-v1.networkedgesecurityservices)
 - [ REST Resource: v1.networkEndpointGroups ](#rest-resource:-v1.networkendpointgroups)
@@ -192,6 +196,7 @@ APIs & Reference
 - [ REST Resource: v1.organizationSecurityPolicies ](#rest-resource:-v1.organizationsecuritypolicies)
 - [ REST Resource: v1.packetMirrorings ](#rest-resource:-v1.packetmirrorings)
 - [ REST Resource: v1.previewFeatures ](#rest-resource:-v1.previewfeatures)
+- [ REST Resource: v1.projectViews ](#rest-resource:-v1.projectviews)
 - [ REST Resource: v1.projects ](#rest-resource:-v1.projects)
 - [ REST Resource: v1.publicAdvertisedPrefixes ](#rest-resource:-v1.publicadvertisedprefixes)
 - [ REST Resource: v1.publicDelegatedPrefixes ](#rest-resource:-v1.publicdelegatedprefixes)
@@ -456,6 +461,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: v1.globalForwardingRules](#v1.globalForwardingRules)
 
+- [REST Resource: v1.globalFrontendSettings](#v1.globalFrontendSettings)
+
 - [REST Resource: v1.globalNetworkEndpointGroups](#v1.globalNetworkEndpointGroups)
 
 - [REST Resource: v1.globalOperations](#v1.globalOperations)
@@ -466,6 +473,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: v1.globalVmExtensionPolicies](#v1.globalVmExtensionPolicies)
 
+- [REST Resource: v1.haControllers](#v1.haControllers)
+
 - [REST Resource: v1.healthChecks](#v1.healthChecks)
 
 - [REST Resource: v1.hosts](#v1.hosts)
@@ -475,6 +484,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: v1.httpsHealthChecks](#v1.httpsHealthChecks)
 
 - [REST Resource: v1.imageFamilyViews](#v1.imageFamilyViews)
+
+- [REST Resource: v1.imageViews](#v1.imageViews)
 
 - [REST Resource: v1.images](#v1.images)
 
@@ -514,6 +525,8 @@ Creates and runs virtual machines on Cloud Platform.
 
 - [REST Resource: v1.machineTypes](#v1.machineTypes)
 
+- [REST Resource: v1.managedRulesets](#v1.managedRulesets)
+
 - [REST Resource: v1.networkAttachments](#v1.networkAttachments)
 
 - [REST Resource: v1.networkEdgeSecurityServices](#v1.networkEdgeSecurityServices)
@@ -537,6 +550,8 @@ Creates and runs virtual machines on Cloud Platform.
 - [REST Resource: v1.packetMirrorings](#v1.packetMirrorings)
 
 - [REST Resource: v1.previewFeatures](#v1.previewFeatures)
+
+- [REST Resource: v1.projectViews](#v1.projectViews)
 
 - [REST Resource: v1.projects](#v1.projects)
 
@@ -1170,6 +1185,20 @@ Methods |
 `[calendarMode](/compute/docs/reference/rest/v1/advice/calendarMode)` | 
 
 The method `compute.v1.AdviceService.CalendarMode` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[capacity](/compute/docs/reference/rest/v1/advice/capacity)` | 
+
+The method `compute.v1.AdviceService.Capacity` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[capacityHistory](/compute/docs/reference/rest/v1/advice/capacityHistory)` | 
+
+The method `compute.v1.AdviceService.CapacityHistory` is not available in Cloud de Confiance by S3NS. | 
 |
 
 
@@ -2491,6 +2520,41 @@ Changes target URL for the GlobalForwardingRule resource. |
 
 
 
+## REST Resource: [v1.globalFrontendSettings](/compute/docs/reference/rest/v1/globalFrontendSettings)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/globalFrontendSettings/get)` | 
+
+The method `compute.v1.GlobalFrontendSettingsService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/globalFrontendSettings/patch)` | 
+
+The method `compute.v1.GlobalFrontendSettingsService.Patch` is not available in Cloud de Confiance by S3NS. | 
+|
+
+
+
+
+
+
 ## REST Resource: [v1.globalNetworkEndpointGroups](/compute/docs/reference/rest/v1/globalNetworkEndpointGroups)
 
 
@@ -2818,6 +2882,76 @@ The method `compute.v1.GlobalVmExtensionPoliciesService.Update` is not available
 
 
 
+## REST Resource: [v1.haControllers](/compute/docs/reference/rest/v1/haControllers)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[aggregatedList](/compute/docs/reference/rest/v1/haControllers/aggregatedList)` | 
+
+The method `compute.v1.HaControllersService.AggregatedList` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[delete](/compute/docs/reference/rest/v1/haControllers/delete)` | 
+
+The method `compute.v1.HaControllersService.Delete` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[failover](/compute/docs/reference/rest/v1/haControllers/failover)` | 
+
+The method `compute.v1.HaControllersService.Failover` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/haControllers/get)` | 
+
+The method `compute.v1.HaControllersService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[insert](/compute/docs/reference/rest/v1/haControllers/insert)` | 
+
+The method `compute.v1.HaControllersService.Insert` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/haControllers/list)` | 
+
+The method `compute.v1.HaControllersService.List` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[patch](/compute/docs/reference/rest/v1/haControllers/patch)` | 
+
+The method `compute.v1.HaControllersService.Update` is not available in Cloud de Confiance by S3NS. | 
+|
+
+
+
+
+
+
 ## REST Resource: [v1.healthChecks](/compute/docs/reference/rest/v1/healthChecks)
 
 
@@ -3112,6 +3246,41 @@ Methods |
 `[get](/compute/docs/reference/rest/v1/imageFamilyViews/get)` | 
 
 The method `compute.v1.ImageFamilyViewsService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+
+
+
+
+
+## REST Resource: [v1.imageViews](/compute/docs/reference/rest/v1/imageViews)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/imageViews/get)` | 
+
+The method `compute.v1.ImageViewsService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/imageViews/list)` | 
+
+The method `compute.v1.ImageViewsService.List` is not available in Cloud de Confiance by S3NS. | 
 |
 
 
@@ -5044,6 +5213,41 @@ Retrieves a list of machine types available to the specified project. |
 
 
 
+## REST Resource: [v1.managedRulesets](/compute/docs/reference/rest/v1/managedRulesets)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/managedRulesets/get)` | 
+
+The method `compute.v1.ManagedRulesetsService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/v1/managedRulesets/list)` | 
+
+The method `compute.v1.ManagedRulesetsService.List` is not available in Cloud de Confiance by S3NS. | 
+|
+
+
+
+
+
+
 ## REST Resource: [v1.networkAttachments](/compute/docs/reference/rest/v1/networkAttachments)
 
 
@@ -5616,6 +5820,13 @@ The method `compute.v1.NetworksService.CancelRequestRemovePeering` is not availa
 The method `compute.v1.NetworksService.RequestRemovePeering` is not available in Cloud de Confiance by S3NS. | 
 |
 
+| 
+
+`[updateNetworkProfile](/compute/docs/reference/rest/v1/networks/updateNetworkProfile)` | 
+
+The method `compute.v1.NetworksService.UpdateNetworkProfile` is not available in Cloud de Confiance by S3NS. | 
+|
+
 
 
 
@@ -6152,6 +6363,34 @@ The method `compute.v1.PreviewFeaturesService.List` is not available in Cloud de
 `[update](/compute/docs/reference/rest/v1/previewFeatures/update)` | 
 
 The method `compute.v1.PreviewFeaturesService.Patch` is not available in Cloud de Confiance by S3NS. | 
+|
+
+
+
+
+
+
+## REST Resource: [v1.projectViews](/compute/docs/reference/rest/v1/projectViews)
+
+
+
+
+
+
+
+
+
+| 
+Methods | 
+|
+
+
+
+| 
+
+`[get](/compute/docs/reference/rest/v1/projectViews/get)` | 
+
+The method `compute.v1.ProjectViewsService.Get` is not available in Cloud de Confiance by S3NS. | 
 |
 
 
@@ -8156,6 +8395,13 @@ The method `compute.v1.RegionNetworkFirewallPoliciesService.List` is not availab
 `[patch](/compute/docs/reference/rest/v1/regionNetworkFirewallPolicies/patch)` | 
 
 The method `compute.v1.RegionNetworkFirewallPoliciesService.Patch` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[patchAssociation](/compute/docs/reference/rest/v1/regionNetworkFirewallPolicies/patchAssociation)` | 
+
+The method `compute.v1.RegionNetworkFirewallPoliciesService.PatchAssociation` is not available in Cloud de Confiance by S3NS. | 
 |
 
 | 
@@ -11901,6 +12147,13 @@ The method `compute.beta.AdviceService.CalendarMode` is not available in Cloud d
 
 | 
 
+`[calendarModeExtension](/compute/docs/reference/rest/beta/advice/calendarModeExtension)` | 
+
+The method `compute.beta.AdviceService.CalendarModeExtension` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
 `[capacity](/compute/docs/reference/rest/beta/advice/capacity)` | 
 
 The method `compute.beta.AdviceService.Capacity` is not available in Cloud de Confiance by S3NS. | 
@@ -13850,6 +14103,13 @@ Methods |
 `[get](/compute/docs/reference/rest/beta/imageViews/get)` | 
 
 The method `compute.beta.ImageViewsService.Get` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[list](/compute/docs/reference/rest/beta/imageViews/list)` | 
+
+The method `compute.beta.ImageViewsService.List` is not available in Cloud de Confiance by S3NS. | 
 |
 
 
@@ -19563,6 +19823,13 @@ The method `compute.beta.RegionSslPoliciesService.Get` is not available in Cloud
 
 | 
 
+`[getIamPolicy](/compute/docs/reference/rest/beta/regionSslPolicies/getIamPolicy)` | 
+
+The method `compute.beta.RegionSslPoliciesService.GetPolicy` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
 `[insert](/compute/docs/reference/rest/beta/regionSslPolicies/insert)` | 
 
 The method `compute.beta.RegionSslPoliciesService.Insert` is not available in Cloud de Confiance by S3NS. | 
@@ -19587,6 +19854,13 @@ The method `compute.beta.RegionSslPoliciesService.ListAvailableFeatures` is not 
 `[patch](/compute/docs/reference/rest/beta/regionSslPolicies/patch)` | 
 
 The method `compute.beta.RegionSslPoliciesService.Patch` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[setIamPolicy](/compute/docs/reference/rest/beta/regionSslPolicies/setIamPolicy)` | 
+
+The method `compute.beta.RegionSslPoliciesService.SetPolicy` is not available in Cloud de Confiance by S3NS. | 
 |
 
 | 
@@ -21250,6 +21524,13 @@ The method `compute.beta.SslPoliciesService.Get` is not available in Cloud de Co
 
 | 
 
+`[getIamPolicy](/compute/docs/reference/rest/beta/sslPolicies/getIamPolicy)` | 
+
+The method `compute.beta.SslPoliciesService.GetPolicy` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
 `[insert](/compute/docs/reference/rest/beta/sslPolicies/insert)` | 
 
 The method `compute.beta.SslPoliciesService.Insert` is not available in Cloud de Confiance by S3NS. | 
@@ -21274,6 +21555,13 @@ The method `compute.beta.SslPoliciesService.ListAvailableFeatures` is not availa
 `[patch](/compute/docs/reference/rest/beta/sslPolicies/patch)` | 
 
 The method `compute.beta.SslPoliciesService.Patch` is not available in Cloud de Confiance by S3NS. | 
+|
+
+| 
+
+`[setIamPolicy](/compute/docs/reference/rest/beta/sslPolicies/setIamPolicy)` | 
+
+The method `compute.beta.SslPoliciesService.SetPolicy` is not available in Cloud de Confiance by S3NS. | 
 |
 
 | 
