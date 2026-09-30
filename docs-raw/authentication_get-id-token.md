@@ -508,7 +508,7 @@ Set the `GOOGLE_CLOUD_UNIVERSE_DOMAIN` environment variable to
 
 
 ```
-import [ google ](https://berlin.devsitetest.how/python/docs/reference/googleapis-common-protos/latest)
+import [ google ](https://berlin.devsitetest.how/python/docs/reference/pubsub/latest)
 from google.auth import compute_engine 
 import google.auth.transport.requests 
 import google.oauth2.credentials 
@@ -524,7 +524,7 @@ url: The url or target audience to obtain the ID token for.
 Examples: http://www.example.com 
 """ 
 
-request = [ google ](https://berlin.devsitetest.how/python/docs/reference/googleapis-common-protos/latest) . auth . transport . [ requests ](https://berlin.devsitetest.how/python/docs/reference/google-resumable-media/latest/google.resumable_media.requests.html) . [ Request ](https://berlin.devsitetest.how/python/docs/reference/policytroubleshooter-iam/latest/google.cloud.policytroubleshooter_iam_v3.types.ConditionContext.Request.html) () 
+request = [ google ](https://berlin.devsitetest.how/python/docs/reference/pubsub/latest) . auth . transport . [ requests ](https://berlin.devsitetest.how/python/docs/reference/google-resumable-media/latest/google.resumable_media.requests.html) . [ Request ](https://berlin.devsitetest.how/python/docs/reference/policytroubleshooter-iam/latest/google.cloud.policytroubleshooter_iam_v3.types.ConditionContext.Request.html) () 
 # Set the target audience. 
 # Setting "use_metadata_identity_endpoint" to "True" will make the request use the default application 
 # credentials. Optionally, you can also specify a specific service account to use by mentioning 

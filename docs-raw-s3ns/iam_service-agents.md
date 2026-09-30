@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://documentation.s3ns.fr/iam/docs/service-agents
-Last updated: 2026-09-24
+Last updated: 2026-09-29
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -4088,7 +4088,18 @@ Granted on the project.
 
 | 
 
-None
+
+
+[Database Insights Service Agent](/iam/docs/roles-permissions/databaseinsights#databaseinsights.serviceAgent)
+
+(`roles/databaseinsights.serviceAgent`)
+
+
+
+
+Granted on the project.
+
+
 | 
 |
 

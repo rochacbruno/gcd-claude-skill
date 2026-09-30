@@ -1,7 +1,7 @@
 # Data analytics
 
 Source: https://documentation.s3ns.fr/docs/data
-Last updated: 2026-09-24
+Last updated: 2026-09-29
 
 - 
 
@@ -427,6 +427,79 @@ Build an open, managed, high-performance lakehouse that provides a single source
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+### Data processing
+
+
+
+
+
+Empower your data journey, from robust batch processing using managed Apache Spark and Apache Hadoop, to dynamic real-time stream processing with serverless, scalable pipelines using Apache Beam.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+Managed Service for Apache Spark
+](/managed-spark/docs)
+
+
+Perform batch processing, querying, and streaming using a managed Apache Spark and Apache Hadoop service.
 
 
 

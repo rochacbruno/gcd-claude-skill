@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://documentation.s3ns.fr/pubsub/docs/create-topic
-Last updated: 2026-09-24
+Last updated: 2026-09-30
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -483,7 +483,7 @@ Create a topic before you can publish or subscribe to it.
 [Console](#console) [ gcloud ](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) 
 More 
 
-[Node.ts](#node.ts) [PHP](#php) [Python](#python) [Ruby](#ruby) 
+[Node.ts](#node.ts) [PHP](#php) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
 
 
 To create a topic, follow these steps:
@@ -1092,6 +1092,54 @@ topic_admin = pubsub . [ topic_admin ](https://documentation.s3ns.fr/ruby/docs/r
 topic = topic_admin . create_topic name : pubsub . topic_path ( topic_id ) 
 
 puts "Topic #{ topic . name } created." 
+```
+
+
+
+
+
+
+
+
+Before trying this sample, follow the Rust setup instructions in
+[Quickstart: Using Client Libraries](/pubsub/docs/create-topic-client-libraries).
+For more information, see the [Pub/Sub Rust API reference documentation](https://docs.rs/google-cloud-pubsub).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+use google_cloud_pubsub :: client :: TopicAdmin ; 
+
+pub async fn sample ( client : & TopicAdmin , project_id : & str , topic_id : & str ) - > anyhow :: Result () > { 
+let topic = client 
+. create_topic () 
+. set_name ( format! ( "projects/{project_id}/topics/{topic_id}" )) 
+. send () 
+. await ? ; 
+
+println! ( "successfully created topic {topic:?}" ); 
+Ok (()) 
+} 
 ```
 
 

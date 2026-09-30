@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ September 29, 2026 ](#September_29_2026)
 - [ July 24, 2026 ](#July_24_2026)
 - [ July 16, 2026 ](#July_16_2026)
 - [ July 13, 2026 ](#July_13_2026)
@@ -250,6 +251,22 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## September 29, 2026
+
+
+Feature 
+
+
+**Generally available**: You can create a standard or archive snapshot of a
+disk and protect the snapshot with a customer-managed encryption key
+(CMEK), even if the source disk isn't protected with a CMEK. If the source disk
+is protected with a CMEK, then you can use a different CMEK to encrypt the new
+snapshot.
+
+For more information, see [Create a CMEK-encrypted snapshot](/compute/docs/disks/customer-managed-encryption#create_snapshot).
 
 
 

@@ -261,9 +261,9 @@
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
     "filename": "bigquery_troubleshoot-quotas.md",
-    "size": 60359,
+    "size": 62513,
     "url": "https://documentation.s3ns.fr/bigquery/docs/troubleshoot-quotas",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/billing/docs": {
     "title": "Cloud Billing documentation",
@@ -352,7 +352,7 @@
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
     "filename": "compute_release-notes.md",
-    "size": 34256,
+    "size": 34781,
     "url": "https://documentation.s3ns.fr/compute/docs/release-notes",
     "last_updated": "2026-09-28"
   },
@@ -506,21 +506,21 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13660,
+    "size": 13649,
     "url": "https://documentation.s3ns.fr/docs/authentication/client-libraries",
     "last_updated": "2026-09-24"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13684,
+    "size": 13672,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-09-24"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 18015,
+    "size": 17979,
     "url": "https://documentation.s3ns.fr/docs/authentication/get-id-token",
     "last_updated": "2026-09-24"
   },
@@ -625,9 +625,9 @@
   "/docs/data": {
     "title": "Data analytics",
     "filename": "data.md",
-    "size": 2369,
+    "size": 2821,
     "url": "https://documentation.s3ns.fr/docs/data",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/databases": {
     "title": "Databases",
@@ -795,7 +795,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16313,
     "url": "https://documentation.s3ns.fr/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -816,7 +816,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3381,
     "url": "https://documentation.s3ns.fr/docs/get-started/access-apis",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -837,7 +837,7 @@
     "filename": "get-started_developer-environment.md",
     "size": 6941,
     "url": "https://documentation.s3ns.fr/docs/get-started/developer-environment",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Cloud de Confiance by S3NS",
@@ -975,7 +975,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2680,
+    "size": 2681,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-09-24"
   },
@@ -989,7 +989,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18879,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-09-24"
   },
@@ -1052,7 +1052,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132509,
+    "size": 132508,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-09-24"
   },
@@ -1416,7 +1416,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91280,
+    "size": 91136,
     "url": "https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-09-24"
   },
@@ -1465,9 +1465,9 @@
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
-    "size": 109039,
+    "size": 109217,
     "url": "https://documentation.s3ns.fr/iam/docs/service-agents",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Cloud de Confiance versus Google Cloud",
@@ -1598,9 +1598,9 @@
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13590,
+    "size": 13569,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-09-25"
+    "last_updated": "2026-09-29"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1815,9 +1815,9 @@
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24448,
+    "size": 25125,
     "url": "https://documentation.s3ns.fr/pubsub/docs/create-topic",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-30"
   },
   "/pubsub/docs/monitoring": {
     "title": "Monitor Pub/Sub in Cloud Monitoring",
@@ -1843,9 +1843,9 @@
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 69969,
+    "size": 71289,
     "url": "https://documentation.s3ns.fr/pubsub/docs/publisher",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-30"
   },
   "/pubsub/docs/release-notes": {
     "title": "Pub/Sub release notes",
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-09-29"
+    "last_updated": "2026-09-30"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

@@ -1,7 +1,7 @@
 # Publish messages to topics
 
 Source: https://berlin.devsitetest.how/pubsub/docs/publisher
-Last updated: 2026-09-24
+Last updated: 2026-09-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -1697,10 +1697,10 @@ You can publish messages with ordering keys using the Google Cloud Dedicated con
 Google Cloud CLI, Pub/Sub API, or the client libraries.
 
 
-[Console](#console) [gcloud](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [Python](#python) [Ruby](#ruby) 
+[Console](#console) [gcloud](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) 
 More 
 
-
+[Node.js](#node.js) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
 
 
 To publish a message with attributes, follow these steps:
@@ -2412,6 +2412,76 @@ end
 # Stop the async_publisher to send all queued messages immediately. 
 publisher . [ async_publisher ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Publisher.html) . stop! 
 puts "Messages published with ordering key." 
+```
+
+
+
+
+
+
+
+
+Before trying this sample, follow the Rust setup instructions in
+[Quickstart: Using Client Libraries](/pubsub/docs/create-topic-client-libraries).
+For more information, see the [Pub/Sub Rust API reference documentation](https://docs.rs/google-cloud-pubsub).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+use google_cloud_pubsub :: client :: Publisher ; 
+use google_cloud_pubsub :: model :: Message ; 
+
+pub async fn sample ( project : & str , topic_id : & str ) - > anyhow :: Result () > { 
+let publisher = Publisher :: builder ( format! ( "projects/{project}/topics/{topic_id}" )) 
+// Pub/Sub's ordered delivery guarantee only applies when publishes for 
+// an ordering key are in the same region. 
+. with_endpoint ( "https://us-east1-pubsub.googleapis.com" ) 
+. build () 
+. await ? ; 
+
+let publish_futures = [ 
+( "message1" , "key1" ), 
+( "message2" , "key2" ), 
+( "message3" , "key1" ), 
+( "message4" , "key2" ), 
+] 
+. map ( | ( data , ordering_key ) | { 
+publisher . publish ( 
+Message :: new () 
+. set_data ( data . as_bytes ()) 
+. set_ordering_key ( ordering_key ), 
+) 
+}); 
+
+for publish_future in publish_futures { 
+let message_id = publish_future 
+. await 
+. inspect_err ( | e | eprintln! ( "error publishing message: {e:?}" )) ? ; 
+println! ( "published message with ID: {message_id}" ); 
+} 
+
+Ok (()) 
+} 
 ```
 
 

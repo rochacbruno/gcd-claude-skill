@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-09-25
+Last updated: 2026-09-29
 
 - 
 
@@ -558,7 +558,7 @@ depend on your environment, as follows:
 | 
 **Predefined compute classes**
 | 
-Only the general-purpose and `Accelerator` compute classes are available.
+Only the general-purpose compute class is available.
 All other predefined compute classes are unavailable.
 | 
 |

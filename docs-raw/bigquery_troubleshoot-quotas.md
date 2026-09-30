@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-09-24
+Last updated: 2026-09-29
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -141,6 +141,7 @@ Guides
 - [ Maximum number of API requests limit errors ](#ts-maximum-api-request-limit)
 - [ Maximum Python UDF image storage bytes per project per region ](#ts-maximum-python-udf-storage)
 - [ Maximum concurrent Python UDFs ](#ts-max-concurrent-python-udfs)
+- [ Python UDF execution rate limits or capacity errors ](#ts-python-udf-execution-rate-limits)
 
 - [ Troubleshoot quotas or limits that can't be increased ](#troubleshoot_quotas_or_limits_that_cant_be_increased)
 
@@ -956,6 +957,52 @@ To resolve this error, you can request a quota increase by contacting
 [sales](https://berlin.devsitetest.how/contact). It might take several days to review
 and process the request. We recommend stating the priority, use case, and the
 project ID in the request.
+
+### Python UDF execution rate limits or capacity errors
+
+This error occurs when a query that invokes a Python UDF exceeds the rate
+limits or maximum container scaling capacity for the UDF. This issue typically
+happens in the following situations:
+
+- A query processes a large volume of data with high parallelism.
+
+- Each container instance is configured to handle a small number of
+concurrent requests.
+
+- Individual UDF invocations take a long time to complete.
+
+**Error message**
+
+`Resources exceeded during query execution: Python user-defined function
+execution exceeded rate limits or capacity. Check
+https://docs.cloud.google.com/bigquery/docs/troubleshoot-quotas for more
+details.`
+
+#### Resolution
+
+To resolve this error, try the following actions:
+
+- **Tune container limits**: check
+[Python UDF metrics](/bigquery/docs/user-defined-functions-python#view_python_udf_metrics)
+in Cloud Monitoring to inspect CPU utilization, memory utilization, and
+concurrent requests. If `container_request_concurrency` is set to a low
+value, increase it so that each container instance can process more
+requests in parallel. If `container_cpu` is set to less than `1.0` vCPU
+without an explicit `container_request_concurrency` value, concurrency
+defaults to `1` at run time. For more information, see
+[Configure container limits for Python UDFs](/bigquery/docs/user-defined-functions-python#configure-container-limits).
+
+- **Optimize UDF execution and query structure**: follow the
+[best practices for Python UDFs](/bigquery/docs/user-defined-functions-python#best_practices)
+to reduce the execution time and request volume per query. For example,
+filter your data before invoking the UDF, keep input row payloads small,
+and structure your query to support batching.
+
+- **Request a capacity increase**: if the error persists after you optimize
+your UDF, contact [support](/bigquery/docs/getting-support) or
+[sales](https://berlin.devsitetest.how/contact) to request a higher container
+scaling limit. Include the priority, use case, and project ID in your
+request.
 
 ## Troubleshoot quotas or limits that can't be increased
 

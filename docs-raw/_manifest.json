@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42648,
+    "size": 42649,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-09-24"
   },
@@ -247,9 +247,9 @@
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
     "filename": "bigquery_troubleshoot-quotas.md",
-    "size": 60468,
+    "size": 62623,
     "url": "https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/billing/docs": {
     "title": "Cloud Billing documentation",
@@ -296,7 +296,7 @@
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
     "filename": "compute_release-notes.md",
-    "size": 34304,
+    "size": 34829,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
     "last_updated": "2026-09-28"
   },
@@ -429,21 +429,21 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13711,
+    "size": 13700,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-09-24"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13734,
+    "size": 13723,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-09-24"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 18117,
+    "size": 18081,
     "url": "https://berlin.devsitetest.how/docs/authentication/get-id-token",
     "last_updated": "2026-09-24"
   },
@@ -548,9 +548,9 @@
   "/docs/data": {
     "title": "Data analytics",
     "filename": "data.md",
-    "size": 2373,
+    "size": 2825,
     "url": "https://berlin.devsitetest.how/docs/data",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/databases": {
     "title": "Databases",
@@ -590,7 +590,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3590,
+    "size": 3612,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -718,7 +718,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16541,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -739,7 +739,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3463,
     "url": "https://berlin.devsitetest.how/docs/get-started/access-apis",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -760,7 +760,7 @@
     "filename": "get-started_developer-environment.md",
     "size": 7000,
     "url": "https://berlin.devsitetest.how/docs/get-started/developer-environment",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Google Cloud Dedicated in Germany",
@@ -1346,7 +1346,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91649,
+    "size": 91505,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-09-24"
   },
@@ -1395,9 +1395,9 @@
   "/iam/docs/service-agents": {
     "title": "Service agents",
     "filename": "iam_service-agents.md",
-    "size": 108744,
+    "size": 108922,
     "url": "https://berlin.devsitetest.how/iam/docs/service-agents",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-29"
   },
   "/iam/docs/tpc-differences": {
     "title": "IAM in Google Cloud Dedicated versus Google Cloud",
@@ -1528,9 +1528,9 @@
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13705,
+    "size": 13684,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-09-25"
+    "last_updated": "2026-09-29"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1738,9 +1738,9 @@
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
     "filename": "pubsub_create-topic.md",
-    "size": 24499,
+    "size": 25176,
     "url": "https://berlin.devsitetest.how/pubsub/docs/create-topic",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-30"
   },
   "/pubsub/docs/monitoring": {
     "title": "Monitor Pub/Sub in Cloud Monitoring",
@@ -1766,9 +1766,9 @@
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 70157,
+    "size": 71477,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publisher",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-30"
   },
   "/pubsub/docs/release-notes": {
     "title": "Pub/Sub release notes",
@@ -1950,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-09-29"
+    "last_updated": "2026-09-30"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
