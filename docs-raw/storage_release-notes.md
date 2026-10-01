@@ -1,7 +1,7 @@
 # Cloud Storage release notes
 
 Source: https://berlin.devsitetest.how/storage/docs/release-notes
-Last updated: 2026-09-24
+Last updated: 2026-09-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ September 30, 2026 ](#September_30_2026)
 - [ August 17, 2026 ](#August_17_2026)
 - [ July 20, 2026 ](#July_20_2026)
 - [ June 17, 2026 ](#June_17_2026)
@@ -216,7 +217,20 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## August 17, 2026 
+## September 30, 2026 
+
+
+Feature 
+
+
+Cloud Storage client libraries now provide automated, end-to-end checksumming by
+default for object read and write operations to help maintain data integrity
+from client to storage. For more information, see
+[data validation](/storage/docs/data-validation#client-validation-writes).
+
+
+
+## August 17, 2026
 
 
 Feature 

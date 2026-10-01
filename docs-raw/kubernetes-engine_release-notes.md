@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes
-Last updated: 2026-09-24
+Last updated: 2026-09-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -563,7 +563,7 @@ More
 
 - [1.36.4-gke.1495000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-4-gke-1495000)
 
-- [Alpha version](https://berlin.devsitetest.how/kubernetes-engine/versioning#alpha-versions) [1.38.0-gke.1002000+preview](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.38#1-38-0-gke-1002000-preview) is now available for GKE alpha clusters in the Rapid channel.
+- [Alpha version](https://berlin.devsitetest.how/kubernetes-engine/versioning#alpha-versions) 1.38.0-gke.1002000+preview is now available for GKE alpha clusters in the Rapid channel.
 
 - The following versions are no longer available in the Rapid channel:
 
