@@ -1,7 +1,7 @@
 # IAM permissions change log
 
 Source: https://documentation.s3ns.fr/iam/docs/permissions-change-log
-Last updated: 2026-09-25
+Last updated: 2026-09-30
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -169,6 +169,956 @@ or programmatically access release notes in
 
 
 
+
+
+
+
+
+## IAM changes for the week of 2026-09-29
+
+
+
+
+
+
+| 
+Service | 
+Description | 
+|
+
+
+
+| 
+
+Audit Manager
+| 
+
+
+
+The following permissions have been added to the Audit Manager Auditing Service Agent role (`roles/auditmanager.serviceAgent`):
+
+
+
+`discoveryengine.dataStores.get`
+
+
+
+| 
+|
+
+| 
+
+Backup and Disaster Recovery
+| 
+
+
+
+The following permissions have been added to the Backup and DR Service Agent role (`roles/backupdr.serviceAgent`):
+
+
+
+`netapp.ontap.get`
+
+`netapp.storagePools.get`
+
+
+
+| 
+|
+
+| 
+
+Cloud Security Compliance
+| 
+
+
+
+The following permissions have been added to the Cloud Security Compliance Service Agent role (`roles/cloudsecuritycompliance.serviceAgent`):
+
+
+
+`discoveryengine.dataStores.get`
+
+
+
+| 
+|
+
+| 
+
+Cloud SQL
+| 
+
+
+
+The following permissions have been removed from the Cloud SQL Viewer role (`roles/cloudsql.viewer`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Database Insights
+| 
+
+
+
+The Database Insights Service Agent role (`roles/databaseinsights.serviceAgent`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The Dataplex Entry Link Type Owner role (`roles/dataplex.entryLinkTypeOwner`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The Dataplex Entry Link Type User role (`roles/dataplex.entryLinkTypeUser`) has reached General Availability (GA).
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions have been removed from the Dataplex Administrator role (`roles/dataplex.admin`):
+
+
+
+`dataplex.entryLinkTypes.create`
+
+`dataplex.entryLinkTypes.delete`
+
+`dataplex.entryLinkTypes.get`
+
+`dataplex.entryLinkTypes.getIamPolicy`
+
+`dataplex.entryLinkTypes.list`
+
+`dataplex.entryLinkTypes.setIamPolicy`
+
+`dataplex.entryLinkTypes.update`
+
+`dataplex.entryLinkTypes.use`
+
+
+
+| 
+|
+
+| 
+
+Basic Role
+| 
+
+
+
+The following permissions have been removed from the Editor role (`roles/editor`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Firebase Telemetry
+| 
+
+
+
+The following permissions have been added to the Firebase Telemetry Service Agent role (`roles/firebasetelemetry.serviceAgent`):
+
+
+
+`logging.buckets.create`
+
+`logging.buckets.get`
+
+`logging.buckets.list`
+
+`logging.buckets.update`
+
+`logging.sinks.create`
+
+`logging.sinks.delete`
+
+`logging.sinks.get`
+
+`logging.sinks.list`
+
+`logging.sinks.update`
+
+
+
+| 
+|
+
+| 
+
+Google Workspace add-ons
+| 
+
+
+
+The following permissions have been added to the Google Workspace Add-ons Developer role (`roles/gsuiteaddons.developer`):
+
+
+
+`chat.bots.get`
+
+`chat.bots.update`
+
+
+
+| 
+|
+
+| 
+
+Google Workspace add-ons
+| 
+
+
+
+The following permissions have been added to the Google Workspace Add-ons Reader role (`roles/gsuiteaddons.reader`):
+
+
+
+`chat.bots.get`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been removed from the Security Auditor role (`roles/iam.securityAuditor`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been removed from the Site Reliability Engineer role (`roles/iam.siteReliabilityEngineer`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been removed from the Support User role (`roles/iam.supportUser`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Basic Role
+| 
+
+
+
+The following permissions have been removed from the Reader role (`roles/reader`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Basic Role
+| 
+
+
+
+The following permissions have been removed from the Viewer role (`roles/viewer`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Basic Role
+| 
+
+
+
+The following permissions have been removed from the Writer role (`roles/writer`):
+
+
+
+`cloudsql.instances.export`
+
+
+
+| 
+|
+
+| 
+
+Agent Registry
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`agentregistry.skills.getIamPolicy`
+
+`agentregistry.skills.setIamPolicy`
+
+
+
+| 
+|
+
+| 
+
+Agent Registry
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`agentregistry.skills.getIamPolicy`
+
+`agentregistry.skills.setIamPolicy`
+
+
+
+| 
+|
+
+| 
+
+Gemini Enterprise Agent Platform
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`aiplatform.monitoredAgents.clearTrainingData`
+
+
+
+| 
+|
+
+| 
+
+Gemini Enterprise Agent Platform
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`aiplatform.interactions.cancel`
+
+`aiplatform.interactions.create`
+
+`aiplatform.interactions.delete`
+
+`aiplatform.interactions.get`
+
+`aiplatform.interactions.list`
+
+
+
+| 
+|
+
+| 
+
+Gemini for Google Cloud API
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`cloudaicompanion.gibqObservabilitySettings.create`
+
+`cloudaicompanion.gibqObservabilitySettings.delete`
+
+`cloudaicompanion.gibqObservabilitySettings.get`
+
+`cloudaicompanion.gibqObservabilitySettings.list`
+
+`cloudaicompanion.gibqObservabilitySettings.update`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsGet`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsList`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsUse`
+
+
+
+| 
+|
+
+| 
+
+Gemini for Google Cloud API
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`cloudaicompanion.gibqObservabilitySettings.create`
+
+`cloudaicompanion.gibqObservabilitySettings.delete`
+
+`cloudaicompanion.gibqObservabilitySettings.get`
+
+`cloudaicompanion.gibqObservabilitySettings.list`
+
+`cloudaicompanion.gibqObservabilitySettings.update`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsGet`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsList`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsUse`
+
+
+
+| 
+|
+
+| 
+
+Gemini for Google Cloud API
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`cloudaicompanion.gibqObservabilitySettings.create`
+
+`cloudaicompanion.gibqObservabilitySettings.delete`
+
+`cloudaicompanion.gibqObservabilitySettings.get`
+
+`cloudaicompanion.gibqObservabilitySettings.list`
+
+`cloudaicompanion.gibqObservabilitySettings.update`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsCreate`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsDelete`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsGet`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsList`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsUpdate`
+
+`cloudaicompanion.settingBindings.gibqObservabilitySettingsUse`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`compute.interconnects.setName`
+
+`compute.regionSslPolicies.getIamPolicy`
+
+`compute.regionSslPolicies.setIamPolicy`
+
+`compute.reservationConsumedInstances.list`
+
+`compute.sslPolicies.getIamPolicy`
+
+`compute.sslPolicies.setIamPolicy`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`compute.interconnects.setName`
+
+`compute.regionSslPolicies.getIamPolicy`
+
+`compute.regionSslPolicies.setIamPolicy`
+
+`compute.reservationConsumedInstances.list`
+
+`compute.sslPolicies.getIamPolicy`
+
+`compute.sslPolicies.setIamPolicy`
+
+
+
+| 
+|
+
+| 
+
+Compute Engine
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`compute.interconnects.setName`
+
+`compute.reservationConsumedInstances.list`
+
+
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`dataplex.entryGroups.useManagedConnectorTypes`
+
+`dataplex.entryLinkTypes.create`
+
+`dataplex.entryLinkTypes.delete`
+
+`dataplex.entryLinkTypes.get`
+
+`dataplex.entryLinkTypes.getIamPolicy`
+
+`dataplex.entryLinkTypes.list`
+
+`dataplex.entryLinkTypes.setIamPolicy`
+
+`dataplex.entryLinkTypes.update`
+
+`dataplex.entryLinkTypes.use`
+
+
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`dataplex.entryGroups.useManagedConnectorTypes`
+
+
+
+| 
+|
+
+| 
+
+Knowledge Catalog
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`dataplex.entryGroups.useManagedConnectorTypes`
+
+`dataplex.entryLinkTypes.create`
+
+`dataplex.entryLinkTypes.delete`
+
+`dataplex.entryLinkTypes.get`
+
+`dataplex.entryLinkTypes.getIamPolicy`
+
+`dataplex.entryLinkTypes.list`
+
+`dataplex.entryLinkTypes.setIamPolicy`
+
+`dataplex.entryLinkTypes.update`
+
+`dataplex.entryLinkTypes.use`
+
+
+
+| 
+|
+
+| 
+
+Device Run
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`devicerun.softwareVersions.get`
+
+`devicerun.softwareVersions.list`
+
+
+
+| 
+|
+
+| 
+
+Device Run
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`devicerun.softwareVersions.get`
+
+`devicerun.softwareVersions.list`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`discoveryengine.locations.buildAuthorizationUrl`
+
+
+
+| 
+|
+
+| 
+
+Discovery Engine
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`discoveryengine.locations.buildAuthorizationUrl`
+
+
+
+| 
+|
+
+| 
+
+Enterprise Purchasing API
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`enterprisepurchasing.licenseKeys.create`
+
+`enterprisepurchasing.licenseKeys.delete`
+
+`enterprisepurchasing.licenseKeys.get`
+
+`enterprisepurchasing.licenseKeys.list`
+
+
+
+| 
+|
+
+| 
+
+Enterprise Purchasing API
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`enterprisepurchasing.licenseKeys.create`
+
+`enterprisepurchasing.licenseKeys.delete`
+
+`enterprisepurchasing.licenseKeys.get`
+
+`enterprisepurchasing.licenseKeys.list`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`iam.workforcePoolSubjects.revokeSessions`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`iam.workforcePoolSubjects.revokeSessions`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`iam.workforcePoolSubjects.revokeSessions`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have been added:
+
+
+
+`iam.googleapis.com/workforcePoolSubjects.revokeSessions`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions are supported in custom roles:
+
+
+
+`iam.googleapis.com/workforcePoolSubjects.revokeSessions`
+
+
+
+| 
+|
+
+| 
+
+Identity and Access Management
+| 
+
+
+
+The following permissions have reached General Availability (GA):
+
+
+
+`iam.googleapis.com/workforcePoolSubjects.revokeSessions`
+
+
+
+| 
+|
 
 
 

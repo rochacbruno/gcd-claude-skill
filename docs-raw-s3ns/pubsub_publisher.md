@@ -1,7 +1,7 @@
 # Publish messages to topics
 
 Source: https://documentation.s3ns.fr/pubsub/docs/publisher
-Last updated: 2026-09-30
+Last updated: 2026-10-01
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -297,7 +297,7 @@ The following samples demonstrate how to publish a message to a topic.
 [Console](#console) [gcloud](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [ Node.js ](#node.js-javascript) 
 More 
 
-[ Node.js ](#node.js-typescript) [PHP](#php) [Python](#python) [Ruby](#ruby) 
+[ Node.js ](#node.js-typescript) [PHP](#php) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
 
 
 To publish a message, follow these steps:
@@ -1050,6 +1050,65 @@ end
 
 
 
+
+
+Before trying this sample, follow the Rust setup instructions in
+[Quickstart: Using Client Libraries](/pubsub/docs/create-topic-client-libraries).
+For more information, see the [Pub/Sub Rust API reference documentation](https://docs.rs/google-cloud-pubsub).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+use futures :: future :: join_all ; 
+use google_cloud_pubsub :: client :: Publisher ; 
+use google_cloud_pubsub :: model :: Message ; 
+
+pub async fn sample ( project_id : & str , topic_id : & str ) - > anyhow :: Result () > { 
+let topic_name = format! ( "projects/{project_id}/topics/{topic_id}" ); 
+let publisher = Publisher :: builder ( topic_name ). build (). await ? ; 
+
+let results = join_all ( 
+( 0 .. 10 ). map ( | i | publisher . publish ( Message :: new (). set_data ( format! ( "message {i}" )))), 
+) 
+. await ; 
+
+for ( i , result ) in results . into_iter (). enumerate () { 
+match result { 
+Ok ( message_id ) = > println! ( "published message {i}; message ID: {message_id}" ), 
+// Handle the error, e.g., log it, retry, or move the message to a queue. 
+Err ( e ) = > eprintln! ( "failed to publish message {i}: {e}" ), 
+} 
+} 
+
+Ok (()) 
+} 
+```
+
+
+
+
+
+
 After you publish a message, the Pub/Sub service returns the
 message ID to the publisher.
 
@@ -1107,7 +1166,7 @@ The following samples demonstrate how to publish a message with attributes
 to a topic.
 
 
-[Console](#console) [gcloud](#gcloud) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [Python](#python) [Ruby](#ruby) 
+[Console](#console) [gcloud](#gcloud) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
 More 
 
 
@@ -1618,6 +1677,57 @@ end
 
 # Stop the async_publisher to send all queued messages immediately. 
 publisher . [ async_publisher ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Publisher.html) . stop . wait! 
+```
+
+
+
+
+
+
+
+
+Before trying this sample, follow the Rust setup instructions in
+[Quickstart: Using Client Libraries](/pubsub/docs/create-topic-client-libraries).
+For more information, see the [Pub/Sub Rust API reference documentation](https://docs.rs/google-cloud-pubsub).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+use google_cloud_pubsub :: client :: Publisher ; 
+use google_cloud_pubsub :: model :: Message ; 
+
+pub async fn sample ( project_id : & str , topic_id : & str ) - > anyhow :: Result () > { 
+let topic_name = format! ( "projects/{project_id}/topics/{topic_id}" ); 
+let publisher = Publisher :: builder ( topic_name ). build (). await ? ; 
+
+let message = Message :: new () 
+. set_data ( "Hello, World!" ) 
+. set_attributes ([( "origin" , "rust-sample" ), ( "username" , "gcp" )]); 
+let message_id = publisher . publish ( message ). await ? ; 
+
+println! ( "published message with custom attributes; message ID: {message_id}" ); 
+Ok (()) 
+} 
 ```
 
 

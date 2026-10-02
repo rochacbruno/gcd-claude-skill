@@ -1,7 +1,7 @@
 # Enterprise setup with the Fabric FAST toolkit
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/set-up-organization/enterprise-setup
-Last updated: 2026-09-24
+Last updated: 2026-09-30
 
 - 
 

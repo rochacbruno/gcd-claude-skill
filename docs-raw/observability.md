@@ -1,7 +1,7 @@
 # Observability and monitoring
 
 Source: https://berlin.devsitetest.how/docs/observability
-Last updated: 2026-09-24
+Last updated: 2026-09-30
 
 - 
 
