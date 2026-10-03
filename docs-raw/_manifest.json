@@ -163,7 +163,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53329,
+    "size": 53328,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-09-30"
   },
@@ -366,9 +366,9 @@
   "/docs": {
     "title": "Google Cloud Dedicated Documentation",
     "filename": "index.md",
-    "size": 7235,
+    "size": 7246,
     "url": "https://berlin.devsitetest.how/docs",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/docs/access-resources": {
     "title": "Access and resource management",
@@ -632,9 +632,9 @@
   "/docs/gcd-solutions/overview": {
     "title": "Solutions for Google Cloud Dedicated",
     "filename": "gcd-solutions_overview.md",
-    "size": 4637,
+    "size": 4641,
     "url": "https://berlin.devsitetest.how/docs/gcd-solutions/overview",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/docs/gcd-solutions/sovereign-monitoring": {
     "title": "Open-source software (OSS)-based monitoring",
@@ -905,7 +905,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2714,
+    "size": 2713,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-09-30"
   },
@@ -919,7 +919,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19064,
+    "size": 19066,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-09-30"
   },
@@ -1213,7 +1213,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4844,
+    "size": 4845,
     "url": "https://berlin.devsitetest.how/docs/terraform/install-configure-terraform",
     "last_updated": "2026-09-30"
   },
@@ -1423,14 +1423,14 @@
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 166291,
+    "size": 166249,
     "url": "https://berlin.devsitetest.how/kms/docs/creating-keys",
     "last_updated": "2026-09-30"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39633,
+    "size": 39619,
     "url": "https://berlin.devsitetest.how/kms/docs/destroy-restore",
     "last_updated": "2026-09-30"
   },
@@ -1458,7 +1458,7 @@
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22574,
+    "size": 22567,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
     "last_updated": "2026-09-30"
   },
@@ -1474,42 +1474,42 @@
     "filename": "kubernetes-engine.md",
     "size": 3756,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
     "size": 7216,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
     "size": 8473,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
     "filename": "kubernetes-engine_how-to_cluster-access-for-kubectl.md",
     "size": 14843,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/cluster-access-for-kubectl",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/how-to/workload-identity": {
     "title": "Authenticate to Google Cloud Dedicated APIs from GKE workloads",
     "filename": "kubernetes-engine_how-to_workload-identity.md",
     "size": 27959,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/workload-identity",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/quickstarts/create-cluster": {
     "title": "Quickstart: Create a cluster and deploy a workload",
     "filename": "kubernetes-engine_quickstarts_create-cluster.md",
     "size": 9796,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/quickstarts/create-cluster",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
@@ -1521,16 +1521,16 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1437815,
+    "size": 1455658,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13684,
+    "size": 13807,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1570,9 +1570,9 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28084,
+    "size": 28066,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-09-25"
+    "last_updated": "2026-09-30"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1626,9 +1626,9 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39445,
+    "size": 39451,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-30"
   },
   "/monitoring/docs/release-notes": {
     "title": "Monitoring release notes",
@@ -1950,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-10-02"
+    "last_updated": "2026-10-03"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

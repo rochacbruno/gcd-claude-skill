@@ -1,7 +1,7 @@
 # Solutions for Google Cloud Dedicated
 
 Source: https://berlin.devsitetest.how/docs/gcd-solutions/overview
-Last updated: 2026-09-30
+Last updated: 2026-10-02
 
 - 
 
@@ -176,7 +176,7 @@ open-source software like OpenTelemetry, Grafana, and Fluent Bit to monitor
 your Compute Engine and Google Kubernetes Engine (GKE) workloads, backed by
 Cloud Storage.
 
-- **[Reference implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/demos/monitoring).**
+- **[Reference implementation](https://github.com/GoogleCloudPlatform/google-cloud-dedicated-demos/tree/main/solutions/monitoring/)**
 
 ## Design considerations
 

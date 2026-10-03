@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-09-30
+Last updated: 2026-10-02
 
 - 
 
@@ -450,6 +450,12 @@ If you need to grant permissions to a service agent before creating resources (f
 For instructions on how to manually trigger service agent creation grant roles, see [Create and grant roles to service agents](/iam/docs/create-service-agent). Then, grant the default `Kubernetes Engine Service Agent` (`service- PROJECT_NUMBER @container-engine-robot.eu0-system.iam.gserviceaccount.com`) to the agent that you create.
 
 | 
+|
+
+| 
+**GKE Sandbox** | 
+In Google Cloud Dedicated, only the
+gVisor sandbox type has been tested for use with GKE Pods. | 
 |
 
 

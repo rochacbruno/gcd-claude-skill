@@ -1,7 +1,7 @@
 # Google Cloud Dedicated Documentation
 
 Source: https://berlin.devsitetest.how/docs
-Last updated: 2026-09-30
+Last updated: 2026-10-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/tpc-differences) for more details.
 
@@ -446,15 +446,15 @@ New guide
 
 ### [
 
-Create a managed instance group with Compute Engine
+Explore solutions
 
-](https://berlin.devsitetest.how/compute/docs/quickstart-mig)
-
-
+](https://berlin.devsitetest.how/docs/gcd-solutions/overview)
 
 
 
-Learn how to create a managed instance group (MIG): a collection of virtual machine instances that you can manage as a single entity.
+
+
+Understand the sovereign capabilities of your universe with reference architectures and deployable examples, featuring use cases from the worlds of finance, healthcare, and more.
 
 
 

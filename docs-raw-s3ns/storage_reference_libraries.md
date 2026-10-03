@@ -453,7 +453,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.74.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.75.0" 
 ```
 
 

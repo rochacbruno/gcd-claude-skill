@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53145,
+    "size": 53144,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-09-30"
   },
@@ -443,9 +443,9 @@
   "/docs": {
     "title": "Cloud de Confiance Documentation",
     "filename": "index.md",
-    "size": 7154,
+    "size": 7165,
     "url": "https://documentation.s3ns.fr/docs",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/docs/access-resources": {
     "title": "Access and resource management",
@@ -709,9 +709,9 @@
   "/docs/gcd-solutions/overview": {
     "title": "Solutions for Cloud de Confiance",
     "filename": "gcd-solutions_overview.md",
-    "size": 4772,
+    "size": 4776,
     "url": "https://documentation.s3ns.fr/docs/gcd-solutions/overview",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/docs/gcd-solutions/sovereign-monitoring": {
     "title": "Open-source software (OSS)-based monitoring",
@@ -1052,7 +1052,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132207,
+    "size": 132206,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-09-30"
   },
@@ -1493,14 +1493,14 @@
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 165854,
+    "size": 165812,
     "url": "https://documentation.s3ns.fr/kms/docs/creating-keys",
     "last_updated": "2026-09-30"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39534,
+    "size": 39520,
     "url": "https://documentation.s3ns.fr/kms/docs/destroy-restore",
     "last_updated": "2026-09-30"
   },
@@ -1528,7 +1528,7 @@
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22528,
+    "size": 22521,
     "url": "https://documentation.s3ns.fr/kms/docs/retrieve-public-key",
     "last_updated": "2026-09-30"
   },
@@ -1544,42 +1544,42 @@
     "filename": "kubernetes-engine.md",
     "size": 3746,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
     "size": 7165,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
     "size": 8431,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
     "filename": "kubernetes-engine_how-to_cluster-access-for-kubectl.md",
     "size": 14813,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/how-to/cluster-access-for-kubectl",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/how-to/workload-identity": {
     "title": "Authenticate to Cloud de Confiance APIs from GKE workloads",
     "filename": "kubernetes-engine_how-to_workload-identity.md",
     "size": 27782,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/how-to/workload-identity",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/quickstarts/create-cluster": {
     "title": "Quickstart: Create a cluster and deploy a workload",
     "filename": "kubernetes-engine_quickstarts_create-cluster.md",
     "size": 9690,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/quickstarts/create-cluster",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
@@ -1591,16 +1591,16 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1436325,
+    "size": 1454070,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13569,
+    "size": 13688,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1640,9 +1640,9 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 27912,
+    "size": 27894,
     "url": "https://documentation.s3ns.fr/logging/docs/reference/libraries",
-    "last_updated": "2026-09-25"
+    "last_updated": "2026-09-30"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1696,9 +1696,9 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39230,
+    "size": 39236,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
-    "last_updated": "2026-09-24"
+    "last_updated": "2026-09-30"
   },
   "/monitoring/docs/release-notes": {
     "title": "Monitoring release notes",
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-10-02"
+    "last_updated": "2026-10-03"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
