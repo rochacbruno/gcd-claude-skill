@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://documentation.s3ns.fr/bigquery/docs/controlling-costs
-Last updated: 2026-09-30
+Last updated: 2026-10-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1560,7 +1560,7 @@ Read through the [Troubleshooting issues with reservations](/bigquery/docs/reser
 
 #### Unexpected charges for pay-as-you go (PAYG) slots for the BigQuery Standard edition
 
-In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `BQ_STUDIO_NOTEBOOK`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Standard edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Studio notebook](/bigquery/docs/notebooks-introduction#monitor_slot_usage). Read more about the [BigQuery Studio notebook pricing](https://documentation.s3ns.fr/bigquery/pricing?e=48754805#notebook-runtime-pricing).
+In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `BQ_STUDIO_NOTEBOOK`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Standard edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Studio notebook](/bigquery/docs/programmatic-analysis#monitor). Read more about the [BigQuery Studio notebook pricing](https://documentation.s3ns.fr/bigquery/pricing?e=48754805#notebook-runtime-pricing).
 
 #### Unexpected charges for pay-as-you go (PAYG) slots for the BigQuery Enterprise edition
 

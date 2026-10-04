@@ -1,7 +1,7 @@
 # Try BigQuery DataFrames
 
 Source: https://documentation.s3ns.fr/bigquery/docs/dataframes-quickstart
-Last updated: 2026-09-30
+Last updated: 2026-10-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -158,7 +158,7 @@ can use syntax similar to pandas (`bigframes.pandas`) and BigQuery ML
 
 Use this quickstart to perform the following analysis and ML tasks by using the
 [BigQuery DataFrames API](https://dataframes.bigquery.dev/reference/index.html)
-in a [BigQuery notebook](/bigquery/docs/notebooks-introduction):
+in a [BigQuery notebook](/bigquery/docs/programmatic-analysis):
 
 - Create a DataFrame over the `bigquery-public-data.ml_datasets.penguins`
 public dataset.

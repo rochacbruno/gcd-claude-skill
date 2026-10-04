@@ -163,9 +163,9 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53328,
+    "size": 53317,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/bigquery/docs/create-machine-learning-model": {
     "title": "Create an ML model in BigQuery ML by using SQL",
@@ -184,21 +184,21 @@
   "/bigquery/docs/dataframes-quickstart": {
     "title": "Try BigQuery DataFrames",
     "filename": "bigquery_dataframes-quickstart.md",
-    "size": 8822,
+    "size": 8821,
     "url": "https://berlin.devsitetest.how/bigquery/docs/dataframes-quickstart",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72570,
+    "size": 72592,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-09-30"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139401,
+    "size": 139423,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-09-30"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42639,
+    "size": 42661,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-01"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 161770,
+    "size": 161814,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-09-30"
   },
@@ -270,21 +270,21 @@
     "filename": "compute.md",
     "size": 3305,
     "url": "https://berlin.devsitetest.how/compute/docs",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
     "filename": "compute_instances_create-start-instance.md",
     "size": 24215,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/create-start-instance",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/compute/docs/instances/ssh": {
     "title": "About SSH connections",
     "filename": "compute_instances_ssh.md",
     "size": 5426,
     "url": "https://berlin.devsitetest.how/compute/docs/instances/ssh",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
@@ -298,14 +298,14 @@
     "filename": "compute_release-notes.md",
     "size": 34829,
     "url": "https://berlin.devsitetest.how/compute/docs/release-notes",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/compute/docs/tpc-differences": {
     "title": "Compute Engine in Google Cloud Dedicated versus Google Cloud",
     "filename": "compute_tpc-differences.md",
     "size": 13645,
     "url": "https://berlin.devsitetest.how/compute/docs/tpc-differences",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-02"
   },
   "/dns/docs": {
     "title": "Cloud DNS documentation",
@@ -429,14 +429,14 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13711,
+    "size": 13700,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-09-30"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13734,
+    "size": 13723,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-09-30"
   },
@@ -905,7 +905,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2713,
+    "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-09-30"
   },
@@ -1346,7 +1346,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91649,
+    "size": 91505,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-09-30"
   },
@@ -1950,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 66423,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-10-03"
+    "last_updated": "2026-10-04"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

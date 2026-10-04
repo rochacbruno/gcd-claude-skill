@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://berlin.devsitetest.how/bigquery/docs/controlling-costs
-Last updated: 2026-09-30
+Last updated: 2026-10-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1089,7 +1089,7 @@ query in slot-milliseconds (`total_slot_ms`) by inspecting the query execution
 details or querying the
 [`INFORMATION_SCHEMA.JOBS` view](/bigquery/docs/information-schema-jobs).
 
-#### Capacity-based cost attribution
+#### Capacity-based cost attribution 
 
 Cost attribution is the process of splitting and attributing reservation
 compute costs across projects, teams, or queries after workloads have run.
@@ -1560,7 +1560,7 @@ Read through the [Troubleshooting issues with reservations](/bigquery/docs/reser
 
 #### Unexpected charges for pay-as-you go (PAYG) slots for the BigQuery Standard edition
 
-In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `BQ_STUDIO_NOTEBOOK`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Standard edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Studio notebook](/bigquery/docs/notebooks-introduction#monitor_slot_usage). Read more about the [BigQuery Studio notebook pricing](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#notebook-runtime-pricing).
+In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `BQ_STUDIO_NOTEBOOK`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Standard edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Studio notebook](/bigquery/docs/programmatic-analysis#monitor). Read more about the [BigQuery Studio notebook pricing](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#notebook-runtime-pricing).
 
 #### Unexpected charges for pay-as-you go (PAYG) slots for the BigQuery Enterprise edition
 
