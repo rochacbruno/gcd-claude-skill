@@ -220,7 +220,7 @@ Set the `GOOGLE_CLOUD_UNIVERSE_DOMAIN` environment variable to
 `apis-berlin-build0.goog`.
 
 
-[ Go ](#go) [ Java ](#java) [ Node. js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
+[ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
 More 
 
 

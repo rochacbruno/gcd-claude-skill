@@ -2,7 +2,7 @@
   "/access-context-manager/docs": {
     "title": "Access Context Manager documentation",
     "filename": "access-context-manager.md",
-    "size": 2973,
+    "size": 2974,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs",
     "last_updated": "2026-09-30"
   },
@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53132,
+    "size": 53133,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-10-02"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42514,
+    "size": 42515,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-01"
   },
@@ -345,7 +345,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 528104,
+    "size": 528045,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
     "last_updated": "2026-09-28"
   },
@@ -989,7 +989,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18879,
+    "size": 18877,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-09-30"
   },
@@ -1493,14 +1493,14 @@
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 165812,
+    "size": 165794,
     "url": "https://documentation.s3ns.fr/kms/docs/creating-keys",
     "last_updated": "2026-09-30"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39520,
+    "size": 39514,
     "url": "https://documentation.s3ns.fr/kms/docs/destroy-restore",
     "last_updated": "2026-09-30"
   },
@@ -1528,7 +1528,7 @@
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22521,
+    "size": 22518,
     "url": "https://documentation.s3ns.fr/kms/docs/retrieve-public-key",
     "last_updated": "2026-09-30"
   },
@@ -1696,7 +1696,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39236,
+    "size": 39296,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
     "last_updated": "2026-09-30"
   },
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 66343,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-10-04"
+    "last_updated": "2026-10-05"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2067,7 +2067,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30359,
+    "size": 30356,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-10-01"
   },
@@ -2088,7 +2088,7 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22350,
+    "size": 22347,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
     "last_updated": "2026-09-30"
   },
@@ -2109,7 +2109,7 @@
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
     "filename": "storage_troubleshooting.md",
-    "size": 36998,
+    "size": 36995,
     "url": "https://documentation.s3ns.fr/storage/docs/troubleshooting",
     "last_updated": "2026-09-30"
   },
