@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://berlin.devsitetest.how/bigquery/docs/controlling-costs
-Last updated: 2026-10-02
+Last updated: 2026-10-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -630,7 +630,7 @@ try {
 [ JobStatistics ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobStatistics.html) . [ QueryStatistics ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobStatistics.QueryStatistics.html) statistics = job . getStatistics (); 
 
 System . out . println ( 
-"Query dry run performed successfully." + statistics . [ getTotalBytesProcessed ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobStatistics.QueryStatistics.html#com_google_cloud_bigquery_JobStatistics_QueryStatistics_getTotalBytesProcessed__) ()); 
+"Query dry run performed successfully." + statistics . getTotalBytesProcessed ()); 
 } catch ( [ BigQueryException ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) e ) { 
 System . out . println ( "Query not performed \n" + e . toString ()); 
 } 

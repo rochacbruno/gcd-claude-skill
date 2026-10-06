@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes
-Last updated: 2026-10-02
+Last updated: 2026-10-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ October 05, 2026 ](#October_05_2026)
 - [ October 02, 2026 ](#October_02_2026)
 - [ September 23, 2026 ](#September_23_2026)
 - [ September 17, 2026 ](#September_17_2026)
@@ -522,6 +523,30 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+
+## October 05, 2026
+
+
+Feature 
+
+
+GKE support for using the `c4-standard-*` machine types (up to 192 vCPUs) as
+Confidential GKE Nodes with Intel TDX is generally available. For more
+information, see the following pages:
+
+- To use this feature with GKE , see [Encrypt workload data in-use with
+Confidential GKE
+Nodes](https://berlin.devsitetest.how/kubernetes-engine/docs/how-to/confidential-gke-nodes).
+
+- To learn more about the feature from Compute Engine, see [Confidential VM
+overview](https://berlin.devsitetest.how/confidential-computing/confidential-vm/docs/confidential-vm-overview).
+
+- To see supported configurations, including machine support, see [Supported
+configurations](https://berlin.devsitetest.how/confidential-computing/confidential-vm/docs/supported-configurations)
+and its "Machine types, CPUs, and zones" section.
 
 
 

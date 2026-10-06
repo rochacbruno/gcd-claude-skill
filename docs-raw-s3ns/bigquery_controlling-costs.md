@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://documentation.s3ns.fr/bigquery/docs/controlling-costs
-Last updated: 2026-10-02
+Last updated: 2026-10-05
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -630,7 +630,7 @@ try {
 [ JobStatistics ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobStatistics.html) . [ QueryStatistics ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobStatistics.QueryStatistics.html) statistics = job . getStatistics (); 
 
 System . out . println ( 
-"Query dry run performed successfully." + statistics . [ getTotalBytesProcessed ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.JobStatistics.QueryStatistics.html#com_google_cloud_bigquery_JobStatistics_QueryStatistics_getTotalBytesProcessed__) ()); 
+"Query dry run performed successfully." + statistics . getTotalBytesProcessed ()); 
 } catch ( [ BigQueryException ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-bigquery/latest/com.google.cloud.bigquery.BigQueryException.html) e ) { 
 System . out . println ( "Query not performed \n" + e . toString ()); 
 } 
@@ -1089,7 +1089,7 @@ query in slot-milliseconds (`total_slot_ms`) by inspecting the query execution
 details or querying the
 [`INFORMATION_SCHEMA.JOBS` view](/bigquery/docs/information-schema-jobs).
 
-#### Capacity-based cost attribution 
+#### Capacity-based cost attribution
 
 Cost attribution is the process of splitting and attributing reservation
 compute costs across projects, teams, or queries after workloads have run.

@@ -1,7 +1,7 @@
 # Monitor Pub/Sub in Cloud Monitoring
 
 Source: https://documentation.s3ns.fr/pubsub/docs/monitoring
-Last updated: 2026-09-30
+Last updated: 2026-10-05
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -446,6 +446,27 @@ acceptable range in the context of your system. For instance, the absolute
 number of unacknowledged messages is not necessarily meaningful. A backlog of a
 million messages might be acceptable for a million message-per-second
 subscription, but unacceptable for a one message-per-second subscription.
+
+#### Use the regional version of the metrics instead of global versions
+
+Pub/Sub offers regional and global versions of the metrics used
+to monitor your subscription backlog. Make sure that you use the regional
+versions with the `by_region` suffix:
+
+- [`subscription/num_unacked_messages_by_region`](/monitoring/api/metrics_gcp_p_z#pubsub/subscription/num_unacked_messages_by_region)
+(instead of [`subscription/num_undelivered_messages`](/monitoring/api/metrics_gcp_p_z#pubsub/subscription/num_undelivered_messages))
+
+- [`subscription/oldest_unacked_message_age_by_region`](/monitoring/api/metrics_gcp_p_z#pubsub/subscription/oldest_unacked_message_age_by_region)
+(instead of [`subscription/oldest_unacked_message_age`](/monitoring/api/metrics_gcp_p_z#pubsub/subscription/oldest_unacked_message_age))
+
+Don't use the global versions of these metrics if you want your monitoring
+dashboards and alerting policies to be resilient to single-region outages. The
+global versions of these metrics require calculating the backlog across all
+regions known to have messages, which means unavailability in a single region
+results in a data gap. In contrast, the `by_region` versions of the metrics
+calculate and report the backlog on a per-region basis. If the backlog can't be
+computed for a single region, the metric still reports values for the other
+regions.
 
 #### Common backlog issues
 

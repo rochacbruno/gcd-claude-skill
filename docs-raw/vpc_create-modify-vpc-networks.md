@@ -1,7 +1,7 @@
 # Quickstart: Create and manage VPC networks
 
 Source: https://berlin.devsitetest.how/vpc/docs/create-modify-vpc-networks
-Last updated: 2026-09-30
+Last updated: 2026-10-05
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/vpc/docs/tpc-differences) for more details.
 
@@ -2100,6 +2100,7 @@ gcloud compute networks subnets create SUBNET \
 --range= PRIMARY_IPv4_RANGE \
 --stack-type=IPV4_IPV6 \
 --ipv6-access-type= IPv6_ACCESS_TYPE \
+--ipv6-network-tier= IPV6_NETWORK_TIER \
 --region= REGION 
 ```
 
@@ -2117,6 +2118,9 @@ ranges](/vpc/docs/subnets#manually_created_subnet_ip_ranges).
 
 - ` IPv6_ACCESS_TYPE `: the IPv6 access type.
 It can be `EXTERNAL` or `INTERNAL`.
+
+- ` IPV6_NETWORK_TIER `: the subnet's network service tier.
+Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)) or `PREMIUM`.
 
 - ` REGION `: the Google Cloud Dedicated region in which the new
 subnet will be created.
@@ -2180,6 +2184,7 @@ POST https://compute.apis-berlin-build0.goog/compute/v1/projects/ PROJECT_ID /re
 "name": " SUBNET "
 "stackType": IPV4_IPV6,
 "ipv6AccessType": IPv6_ACCESS_TYPE 
+"ipv6NetworkTier": IPV6_NETWORK_TIER ,
 }
 ```
 
@@ -2203,6 +2208,9 @@ where you're adding the subnet.
 
 - ` IPv6_ACCESS_TYPE `: the IPv6 access type. It can be
 `EXTERNAL` or `INTERNAL`.
+
+- ` IPV6_NETWORK_TIER `: the subnet's network service tier.
+Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)) or `PREMIUM`.
 
 
 
@@ -2269,6 +2277,7 @@ gcloud compute networks subnets create SUBNET \
 --network= NETWORK \
 --stack-type=IPV6_ONLY \
 --ipv6-access-type= IPv6_ACCESS_TYPE \
+--ipv6-network-tier= IPV6_NETWORK_TIER \
 --region= REGION 
 ```
 
@@ -2285,6 +2294,9 @@ The access type can be either `EXTERNAL` or `INTERNAL`.
 
 - ` REGION `: the Google Cloud Dedicated region in which the new
 subnet is to be created.
+
+- ` IPV6_NETWORK_TIER `: the subnet's network service
+tier. Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)) or `PREMIUM`.
 
 
 
@@ -2341,6 +2353,7 @@ POST https://compute.apis-berlin-build0.goog/compute/v1/projects/ PROJECT_ID /re
 "name": " SUBNET "
 "stackType": IPV6_ONLY,
 "ipv6AccessType": IPv6_ACCESS_TYPE 
+"ipv6NetworkTier": IPV6_NETWORK_TIER ,
 }
 ```
 
@@ -2361,6 +2374,9 @@ where you are adding the subnet.
 - ` IPv6_ACCESS_TYPE `: the IPv6 access type. The
 access type can be either `EXTERNAL` or `INTERNAL`.
 
+- ` IPV6_NETWORK_TIER `: the subnet's network service
+tier. Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)) or `PREMIUM`.
+
 
 
 
@@ -2375,6 +2391,11 @@ By default, the addresses for a subnet's IPv6 range are provided by
 Google. If you want to use BYOIP to bring your own IPv6 addresses,
 see [Assign subnet ranges](/vpc/docs/create-ipv6-sub-prefixes#create-subnets)
 instead.
+
+When you enable external IPv6 access on an IPv4-only subnet for the first time, 
+you can also choose its IPv6 network tier. This option is available only
+when you use gcloud or the API. Additionally, you can't change the 
+network tier after you've set it for a dual-stack subnet.
 
 To change a subnet's stack type to dual-stack, do the following.
 
@@ -2431,6 +2452,7 @@ Use the
 gcloud compute networks subnets update SUBNET \
 --stack-type=IPV4_IPV6 \
 --ipv6-access-type= IPv6_ACCESS_TYPE \
+[--ipv6-network-tier= IPV6_NETWORK_TIER ] \
 --region= REGION 
 ```
 
@@ -2444,6 +2466,11 @@ Replace the following:
 - ` IPv6_ACCESS_TYPE `: the IPv6 access type of the subnet.
 It can be `EXTERNAL` or `INTERNAL`.
 
+- ` IPV6_NETWORK_TIER `: the subnet's network service
+tier. Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)) or `PREMIUM`. You can only specify this tier when updating an IPv4-only subnet to dual-stack with `EXTERNAL` IPv6 access for the first time.
+
+- ` REGION `: the region of the subnet.
+
 
 
 
@@ -2455,7 +2482,8 @@ the [`subnetworks.patch` method](/compute/docs/reference/rest/v1/subnetworks/pat
 PATCH https://compute.apis-berlin-build0.goog/compute/v1/projects/ PROJECT_ID /regions/ REGION /subnetworks/ SUBNET 
 {
 "stackType": IPV4_IPV6,
-"ipv6AccessType": IPv6_ACCESS_TYPE 
+"ipv6AccessType": IPv6_ACCESS_TYPE ,
+"ipv6NetworkTier": IPV6_NETWORK_TIER 
 }
 ```
 
@@ -2471,6 +2499,9 @@ VPC network to modify.
 
 - ` IPv6_ACCESS_TYPE `: the IPv6 access type. It can be
 `EXTERNAL` or `INTERNAL`.
+
+- ` IPV6_NETWORK_TIER `: the subnet's network service
+tier. Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#product-launch-stages)) or `PREMIUM`. You can only specify this tier when updating an IPv4-only subnet to dual-stack with `EXTERNAL` IPv6 access for the first time.
 
 
 

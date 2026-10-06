@@ -1,7 +1,7 @@
 # Compute Engine in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/compute/docs/tpc-differences
-Last updated: 2026-10-02
+Last updated: 2026-10-05
 
 - 
 
@@ -178,7 +178,7 @@ Some notable differences include the following:
 
 - 
 
-Only four machine series are available in
+Only four machine type series are available in
 Google Cloud Dedicated
 
 
@@ -231,8 +231,12 @@ Google Cloud Dedicated:
 
 
 
+- [C4](/compute/docs/general-purpose-machines#c4_series)
+machine types with up to 288 vCPUs. C4 bare metal instances aren't
+available.
+
 - [C3](/compute/docs/general-purpose-machines#c3_series)
-machine types with up to 176 vCPUs. C3 Bare metal instances aren't
+machine types with up to 176 vCPUs. C3 bare metal instances aren't
 available.
 
 - [M3](/compute/docs/memory-optimized-machines#m3_series)
@@ -602,7 +606,7 @@ Future reservations are not available.
 
 
 [Spot VMs](/compute/docs/instances/spot) are available
-for all machine series (C3, M3, and A3) in
+for all machine series (C4, C3, M3, and A3) in
 Google Cloud Dedicated at discounts up to 60%
 off the on-demand price. Spot VMs pricing is updated
 quarterly. For the latest prices, see the
@@ -767,9 +771,10 @@ Google Cloud Dedicated:
 
 
 If you need small machine types like N2, we recommend that you use C3
-in Google Cloud Dedicated. C3 instances have
-more powerful CPUs than N2 instances, so you might be able to use fewer
-instances to achieve equivalent or better performance.
+or C4 in Google Cloud Dedicated. C4 and C3
+instances have more powerful CPUs than N2 instances, so you might be
+able to use fewer instances to achieve equivalent or better
+performance.
 
 
 
@@ -780,12 +785,13 @@ If you need large amounts of memory, we recommend that you use M3.
 
 
 
+
 - 
 
 
-If you need to use GPUs to accelerate your computations, we
-recommend that you use A3 High or A3 Edge. Consider doing CPU
-inferencing if A3 High or A3 Edge is too large for your workload.
+If you need to use GPUs to accelerate your computations, then we
+recommend that you use A3 High or A3 Edge. If A3 High or A3 Edge is too
+large for your workload, then consider doing CPU inferencing.
 
 
 

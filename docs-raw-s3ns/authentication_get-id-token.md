@@ -1,7 +1,7 @@
 # Get an ID token
 
 Source: https://documentation.s3ns.fr/docs/authentication/get-id-token
-Last updated: 2026-09-30
+Last updated: 2026-10-05
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -325,9 +325,9 @@ public static void getIdTokenFromMetadataServer ( String url ) throws IOExceptio
 [ IdTokenCredentials ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.html) idTokenCredentials = 
 [ IdTokenCredentials ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.html) . newBuilder () 
 . [ setIdTokenProvider ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.Builder.html#com_google_auth_oauth2_IdTokenCredentials_Builder_setIdTokenProvider_com_google_auth_oauth2_IdTokenProvider_) (( [ IdTokenProvider ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenProvider.html) ) googleCredentials ) 
-. [ setTargetAudience ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.Builder.html#com_google_auth_oauth2_IdTokenCredentials_Builder_setTargetAudience_java_lang_String_) ( url ) 
+. [ setTargetAudience ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.Builder.html#com_google_auth_oauth2_IdTokenCredentials_Builder_setTargetAudience__org_jspecify_annotations_Nullable_java_lang_String_) ( url ) 
 // Setting the ID token options. 
-. [ setOptions ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.Builder.html#com_google_auth_oauth2_IdTokenCredentials_Builder_setOptions_java_util_List_com_google_auth_oauth2_IdTokenProvider_Option__) ( Arrays . asList ( [ Option ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenProvider.Option.html) . FORMAT_FULL , [ Option ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenProvider.Option.html) . LICENSES_TRUE )) 
+. [ setOptions ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenCredentials.Builder.html#com_google_auth_oauth2_IdTokenCredentials_Builder_setOptions__org_jspecify_annotations_Nullable_java_util_List_com_google_auth_oauth2_IdTokenProvider_Option__) ( Arrays . asList ( [ Option ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenProvider.Option.html) . FORMAT_FULL , [ Option ](https://documentation.s3ns.fr/java/docs/reference/google-auth-library/latest/com.google.auth.oauth2.IdTokenProvider.Option.html) . LICENSES_TRUE )) 
 . build (); 
 
 // Get the ID token. 
