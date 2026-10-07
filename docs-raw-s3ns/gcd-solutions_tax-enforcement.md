@@ -73,14 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Target audience ](#target_audience)
-- [ Core capabilities ](#core_capabilities)
-- [ Architecture ](#architecture)
-- [ Components ](#components)
-- [ Reference implementation ](#reference_implementation)
-- 
-
 
 
 
@@ -102,7 +94,7 @@ external API calls or moving data outside the sovereign boundary.
 
 You can deploy this solution by following the accompanying [reference implementation](#reference_implementation) with Terraform.
 
-## Target audience 
+## Target audience
 
 This solution is designed for national tax authorities or regulated financial
 agencies. It serves the following stakeholders:

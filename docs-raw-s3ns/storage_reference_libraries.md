@@ -1,7 +1,7 @@
 # Cloud Storage client libraries
 
 Source: https://documentation.s3ns.fr/storage/docs/reference/libraries
-Last updated: 2026-09-30
+Last updated: 2026-10-07
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -371,7 +371,7 @@ dependencies >
 dependency >
 groupId>com . google . cloud / groupId >
 artifactId>libraries - bom / artifactId >
-version>26 .86.0 / version >
+version>26 .90.0 / version >
 type>pom / type >
 scope>import / scope >
 / dependency >
@@ -419,7 +419,7 @@ add the following to your dependencies:
 
 
 ```
-implementation platform ( ' com . google . cloud : libraries - bom : 26.86.0 ' ) 
+implementation platform ( ' com . google . cloud : libraries - bom : 26.90.0 ' ) 
 
 implementation ' com . google . cloud : google - cloud - storage ' 
 ```

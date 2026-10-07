@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ October 06, 2026 ](#October_06_2026)
 - [ October 05, 2026 ](#October_05_2026)
 - [ October 02, 2026 ](#October_02_2026)
 - [ September 23, 2026 ](#September_23_2026)
@@ -523,6 +524,35 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+
+## October 06, 2026
+
+
+Issue 
+
+
+Starting with GKE version 1.36, the default engine for kube-dns is [CoreDNS](https://coredns.io/). For
+Pod IP DNS queries in the ` . .pod.cluster.local` format,
+CoreDNS returns NXDOMAIN if the specified ` ` does not exist. The
+legacy `kubernetes/dns` implementation skipped checking the existence of the
+namespace provided in the ` ` segment in these queries.
+
+Queries in the ` . .pod.cluster.local` format are not part of
+the
+[Kubernetes DNS specification](https://github.com/kubernetes/dns/blob/master/docs/specification.md).
+We can't guarantee that uses outside of those specified in the DNS spec will
+remain consistent across releases.
+
+Mitigation:
+
+- **Recommended**: Migrate to supported headless Service DNS records
+(` . . .svc.cluster.local`).
+
+- **Workaround**: Ensure the ` ` specified in the DNS query exists in
+the cluster.
 
 
 

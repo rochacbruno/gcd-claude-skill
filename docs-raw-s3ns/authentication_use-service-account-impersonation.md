@@ -1,7 +1,7 @@
 # Use service account impersonation
 
 Source: https://documentation.s3ns.fr/docs/authentication/use-service-account-impersonation
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -395,6 +395,15 @@ credentials for the specified service account and uses them to authenticate
 to the API and authorize the access to the resource for every command.
 The principal that is logged in to the gcloud CLI must have the
 required permission on the service account.
+
+To stop using service account impersonation by default for `gcloud` commands,
+unset the property with the following command:
+
+
+```
+gcloud config unset auth/impersonate_service_account
+```
+
 
 ## Set up Application Default Credentials for using client libraries
 

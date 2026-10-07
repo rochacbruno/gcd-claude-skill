@@ -1,7 +1,7 @@
 # Identity and Access Management (IAM) API
 
 Source: https://berlin.devsitetest.how/iam/docs/reference/rest
-Last updated: 2026-01-15
+Last updated: 2026-10-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1135,6 +1135,13 @@ The method `google.iam.admin.v1.WorkforcePools.DeleteWorkforcePoolSubject` is no
 `[undelete](/iam/docs/reference/rest/v1/locations.workforcePools.subjects/undelete)` | 
 
 The method `google.iam.admin.v1.WorkforcePools.UndeleteWorkforcePoolSubject` is not available in Google Cloud Dedicated in Germany. | 
+|
+
+| 
+
+`[revokeSessions](/iam/docs/reference/rest/v1/locations.workforcePools.subjects/revokeSessions)` | 
+
+The method `google.iam.admin.v1.WorkforcePools.RevokeWorkforcePoolSubjectSessions` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 

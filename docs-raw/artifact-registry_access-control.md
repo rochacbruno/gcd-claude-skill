@@ -1,7 +1,7 @@
 # Access control with IAM
 
 Source: https://berlin.devsitetest.how/artifact-registry/docs/access-control
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -167,13 +167,14 @@ Guides
 
 
 
-This page describes access control with Identity and Access Management (IAM) in
-Artifact Registry.
-
-Default permissions for Artifact Registry minimize setup effort when
-implementing a CI/CD pipeline. You can also integrate Artifact Registry
-with third-party CI/CD tools and configure the permissions and authentication
-required to access repositories.
+Use Identity and Access Management (IAM) to grant roles
+to control who can access and manage data in Artifact Registry.
+Artifact Registry contains
+[predefined roles](/artifact-registry/docs/access-control#roles) that may help
+streamline CI/CD pipeline configuration. If you need additional access control,
+or are integrating Artifact Registry with a
+[third-party tool](/artifact-registry/docs/access-control#third-party), you can
+also configure custom roles.
 
 ## Before you begin 
 
