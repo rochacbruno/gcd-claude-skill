@@ -398,11 +398,30 @@ Click **Done**.
 - 
 
 
+In the **Choose how to control access to objects** section, do the following:
 
-In the **Choose how to control access to objects** section, select
-whether or not your bucket enforces
-[public access prevention](/storage/docs/public-access-prevention), and select
-uniform bucket-level access for your bucket's objects.
+
+
+
+- 
+
+
+Select whether your bucket enforces
+[public access prevention](/storage/docs/public-access-prevention).
+
+
+
+
+- 
+
+
+
+Select an
+[access control model](/storage/docs/access-control) for your bucket's
+objects. We recommend that you select **Uniform** to enable uniform bucket-level access
+on the bucket.
+
+
 
 
 

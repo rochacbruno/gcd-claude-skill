@@ -1,7 +1,7 @@
 # Store Terraform state in a Cloud Storage bucket
 
 Source: https://documentation.s3ns.fr/docs/terraform/resource-management/store-state
-Last updated: 2026-10-05
+Last updated: 2026-10-08
 
 - 
 
@@ -165,8 +165,6 @@ to delete old state versions.
 
 
 
-
-
 In the Cloud de Confiance console, activate Cloud Shell.
 
 
@@ -194,8 +192,6 @@ If you're using a local shell, perform the following steps:
 
 
 
-
-
 Create local authentication credentials for your user account:
 
 
@@ -210,8 +206,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 

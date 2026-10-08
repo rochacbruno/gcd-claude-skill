@@ -1,7 +1,7 @@
 # Create and use tables
 
 Source: https://documentation.s3ns.fr/bigquery/docs/tables
-Last updated: 2026-10-05
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -635,8 +635,6 @@ For more information about how to run queries, see [Run an interactive query](/b
 
 
 - 
-
-
 
 
 
@@ -2001,7 +1999,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/bigquery" 
 
 def create_table dataset_id = "my_dataset" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-reservation/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-data_exchange/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 table_id = "my_table" 
 
@@ -2355,8 +2353,6 @@ For more information, see
 
 
 - 
-
-
 
 
 
@@ -3353,8 +3349,6 @@ definition.
 
 
 - 
-
-
 
 
 
@@ -6746,8 +6740,6 @@ views are identified by different icons.
 
 
 
-
-
 In the Cloud de Confiance console, activate Cloud Shell.
 
 
@@ -7708,7 +7700,7 @@ variable to `s3nsapis.fr`.
 require "google/cloud/bigquery" 
 
 def list_tables dataset_id = "your_dataset_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-reservation/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery-data_exchange/latest/Google-Cloud-Bigquery.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 
 puts "Tables in dataset #{ dataset_id } :" 

@@ -1,7 +1,7 @@
 # Infrastructure as code
 
 Source: https://documentation.s3ns.fr/docs/iac
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

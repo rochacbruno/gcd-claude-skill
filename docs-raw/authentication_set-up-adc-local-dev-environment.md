@@ -1,7 +1,7 @@
 # Set up ADC for a local development environment
 
 Source: https://berlin.devsitetest.how/docs/authentication/set-up-adc-local-dev-environment
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -257,8 +257,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 

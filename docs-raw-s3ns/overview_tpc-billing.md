@@ -1,7 +1,7 @@
 # Cloud de Confiance billing and pricing
 
 Source: https://documentation.s3ns.fr/docs/overview/tpc-billing
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

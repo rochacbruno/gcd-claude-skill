@@ -1,7 +1,7 @@
 # Create and start a Compute Engine instance
 
 Source: https://documentation.s3ns.fr/compute/docs/instances/create-start-instance
-Last updated: 2026-10-05
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -284,8 +284,6 @@ APIs, you don't need to set up authentication.
 
 
 
-
-
 [Install](/sdk/docs/install) the Google Cloud CLI, and then
 [
 sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
@@ -358,13 +356,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -409,9 +404,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -431,8 +423,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -481,13 +472,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -532,9 +520,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -554,8 +539,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -609,13 +593,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -660,9 +641,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -682,8 +660,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -734,13 +711,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -785,9 +759,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -807,8 +778,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -859,13 +829,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -910,9 +877,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -932,8 +896,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -984,13 +947,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -1035,9 +995,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -1057,8 +1014,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -1110,13 +1066,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -1161,9 +1114,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -1183,8 +1133,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -1235,13 +1184,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -1286,9 +1232,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -1308,8 +1251,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -1350,8 +1292,6 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 To use the REST API samples on this page in a local development environment, you use the
 credentials you provide to the gcloud CLI.
-
-
 
 
 

@@ -1,7 +1,7 @@
 # Key differences between Cloud de Confiance and Google Cloud
 
 Source: https://documentation.s3ns.fr/api-registry/docs/tpc-differences
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 
@@ -357,11 +357,8 @@ Cloud de Confiance.
 
 - Cloud de Confiance quotas might be different
 to those you are used to in Google Cloud. If you need a
-quota increase adjustment, you must contact
-Cloud de Confiance support.
-
-- Committed use discounts (CUDs) are not available in
-Cloud de Confiance.
+quota increase adjustment, you must [contact
+Cloud de Confiance support](/docs/quotas/tpc-differences#workflow-differences).
 
 ### Integrations
 

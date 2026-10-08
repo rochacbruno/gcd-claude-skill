@@ -1,7 +1,7 @@
 # Key differences between Google Cloud Dedicated and Google Cloud
 
 Source: https://berlin.devsitetest.how/docs/tpc-differences
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 
@@ -357,11 +357,8 @@ Google Cloud Dedicated.
 
 - Google Cloud Dedicated quotas might be different
 to those you are used to in Google Cloud. If you need a
-quota increase adjustment, you must contact
-Google Cloud Dedicated support.
-
-- Committed use discounts (CUDs) are not available in
-Google Cloud Dedicated.
+quota increase adjustment, you must [contact
+Google Cloud Dedicated support](/docs/quotas/tpc-differences#workflow-differences).
 
 ### Integrations
 

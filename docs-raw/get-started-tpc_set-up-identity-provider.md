@@ -1,7 +1,7 @@
 # Set up an identity provider
 
 Source: https://berlin.devsitetest.how/docs/get-started-tpc/set-up-identity-provider
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

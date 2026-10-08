@@ -1,7 +1,7 @@
 # Access control with Identity and Access Management
 
 Source: https://documentation.s3ns.fr/pubsub/docs/access-control
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -975,6 +975,10 @@ Topic
 
 
 `pubsub.schemas.get`
+
+
+
+`pubsub.schemas.getIamPolicy`
 
 
 

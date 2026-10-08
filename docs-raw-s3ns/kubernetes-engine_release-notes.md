@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes
-Last updated: 2026-10-06
+Last updated: 2026-10-07
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ October 07, 2026 ](#October_07_2026)
 - [ October 06, 2026 ](#October_06_2026)
 - [ October 05, 2026 ](#October_05_2026)
 - [ October 02, 2026 ](#October_02_2026)
@@ -525,6 +526,25 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## October 07, 2026
+
+
+Feature 
+
+
+The microVM sandbox type is now Generally Available (GA) with GKE Sandbox in
+clusters that run version 1.37.0-gke.4713000 and later. MicroVM sandboxes
+provide hardware virtualization and isolation for untrusted workloads, AI agent
+runtimes, and multi-tenant environments. GKE microVM sandboxes use Kata
+Containers and Cloud Hypervisor to provide this isolation while maintaining a
+full Linux kernel that includes standard Linux features
+
+For more information, see the
+[GKE Sandbox](https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/sandbox-pods)
+documentation.
 
 
 

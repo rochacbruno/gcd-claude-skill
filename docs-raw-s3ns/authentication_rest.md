@@ -1,7 +1,7 @@
 # Authenticate with REST
 
 Source: https://documentation.s3ns.fr/docs/authentication/rest
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -186,13 +186,10 @@ To run the samples on this page, complete the following steps:
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -214,7 +211,6 @@ Configure the gcloud CLI to use your federated identity.
 For more information, see
 [
 Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-
 
 
 

@@ -1,7 +1,7 @@
 # Set up your organization
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/set-up-organization
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

@@ -1,7 +1,7 @@
 # Create service accounts
 
 Source: https://berlin.devsitetest.how/iam/docs/service-accounts-create
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -247,8 +247,6 @@ APIs, you don't need to set up authentication.
 
 
 
-
-
 [Install](/sdk/docs/install) the Google Cloud CLI, and then
 [
 sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
@@ -319,13 +317,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -370,9 +365,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -392,8 +384,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -445,13 +436,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -496,9 +484,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -518,8 +503,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -572,13 +556,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -623,9 +604,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -645,8 +623,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -698,13 +675,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -749,9 +723,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -771,8 +742,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -830,13 +800,10 @@ your user credentials.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -881,9 +848,6 @@ Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-
 
 
 
-
-
-
 - 
 
 
@@ -903,8 +867,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -948,8 +911,6 @@ in the Google Cloud Dedicated authentication documentation.
 
 To use the REST API samples on this page in a local development environment, you use the
 credentials you provide to the gcloud CLI.
-
-
 
 
 
@@ -1218,8 +1179,6 @@ the next step.
 
 
 - 
-
-
 
 
 

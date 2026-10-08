@@ -1,7 +1,7 @@
 # Infrastructure as code
 
 Source: https://berlin.devsitetest.how/docs/iac
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

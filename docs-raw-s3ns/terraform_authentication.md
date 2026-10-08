@@ -1,7 +1,7 @@
 # Authentication for Terraform
 
 Source: https://documentation.s3ns.fr/docs/terraform/authentication
-Last updated: 2026-10-05
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/terraform/tpc-differences) for more details.
 
@@ -194,8 +194,6 @@ To configure ADC with a user account, you use the Google Cloud CLI:
 
 
 
-
-
 [Install](/sdk/docs/install) the Google Cloud CLI, and then
 [
 sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
@@ -238,8 +236,6 @@ gcloud init
 
 
 
-
-
 Create local authentication credentials for your user account:
 
 
@@ -254,8 +250,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 

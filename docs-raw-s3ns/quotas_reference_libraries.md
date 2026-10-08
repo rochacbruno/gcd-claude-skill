@@ -1,7 +1,7 @@
 # Cloud Quotas client libraries
 
 Source: https://documentation.s3ns.fr/docs/quotas/reference/libraries
-Last updated: 2026-10-05
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -207,10 +207,6 @@ dependencies, see [Setting up a C++ development environment](/cpp/docs/setup).
 Install the `Google.Cloud.CloudQuotas.V1` package
 from NuGet. Add it to your project in the normal way (for example by right-clicking
 on the project in Visual Studio and choosing "Manage NuGet Packages...").
-Ensure you enable pre-release packages (for example, in the Visual Studio NuGet
-user interface, check the "Include prerelease" box). Some of the following samples
-might only work with the latest pre-release version (`1.0.0-beta01`) of
-`Google.Cloud.CloudQuotas.V1`.
 
 
 
@@ -337,7 +333,7 @@ dependencies >
 dependency >
 groupId>com . google . cloud / groupId >
 artifactId>libraries - bom / artifactId >
-version>26 .86.0 / version >
+version>26 .90.0 / version >
 type>pom / type >
 scope>import / scope >
 / dependency >
@@ -381,7 +377,7 @@ add the following to your dependencies:
 
 
 ```
-implementation platform ( ' com . google . cloud : libraries - bom : 26.86.0 ' ) 
+implementation platform ( ' com . google . cloud : libraries - bom : 26.90.0 ' ) 
 
 implementation ' com . google . cloud : google - cloud - cloudquotas ' 
 ```
@@ -675,8 +671,6 @@ that are associated with your Google Account:
 
 
 
-
-
 [Install](/sdk/docs/install) the Google Cloud CLI, and then
 [
 sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
@@ -719,8 +713,6 @@ gcloud init
 
 
 
-
-
 Create local authentication credentials for your user account:
 
 
@@ -735,8 +727,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
@@ -1331,7 +1322,7 @@ public void ListQuotaPreferencesRequestObject ()
 // Initialize request argument(s) 
 [ ListQuotaPreferencesRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.ListQuotaPreferencesRequest.html) request = new [ ListQuotaPreferencesRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.ListQuotaPreferencesRequest.html)
 { 
-ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
+ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
 Filter = "" , 
 OrderBy = "" , 
 }; 
@@ -1381,7 +1372,7 @@ public async Task ListQuotaPreferencesRequestObjectAsync ()
 // Initialize request argument(s) 
 [ ListQuotaPreferencesRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.ListQuotaPreferencesRequest.html) request = new [ ListQuotaPreferencesRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.ListQuotaPreferencesRequest.html)
 { 
-ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
+ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
 Filter = "" , 
 OrderBy = "" , 
 }; 
@@ -1519,7 +1510,7 @@ public void ListQuotaPreferencesResourceNames ()
 // Create client 
 [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) cloudQuotasClient = [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) . [ Create ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_Create) (); 
 // Initialize request argument(s) 
-[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
+[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
 // Make the request 
 PagedEnumerable , QuotaPreference > response = cloudQuotasClient . [ ListQuotaPreferences ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_ListQuotaPreferences_Google_Cloud_CloudQuotas_V1_ListQuotaPreferencesRequest_Google_Api_Gax_Grpc_CallSettings_) ( parent ); 
 
@@ -1564,7 +1555,7 @@ public async Task ListQuotaPreferencesResourceNamesAsync ()
 // Create client 
 [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) cloudQuotasClient = await [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) . [ CreateAsync ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_CreateAsync_System_Threading_CancellationToken_) (); 
 // Initialize request argument(s) 
-[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
+[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
 // Make the request 
 PagedAsyncEnumerable , QuotaPreference > response = cloudQuotasClient . [ ListQuotaPreferencesAsync ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_ListQuotaPreferencesAsync_Google_Cloud_CloudQuotas_V1_ListQuotaPreferencesRequest_Google_Api_Gax_Grpc_CallSettings_) ( parent ); 
 
@@ -1698,7 +1689,7 @@ public void CreateQuotaPreferenceRequestObject ()
 // Initialize request argument(s) 
 [ CreateQuotaPreferenceRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CreateQuotaPreferenceRequest.html) request = new [ CreateQuotaPreferenceRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CreateQuotaPreferenceRequest.html)
 { 
-ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
+ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
 QuotaPreferenceId = "" , 
 QuotaPreference = new [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) (), 
 IgnoreSafetyChecks = 
@@ -1721,7 +1712,7 @@ public async Task CreateQuotaPreferenceRequestObjectAsync ()
 // Initialize request argument(s) 
 [ CreateQuotaPreferenceRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CreateQuotaPreferenceRequest.html) request = new [ CreateQuotaPreferenceRequest ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CreateQuotaPreferenceRequest.html)
 { 
-ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
+ParentAsLocationName = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ), 
 QuotaPreferenceId = "" , 
 QuotaPreference = new [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) (), 
 IgnoreSafetyChecks = 
@@ -1772,7 +1763,7 @@ public void CreateQuotaPreference1ResourceNames ()
 // Create client 
 [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) cloudQuotasClient = [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) . [ Create ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_Create) (); 
 // Initialize request argument(s) 
-[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
+[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
 [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) quotaPreference = new [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) (); 
 string quotaPreferenceId = "" ; 
 // Make the request 
@@ -1788,7 +1779,7 @@ public async Task CreateQuotaPreference1ResourceNamesAsync ()
 // Create client 
 [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) cloudQuotasClient = await [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) . [ CreateAsync ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_CreateAsync_System_Threading_CancellationToken_) (); 
 // Initialize request argument(s) 
-[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
+[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
 [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) quotaPreference = new [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) (); 
 string quotaPreferenceId = "" ; 
 // Make the request 
@@ -1832,7 +1823,7 @@ public void CreateQuotaPreference2ResourceNames ()
 // Create client 
 [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) cloudQuotasClient = [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) . [ Create ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_Create) (); 
 // Initialize request argument(s) 
-[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
+[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
 [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) quotaPreference = new [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) (); 
 // Make the request 
 [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) response = cloudQuotasClient . [ CreateQuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_CreateQuotaPreference_Google_Cloud_CloudQuotas_V1_CreateQuotaPreferenceRequest_Google_Api_Gax_Grpc_CallSettings_) ( parent , quotaPreference ); 
@@ -1847,7 +1838,7 @@ public async Task CreateQuotaPreference2ResourceNamesAsync ()
 // Create client 
 [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) cloudQuotasClient = await [ CloudQuotasClient ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html) . [ CreateAsync ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_CreateAsync_System_Threading_CancellationToken_) (); 
 // Initialize request argument(s) 
-[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Api.Gax/latest/Google.Api.Gax.ResourceNames.LocationName.html#Google_Api_Gax_ResourceNames_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
+[ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) parent = [ LocationName ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html) . [ FromProjectLocation ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.LocationName.html#Google_Cloud_CloudQuotas_V1_LocationName_FromProjectLocation_System_String_System_String_) ( "[PROJECT]" , "[LOCATION]" ); 
 [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) quotaPreference = new [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) (); 
 // Make the request 
 [ QuotaPreference ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.QuotaPreference.html) response = await cloudQuotasClient . [ CreateQuotaPreferenceAsync ](https://documentation.s3ns.fr/dotnet/docs/reference/Google.Cloud.CloudQuotas.V1/latest/Google.Cloud.CloudQuotas.V1.CloudQuotasClient.html#Google_Cloud_CloudQuotas_V1_CloudQuotasClient_CreateQuotaPreferenceAsync_Google_Cloud_CloudQuotas_V1_CreateQuotaPreferenceRequest_Google_Api_Gax_Grpc_CallSettings_) ( parent , quotaPreference ); 

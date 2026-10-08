@@ -1,7 +1,7 @@
 # Access control with IAM
 
 Source: https://berlin.devsitetest.how/artifact-registry/docs/access-control
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/artifact-registry/docs/tpc-differences) for more details.
 
@@ -458,8 +458,6 @@ Click **Save**.
 
 
 
-
-
 In the Google Cloud Dedicated console, activate Cloud Shell.
 
 
@@ -576,8 +574,6 @@ Click **Save**.
 
 
 - 
-
-
 
 
 
@@ -780,8 +776,6 @@ misuse by unauthenticated users. For instructions, see
 
 
 
-
-
 In the Google Cloud Dedicated console, activate Cloud Shell.
 
 
@@ -892,8 +886,6 @@ Click **Remove principal** to revoke access.
 
 
 - 
-
-
 
 
 

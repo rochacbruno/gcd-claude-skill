@@ -1,7 +1,7 @@
 # Networking technologies
 
 Source: https://documentation.s3ns.fr/docs/networking
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

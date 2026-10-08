@@ -1,7 +1,7 @@
 # Cloud Billing in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/billing/docs/tpc-differences
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 - 
 

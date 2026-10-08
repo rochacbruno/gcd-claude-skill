@@ -180,13 +180,10 @@ For this quickstart, you need a new Cloud de Confiance project.
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -208,7 +205,6 @@ Configure the gcloud CLI to use your federated identity.
 For more information, see
 [
 Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-
 
 
 
@@ -366,8 +362,6 @@ gcloud services enable cloudresourcemanager.googleapis.com
 
 
 
-
-
 - 
 
 
@@ -387,8 +381,7 @@ gcloud auth application-default login
 
 
 
-If an authentication error is returned, and you are using an external identity provider
-(IdP), confirm that you have
+If an authentication error is returned, confirm that you have
 [
 signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
 
