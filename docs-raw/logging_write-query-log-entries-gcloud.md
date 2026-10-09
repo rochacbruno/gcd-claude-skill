@@ -1,7 +1,7 @@
 # Quickstart: Write and query log entries with the gcloud CLI
 
 Source: https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -191,13 +191,10 @@ billing enabled for your Google Cloud Dedicated project, then do the following:
 
 
 
-
-
 - 
 
 
 [Install](/sdk/docs/install) the Google Cloud CLI.
-
 
 
 
@@ -221,7 +218,6 @@ Configure the gcloud CLI to use your federated identity.
 For more information, see
 [
 Sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-
 
 
 

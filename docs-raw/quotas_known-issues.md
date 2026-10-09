@@ -1,7 +1,7 @@
 # Known issues
 
 Source: https://berlin.devsitetest.how/docs/quotas/known-issues
-Last updated: 2026-10-07
+Last updated: 2026-10-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -190,7 +190,56 @@ use the API or gcloud CLI to request a quota adjustment. For more information, s
 
 ### Per-user quota usage doesn't appear
 
-The Google Cloud Dedicated console doesn't display per-user quota usage.
+The Google Cloud Dedicated console doesn't display per-user quota usage on the
+Cloud Quotas page. If an application or service account exceeds
+a per-user rate limit, then API requests return an HTTP
+`429 Too Many Requests` status code, even when aggregate project-level metrics
+on the Cloud Quotas page show that quota remains available.
+
+To diagnose which user or service account is exhausting a per-user rate limit,
+complete the following steps:
+
+- In the Google Cloud Dedicated console, select the project that initiates the API requests,
+and then go to the
+[**Metrics Explorer**](https://console.cloud.berlin-build0.goog/monitoring/metrics-explorer) page.
+
+- Click **Select a metric**, and then enter
+`serviceruntime.googleapis.com/api/request_count` in the filter bar. In the
+submenus, select **Consumed API  > Api  > 
+Request count**, and then click **Apply**.
+
+- In the **Filter** element, add filters for the response code and the target
+service or API method:
+
+- Click **Add filter**, and then select `response_code`. In the filter
+dialog, leave **Comparator** set to **= (equals)**, enter `429` in the
+**Value** field, and then click **Apply**.
+
+- Click **Add filter** again, and then select either `service` (for
+example, enter `sqladmin.googleapis.com` in the **Value** field for
+Cloud SQL Admin API) or `method` (for example, enter
+`google.cloud.sql.v1.SqlInstancesService.Get` in the **Value** field),
+and then click **Apply**.
+
+- In the **Aggregation** element, verify that the first menu is set to
+**Sum**, and then in the second menu (next to **by**), select
+`credential_id` to group requests by individual credential.
+
+- In the results, find the credential ID (`credential_id`) with the highest
+number of `429` response codes. This value is the OAuth 2.0 client ID of the
+service account or user credential that is exhausting the per-user rate
+limit.
+
+- To find which service account corresponds to that client ID, go to the
+[**Service accounts**](https://console.cloud.berlin-build0.goog/iam-admin/serviceaccounts) page in the
+Google Cloud Dedicated console and search for the OAuth 2.0 client ID matching the
+credential ID. The matching entry is the service account that is exhausting
+the per-user rate limit.
+
+To resolve the error after you identify the service account, implement
+client-side caching or exponential backoff in the client application,
+distribute workloads across distinct service accounts, or
+[request a quota adjustment](/docs/quotas/help/request_increase).
 
 ## What's next
 

@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://documentation.s3ns.fr/sql/docs/release-notes
-Last updated: 2026-10-08
+Last updated: 2026-10-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ October 08, 2026 ](#October_08_2026)
 - [ August 04, 2026 ](#August_04_2026)
 - [ July 31, 2026 ](#July_31_2026)
 - [ July 29, 2026 ](#July_29_2026)
@@ -244,7 +245,32 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## August 04, 2026 
+## October 08, 2026 
+
+**Cloud SQL for MySQL**
+
+Feature 
+
+
+Cloud SQL for MySQL now supports the
+`innodb_cloudsql_managed_buffer_pool_tuneup_pct` database flag.
+
+Managed buffer pool automatically adjusts the InnoDB buffer pool size to reduce
+out-of-memory events. When instance memory usage remains at or below 70% for 10
+minutes or longer after prior reductions, Cloud SQL increases the buffer pool
+size. You can now use the `innodb_cloudsql_managed_buffer_pool_tuneup_pct` flag
+to change this 70% threshold to a different percentage. Increase the threshold
+to restore the InnoDB buffer pool size when baseline usage exceeds 70%, or
+decrease it to preserve additional RAM allocation for memory spikes.
+
+This flag requires the Cloud SQL maintenance version
+[*MYSQL_VERSION*.R20260726.00_05](/sql/docs/mysql/maintenance-changelog)
+or later. For more information, see [Enable managed buffer
+pool](/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool).
+
+
+
+## August 04, 2026
 
 **Cloud SQL for MySQL**
 

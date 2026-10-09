@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-10-06
+Last updated: 2026-10-08
 
 - 
 
@@ -404,6 +404,8 @@ The following security features are unavailable:
 - GKE control plane authority
 
 - Policy Controller
+
+- Agent Identity for GKE (Preview)
 
 
 | 
