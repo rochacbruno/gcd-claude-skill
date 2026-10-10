@@ -1,7 +1,7 @@
 # Get an ID token
 
 Source: https://berlin.devsitetest.how/docs/authentication/get-id-token
-Last updated: 2026-10-07
+Last updated: 2026-10-09
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -687,7 +687,7 @@ the ID token for the authorized service account.
 
 Replace the following:
 
-- AUDIENCE : The URI for the target service&mdashfor example,
+- AUDIENCE : The URI for the target service—for example,
 `http://www.example.com`.
 
 - SERVICE_ACCOUNT_EMAIL : The email address of the

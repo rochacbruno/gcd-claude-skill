@@ -691,7 +691,7 @@ For more information, see [Setting Up a Ruby Development Environment](/ruby/docs
 
 
 
-## Set up authentication 
+## Set up authentication
 
 To authenticate calls to Cloud de Confiance by S3NS APIs, client libraries support
 [Application Default Credentials (ADC)](/docs/authentication/application-default-credentials);

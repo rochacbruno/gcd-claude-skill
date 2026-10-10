@@ -53,7 +53,7 @@
     "filename": "access-context-manager_tpc-differences.md",
     "size": 3956,
     "url": "https://berlin.devsitetest.how/access-context-manager/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/api-keys/docs": {
     "title": "API Keys documentation",
@@ -191,14 +191,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72575,
+    "size": 72573,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-10-07"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139415,
+    "size": 139413,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-07"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42651,
+    "size": 42649,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-08"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 161790,
+    "size": 161786,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-10-08"
   },
@@ -242,7 +242,7 @@
     "filename": "bigquery_tpc-differences.md",
     "size": 5952,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 516916,
+    "size": 516928,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-09-28"
   },
@@ -429,23 +429,23 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13700,
+    "size": 13711,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-10-07"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13723,
+    "size": 13734,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-10-07"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 18187,
+    "size": 18182,
     "url": "https://berlin.devsitetest.how/docs/authentication/get-id-token",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/authentication/mfa-requirement": {
     "title": "2-step verification requirement for Google Cloud Dedicated in Germany",
@@ -858,7 +858,7 @@
     "filename": "quotas.md",
     "size": 1881,
     "url": "https://berlin.devsitetest.how/docs/quotas",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/api-overview": {
     "title": "Cloud Quotas API overview",
@@ -905,7 +905,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2713,
+    "size": 2714,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-10-07"
   },
@@ -919,7 +919,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-10-07"
   },
@@ -949,7 +949,7 @@
     "filename": "quotas_overview.md",
     "size": 9637,
     "url": "https://berlin.devsitetest.how/docs/quotas/overview",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/permissions": {
     "title": "Quota permissions",
@@ -977,7 +977,7 @@
     "filename": "quotas_quotas.md",
     "size": 3183,
     "url": "https://berlin.devsitetest.how/docs/quotas/quotas",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
@@ -1012,7 +1012,7 @@
     "filename": "quotas_terminology.md",
     "size": 4104,
     "url": "https://berlin.devsitetest.how/docs/quotas/terminology",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/terraform-support-for-cloud-quotas": {
     "title": "Terraform support for Cloud Quotas",
@@ -1026,7 +1026,7 @@
     "filename": "quotas_tpc-differences.md",
     "size": 3586,
     "url": "https://berlin.devsitetest.how/docs/quotas/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
@@ -1213,7 +1213,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4844,
+    "size": 4845,
     "url": "https://berlin.devsitetest.how/docs/terraform/install-configure-terraform",
     "last_updated": "2026-10-07"
   },
@@ -1299,7 +1299,7 @@
     "filename": "firewall.md",
     "size": 3116,
     "url": "https://berlin.devsitetest.how/firewall/docs",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/firewall/docs/tpc-differences": {
     "title": "Cloud NGFW in Google Cloud Dedicated versus Google Cloud",
@@ -1346,7 +1346,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91312,
+    "size": 91456,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-10-08"
   },
@@ -1404,7 +1404,7 @@
     "filename": "iam_tpc-differences.md",
     "size": 5701,
     "url": "https://berlin.devsitetest.how/iam/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/iam/docs/write-policy-client-libraries": {
     "title": "Quickstart: Write an allow policy by using client libraries",
@@ -1530,7 +1530,7 @@
     "filename": "kubernetes-engine_tpc-differences.md",
     "size": 13843,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-10-08"
+    "last_updated": "2026-10-09"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1950,7 +1950,7 @@
     "filename": "sql_release-notes.md",
     "size": 67431,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-10-09"
+    "last_updated": "2026-10-10"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -1969,9 +1969,9 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30726,
+    "size": 32894,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-10"
   },
   "/storage/docs/discover-object-storage-console": {
     "title": "Quickstart: Discover object storage with the Google Cloud Dedicated console",
@@ -1997,16 +1997,16 @@
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
     "filename": "storage_release-notes.md",
-    "size": 14562,
+    "size": 14592,
     "url": "https://berlin.devsitetest.how/storage/docs/release-notes",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/storage/docs/tpc-differences": {
     "title": "Cloud Storage in Google Cloud Dedicated versus Google Cloud",
     "filename": "storage_tpc-differences.md",
     "size": 6323,
     "url": "https://berlin.devsitetest.how/storage/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",

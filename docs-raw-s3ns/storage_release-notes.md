@@ -1,7 +1,7 @@
 # Cloud Storage release notes
 
 Source: https://documentation.s3ns.fr/storage/docs/release-notes
-Last updated: 2026-10-07
+Last updated: 2026-10-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -452,7 +452,7 @@ Change
 Announcement 
 
 
-[Announced billing changes](/resources/storage/billing-fix-bigquery) for accessing Cloud Storage through BigQuery take effect Feb 21, 2025. These changes were originally set to take effect on February 01, 2025.
+[Announced billing changes](https://documentation.s3ns.fr/resources/storage/billing-fix-bigquery) for accessing Cloud Storage through BigQuery take effect Feb 21, 2025. These changes were originally set to take effect on February 01, 2025.
 
 
 

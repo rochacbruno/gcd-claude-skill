@@ -1,7 +1,7 @@
 # Create a bucket
 
 Source: https://berlin.devsitetest.how/storage/docs/creating-buckets
-Last updated: 2026-10-07
+Last updated: 2026-10-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -424,6 +424,166 @@ on the bucket.
 
 
 
+- 
+
+
+
+To configure
+[IP filtering for the bucket](/storage/docs/ip-filtering-overview), do the
+following:
+
+
+
+
+- 
+
+In the **IP filtering** section, click
+add_box  **Configure**.
+
+
+
+- 
+
+
+To allow access from public IP addresses, do the following:
+
+
+
+
+- Click **Public internet**.
+
+- 
+
+
+In the **Allowed IP range(s)** field, specify one or more IPv4 address
+ranges or IPv6 CIDR ranges to allow. For example, `192.0.2.0/24` or
+`2001:db8::/32`.
+
+
+
+To avoid being locked out of your bucket, include your own IP address.
+
+
+
+
+
+
+- 
+
+
+To allow access from VPC networks, do the following:
+
+
+
+
+- Click **VPC network(s)**.
+
+- 
+
+
+Do the following for each network:
+
+
+
+
+- Click **Add VPC network**.
+
+- 
+
+
+In the **New VPC network** section, specify the
+following information:
+
+
+
+
+- In the **Project ID** field, enter your project ID.
+
+- In the **Network name** field, enter your network name.
+
+- 
+
+
+In the **Allowed IP range(s)** field, enter one or more
+IPv4 or IPv6 CIDR ranges, such as `192.0.2.0/24` or
+`2001:db8::/32`.
+
+
+
+To avoid being locked out of your bucket, include your own IP
+address.
+
+
+
+
+
+
+- Click **Done**.
+
+
+
+
+
+
+
+- 
+
+
+To permit trusted Google Cloud Dedicated service agents and VPC
+networks from other organizations to bypass your IP filtering configuration, do
+the following:
+
+
+
+
+- Click **Additional settings**.
+
+- 
+
+
+In the **Google Cloud service agent access** section, select one of the
+following options:
+
+
+
+
+- **Allow service agent access**: enables Google Cloud Dedicated services
+such as BigLake, Storage Insights, Vertex AI, and
+BigQuery to bypass the IP filtering validation when they need to
+access this bucket.
+
+- **Deny service agent access**: enforces the IP filter rules for
+Google Cloud Dedicated service agents.
+
+
+
+
+- In the **Cross-organization VPC access** section, do one
+of the following:
+
+
+
+- To permit access from specified VPC networks located in
+different Google Cloud Dedicated organizations, click the toggle to the
+**Allow** position.
+
+- To block access from VPC networks outside of your
+Google Cloud Dedicated organization, click the toggle to **Deny**
+(default state) position.
+
+
+
+
+
+
+
+- Click **Review**, and then click **Save**.
+
+
+
+
+
+
 
 
 
@@ -503,8 +663,6 @@ operations in the Google Cloud Dedicated console, see
 
 
 - 
-
-
 
 
 
@@ -1614,7 +1772,7 @@ def create_bucket_class_location bucket_name :
 
 require "google/cloud/storage" 
 
-storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage-control/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
 bucket = storage . [ create_bucket ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Project.html) bucket_name , 
 location : "ASIA" , 
 storage_class : "COLDLINE" 

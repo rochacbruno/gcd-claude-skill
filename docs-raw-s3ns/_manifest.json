@@ -53,7 +53,7 @@
     "filename": "access-context-manager_tpc-differences.md",
     "size": 3847,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/api-keys/docs": {
     "title": "API Keys documentation",
@@ -205,14 +205,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72301,
+    "size": 72299,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
     "last_updated": "2026-10-07"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 138941,
+    "size": 138939,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-07"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42504,
+    "size": 42502,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-08"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 161109,
+    "size": 161105,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-10-08"
   },
@@ -256,7 +256,7 @@
     "filename": "bigquery_tpc-differences.md",
     "size": 5868,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
@@ -368,7 +368,7 @@
     "filename": "compute_shielded-vm.md",
     "size": 1968,
     "url": "https://documentation.s3ns.fr/compute/shielded-vm/docs",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/container-optimized-os/docs": {
     "title": "Container-Optimized OS from Google documentation",
@@ -506,23 +506,23 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13649,
+    "size": 13660,
     "url": "https://documentation.s3ns.fr/docs/authentication/client-libraries",
     "last_updated": "2026-10-07"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13672,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-10-07"
   },
   "/docs/authentication/get-id-token": {
     "title": "Get an ID token",
     "filename": "authentication_get-id-token.md",
-    "size": 18085,
+    "size": 18080,
     "url": "https://documentation.s3ns.fr/docs/authentication/get-id-token",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/authentication/mfa-requirement": {
     "title": "2-step verification requirement for Cloud de Confiance by S3NS",
@@ -928,7 +928,7 @@
     "filename": "quotas.md",
     "size": 1873,
     "url": "https://documentation.s3ns.fr/docs/quotas",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/api-overview": {
     "title": "Cloud Quotas API overview",
@@ -989,7 +989,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18877,
+    "size": 18880,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-10-07"
   },
@@ -1019,7 +1019,7 @@
     "filename": "quotas_overview.md",
     "size": 9531,
     "url": "https://documentation.s3ns.fr/docs/quotas/overview",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/permissions": {
     "title": "Quota permissions",
@@ -1047,7 +1047,7 @@
     "filename": "quotas_quotas.md",
     "size": 3143,
     "url": "https://documentation.s3ns.fr/docs/quotas/quotas",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
@@ -1082,7 +1082,7 @@
     "filename": "quotas_terminology.md",
     "size": 4056,
     "url": "https://documentation.s3ns.fr/docs/quotas/terminology",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/terraform-support-for-cloud-quotas": {
     "title": "Terraform support for Cloud Quotas",
@@ -1096,7 +1096,7 @@
     "filename": "quotas_tpc-differences.md",
     "size": 3501,
     "url": "https://documentation.s3ns.fr/docs/quotas/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
@@ -1369,7 +1369,7 @@
     "filename": "firewall.md",
     "size": 3113,
     "url": "https://documentation.s3ns.fr/firewall/docs",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/firewall/docs/tpc-differences": {
     "title": "Cloud NGFW in Cloud de Confiance versus Google Cloud",
@@ -1416,7 +1416,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 90943,
+    "size": 91087,
     "url": "https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-10-08"
   },
@@ -1474,7 +1474,7 @@
     "filename": "iam_tpc-differences.md",
     "size": 5583,
     "url": "https://documentation.s3ns.fr/iam/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/iam/docs/write-policy-client-libraries": {
     "title": "Quickstart: Write an allow policy by using client libraries",
@@ -1600,7 +1600,7 @@
     "filename": "kubernetes-engine_tpc-differences.md",
     "size": 13724,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-10-08"
+    "last_updated": "2026-10-09"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1955,7 +1955,7 @@
   "/sdk/docs": {
     "title": "Google Cloud SDK documentation",
     "filename": "sdk.md",
-    "size": 2443,
+    "size": 2442,
     "url": "https://documentation.s3ns.fr/sdk/docs",
     "last_updated": "2026-10-07"
   },
@@ -2048,7 +2048,7 @@
     "filename": "sql_release-notes.md",
     "size": 67351,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-10-09"
+    "last_updated": "2026-10-10"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2067,9 +2067,9 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 30505,
+    "size": 32653,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-10"
   },
   "/storage/docs/discover-object-storage-console": {
     "title": "Quickstart: Discover object storage with the Cloud de Confiance console",
@@ -2088,23 +2088,23 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22348,
+    "size": 22347,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
     "last_updated": "2026-10-07"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
     "filename": "storage_release-notes.md",
-    "size": 14529,
+    "size": 14558,
     "url": "https://documentation.s3ns.fr/storage/docs/release-notes",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/storage/docs/tpc-differences": {
     "title": "Cloud Storage in Cloud de Confiance versus Google Cloud",
     "filename": "storage_tpc-differences.md",
     "size": 6176,
     "url": "https://documentation.s3ns.fr/storage/docs/tpc-differences",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-09"
   },
   "/storage/docs/troubleshooting": {
     "title": "Troubleshooting",
