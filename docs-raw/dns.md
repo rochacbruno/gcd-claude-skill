@@ -120,11 +120,12 @@ Cloud DNS
 
 
 
-# Cloud DNS documentation 
+
+# Cloud DNS documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/dns/docs/overview)
+Read product documentation 
 
 
 

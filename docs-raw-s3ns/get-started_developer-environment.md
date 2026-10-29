@@ -88,15 +88,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#prerequisites)
-- [ Set up the gcloud CLI and authentication ](#cli)
-- [ Install Cloud Client Libraries ](#libraries)
-- [ Install the google-cloud-developer plugin ](#google-cloud-developer)
-- [ Alternative tools and environments ](#alternatives)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -185,11 +176,8 @@ Install the `google-cloud-developer` plugin using the following instructions
 based on your agent.
 
 
-[Antigravity CLI](#antigravity-cli) [Claude Code CLI](#claude-code-cli) [Codex CLI](#codex-cli) 
-More 
 
-
-
+### Antigravity CLI
 
 - 
 
@@ -215,6 +203,7 @@ gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT
 
 
 
+### Claude Code CLI
 
 - 
 
@@ -256,6 +245,7 @@ export DEVELOPERKNOWLEDGE_API_KEY= YOUR_API_KEY
 
 
 
+### Codex CLI
 
 - 
 

@@ -73,15 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Differences from Google Cloud ](#differences-from-google-cloud)
-- [ Universes, regions, and zones ](#universes-regions-and-zones)
-- [ Cloud de Confiance resources and services ](#resources-and-services)
-- [ Interacting with Cloud de Confiance ](#interacting)
-- [ Projects ](#projects)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -112,7 +103,7 @@ This page gives you a high-level overview of Cloud de Confiance
 and its features and services, with pointers for where to go next in our
 documentation.
 
-## Differences from Google Cloud 
+## Differences from Google Cloud
 
 While Cloud de Confiance is based on exactly the
 same technology as Google Cloud, there are some significant

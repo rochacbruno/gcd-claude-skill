@@ -128,23 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Cannot create a topic ](#cannot_create_a_topic)
-- [ Cannot create a subscription ](#cannot_create_a_subscription)
-- [ Troubleshoot permission issues ](#troubleshoot_permissions)
-
-- [ Troubleshoot Terraform permission issues ](#troubleshoot_terraform)
-
-- [ Subscription got deleted ](#troubleshoot_deleted_subscription)
-- [ 403 (Forbidden) error ](#403_forbidden_error)
-
-- [ Other common error codes ](#other_common_error_codes)
-
-- [ Connection timeouts, latency, or network errors ](#connection-timeouts-latency-network-errors)
-- [ Invalid JWT: Token must be a short-lived token ](#invalid-jwt-token-timeframe)
-- [ Using excessive administrative operations ](#using_excessive_administrative_operations)
-- 
-
 
 
 
@@ -176,7 +159,7 @@ Guides
 Learn about troubleshooting steps that you might find helpful if you run
 into problems using Pub/Sub.
 
-## Cannot create a topic 
+## Cannot create a topic
 
 Verify that you have the necessary
 [permissions](/pubsub/docs/create-topic#roles-permissions-for-topics).
@@ -505,11 +488,8 @@ You can use the following code samples to implement this pattern in the
 language of your choice:
 
 
-[Go](#go) [Java](#java) [Node.js](#node.js) [Node.ts](#node.ts) [Python](#python) [C++](#c++) 
-More 
 
-
-
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -620,6 +600,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -737,6 +718,7 @@ subscriber . stopAsync ();
 
 
 
+### Node.js
 
 
 
@@ -830,6 +812,7 @@ console . log ( ` $ { messageCount } message ( s ) received . ` );
 
 
 
+### Node.ts
 
 
 
@@ -927,6 +910,7 @@ console . log ( `$ { messageCount } message ( s ) received . ` );
 
 
 
+### Python
 
 
 
@@ -984,7 +968,7 @@ message . [ ack ](https://berlin.devsitetest.how/python/docs/reference/pubsub/la
 with subscriber : 
 try : 
 # Optimistically subscribe to messages on the subscription. 
-streaming_pull_future = [ subscribe ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html)r . [ subscribe ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html) ( 
+streaming_pull_future = [ subscribe](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html)r . [ subscribe ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html) ( 
 subscription_path , callback = callback 
 ) 
 streaming_pull_future . result ( timeout = timeout ) 
@@ -1010,7 +994,7 @@ raise ValueError ( "Subscription creation failed." )
 
 # Subscribe on the created subscription. 
 try : 
-streaming_pull_future = [ subscribe ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html)r . [ subscribe ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html) ( 
+streaming_pull_future = [ subscribe](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html)r . [ subscribe ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.subscriber_client.SubscriberClient.html) ( 
 subscription . name , callback = callback 
 ) 
 streaming_pull_future . result ( timeout = timeout ) 
@@ -1029,6 +1013,7 @@ print ( f "Exception occurred when attempting optimistic subscribe: { e } " )
 
 
 
+### C++
 
 
 

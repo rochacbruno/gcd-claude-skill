@@ -128,29 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before-begin)
-
-- [ Required roles ](#required-roles)
-
-- [ Create a symmetric encryption key ](#create-symmetric)
-
-- [ Create a symmetric encryption key with custom automatic rotation ](#rotation)
-- [ Set the duration of the 'scheduled for destruction' state ](#soft_delete)
-
-- [ Create an asymmetric key ](#create-asymmetric)
-
-- [ Create an asymmetric decryption key ](#create-asymmetric-decrypt)
-- [ Create an asymmetric signing key ](#create-asymmetric-sign)
-- [ Create a KEM key ](#create-key-encapsulation)
-- [ Retrieve the public key ](#retrieve-public)
-- [ Convert a public key to JWK format ](#retrieve-public-jwk)
-- [ Control access to asymmetric keys ](#access)
-
-- [ Create a MAC signing key ](#create-mac)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -174,7 +151,7 @@ To create a Cloud EKM key, see [Create an external
 key](/kms/docs/create-external-key). To import a Cloud KMS or Cloud HSM key,
 see [Import a key](/kms/docs/formatting-keys-for-import).
 
-## Before you begin 
+## Before you begin
 
 Before completing the tasks on this page, you need the following:
 
@@ -487,8 +464,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -618,12 +595,10 @@ other [predefined roles](/iam/docs/roles-overview#predefined).
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -698,6 +673,8 @@ Click **Create**.
 
 
 
+### gcloud 
+
 
 
 
@@ -763,6 +740,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -865,6 +844,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -980,6 +961,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -1098,6 +1081,8 @@ System . out . printf ( "Created symmetric key %s%n" , createdKey . [ getName ](
 
 
 
+### Node.js 
+
 
 
 
@@ -1202,6 +1187,8 @@ return createKeySymmetricEncryptDecrypt ();
 
 
 
+
+### PHP 
 
 
 
@@ -1310,6 +1297,8 @@ return $createdKey;
 
 
 
+
+### Python 
 
 
 
@@ -1426,6 +1415,8 @@ return created_key
 
 
 
+### Ruby 
+
 
 
 
@@ -1514,6 +1505,8 @@ puts "Created symmetric key: #{ created_key . name } "
 
 
 
+### API
+
 
 
 
@@ -1589,12 +1582,10 @@ now.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -1642,6 +1633,8 @@ create the key.
 
 
 
+
+### gcloud 
 
 
 
@@ -1719,6 +1712,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -1835,6 +1830,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -1964,6 +1961,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -2095,6 +2094,8 @@ System . out . printf ( "Created key with rotation schedule %s%n" , createdKey .
 
 
 
+### Node.js 
+
 
 
 
@@ -2209,6 +2210,8 @@ return createKeyRotationSchedule ();
 
 
 
+
+### PHP 
 
 
 
@@ -2328,6 +2331,8 @@ return $createdKey;
 
 
 
+
+### Python 
 
 
 
@@ -2450,6 +2455,8 @@ return created_key
 
 
 
+### Ruby 
+
 
 
 
@@ -2548,6 +2555,8 @@ puts "Created rotating key: #{ created_key . name } "
 
 
 
+### API
+
 
 
 
@@ -2608,7 +2617,6 @@ rotation—for example, `2023-01-01T01:02:03`. For more information, see
 
 
 
-
 ### Set the duration of the 'scheduled for destruction' state
 
 By default, key versions in Cloud KMS spend
@@ -2649,12 +2657,10 @@ state, use the following steps:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -2722,6 +2728,8 @@ Click **Create key**.
 
 
 
+
+### gcloud 
 
 
 
@@ -2808,12 +2816,10 @@ states](/kms/docs/key-states).
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -2889,6 +2895,8 @@ Click **Create**.
 
 
 
+### gcloud 
+
 
 
 
@@ -2962,6 +2970,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -3071,6 +3081,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -3191,6 +3203,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -3314,6 +3328,8 @@ System . out . printf ( "Created asymmetric key %s%n" , createdKey . [ getName ]
 
 
 
+### Node.js 
+
 
 
 
@@ -3422,6 +3438,8 @@ return createKeyAsymmetricDecrypt ();
 
 
 
+
+### PHP 
 
 
 
@@ -3536,6 +3554,8 @@ return $createdKey;
 
 
 
+
+### Python 
 
 
 
@@ -3661,6 +3681,8 @@ return created_key
 
 
 
+### Ruby 
+
 
 
 
@@ -3754,6 +3776,8 @@ puts "Created asymmetric decryption key: #{ created_key . name } "
 
 
 
+### API
+
 
 
 
@@ -3837,12 +3861,10 @@ states](/kms/docs/key-states).
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -3918,6 +3940,8 @@ Click **Create**.
 
 
 
+### gcloud 
+
 
 
 
@@ -3990,6 +4014,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -4099,6 +4125,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -4219,6 +4247,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -4341,6 +4371,8 @@ System . out . printf ( "Created asymmetric key %s%n" , createdKey . [ getName ]
 
 
 
+### Node.js 
+
 
 
 
@@ -4449,6 +4481,8 @@ return createKeyAsymmetricSign ();
 
 
 
+
+### PHP 
 
 
 
@@ -4563,6 +4597,8 @@ return $createdKey;
 
 
 
+
+### Python 
 
 
 
@@ -4688,6 +4724,8 @@ return created_key
 
 
 
+### Ruby 
+
 
 
 
@@ -4781,6 +4819,8 @@ puts "Created asymmetric signing key: #{ created_key . name } "
 
 
 
+### API
+
 
 
 
@@ -4861,12 +4901,10 @@ states](/kms/docs/key-states).
 
 
 
-[ gcloud ](#gcloud) [API](#api) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -4927,6 +4965,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+### API
+
 
 
 
@@ -4982,7 +5022,6 @@ supported key encapsulation algorithms, see [Key encapsulation algorithms](/kms/
 
 
 
-
 ### Retrieve the public key
 
 When you create an asymmetric key, Cloud KMS creates a public/private
@@ -5008,12 +5047,10 @@ steps:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -5099,6 +5136,8 @@ Each portion of the filename is separated by a hyphen, for example
 
 
 
+### gcloud 
+
 
 
 
@@ -5174,6 +5213,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -5264,6 +5305,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -5398,6 +5441,8 @@ return nil
 
 
 
+### Java 
+
 
 
 
@@ -5507,6 +5552,8 @@ System . out . printf ( "Public key: %s%n" , publicKey . [ getPem ](https://berl
 
 
 
+
+### Node.js 
 
 
 
@@ -5624,6 +5671,8 @@ return getPublicKey ();
 
 
 
+### PHP 
+
 
 
 
@@ -5719,6 +5768,8 @@ return $publicKey;
 
 
 
+
+### Python 
 
 
 
@@ -5850,6 +5901,8 @@ return crc32c_fun ( data )
 
 
 
+### Ruby 
+
 
 
 
@@ -5935,6 +5988,8 @@ puts "Public key: #{ public_key . pem } "
 
 
 
+### API
+
 
 
 
@@ -5987,7 +6042,7 @@ ZSBkYXkgOik=\n-----END PUBLIC KEY-----\n" ,
 "algorithm" : " ALGORITHM " , 
 "pemCrc32c" : "2561089887" , 
 "name" : "projects/ PROJECT_ID /locations/ LOCATION /keyRings/ 
-KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/
+KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/ 
 KEY_VERSION " , 
 "protectionLevel" : " PROTECTION_LEVEL " 
 } 
@@ -6007,7 +6062,7 @@ the following:
 } 
 "algorithm" : " ALGORITHM " , 
 "name" : "projects/ PROJECT_ID /locations/ LOCATION /keyRings/ 
-KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/
+KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/ 
 KEY_VERSION " , 
 "protectionLevel" : " PROTECTION_LEVEL " 
 } 
@@ -6054,12 +6109,10 @@ To convert a public key to JWK format, follow these steps:
 
 
 
-[ Go ](#go) [ Java ](#java) [ Python ](#python) 
-More 
 
 
 
-
+### Go 
 
 
 
@@ -6203,6 +6256,8 @@ return nil
 
 
 
+### Java 
+
 
 
 
@@ -6316,6 +6371,8 @@ System . out . println ( jwk . toJSONString ());
 
 
 
+
+### Python 
 
 
 
@@ -6464,12 +6521,10 @@ Learn about permissions and roles in Cloud KMS release at
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -6545,6 +6600,8 @@ Click **Create**.
 
 
 
+### gcloud 
+
 
 
 
@@ -6615,6 +6672,8 @@ For the details on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -6724,6 +6783,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -6844,6 +6905,8 @@ return nil
 
 
 
+### Java 
+
 
 
 
@@ -6961,6 +7024,8 @@ System . out . printf ( "Created mac key %s%n" , createdKey . [ getName ](https:
 
 
 
+### Node.js 
+
 
 
 
@@ -7069,6 +7134,8 @@ return createKeyMac ();
 
 
 
+
+### PHP 
 
 
 
@@ -7183,6 +7250,8 @@ return $createdKey;
 
 
 
+
+### Python 
 
 
 
@@ -7305,6 +7374,8 @@ return created_key
 
 
 
+### Ruby 
+
 
 
 
@@ -7392,6 +7463,8 @@ puts "Created mac key: #{ created_key . name } "
 
 
 
+
+### API
 
 
 

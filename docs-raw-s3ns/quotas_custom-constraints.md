@@ -108,31 +108,6 @@ Guides
 
 
 
-- On this page ** 
-- [ About organization policies and constraints ](#about_organization_policies_and_constraints)
-
-- [ Policy inheritance ](#policy-inheritance)
-
-- [ Limitations ](#limitations)
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required-roles)
-
-- [ Cloud Quotas supported resources ](#supported_resources)
-- [ Set up a custom constraint ](#set_up_custom_constraint)
-- [ Enforce a custom organization policy ](#enforce_custom_constraint)
-- [ Test the custom organization policy ](#test_constraint)
-
-- [ Create an example constraint ](#example-create-constraint)
-- [ Create the policy ](#example-create-policy)
-- [ Test the policy ](#example-test-policy)
-- [ Delete the example policy and constraint ](#delete-example)
-
-- [ Example custom organization policies for common use cases ](#example_constraints)
-- [ What's next ](#whats_next)
-- [ What's next ](#whats_next_2)
-- 
-
 
 
 
@@ -229,8 +204,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -2513,7 +2488,8 @@ Field |
 |
 
 
-| No matches | | 
+
+
 
 
 
@@ -2532,11 +2508,9 @@ conditions in custom constraints using CEL, see the CEL section of
 
 
 
-[Console](#console) [gcloud](#gcloud) 
-**More 
 
 
-
+### Console
 
 
 
@@ -2547,7 +2521,7 @@ To create a custom constraint, do the following:
 
 
 - 
-In the Cloud de Confiance console, go to the Organization policies** page.
+In the Cloud de Confiance console, go to the **Organization policies** page.
 
 
 [Go to Organization policies](https://console.cloud.s3nscloud.fr/iam-admin/orgpolicies) 
@@ -2664,6 +2638,8 @@ custom constraint appears on the right.
 
 
 
+### gcloud
+
 
 
 
@@ -2672,7 +2648,7 @@ To create a custom constraint, create a YAML file using the following format:
 
 
 ```
-name : organizations/ ** ORGANIZATION_ID /customConstraints/ CONSTRAINT_NAME 
+name : organizations/ ORGANIZATION_ID /customConstraints/ CONSTRAINT_NAME 
 resourceTypes : RESOURCE_NAME 
 methodTypes : 
 - CREATE
@@ -2842,17 +2818,15 @@ You can enforce a constraint by creating an organization policy that references 
 applying that organization policy to a Cloud de Confiance by S3NS resource.
 
 
-[Console](#console) [gcloud](#gcloud) 
-More 
 
 
-
+### Console
 
 
 
 
 - 
-In the Cloud de Confiance console, go to the Organization policies** page.
+In the Cloud de Confiance console, go to the **Organization policies** page.
 
 
 [Go to Organization policies](https://console.cloud.s3nscloud.fr/iam-admin/orgpolicies) 
@@ -2919,6 +2893,8 @@ live policy by clicking **Set policy**.
 
 
 
+
+### gcloud
 
 
 

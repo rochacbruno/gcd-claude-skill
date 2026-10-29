@@ -148,17 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Google Workspace session configuration ](#workspace-session)
-- [ Identity-Aware Proxy reauthentication ](#iap)
-- [ Refresh token expiration ](#refresh-token)
-- [ Sensitive actions ](#sensitive-actions)
-
-- [ When reauthentication is required ](#when_reauthentication_is_required)
-
-- [ Disable reauthentication ](#disable)
-- 
-
 
 
 
@@ -170,7 +159,7 @@ Guides
 This page describes some scenarios when you might need to authenticate again,
 even if you previously authenticated successfully.
 
-## Google Workspace session configuration 
+## Google Workspace session configuration
 
 If you are accessing Cloud de Confiance by S3NS by using a Google Workspace user
 account, your Google Workspace administrator can configure the maximum

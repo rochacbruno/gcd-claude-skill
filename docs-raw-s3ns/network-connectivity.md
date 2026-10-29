@@ -127,13 +127,6 @@ Guides
 
 
 
-- On this page 
-- [ Overview ](#overview)
-- [ Connect to Cloud de Confiance by S3NS ](#connect-to-dynamic_data.site_values.cloud_name)
-- [ Connect to Google Workspace and supported APIs ](#connect-to-google-workspace-and-supported-apis)
-- [ Connect to supported CDN providers ](#connect-to-supported-cdn-providers)
-- 
-
 
 
 

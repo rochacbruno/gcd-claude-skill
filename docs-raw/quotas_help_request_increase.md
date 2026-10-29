@@ -108,32 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Limitations ](#limitations)
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required_roles)
-
-- [ View quotas in the Google Cloud Dedicated console ](#viewing_your_quota_console)
-
-- [ View the quotas for your project ](#view_project_quotas)
-- [ View and export quota usage over time ](#charts)
-- [ View API-specific quotas ](#api_specific_quota)
-- [ Filter quotas ](#filtering_quotas)
-
-- [ Manage your quotas using the console ](#managing_your_quota_console)
-
-- [ Request a quota adjustment ](#requesting_higher_quota)
-- [ View quota increase requests ](#viewing_quota_increase_requests)
-- [ Create a quota override ](#create_override)
-- [ Reset a quota value ](#reset_quota)
-
-- [ Manage quotas using the Cloud Quotas API ](#managing_your_quota_api)
-- [ Manage quotas using the gcloud CLI ](#managing_your_quota_gcloud)
-- [ Request project quota ](#request_project_quota)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -333,8 +307,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -412,11 +386,8 @@ To view quota usage and values for all resources in your project, follow these
 steps:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -493,7 +464,7 @@ You can learn more about quotas for a specific service by reading the
 documentation for that service. For example, Compute Engine users can read the
 [Compute Engine quota and limits overview](/compute/quotas-limits).
 
-### View and export quota usage over time 
+### View and export quota usage over time
 
 You can view quota usage over time with charts. The Quotas & System Limits page
 of the console provides charts for each individual quota or system limit that's
@@ -501,11 +472,8 @@ in the Quotas & System Limits table. After you view a chart, you can export it.
 To view and export a chart, follow these steps:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -537,7 +505,7 @@ To export the chart, click more_vert
 To do more with charts, see
 [Set up quota alerts and monitoring](/docs/quotas/set-up-quota-alerts).
 
-### View API-specific quotas 
+### View API-specific quotas
 
 To view detailed quota information for a particular API, including usage
 over time, visit the quota page for the API in the Google Cloud Dedicated console.
@@ -554,11 +522,8 @@ on the Google Cloud Dedicated console **Quotas & System Limits** page
 or **APIs & Services** page. Use the console view that you prefer:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -620,11 +585,8 @@ To see usage over time, click legend_toggle **Show usage chart**.
 To filter the list of quotas by specific properties:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -641,22 +603,19 @@ query your quotas by a specific property name or value.
 
 
 
-## Manage your quotas using the console 
+## Manage your quotas using the console
 
 Depending on your resource usage, you might want to adjust the quota
 values of your project up or down. This section describes how to change the provided quota
 values. To see the values, in the **Details** column, click **All Quotas**.
 
-### Request a quota adjustment 
+### Request a quota adjustment
 
 Cloud Quotas adjustment requests are subject to review.
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 To adjust a quota value, follow these steps:
 
@@ -734,7 +693,7 @@ the Compute Engine VM quotas.
 
 
 
-### View quota increase requests 
+### View quota increase requests
 
 You can see pending and past quota increase requests in the
 Google Cloud Dedicated console.
@@ -742,11 +701,8 @@ Google Cloud Dedicated console.
 To see pending quota increase requests:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -775,11 +731,8 @@ quota adjustment is about to be submitted.
 To view all quota increase requests, which includes pending and past requests:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -804,7 +757,7 @@ requests for all projects within the organization or folder.
 
 
 
-### Create a quota override 
+### Create a quota override
 
 To restrict usage of a particular resource, create a *quota override* by
 changing the quota value to a value less than the default quota value.
@@ -816,16 +769,13 @@ To create a quota override, follow the steps to
 Quota overrides are not available to all services. For service-specific
 information, check the quota and system limits documentation for your service.
 
-### Reset a quota value 
+### Reset a quota value
 
 To reset the quota value after an override has been applied, follow these steps:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 

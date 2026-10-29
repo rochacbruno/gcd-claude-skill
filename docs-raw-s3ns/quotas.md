@@ -100,11 +100,12 @@ Cloud Quotas
 
 
 
-# Cloud Quotas documentation 
+
+# Cloud Quotas documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/docs/quotas/overview)
+Read product documentation 
 
 
 

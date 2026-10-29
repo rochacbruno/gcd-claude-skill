@@ -128,27 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required-permissions)
-
-- [ View current access ](#view-access)
-- [ Grant or revoke a single IAM role ](#single-role)
-
-- [ Grant a single IAM role ](#grant-single-role)
-- [ Revoke a single IAM role ](#revoke-single-role)
-
-- [ Grant or revoke multiple IAM roles using the Cloud de Confiance console ](#multiple-roles-console)
-- [ Grant or revoke multiple IAM roles programmatically ](#multiple-roles-programmatic)
-
-- [ Get the current allow policy ](#getting-policy)
-- [ Modify the allow policy ](#modifying-policy)
-- [ Set the allow policy ](#setting-policy)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -223,11 +202,9 @@ Select the tab for how you plan to use the samples on this page:
 
 
 
-[Console](#console) [gcloud](#gcloud) [C#](#c) [Java](#java) [Python](#python) [REST](#rest) 
-More 
 
 
-
+### Console
 
 
 
@@ -245,6 +222,8 @@ APIs, you don't need to set up authentication.
 
 
 
+
+### gcloud
 
 
 
@@ -312,6 +291,8 @@ gcloud init
 
 
 
+
+### C#
 
 
 
@@ -438,6 +419,8 @@ in the Cloud de Confiance authentication documentation.
 
 
 
+### Java
+
 
 
 
@@ -562,6 +545,8 @@ in the Cloud de Confiance authentication documentation.
 
 
 
+
+### Python
 
 
 
@@ -688,6 +673,8 @@ in the Cloud de Confiance authentication documentation.
 
 
 
+
+### REST
 
 
 
@@ -1028,8 +1015,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -1134,12 +1121,10 @@ Resource Manager client libraries.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -1200,6 +1185,8 @@ the **Include S3NS-provided role grants** checkbox.
 
 
 
+
+### gcloud 
 
 
 
@@ -1354,6 +1341,8 @@ gcloud projects get-iam-policy my-project --format = json > ~/policy.json
 
 
 
+### C# 
+
 
 
 
@@ -1469,6 +1458,8 @@ return policy ;
 
 
 
+
+### Java 
 
 
 
@@ -1592,6 +1583,8 @@ return projectsClient . getIamPolicy ( request );
 
 
 
+### Python 
+
 
 
 
@@ -1694,6 +1687,8 @@ return policy
 
 
 
+### REST 
+
 
 
 
@@ -1767,9 +1762,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -1832,9 +1826,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1919,9 +1912,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -1932,7 +1924,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -2028,12 +2020,10 @@ To grant a single role to a principal, do the following:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -2077,7 +2067,7 @@ example,
 
 - 
 
-Click Select a role**, then enter the name of a role or permission to filter for a role to grant.
+Click **Select a role**, then enter the name of a role or permission to filter for a role to grant.
 To follow the principle of least privilege, choose a role that includes only the permissions that
 your principal needs.
 
@@ -2171,6 +2161,8 @@ selected resources.
 
 
 
+
+### gcloud 
 
 
 
@@ -2297,13 +2289,13 @@ following
 command:
 
 
+
 #### Linux, macOS, or Cloud Shell
 
 
 
-
 ```
-gcloud ** RESOURCE_TYPE add-iam-policy-binding RESOURCE_ID \ 
+gcloud RESOURCE_TYPE add-iam-policy-binding RESOURCE_ID \ 
 --member = PRINCIPAL --role = ROLE_NAME \ 
 --condition = CONDITION 
 ```
@@ -2311,8 +2303,8 @@ gcloud ** RESOURCE_TYPE add-iam-policy-binding RESOURCE_ID \
 
 
 
-#### Windows (PowerShell)
 
+#### Windows (PowerShell)
 
 
 
@@ -2325,8 +2317,8 @@ gcloud RESOURCE_TYPE add-iam-policy-binding RESOURCE_ID `
 
 
 
-#### Windows (cmd.exe)
 
+#### Windows (cmd.exe)
 
 
 
@@ -2387,12 +2379,10 @@ To revoke a single role from a principal, do the following:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -2453,6 +2443,8 @@ the role that you want to revoke, and then click **Save**.
 
 
 
+
+### gcloud 
 
 
 
@@ -2536,7 +2528,6 @@ member, which usually has the following form:
 ` PRINCIPAL_TYPE : ID `.
 For example, `principal://iam.googleapis.com/locations/global/workforcePools/my-pool/subject/my-user@example.com` or
 `principalSet://iam.googleapis.com/locations/global/workforcePools/example-pool/group/example-group@example.com`.
-
 
 
 
@@ -2649,7 +2640,7 @@ identifier](/iam/docs/principal-identifiers)—for example, `//iam.googleapis.co
 Modify the principal's roles:
 
 - To grant a role to a principal who doesn't have any existing roles on the resource, click
-Select a role**, then filter for a role to grant.
+**Select a role**, then filter for a role to grant.
 
 - To grant an additional role to the principal, click **Add another role**, then
 filter for a role to grant.
@@ -2710,12 +2701,10 @@ can take 7 minutes or more for changes to propagate across the system.
 
 
 
-[ gcloud ](#gcloud) [ C# ](#c) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### gcloud 
 
 
 
@@ -2775,14 +2764,15 @@ following
 command:
 
 
-#### Linux, macOS, or Cloud Shell
 
+#### Linux, macOS, or Cloud Shell
 
 
 
 ```
 gcloud RESOURCE_TYPE get-iam-policy RESOURCE_ID --format = FORMAT > PATH 
 ```
+
 
 
 
@@ -2791,7 +2781,6 @@ gcloud RESOURCE_TYPE get-iam-policy RESOURCE_ID --format = FORMAT > PATH
 
 
 
-
 ```
 gcloud RESOURCE_TYPE get-iam-policy RESOURCE_ID --format = FORMAT > PATH 
 ```
@@ -2799,8 +2788,8 @@ gcloud RESOURCE_TYPE get-iam-policy RESOURCE_ID --format = FORMAT > PATH
 
 
 
-#### Windows (cmd.exe)
 
+#### Windows (cmd.exe)
 
 
 
@@ -2865,6 +2854,8 @@ gcloud projects get-iam-policy my-project --format json > ~/policy.json
 
 
 
+
+### C# 
 
 
 
@@ -2977,6 +2968,8 @@ return policy ;
 
 
 
+
+### Java 
 
 
 
@@ -3096,6 +3089,8 @@ return projectsClient . getIamPolicy ( request );
 
 
 
+### Python 
+
 
 
 
@@ -3194,6 +3189,8 @@ return policy
 
 
 
+### REST 
+
 
 
 
@@ -3263,9 +3260,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -3328,9 +3324,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -3415,9 +3410,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -3428,7 +3422,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -3497,7 +3491,7 @@ bindings in the allow policy. Role bindings have the following format:
 
 ```
 { 
-"role" : " ** ROLE_NAME " , 
+"role" : " ROLE_NAME " , 
 "members" : [ 
 " PRINCIPAL_1 " , 
 " PRINCIPAL_2 " , 
@@ -3574,12 +3568,10 @@ to an existing role binding:
 
 
 
-[ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -3614,7 +3606,7 @@ existing role binding:
 "role" : "roles/iam.securityReviewer" , 
 "members" : [ 
 "principal://iam.googleapis.com/locations/global/workforcePools/example-pool/subject/kai@example.com" , 
-"principal://iam.googleapis.com/locations/global/workforcePools/example-pool/subject/raha@example.com" **
+** "principal://iam.googleapis.com/locations/global/workforcePools/example-pool/subject/raha@example.com" **
 ] 
 } 
 ```
@@ -3663,6 +3655,8 @@ existing role binding:
 
 
 
+
+### C# 
 
 
 
@@ -3760,6 +3754,8 @@ return policy ;
 
 
 
+
+### Go 
 
 
 
@@ -3872,6 +3868,8 @@ fmt . Fprintf ( w , "Role %q not found. Member not added.\n" , role )
 
 
 
+
+### Java 
 
 
 
@@ -4001,6 +3999,8 @@ return updatedPolicy ;
 
 
 
+### Python 
+
 
 
 
@@ -4100,6 +4100,8 @@ return set_project_policy ( project_id , policy )
 
 
 
+### REST 
+
 
 
 
@@ -4176,12 +4178,10 @@ binding:
 
 
 
-[ gcloud ](#gcloud) [ C# ](#c) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### gcloud 
 
 
 
@@ -4253,6 +4253,8 @@ For example, to grant the Compute Storage Admin role
 
 
 
+
+### C# 
 
 
 
@@ -4391,6 +4393,8 @@ return policy ;
 
 
 
+
+### Java 
 
 
 
@@ -4548,6 +4552,8 @@ return updatedPolicy ;
 
 
 
+### Python 
+
 
 
 
@@ -4663,6 +4669,8 @@ return policy
 
 
 
+### REST 
+
 
 
 
@@ -4736,12 +4744,10 @@ other principals in the role binding, remove the entire role binding.
 
 
 
-[ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -4801,6 +4807,8 @@ To revoke a role from a principal, delete the principal or binding from the
 
 
 
+
+### C# 
 
 
 
@@ -4949,6 +4957,8 @@ return policy ;
 
 
 
+
+### Go 
 
 
 
@@ -5117,6 +5127,8 @@ return append ( arr [: idx ], arr [ idx + 1 :] ... )
 
 
 
+
+### Java 
 
 
 
@@ -5309,6 +5321,8 @@ return updatedPolicy ;
 
 
 
+### Python 
+
 
 
 
@@ -5441,6 +5455,8 @@ return set_project_policy ( project_id , policy , False )
 
 
 
+### REST 
+
 
 
 
@@ -5494,12 +5510,10 @@ After you modify the allow policy to grant and revoke roles, call
 
 
 
-[ gcloud ](#gcloud) [ C# ](#c) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -5550,14 +5564,15 @@ following
 command:
 
 
-#### Linux, macOS, or Cloud Shell
 
+#### Linux, macOS, or Cloud Shell
 
 
 
 ```
 gcloud RESOURCE_TYPE set-iam-policy RESOURCE_ID PATH 
 ```
+
 
 
 
@@ -5566,7 +5581,6 @@ gcloud RESOURCE_TYPE set-iam-policy RESOURCE_ID PATH
 
 
 
-
 ```
 gcloud RESOURCE_TYPE set-iam-policy RESOURCE_ID PATH 
 ```
@@ -5574,8 +5588,8 @@ gcloud RESOURCE_TYPE set-iam-policy RESOURCE_ID PATH
 
 
 
-#### Windows (cmd.exe)
 
+#### Windows (cmd.exe)
 
 
 
@@ -5641,6 +5655,8 @@ gcloud projects set-iam-policy my-project ~/policy.json
 
 
 
+
+### C# 
 
 
 
@@ -5739,6 +5755,8 @@ Policy = policy
 
 
 
+
+### Java 
 
 
 
@@ -5873,6 +5891,8 @@ return projectsClient . setIamPolicy ( request );
 
 
 
+### Python 
+
 
 
 
@@ -5994,6 +6014,8 @@ return policy
 
 
 
+### REST 
+
 
 
 
@@ -6065,9 +6087,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -6130,9 +6151,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -6217,9 +6237,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -6230,7 +6249,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 

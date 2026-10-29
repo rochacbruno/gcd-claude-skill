@@ -128,47 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Logging raw requests ](#http-request-logs)
-- [ Adding custom headers ](#custom-headers)
-- [ Accessing buckets with a CORS configuration ](#access-bucket-with-cors)
-- [ Error codes ](#error_codes)
-
-- [ 400: Bad Request ](#400_bad_request)
-- [ 400: Storage Intelligence specific errors ](#storage-intelligence-errors)
-- [ 401: Unauthorized ](#401_unauthorized)
-- [ 403: Account Disabled ](#account-disabled)
-- [ 403: Forbidden ](#access-permission)
-- [ 403: Permission Denied ](#storage-intelligence-permission)
-- [ 409: Conflict ](#bucket-name-conflict)
-- [ 412: Custom constraints violated ](#custom-constraint)
-- [ 429: Too Many Requests ](#rate-limit)
-
-- [ Object context errors ](#object-context-errors)
-
-- [ 400: Object Context Limit Exceeded ](#400_object_context_limit_exceeded)
-- [ 400: Object Context Key Or Value Size Limit Exceeded ](#400_object_context_key_or_value_size_limit_exceeded)
-- [ 400: Object Context Key Or Value Aggregate Size Limit Exceeded ](#400_object_context_key_or_value_aggregate_size_limit_exceeded)
-- [ 400: Object Context Key Or Value Forbidden Characters ](#400_object_context_key_or_value_forbidden_characters)
-- [ 400: Object Context Key Or Value Must Start With an Alphanumeric Character ](#400_object_context_key_or_value_must_start_with_an_alphanumeric_character)
-- [ 400: Object Context Key Or Value Empty ](#400_object_context_key_or_value_empty)
-- [ 400: Object Context Key Or Value Invalid UTF-8 ](#400_object_context_key_or_value_invalid_utf-8)
-- [ 400: Object Context Key Reserved Prefix ](#400_object_context_key_reserved_prefix)
-- [ 400: Object can't Have More Than 50 Drop Context Groups ](#400_object_cant_have_more_than_50_drop_context_groups)
-- [ 400: Invalid Value For Drop Context Groups Field ](#400_invalid_value_for_drop_context_groups_field)
-
-- [ Diagnosing Google Cloud Dedicated console errors ](#trouble-console)
-- [ Simulated folders and managed folders ](#folders)
-- [ Make data public ](#make-data-public)
-- [ Latency ](#latency)
-
-- [ Upload or download latency ](#read-write-latency)
-- [ CLI or client library latency ](#tool-latency)
-
-- [ Proxy servers ](#proxy-server)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -194,7 +153,7 @@ while using Cloud Storage.
 See the [Google Cloud Dedicated in Germany Personalized Service Health Dashboard](https://status.cloud.google.com/summary) for information about
 incidents affecting Google Cloud Dedicated in Germany services such as Cloud Storage.
 
-## Logging raw requests 
+## Logging raw requests
 
 When using tools such as `gcloud` or the Cloud Storage client libraries, much
 of the request and response information is handled by the tool. However, it is
@@ -203,11 +162,8 @@ questions to forums such as [Stack Overflow](https://stackoverflow.com/questions
 following instructions to return request and response headers for your tool:
 
 
-[Console](#console) [Command line](#command-line) [Client libraries](#client-libraries) 
-More 
 
-
-
+### Console
 
 Viewing request and response information depends on the browser you're using
 to access the Google Cloud Dedicated console. For the Google Chrome browser:
@@ -231,6 +187,7 @@ In the pane that appears, click the **Network** tab.
 
 
 
+### Command line
 
 Use global debugging flags in your request. For example:
 
@@ -240,11 +197,10 @@ gcloud storage ls gs://my-bucket/my-object --log-http --verbosity=debug
 ```
 
 
-[C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) [Python](#python) [Ruby](#ruby) 
-More 
+### Client libraries
 
 
-
+### C++
 
 - 
 
@@ -258,12 +214,14 @@ logging of each RPC.
 
 
 
+### C#
 
 Add a logger by using the `ApplicationContext.RegisterLogger` method, and set logging
 options on the `HttpClient` message handler. For more information, see
 the [C# client library reference documentation](/dotnet/docs/reference/Google.Cloud.Storage.V1/latest).
 
 
+### Go
 
 Set the environment variable `GODEBUG=http2debug=1`. For more
 information, see the [Go package net/http](https://golang.org/pkg/net/http/).
@@ -272,6 +230,7 @@ If you want to log the request body as well,
 [use a custom HTTP client](https://pkg.go.dev/google.golang.org/api/option#WithHTTPClient).
 
 
+### Java
 
 - 
 
@@ -305,17 +264,20 @@ mvn -Djava.util.logging.config.file=path/to/logging.properties insert_command
 For more information, see [Pluggable HTTP Transport](https://googleapis.github.io/google-http-java-client/http-transport.html).
 
 
+### Node.js
 
 Set the environment variable `NODE_DEBUG=https` before calling the Node
 script.
 
 
+### PHP
 
 Provide your own HTTP handler to the client using
 [`httpHandler`](/php/docs/reference/cloud-storage/latest/StorageClient) and set up middleware to log the request
 and response.
 
 
+### Python
 
 Use the [logging module](https://docs.python.org/3/library/logging.html). For example:
 
@@ -329,6 +291,7 @@ http.client.HTTPConnection.debuglevel=5
 ```
 
 
+### Ruby
 
 At the top of your `.rb file` after `require "google/cloud/storage"`,
 add the following:
@@ -349,11 +312,8 @@ as for enabling debug headers or for tracing a request. The following example
 shows how to set request headers for different Cloud Storage tools:
 
 
-[Command line](#command-line) [Client libraries](#client-libraries) 
-More 
 
-
-
+### Command line
 
 Use the `--additional-headers` flag, which is available for most
 commands. For example:
@@ -370,10 +330,10 @@ to the request.
 
 
 
-[C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
-More 
+### Client libraries
 
 
+### C++
 
 ```
 namespace gcs = google :: cloud :: storage ; 
@@ -382,6 +342,7 @@ client . AnyFunction (... args ..., gcs :: CustomHeader ( "header-name" , "value
 ```
 
 
+### C#
 
 The following sample adds a custom header to every request made by the
 client library.
@@ -402,6 +363,7 @@ Console . WriteLine ( bucket . Name );
 ```
 
 
+### Go
 
 You can add custom headers to any API call made by the Storage package
 by using [callctx.SetHeaders](https://pkg.go.dev/github.com/googleapis/gax-go/v2/callctx#SetHeaders) on the context which is passed to the
@@ -435,6 +397,8 @@ if err != nil {
 } 
 ```
 
+
+### Java
 
 ```
 import com.google.api.gax.rpc.[FixedHeaderProvider](https://berlin.devsitetest.how/java/docs/reference/gax/latest/com.google.api.gax.rpc.FixedHeaderProvider.html) ; 
@@ -472,6 +436,8 @@ writer . write ( ByteBuffer . wrap ( stringBytes ));
 ```
 
 
+### Node.js
+
 ```
 const storage = new Storage (); 
 
@@ -486,6 +452,7 @@ return requestConfig ;
 ```
 
 
+### PHP
 
 All method calls which trigger http requests accept an optional
 `$restOptions` argument as the last argument. You can provide custom
@@ -515,6 +482,8 @@ $bucket->info([
 ```
 
 
+### Python
+
 ```
 from google.cloud import [ storage ](https://berlin.devsitetest.how/python/docs/reference/storage/latest)
 
@@ -526,6 +495,8 @@ extra_headers = {
 ```
 
 
+### Ruby
+
 ```
 require "google/cloud/storage" 
 
@@ -535,6 +506,7 @@ storage . [ add_custom_headers ](https://berlin.devsitetest.how/ruby/docs/refere
 ```
 
 
+### Rust
 
 
 
@@ -823,7 +795,6 @@ Storage Intelligence on.
 ### 409: Conflict
 
 **Issue**: I tried to create a bucket but received the following error:
-
 
 ```
 409 Conflict. Sorry, that name is not available. Please try a different one.

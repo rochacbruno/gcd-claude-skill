@@ -88,19 +88,6 @@ Google APIs Discovery Service
 
 
 
-- On this page 
-- [ Discovery Service Background ](#discovery-service-background)
-
-- [ Concepts ](#concepts)
-- [ Data model ](#data-model)
-- [ Operations ](#operations)
-
-- [ Calling style ](#calling-style)
-
-- [ REST ](#rest)
-
-- 
-
 
 
 
@@ -122,10 +109,10 @@ other tools for interacting with Google APIs.
 
 
 
-## Discovery Service Background 
+## Discovery Service Background
 
 
-### Concepts 
+### Concepts
 
 
 

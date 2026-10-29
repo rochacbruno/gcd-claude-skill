@@ -128,12 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Bake virtual machine images ](#vm-instances)
-- [ Manage Identity and Access Management ](#iam)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -151,7 +145,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Cloud de Confiance by S3NS, see
 [Get started with Terraform](/docs/terraform/get-started-with-terraform).
 
-## Bake virtual machine images 
+## Bake virtual machine images
 
 In general, we recommend that you *bake* virtual machine images
 [using a tool like Packer](/compute/docs/images/image-management-best-practices#automated_baking).

@@ -73,15 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Configuration options ](#configuration_options)
-- [ About Fabric FAST ](#about_fabric_fast)
-
-- [ Which Fabric FAST setup is for me? ](#which-setup)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 

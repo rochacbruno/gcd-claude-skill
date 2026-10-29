@@ -64,23 +64,6 @@ Documentation
 
 
 
-- On this page 
-- [ Cross-product tools ](#cross-product-tools)
-- [ AI and ML ](#ai-and-ml)
-- [ App development ](#app-development)
-- [ App hosting ](#app-hosting)
-- [ Compute ](#compute)
-- [ Data analytics and pipelines ](#data-analytics-and-pipelines)
-- [ Databases ](#databases)
-- [ Distributed, hybrid, and multicloud ](#distributed,-hybrid,-and-multicloud)
-- [ Industry solutions ](#industry-solutions)
-- [ Migration ](#migration)
-- [ Networking ](#networking)
-- [ Observability and monitoring ](#observability-and-monitoring)
-- [ Security ](#security)
-- [ Storage ](#storage)
-- 
-
 
 
 
@@ -156,7 +139,7 @@ A quick reference for Google Cloud products
 
 
 
-## Cross-product tools 
+## Cross-product tools
 
 
 
@@ -937,7 +920,7 @@ Global real-time messaging
 
 
 
-## Databases 
+## Databases
 
 
 

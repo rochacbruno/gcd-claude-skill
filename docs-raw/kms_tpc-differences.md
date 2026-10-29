@@ -73,20 +73,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Hardware and OS ](#hardware-and-os-differences)
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Integrations ](#integrations-differences)
-- [ Network ](#network-differences)
-- [ Workflows and tools ](#workflow-differences)
-- [ Insights and observability ](#observability-differences)
-- [ Other differences ](#other-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -110,7 +96,7 @@ Cloud KMS documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -181,7 +167,7 @@ not available for Google Cloud Dedicated.
 **Single-tenant hardware keys**
 | 
 Single-tenant Cloud HSM instances and the
-`HSM_ SINGLE_ TENANT` protection level (Single-tenant Cloud HSM
+`HSM_SINGLE_TENANT` protection level (Single-tenant Cloud HSM
 keys) are not available for Google Cloud Dedicated.
 | 
 |
@@ -198,8 +184,7 @@ Only the `u-germany-northeast1` regional
 location is supported for Google Cloud Dedicated.
 | 
 |
-
-| **Multi-regions**
+**Multi-regions**
 | 
 Multi-regions other than `global` are not supported for
 Google Cloud Dedicated.
@@ -221,7 +206,7 @@ you want to use CMEK to protect resources in the `global`
 location. Otherwise, you should create your Cloud KMS resources
 in the `u-germany-northeast1` region.
 
-| |
+|
 
 
 ### Integrations

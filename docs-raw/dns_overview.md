@@ -113,24 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Shared VPC considerations ](#shared-vpc)
-- [ DNS forwarding methods ](#dns-forwarding-methods)
-
-- [ Outbound Endpoints ](#outbound-endpoints)
-
-- [ DNS64 ](#dns64-overview)
-- [ Access control ](#access_control)
-
-- [ Access control for managed zones ](#access_control_for_managed_zones)
-
-- [ Performance and timing ](#performance_and_timing)
-
-- [ Propagation of changes ](#propagation_of_changes)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 

@@ -128,12 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Benefits of IaC ](#benefits)
-- [ IaC tools for Google Cloud Dedicated ](#iac-usecases-tools)
-- [ What's next ](#whats-next)
-- 
-
 
 
 

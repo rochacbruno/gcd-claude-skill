@@ -140,11 +140,12 @@ Container-Optimized OS
 
 
 
-# Container-Optimized OS from Google documentation 
+
+# Container-Optimized OS from Google documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/container-optimized-os/docs/concepts/features-and-benefits)
+Read product documentation 
 
 
 

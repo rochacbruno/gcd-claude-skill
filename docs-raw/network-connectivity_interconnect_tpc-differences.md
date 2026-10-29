@@ -133,14 +133,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Network ](#network-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -167,7 +159,7 @@ Cloud Interconnect documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -261,9 +253,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -273,9 +263,7 @@ in Google Cloud Dedicated in Germany](/vpc/docs/tpc-differences)
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

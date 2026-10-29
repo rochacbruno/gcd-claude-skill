@@ -128,32 +128,6 @@ Reference
 
 
 
-- On this page ** 
-- [ Service: container.googleapis.com ](#service:-container.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v1beta1.projects.aggregated.usableSubnetworks ](#rest-resource:-v1beta1.projects.aggregated.usablesubnetworks)
-- [ REST Resource: v1beta1.projects.locations ](#rest-resource:-v1beta1.projects.locations)
-- [ REST Resource: v1beta1.projects.locations.clusters ](#rest-resource:-v1beta1.projects.locations.clusters)
-- [ REST Resource: v1beta1.projects.locations.clusters.nodePools ](#rest-resource:-v1beta1.projects.locations.clusters.nodepools)
-- [ REST Resource: v1beta1.projects.locations.operations ](#rest-resource:-v1beta1.projects.locations.operations)
-- [ REST Resource: v1beta1.projects.zones ](#rest-resource:-v1beta1.projects.zones)
-- [ REST Resource: v1beta1.projects.zones.clusters ](#rest-resource:-v1beta1.projects.zones.clusters)
-- [ REST Resource: v1beta1.projects.zones.clusters.nodePools ](#rest-resource:-v1beta1.projects.zones.clusters.nodepools)
-- [ REST Resource: v1beta1.projects.zones.operations ](#rest-resource:-v1beta1.projects.zones.operations)
-- [ REST Resource: v1.projects.aggregated.usableSubnetworks ](#rest-resource:-v1.projects.aggregated.usablesubnetworks)
-- [ REST Resource: v1.projects.locations ](#rest-resource:-v1.projects.locations)
-- [ REST Resource: v1.projects.locations.clusters ](#rest-resource:-v1.projects.locations.clusters)
-- [ REST Resource: v1.projects.locations.clusters.nodePools ](#rest-resource:-v1.projects.locations.clusters.nodepools)
-- [ REST Resource: v1.projects.locations.operations ](#rest-resource:-v1.projects.locations.operations)
-- [ REST Resource: v1.projects.zones ](#rest-resource:-v1.projects.zones)
-- [ REST Resource: v1.projects.zones.clusters ](#rest-resource:-v1.projects.zones.clusters)
-- [ REST Resource: v1.projects.zones.clusters.nodePools ](#rest-resource:-v1.projects.zones.clusters.nodepools)
-- [ REST Resource: v1.projects.zones.operations ](#rest-resource:-v1.projects.zones.operations)
-- 
-
 
 
 
@@ -211,7 +185,7 @@ Builds and manages container-based applications, powered by the open source Kube
 
 
 
-## Service: container. googleapis. com 
+## Service: container.googleapis.com
 
 
 
@@ -219,7 +193,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -252,7 +226,7 @@ A [service endpoint](https://documentation.s3ns.fr/apis/design/glossary#api_serv
 
 
 
-## REST Resource: [v1beta1. projects. aggregated. usable Subnetworks](/kubernetes-engine/docs/reference/rest/v1beta1/projects.aggregated.usableSubnetworks)
+## REST Resource: [v1beta1.projects.aggregated.usableSubnetworks](/kubernetes-engine/docs/reference/rest/v1beta1/projects.aggregated.usableSubnetworks)
 
 
 
@@ -272,7 +246,7 @@ Methods |
 
 `[list](/kubernetes-engine/docs/reference/rest/v1beta1/projects.aggregated.usableSubnetworks/list)` | 
 
-`GET / v1beta1/ {parent=projects/ *}/ aggregated/ usable Subnetworks` 
+`GET /v1beta1/{parent=projects/*}/aggregated/usableSubnetworks` 
 
 Zonal clusters are not supported.
 Lists subnetworks that can be used for creating clusters in a project. | 
@@ -283,7 +257,7 @@ Lists subnetworks that can be used for creating clusters in a project. |
 
 
 
-## REST Resource: [v1beta1. projects. locations](/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations)
+## REST Resource: [v1beta1.projects.locations](/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations)
 
 
 
@@ -443,7 +417,7 @@ Enables or disables the ABAC authorization mechanism on a cluster. |
 | 
 
 `[setLocations](/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters/setLocations) 
-(deprecated)**` | 
+**(deprecated)**` | 
 
 `POST /v1beta1/{name=projects/*/locations/*/clusters/*}:setLocations` 
 

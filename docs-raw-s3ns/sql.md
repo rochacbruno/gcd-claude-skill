@@ -120,11 +120,12 @@ Cloud SQL
 
 
 
-# Cloud SQL documentation 
+
+# Cloud SQL documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/sql/docs/introduction)
+Read product documentation 
 
 
 

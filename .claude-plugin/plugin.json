@@ -1,8 +1,8 @@
 {
   "name": "gcd",
-  "displayName": "Google Cloud Dedicated",
-  "version": "1.0.0",
-  "description": "Knowledge skill for Google Cloud sovereign cloud platforms (GCD Berlin, S3NS France). Provides guidance on region-specific services, authentication, Terraform, and key differences from public Google Cloud.",
+  "displayName": "Google Cloud Dedicated & S3NS Cloud de Confiance",
+  "version": "2.0.0",
+  "description": "Knowledge skill for Google Cloud sovereign cloud platforms: Google Cloud Dedicated (Berlin, u-germany-northeast1) and Cloud de Confiance by S3NS (France, u-france-east1). Provides comprehensive guidance on all 42 sovereign cloud services, ANSSI SecNumCloud 3.2 qualification statuses (PREMI3NS), authentication, Terraform, networking, and per-service differences from public Google Cloud.",
   "author": {
     "name": "Bruno Rocha",
     "url": "https://github.com/rochacbruno"
@@ -14,6 +14,9 @@
     "gcd",
     "cloud-de-confiance",
     "s3ns",
+    "secnumcloud",
+    "premi3ns",
+    "anssi",
     "sovereign-cloud",
     "google-cloud",
     "gcp",

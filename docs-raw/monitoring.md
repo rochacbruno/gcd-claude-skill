@@ -120,11 +120,12 @@ Cloud Monitoring
 
 
 
-# Cloud Monitoring documentation 
+
+# Cloud Monitoring documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/monitoring/docs/monitoring-overview)
+Read product documentation 
 
 
 

@@ -108,17 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Understand ongoing rollouts ](#understand_-_ongoing_rollouts)
-- [ View ongoing rollouts from the console ](#view_onging_rollouts_from_console)
-- [ View ongoing rollouts from the Cloud Quotas API ](#view_onging_rollouts_from_api)
-
-- [ Before you use the Cloud Quotas API ](#before_using_cloud_quotas_api)
-- [ Example API response during a ongoing rollout ](#example_api_response_during_a_ongoing_rollout)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -132,7 +121,7 @@ Cloud Quotas lets you view quota value rollouts that are in progress.
 This section explains how to view these rollouts from the Google Cloud Dedicated console
 and the Cloud Quotas API.
 
-## Understand ongoing rollouts 
+## Understand ongoing rollouts
 
 When another Google Cloud Dedicated in Germany service increases the default quota values for
 resources and APIs, these changes take place gradually. This might result in

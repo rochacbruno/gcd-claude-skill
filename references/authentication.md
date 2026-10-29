@@ -1,48 +1,42 @@
-# Authentication for Google Cloud Dedicated (GCD)
+# Authentication for Google Cloud Dedicated (GCD) & Cloud de Confiance (S3NS)
 
 ## Critical Difference: No Cloud Identity
 
-GCD does **not** use Google Cloud Identity for user management. Instead, all human user
-authentication is handled through **Workforce Identity Federation**, which lets you bring
-your own external identity provider (IdP). Supported IdPs include any provider that
-implements OpenID Connect (OIDC) or SAML 2.0 - for example, Google Workspace, Microsoft
-Entra ID, Active Directory Federation Services (AD FS), and Okta.
+Google Cloud Dedicated (GCD Berlin) and Cloud de Confiance (S3NS France) do **not** use Google Cloud Identity for user management. Instead, all human user authentication is handled through **Workforce Identity Federation**, which lets you bring your own external identity provider (IdP). Supported IdPs include any provider that implements OpenID Connect (OIDC) or SAML 2.0 — for example, Google Workspace, Microsoft Entra ID, Active Directory Federation Services (AD FS), and Okta.
 
-For programmatic (non-human) access, GCD uses **service accounts** managed by IAM, just
-like standard Google Cloud. For workloads running outside GCD, **Workload Identity
-Federation** enables authentication without service account keys.
+For programmatic (non-human) access, sovereign cloud environments use **service accounts** managed by IAM, just like standard Google Cloud. For workloads running outside the sovereign cloud, **Workload Identity Federation** enables authentication without service account keys.
 
 ### Principal types summary
 
 | Principal type | Use case |
 |---|---|
 | Workforce Identity Federation user | Human users signing in via an external IdP |
-| Service account | Programmatic/workload access within GCD |
-| Workload Identity Federation principal | Workloads running outside GCD (other clouds, on-prem) |
+| Service account | Programmatic/workload access within GCD or S3NS |
+| Workload Identity Federation principal | Workloads running outside GCD or S3NS (other clouds, on-prem) |
 
 ## Universe Domain Requirement
 
-GCD operates in its own universe domain. You **must** set the `GOOGLE_CLOUD_UNIVERSE_DOMAIN`
-environment variable before using client libraries or tools:
+Each sovereign cloud operates in its own universe domain. You **must** set the `GOOGLE_CLOUD_UNIVERSE_DOMAIN` environment variable before using client libraries or tools:
 
 ```bash
+# Berlin (GCD — Germany)
 export GOOGLE_CLOUD_UNIVERSE_DOMAIN="apis-berlin-build0.goog"
+
+# France (S3NS — Cloud de Confiance)
+export GOOGLE_CLOUD_UNIVERSE_DOMAIN="s3nsapis.fr"
 ```
 
-This tells client libraries and the gcloud CLI to route requests to the GCD-specific
-API endpoints instead of the public Google Cloud endpoints. Without this variable, API
-calls will fail or be routed incorrectly.
+This tells client libraries and the `gcloud` CLI to route requests to the universe-specific API endpoints instead of public Google Cloud endpoints (`googleapis.com`). Without this variable, API calls will fail or be routed incorrectly.
 
-The GCD console URL is `https://console.cloud.berlin-build0.goog/`.
+### Key Universe-Specific Endpoints
 
-### Key GCD-specific endpoints
-
-| Service | Endpoint |
-|---|---|
-| IAM Credentials | `https://iamcredentials.apis-berlin-build0.goog` |
-| Security Token Service (STS) | `https://sts.apis-berlin-build0.goog` |
-| Resource Manager | `https://cloudresourcemanager.apis-berlin-build0.goog` |
-| Service account email format | `NAME@PROJECT.eu0.iam.gserviceaccount.com` |
+| Service / Item | Berlin (GCD — Germany) | France (S3NS — Cloud de Confiance) |
+|---|---|---|
+| Console URL | `https://console.cloud.berlin-build0.goog/` | `https://console.cloud.s3nscloud.fr/` |
+| IAM Credentials | `https://iamcredentials.apis-berlin-build0.goog` | `https://iamcredentials.s3nsapis.fr` |
+| Security Token Service (STS) | `https://sts.apis-berlin-build0.goog` | `https://sts.s3nsapis.fr` |
+| Resource Manager | `https://cloudresourcemanager.apis-berlin-build0.goog` | `https://cloudresourcemanager.s3nsapis.fr` |
+| Service account email format | `NAME@PROJECT.eu0.iam.gserviceaccount.com` | `NAME@PROJECT.s3ns.iam.gserviceaccount.com` |
 
 ## Identity Provider Setup
 
@@ -50,62 +44,52 @@ Before any user can authenticate, an organization administrator must configure t
 
 ### Bootstrap process
 
-1. You receive a **bootstrap ID** from Google - a temporary identity from a special
-   GCD IdP that grants initial access.
-2. Sign in to the GCD console at `https://console.cloud.berlin-build0.goog/` with the
-   bootstrap ID.
-3. Grant the bootstrap ID the **IAM Workforce Pool Admin** role (it already has
-   Organization Administrator).
+1. You receive a **bootstrap ID** from your sovereign cloud operator — a temporary identity from a special IdP that grants initial access.
+2. Sign in to the console (`https://console.cloud.berlin-build0.goog/` for Berlin or `https://console.cloud.s3nscloud.fr/` for S3NS) with the bootstrap ID.
+3. Grant the bootstrap ID the **IAM Workforce Pool Admin** role (it already has Organization Administrator).
 4. Create a **workforce identity pool** under IAM > Workforce Identity Federation.
-5. Configure your IdP provider within the pool (OIDC or SAML 2.0). You **must** set the
-   `google.posix_username` attribute mapping (required for SSH):
+5. Configure your IdP provider within the pool (OIDC or SAML 2.0). You **must** set the `google.posix_username` attribute mapping (required for SSH):
 
-```
+```text
 google.subject = assertion.subject
 google.posix_username = assertion.attributes['username']
 google.groups = assertion.attributes['groups']
 ```
 
-6. Grant a user or group from your IdP the **Organization Administrator** and **IAM
-   Workforce Pool Admin** roles, using the principal format:
+6. Grant a user or group from your IdP the **Organization Administrator** and **IAM Workforce Pool Admin** roles, using the principal format:
 
-```
+```text
 principal://iam.googleapis.com/locations/global/workforcePools/POOL_ID/subject/USERNAME
 ```
 
 Or for a group:
 
-```
+```text
 principalSet://iam.googleapis.com/locations/global/workforcePools/POOL_ID/group/GROUP_EMAIL
 ```
 
-7. Sign out and sign back in with the new administrator identity. The bootstrap ID is
-   no longer needed.
+7. Sign out and sign back in with the new administrator identity. The bootstrap ID is no longer needed.
 
 ## Authentication Methods
 
 ### 1. gcloud CLI authentication
 
-Install the gcloud CLI, then sign in with your federated identity:
+Install the `gcloud` CLI and configure the universe domain, then sign in with your federated identity:
 
 ```bash
 # Sign in with Workforce Identity Federation credentials
 # Follow the provider-specific instructions for your IdP
-gcloud auth login
-
-# Initialize the CLI
-gcloud init
+gcloud auth login --login-config="LOGIN_CONFIG_FILE.json"
 ```
 
-After sign-in, all gcloud commands use the authenticated principal. You can generate
-access tokens for REST calls:
+After sign-in, all `gcloud` commands use the authenticated principal. You can generate access tokens for REST calls:
 
 ```bash
 # Print an access token for use in REST requests
 gcloud auth print-access-token
 ```
 
-For service account impersonation via gcloud:
+For service account impersonation via `gcloud`:
 
 ```bash
 # One-off command with impersonation
@@ -120,20 +104,15 @@ gcloud auth print-access-token --impersonate-service-account=SA_EMAIL
 
 ### 2. Application Default Credentials (ADC)
 
-ADC is the recommended strategy for authenticating client libraries automatically. ADC
-searches for credentials in this order:
+ADC is the recommended strategy for authenticating client libraries automatically. ADC searches for credentials in this order:
 
-1. **`GOOGLE_APPLICATION_CREDENTIALS` environment variable** - points to a credential
-   JSON file (Workforce Identity Federation config, Workload Identity Federation config,
-   or service account key).
-2. **Local ADC file** - created by `gcloud auth application-default login`, stored at:
+1. **`GOOGLE_APPLICATION_CREDENTIALS` environment variable** — points to a credential JSON file (Workforce Identity Federation config, Workload Identity Federation config, or service account key).
+2. **Local ADC file** — created by `gcloud auth application-default login`, stored at:
    - Linux/macOS: `$HOME/.config/gcloud/application_default_credentials.json`
    - Windows: `%APPDATA%\gcloud\application_default_credentials.json`
-3. **Attached service account** - retrieved from the metadata server when running on
-   GCD compute resources.
+3. **Attached service account** — retrieved from the metadata server when running on sovereign cloud compute resources.
 
-Important: gcloud credentials and ADC credentials are **separate**. Logging into gcloud
-does not automatically configure ADC.
+Important: `gcloud` credentials and ADC credentials are **separate**. Logging into `gcloud` does not automatically configure ADC.
 
 #### Set up ADC for local development
 
@@ -141,10 +120,10 @@ does not automatically configure ADC.
 
 ```bash
 # First, sign in to gcloud with your federated identity
-gcloud auth login
+gcloud auth login --login-config="LOGIN_CONFIG_FILE.json"
 
 # Then create ADC credentials
-gcloud auth application-default login
+gcloud auth application-default login --login-config="LOGIN_CONFIG_FILE.json"
 ```
 
 **Option B: Service account impersonation (recommended for consistent environments)**
@@ -155,8 +134,7 @@ Requires the `roles/iam.serviceAccountTokenCreator` role on the target service a
 gcloud auth application-default login --impersonate-service-account SERVICE_ACCT_EMAIL
 ```
 
-Supported languages for impersonation-based ADC: C#, C++, Go, Java, Node.js, PHP,
-Python, Ruby, Rust.
+Supported languages for impersonation-based ADC: C#, C++, Go, Java, Node.js, PHP, Python, Ruby, Rust.
 
 **Option C: Service account key (least recommended)**
 
@@ -164,13 +142,11 @@ Python, Ruby, Rust.
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
 ```
 
-Service account keys are persistent credentials and present a security risk if
-compromised. Prefer impersonation or attached service accounts instead.
+Service account keys are persistent credentials and present a security risk if compromised. Prefer impersonation or attached service accounts instead.
 
-#### Set up ADC for production (on GCD compute resources)
+#### Set up ADC for production (on GCD / S3NS compute resources)
 
-Attach a user-managed service account to the resource (Compute Engine VM, GKE pod, etc.).
-ADC automatically discovers credentials via the metadata server. Steps:
+Attach a user-managed service account to the resource (Compute Engine VM, GKE Autopilot pod via Workload Identity, Cloud Run service, etc.). ADC automatically discovers credentials via the metadata server. Steps:
 
 1. Create a user-managed service account.
 2. Grant it the minimum necessary IAM roles (principle of least privilege).
@@ -178,16 +154,15 @@ ADC automatically discovers credentials via the metadata server. Steps:
 
 ### 3. Client library authentication
 
-Client libraries automatically use ADC. Set up ADC for your environment, set
-`GOOGLE_CLOUD_UNIVERSE_DOMAIN`, install the relevant client library, then create a
-client with no explicit credentials:
+Client libraries automatically use ADC. Set up ADC for your environment, set `GOOGLE_CLOUD_UNIVERSE_DOMAIN` (`apis-berlin-build0.goog` or `s3nsapis.fr`), install the relevant client library, then create a client with no explicit credentials:
 
 **Python example:**
 
 ```python
 from google.cloud import storage
 
-storage_client = storage.Client(project="your-project-id")
+# Project ID includes universe prefix (e.g. "s3ns:my-project" or "eu0:my-project")
+storage_client = storage.Client(project="s3ns:your-project-id")
 buckets = storage_client.list_buckets()
 for bucket in buckets:
     print(bucket.name)
@@ -218,9 +193,15 @@ The client library handles token acquisition and refresh automatically.
 **Using gcloud credentials:**
 
 ```bash
+# Berlin (GCD)
 curl -X GET \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
   "https://cloudresourcemanager.apis-berlin-build0.goog/v3/projects/PROJECT_ID"
+
+# France (S3NS)
+curl -X GET \
+  -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+  "https://cloudresourcemanager.s3nsapis.fr/v3/projects/PROJECT_ID"
 ```
 
 **Using ADC credentials:**
@@ -228,20 +209,20 @@ curl -X GET \
 ```bash
 curl -X GET \
   -H "Authorization: Bearer $(gcloud auth application-default print-access-token)" \
-  "https://cloudresourcemanager.apis-berlin-build0.goog/v3/projects/PROJECT_ID"
+  "https://cloudresourcemanager.s3nsapis.fr/v3/projects/PROJECT_ID"
 ```
 
-**Using the metadata server (from GCD compute resources):**
+**Using the metadata server (from GCD / S3NS compute resources):**
 
 ```bash
 # Get token from metadata server
 curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token" \
   -H "Metadata-Flavor: Google"
 
-# Use token in request
+# Use token in request (replace s3nsapis.fr with apis-berlin-build0.goog on Berlin)
 curl -X GET \
   -H "Authorization: Bearer ACCESS_TOKEN" \
-  "https://cloudresourcemanager.apis-berlin-build0.goog/v3/projects/PROJECT_ID"
+  "https://cloudresourcemanager.s3nsapis.fr/v3/projects/PROJECT_ID"
 ```
 
 If an API requires a quota project, include the `x-goog-user-project` header:
@@ -252,88 +233,73 @@ If an API requires a quota project, include the `x-goog-user-project` header:
 
 ## Service Account Impersonation
 
-Service account impersonation lets an authenticated principal (user or another service
-account) request short-lived credentials for a target service account. This is more secure
-than service account keys because credentials are temporary and require prior
-authentication.
+Service account impersonation lets an authenticated principal (user or another service account) request short-lived credentials for a target service account. This is more secure than service account keys because credentials are temporary and require prior authentication.
 
 ### Prerequisites
 
 - Enable the **Service Account Credentials API** (`iamcredentials.googleapis.com`).
-- The calling principal needs the **Service Account Token Creator** role
-  (`roles/iam.serviceAccountTokenCreator`) on the target service account. This is
-  required even if the caller has the Owner role.
+- The calling principal needs the **Service Account Token Creator** role (`roles/iam.serviceAccountTokenCreator`) on the target service account. This is required even if the caller has the Owner role.
 
 ### Methods
 
-- **gcloud flag**: `--impersonate-service-account=SA_EMAIL` on any gcloud command.
+- **gcloud flag**: `--impersonate-service-account=SA_EMAIL` on any `gcloud` command.
 - **gcloud default config**: `gcloud config set auth/impersonate_service_account SA_EMAIL`.
 - **ADC with impersonation**: `gcloud auth application-default login --impersonate-service-account SA_EMAIL`.
-- **Programmatic**: Use the IAM Credentials API to generate short-lived tokens directly.
+- **Programmatic**: Use the IAM Credentials API (`iamcredentials.apis-berlin-build0.goog` or `iamcredentials.s3nsapis.fr`) to generate short-lived tokens directly.
 
 ## Token Types
 
-GCD uses several token types:
+Sovereign cloud environments use several token types:
 
 | Token | Lifetime | Use |
 |---|---|---|
-| Service account access token | 5 min - 12 hours (default 1 hour) | Authenticate API calls with a service account |
+| Service account access token | 5 min – 12 hours (default 1 hour) | Authenticate API calls with a service account |
 | Service account JWT | Up to 1 hour | Self-signed token, no authorization server needed |
 | Federated access token | Up to 1 hour (workforce) or matches external token (workload) | Authenticate workforce/workload identity pool principals |
-| ID token | 1 hour | Identify users, service-to-service auth |
+| ID token | 1 hour | Identify users, service-to-service auth (e.g., Cloud Run) |
 
-All access tokens are short-lived bearer tokens. They cannot be revoked and remain valid
-until expiry.
+All access tokens are short-lived bearer tokens. They cannot be revoked and remain valid until expiry.
 
 ## Security Considerations
 
 ### Multi-factor authentication (MFA / 2SV)
 
-GCD requires 2-step verification (2SV) for console access. If your organization uses a
-third-party IdP, you can use the 2SV mechanism provided by that IdP. 2SV enforcement
-does not directly affect service accounts, but affects users impersonating service
-accounts.
+GCD and S3NS require 2-step verification (2SV) for console access. If your organization uses a third-party IdP, you can use the 2SV mechanism provided by that IdP. 2SV enforcement does not directly affect service accounts, but affects users impersonating service accounts.
 
 ### Reauthentication
 
-- Google Workspace session length can be configured by administrators. When sessions
-  expire, ADC credentials also expire and must be refreshed with
-  `gcloud auth application-default login`.
-- Sensitive actions (billing changes, IAM policy changes at org/folder/project level)
-  require reauthentication if more than 15 minutes have elapsed. This applies only to
-  Google-managed accounts - users federated via Workforce Identity Federation are exempt.
+- Identity provider session length can be configured by administrators. When sessions expire, ADC credentials also expire and must be refreshed with `gcloud auth application-default login`.
+- Sensitive actions (billing changes, IAM policy changes at org/folder/project level) require reauthentication if more than 15 minutes have elapsed. This applies only to Google-managed accounts — users federated via Workforce Identity Federation are exempt.
 
 ### Credential validation for external sources
 
-When accepting credential configurations from external sources, validate these fields:
+When accepting credential configurations from external sources, validate these fields against your target universe:
 
-| Field | Expected value |
-|---|---|
-| `service_account_impersonation_url` | `https://iamcredentials.apis-berlin-build0.goog/v1/projects/-/serviceAccounts/SA_EMAIL:generateAccessToken` |
-| `token_url` | `https://sts.apis-berlin-build0.goog/v1/token` |
+| Field | Expected value (Berlin GCD) | Expected value (France S3NS) |
+|---|---|---|
+| `universe_domain` | `apis-berlin-build0.goog` | `s3nsapis.fr` |
+| `service_account_impersonation_url` | `https://iamcredentials.apis-berlin-build0.goog/v1/projects/-/serviceAccounts/SA_EMAIL:generateAccessToken` | `https://iamcredentials.s3nsapis.fr/v1/projects/-/serviceAccounts/SA_EMAIL:generateAccessToken` |
+| `token_url` | `https://sts.apis-berlin-build0.goog/v1/token` | `https://sts.s3nsapis.fr/v1/token` |
 
-For service account keys from external sources, use type-specific credential loaders
-(e.g., `ServiceAccountCredentials.fromStream()` in Java) rather than generic loaders, and
-verify the `type` field equals `service_account`.
+For service account keys from external sources, use type-specific credential loaders (e.g., `ServiceAccountCredentials.fromStream()` in Java) rather than generic loaders, and verify the `type` field equals `service_account`.
 
 ## Quick Reference: Environment Variables
 
 | Variable | Purpose |
 |---|---|
-| `GOOGLE_CLOUD_UNIVERSE_DOMAIN` | **Required.** Set to `apis-berlin-build0.goog` |
+| `GOOGLE_CLOUD_UNIVERSE_DOMAIN` | **Required.** Set to `apis-berlin-build0.goog` (Berlin) or `s3nsapis.fr` (S3NS) |
 | `GOOGLE_APPLICATION_CREDENTIALS` | Path to a credential JSON file for ADC |
 | `GOOGLE_EXTERNAL_ACCOUNT_ALLOW_EXECUTABLES` | Set to `1` to allow executable-based credential sources |
 
 ## Decision Tree: Choosing an Authentication Method
 
-1. **Running on a GCD compute resource?**
-   - On GKE: Use Workload Identity Federation for GKE.
-   - On other GCD resources (Compute Engine, etc.): Attach a service account.
+1. **Running on a GCD / S3NS compute resource?**
+   - On GKE Autopilot: Use Workload Identity Federation for GKE.
+   - On Compute Engine or Cloud Run: Attach a user-managed service account.
 2. **Local development, no service account needed?**
-   - Use `gcloud auth application-default login` with your Workforce Identity Federation
-     credentials.
+   - Use `gcloud auth application-default login` with your Workforce Identity Federation credentials.
 3. **Local development, service account needed for consistency?**
    - Use `gcloud auth application-default login --impersonate-service-account SA_EMAIL`.
-4. **Workload running outside GCD (other cloud, on-prem)?**
+4. **Workload running outside GCD / S3NS (other cloud, on-prem)?**
    - Supports workload identity federation? Configure Workload Identity Federation.
    - Does not support federation? Create a service account key (last resort).

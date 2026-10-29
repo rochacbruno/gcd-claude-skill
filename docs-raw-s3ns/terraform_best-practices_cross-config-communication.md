@@ -128,10 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ What's next ](#whats-next)
-- 
-
 
 
 

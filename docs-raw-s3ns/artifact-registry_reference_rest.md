@@ -128,35 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: artifactregistry.googleapis.com ](#service:-artifactregistry.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-- [ Regional service endpoint ](#regional-service-endpoint)
-
-- [ REST Resource: v1.projects ](#rest-resource:-v1.projects)
-- [ REST Resource: v1.projects.locations ](#rest-resource:-v1.projects.locations)
-- [ REST Resource: v1.projects.locations.operations ](#rest-resource:-v1.projects.locations.operations)
-- [ REST Resource: v1.projects.locations.repositories ](#rest-resource:-v1.projects.locations.repositories)
-- [ REST Resource: v1.projects.locations.repositories.aptArtifacts ](#rest-resource:-v1.projects.locations.repositories.aptartifacts)
-- [ REST Resource: v1.projects.locations.repositories.attachments ](#rest-resource:-v1.projects.locations.repositories.attachments)
-- [ REST Resource: v1.projects.locations.repositories.dockerImages ](#rest-resource:-v1.projects.locations.repositories.dockerimages)
-- [ REST Resource: v1.projects.locations.repositories.files ](#rest-resource:-v1.projects.locations.repositories.files)
-- [ REST Resource: v1.projects.locations.repositories.genericArtifacts ](#rest-resource:-v1.projects.locations.repositories.genericartifacts)
-- [ REST Resource: v1.projects.locations.repositories.goModules ](#rest-resource:-v1.projects.locations.repositories.gomodules)
-- [ REST Resource: v1.projects.locations.repositories.googetArtifacts ](#rest-resource:-v1.projects.locations.repositories.googetartifacts)
-- [ REST Resource: v1.projects.locations.repositories.kfpArtifacts ](#rest-resource:-v1.projects.locations.repositories.kfpartifacts)
-- [ REST Resource: v1.projects.locations.repositories.mavenArtifacts ](#rest-resource:-v1.projects.locations.repositories.mavenartifacts)
-- [ REST Resource: v1.projects.locations.repositories.npmPackages ](#rest-resource:-v1.projects.locations.repositories.npmpackages)
-- [ REST Resource: v1.projects.locations.repositories.packages ](#rest-resource:-v1.projects.locations.repositories.packages)
-- [ REST Resource: v1.projects.locations.repositories.packages.tags ](#rest-resource:-v1.projects.locations.repositories.packages.tags)
-- [ REST Resource: v1.projects.locations.repositories.packages.versions ](#rest-resource:-v1.projects.locations.repositories.packages.versions)
-- [ REST Resource: v1.projects.locations.repositories.pythonPackages ](#rest-resource:-v1.projects.locations.repositories.pythonpackages)
-- [ REST Resource: v1.projects.locations.repositories.rules ](#rest-resource:-v1.projects.locations.repositories.rules)
-- [ REST Resource: v1.projects.locations.repositories.yumArtifacts ](#rest-resource:-v1.projects.locations.repositories.yumartifacts)
-- 
-
 
 
 
@@ -218,7 +189,7 @@ Store and manage build artifacts in a scalable and integrated service built on C
 
 
 
-## Service: artifactregistry. googleapis. com 
+## Service: artifactregistry.googleapis.com
 
 
 
@@ -226,7 +197,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -260,8 +231,7 @@ A [service endpoint](https://documentation.s3ns.fr/apis/design/glossary#api_serv
 
 
 
-A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-global 
+A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. global 
 
 - `https://artifactregistry.s3nsapis.fr` 
 
@@ -269,7 +239,7 @@ global
 
 
 
-## REST Resource: [v1. projects](/artifact-registry/docs/reference/rest/v1/projects)
+## REST Resource: [v1.projects](/artifact-registry/docs/reference/rest/v1/projects)
 
 
 
@@ -287,7 +257,7 @@ Methods |
 
 | 
 
-`[get Project Settings](/artifact-registry/docs/reference/rest/v1/projects/getProjectSettings)` | 
+`[getProjectSettings](/artifact-registry/docs/reference/rest/v1/projects/getProjectSettings)` | 
 
 The method `google.devtools.artifactregistry.v1.ArtifactRegistry.GetProjectSettings` is not available in Cloud de Confiance by S3NS. | 
 |

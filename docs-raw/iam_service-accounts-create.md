@@ -128,15 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#permissions)
-
-- [ Create a service account ](#creating)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -150,7 +141,7 @@ This page explains how to create service accounts using the
 Identity and Access Management (IAM) API, the Google Cloud Dedicated console, and the `gcloud` command-
 line tool.
 
-## Before you begin 
+## Before you begin
 
 - 
 
@@ -164,8 +155,7 @@ Enable the IAM API, if it is not already enabled.
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -205,11 +195,9 @@ Select the tab for how you plan to use the samples on this page:
 
 
 
-[Console](#console) [gcloud](#gcloud) [C#](#c) [C++](#c++) [Go](#go) [Java](#java) [Python](#python) [REST](#rest) 
-**More 
 
 
-
+### Console
 
 
 
@@ -227,6 +215,8 @@ APIs, you don't need to set up authentication.
 
 
 
+
+### gcloud
 
 
 
@@ -294,6 +284,8 @@ gcloud init
 
 
 
+
+### C#
 
 
 
@@ -413,6 +405,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### C++
 
 
 
@@ -534,6 +528,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### Go
+
 
 
 
@@ -652,6 +648,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### Java
 
 
 
@@ -778,6 +776,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### Python
+
 
 
 
@@ -903,6 +903,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### REST
 
 
 
@@ -1090,19 +1092,17 @@ Google Cloud Dedicated console](/docs/quotas/view-manage#viewing_your_quota_cons
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
+
+
+
+### Console
 
 
 
 
 
 
-
-
-
-
-- In the Google Cloud Dedicated console, go to the Create service account** page.
+- In the Google Cloud Dedicated console, go to the **Create service account** page.
 
 
 
@@ -1172,6 +1172,8 @@ the next step.
 
 
 
+### gcloud 
+
 
 
 
@@ -1216,7 +1218,7 @@ To create the service account, run the
 
 
 ```
-gcloud iam service-accounts create ** SERVICE_ACCOUNT_NAME \ 
+gcloud iam service-accounts create SERVICE_ACCOUNT_NAME \ 
 --description = " DESCRIPTION " \ 
 --display-name = " DISPLAY_NAME " 
 ```
@@ -1391,6 +1393,8 @@ user
 
 
 
+### C++ 
+
 
 
 
@@ -1514,6 +1518,8 @@ response - > DebugString () " \n " ;
 
 
 
+
+### C# 
 
 
 
@@ -1656,6 +1662,8 @@ return serviceAccount ;
 
 
 
+### Go 
+
 
 
 
@@ -1795,6 +1803,8 @@ return account , nil
 
 
 
+
+### Java 
 
 
 
@@ -1943,6 +1953,8 @@ return serviceAccount ;
 
 
 
+### Python 
+
 
 
 
@@ -2073,6 +2085,8 @@ return account
 
 
 
+### REST 
+
 
 
 
@@ -2144,9 +2158,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -2209,9 +2222,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -2296,9 +2308,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -2309,7 +2320,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 

@@ -128,20 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: essentialcontacts.googleapis.com ](#service:-essentialcontacts.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v1beta1.folders.contacts ](#rest-resource:-v1beta1.folders.contacts)
-- [ REST Resource: v1beta1.organizations.contacts ](#rest-resource:-v1beta1.organizations.contacts)
-- [ REST Resource: v1beta1.projects.contacts ](#rest-resource:-v1beta1.projects.contacts)
-- [ REST Resource: v1.folders.contacts ](#rest-resource:-v1.folders.contacts)
-- [ REST Resource: v1.organizations.contacts ](#rest-resource:-v1.organizations.contacts)
-- [ REST Resource: v1.projects.contacts ](#rest-resource:-v1.projects.contacts)
-- 
-
 
 
 
@@ -172,11 +158,11 @@ Reference
 
 
 
-## Service: essentialcontacts. googleapis. com 
+## Service: essentialcontacts.googleapis.com
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -209,7 +195,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 
-## REST Resource: [v1beta1. folders. contacts](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts)
+## REST Resource: [v1beta1.folders.contacts](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts)
 
 
 
@@ -229,35 +215,35 @@ Methods |
 
 `[compute](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts/compute)` | 
 
-The method `google. cloud. essentialcontacts. v1beta1. Essential Contacts Service. Compute Contacts` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.cloud.essentialcontacts.v1beta1.EssentialContactsService.ComputeContacts` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
 
 `[create](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts/create)` | 
 
-The method `google. cloud. essentialcontacts. v1beta1. Essential Contacts Service. Create Contact` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.cloud.essentialcontacts.v1beta1.EssentialContactsService.CreateContact` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
 
 `[delete](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts/delete)` | 
 
-The method `google. cloud. essentialcontacts. v1beta1. Essential Contacts Service. Delete Contact` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.cloud.essentialcontacts.v1beta1.EssentialContactsService.DeleteContact` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
 
 `[get](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts/get)` | 
 
-The method `google. cloud. essentialcontacts. v1beta1. Essential Contacts Service. Get Contact` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.cloud.essentialcontacts.v1beta1.EssentialContactsService.GetContact` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
 
 `[list](/resource-manager/docs/reference/essentialcontacts/rest/v1beta1/folders.contacts/list)` | 
 
-The method `google. cloud. essentialcontacts. v1beta1. Essential Contacts Service. List Contacts` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.cloud.essentialcontacts.v1beta1.EssentialContactsService.ListContacts` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 

@@ -120,11 +120,12 @@ Cloud KMS
 
 
 
-# Cloud Key Management Service documentation 
+
+# Cloud Key Management Service documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/kms/docs/key-management-service)
+Read product documentation 
 
 
 

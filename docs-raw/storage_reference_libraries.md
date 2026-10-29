@@ -128,16 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Install the client library ](#install)
-- [ Set up authentication ](#authentication)
-- [ Use the client library ](#use)
-- [ Authentication options ](#auth-options)
-- [ Using the client library with Cloud Shell Editor ](#cloud-shell-editor)
-- [ More examples ](#more_examples)
-- [ Additional resources ](#resources)
-- 
-
 
 
 
@@ -162,7 +152,7 @@ and the older Google API Client Libraries in
 
 
 
-## Install the client library 
+## Install the client library
 
 
 
@@ -178,12 +168,10 @@ and the older Google API Client Libraries in
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -225,6 +213,8 @@ see [Setting up a C++ development environment](/cpp/docs/setup).
 
 
 
+
+### C# 
 
 
 
@@ -285,6 +275,8 @@ For more information, see [Setting Up a C# Development Environment](/dotnet/docs
 
 
 
+### Go 
+
 
 
 
@@ -332,6 +324,8 @@ For more information, see [Setting Up a Go Development Environment](/go/docs/set
 
 
 
+
+### Java 
 
 
 
@@ -509,6 +503,8 @@ For more information, see [Setting Up a Java Development Environment](/java/docs
 
 
 
+### Node.js 
+
 
 
 
@@ -555,6 +551,8 @@ For more information, see [Setting Up a Node.js Development Environment](/nodejs
 
 
 
+
+### PHP 
 
 
 
@@ -603,6 +601,8 @@ For more information, see [Using PHP on Google Cloud](/php/docs).
 
 
 
+
+### Python 
 
 
 
@@ -653,6 +653,8 @@ For more information, see [Setting Up a Python Development Environment](/python/
 
 
 
+
+### Ruby 
 
 
 
@@ -831,12 +833,10 @@ The following example shows how to use the client library.
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -928,6 +928,8 @@ std :: cout "Created bucket " metadata - > name () " \n " ;
 
 
 
+### C# 
+
 
 
 
@@ -1010,6 +1012,8 @@ return bucket ;
 
 
 
+
+### Go 
 
 
 
@@ -1119,6 +1123,8 @@ fmt . Printf ( "Bucket %v created.\n" , bucketName )
 
 
 
+### Java 
+
 
 
 
@@ -1206,6 +1212,8 @@ System . out . printf ( "Bucket %s created.%n" , bucket . getName ());
 
 
 
+
+### Node.js 
 
 
 
@@ -1299,6 +1307,8 @@ createBucket (). catch ( console . error );
 
 
 
+### PHP 
+
 
 
 
@@ -1388,6 +1398,8 @@ echo 'Bucket ' . $bucket->name() . ' created.';
 
 
 
+### Python 
+
 
 
 
@@ -1469,6 +1481,8 @@ print ( f "Bucket { bucket . name } created." )
 
 
 
+### Ruby 
+
 
 
 
@@ -1549,11 +1563,8 @@ If you want to authenticate dynamically or by using in-memory keys, pass a custo
 ## Using the client library with Cloud Shell Editor
 
 
-[Go](#go) [Java](#java) [Node.js](#node.js) [Python](#python) 
-More 
 
-
-
+### Go
 
 
 
@@ -1562,7 +1573,7 @@ For step-by-step guidance on running a client library in Cloud Shell Editor:
 
 - 
 
-Click Guide me**.
+Click **Guide me**.
 
 
 - 
@@ -1573,6 +1584,7 @@ You see a panel **Learn**. Click **Start** to follow the tutorial.
 
 
 
+### Java
 
 
 
@@ -1592,6 +1604,7 @@ You see a panel **Learn**. Click **Start** to follow the tutorial.
 
 
 
+### Node.js
 
 
 
@@ -1611,6 +1624,7 @@ You see a panel **Learn**. Click **Start** to follow the tutorial.
 
 
 
+### Python
 
 
 
@@ -1660,12 +1674,10 @@ following guides:
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -1717,6 +1729,8 @@ client library for C++:
 
 
 
+### C# 
+
 
 
 
@@ -1765,6 +1779,8 @@ client library for C#:
 
 
 
+
+### Go 
 
 
 
@@ -1816,6 +1832,7 @@ client library for Go:
 
 
 
+### Java 
 
 
 
@@ -1867,6 +1884,7 @@ client library for Java:
 
 
 
+### Node.js 
 
 
 
@@ -1917,6 +1935,7 @@ client library for Node.js:
 
 
 
+### PHP 
 
 
 
@@ -1968,6 +1987,7 @@ client library for PHP:
 
 
 
+### Python 
 
 
 
@@ -2019,6 +2039,7 @@ client library for Python:
 
 
 
+### Ruby 
 
 
 

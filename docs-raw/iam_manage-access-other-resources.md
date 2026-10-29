@@ -128,27 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required-permissions)
-
-- [ View current access ](#view-access)
-- [ Grant or revoke a single IAM role ](#single-role)
-
-- [ Grant a single IAM role ](#grant-single-role)
-- [ Revoke a single IAM role ](#revoke-single-role)
-
-- [ Grant or revoke multiple IAM roles using Google Cloud Dedicated console ](#multiple-roles-console)
-- [ Grant or revoke multiple IAM roles programmatically ](#multiple-roles-programmatic)
-
-- [ Get the current allow policy ](#getting-policy)
-- [ Modify the allow policy ](#modifying-policy)
-- [ Set the allow policy ](#setting-policy)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -233,12 +212,10 @@ libraries to get the resource's allow policy.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -303,6 +280,8 @@ resource hierarchy](/iam/docs/allow-policies#inheritance).
 
 
 
+
+### gcloud 
 
 
 
@@ -376,6 +355,8 @@ console or exported to the specified file.
 
 
 
+
+### REST 
 
 
 
@@ -453,12 +434,10 @@ To grant a single role to a principal, do the following:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -508,7 +487,7 @@ principal**, then enter an identifier for the principal—for example,
 
 - 
 
-Click Select a role**, then enter the name of a role or permission to filter for a role to grant.
+Click **Select a role**, then enter the name of a role or permission to filter for a role to grant.
 To follow the principle of least privilege, choose a role that includes only the permissions that
 your principal needs.
 
@@ -552,6 +531,8 @@ Click **Save**. The principal is granted the role on the resource.
 
 
 
+
+### gcloud 
 
 
 
@@ -607,12 +588,10 @@ To revoke a single role from a principal, do the following:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -681,6 +660,8 @@ the role that you want to revoke, and then click **Save**.
 
 
 
+
+### gcloud 
 
 
 
@@ -766,7 +747,7 @@ identifier for the principal—for example, `//iam.googleapis.com/locations/glob
 Modify the principal's roles:
 
 - To grant a role to a principal who doesn't have any existing roles on the resource, click
-Select a role**, then filter for a role to grant.
+**Select a role**, then filter for a role to grant.
 
 - To grant an additional role to the principal, click **Add another role**, then
 filter for a role to grant.
@@ -823,12 +804,10 @@ can take 7 minutes or more for changes to propagate across the system.
 
 
 
-[ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -898,6 +877,8 @@ console or exported to the specified file.
 
 
 
+
+### REST 
 
 
 
@@ -1031,12 +1012,10 @@ to an existing role binding:
 
 
 
-[ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -1110,6 +1089,8 @@ existing role binding:
 
 
 
+
+### REST 
 
 
 
@@ -1187,12 +1168,10 @@ binding:
 
 
 
-[ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -1250,6 +1229,8 @@ role binding to the `bindings` array for the allow policy:
 
 
 
+
+### REST 
 
 
 
@@ -1314,12 +1295,10 @@ other principals in the role binding, remove the entire role binding.
 
 
 
-[ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -1365,6 +1344,8 @@ from the `bindings` array for the allow policy.
 
 
 
+
+### REST 
 
 
 
@@ -1417,12 +1398,10 @@ After you modify the allow policy to grant and revoke the desired roles, call
 
 
 
-[ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -1475,6 +1454,8 @@ updated allow policy.
 
 
 
+
+### REST 
 
 
 

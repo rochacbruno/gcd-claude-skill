@@ -128,51 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Overview ](#gpu-models)
-- [ A4X Max and A4X machine series ](#a4x-series)
-
-- [ A4X Max machine types (NVIDIA GB300) ](#gb300-gpus)
-- [ A4X machine type (NVIDIA GB200) ](#gb200-gpus)
-
-- [ A4 machine series (NVIDIA B200) ](#b200-gpus)
-
-- [ A4 machine type notes ](#a4_machine_type_notes)
-
-- [ A3 machine series ](#a3-series)
-
-- [ A3 Ultra machine type (NVIDIA H200) ](#h200-gpus)
-- [ A3 Mega, High, and Edge machine types (NVIDIA H100) ](#h100-gpus)
-
-- [ A2 machine series (NVIDIA A100) ](#a100-gpus)
-
-- [ A2 machine type notes ](#a2_machine_type_notes)
-
-- [ G4 machine series (NVIDIA RTX PRO 6000) ](#rtx-6000-gpus)
-
-- [ G4 machine type notes ](#g4_machine_type_notes)
-
-- [ G2 machine series (NVIDIA L4) ](#l4-gpus)
-
-- [ G2 machine type notes ](#g2_machine_type_notes)
-
-- [ N1 machine series ](#n1-gpus)
-
-- [ N1+T4 GPUs ](#t4-gpus)
-- [ N1+P4 GPUs ](#p4-gpus)
-- [ N1+V100 GPUs ](#v100-gpus)
-- [ Maintenance experience for N1 instances with GPUs ](#n1-maintenance)
-
-- [ General comparison chart ](#general-comp)
-- [ Tensor Core and standard CUDA core performance ](#cuda-tensor-performance)
-
-- [ Blackwell architecture ](#blackwell-architecture)
-- [ Hopper, Ada Lovelace, and Ampere architectures ](#hopper-ada-ampere-arch)
-- [ Volta, Pascal, and Turing architectures ](#volta-pascal-turing)
-
-- [ What's next? ](#whats_next)
-- 
-
 
 
 
@@ -246,7 +201,7 @@ Other GPU workloads |
 
 | 
 
-Accelerator-optimized A series machine types** are designed for high
+**Accelerator-optimized A series machine types** are designed for high
 performance computing (HPC), artificial intelligence (AI), and machine
 learning (ML) workloads.
 
@@ -653,11 +608,9 @@ To use [NVIDIA H100 SXM GPUs](https://www.nvidia.com/en-us/data-center/h100/), y
 
 
 
-[A3 Mega](#a3-mega) [A3 High](#a3-high) [A3 Edge](#a3-edge) 
-**More 
 
 
-
+### A3 Mega
 
 
 
@@ -694,6 +647,8 @@ GPU memory (GB HBM3) |
 
 
 
+
+### A3 High
 
 
 
@@ -764,6 +719,8 @@ GPU memory (GB HBM3) |
 
 
 
+### A3 Edge
+
 
 
 
@@ -806,7 +763,7 @@ GPU memory (GB HBM3) |
 The following notes apply to the preceding table:
 
 
-- vCPU count**: a vCPU is implemented as a single hardware hyper-thread on one of
+- **vCPU count**: a vCPU is implemented as a single hardware hyper-thread on one of
 the available [CPU platforms](/compute/docs/cpu-platforms).
 
 - **Maximum network bandwidth**: maximum egress bandwidth can't exceed the number given. Actual
@@ -839,11 +796,9 @@ you can attach, see
 
 
 
-[A2 Ultra](#a2-ultra) [A2 Standard](#a2-standard) 
-**More 
 
 
-
+### A2 Ultra
 
 
 
@@ -907,6 +862,8 @@ GPU memory (GB HBM2e) |
 
 
 
+
+### A2 Standard
 
 
 
@@ -987,7 +944,7 @@ Yes |
 The following notes apply to the preceding table:
 
 
-- vCPU count**: a vCPU is implemented as a single hardware hyper-thread on one of
+- **vCPU count**: a vCPU is implemented as a single hardware hyper-thread on one of
 the available [CPU platforms](/compute/docs/cpu-platforms).
 
 - **Maximum network bandwidth**: maximum egress bandwidth can't exceed the number given. Actual
@@ -1761,11 +1718,9 @@ The A4X Max, A4X, A4, and G4 machine types run on NVIDIA's
 
 
 
-[Tensor Core](#tensor-core) [Standard CUDA cores](#standard-cuda-cores) 
-**More 
 
 
-
+### Tensor Core
 
 NVIDIA's Blackwell architecture, used by these machine types,
 introduces Tensor Core support for FP4 precision and expanded INT4
@@ -1775,7 +1730,7 @@ In the following table, `N/A` indicates that the metric is not
 applicable or not available for this GPU model. The following notes also apply:
 
 
-- TF32, Mixed FP16/32, INT8, FP8, and FP4**: the Blackwell architecture supports [structural sparsity](https://developer.nvidia.com/blog/structured-sparsity-in-the-nvidia-ampere-architecture-and-applications-in-search-engines/) for these precision metrics, which can double computational throughput. The performance values in this table assume dense matrix multiplication. If you use structural sparsity, performance is doubled.
+- **TF32, Mixed FP16/32, INT8, FP8, and FP4**: the Blackwell architecture supports [structural sparsity](https://developer.nvidia.com/blog/structured-sparsity-in-the-nvidia-ampere-architecture-and-applications-in-search-engines/) for these precision metrics, which can double computational throughput. The performance values in this table assume dense matrix multiplication. If you use structural sparsity, performance is doubled.
 
 - **Mixed FP16/32**: for mixed-precision training, GPUs that run on the Blackwell architecture also support the `bfloat16` data type.
 
@@ -1836,6 +1791,8 @@ N/A |
 
 
 
+
+### Standard CUDA cores
 
 The machine types that use the Blackwell architecture
 provide high-performance FP64 and FP32 operations for demanding HPC and AI workloads.
@@ -1909,11 +1866,9 @@ video transcoding, and graphics workloads.
 
 
 
-[Tensor Core](#tensor-core) [Standard CUDA cores](#standard-cuda-cores) 
-**More 
 
 
-
+### Tensor Core
 
 The Hopper, Ada Lovelace, and Ampere architectures, feature advanced Tensor
 Cores that accelerate TF32, FP16, FP8, and INT8 data types, providing high
@@ -1923,7 +1878,7 @@ In the following table, `N/A` indicates that the metric is not applicable or
 not available for this GPU model. The following notes also apply:
 
 
-- TF32, Mixed FP16/32, INT8, and FP8**: the Hopper, Ada Lovelace, and Ampere architectures support [structural sparsity](https://developer.nvidia.com/blog/structured-sparsity-in-the-nvidia-ampere-architecture-and-applications-in-search-engines/) for these precision metrics (and INT4), which can double computational throughput. The performance values in this table assume dense matrix multiplication. If you use structural sparsity, performance is doubled.
+- **TF32, Mixed FP16/32, INT8, and FP8**: the Hopper, Ada Lovelace, and Ampere architectures support [structural sparsity](https://developer.nvidia.com/blog/structured-sparsity-in-the-nvidia-ampere-architecture-and-applications-in-search-engines/) for these precision metrics (and INT4), which can double computational throughput. The performance values in this table assume dense matrix multiplication. If you use structural sparsity, performance is doubled.
 
 - **Mixed FP16/32**: for mixed-precision training, NVIDIA H200, H100, A100, and L4 GPUs also support the `bfloat16` data type.
 
@@ -1989,6 +1944,8 @@ N/A |
 
 
 
+### Standard CUDA cores
+
 The machine types that use the Hopper, Ada Lovelace, and Ampere architectures
 provide high-performance FP64 and FP32 operations for demanding HPC and AI workloads.
 
@@ -2052,11 +2009,9 @@ The N1 machine types use the following GPU architectures:
 
 
 
-[Tensor Core](#tensor-core) [Standard CUDA cores](#standard-cuda-cores) 
-More 
 
 
-
+### Tensor Core
 
 NVIDIA's Turing and Volta architectures, available on N1 instances, provide
 Tensor Core support for mixed-precision, INT8, and INT4 operations, offering
@@ -2098,6 +2053,8 @@ N1 (T4) |
 
 
 
+
+### Standard CUDA cores
 
 The machine types that use the Volta, Pascal, and Turing architectures are
 equipped with FP64 and FP32 CUDA cores to accelerate a range of HPC and AI

@@ -108,21 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Exceeding rate quotas ](#exceeding_rate_quotas)
-- [ Exceeding quota values ](#exceeding-quota-values)
-- [ Exceeding quota values during a service rollout ](#exceeding_quota_values_during_a_service_rollout)
-- [ Exceeding project quota ](#exceeding_project_quota)
-- [ API error messages ](#api_error_messages)
-- [ Google Cloud CLI errors ](#gcloud_cli_errors)
-
-- [ Install and initialize ](#install_and_initialize)
-- [ Set your quota project ](#set_your_quota_project)
-- [ Update gcloud CLI components ](#update_gcloud_components)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -138,13 +123,13 @@ when errors happen, you can create custom alerts for specific
 quota errors, as described in
 [Set up quota alerts](/docs/quotas/set-up-quota-alerts).
 
-## Exceeding rate quotas 
+## Exceeding rate quotas
 
 Rate quotas reset after a predefined time interval that is specific to each
 service. For more information, see the quotas documentation for the specific
 service.
 
-## Exceeding quota values 
+## Exceeding quota values
 
 If your project exceeds its maximum quota value while using a service, Google Cloud Dedicated in Germany
 returns an error based on how you accessed the service:

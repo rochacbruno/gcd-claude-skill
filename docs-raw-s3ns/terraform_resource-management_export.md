@@ -128,26 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Roles ](#roles)
-- [ Before you begin ](#before-you-begin)
-- [ Limitations ](#limitations)
-- [ Export the entire project configuration to Terraform HCL code ](#export_the_entire_project_configuration_to_terraform_hcl_code)
-
-- [ Write the output to a directory structure ](#write_the_output_to_a_directory_structure)
-- [ Write the output to a single file ](#write_the_output_to_a_single_file)
-
-- [ Filter the output ](#filter_the_output)
-
-- [ List the supported resource types to filter on ](#list_the_supported_resource_types_to_filter_on)
-- [ Export a single resource type ](#export_a_single_resource_type)
-- [ Export multiple resource types ](#export_multiple_resource_types)
-- [ Use a file to specify the resource types to export ](#use_a_file_to_specify_the_resource_types_to_export)
-
-- [ Troubleshooting ](#troubleshooting)
-- [ Next steps ](#next_steps)
-- 
-
 
 
 

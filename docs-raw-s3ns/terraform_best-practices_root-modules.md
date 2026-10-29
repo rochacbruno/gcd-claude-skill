@@ -128,18 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Minimize the number of resources in each root module ](#minimize-resources)
-- [ Use separate directories for each application ](#separate-directories)
-- [ Split applications into environment-specific subdirectories ](#subdirectories)
-- [ Use environment directories ](#environment-directories)
-- [ Expose outputs through remote state ](#outputs-remote-state)
-- [ Pin to minor provider versions ](#minor-provider-versions)
-- [ Store variables in a tfvars file ](#tfvars)
-- [ Check in .terraform.lock.hcl file ](#lockfile)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -161,7 +149,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Cloud de Confiance by S3NS, see [Get started with
 Terraform](/docs/terraform/get-started-with-terraform).
 
-## Minimize the number of resources in each root module 
+## Minimize the number of resources in each root module
 
 It is important to keep a single root configuration from growing too large, with
 too many resources stored in the same directory and state. *All* resources in a

@@ -113,20 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Hardware and OS ](#hardware-and-os-differences)
-- [ Networking ](#network-differences)
-- [ Availability and Disaster Recovery ](#availability-differences)
-- [ Cost management ](#cost-management-differences)
-- [ Security and access control ](#security-differences)
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Recommendations ](#recommendations)
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -835,9 +821,7 @@ For details about other services and features in Cloud de Confiance and their di
 their Google Cloud counterparts, see the [product list.](https://documentation.s3ns.fr/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -855,9 +839,7 @@ their Google Cloud counterparts, see the [product list.](https://documentation.s
 
 
 
-
-### Cloud de Confiance guides
-
+Cloud de Confiance guides 
 
 
 

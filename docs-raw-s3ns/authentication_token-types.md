@@ -148,32 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Access tokens ](#access-tokens)
-
-- [ Service account access tokens ](#sa-access-tokens)
-- [ Service account JSON Web Tokens ](#sa-jwts)
-- [ Federated access tokens ](#fed-access-tokens)
-- [ Agent identity access tokens ](#agent-identity-access-tokens)
-- [ Credential access boundary tokens ](#cred-access-boundary-tokens)
-- [ Client-issued credential access boundary tokens ](#client-cred-access-boundary-tokens)
-
-- [ Token-granting tokens ](#token-granting-tokens)
-
-- [ Federated refresh tokens ](#federated-refresh-tokens)
-- [ Federated authorization codes ](#federated-authorization-codes)
-- [ External JSON Web Tokens ](#external-jwts)
-- [ External SAML assertions or responses ](#external-saml)
-- [ Amazon Web Services (AWS) GetCallerIdentity token ](#aws-token)
-
-- [ Identity tokens ](#identity-tokens)
-
-- [ Service account ID tokens ](#sa-id-tokens)
-- [ Agent identity ID tokens ](#agent-identity-id-tokens)
-- [ Identity-Aware Proxy assertions ](#iap-assertions)
-
-- 
-
 
 
 

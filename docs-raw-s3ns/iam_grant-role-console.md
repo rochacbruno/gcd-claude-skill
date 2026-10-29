@@ -126,20 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Create a Cloud de Confiance project ](#create-project)
-- [ Ensure that you have the required roles ](#required-roles)
-- [ Enable the APIs ](#enable-apis)
-
-- [ Grant an IAM role ](#grant_an_iam_role)
-- [ Observe the effects of IAM roles ](#observe_the_effects_of_iam_roles)
-- [ Grant additional roles to the same principal ](#grant-other-roles)
-- [ Revoke IAM roles ](#revoke-roles)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -149,8 +135,7 @@ Guides
 
 
 
-
-# Grant an IAM role by using the Cloud de Confiance console 
+# Grant an IAM role by using the Cloud de Confiance console
 
 
 
@@ -203,7 +188,7 @@ In the Cloud de Confiance console, go to the project selector page.
 - 
 
 
-Click Create project**.
+Click **Create project**.
 
 
 
@@ -247,8 +232,8 @@ Project IAM Admin
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -286,8 +271,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 
@@ -358,7 +343,6 @@ Enable the IAM and Resource Manager APIs, if any are not already enabled.
 
 **Roles required to enable APIs**
 
-
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
 Owner role (`roles/owner`). Otherwise, you can get this permission through the
@@ -382,7 +366,7 @@ Grant a principal the Logs Viewer role on the project.
 
 In the Cloud de Confiance console, go to the **IAM** page.
 
-[Go to IAM](https://console.cloud.s3nscloud.fr/iam-admin/iam?supportedpurview=project) 
+[Go to IAM](https://console.cloud.s3nscloud.fr/iam-admin/iam) 
 
 - 
 
@@ -425,7 +409,7 @@ preceding step:
 
 
 ```
-https://console.cloud.s3nscloud.fr/logs?project= ** PROJECT_ID 
+https://console.cloud.s3nscloud.fr/logs?project= PROJECT_ID 
 ```
 
 
@@ -525,7 +509,7 @@ Clean up by deleting the project that you created for this quickstart.
 
 
 - 
-In the Cloud de Confiance console, go to the Manage resources** page.
+In the Cloud de Confiance console, go to the **Manage resources** page.
 
 
 [Go to Manage resources](https://console.cloud.s3nscloud.fr/iam-admin/projects)

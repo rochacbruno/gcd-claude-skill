@@ -88,16 +88,6 @@ Google APIs Discovery Service
 
 
 
-- On this page ** 
-- [ Fetch the Discovery document ](#fetch-the-discovery-document)
-- [ Compose a request ](#compose-a-request)
-- [ Make a call and handle the response ](#make-a-call-and-handle-the-response)
-- [ Examples ](#examples)
-
-- [ Simple APIs client ](#simple-apis-client)
-
-- 
-
 
 
 
@@ -346,7 +336,7 @@ import json
 import uritemplate 
 import urllib 
 
-# Step 1: Fetch Discovery document **
+** # Step 1: Fetch Discovery document **
 DISCOVERY_URI = "https://serviceusage.s3nsapis.fr/$discovery/rest?version=v1" 
 h = httplib2 . Http () 
 resp , content = h . request ( DISCOVERY_URI ) 

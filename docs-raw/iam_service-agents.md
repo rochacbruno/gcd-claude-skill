@@ -136,6 +136,7 @@ Reference
 
 
 
+
 Some Google Cloud Dedicated in Germany services have [*service agents*](/iam/docs/service-account-types#service-agents) that allow
 the service to access your resources. If an API requires a service agent, then
 Google Cloud Dedicated creates the service agent at some point after you activate

@@ -128,19 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Activate required APIs in modules ](#activate-apis)
-- [ Include an owners file ](#owners)
-
-- [ Release tagged versions ](#tagged-versions)
-
-- [ Don't configure providers or backends ](#providers-backends)
-- [ Expose labels as a variable ](#labels)
-- [ Expose outputs for all resources ](#expose-outputs)
-- [ Use inline submodules for complex logic ](#submodules)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -157,7 +144,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Cloud de Confiance by S3NS, see
 [Get started with Terraform](/docs/terraform/get-started-with-terraform).
 
-## Activate required APIs in modules 
+## Activate required APIs in modules
 
 Terraform modules can activate any required services by using the
 `google_project_service` resource or the

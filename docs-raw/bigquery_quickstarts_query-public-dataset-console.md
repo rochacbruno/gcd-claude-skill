@@ -126,21 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Enable the BigQuery sandbox ](#setup)
-
-- [ Limitations ](#limitations)
-- [ View a public dataset ](#view_a_public_dataset)
-- [ Query a public dataset ](#query_a_public_dataset)
-- [ Upgrade from the BigQuery sandbox ](#upgrade)
-- [ Clean up ](#clean-up)
-
-- [ Delete the project ](#delete_the_project)
-
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -150,8 +135,7 @@ Guides
 
 
 
-
-# Try BigQuery using the sandbox 
+# Try BigQuery using the sandbox
 
 
 
@@ -177,7 +161,7 @@ working with public datasets, see [BigQuery public datasets](/bigquery/public-da
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -469,7 +453,6 @@ such as tables, views, and partitions.
 
 
 
-
 ## Clean up
 
 
@@ -501,7 +484,7 @@ To delete the project:
 
 
 - 
-In the Google Cloud Dedicated console, go to the Manage resources** page.
+In the Google Cloud Dedicated console, go to the **Manage resources** page.
 
 
 [Go to Manage resources](https://console.cloud.berlin-build0.goog/iam-admin/projects)

@@ -120,11 +120,12 @@ Cloud NGFW
 
 
 
-# Cloud Next Generation Firewall documentation 
+
+# Cloud Next Generation Firewall documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/firewall/docs/about-firewalls)
+Read product documentation 
 
 
 

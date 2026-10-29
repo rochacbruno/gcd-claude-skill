@@ -73,26 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ What should I know first? ](#what_should_i_know_first)
-- [ What do I get with this setup? ](#what_do_i_get_with_this_setup)
-- [ Before you begin ](#before_you_begin)
-
-- [ Grant required permissions ](#grant_required_permissions)
-- [ Create a temporary project ](#create_a_temporary_project)
-- [ Get the Terraform ](#get_the_terraform)
-
-- [ Update config files ](#update_config_files)
-
-- [ Create a providers file ](#create_a_providers_file)
-- [ Specify your dataset ](#specify_your_dataset)
-- [ Specify setup defaults ](#specify_setup_defaults)
-
-- [ Apply the Terraform ](#apply_the_terraform)
-- [ Verify your setup ](#verify_your_setup)
-- [ What's next ](#whats_next)
-- 
-
 
 
 

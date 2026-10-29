@@ -128,27 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: cloudkms.googleapis.com ](#service:-cloudkms.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-- [ Regional service endpoint ](#regional-service-endpoint)
-
-- [ REST Resource: v1.folders ](#rest-resource:-v1.folders)
-- [ REST Resource: v1.organizations ](#rest-resource:-v1.organizations)
-- [ REST Resource: v1.projects ](#rest-resource:-v1.projects)
-- [ REST Resource: v1.projects.locations ](#rest-resource:-v1.projects.locations)
-- [ REST Resource: v1.projects.locations.ekmConfig ](#rest-resource:-v1.projects.locations.ekmconfig)
-- [ REST Resource: v1.projects.locations.ekmConnections ](#rest-resource:-v1.projects.locations.ekmconnections)
-- [ REST Resource: v1.projects.locations.keyHandles ](#rest-resource:-v1.projects.locations.keyhandles)
-- [ REST Resource: v1.projects.locations.keyRings ](#rest-resource:-v1.projects.locations.keyrings)
-- [ REST Resource: v1.projects.locations.keyRings.cryptoKeys ](#rest-resource:-v1.projects.locations.keyrings.cryptokeys)
-- [ REST Resource: v1.projects.locations.keyRings.cryptoKeys.cryptoKeyVersions ](#rest-resource:-v1.projects.locations.keyrings.cryptokeys.cryptokeyversions)
-- [ REST Resource: v1.projects.locations.keyRings.importJobs ](#rest-resource:-v1.projects.locations.keyrings.importjobs)
-- [ REST Resource: v1.projects.locations.operations ](#rest-resource:-v1.projects.locations.operations)
-- 
-
 
 
 
@@ -194,7 +173,7 @@ Manages keys and performs cryptographic operations in a central cloud service, f
 
 
 
-## Service: cloudkms. googleapis. com 
+## Service: cloudkms.googleapis.com
 
 
 
@@ -202,7 +181,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -236,15 +215,14 @@ A [service endpoint](https://documentation.s3ns.fr/apis/design/glossary#api_serv
 
 
 
-A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-global 
+A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. global 
 
 
 
 
 
 
-## REST Resource: [v1. folders](/kms/docs/reference/rest/v1/folders)
+## REST Resource: [v1.folders](/kms/docs/reference/rest/v1/folders)
 
 
 
@@ -262,9 +240,9 @@ Methods |
 
 | 
 
-`[get Autokey Config](/kms/docs/reference/rest/v1/folders/getAutokeyConfig)` | 
+`[getAutokeyConfig](/kms/docs/reference/rest/v1/folders/getAutokeyConfig)` | 
 
-The method `google. cloud. kms. v1. Autokey Admin. Get Autokey Config` is not available in Cloud de Confiance by S3NS. | 
+The method `google.cloud.kms.v1.AutokeyAdmin.GetAutokeyConfig` is not available in Cloud de Confiance by S3NS. | 
 |
 
 | 

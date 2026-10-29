@@ -33,15 +33,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Security and access control ](#security-differences)
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -68,7 +59,7 @@ Terraform documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 

@@ -121,18 +121,12 @@ Resources
 
 
 
-# Pub/ Sub release notes 
+# Pub/Sub release notes 
 
 
 
 
 
-
-- On this page 
-- [ November 18, 2024 ](#November_18_2024)
-- [ November 06, 2024 ](#November_06_2024)
-- [ August 20, 2024 ](#August_20_2024)
-- 
 
 
 
@@ -198,7 +192,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## November 18, 2024 
+## November 18, 2024
 
 
 Feature 

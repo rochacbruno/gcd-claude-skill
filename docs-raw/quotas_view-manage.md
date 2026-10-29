@@ -108,32 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Limitations ](#limitations)
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required_roles)
-
-- [ View quotas in the Google Cloud Dedicated console ](#viewing_your_quota_console)
-
-- [ View the quotas for your project ](#view_project_quotas)
-- [ View and export quota usage over time ](#charts)
-- [ View API-specific quotas ](#api_specific_quota)
-- [ Filter quotas ](#filtering_quotas)
-
-- [ Manage your quotas using the console ](#managing_your_quota_console)
-
-- [ Request a quota adjustment ](#requesting_higher_quota)
-- [ View quota increase requests ](#viewing_quota_increase_requests)
-- [ Create a quota override ](#create_override)
-- [ Reset a quota value ](#reset_quota)
-
-- [ Manage quotas using the Cloud Quotas API ](#managing_your_quota_api)
-- [ Manage quotas using the gcloud CLI ](#managing_your_quota_gcloud)
-- [ Request project quota ](#request_project_quota)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -148,7 +122,7 @@ Google Cloud Dedicated console. You can also manage quotas from the
 Google Cloud Dedicated console, Cloud Quotas API, and Google Cloud CLI
 (gcloud CLI).
 
-## Limitations 
+## Limitations
 
 Cloud Quotas has the following limitations:
 
@@ -333,8 +307,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -412,11 +386,8 @@ To view quota usage and values for all resources in your project, follow these
 steps:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -501,11 +472,8 @@ in the Quotas & System Limits table. After you view a chart, you can export it.
 To view and export a chart, follow these steps:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -554,11 +522,8 @@ on the Google Cloud Dedicated console **Quotas & System Limits** page
 or **APIs & Services** page. Use the console view that you prefer:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -620,11 +585,8 @@ To see usage over time, click legend_toggle **Show usage chart**.
 To filter the list of quotas by specific properties:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -652,11 +614,8 @@ values. To see the values, in the **Details** column, click **All Quotas**.
 Cloud Quotas adjustment requests are subject to review.
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 To adjust a quota value, follow these steps:
 
@@ -742,11 +701,8 @@ Google Cloud Dedicated console.
 To see pending quota increase requests:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -775,11 +731,8 @@ quota adjustment is about to be submitted.
 To view all quota increase requests, which includes pending and past requests:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -821,11 +774,8 @@ information, check the quota and system limits documentation for your service.
 To reset the quota value after an override has been applied, follow these steps:
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 

@@ -128,13 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Install the client library ](#install)
-- [ Set up authentication ](#authentication)
-- [ Use the client library ](#use)
-- [ Additional resources ](#resources)
-- 
-
 
 
 
@@ -183,12 +176,10 @@ on agent metrics, see the
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -226,6 +217,8 @@ for details about this client library's requirements and install dependencies.
 
 
 
+
+### C# 
 
 
 
@@ -274,6 +267,8 @@ For more information, see [Setting Up a C# Development Environment](/dotnet/docs
 
 
 
+### Go 
+
 
 
 
@@ -317,6 +312,8 @@ For more information, see [Setting Up a Go Development Environment](/go/docs/set
 
 
 
+
+### Java 
 
 
 
@@ -534,6 +531,8 @@ For more information, see [Setting Up a Java Development Environment](/java/docs
 
 
 
+### Node.js 
+
 
 
 
@@ -576,6 +575,8 @@ For more information, see [Setting Up a Node.js Development Environment](/nodejs
 
 
 
+
+### PHP 
 
 
 
@@ -623,6 +624,8 @@ For more information, see [Using PHP on Google Cloud](/php/docs).
 
 
 
+### Python 
+
 
 
 
@@ -666,6 +669,8 @@ For more information, see [Setting Up a Python Development Environment](/python/
 
 
 
+
+### Ruby 
 
 
 
@@ -842,12 +847,10 @@ The following example shows how to use the client library.
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -940,6 +943,8 @@ return 1 ;
 
 
 
+
+### C# 
 
 
 
@@ -1086,6 +1091,8 @@ Console . WriteLine ( "Done writing time series data." );
 
 
 
+### Go 
+
 
 
 
@@ -1227,6 +1234,8 @@ fmt . Printf ( "Done writing time series data.\n" )
 
 
 
+
+### Java 
 
 
 
@@ -1375,6 +1384,8 @@ System . out . printf ( "Done writing time series data.%n" );
 
 
 
+### Node.js 
+
 
 
 
@@ -1491,6 +1502,8 @@ quickstart ();
 
 
 
+
+### PHP 
 
 
 
@@ -1622,6 +1635,8 @@ $client->close();
 
 
 
+### Python 
+
 
 
 
@@ -1713,6 +1728,8 @@ return True
 
 
 
+
+### Ruby 
 
 
 
@@ -1822,12 +1839,10 @@ puts "Successfully wrote time series."
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -1875,6 +1890,8 @@ client library for C++:
 
 
 
+### C# 
+
 
 
 
@@ -1919,6 +1936,8 @@ client library for C#:
 
 
 
+
+### Go 
 
 
 
@@ -1966,6 +1985,7 @@ client library for Go:
 
 
 
+### Java 
 
 
 
@@ -2013,6 +2033,7 @@ client library for Java:
 
 
 
+### Node.js 
 
 
 
@@ -2053,6 +2074,8 @@ client library for Java:
 
 
 
+
+### PHP 
 
 
 
@@ -2100,6 +2123,7 @@ client library for PHP:
 
 
 
+### Python 
 
 
 
@@ -2147,6 +2171,7 @@ client library for Python:
 
 
 
+### Ruby 
 
 
 

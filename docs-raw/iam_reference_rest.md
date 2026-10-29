@@ -128,46 +128,6 @@ Reference
 
 
 
-- On this page ** 
-- [ Service: iam.googleapis.com ](#service:-iam.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v2beta.policies ](#rest-resource:-v2beta.policies)
-- [ REST Resource: v2beta.policies.operations ](#rest-resource:-v2beta.policies.operations)
-- [ REST Resource: v2.policies ](#rest-resource:-v2.policies)
-- [ REST Resource: v2.policies.operations ](#rest-resource:-v2.policies.operations)
-- [ REST Resource: v1beta.projects.locations.workloadIdentityPools ](#rest-resource:-v1beta.projects.locations.workloadidentitypools)
-- [ REST Resource: v1beta.projects.locations.workloadIdentityPools.operations ](#rest-resource:-v1beta.projects.locations.workloadidentitypools.operations)
-- [ REST Resource: v1beta.projects.locations.workloadIdentityPools.providers ](#rest-resource:-v1beta.projects.locations.workloadidentitypools.providers)
-- [ REST Resource: v1beta.projects.locations.workloadIdentityPools.providers.operations ](#rest-resource:-v1beta.projects.locations.workloadidentitypools.providers.operations)
-- [ REST Resource: v1.iamPolicies ](#rest-resource:-v1.iampolicies)
-- [ REST Resource: v1.locations.workforcePools ](#rest-resource:-v1.locations.workforcepools)
-- [ REST Resource: v1.locations.workforcePools.operations ](#rest-resource:-v1.locations.workforcepools.operations)
-- [ REST Resource: v1.locations.workforcePools.providers ](#rest-resource:-v1.locations.workforcepools.providers)
-- [ REST Resource: v1.locations.workforcePools.providers.keys ](#rest-resource:-v1.locations.workforcepools.providers.keys)
-- [ REST Resource: v1.locations.workforcePools.providers.operations ](#rest-resource:-v1.locations.workforcepools.providers.operations)
-- [ REST Resource: v1.locations.workforcePools.subjects ](#rest-resource:-v1.locations.workforcepools.subjects)
-- [ REST Resource: v1.organizations.roles ](#rest-resource:-v1.organizations.roles)
-- [ REST Resource: v1.permissions ](#rest-resource:-v1.permissions)
-- [ REST Resource: v1.projects.locations.oauthClients ](#rest-resource:-v1.projects.locations.oauthclients)
-- [ REST Resource: v1.projects.locations.oauthClients.credentials ](#rest-resource:-v1.projects.locations.oauthclients.credentials)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools ](#rest-resource:-v1.projects.locations.workloadidentitypools)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.namespaces ](#rest-resource:-v1.projects.locations.workloadidentitypools.namespaces)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.namespaces.managedIdentities ](#rest-resource:-v1.projects.locations.workloadidentitypools.namespaces.managedidentities)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.namespaces.managedIdentities.operations ](#rest-resource:-v1.projects.locations.workloadidentitypools.namespaces.managedidentities.operations)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.namespaces.operations ](#rest-resource:-v1.projects.locations.workloadidentitypools.namespaces.operations)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.operations ](#rest-resource:-v1.projects.locations.workloadidentitypools.operations)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.providers ](#rest-resource:-v1.projects.locations.workloadidentitypools.providers)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.providers.keys ](#rest-resource:-v1.projects.locations.workloadidentitypools.providers.keys)
-- [ REST Resource: v1.projects.locations.workloadIdentityPools.providers.operations ](#rest-resource:-v1.projects.locations.workloadidentitypools.providers.operations)
-- [ REST Resource: v1.projects.roles ](#rest-resource:-v1.projects.roles)
-- [ REST Resource: v1.projects.serviceAccounts ](#rest-resource:-v1.projects.serviceaccounts)
-- [ REST Resource: v1.projects.serviceAccounts.keys ](#rest-resource:-v1.projects.serviceaccounts.keys)
-- [ REST Resource: v1.roles ](#rest-resource:-v1.roles)
-- 
-
 
 
 
@@ -258,7 +218,7 @@ v1.projects.locations.workloadIdentityPools.providers.operations](#v1.projects.l
 
 
 
-## Service: iam. googleapis. com 
+## Service: iam.googleapis.com
 
 
 
@@ -266,7 +226,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -303,7 +263,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 
-## REST Resource: [v2beta. policies](/iam/docs/reference/rest/v2beta/policies)
+## REST Resource: [v2beta.policies](/iam/docs/reference/rest/v2beta/policies)
 
 
 
@@ -321,9 +281,9 @@ Methods |
 
 | 
 
-`[create Policy](/iam/docs/reference/rest/v2beta/policies/createPolicy)` | 
+`[createPolicy](/iam/docs/reference/rest/v2beta/policies/createPolicy)` | 
 
-`POST / v2beta/ {parent=policies/ */ *}` 
+`POST /v2beta/{parent=policies/*/*}` 
 
 Creates a policy. | 
 |
@@ -332,7 +292,7 @@ Creates a policy. |
 
 `[delete](/iam/docs/reference/rest/v2beta/policies/delete)` | 
 
-`DELETE / v2beta/ {name=policies/ */ */ *}` 
+`DELETE /v2beta/{name=policies/*/*/*}` 
 
 Deletes a policy. | 
 |
@@ -341,7 +301,7 @@ Deletes a policy. |
 
 `[get](/iam/docs/reference/rest/v2beta/policies/get)` | 
 
-`GET / v2beta/ {name=policies/ */ */ *}` 
+`GET /v2beta/{name=policies/*/*/*}` 
 
 Gets a policy. | 
 |
@@ -1973,7 +1933,7 @@ Sets the IAM policy that is attached to a `[ServiceAccount](/iam/docs/reference/
 | 
 
 `[signBlob](/iam/docs/reference/rest/v1/projects.serviceAccounts/signBlob) 
-(deprecated)**` | 
+**(deprecated)**` | 
 
 `POST /v1/{name=projects/*/serviceAccounts/*}:signBlob` 
 

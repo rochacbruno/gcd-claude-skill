@@ -108,20 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Limitations ](#limitations)
-- [ Track usage and request an increase when usage is over 80% ](#track_usage_and_request_an_increase_when_usage_is_over_80)
-- [ Decrease a quota ](#decrease_a_quota)
-- [ Copy quota preferences to another project ](#copy_quota_preferences_to_another_project)
-- [ List pending quota requests ](#list_pending_quota_requests)
-- [ Request group quota increases ](#request_group_quota_increases)
-- [ Request adjustments on quotas that have no usage ](#request_adjustments_on_quotas_that_have_no_usage)
-- [ Get quota info for a service specific dimension ](#get_quota_info_for_a_service_specific_dimension)
-- [ Create a quota preference for a service specific dimension ](#create_a_quota_preference_for_a_service_specific_dimension)
-- [ Update a quota preference for a service specific dimension ](#update_a_quota_preference_for_a_service_specific_dimension)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -143,7 +129,7 @@ To learn more, see the Cloud Quotas API
 [overview](/docs/quotas/api-overview) and
 [reference](/docs/quotas/reference/rest).
 
-## Limitations 
+## Limitations
 
 Cloud Quotas has the following limitations:
 
@@ -854,7 +840,7 @@ POST projects/ PROJECT_NUMBER /locations/global/quotaPreferences?quotaPreference
 } , 
 "dimensions" : { "region" : "us-central1" , "gpu_family" : "NVIDIA_H100" } , 
 "justification" : " JUSTIFICATION " , 
-"contactEmail" : "" EMAIL "
+"contactEmail" : "" EMAIL " 
 } 
 ```
 

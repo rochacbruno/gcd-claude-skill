@@ -120,11 +120,12 @@ Virtual Private Cloud
 
 
 
-# Virtual Private Cloud documentation 
+
+# Virtual Private Cloud documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/vpc/docs/overview)
+Read product documentation 
 
 
 

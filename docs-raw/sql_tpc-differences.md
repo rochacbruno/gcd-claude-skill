@@ -113,20 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Databases and editions ](#databases-and-editions)
-- [ Hardware and OS ](#hardware-and-os-differences)
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Security and access control ](#security-differences)
-- [ Network ](#network-differences)
-- [ Workflows and tools ](#workflow-differences)
-- [ Insights and observability ](#observability-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -151,7 +137,7 @@ Cloud SQL documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -370,7 +356,6 @@ Only instances that aren't configured with a maintenance window receive automati
 
 
 To work around these issues, you can apply the maintenance updates manually to an instance. Use one of the following workarounds:
-
 
 
 

@@ -120,11 +120,12 @@ VPC Service Controls
 
 
 
-# VPC Service Controls documentation 
+
+# VPC Service Controls documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/vpc-service-controls/docs/overview)
+Read product documentation 
 
 
 

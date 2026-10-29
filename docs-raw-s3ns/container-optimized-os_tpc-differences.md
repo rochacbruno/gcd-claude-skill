@@ -73,21 +73,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Hardware and OS ](#hardware-and-os-differences)
-- [ Creating and configuring instances ](#creating-and-configuring-instances)
-- [ Running containers on instances ](#running-containers-on-instances)
-- [ Monitoring ](#monitoring)
-- [ Building from open source ](#building-from-open-source)
-- [ Toolbox ](#toolbox)
-- [ GPU accelerators ](#gpu-accelerators)
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -110,7 +95,7 @@ Container-Optimized OS documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 

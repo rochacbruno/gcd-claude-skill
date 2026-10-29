@@ -126,40 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Concepts ](#concepts_and_terminology)
-
-- [ Organizations, folders, and projects ](#shared_vpc_host_project_and_service_project_associations)
-- [ Networks ](#shared_vpc_networks)
-- [ Organization policy constraints ](#organization_policy_constraints)
-
-- [ Administrators and IAM ](#iam_in_shared_vpc)
-
-- [ Required administrative roles ](#iam_roles_required_for_shared_vpc)
-- [ Service Project Admins ](#svc_proj_admins)
-- [ Network and Security Admins ](#net_and_security_admins)
-
-- [ Specifications ](#specifications)
-
-- [ Quotas and limits ](#quota)
-
-- [ Resources ](#resources)
-
-- [ Eligible resources ](#eligible-resources)
-- [ IP addresses ](#ip_addresses)
-- [ Internal DNS ](#shared_vpc_and_internal_dns)
-- [ Cloud DNS private zones ](#shared_vpc_and_cloud_dns_private_zones)
-- [ Load balancing ](#shared_vpc_with_load_balancing)
-
-- [ Examples and use cases ](#use_cases)
-
-- [ Basic concepts ](#shared_vpc_overview)
-- [ Multiple host projects ](#example_multiple_host_projects)
-- [ Hybrid cloud scenario ](#hybrid_cloud_scenario)
-- [ Two-tier web service ](#two-tier_web_service)
-
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -168,8 +134,7 @@ Guides
 
 
 
-
-# Shared VPC 
+# Shared VPC
 
 
 
@@ -649,7 +614,7 @@ Links |
 [
 Shared VPC architecture](/load-balancing/docs/https#shared-vpc)
 | 
-|
+
 | 
 [Internal Application Load Balancer](/load-balancing/docs/l7-internal#shared_vpc) | 
 [Shared VPC
@@ -704,7 +669,7 @@ Figure 1 shows a simple Shared VPC scenario:
 
 
 
-Figure 1.** A host project with a
+**Figure 1.** A host project with a
 Shared VPC network provides internal connectivity for two
 service projects, while a standalone project doesn't use
 Shared VPC (click to enlarge).

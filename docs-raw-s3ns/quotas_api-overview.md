@@ -108,25 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Limitations ](#limitations)
-- [ Service endpoint ](#service_endpoint)
-- [ Required roles ](#required_roles)
-- [ API resource model ](#api_resource_model)
-
-- [ Quota preference ](#quota_preference)
-- [ Quota info ](#quota_info)
-- [ Quota adjuster settings ](#quota_adjuster_settings)
-
-- [ Resource names ](#resource_names)
-
-- [ Quota preference resource ](#quota_preference_resource)
-- [ Quota info resource ](#quota_info_resource)
-- [ Quota adjuster settings resource ](#quota_adjuster_settings_resource)
-
-- [ What's next? ](#whats_next)
-- 
-
 
 
 
@@ -337,8 +318,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -472,11 +453,8 @@ use a demo quota preference with the ID
 `compute_googleapis_com-gpus-us-central1`.
 
 
-[gcloud](#gcloud) [REST](#rest) 
-More 
 
-
-
+### gcloud
 
 If you view your quota preference using the gcloud CLI, the
 output looks similar to the following:
@@ -498,6 +476,7 @@ updateTime: '2023-01-16T02:35:16.01Z'
 ```
 
 
+### REST
 
 If you view your quota preference using the Cloud Quotas API, the
 output looks similar to the following:
@@ -721,14 +700,12 @@ encodes the service name, quota ID, location and other dimensions. The
 As an example `quotaPreference`
 One pattern to encode your quota preference ID is the following:
 
-
 ```
 SERVICE _ LOCATION _ DIMENSION1-VALUES-IN-ORDER 
 ```
 
 
 The following example demonstrates this pattern:
-
 
 ```
 compute_us-central1_nvidia-200

@@ -128,71 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ October 10, 2026 ](#October_10_2026)
-- [ October 08, 2026 ](#October_08_2026)
-- [ August 04, 2026 ](#August_04_2026)
-- [ July 31, 2026 ](#July_31_2026)
-- [ July 29, 2026 ](#July_29_2026)
-- [ June 29, 2026 ](#June_29_2026)
-- [ June 24, 2026 ](#June_24_2026)
-- [ June 22, 2026 ](#June_22_2026)
-- [ June 18, 2026 ](#June_18_2026)
-- [ June 08, 2026 ](#June_08_2026)
-- [ March 30, 2026 ](#March_30_2026)
-- [ March 26, 2026 ](#March_26_2026)
-- [ March 20, 2026 ](#March_20_2026)
-- [ March 09, 2026 ](#March_09_2026)
-- [ November 18, 2025 ](#November_18_2025)
-- [ November 13, 2025 ](#November_13_2025)
-- [ November 12, 2025 ](#November_12_2025)
-- [ March 03, 2025 ](#March_03_2025)
-- [ February 26, 2025 ](#February_26_2025)
-- [ February 11, 2025 ](#February_11_2025)
-- [ January 14, 2025 ](#January_14_2025)
-- [ January 13, 2025 ](#January_13_2025)
-- [ December 23, 2024 ](#December_23_2024)
-- [ December 20, 2024 ](#December_20_2024)
-- [ December 10, 2024 ](#December_10_2024)
-- [ December 05, 2024 ](#December_05_2024)
-- [ December 04, 2024 ](#December_04_2024)
-- [ December 03, 2024 ](#December_03_2024)
-- [ November 27, 2024 ](#November_27_2024)
-- [ November 21, 2024 ](#November_21_2024)
-- [ November 20, 2024 ](#November_20_2024)
-- [ November 19, 2024 ](#November_19_2024)
-- [ November 18, 2024 ](#November_18_2024)
-- [ November 15, 2024 ](#November_15_2024)
-- [ November 14, 2024 ](#November_14_2024)
-- [ November 12, 2024 ](#November_12_2024)
-- [ November 04, 2024 ](#November_04_2024)
-- [ October 25, 2024 ](#October_25_2024)
-- [ October 23, 2024 ](#October_23_2024)
-- [ October 21, 2024 ](#October_21_2024)
-- [ October 16, 2024 ](#October_16_2024)
-- [ October 09, 2024 ](#October_09_2024)
-- [ October 03, 2024 ](#October_03_2024)
-- [ October 01, 2024 ](#October_01_2024)
-- [ September 25, 2024 ](#September_25_2024)
-- [ September 19, 2024 ](#September_19_2024)
-- [ September 16, 2024 ](#September_16_2024)
-- [ September 13, 2024 ](#September_13_2024)
-- [ September 12, 2024 ](#September_12_2024)
-- [ September 03, 2024 ](#September_03_2024)
-- [ August 15, 2024 ](#August_15_2024)
-- [ August 01, 2024 ](#August_01_2024)
-- [ July 31, 2024 ](#July_31_2024)
-- [ July 30, 2024 ](#July_30_2024)
-- [ July 29, 2024 ](#July_29_2024)
-- [ July 26, 2024 ](#July_26_2024)
-- [ July 25, 2024 ](#July_25_2024)
-- [ July 19, 2024 ](#July_19_2024)
-- [ July 18, 2024 ](#July_18_2024)
-- [ July 17, 2024 ](#July_17_2024)
-- [ July 16, 2024 ](#July_16_2024)
-- [ July 02, 2024 ](#July_02_2024)
-- 
-
 
 
 
@@ -246,7 +181,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## October 10, 2026 
+## October 10, 2026
 
 **Cloud SQL for MySQL**
 
@@ -325,8 +260,7 @@ closed (reconciled). This means that applications using Private Service
 Connect endpoints in those removed projects can't continue to connect to the
 Cloud SQL instance using those endpoints.
 
-For more information, see [Allowed Private Service Connect projects](/sql/docs/mysql/about-private-service-connect#allowed-psc-projects).
-
+For more information, see [Allowed Private Service Connect projects](/sql/docs/mysql/about-private-service-connect#allowed-psc-projects). 
 
 **Cloud SQL for PostgreSQL**
 
@@ -344,8 +278,7 @@ closed (reconciled). This means that applications using Private Service
 Connect endpoints in those removed projects can't continue to connect to the
 Cloud SQL instance using those endpoints.
 
-For more information, see [Allowed Private Service Connect projects](/sql/docs/postgres/about-private-service-connect#allowed-psc-projects).
-
+For more information, see [Allowed Private Service Connect projects](/sql/docs/postgres/about-private-service-connect#allowed-psc-projects). 
 
 **Cloud SQL for SQL Server**
 
@@ -363,8 +296,7 @@ closed (reconciled). This means that applications using Private Service
 Connect endpoints in those removed projects can't continue to connect to the
 Cloud SQL instance using those endpoints.
 
-For more information, see [Allowed Private Service Connect projects](/sql/docs/sqlserver/about-private-service-connect#allowed-psc-projects).
-
+For more information, see [Allowed Private Service Connect projects](/sql/docs/sqlserver/about-private-service-connect#allowed-psc-projects). 
 
 
 ## July 29, 2026
@@ -381,8 +313,7 @@ instances and replicas are unchanged, but the operation now re-encrypts the
 underlying disks in-place, without creating re-encryption backups.
 
 For more information, see [Re-encrypt an existing CMEK-enabled instance or
-replica](/sql/docs/mysql/configure-cmek#reencrypt).
-
+replica](/sql/docs/mysql/configure-cmek#reencrypt). 
 
 **Cloud SQL for PostgreSQL**
 
@@ -396,8 +327,7 @@ instances and replicas are unchanged, but the operation now re-encrypts the
 underlying disks in-place, without creating re-encryption backups.
 
 For more information, see [Re-encrypt an existing CMEK-enabled instance or
-replica](/sql/docs/postgres/configure-cmek#reencrypt).
-
+replica](/sql/docs/postgres/configure-cmek#reencrypt). 
 
 
 ## June 29, 2026
@@ -410,8 +340,7 @@ Feature
 MySQL 8.0.45 is now the [default minor version](/sql/docs/mysql/db-versions#database-version-support) for Cloud SQL for MySQL 8.0.
 
 For more information about minor version support in Cloud SQL for MySQL,
-see [MySQL 8.0](/sql/docs/mysql/db-versions#mysql-8.0).
-
+see [MySQL 8.0](/sql/docs/mysql/db-versions#mysql-8.0). 
 
 
 ## June 24, 2026
@@ -471,8 +400,7 @@ generally available. You can protect your CMEK-enabled Cloud SQL instances
 using Google Cloud Backup and DR Service.
 
 For more information, see [Choose your backup
-option](/sql/docs/postgres/backup-recovery/backup-options).
-
+option](/sql/docs/postgres/backup-recovery/backup-options). 
 
 
 ## June 18, 2026
@@ -547,8 +475,7 @@ Feature
 Cloud SQL for MySQL now supports minor version
 [8.0.45](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-45.html).
 To upgrade your existing instance to the new minor version, see
-[Upgrade the database minor version](/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).
-
+[Upgrade the database minor version](/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade). 
 
 
 ## March 09, 2026
@@ -609,8 +536,7 @@ or later installed on your MySQL instance.
 
 For more information, see
 [Search approximate nearest neighbors (ANN)](/sql/docs/mysql/search-filter-vector-embeddings#ann)
-.
-
+. 
 
 
 ## November 12, 2025
@@ -624,8 +550,7 @@ Cloud SQL for MySQL now supports minor version
 [8.0.44](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-44.html).
 To upgrade your existing
 instance to the new version, see
-[Upgrade the database minor version](/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).
-
+[Upgrade the database minor version](/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade). 
 
 
 ## March 03, 2025

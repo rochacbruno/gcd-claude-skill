@@ -133,14 +133,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Network ](#regions-zones)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -171,7 +163,7 @@ Cloud Router documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 

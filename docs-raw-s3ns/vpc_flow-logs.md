@@ -126,23 +126,6 @@ Guides
 
 
 
-- On this page 
-- [ Use cases ](#use_cases)
-
-- [ Network monitoring ](#network_monitoring)
-- [ Understanding network usage and optimizing network traffic expenses ](#understanding_network_usage_and_optimizing_network_traffic_expenses)
-- [ Network forensics ](#network_forensics)
-
-- [ Supported configurations ](#configurations)
-- [ Logs collection ](#logs_collection)
-
-- [ Log sampling and processing ](#log-sampling)
-- [ TCP connection logging ](#connection-logging)
-- [ Dropped traffic ](#packet-drops)
-
-- [ Specifications ](#key_properties)
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -151,8 +134,7 @@ Guides
 
 
 
-
-# VPC Flow Logs 
+# VPC Flow Logs
 
 
 

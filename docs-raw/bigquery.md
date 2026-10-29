@@ -120,11 +120,12 @@ BigQuery
 
 
 
-# BigQuery documentation 
+
+# BigQuery documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/bigquery/docs/introduction)
+Read product documentation 
 
 
 

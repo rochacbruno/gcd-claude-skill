@@ -128,13 +128,6 @@ Reference
 
 
 
-- On this page ** 
-- [ Partial response ](#partial-response)
-- [ Partial updates ](#patch)
-- [ Query parameters ](#query_parameters)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -171,7 +164,7 @@ the need to use the API directly.
 
 The current release of the JSON API is `v1`.
 
-## Partial response 
+## Partial response
 
 By default, when Cloud Storage sends a resource in a response, it
 sends the full representation of the resource. For better performance, you can
@@ -252,7 +245,7 @@ Returns both the `etag` field and all elements in the items array. |
 `items/metadata/key` | 
 Returns only the `key` field for all members of the `metadata` object, which is itself nested under the `items` array.
 
-Whenever a nested field is returned, the response includes the enclosing parent objects. The parent fields do not include any other child fields unless they are also selected explicitly. | 
+Whenever a nested field is returned, the response includes the enclosing parent objects. The parent fields do not include any other child fields unless they are also selected explicitly. | | 
 |
 
 | 
@@ -281,7 +274,7 @@ reduce the amount of data returned in the response:
 
 
 ```
-https://storage.apis-berlin-build0.goog/storage/v1/b/my-bucketT/o/my-object? fields=id,name,metadata/key1**
+https://storage.apis-berlin-build0.goog/storage/v1/b/my-bucketT/o/my-object?**fields=id,name,metadata/key1**
 ```
 
 

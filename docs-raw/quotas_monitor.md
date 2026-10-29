@@ -108,15 +108,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Set up basic quota usage alerts ](#basic)
-- [ Create charts ](#charts)
-- [ Check quota metric support ](#checking_metric_support)
-- [ Get metric names ](#get-metric-names)
-- [ Do more with Cloud Monitoring ](#do-more)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -132,7 +123,7 @@ Cloud Quotas dashboard is integrated with
 This document describes how to set up alerts, create charts, and find more
 information about using Cloud Monitoring for Cloud Quotas.
 
-## Set up basic quota usage alerts 
+## Set up basic quota usage alerts
 
 You can set up quota alerts from the
 **IAM & Admin  > Quotas & System Limits** page to get
@@ -182,7 +173,7 @@ Metrics Explorer, do the following:
 - 
 
 In the Google Cloud Dedicated console, go to the
-*leaderboard*  Metrics explorer** page:
+*leaderboard* **Metrics explorer** page:
 
 
 [Go to **Metrics explorer**](https://console.cloud.berlin-build0.goog/monitoring/metrics-explorer)
@@ -290,11 +281,8 @@ The following instructions show how to get quota and system limit metric names
 using either the Google Cloud Dedicated console or gcloud CLI.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -326,6 +314,7 @@ property name or value in the field next to
 filter_list **Filter**.
 
 
+### gcloud
 
 To get the metric names for a Google Cloud Dedicated in Germany service by
 using the gcloud CLI, run the `quotas info list`

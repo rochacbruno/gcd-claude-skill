@@ -120,11 +120,12 @@ Cloud Storage
 
 
 
-# Cloud Storage documentation 
+
+# Cloud Storage documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/storage/docs/introduction)
+Read product documentation 
 
 
 

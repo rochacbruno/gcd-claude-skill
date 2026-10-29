@@ -1,16 +1,18 @@
-# Key Differences Between Google Cloud Dedicated (GCD) and Google Cloud (GCP)
+# Key Differences Between Sovereign Cloud (GCD / S3NS) and Public Google Cloud (GCP)
 
-Google Cloud Dedicated (GCD) is a local, isolated cloud environment based on Google Cloud, running in Germany. It uses the same Google-developed code and infrastructure but operates as a separate "universe" with its own subset of products, features, and workflows.
+Google Cloud Dedicated (GCD in Germany) and Cloud de Confiance by S3NS (PREMI3NS in France) are local, isolated cloud environments based on Google Cloud. They use the same Google-developed code and infrastructure but operate as separate "universes" with their own subset of products, features, and workflows.
 
 ---
 
 ## Architecture: Single-Region Constraint
 
-- GCD runs in **one region only**: `u-germany-northeast1`, which contains **three zones**.
+- Each sovereign cloud universe runs in **one region only**, containing **three zones**:
+  - **Berlin (GCD — Germany):** `u-germany-northeast1` (`u-germany-northeast1-a`, `-b`, `-c`)
+  - **France (S3NS — Cloud de Confiance):** `u-france-east1` (`u-france-east1-a`, `-b`, `-c`)
 - There is no multi-region redundancy. All multi-region GCP features are unavailable.
 - Use multiple zones (not regions) for redundancy and high availability.
-- `global` resources (e.g., Cloud KMS `global` location, Secret Manager global secrets) are still available but effectively resolve to the single region `u-germany-northeast1`.
-- Any existing multi-region architectures or load-balancing designs must be reworked for single-region operation.
+- `global` resources (e.g., Cloud KMS `global` location, Secret Manager global secrets) are available for API compatibility but physically resolve to the single region (`u-germany-northeast1` or `u-france-east1`).
+- Any existing multi-region architectures or cross-region load-balancing designs must be reworked for single-region, multi-zone operation.
 
 ---
 
@@ -18,105 +20,113 @@ Google Cloud Dedicated (GCD) is a local, isolated cloud environment based on Goo
 
 ### Universe Domain
 
-The GCD universe domain is `apis-berlin-build0.goog` (instead of `googleapis.com`).
+- **Berlin (GCD):** `apis-berlin-build0.goog`
+- **France (S3NS):** `s3nsapis.fr`
 
 ### Service Names vs. Service Endpoints
 
-| Aspect | GCP | GCD |
-|---|---|---|
-| Service names (for enabling/disabling APIs) | `bigquery.googleapis.com` | `bigquery.googleapis.com` (same) |
-| Service endpoints (for API requests) | `bigquery.googleapis.com` | `bigquery.apis-berlin-build0.goog` |
-| Console URL | `console.cloud.google.com` | `console.cloud.berlin-build0.goog` |
+| Aspect | Public GCP | Berlin (GCD) | France (S3NS) |
+|---|---|---|---|
+| Service names (for enabling/disabling APIs) | `bigquery.googleapis.com` | `bigquery.googleapis.com` (same) | `bigquery.googleapis.com` (same) |
+| Service endpoints (for API requests) | `bigquery.googleapis.com` | `bigquery.apis-berlin-build0.goog` | `bigquery.s3nsapis.fr` |
+| Cloud Run service URLs | `*.run.app` | `*.run-berlin-build0.goog` | `*.s3nsrun.fr` |
+| Console URL | `console.cloud.google.com` | `console.cloud.berlin-build0.goog` | `console.cloud.s3nscloud.fr` |
 
-- **Service names** are identical between GCP and GCD.
-- **Service endpoints** (the actual FQDNs for API calls) use the GCD-specific domain.
-- **Endpoint pattern:** `<service>.apis-berlin-build0.goog`
-- OAuth scope names remain consistent. If a scope uses `googleapis` in GCP, it also uses `googleapis` in GCD.
+- **Service names** are identical between GCP, GCD, and S3NS.
+- **Service endpoints** (the actual FQDNs for API calls) use the universe-specific domain (`<service>.apis-berlin-build0.goog` or `<service>.s3nsapis.fr`).
+- **OAuth scope names** remain consistent. If a scope uses `googleapis` in GCP, it also uses `googleapis` in GCD and S3NS.
 
 ### Resource Names and URLs
 
 - **Full resource names (FRNs)** are the same as GCP, including the `googleapis` domain. Example: `//bigquery.googleapis.com/projects/my-project/datasets/my-dataset`
 - **Relative resource names** (without parent API) are also the same. Example: `projects/my-project/datasets/my-dataset`
-- **Resource URLs** use the GCD endpoint domain and are therefore different. Example: `https://bigquery.apis-berlin-build0.goog/bigquery/v2/projects/my-project/datasets/my-dataset`
+- **Resource URLs** use the sovereign cloud endpoint domain and are therefore different:
+  - Berlin: `https://bigquery.apis-berlin-build0.goog/bigquery/v2/projects/my-project/datasets/my-dataset`
+  - S3NS: `https://bigquery.s3nsapis.fr/bigquery/v2/projects/my-project/datasets/my-dataset`
 
 ---
 
 ## Project ID Prefix
 
-- All GCD project IDs carry a mandatory universe-specific prefix: **`eu0:`**
+- All sovereign cloud project IDs carry a mandatory universe-specific prefix:
+  - **Berlin (GCD):** **`eu0:`** (e.g., `eu0:my-app`)
+  - **France (S3NS):** **`s3ns:`** (e.g., `s3ns:my-app`)
 - This prefix is automatically prepended when creating projects.
-- The prefix must be included in all commands, API calls, and console references.
-- Example: a project named `my-app` has the project ID `eu0:my-app`.
-- Exception: the `eu0:` prefix is NOT used in user-created service account names (the project part of the service account email omits the prefix).
+- The prefix must be included in all commands, API calls, Terraform configs, and console references.
+- **Exception:** The `eu0:` or `s3ns:` prefix is **NOT** used in user-created service account email addresses (the project part of the service account email omits the prefix).
 
-| Field | Example |
-|---|---|
-| Project name | `MyProject` |
-| Project ID | `eu0:myproject` |
-| Project number | `123456789012` |
+| Field | Berlin (GCD) Example | France (S3NS) Example |
+|---|---|---|
+| Project name | `MyProject` | `MyProject` |
+| Project ID | `eu0:myproject` | `s3ns:myproject` |
+| Project number | `123456789012` | `123456789012` |
 
 ---
 
 ## Identity and Authentication
 
-- **Cloud Identity is not available** in GCD.
+- **Cloud Identity is not available** in GCD or S3NS.
 - **Regular Google Accounts and Google Groups are not supported** for IAM.
 - Authentication must use one of:
-  - **Workforce Identity Federation** (supports Google Workspace, Microsoft/Azure AD, Okta, and other external IdPs)
+  - **Workforce Identity Federation** (supports Google Workspace, Microsoft Entra ID, AD FS, Okta, and other OIDC/SAML 2.0 IdPs)
   - **Service accounts**
-- IAM roles and permissions are consistent between GCP and GCD.
+  - **Workload Identity Federation** (for external workloads)
+- IAM roles and permissions are consistent between GCP, GCD, and S3NS.
 
 ---
 
 ## Service Accounts
 
-Service account email addresses use GCD-specific domains:
+Service account email addresses use universe-specific domains:
 
-| GCP Domain | GCD Domain | Usage |
-|---|---|---|
-| `developer.gserviceaccount.com` | `developer.eu0-system.iam.gserviceaccount.com` | Compute Engine default service account |
-| `iam.gserviceaccount.com` | `eu0.iam.gserviceaccount.com` | Most user-managed service accounts |
-| (various) | `eu0-system.iam.gserviceaccount.com` | Some service agents |
-| `system.gserviceaccount.com` | `eu0-system.system.gserviceaccount.com` | Some service agents |
+| GCP Domain | Berlin (GCD) Domain | France (S3NS) Domain | Usage |
+|---|---|---|---|
+| `developer.gserviceaccount.com` | `developer.eu0-system.iam.gserviceaccount.com` | `developer.s3ns-system.iam.gserviceaccount.com` | Compute Engine default service account |
+| `iam.gserviceaccount.com` | `eu0.iam.gserviceaccount.com` | `s3ns.iam.gserviceaccount.com` | User-managed service accounts |
+| (various) | `eu0-system.iam.gserviceaccount.com` | `s3ns-system.iam.gserviceaccount.com` | Some service agents |
+| `system.gserviceaccount.com` | `eu0-system.system.gserviceaccount.com` | `s3ns-system.system.gserviceaccount.com` | Some service agents |
 
 Examples:
-- Default Compute Engine SA: `1234567-compute@developer.eu0-system.iam.gserviceaccount.com`
-- User-created SA: `my-sa@my-project.eu0.iam.gserviceaccount.com`
+- Default Compute Engine SA: `1234567-compute@developer.eu0-system.iam.gserviceaccount.com` (Berlin) / `1234567-compute@developer.s3ns-system.iam.gserviceaccount.com` (S3NS)
+- User-created SA: `my-sa@my-project.eu0.iam.gserviceaccount.com` (Berlin) / `my-sa@my-project.s3ns.iam.gserviceaccount.com` (S3NS)
 
-Note: user-created service account names do NOT include the `eu0:` project ID prefix.
+Note: user-created service account emails do **NOT** include the `eu0:` or `s3ns:` project ID prefix.
 
 ---
 
-## Service Availability and Feature Limitations
+## Service Availability, SecNumCloud 3.2, and Feature Limitations
 
-- Not all GCP products are available in GCD. Check the GCD product list for current availability.
-- Available products use the same names and same underlying code as GCP, but may have reduced capabilities.
-- Key limitations:
-  - **GKE**: Only Autopilot mode is available (no Standard mode).
-  - **Compute Engine**: Limited VM types; older VM families unavailable; no ARM-based images; no TPUs.
-  - **IAM**: Certain IAM policies are not supported.
-  - **Cloud Shell**: Not available at all.
-- New GCP features may not launch simultaneously in GCD.
-- Preview/pre-GA features are generally not available in GCD.
-- Some products may be unavailable if they depend on other products that are not in GCD.
+- Not all GCP products are available in GCD or S3NS. Check [services.md](services.md) for current availability.
+- **S3NS SecNumCloud 3.2 status:** On S3NS (`u-france-east1`, PREMI3NS), 29 services are **Qualifié SecNumCloud 3.2** and 10 recently released services (`Access Transparency`, `Bigtable`, `Cloud Quotas`, `Cloud Run`, `Filestore`, `Gemini platform / Agent Platform`, `Managed Service for Apache Airflow / Composer 3`, `Managed Service for Apache Spark / Dataproc`, `Secret Manager`, `Storage Transfer Service`) are in **Qualification en cours** (available today, ANSSI qualification in progress). Always verify whether the customer requires strictly SecNumCloud-qualified services.
+- Key architectural limitations across available products (see [product-differences.md](product-differences.md) for full details):
+  - **GKE:** Only Autopilot mode is available (no Standard mode).
+  - **Compute Engine:** Only `C3`, `M3`, and `A3` (H100 GPU) VM families; only Hyperdisk (`hyperdisk-balanced`); no ARM images; no TPUs; no OS Login.
+  - **Cloud Run:** Deploy from Artifact Registry only (`*.s3nsrun.fr` / `*.run-berlin-build0.goog`); Direct VPC egress only (no Serverless VPC Access connectors); no Cloud Run functions.
+  - **Cloud SQL:** MySQL and PostgreSQL only (no SQL Server), Enterprise Plus edition on `C3` (`db-perf-optimized-N-*`) only.
+  - **Bigtable:** Single-region multi-zone replication only; no Terraform support; no GoogleSQL for Bigtable; no Data Boost.
+  - **Agent Platform (Gemini Enterprise Agent Platform):** Open-weight models (Gemma, Mistral) via Model Garden & synchronous online inference (`Predict`/`RawPredict`) only; no proprietary Gemini models, no Vertex AI / Gen AI SDKs.
+  - **Managed Spark (Dataproc):** Compute Engine clusters on image `2.3+` only; no Serverless Spark or Spark on GKE.
+  - **Managed Airflow (Cloud Composer):** Composer 3 Highly Resilient in Large/Custom sizes only; no Composer 1 or 2.
+  - **Filestore:** Regional tier (`1 TiB`–`9.75 TiB`) with Direct Peering only; no Basic/Zonal/Enterprise tiers, no Private Services Access.
+  - **Secret Manager:** Global endpoint (`secretmanager.s3nsapis.fr` / `secretmanager.apis-berlin-build0.goog`) required even for regional secrets; `v1` API only.
+  - **Cloud Shell, Cloud Workstations, Cloud Code:** Not available at all.
 
 ---
 
 ## Billing and Cost Management
 
-- Billing is handled by your **GCD operator**, not by Google directly.
-- Pricing may differ from public GCP pricing.
+- Billing is handled by your **sovereign cloud operator** (e.g., S3NS in France), not by public Google Cloud directly.
+- Pricing differs from public GCP pricing.
 - **No free trial tier** is available.
 - **Committed use discounts (CUDs)** are not available.
-- Quotas may differ from GCP defaults. Quota increase requests must go through GCD support.
+- Quotas may differ from GCP defaults. Quota increase requests must go through sovereign cloud support (`support.s3ns.fr` for S3NS).
 
 ---
 
 ## SLAs
 
-- Google Cloud SLAs do **not** apply to GCD.
-- All SLAs are between you and your GCD universe operator.
-- Contact your operator for SLA details.
+- Public Google Cloud SLAs do **not** apply to GCD or S3NS.
+- All SLAs are between you and your sovereign cloud operator.
 
 ---
 
@@ -124,81 +134,58 @@ Note: user-created service account names do NOT include the `eu0:` project ID pr
 
 ### gcloud CLI
 
-- The gcloud CLI requires additional setup to target GCD instead of public GCP.
-- Must configure the CLI to use the GCD universe domain and external identity (not Google Accounts).
-- gcloud commands for unavailable products/features are also unavailable.
+- Download from the sovereign cloud storage release bucket (`storage.apis-berlin-build0.goog/cloud-sdk-release/` or `storage.s3nsapis.fr/cloud-sdk-release/`).
+- Must configure the CLI to use the sovereign cloud universe domain (`apis-berlin-build0.goog` or `s3nsapis.fr`) and Workforce Identity Federation.
 
 ### Client Libraries
 
-- You must set the environment variable `GOOGLE_CLOUD_UNIVERSE_DOMAIN` before using client libraries.
-- This tells libraries to target GCD endpoints instead of public GCP endpoints.
+- You must set the environment variable `GOOGLE_CLOUD_UNIVERSE_DOMAIN` (`apis-berlin-build0.goog` or `s3nsapis.fr`) before using client libraries.
 
 ### Cloud Shell
 
-- **Cloud Shell is not available** in GCD.
-- Install CLI tools locally or on a VM running in GCD.
-- Any workflows, scripts, or documentation that rely on Cloud Shell must be adapted for local tooling.
+- **Cloud Shell is not available** in GCD or S3NS.
+- Install CLI tools locally or on a VM running in the sovereign cloud.
 
 ### Console
 
-- The GCD console is at `console.cloud.berlin-build0.goog`.
+- **Berlin (GCD):** `console.cloud.berlin-build0.goog`
+- **France (S3NS):** `console.cloud.s3nscloud.fr`
 - Language selection is made at sign-on and cannot be changed within the console.
-- The guided organization setup flow is not available in the GCD console.
+- The guided organization setup wizard is not available in the console (use Fabric FAST — see [organization-setup.md](organization-setup.md)).
 
 ---
 
 ## Networking
 
-- GCD runs a **completely separate, isolated network** from GCP.
-  - Separate data center infrastructure.
-  - Separate WAN for inter-data center traffic.
-  - Separate internet connectivity via peering or transit.
-- **No default VPC** is created automatically for new projects (unlike GCP). You must create or assign a VPC explicitly.
-- Available networking products include: VPC, Cloud NAT, Cloud VPN, Cloud Interconnect, Cloud Router, Cloud DNS, Cloud Load Balancing, Cloud NGFW, VPC Service Controls, Google Cloud Armor - but each may have its own GCD-specific limitations.
-
----
-
-## Organization Setup
-
-- You cannot create a new organization yourself. Your GCD operator creates and provides an empty organization.
-- The guided organization setup wizard available in the GCP console is not available in GCD.
+- Each sovereign cloud runs a **completely separate, isolated network** from public GCP.
+- **No default VPC** is created automatically for new projects. You must create or assign a VPC explicitly.
+- Available networking products include: VPC, Cloud NAT, Cloud VPN (HA VPN), Cloud Interconnect, Cloud Router, Cloud DNS, Cloud Load Balancing (regional), Cloud NGFW, VPC Service Controls, Google Cloud Armor, Service Directory, and Private Service Connect.
 
 ---
 
 ## Platform Management
 
-- Products labeled "Google-managed" in GCD are actually managed by your GCD operator, not by Google. The correct mental model is "Google-powered".
-- Example: "Google-managed encryption keys" are renamed to "Google Cloud-powered encryption keys / Managed in Google Cloud Dedicated in Germany" to reflect that the operator manages them.
-- GCD has its own dedicated SRE team with independent monitoring and alerting stacks, separate from GCP's.
-
----
-
-## Hardware and OS
-
-- GCD does not provide the same hardware and OS support as GCP.
-- No ARM-based Compute Engine images.
-- No TPUs.
-- Limited machine type families and sizes.
-- New machine types or OS releases in GCP do not imply future availability in GCD.
+- Products labeled "Google-managed" in public GCP are managed by your **sovereign cloud operator** in GCD and S3NS. The correct mental model is "Google-powered, operator-managed".
+- Example: "Google-managed encryption keys" are "Google Cloud-powered encryption keys / Managed in Cloud de Confiance by S3NS" (or "Managed in Google Cloud Dedicated in Germany").
+- Each sovereign cloud has its own dedicated local operations and SRE team with independent monitoring and alerting stacks.
 
 ---
 
 ## Quick Reference: What Stays the Same vs. What Changes
 
-| Aspect | Same as GCP? | GCD Value |
-|---|---|---|
-| Service names (API names) | Yes | `compute.googleapis.com` |
-| Service endpoints | **No** | `compute.apis-berlin-build0.goog` |
-| Full resource names (FRNs) | Yes | `//compute.googleapis.com/...` |
-| Resource URLs | **No** | `https://compute.apis-berlin-build0.goog/...` |
-| OAuth scopes | Yes | Same scope strings |
-| IAM roles/permissions | Yes | Same role names |
-| Project IDs | **No** | Prefixed with `eu0:` |
-| Service account domains | **No** | `eu0.iam.gserviceaccount.com` etc. |
-| Region | **No** | `u-germany-northeast1` (single region) |
-| Console domain | **No** | `console.cloud.berlin-build0.goog` |
-| Universe domain env var | N/A | `GOOGLE_CLOUD_UNIVERSE_DOMAIN` must be set |
-| Billing | **No** | Through GCD operator |
-| SLAs | **No** | With GCD operator |
-| Cloud Identity | **No** | Not available; use Workforce Identity Federation |
-| Cloud Shell | **No** | Not available |
+| Aspect | Same as GCP? | Berlin (GCD) Value | France (S3NS) Value |
+|---|---|---|---|
+| Service names (API names) | Yes | `compute.googleapis.com` | `compute.googleapis.com` |
+| Service endpoints | **No** | `compute.apis-berlin-build0.goog` | `compute.s3nsapis.fr` |
+| Full resource names (FRNs) | Yes | `//compute.googleapis.com/...` | `//compute.googleapis.com/...` |
+| Resource URLs | **No** | `https://compute.apis-berlin-build0.goog/...` | `https://compute.s3nsapis.fr/...` |
+| OAuth scopes | Yes | Same scope strings | Same scope strings |
+| IAM roles/permissions | Yes | Same role names | Same role names |
+| Project IDs | **No** | Prefixed with `eu0:` | Prefixed with `s3ns:` |
+| Service account domains | **No** | `eu0.iam.gserviceaccount.com` | `s3ns.iam.gserviceaccount.com` |
+| Region | **No** | `u-germany-northeast1` | `u-france-east1` |
+| Console domain | **No** | `console.cloud.berlin-build0.goog` | `console.cloud.s3nscloud.fr` |
+| Universe domain env var | N/A | `GOOGLE_CLOUD_UNIVERSE_DOMAIN=apis-berlin-build0.goog` | `GOOGLE_CLOUD_UNIVERSE_DOMAIN=s3nsapis.fr` |
+| Billing & SLAs | **No** | Through GCD operator | Through S3NS |
+| Cloud Identity | **No** | Not available; use Workforce Identity Federation | Not available; use Workforce Identity Federation |
+| Cloud Shell | **No** | Not available | Not available |

@@ -128,10 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ September 16, 2024 ](#September_16_2024)
-- 
-
 
 
 
@@ -189,7 +185,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## September 16, 2024 
+## September 16, 2024
 
 
 Change 

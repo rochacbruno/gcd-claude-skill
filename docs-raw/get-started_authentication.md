@@ -88,17 +88,6 @@ Get started
 
 
 
-- On this page ** 
-- [ Principal types ](#principals)
-- [ Configure your Google Cloud Dedicated in Germany organization for authentication ](#configure)
-- [ Authenticate humans and workloads ](#authenticate)
-
-- [ Authenticate humans ](#interactive-work)
-- [ Authenticate workloads ](#workloads)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -151,7 +140,7 @@ include the following:
 - 
 
 
-Service accounts**: These are accounts specific to Google Cloud Dedicated in Germany that workloads
+**Service accounts**: These are accounts specific to Google Cloud Dedicated in Germany that workloads
 can use to access services or resources. You typically don't authenticate as a service account
 directly. Instead, you attach a service account to a resource such as a Compute Engine
 VM, or use [service account impersonation](/docs/authentication/use-service-account-impersonation).
@@ -271,11 +260,8 @@ tasks, setting up resources, changing configurations, experimenting, and
 browsing logs, you use your user account's credentials to authenticate.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 For interactive work in the Google Cloud Dedicated console, you authenticate by
 signing in to the web interface with your user credentials.
@@ -289,6 +275,7 @@ The same credentials for your Google Cloud Dedicated console session are used fo
 the gcloud CLI.
 
 
+### gcloud
 
 After you
 [install the gcloud CLI on your local device](/sdk/docs/install-sdk),

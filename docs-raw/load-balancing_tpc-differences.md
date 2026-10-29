@@ -113,19 +113,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Load balancers ](#load-balancer-components)
-- [ Load balancer resources ](#load-balancer-resources)
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Networking features ](#networking-features)
-- [ Security and access control ](#security-differences)
-- [ Other cross-product integrations ](#integrations-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -154,7 +141,7 @@ Cloud Load Balancing documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -184,7 +171,7 @@ Google Cloud Dedicated.
 
 
 | 
-Load balancers** | 
+**Load balancers** | 
 
 
 Google Cloud Dedicated in Germany has a single region, so only the following
@@ -209,7 +196,6 @@ regional load balancers are available:
 
 
 Global and classic load balancers aren't available.
-
 | 
 |
 
@@ -282,7 +268,7 @@ are available. |
 Standard Tier isn't available in Google Cloud Dedicated in Germany. All load balancers
 and their resources use Premium Tier.
 
-| |
+|
 
 | 
 **VPC networks** | 
@@ -306,7 +292,7 @@ See the [VPC
 documentation](/vpc/docs/tpc-differences) to learn more about which VPC features are
 available in Google Cloud Dedicated in Germany.
 
-| |
+|
 
 | 
 **Routing and traffic management** | 
@@ -440,9 +426,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -460,9 +444,7 @@ their Google Cloud counterparts, see the [product list.](https://berlin.devsitet
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

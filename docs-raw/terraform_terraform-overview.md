@@ -128,13 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Benefits of using Terraform ](#benefits)
-- [ Using Terraform ](#using)
-- [ Google Cloud providers ](#providers)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -150,7 +143,7 @@ provision and manage cloud infrastructure. Terraform provides plugins called
 APIs. You can use the *Terraform provider for Google Cloud* to
 provision and manage Google Cloud Dedicated infrastructure.
 
-## Benefits of using Terraform 
+## Benefits of using Terraform
 
 This section explains some of the benefits of using Terraform to provision and
 manage Google Cloud Dedicated infrastructure:

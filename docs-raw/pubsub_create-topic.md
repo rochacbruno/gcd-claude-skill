@@ -128,26 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles and permissions ](#roles-permissions-for-topics)
-
-- [ Properties of a topic ](#properties_of_a_topic)
-
-- [ Add a default subscription ](#add_a_default_subscription)
-- [ Enable ingestion ](#enable_ingestion)
-- [ Enable topic message retention ](#enable_message_retention)
-- [ Export message data to BigQuery ](#export_bigquery)
-- [ Backup message data to Cloud Storage ](#export_storage)
-- [ Transforms ](#transforms)
-- [ Google Cloud-powered encryption key ](#google-managed_encryption_key)
-- [ Cloud KMS key ](#cloud_kms_key)
-
-- [ Create a topic ](#create_a_topic_2)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -188,7 +168,7 @@ you want to learn more about an import topic and how to create one, see
 To create a topic you can use the Google Cloud Dedicated console, the Google Cloud CLI,
 the client library, or the Pub/Sub API.
 
-## Before you begin 
+## Before you begin
 
 - 
 
@@ -302,8 +282,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -480,11 +460,8 @@ For more information about creating a key, see [Configure message encryption](/p
 Create a topic before you can publish or subscribe to it.
 
 
-[Console](#console) [ gcloud ](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) 
-More 
 
-[Node.js](#node.js) [Node.ts](#node.ts) [PHP](#php) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
-
+### Console
 
 To create a topic, follow these steps:
 
@@ -565,6 +542,7 @@ Click **Create topic**.
 
 
 
+### gcloud
 
 To create a topic, run the
 [`gcloud pubsub topics create`](/sdk/gcloud/reference/pubsub/topics/create)
@@ -577,6 +555,8 @@ gcloud pubsub topics create TOPIC_ID
 
 
 
+
+### REST
 
 To create a topic, use the
 [`projects.topics.create`](/pubsub/docs/reference/rest/v1/projects.topics/create)
@@ -610,6 +590,7 @@ Response:
 ```
 
 
+### C++
 
 
 
@@ -662,6 +643,7 @@ std :: cout "The topic was successfully created: " topic - > DebugString ()
 
 
 
+### C#
 
 
 
@@ -722,6 +704,7 @@ return topic ;
 
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -789,6 +772,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -847,6 +831,7 @@ System . out . println ( "Created topic: " + topic . [ getName ](https://berlin.
 
 
 
+### Node.js
 
 
 
@@ -899,6 +884,7 @@ console . log ( ` Topic $ { topicNameOrId } created . ` );
 
 
 
+### Node.ts
 
 
 
@@ -951,6 +937,7 @@ console . log ( ` Topic $ { topicNameOrId } created . ` );
 
 
 
+### PHP
 
 
 
@@ -1004,6 +991,7 @@ printf('Topic created: %s' . PHP_EOL, $topic->name());
 
 
 
+### Python
 
 
 
@@ -1052,6 +1040,7 @@ print ( f "Created topic: { topic . name } " )
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -1098,6 +1087,7 @@ puts "Topic #{ topic . name } created."
 
 
 
+### Rust
 
 
 

@@ -113,14 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -143,7 +135,7 @@ Service Usage documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 

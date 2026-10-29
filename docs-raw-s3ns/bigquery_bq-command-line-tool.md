@@ -126,22 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required_roles)
-
-- [ Download the file that contains the source data ](#download_the_file_that_contains_the_source_data)
-- [ Create a dataset ](#create_a_dataset)
-- [ Load data into a table ](#load_data_into_a_table)
-- [ Query table data ](#query_table_data)
-- [ Clean up ](#clean-up)
-
-- [ Delete the project ](#delete_the_project)
-- [ Delete the resources ](#delete_the_resources)
-
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -151,8 +135,7 @@ Guides
 
 
 
-
-# Use the bq tool 
+# Use the bq tool
 
 
 
@@ -169,7 +152,7 @@ For a complete reference of all `bq` commands and flags, see the
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -200,8 +183,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -278,7 +261,6 @@ Enable the BigQuery API, if it is not already enabled.
 
 
 **Roles required to enable APIs**
-
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the

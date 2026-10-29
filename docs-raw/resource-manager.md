@@ -120,11 +120,12 @@ Resource Manager
 
 
 
-# Resource Manager documentation 
+
+# Resource Manager documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/resource-manager/docs/manage-google-cloud-resources)
+Read product documentation 
 
 
 

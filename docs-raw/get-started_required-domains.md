@@ -88,11 +88,6 @@ Get started
 
 
 
-- On this page 
-- [ Required domains ](#required_domains)
-- [ Monitoring domains ](#monitoring_domains)
-- 
-
 
 
 
@@ -109,7 +104,7 @@ errors when accessing or using the Google Cloud Dedicated console. This document
 domains and domain patterns that must be allowed for
 the Google Cloud Dedicated console to function properly.
 
-## Required domains 
+## Required domains
 
 The following domains and domain patterns are required for
 Google Cloud Dedicated console functionality. If any of these domains are blocked,

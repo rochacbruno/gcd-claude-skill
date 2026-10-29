@@ -120,11 +120,12 @@ Load Balancing
 
 
 
-# Cloud Load Balancing documentation 
+
+# Cloud Load Balancing documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/load-balancing/docs/load-balancing-overview)
+Read product documentation 
 
 
 

@@ -113,16 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Projects ](#naming-differences)
-- [ Organizations ](#organization-differences)
-- [ Availability and disaster recovery ](#availability-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -149,7 +139,7 @@ Resource Manager documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -229,9 +219,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -241,9 +229,7 @@ their Google Cloud counterparts, see the [product list.](https://berlin.devsitet
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

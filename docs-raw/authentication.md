@@ -148,24 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Introduction ](#introduction)
-- [ How to get help with authentication ](#quick-links)
-- [ Choose the right authentication method for your use case ](#auth-decision-tree)
-- [ Authorization methods for Google Cloud Dedicated services ](#authorization-gcp)
-- [ Application Default Credentials ](#adc)
-- [ Terminology ](#terminology)
-
-- [ Authentication ](#authentication)
-- [ Authorization ](#authorization)
-- [ Credentials ](#credentials)
-- [ Principal ](#principal)
-- [ Token ](#token)
-- [ Workload and workforce ](#workload-workforce)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -177,7 +159,7 @@ Guides
 This document helps you understand some key authentication methods and concepts
 and where to get help with implementing or troubleshooting authentication.
 
-## Introduction 
+## Introduction
 
 Authentication is the process by which your identity is confirmed
 through the use of some kind of [credential](#credentials). Authentication is

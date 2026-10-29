@@ -120,11 +120,12 @@ Network Service Tiers
 
 
 
-# Network Service Tiers documentation 
+
+# Network Service Tiers documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/network-tiers/docs/overview)
+Read product documentation 
 
 
 

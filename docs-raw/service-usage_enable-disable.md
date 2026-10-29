@@ -126,15 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before)
-
-- [ Required roles ](#required-roles)
-
-- [ Enable a service ](#enabling)
-- [ Disable a service ](#disabling)
-- [ Check the status of a long-running operation ](#check-lro)
-- 
 
 
 
@@ -143,8 +134,7 @@ Guides
 
 
 
-
-# Enable and disable services 
+# Enable and disable services
 
 
 
@@ -163,17 +153,14 @@ For Service Usage quota limits, see
 billable usage. Depending on the API, you can explicitly
 [cap requests](/apis/docs/capping-api-usage).
 
-## Before you begin 
+## Before you begin
 
 Before enabling and disabling services, you must set up your
 Google Cloud Dedicated project and environment for Service Usage.
 
 
-[Console](#console) [ gcloud ](#gcloud) [ REST API ](#rest-api) 
-More 
 
-
-
+### Console
 
 
 
@@ -202,8 +189,8 @@ select or create a Google Cloud Dedicated project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -269,6 +256,7 @@ project, then you already have the required permissions.
 
 
 
+### gcloud
 
 
 
@@ -356,8 +344,8 @@ gcloud init
 
 
 
-**Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -449,6 +437,7 @@ then you already have the required permissions.
 
 
 
+### REST API
 
 - 
 
@@ -544,11 +533,8 @@ information stays confidential within Google. We use it to understand API usage
 and to contact you if necessary.
 
 
-[Console](#console) [ gcloud ](#gcloud) [REST API](#rest-api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -573,6 +559,7 @@ Click **Enable**.
 
 
 
+### gcloud
 
 The
 
@@ -602,14 +589,15 @@ Execute the
 command:
 
 
-#### Linux, macOS, or Cloud Shell
 
+#### Linux, macOS, or Cloud Shell
 
 
 
 ```
 gcloud services enable SERVICE 
 ```
+
 
 
 
@@ -618,7 +606,6 @@ gcloud services enable SERVICE
 
 
 
-
 ```
 gcloud services enable SERVICE 
 ```
@@ -626,8 +613,8 @@ gcloud services enable SERVICE
 
 
 
-#### Windows (cmd.exe)
 
+#### Windows (cmd.exe)
 
 
 
@@ -676,6 +663,8 @@ your original request.
 
 
 
+### REST API
+
 ### Enable a single service
 
 To enable a single service use the
@@ -704,9 +693,8 @@ want to enable.
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -769,9 +757,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -907,9 +894,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -985,9 +971,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1135,11 +1120,8 @@ for clusters to be reinstated. For more information, see
 [Cluster lifecycle](/kubernetes-engine/docs/get-started/cluster-lifecycle).
 
 
-[Console](#console) [ gcloud ](#gcloud) [REST API](#rest-api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1165,6 +1147,7 @@ Click stop
 
 
 
+### gcloud
 
 The
 
@@ -1194,14 +1177,15 @@ Execute the
 command:
 
 
-#### Linux, macOS, or Cloud Shell
 
+#### Linux, macOS, or Cloud Shell
 
 
 
 ```
 gcloud services disable SERVICE 
 ```
+
 
 
 
@@ -1210,7 +1194,6 @@ gcloud services disable SERVICE
 
 
 
-
 ```
 gcloud services disable SERVICE 
 ```
@@ -1218,8 +1201,8 @@ gcloud services disable SERVICE
 
 
 
-#### Windows (cmd.exe)
 
+#### Windows (cmd.exe)
 
 
 
@@ -1268,6 +1251,7 @@ your original request.
 
 
 
+### REST API
 
 To disable a service use the
 [`services.disable`](/service-usage/docs/reference/rest/v1/services/disable)
@@ -1295,9 +1279,8 @@ want to disable.
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -1360,9 +1343,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1485,9 +1467,8 @@ You receive this ID in the response to your original request.
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -1543,9 +1524,8 @@ curl -X GET \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 

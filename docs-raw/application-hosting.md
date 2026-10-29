@@ -129,8 +129,9 @@ Application hosting
 
 
 
-### Serverless
 
+
+### Serverless
 
 
 
@@ -202,8 +203,8 @@ Use a fully managed application platform to run your code, function, or containe
 
 
 
-### Container orchestration
 
+### Container orchestration
 
 
 
@@ -329,8 +330,8 @@ Learn about configuring security in GKE.
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

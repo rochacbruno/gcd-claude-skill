@@ -128,25 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Create DNS server policies ](#create-dns-policies)
-
-- [ Create an inbound DNS server policy ](#create-in)
-- [ Create an outbound DNS server policy ](#create-out)
-- [ Create a DNS server policy for both inbound and outbound forwarding ](#create-in-out)
-- [ List inbound forwarder entry points ](#list-in-entrypoints)
-
-- [ Update DNS policies ](#updating)
-
-- [ Change VPC networks ](#update-change-nets)
-- [ Enable or disable inbound forwarding ](#update-in)
-
-- [ List DNS policies ](#listing)
-- [ Delete a DNS policy ](#deleting)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -161,7 +142,7 @@ use them with Virtual Private Cloud (VPC) networks. Before you use this page,
 review the
 [DNS server policies](/dns/docs/server-policies-overview) overview.
 
-## Before you begin 
+## Before you begin
 
 The Cloud DNS API requires that you create a Google Cloud Dedicated project and enable the
 Cloud DNS API.
@@ -200,7 +181,7 @@ The client ID (`xxxxxx.apps.googleusercontent.com`).
 
 - 
 The project ID that you want to use. You can find the ID at the
-top of the Overview** page in the
+top of the **Overview** page in the
 Google Cloud Dedicated console. You can also ask your user to provide the
 project name that they want to use in your app.
 
@@ -222,8 +203,8 @@ To choose a different project than one you have chosen previously, specify
 the `--project` option at the command line.
 
 
-#### Permissions required for this task
 
+#### Permissions required for this task
 
 To perform this task, you must have been granted the following permissions
 *or* the following IAM roles.
@@ -279,11 +260,8 @@ applies. After you create your policy, you can
 creates.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Terraform ](#terraform) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -331,6 +309,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 To create an inbound DNS server policy, run the [`dns policies
 create`](/sdk/gcloud/reference/dns/policies/create) command:
@@ -355,6 +334,7 @@ VPC networks that the DNS server policy must bind to
 
 
 
+### Terraform
 
 
 
@@ -402,11 +382,8 @@ To specify a list of alternative name servers for a VPC network,
 you can create an outbound DNS server policy.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Terraform ](#terraform) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -452,6 +429,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 To create an outbound DNS server policy, run the [`dns policies
 create`](/sdk/gcloud/reference/dns/policies/create) command:
@@ -485,6 +463,7 @@ name servers, accessed by using private routing
 
 
 
+### Terraform
 
 
 
@@ -538,11 +517,8 @@ auto_create_subnetworks = false
 ### Create a DNS server policy for both inbound and outbound forwarding
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Terraform ](#terraform) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -588,6 +564,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 To create a DNS server policy for both inbound and outbound forwarding,
 run the [`dns policies create`](/sdk/gcloud/reference/dns/policies/create)
@@ -623,6 +600,7 @@ name servers, accessed by using private routing.
 
 
 
+### Terraform
 
 
 
@@ -705,11 +683,8 @@ interface must have an external IP address or a subnet of the NIC must have
 Private Google Access enabled.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 View the list of inbound forwarder entry points for a policy:
 
@@ -731,6 +706,7 @@ Each network bound to the policy lists the **Inbound query forwarding IP**
 addresses.
 
 
+### gcloud
 
 To list the set of regional internal IP addresses that serve as entry points
 for all inbound forwarding policies, run the [`compute addresses
@@ -765,11 +741,8 @@ order of each VPC network is updated to include the specified
 alternative name servers.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -796,6 +769,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 To modify the list of networks to which a DNS server policy applies, run the
 [`dns policies update`](/sdk/gcloud/reference/dns/policies/update) command:
@@ -825,11 +799,8 @@ outbound policy (alternative name server). You can also disable inbound
 forwarding for an existing DNS policy.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 Enable inbound forwarding for a DNS server policy:
 
@@ -869,6 +840,7 @@ Disable inbound forwarding for a DNS server policy:
 
 
 
+### gcloud
 
 To enable inbound forwarding for a DNS server policy, run the [`dns policies
 update`](/sdk/gcloud/reference/dns/policies/update) command:
@@ -896,11 +868,8 @@ Replace ` NAME ` with the name of the policy.
 ## List DNS policies
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -914,6 +883,7 @@ Any DNS server policy created in your project is listed.
 
 
 
+### gcloud
 
 To list DNS server policies in your project, run the [`dns policies
 list`](/sdk/gcloud/reference/dns/policies/list) command:
@@ -928,11 +898,8 @@ gcloud dns policies list
 ## Delete a DNS policy
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 To delete a DNS server policy, it must not be bound to any network.
 [Update your policy](#update-change-nets) to remove all networks before
@@ -951,6 +918,7 @@ of the policy you want to delete.
 
 
 
+### gcloud
 
 To delete a DNS server policy, run the [`dns policies
 delete`](/sdk/gcloud/reference/dns/policies/delete) command:

@@ -128,15 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ March 04, 2025 ](#March_04_2025)
-- [ February 19, 2025 ](#February_19_2025)
-- [ October 15, 2024 ](#October_15_2024)
-- [ October 03, 2024 ](#October_03_2024)
-- [ August 30, 2024 ](#August_30_2024)
-- [ August 21, 2024 ](#August_21_2024)
-- 
-
 
 
 
@@ -191,7 +182,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## March 04, 2025 
+## March 04, 2025
 
 v1 
 

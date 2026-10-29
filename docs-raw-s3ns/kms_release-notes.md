@@ -128,15 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ August 24, 2026 ](#August_24_2026)
-- [ August 06, 2026 ](#August_06_2026)
-- [ July 16, 2026 ](#July_16_2026)
-- [ February 21, 2025 ](#February_21_2025)
-- [ October 18, 2024 ](#October_18_2024)
-- [ June 14, 2024 ](#June_14_2024)
-- 
-
 
 
 
@@ -194,7 +185,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## August 24, 2026 
+## August 24, 2026
 
 
 Feature 
@@ -203,8 +194,7 @@ Feature
 Cloud KMS supports deleting key rings in General Availability.
 
 For more information about deleting Cloud KMS resources, see [Delete Cloud KMS
-resources](/kms/docs/delete-kms-resources).
-
+resources](/kms/docs/delete-kms-resources). 
 
 
 ## August 06, 2026

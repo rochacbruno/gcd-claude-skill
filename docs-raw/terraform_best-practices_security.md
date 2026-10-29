@@ -128,16 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Use remote state ](#use-remote-state)
-- [ Encrypt state ](#encrypt-state)
-- [ Don't store secrets in state ](#storing-secrets)
-- [ Mark sensitive outputs ](#sensitive-outputs)
-- [ Ensure separation of duties ](#separation-of-duties)
-- [ Run continuous audits ](#continuous-audits)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -156,7 +146,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Google Cloud Dedicated in Germany, see
 [Get started with Terraform](/docs/terraform/get-started-with-terraform).
 
-## Use remote state 
+## Use remote state
 
 For Google Cloud Dedicated customers, we recommend using the
 [Cloud Storage state backend](https://www.terraform.io/docs/backends/types/gcs.html).

@@ -128,10 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -151,11 +147,8 @@ For a introductory guide to using Terraform with Google Cloud Dedicated, see the
 [Terraform for Google Cloud Dedicated Quickstart](/docs/terraform/create-vm-instance).
 
 
-[ Cloud Shell ](#cloud-shell) [ Local shell ](#local-shell) 
-More 
 
-
-
+### Cloud Shell
 
 - 
 
@@ -163,16 +156,6 @@ To use an online terminal with the gcloud CLI already set up,
 activate Cloud Shell:
 
 
-
-
-
-
-
-
-
-
-
-Activate Cloud Shell on this page 
 
 At the bottom of this page, a Cloud Shell session starts and
 displays a command-line prompt. It can take a few seconds for the session
@@ -235,6 +218,7 @@ Terraform.
 
 
 
+### Local shell
 
 - 
 
@@ -289,7 +273,7 @@ Terraform.
 
 
 
-## What's next 
+## What's next
 
 - Work through the
 [Terraform for Google Cloud Dedicated quickstart](/docs/terraform/create-vm-instance)

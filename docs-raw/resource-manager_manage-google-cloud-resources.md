@@ -126,18 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ View your resources ](#view_your_resources)
-- [ Create a project resource ](#create_a_project_resource)
-- [ Create a folder resource ](#create_a_folder_resource)
-- [ Grant IAM roles at the organization level ](#grant-iam-roles-org)
-- [ Create a billing account ](#create_a_billing_account)
-- [ Migrate existing billing accounts ](#migrate_existing_billing_accounts)
-- [ View billing accounts under the organization resource ](#view_billing_accounts_under_the_organization_resource)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -147,8 +135,7 @@ Guides
 
 
 
-
-# Manage your Google Cloud Dedicated in Germany resources 
+# Manage your Google Cloud Dedicated in Germany resources
 
 
 
@@ -162,7 +149,7 @@ level, and manage organization resource billing accounts using the
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -256,8 +243,8 @@ Billing Account Creator, Folder Creator, Project Creator
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -265,7 +252,7 @@ Billing Account Creator, Folder Creator, Project Creator
 - 
 
 
-In the Google Cloud Dedicated console, go to the IAM** page.
+In the Google Cloud Dedicated console, go to the **IAM** page.
 
 
 [Go to IAM](https://console.cloud.berlin-build0.goog/projectselector/iam-admin/iam?supportedpurview=organizationId)
@@ -295,8 +282,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 

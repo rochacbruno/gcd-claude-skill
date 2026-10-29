@@ -120,11 +120,12 @@ Service Directory
 
 
 
-# Service Directory documentation 
+
+# Service Directory documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/service-directory/docs/overview)
+Read product documentation 
 
 
 

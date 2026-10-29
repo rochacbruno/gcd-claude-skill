@@ -73,14 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Differences from Google Cloud ](#differences)
-- [ Install client libraries ](#install_client_libraries)
-- [ Authenticate and use client Libraries ](#authenticate_and_use_client_libraries)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -101,7 +93,7 @@ This document explains the specific steps you need to do to use these libraries
 in Google Cloud Dedicated, as well as key differences
 from using them with Google Cloud.
 
-## Before you begin 
+## Before you begin
 
 You must specify your universe when using client libraries in
 Google Cloud Dedicated. Set the

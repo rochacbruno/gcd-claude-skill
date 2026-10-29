@@ -128,12 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ January 30, 2025 ](#January_30_2025)
-- [ August 08, 2024 ](#August_08_2024)
-- [ July 31, 2024 ](#July_31_2024)
-- 
-
 
 
 
@@ -186,7 +180,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## January 30, 2025 
+## January 30, 2025
 
 
 Feature 

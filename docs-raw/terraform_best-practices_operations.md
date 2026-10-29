@@ -128,18 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Always plan first ](#plan)
-- [ Implement an automated pipeline ](#pipeline)
-- [ Use service account credentials for continuous integration ](#credentials)
-- [ Avoid importing existing resources ](#importing)
-- [ Don't modify Terraform state manually ](#manual-state-modification)
-- [ Regularly review version pins ](#version-pins)
-- [ Use application default credentials when running locally ](#default-credentials)
-- [ Set aliases to Terraform ](#aliases)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -155,7 +143,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Google Cloud Dedicated in Germany, see
 [Get started with Terraform](/docs/terraform/get-started-with-terraform).
 
-## Always plan first 
+## Always plan first
 
 Always generate a plan first for Terraform executions.
 [Save the plan to an output file](https://learn.hashicorp.com/tutorials/terraform/automate-terraform).

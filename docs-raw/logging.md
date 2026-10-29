@@ -120,11 +120,12 @@ Cloud Logging
 
 
 
-# Cloud Logging documentation 
+
+# Cloud Logging documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/logging/docs/overview)
+Read product documentation 
 
 
 

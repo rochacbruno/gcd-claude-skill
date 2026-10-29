@@ -1,24 +1,26 @@
-# Cloud Quotas in Google Cloud Dedicated (GCD)
+# Cloud Quotas in Google Cloud Dedicated (GCD) & Cloud de Confiance (S3NS)
 
-Cloud Quotas enables customers to monitor quota usage, create and modify quota alerts, and request limit adjustments. Quotas are managed through the Cloud Quotas dashboard in the GCD console or via the Cloud Quotas API and gcloud CLI.
+Cloud Quotas enables customers to monitor quota usage, create and modify quota alerts, and request limit adjustments. Quotas are managed through the Cloud Quotas dashboard in the sovereign cloud console or via the Cloud Quotas API and `gcloud` CLI.
+
+> **S3NS SecNumCloud 3.2 Note:** On Cloud de Confiance by S3NS (`u-france-east1`), **Cloud Quotas** is currently in **`Qualification en cours`** for ANSSI SecNumCloud 3.2 qualification (see [services.md](services.md)).
 
 ## Key Differences from Public Google Cloud
 
-In GCD, quota increase adjustments require contacting Google Cloud Dedicated support. You must provide:
+In GCD and S3NS, quota increase adjustments require contacting sovereign cloud support (for S3NS: [support.s3ns.fr](https://support.s3ns.fr); for Berlin GCD: via your dedicated EU support project). You must provide:
 
-- **Project name or number** - e.g., `my-project`
-- **Service name** - e.g., `compute.googleapis.com`
-- **Quota name** - e.g., `CPUS-per-project-region`
-- **Dimensions** - e.g., `region=europe-west9-a, vm_family=C3`
-- **Desired quota value** - e.g., `2000`
-- **Justification** - explain why the increase is needed
-- **Email address** - for follow-up contact
+- **Project name or number** — e.g., `eu0:my-project` (Berlin) or `s3ns:my-project` (S3NS)
+- **Service name** — e.g., `compute.googleapis.com`
+- **Quota name** — e.g., `CPUS-per-project-region`
+- **Dimensions** — e.g., `region=u-germany-northeast1, vm_family=C3` (Berlin) or `region=u-france-east1, vm_family=C3` (S3NS)
+- **Desired quota value** — e.g., `2000`
+- **Justification** — explain why the increase is needed
+- **Email address** — for follow-up contact
 
-Preview features from public GCP are generally not available in GCD unless explicitly stated.
+Preview features from public GCP are generally not available in GCD or S3NS unless explicitly stated.
 
 ## Types of Quotas
 
-- **Allocation quotas**: Restrict how much of a resource GCD allocates (e.g., number of VMs per project).
+- **Allocation quotas**: Restrict how much of a resource the sovereign cloud allocates (e.g., number of VMs per project).
 - **Rate quotas**: Restrict the rate of resource consumption over a time period (e.g., API calls per minute).
 - **Concurrent quotas**: Restrict the number of operations running concurrently (e.g., long-running insert operations).
 
@@ -32,19 +34,19 @@ Preview features from public GCP are generally not available in GCD unless expli
 
 ## Quota Hierarchy and Scope
 
-Quotas apply at different levels of the GCD resource hierarchy:
+Quotas apply at different levels of the resource hierarchy:
 
 - **Project-level**: Most common. Usage in one project does not affect another.
 - **Folder-level**: Child folders and projects contribute to usage.
 - **Organization-level**: All child folders and projects contribute.
 
-Quotas can also be **regional** (restricting usage in a GCD region) or **zonal** (restricting usage per zone). Some resources have both.
+Quotas can also be **regional** (restricting usage in `u-germany-northeast1` or `u-france-east1`) or **zonal** (restricting usage per zone `-a`, `-b`, `-c`). Some resources have both.
 
 ## Terminology
 
 | Term | Description |
 |------|-------------|
-| Quota | A GCD resource and its unit of measurement, e.g., `CPUS-PER-VM-FAMILY-per-project-region` |
+| Quota | A resource and its unit of measurement, e.g., `CPUS-PER-VM-FAMILY-per-project-region` |
 | Quota value | The maximum allowed for a given quota; adjustable for most quotas |
 | System limit | A fixed architectural constraint that cannot be changed |
 | Dimension | An attribute such as region, zone, `gpu_family`, or `network_id` |
@@ -56,8 +58,9 @@ Quotas can also be **regional** (restricting usage in a GCD region) or **zonal**
 
 ### Console
 
-View quota values in the GCD console at **IAM & Admin > Quotas & System Limits**:
-`https://console.cloud.berlin-build0.goog/iam-admin/quotas`
+View quota values in the sovereign cloud console at **IAM & Admin > Quotas & System Limits**:
+- **Berlin (GCD):** `https://console.cloud.berlin-build0.goog/iam-admin/quotas`
+- **France (S3NS):** `https://console.cloud.s3nscloud.fr/iam-admin/quotas`
 
 You can also view API-specific quotas from **APIs & Services > [API name] > Quotas & System Limits**.
 
@@ -71,7 +74,7 @@ Current usage is calculated as follows:
 
 List quota information for a service:
 
-```
+```bash
 gcloud beta quotas info list \
   --service=SERVICE_NAME \
   --project=PROJECT_ID_OR_NUMBER \
@@ -80,7 +83,7 @@ gcloud beta quotas info list \
 
 View details for a specific quota:
 
-```
+```bash
 gcloud beta quotas info describe QUOTA_ID \
   --service=SERVICE_NAME \
   --project=PROJECT_ID_OR_NUMBER \
@@ -89,7 +92,7 @@ gcloud beta quotas info describe QUOTA_ID \
 
 View quota info for an organization:
 
-```
+```bash
 gcloud beta quotas info list \
   --service=SERVICE_NAME \
   --organization=ORGANIZATION_ID \
@@ -98,7 +101,7 @@ gcloud beta quotas info list \
 
 Get metric names for a service:
 
-```
+```bash
 gcloud beta quotas info list \
   --project=PROJECT_ID_OR_NUMBER \
   --service=SERVICE_NAME \
@@ -109,13 +112,13 @@ gcloud beta quotas info list \
 
 ### Requesting a Quota Increase
 
-In GCD, quota increases above the default require filing a support request. From the console:
+In GCD and S3NS, quota increases above the default require filing a support request. From the console:
 
 1. Go to **IAM & Admin > Quotas & System Limits**.
 2. Find and select the quota to update.
 3. Enter the desired new value.
 4. Gather the required details (project, service, quota name, dimensions, desired value, justification, email).
-5. File a GCD support request with that information.
+5. File a support request with your sovereign cloud operator (for S3NS: `support.s3ns.fr`; for Berlin GCD: via your EU support project).
 
 Batch requests by product area to reduce review time.
 
@@ -129,7 +132,7 @@ Quota decrease adjustments can be made at project, organization, and folder leve
 
 Check existing preferences:
 
-```
+```bash
 gcloud beta quotas preferences list \
   --project=PROJECT_ID_OR_NUMBER \
   --billing-project=BILLING_PROJECT_ID_OR_NUMBER
@@ -137,7 +140,7 @@ gcloud beta quotas preferences list \
 
 Check preferences with pending adjustments:
 
-```
+```bash
 gcloud beta quotas preferences list \
   --project=PROJECT_ID_OR_NUMBER \
   --reconciling-only=true \
@@ -146,7 +149,7 @@ gcloud beta quotas preferences list \
 
 Create a new quota preference (request adjustment):
 
-```
+```bash
 gcloud beta quotas preferences create \
   --project=PROJECT_ID_OR_NUMBER \
   --service=SERVICE_NAME \
@@ -161,7 +164,7 @@ gcloud beta quotas preferences create \
 
 Update an existing preference:
 
-```
+```bash
 gcloud beta quotas preferences update PREFERENCE_ID \
   --preferred-value=PREFERRED_VALUE \
   --quota-id=QUOTA_ID \
@@ -174,7 +177,7 @@ gcloud beta quotas preferences update PREFERENCE_ID \
 
 View a specific preference:
 
-```
+```bash
 gcloud beta quotas preferences describe PREFERENCE_ID \
   --project=PROJECT_ID_OR_NUMBER \
   --billing-project=BILLING_PROJECT_ID_OR_NUMBER
@@ -182,7 +185,7 @@ gcloud beta quotas preferences describe PREFERENCE_ID \
 
 ## The Quota Project Concept
 
-Every request to a GCD API is counted against a quota, and quotas are enforced by project. The "quota project" determines which project's quota is consumed.
+Every request to a sovereign cloud API is counted against a quota, and quotas are enforced by project. The "quota project" determines which project's quota is consumed.
 
 **Note for gcloud CLI users**: The quota project is sometimes called the "billing project" because the `--billing-project` flag controls it.
 
@@ -208,23 +211,11 @@ Required permission: `serviceusage.services.use` (included in the `roles/service
 
 ## Monitoring and Alerting
 
-### Setting Up Quota Alerts
+### Querying Quota Metrics
 
-1. Go to **IAM & Admin > Quotas & System Limits** in the GCD console.
-2. In the right-most column, click **More actions > Create usage alert**.
-3. Select a notification channel (email, SMS, Pub/Sub).
-4. Click **Create**.
+In GCD and S3NS, native Cloud Monitoring custom dashboards and alerting UI are not available — metrics are queried using **PromQL** or exported via the Prometheus API to self-hosted Grafana (see [product-differences.md](product-differences.md)).
 
-This is supported for project-level quotas only.
-
-### Creating Charts in Cloud Monitoring
-
-1. Go to **Metrics Explorer** in the GCD console.
-2. In the **Metric** selector, search for `quota usage`.
-3. Select **Consumer Quota** as the resource type, then choose the metric.
-4. Use filters and aggregations to focus the view.
-
-Not all services support quota metrics. Supported services include Compute Engine, Dataflow, Spanner, Pub/Sub, Cloud Vision, Speech-to-Text, Cloud Monitoring, and Cloud Logging. Services like App Engine and Cloud SQL do not support quota metrics.
+Consumer quota metrics (`serviceruntime.googleapis.com/quota/allocation/usage`, `serviceruntime.googleapis.com/quota/rate/net_usage`, `serviceruntime.googleapis.com/quota/limit`) are available for supported sovereign cloud services such as Compute Engine, Pub/Sub, Cloud Monitoring, and Cloud Logging. Services like Cloud SQL do not emit `serviceruntime` consumer quota metrics.
 
 ## Permissions
 
@@ -250,10 +241,6 @@ Predefined role: **Quota Administrator** (`roles/servicemanagement.quotaAdmin`).
 
 Required permissions: `resourcemanager.projects.get`, `serviceusage.services.list`, `serviceusage.quotas.get`
 
-### Creating Alert Policies
-
-Required permission: `monitoring.alertPolicies.create`
-
 ## Troubleshooting
 
 ### Quota Exceeded Errors
@@ -270,17 +257,17 @@ For **allocation quotas**, free up quota by deleting unused resources. For **rat
 ### gcloud CLI Errors
 
 **Permission denied on quota project**: Add `--billing-project` to your command, or run:
-```
+```bash
 gcloud config set billing/quota_project CURRENT_PROJECT
 ```
 
 **Invalid choice for quotas command**: Update the gcloud CLI:
-```
+```bash
 gcloud components update
 ```
 
 **Beta component not installed**: Install it:
-```
+```bash
 gcloud components install beta
 ```
 
@@ -295,7 +282,7 @@ Fix these by setting the quota project correctly.
 
 ## Known Issues
 
-- **Quota values during rollouts**: When GCD changes default quota values, the rollout is gradual. The console may not reflect the new value until the rollout completes. An informational banner and rolling update indicator appear during rollouts.
+- **Quota values during rollouts**: When the sovereign cloud operator changes default quota values, the rollout is gradual. The console may not reflect the new value until the rollout completes. An informational banner and rolling update indicator appear during rollouts.
 - **contactEmail field required**: When updating `QuotaPreference` via the API, the `contactEmail` field is required and cannot be a group email.
 - **Console cannot adjust quotas with no prior usage**: Use the gcloud CLI or REST API instead to request adjustments for quotas that have no prior usage.
-- **Per-user quota usage not displayed**: The GCD console does not show per-user quota usage.
+- **Per-user quota usage not displayed**: The sovereign cloud console does not show per-user quota usage.

@@ -107,10 +107,6 @@ Reference
 
 
 
-- On this page 
-- [ Google Cloud CLI ](#gcloud-cli)
-- 
-
 
 
 

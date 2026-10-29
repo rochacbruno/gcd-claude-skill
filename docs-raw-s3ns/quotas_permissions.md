@@ -108,14 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Permissions for viewing quota ](#permissions_viewing)
-- [ Permissions for changing quota ](#permissions_changing)
-- [ Permissions for viewing quota increase requests ](#permissions_increase)
-- [ Permissions for creating an alert policy for a quota ](#permissions_create_alert)
-- [ What's next ](#whats_next)
-- 
-
 
 
 

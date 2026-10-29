@@ -128,30 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Google Cloud Dedicated in Germany services producing audit logs ](#services)
-- [ Required roles ](#roles)
-- [ Types of audit logs ](#types)
-
-- [ Admin Activity audit logs ](#admin-activity)
-- [ Data Access audit logs ](#data-access)
-- [ System Event audit logs ](#system-event)
-- [ Policy Denied audit logs ](#policy_denied)
-
-- [ Audit log entry structure ](#audit_log_entry_structure)
-
-- [ Log name ](#log_name)
-
-- [ Caller identities in audit logs ](#user-id)
-- [ IP address of the caller in audit logs ](#caller-ip)
-- [ Viewing audit logs ](#view-logs)
-- [ Storing and routing audit logs ](#storing_and_routing_audit_logs)
-- [ Audit log retention ](#audit_log_retention)
-- [ Access control ](#access-control)
-- [ Quotas and limits ](#quotas)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -167,7 +143,7 @@ with the same level of transparency as in on-premises environments. These
 audit logs help your security, auditing, and compliance teams monitor
 Google Cloud Dedicated data and systems for vulnerabilities or data misuse.
 
-## Google Cloud Dedicated in Germany services producing audit logs 
+## Google Cloud Dedicated in Germany services producing audit logs
 
 For a list of Google Cloud Dedicated services that provide audit logs, see
 [Google Cloud Dedicated in Germany services with audit logs](/logging/docs/audit/services). All
@@ -541,11 +517,8 @@ However, for audit logs related to billing, you can only use the
 Google Cloud CLI or the Logging API.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 In the Google Cloud Dedicated console, you can use the Logs Explorer
 to retrieve your audit log entries for your Google Cloud Dedicated project, folder,
@@ -555,7 +528,7 @@ or organization:
 
 In the Google Cloud Dedicated console, go to the
 segment 
-Logs Explorer** page:
+**Logs Explorer** page:
 
 
 [Go to **Logs Explorer**](https://console.cloud.berlin-build0.goog/logs/query)
@@ -624,6 +597,7 @@ For more information about querying by using the Logs Explorer, see
 
 
 
+### gcloud
 
 The Google Cloud CLI provides a command-line interface to the
 Logging API. Supply a valid resource identifier in each of the log
@@ -676,6 +650,7 @@ For more information about using the gcloud CLI, see
 [`gcloud logging read`](/sdk/gcloud/reference/logging/read).
 
 
+### REST
 
 To query your log data by using the Cloud Logging API, use the
 [`entries.list`](/logging/docs/reference/v2/rest/v2/entries/list)

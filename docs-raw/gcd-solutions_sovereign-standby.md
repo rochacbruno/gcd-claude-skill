@@ -73,14 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Target audience ](#target_audience)
-- [ Core capabilities ](#core_capabilities)
-- [ Architecture ](#architecture)
-- [ Components ](#components)
-- [ Reference implementation ](#reference_implementation)
-- 
-
 
 
 

@@ -73,10 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ What is Cloud Billing? ](#billing)
-- 
-
 
 
 
@@ -89,7 +85,7 @@ Your partner, S3NS, handles pricing and billing in
 Cloud de Confiance. If you have any questions about pricing or billing, contact
 [Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
 
-## What is Cloud Billing? 
+## What is Cloud Billing?
 
 Cloud Billing is a collection of tools that help you track and
 understand your Cloud de Confiance by S3NS spending, pay your

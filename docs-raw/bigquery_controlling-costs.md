@@ -126,48 +126,6 @@ Guides
 
 
 
-- On this page 
-- [ Understand compute pricing for BigQuery ](#understand-compute-pricing)
-
-- [ Pricing models ](#compute-pricing-models)
-- [ Restrict costs for each model ](#restrict-compute-costs)
-
-- [ Control query costs ](#control-query-cost)
-
-- [ Create custom query quotas ](#create-custom-cost-controls)
-- [ Check the estimated cost before running a query ](#check-query-cost)
-- [ Estimate query costs ](#estimate-query-costs)
-- [ Avoid running queries to explore table data ](#preview-data)
-- [ Restrict the number of bytes billed per query ](#restrict-bytes-billed)
-- [ Avoid using LIMIT in non-clustered tables ](#avoid-limit-non-clustered-table)
-- [ Materialize query results in stages ](#materialize_query_results_in_stages)
-- [ Use Rapid Cache to query Cloud Storage with external tables ](#use-rapid-cache)
-
-- [ Control workload costs ](#control-workload-costs)
-
-- [ Use the Google Cloud Dedicated in Germany pricing calculator ](#use-pricing-calculator)
-- [ Use reservations and commitments ](#use-reservations-commitments)
-- [ Use the slot estimator ](#use-slot-estimator)
-- [ Cancel unnecessary long-running jobs ](#cancel-lr-jobs)
-- [ View costs using a dashboard ](#view-costs-using-dashboards)
-- [ Use billing budgets and alerts ](#use-billing-budgets)
-
-- [ Control storage costs ](#control-storage-cost)
-
-- [ Use long-term storage ](#store-data-bigquery)
-- [ Configure the storage billing model ](#storage-billing-model)
-- [ Avoid overwriting tables ](#avoid-overwriting-tables)
-- [ Reduce the time travel window ](#reduce-time-travel-window)
-- [ Use table expiration for destination tables ](#use_table_expiration_for_destination_tables)
-- [ Archive data to Cloud Storage ](#archival-data-cloud-storage)
-
-- [ Troubleshooting BigQuery cost discrepancies and unexpected charges ](#troubleshooting-bigquery-cost-discrepancies-and-unexpected-charges)
-
-- [ Unexpected charges related to queries, reservations and commitments ](#unexpected_charges_related_to_queries_reservations_and_commitments)
-- [ Unexpected storage charges ](#unexpected_storage_charges)
-
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -176,8 +134,7 @@ Guides
 
 
 
-
-# Estimate and control costs 
+# Estimate and control costs
 
 
 
@@ -309,11 +266,8 @@ number of bytes required to process the query. For example:
 To perform a dry run, do the following:
 
 
-[ Console ](#console) [ bq ](#bq) [ API ](#api) [ Go](#go) [ Java](#java) [ Node. js ](#node.js) [ PHP ](#php) [ Python ](#python) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -329,6 +283,7 @@ If the query is valid, then a check mark automatically appears along with the am
 
 
 
+### bq
 
 Enter a query like the following using the `--dry_run` flag.
 
@@ -359,6 +314,7 @@ running this query will process 10918 bytes of data.
 
 
 
+### API
 
 To perform a dry run by using the API, submit a query job with
 `dryRun` set to `true` in the
@@ -366,6 +322,7 @@ To perform a dry run by using the API, submit a query job with
 type.
 
 
+### Go
 
 
 
@@ -512,6 +469,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -656,6 +614,7 @@ System . out . println ( "Query not performed \n" + e . toString ());
 
 
 
+### Node.js
 
 
 
@@ -791,6 +750,7 @@ console . log ( [ job ](https://berlin.devsitetest.how/nodejs/docs/reference/big
 
 
 
+### PHP
 
 
 
@@ -917,6 +877,7 @@ printf('This query will process %s bytes' . PHP_EOL, $info['statistics']['totalB
 
 
 
+### Python
 
 Set the
 [QueryJobConfig.dry_run](/python/docs/reference/bigquery/latest/google.cloud.bigquery.job.QueryJob#google_cloud_bigquery_job_QueryJob_dry_run)
@@ -1051,18 +1012,18 @@ print ( "This query will process {} bytes." . format ( [ query_job ](https://ber
 
 
 
-### Estimate query costs 
+### Estimate query costs
 
 Depending on your compute pricing model, the method for estimating query costs
 differs.
 
-#### On-demand query cost estimation 
+#### On-demand query cost estimation
 
 When using the [on-demand pricing model](https://berlin.devsitetest.how/bigquery/pricing#on_demand_pricing),
 you can estimate the cost of running a
 query by calculating the number of bytes processed.
 
-#### Capacity-based query cost estimation 
+#### Capacity-based query cost estimation
 
 When using [capacity-based pricing](/bigquery/docs/reservations-intro),
 it's not possible to estimate the exact cost of an individual query before
@@ -1089,7 +1050,7 @@ query in slot-milliseconds (`total_slot_ms`) by inspecting the query execution
 details or querying the
 [`INFORMATION_SCHEMA.JOBS` view](/bigquery/docs/information-schema-jobs).
 
-#### Capacity-based cost attribution 
+#### Capacity-based cost attribution
 
 Cost attribution is the process of splitting and attributing reservation
 compute costs across projects, teams, or queries after workloads have run.
@@ -1162,11 +1123,8 @@ required.`
 To set the maximum bytes billed:
 
 
-[ Console ](#console) [ bq ](#bq) [ API](#api) 
-More 
 
-
-
+### Console
 
 - In the **Query editor**, click **Edit** > **Query settings**
 > **Advanced options**.
@@ -1177,6 +1135,7 @@ More
 
 
 
+### bq
 
 Use the `bq query` command with the `--maximum_bytes_billed` flag.
 
@@ -1191,6 +1150,7 @@ FROM
 ```
 
 
+### API
 
 Set the `maximumBytesBilled` property in [`JobConfigurationQuery`](/bigquery/docs/reference/rest/v2/Job#jobconfigurationquery) or
 [`QueryRequest`](/bigquery/docs/reference/rest/v2/jobs/query#queryrequest).
@@ -1247,11 +1207,8 @@ based on projected usage. You can then compare this estimate to your actual
 costs to identify areas for optimization.
 
 
-[ On-demand ](#on-demand) [ Editions ](#editions) 
-More 
 
-
-
+### On-demand
 
 To estimate costs in the [Google Cloud Dedicated in Germany pricing calculator](https://berlin.devsitetest.how/products/calculator)
 when using the on-demand pricing model, follow these steps:
@@ -1277,6 +1234,7 @@ You only need to estimate either physical storage or logical storage, depending 
 For more information, see [On-demand pricing](https://berlin.devsitetest.how/bigquery/pricing#on_demand_pricing).
 
 
+### Editions
 
 To estimate costs in the [Google Cloud Dedicated in Germany pricing calculator](https://berlin.devsitetest.how/products/calculator)
 when using the capacity-based pricing model with [BigQuery editions](/bigquery/docs/editions-intro), follow these steps:
@@ -1508,14 +1466,14 @@ Troubleshooting unexpected charges related to job execution depends on the origi
 
 - For increases in charges originating from reservation usage look into changes to reservations that are recorded in [`INFORMATION_SCHEMA.RESERVATION_CHANGES`](/bigquery/docs/information-schema-reservation-changes). To match autoscaling reservation usage with billing data follow [the autoscaling example](/bigquery/docs/slots#slot-autoscaling).
 
-#### Slot-hours billed larger than INFORMATION_ SCHEMA. JOBS view calculated slot-hours
+#### Slot-hours billed larger than INFORMATION_SCHEMA.JOBS view calculated slot-hours
 
 When using an autoscaling reservation, billing is calculated according to the number of scaled slots, not the number of slots used. BigQuery autoscales in multiples of 50 slots, which leads to billing for the nearest multiple even if less than the autoscaled amount is actually used.
 Autoscaler has a 1 minute minimum period before scaling down by default, which translates into at least 1 minute being charged even if the query used the slots for less time, for example, for only 10 seconds out of the minute. To avoid these charges, you can opt in to BigQuery fluid scaling at the reservation level for per-second billing with no minimum duration. The correct way to estimate charges for an autoscaling reservation is documented in the [Slots Autoscaling page](/bigquery/docs/slots#slot-autoscaling). For more information about using autoscaling efficiently, see [autoscaling best practices](/bigquery/docs/slots#slot-autoscaling) to use autoscaling efficiently.
 
 A similar scenario will be observed for non-autoscaling reservations—billing is calculated according to the number of slots provisioned, not the number of slots used. If you want to estimate charges for a non-autoscaling reservation, you can query the [`RESERVATIONS_TIMELINE` view](/bigquery/docs/information-schema-reservation-timeline#examples) directly.
 
-#### Billing is less than the total bytes billed calculated through INFORMATION_ SCHEMA. JOBS for project running on-demand queries
+#### Billing is less than the total bytes billed calculated through INFORMATION_SCHEMA.JOBS for project running on-demand queries
 
 There can be multiple reasons for the actual billing to be less than the calculated bytes processed:
 
@@ -1525,7 +1483,7 @@ There can be multiple reasons for the actual billing to be less than the calcula
 
 - Different types of savings applied to your Cloud Billing account, such as negotiated discounts, promotional credits and others. 
 
-#### Billing is larger than the bytes processed calculated through INFORMATION_ SCHEMA. JOBS for project running on-demand queries
+#### Billing is larger than the bytes processed calculated through INFORMATION_SCHEMA.JOBS for project running on-demand queries
 
 If the billing amount is larger than the value you calculated by querying the `INFORMATION_SCHEMA.JOBS` view, there might be certain conditions that caused this:
 
@@ -1586,7 +1544,7 @@ Scenarios that could lead to storage charge increases:
 
 - Modification of tables that have data in [long-term storage](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#storage-pricing), causing them to become [active storage](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#storage-pricing)
 
-#### Deletion of table( s) or dataset( s) resulted in higher BigQuery storage costs
+#### Deletion of table(s) or dataset(s) resulted in higher BigQuery storage costs
 
 The [BigQuery time travel feature](/bigquery/docs/time-travel) retains deleted data for duration of the configured time-travel window and an additional 7 days for fail-safe recovery. During this retention window, the deleted data in physical storage billing model datasets contributes to the active physical storage cost, even though the tables will no longer appear in `INFORMATION_SCHEMA.TABLE_STORAGE` or in the console. If the table data was in long-term storage, deletion causes this data to be moved to active physical storage. This causes the corresponding cost to rise, because active physical bytes are charged approximately 2 times more than long-term physical bytes according to the [BigQuery storage pricing page](https://berlin.devsitetest.how/bigquery/pricing?e=48754805#storage-pricing). The recommended approach to minimize costs caused by data deletion for physical storage billing model datasets is to reduce the time-travel window to 2 days.
 
@@ -1601,7 +1559,7 @@ BigQuery storage as a result of certain actions on table data,
 metadata, or partitions. For more details, see
 [Use long-term storage](/bigquery/docs/best-practices-costs#store-data-bigquery).
 
-#### INFORMATION_ SCHEMA storage calculations don't match billing
+#### INFORMATION_SCHEMA storage calculations don't match billing
 
 - Use the [`INFORMATION_SCHEMA.TABLE_STORAGE_USAGE_TIMELINE` view](/bigquery/docs/information-schema-table-storage-usage) instead of `INFORMATION_SCHEMA.TABLE_STORAGE` - `TABLE_STORAGE_USAGE_TIMELINE` provides more accurate and granular data to correctly calculate storage costs
 

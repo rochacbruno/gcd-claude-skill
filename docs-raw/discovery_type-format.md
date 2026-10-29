@@ -97,6 +97,7 @@ Google APIs Discovery Service
 
 
 
+
 The `type` and `format` properties on parameters and schemas can be used
 to determine the data type of the property. The `type` property indicates the type of
 the property when its sent in JSON requests and responses (JSON supports a small set of data
@@ -141,7 +142,7 @@ The property may have any type. Defined by the [JSON Schema spec](https://tools.
 
 | 
 `any` | 
-`google. protobuf. Value` | 
+`google.protobuf.Value` | 
 
 The property has the JSON representation of the type of [google.protobuf.Value](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/struct.proto).
 | 
@@ -158,7 +159,7 @@ array values. Defined by the JSON Schema spec.
 
 | 
 `array` | 
-`google. protobuf. List Value` | 
+`google.protobuf.ListValue` | 
 
 The property has the JSON representation of the type of [google.protobuf.ListValue](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/struct.proto).
 | 
@@ -208,7 +209,7 @@ A JavaScript object. Defined by the JSON Schema spec. |
 
 | 
 `object` | 
-`google. protobuf. Struct` | 
+`google.protobuf.Struct` | 
 
 The property has the JSON representation of the type of [google.protobuf.Struct](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/struct.proto).
 | 
@@ -216,7 +217,7 @@ The property has the JSON representation of the type of [google.protobuf.Struct]
 
 | 
 `object` | 
-`google. protobuf. Any` | 
+`google.protobuf.Any` | 
 
 The property has the JSON representation of the type of [google.protobuf.Any](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/any.proto).
 | 

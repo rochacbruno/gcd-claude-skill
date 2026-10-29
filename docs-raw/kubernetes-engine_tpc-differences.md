@@ -73,25 +73,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Hardware and OS ](#hardware-and-os-differences)
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Cost management ](#cost-management-differences)
-- [ Integrations ](#integrations-differences)
-- [ Security ](#security-differences)
-- [ Network ](#network-differences)
-- [ Workloads ](#workflow-differences)
-- [ Insights and observability ](#observability-differences)
-- [ AI/ML features ](#other-differences)
-- [ Resource management ](#resource-management-differences)
-- [ Multi-cluster management ](#fleet-and-multi-cluster-differences)
-
-- [ Recommendations ](#recommendations)
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -126,7 +107,7 @@ Google Cloud, in the [Recommendations](#recommendations) section.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -140,7 +121,7 @@ Some notable differences include the following:
 
 
 - 
-GKE modes:** Only GKE Autopilot clusters are available. GKE Standard clusters are unavailable.
+**GKE modes:** Only GKE Autopilot clusters are available. GKE Standard clusters are unavailable.
 
 
 - 
@@ -207,7 +188,7 @@ TPUs are unavailable.
 
 | 
 **Node pools**
-| 
+
 
 The following node configuration features are unavailable:
 
@@ -416,7 +397,7 @@ The following security features are unavailable:
 | 
 Encrypting Secrets at the application layer is not supported.
 | 
-|
+
 | 
 **Authentication** | 
 Connect gateway is unavailable. | 
@@ -426,10 +407,9 @@ Connect gateway is unavailable. |
 **Workload identity** | 
 
 
-Workload identity pool domains (and the Kubernetes principal identifiers that use them) are specified slightly differently in Google Cloud and Google Cloud Dedicated in Germany, using `eu0.svc.id.goog` rather than `svc.id.goog`. So, for example, when specifying a Kubernetes ServiceAccount using Workload Identity Federation for GKE in an [IAM policy](/kubernetes-engine/docs/concepts/workload-identity#kubernetes-resources-iam-policies), you use `.../ PROJECT_ID .eu0.svc.id.goog/subject/ns/ NAMESPACE /sa/ KUBERNETES_SERVICE_ACCOUNT `.
+Workload identity pool domains (and the Kubernetes principal identifiers that use them) are specified slightly differently in Google Cloud and Google Cloud Dedicated in Germany, using `eu0.svc.id.goog` rather than `svc.id.goog`. So, for example, when specifying a Kubernetes ServiceAccount using Workload Identity Federation for GKE in an [IAM policy](/kubernetes-engine/docs/concepts/workload-identity#kubernetes-resources-iam-policies), you use `.../ PROJECT_ID .eu0.svc.id.goog/subject/ns/ NAMESPACE /sa/ KUBERNETES_SERVICE_ACCOUNT`.
 
-
-| |
+|
 
 | 
 **Node security** | 
@@ -509,8 +489,7 @@ When using the GKE Ingress controller, the global Google Cloud external applicat
 **Multi-cluster networking** | 
 Multi Cluster Ingress and multi-cluster Services (MCS) are unavailable. | 
 |
-
-| **Observability** | 
+**Observability** | 
 GKE Dataplane V2 observability tools are unavailable. | 
 |
 
@@ -587,7 +566,7 @@ Workload metrics are unavailable. |
 **Google Cloud Observability**
 | 
 All Google Cloud Observability integrations and dashboards are unavailable. | 
-
+| 
 |
 
 | 
@@ -661,7 +640,7 @@ Fleets, fleet dashboards, and fleet team management are unavailable. |
 
 
 - 
-[Learn more about Autopilot.](https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/autopilot-overview")
+Learn more about Autopilot. 
 
 
 
@@ -682,9 +661,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -694,9 +671,7 @@ their Google Cloud counterparts, see the [product list.](https://berlin.devsitet
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

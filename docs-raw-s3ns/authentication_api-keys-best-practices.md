@@ -148,18 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Add API key restrictions to your key ](#add-restrictions)
-- [ Avoid using query parameters to provide your API key to Google APIs ](#avoid-query-parameters)
-- [ Delete unneeded API keys to minimize exposure to attacks ](#delete-unneeded-keys)
-- [ Don't include API keys in client code or commit them to code repositories ](#no-commits)
-- [ Don't use authorization keys in production ](#service-accounts-api-keys)
-- [ Implement strong monitoring and logging ](#logging-monitoring)
-- [ Isolate API keys ](#isolate)
-- [ Rotate your API keys periodically ](#rotate)
-- [ Consider a more secure method of authorizing access ](#consider-alternatives)
-- 
-
 
 
 
@@ -173,7 +161,7 @@ during both storage and transmission. Publicly exposing your API keys can lead
 to unexpected charges on your account or unauthorized access to your data. To
 help keep your API keys secure, implement the following best practices.
 
-## Add API key restrictions to your key 
+## Add API key restrictions to your key
 
 By adding restrictions, you can limit the ways an API key can be used, reducing
 the impact of a compromised API key.

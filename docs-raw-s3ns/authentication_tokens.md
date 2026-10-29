@@ -148,12 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ User authentication ](#user_authentication)
-- [ Workload authentication ](#workload_authentication)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -174,7 +168,7 @@ APIs using the Cloud Client Libraries, the Cloud de Confiance console, or the
 Google Cloud CLI—the process of selecting the right type of token, and
 obtaining and refreshing those tokens is handled automatically for you.
 
-## User authentication 
+## User authentication
 
 When human users interact with Cloud de Confiance by S3NS, they don't interact with
 Cloud de Confiance by S3NS APIs directly. Instead, they use a *client* to act on their behalf.

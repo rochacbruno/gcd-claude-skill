@@ -128,16 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required-roles)
-
-- [ Grant temporary access ](#temporary)
-- [ Manage access based on days/hours of the week ](#days-hours)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -154,7 +144,7 @@ can enforce time-based controls when accessing a given resource. For example,
 you can grant temporary access to a project that starts and stops at a specified
 time or on a scheduled and recurring basis.
 
-## Before you begin 
+## Before you begin
 
 - Read [Conditions Overview](/iam/docs/conditions-overview) to understand the
 basics of Identity and Access Management (IAM) conditional role bindings.
@@ -472,8 +462,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -598,12 +588,10 @@ To grant expirable access to a project resource:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -719,6 +707,8 @@ again from the **Edit permissions** panel to update your allow policy.
 
 
 
+
+### gcloud 
 
 
 
@@ -846,6 +836,8 @@ the specified time.
 
 
 
+### REST 
+
 
 
 
@@ -915,9 +907,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -980,9 +971,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1067,9 +1057,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -1080,7 +1069,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -1181,7 +1170,7 @@ HTTP method and URL:
 
 
 ```
-POST https://cloudresourcemanager.googleapis.com/v1/projects/ ** PROJECT_ID :setIamPolicy
+POST https://cloudresourcemanager.googleapis.com/v1/projects/ PROJECT_ID :setIamPolicy
 ```
 
 
@@ -1217,9 +1206,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -1282,9 +1270,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1369,9 +1356,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -1382,7 +1368,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -1439,12 +1425,10 @@ week on a recurring basis:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -1622,6 +1606,8 @@ again from the **Edit permissions** panel to update your allow policy.
 
 
 
+### gcloud 
+
 
 
 
@@ -1747,6 +1733,8 @@ between the specified days and times.
 
 
 
+### REST 
+
 
 
 
@@ -1815,9 +1803,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -1880,9 +1867,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1967,9 +1953,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -1980,7 +1965,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -2084,7 +2069,7 @@ HTTP method and URL:
 
 
 ```
-POST https://cloudresourcemanager.googleapis.com/v1/projects/ ** PROJECT_ID :setIamPolicy
+POST https://cloudresourcemanager.googleapis.com/v1/projects/ PROJECT_ID :setIamPolicy
 ```
 
 
@@ -2119,9 +2104,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -2184,9 +2168,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -2271,9 +2254,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -2284,7 +2266,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 

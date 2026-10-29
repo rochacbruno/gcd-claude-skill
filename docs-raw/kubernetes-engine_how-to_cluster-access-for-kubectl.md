@@ -128,22 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Install kubectl ](#install_kubectl)
-- [ Install required plugins ](#install_plugin)
-- [ Interact with kubectl ](#interact_kubectl)
-
-- [ View kubeconfig ](#view_kubeconfig)
-- [ View the current context for kubectl ](#view_the_current_context_for_kubectl)
-- [ Store cluster information for kubectl ](#store_info)
-- [ Generate a kubeconfig entry using a cluster's internal IP address ](#generate_kubeconfig_entry)
-
-- [ Set a default cluster for kubectl commands ](#default_cluster_kubectl)
-- [ Run individual kubectl commands against a specific cluster ](#run_against_a_specific_cluster)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -252,11 +236,8 @@ cluster. To create a new cluster, see
 You can install `kubectl` using the Google Cloud CLI or an external package manager, such as `apt` or `yum`.
 
 
-[gcloud](#gcloud) [apt](#apt) [yum](#yum) 
-More 
 
-
-
+### gcloud
 
 - 
 
@@ -280,6 +261,7 @@ kubectl version --client
 
 
 
+### apt
 
 - 
 
@@ -326,6 +308,7 @@ kubectl version --client
 
 
 
+### yum
 
 - 
 
@@ -398,11 +381,8 @@ You can install the authentication plugin using the gcloud CLI or an
 external package manager such as `apt` or `yum`.
 
 
-[gcloud](#gcloud) [apt](#apt) [yum](#yum) 
-More 
 
-
-
+### gcloud
 
 Install the `gke-gcloud-auth-plugin` binary:
 
@@ -412,6 +392,7 @@ gcloud components install gke-gcloud-auth-plugin
 ```
 
 
+### apt
 
 Install the `gke-gcloud-auth-plugin` binary:
 
@@ -421,6 +402,7 @@ apt-get install google-cloud-cli-gke-gcloud-auth-plugin
 ```
 
 
+### yum
 
 Install the `gke-gcloud-auth-plugin` binary:
 

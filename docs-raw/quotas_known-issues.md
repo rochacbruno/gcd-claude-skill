@@ -108,17 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Quota values during rollouts ](#quota_values_during_rollouts)
-- [ Quota preference contactEmail field is required ](#quota_preference_contactemail_field_is_required)
-- [ Cloud Quotas limitations in the Google Cloud Dedicated console ](#console_limitations)
-
-- [ Requests for adjustments on quotas that have no usage ](#requests_for_adjustments_on_quotas_that_have_no_usage)
-- [ Per-user quota usage doesn't appear ](#per-user_quota_usage_doesnt_appear)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -130,7 +119,7 @@ Guides
 
 The following are known issues within Cloud Quotas.
 
-## Quota values during rollouts 
+## Quota values during rollouts
 
 Google Cloud Dedicated in Germany sometimes increases the default quota values for resources and
 APIs. These changes take place gradually, which means that during the rollout,
@@ -146,7 +135,7 @@ For details, see
 For troubleshooting steps, see
 [Exceeding quota values during a service rollout](/docs/quotas/troubleshoot#exceeding_quota_values_during_a_service_rollout).
 
-## Quota preference `contact Email` field is required
+## Quota preference `contactEmail` field is required
 
 To update the `QuotaPreference` value through the Cloud Quotas API,
 the `contactEmail` field is required. This email address cannot be a group
@@ -167,15 +156,13 @@ have no prior usage. However, you can still request a quota adjustment through
 the REST API or Google Cloud CLI:
 
 
-[gcloud](#gcloud) [REST](#rest) 
-More 
 
-
-
+### gcloud
 
 Request a quota adjustment by [using the gcloud CLI](/docs/quotas/gcloud-cli-examples#request_a_quota_increase_adjustment_using_a_dimension)
 
 
+### REST
 
 Request a quota adjustment by [using the REST API](/docs/quotas/implement-common-use-cases#request_adjustments_on_quotas_that_have_no_usage)
 

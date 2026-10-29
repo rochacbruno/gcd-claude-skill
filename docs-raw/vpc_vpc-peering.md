@@ -126,41 +126,6 @@ Guides
 
 
 
-- On this page 
-- [ Specifications ](#specifications)
-
-- [ Connectivity ](#spec-general)
-- [ Administration ](#spec-admin-separation)
-- [ Network security ](#spec-firewall)
-- [ DNS support ](#spec-dns)
-- [ Internal load balancer support ](#spec-ilb)
-- [ Peering group & quotas ](#peering-limits)
-
-- [ Limitations ](#limitations)
-
-- [ Subnet IP ranges can't overlap across peered VPC networks ](#no-subnet-overlap)
-- [ Internal DNS names don't resolve in peered networks ](#no_dns_across_projects)
-- [ Tags and service accounts are not usable across peered networks ](#tags-service-accounts)
-
-- [ Route exchange options ](#route-exchange-options)
-
-- [ Options for exchanging subnet routes ](#subnet-route-exchange)
-- [ Options for exchanging static routes ](#static-route-exchange)
-- [ Options for exchanging dynamic routes ](#dynamic-route-exchange)
-- [ Benefits of exchanging static and dynamic routes ](#custom-route-exchange)
-- [ Ignored routes ](#custom-route-import-ignored)
-- [ Subnet and peering subnet route interactions ](#interaction-subnet-subnet)
-- [ Subnet and static route interactions ](#interaction-subnet-static)
-- [ Effects of the dynamic routing mode ](#interaction-dynamic-routing-mode)
-- [ Subnet and dynamic route interactions ](#interaction-subnet-dynamic)
-
-- [ VPC Network Peering examples ](#networking-features-scenarios)
-
-- [ Local VPC network and peer VPC network with on-premises connectivity ](#vpc-vpc-on-prem-party)
-- [ Transit network with multiple peerings ](#transit-network)
-
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -169,8 +134,7 @@ Guides
 
 
 
-
-# VPC Network Peering 
+# VPC Network Peering
 
 
 
@@ -180,7 +144,7 @@ Peered VPC networks can be in the same project, different
 projects of the same organization, or different projects of different
 organizations.
 
-## Specifications 
+## Specifications
 
 VPC Network Peering lets you do the following:
 

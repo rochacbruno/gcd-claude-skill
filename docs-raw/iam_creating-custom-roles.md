@@ -128,22 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required-roles)
-
-- [ View available permissions for projects, folders, and organizations ](#viewing-resource-permissions)
-- [ Get the role metadata ](#get-metadata)
-- [ Create a custom role ](#creating)
-- [ Edit an existing custom role ](#edit-role)
-- [ Disable a custom role ](#disabling-custom-role)
-- [ List roles ](#roles-list)
-- [ Delete a custom role ](#deleting-custom-role)
-- [ Undelete a custom role ](#undelete-role)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -157,7 +141,7 @@ This page describes how to create and manage Identity and Access Management (IAM
 custom roles. Managing roles includes modifying, disabling, listing, deleting,
 and undeleting roles.
 
-## Before you begin 
+## Before you begin
 
 - 
 
@@ -171,8 +155,7 @@ Enable the IAM API, if it is not already enabled.
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -212,11 +195,9 @@ Select the tab for how you plan to use the samples on this page:
 
 
 
-[Console](#console) [gcloud](#gcloud) [C#](#c) [C++](#c++) [Go](#go) [Java](#java) [Python](#python) [REST](#rest) 
-**More 
 
 
-
+### Console
 
 
 
@@ -234,6 +215,8 @@ APIs, you don't need to set up authentication.
 
 
 
+
+### gcloud
 
 
 
@@ -301,6 +284,8 @@ gcloud init
 
 
 
+
+### C#
 
 
 
@@ -420,6 +405,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### C++
 
 
 
@@ -541,6 +528,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### Go
+
 
 
 
@@ -659,6 +648,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### Java
 
 
 
@@ -785,6 +776,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### Python
+
 
 
 
@@ -910,6 +903,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### REST
 
 
 
@@ -1135,12 +1130,10 @@ To learn more about the permissions that you can add to custom roles, see
 
 
 
-[ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
 
 
-
+### gcloud 
 
 
 
@@ -1305,6 +1298,8 @@ stage: GA
 
 
 
+### C++ 
+
 
 
 
@@ -1432,6 +1427,8 @@ std :: cout "No testable permissions found in resource: " resource
 
 
 
+
+### C# 
 
 
 
@@ -1574,6 +1571,8 @@ return response . Permissions ;
 
 
 
+### Go 
+
 
 
 
@@ -1712,6 +1711,8 @@ return response . Permissions , nil
 
 
 
+
+### Java 
 
 
 
@@ -1854,6 +1855,8 @@ queryTestablePermissionsPagedResponse
 
 
 
+### Python 
+
 
 
 
@@ -1975,6 +1978,8 @@ return permissions_reponse . permissions
 
 
 
+### REST 
+
 
 
 
@@ -2040,9 +2045,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -2105,9 +2109,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -2192,9 +2195,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -2205,7 +2207,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -2283,12 +2285,10 @@ To view the role metadata, use one of the methods below:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -2356,6 +2356,8 @@ permission name in the **Filter** box at the top of the list of roles.
 
 
 
+
+### gcloud 
 
 
 
@@ -2555,6 +2557,8 @@ For more information, see the reference documentation for `[gcloud iam roles des
 
 
 
+### C++ 
+
 
 
 
@@ -2675,6 +2679,8 @@ std :: cout "Role successfully retrieved: " response - > DebugString ()
 
 
 
+
+### C# 
 
 
 
@@ -2807,6 +2813,8 @@ return role ;
 
 
 
+
+### Go 
 
 
 
@@ -2945,6 +2953,8 @@ return role , nil
 
 
 
+### Java 
+
 
 
 
@@ -3082,6 +3092,8 @@ role . [ getIncludedPermissionsList ](https://berlin.devsitetest.how/java/docs/r
 
 
 
+### Python 
+
 
 
 
@@ -3193,6 +3205,8 @@ raise NotFound ( f "Role with id [ { role_id } ] not found, take some actions" )
 
 
 
+### REST 
+
 
 
 
@@ -3233,9 +3247,8 @@ GET https://iam.googleapis.com/v1/ ROLE_NAME
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -3291,9 +3304,8 @@ curl -X GET \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -3371,9 +3383,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -3384,7 +3395,7 @@ Open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Complete any required fields and click Execute**.
+Complete any required fields and click **Execute**.
 
 
 
@@ -3443,11 +3454,8 @@ at the organization or folder level, such as
 project-level custom role, you see an error message:
 
 
-[Console](#console) [gcloud](#gcloud) [REST API](#rest-api) 
-**More 
 
-
-
+### Console
 
 The following warning message is displayed:
 "Not applicable for project-level custom roles". The
@@ -3455,6 +3463,7 @@ permission will be automatically unselected from the list of included
 permissions, and you can proceed with creating the role.
 
 
+### gcloud
 
 The following error message
 is returned: `INVALID_ARGUMENT: Permission PERMISSION is not
@@ -3463,6 +3472,7 @@ permission from the role definition and try
 the operation again.
 
 
+### REST API
 
 The following error message is returned:
 `Permission PERMISSION is not valid`, along with an
@@ -3499,12 +3509,10 @@ role](#disabling-custom-role). For more information about launch stages, see
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -3621,6 +3629,8 @@ Click **Create**.
 
 
 
+### gcloud 
+
 
 
 
@@ -3698,7 +3708,7 @@ If the custom role contains other permissions, the command fails.
 
 
 
-To create a custom role using a YAML file:**
+**To create a custom role using a YAML file:**
 
 
 
@@ -3707,7 +3717,7 @@ file must be structured in the following way:
 
 
 ```
-title : ** ROLE_TITLE 
+title : ROLE_TITLE 
 description : ROLE_DESCRIPTION 
 stage : LAUNCH_STAGE 
 includedPermissions : 
@@ -3831,7 +3841,7 @@ contains the custom role definition.
 
 
 
-Examples**
+**Examples**
 
 
 
@@ -3924,7 +3934,7 @@ command:
 
 
 ```
-gcloud iam roles create ** ROLE_ID --organization= ORGANIZATION_ID \
+gcloud iam roles create ROLE_ID --organization= ORGANIZATION_ID \
 --title= ROLE_TITLE --description= ROLE_DESCRIPTION \
 --permissions=" PERMISSIONS_LIST " --stage= LAUNCH_STAGE 
 ```
@@ -4014,7 +4024,7 @@ launch lifecycle, such as `ALPHA`, `BETA`, or `GA`.
 
 
 
-Examples**
+**Examples**
 
 
 
@@ -4122,6 +4132,8 @@ title : My Company Admin
 
 
 
+
+### C++ 
 
 
 
@@ -4251,6 +4263,8 @@ std :: cout "Role successfully created: " response - > DebugString ()
 
 
 
+
+### C# 
 
 
 
@@ -4398,6 +4412,8 @@ return role ;
 
 
 
+### Go 
+
 
 
 
@@ -4540,6 +4556,8 @@ return role , nil
 
 
 
+
+### Java 
 
 
 
@@ -4703,6 +4721,8 @@ System . out . println ( "Created role: " + result . [ getName ](https://berlin.
 
 
 
+### Python 
+
 
 
 
@@ -4838,6 +4858,8 @@ f "Role with id [ { role_id } ] already exists and in deleted state, take some a
 
 
 
+### REST 
+
 
 
 
@@ -4907,7 +4929,7 @@ HTTP method and URL:
 
 
 ```
-POST https://iam.googleapis.com/v1/ ** RESOURCE_TYPE / RESOURCE_ID /roles
+POST https://iam.googleapis.com/v1/ RESOURCE_TYPE / RESOURCE_ID /roles
 ```
 
 
@@ -4936,9 +4958,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -5001,9 +5022,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -5088,9 +5108,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -5101,7 +5120,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -5184,12 +5203,10 @@ etag value.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -5267,6 +5284,8 @@ Click **Update** to save the edited role.
 
 
 
+### gcloud 
+
 
 
 
@@ -5337,7 +5356,7 @@ custom role at the project level.
 
 
 
-To update a custom role using a YAML file:**
+**To update a custom role using a YAML file:**
 
 
 
@@ -5354,7 +5373,7 @@ following command:
 
 
 ```
-gcloud iam roles describe ** ROLE_ID --organization= ORGANIZATION_ID 
+gcloud iam roles describe ROLE_ID --organization= ORGANIZATION_ID 
 ```
 
 
@@ -5585,7 +5604,7 @@ file that contains the updated custom role definition.
 
 
 
-Examples**
+**Examples**
 
 
 
@@ -5593,7 +5612,7 @@ The following example demonstrates how to update an organization-level role usin
 
 
 ```
-gcloud iam roles update ** ROLE_ID --organization= ORGANIZATION_ID \
+gcloud iam roles update ROLE_ID --organization= ORGANIZATION_ID \
 --file= YAML_FILE_PATH 
 ```
 
@@ -5655,7 +5674,7 @@ contains the updated custom role definition.
 
 
 
-Examples**
+**Examples**
 
 
 
@@ -5772,7 +5791,7 @@ To update an organization-level role, execute the following command:
 
 
 ```
-gcloud iam roles update ** ROLE_ID --organization= ORGANIZATION_ID \
+gcloud iam roles update ROLE_ID --organization= ORGANIZATION_ID \
 --title= ROLE_TITLE --description= ROLE_DESCRIPTION \
 --stage= LAUNCH_STAGE 
 ```
@@ -5850,8 +5869,7 @@ launch lifecycle, such as `ALPHA`, `BETA`, or `GA`.
 
 
 
-
-Examples**
+**Examples**
 
 
 
@@ -5956,6 +5974,8 @@ title : My Company Admin
 
 
 
+
+### C++ 
 
 
 
@@ -6083,6 +6103,8 @@ std :: cout "Role successfully updated: " response - > DebugString ()
 
 
 
+
+### C# 
 
 
 
@@ -6223,6 +6245,8 @@ return role ;
 
 
 
+
+### Go 
 
 
 
@@ -6366,6 +6390,8 @@ return role , nil
 
 
 
+
+### Java 
 
 
 
@@ -6524,6 +6550,8 @@ System . out . println ( "Edited role:\n" + result );
 
 
 
+### Python 
+
 
 
 
@@ -6643,6 +6671,8 @@ print ( f "Role [ { role . name } ] not found, take some actions" )
 
 
 
+### REST 
+
 
 
 
@@ -6712,7 +6742,7 @@ HTTP method and URL:
 
 
 ```
-PATCH https://iam.googleapis.com/v1/ ** RESOURCE_TYPE / RESOURCE_ID /roles
+PATCH https://iam.googleapis.com/v1/ RESOURCE_TYPE / RESOURCE_ID /roles
 ```
 
 
@@ -6740,9 +6770,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -6805,9 +6834,8 @@ curl -X PATCH \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -6892,9 +6920,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -6905,7 +6932,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -6974,12 +7001,10 @@ meaning that granting the role to a user has no effect.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -7037,6 +7062,8 @@ Select the checkbox for the roles that you want to disable and click
 
 
 
+### gcloud 
+
 
 
 
@@ -7082,7 +7109,7 @@ command to disable a custom role by setting its launch stage to `DISABLED`.
 
 
 
-As described in the gcloud** tab of the
+As described in the **gcloud** tab of the
 [Editing an existing custom role](#editing_an_existing_custom_role)
 section, you can update an existing custom role in the following two ways:
 
@@ -7119,7 +7146,7 @@ To disable an organization-level role, execute the following command:
 
 
 ```
-gcloud iam roles update ** ROLE_ID --organization= ORGANIZATION_ID \
+gcloud iam roles update ROLE_ID --organization= ORGANIZATION_ID \
 --stage=DISABLED
 ```
 
@@ -7171,7 +7198,7 @@ Each placeholder value is described below:
 
 
 
-Examples**
+**Examples**
 
 
 
@@ -7261,6 +7288,97 @@ title : My Company Admin
 
 
 
+### C++ 
+
+
+
+
+
+
+[Update](/iam/docs/creating-custom-roles#editing_an_existing_custom_role)
+the `stage` field of the role to `DISABLED`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### C# 
+
+
+
+
+
+
+[Update](/iam/docs/creating-custom-roles#editing_an_existing_custom_role)
+the `stage` field of the role to `DISABLED`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Go 
+
 
 
 
@@ -7309,96 +7427,13 @@ the `stage` field of the role to `DISABLED`.
 
 
 
-[Update](/iam/docs/creating-custom-roles#editing_an_existing_custom_role)
-the `stage` field of the role to `DISABLED`.
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Update](/iam/docs/creating-custom-roles#editing_an_existing_custom_role)
-the `stage` field of the role to `DISABLED`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Java 
 
 
 
@@ -7553,6 +7588,8 @@ return iamClient . updateRole ( updateRoleRequest );
 
 
 
+### Python 
+
 
 
 
@@ -7675,6 +7712,8 @@ raise NotFound ( f 'Role with id [ { role_id } ] not found, take some actions' )
 
 
 
+### REST 
+
 
 
 
@@ -7726,7 +7765,7 @@ HTTP method and URL:
 
 
 ```
-PATCH https://iam.googleapis.com/v1/ ** RESOURCE_TYPE / RESOURCE_ID /roles
+PATCH https://iam.googleapis.com/v1/ RESOURCE_TYPE / RESOURCE_ID /roles
 ```
 
 
@@ -7748,9 +7787,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -7813,9 +7851,8 @@ curl -X PATCH \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -7900,9 +7937,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -7913,7 +7949,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -7978,12 +8014,10 @@ You can list all custom roles created in your project or organization.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -8030,6 +8064,8 @@ listed on the page.
 
 
 
+
+### gcloud 
 
 
 
@@ -8185,6 +8221,8 @@ gcloud iam roles list
 
 
 
+### C++ 
+
 
 
 
@@ -8310,6 +8348,8 @@ std :: cout "No roles found in project: " project " \n " ;
 
 
 
+
+### C# 
 
 
 
@@ -8447,6 +8487,8 @@ return response . Roles ;
 
 
 
+### Go 
+
 
 
 
@@ -8582,6 +8624,8 @@ return response . Roles , nil
 
 
 
+
+### Java 
 
 
 
@@ -8721,6 +8765,8 @@ listRolesResponse . iterateAll (). forEach ( role - > System . out . println ( r
 
 
 
+### Python 
+
 
 
 
@@ -8844,6 +8890,8 @@ return roles
 
 
 
+### REST 
+
 
 
 
@@ -8906,9 +8954,8 @@ GET https://iam.googleapis.com/v1/ RESOURCE_TYPE / RESOURCE_ID /roles?view= ROLE
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -8964,9 +9011,8 @@ curl -X GET \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -9044,9 +9090,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -9057,7 +9102,7 @@ Open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Complete any required fields and click Execute**.
+Complete any required fields and click **Execute**.
 
 
 
@@ -9133,12 +9178,10 @@ You can delete any custom role in your project or organization.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -9195,6 +9238,8 @@ Select the checkbox for the roles you want to delete and click
 
 
 
+
+### gcloud 
 
 
 
@@ -9361,6 +9406,8 @@ title: My Company Admin
 
 
 
+### C++ 
+
 
 
 
@@ -9481,6 +9528,8 @@ std :: cout "Role successfully deleted: " response - > DebugString ()
 
 
 
+
+### C# 
 
 
 
@@ -9612,6 +9661,8 @@ Console . WriteLine ( "Deleted role: " + name );
 
 
 
+
+### Go 
 
 
 
@@ -9746,6 +9797,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -9886,6 +9939,8 @@ System . out . println ( "Role deleted." );
 
 
 
+### Python 
+
 
 
 
@@ -10010,6 +10065,8 @@ print ( f "Role with id [ { role_id } ] already deleted, take some actions)" , e
 
 
 
+### REST 
+
 
 
 
@@ -10050,9 +10107,8 @@ DELETE https://iam.googleapis.com/v1/ ROLE_NAME
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -10108,9 +10164,8 @@ curl -X DELETE \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -10188,9 +10243,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -10201,7 +10255,7 @@ Open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Complete any required fields and click Execute**.
+Complete any required fields and click **Execute**.
 
 
 
@@ -10297,12 +10351,10 @@ the same role ID.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -10359,6 +10411,8 @@ Select the checkbox for the roles that you want to undelete, then click
 
 
 
+
+### gcloud 
 
 
 
@@ -10463,7 +10517,7 @@ Each placeholder value is described below:
 
 
 
-Examples**
+**Examples**
 
 
 
@@ -10561,6 +10615,8 @@ title : My Company Admin
 
 
 
+
+### C++ 
 
 
 
@@ -10682,6 +10738,8 @@ std :: cout "Role successfully undeleted: " response - > DebugString ()
 
 
 
+
+### C# 
 
 
 
@@ -10815,6 +10873,8 @@ return role ;
 
 
 
+
+### Go 
 
 
 
@@ -10951,6 +11011,8 @@ return role , nil
 
 
 
+
+### Java 
 
 
 
@@ -11096,6 +11158,8 @@ System . out . println ( "Undeleted role:\n" + result );
 
 
 
+### Python 
+
 
 
 
@@ -11219,6 +11283,8 @@ print ( f "Role with id [ { role_id } ] is not deleted, take some actions)" , er
 
 
 
+### REST 
+
 
 
 
@@ -11257,7 +11323,7 @@ HTTP method and URL:
 
 
 ```
-POST https://iam.googleapis.com/v1/ ** ROLE_NAME :undelete
+POST https://iam.googleapis.com/v1/ ROLE_NAME :undelete
 ```
 
 
@@ -11277,9 +11343,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -11342,9 +11407,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -11429,9 +11493,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -11442,7 +11505,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 

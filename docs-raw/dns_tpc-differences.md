@@ -113,15 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Network ](#networks)
-- [ Regions and zones ](#regions-zones)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -144,7 +135,7 @@ Cloud DNS documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -262,9 +253,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -292,9 +281,7 @@ Cloud Interconnect documentation](/network-connectivity/docs/interconnect/tpc-di
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

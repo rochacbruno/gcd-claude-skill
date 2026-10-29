@@ -106,23 +106,12 @@ Guides
 
 
 
-# Pub/ Sub in Google Cloud Dedicated versus Google Cloud 
+# Pub/Sub in Google Cloud Dedicated versus Google Cloud 
 
 
 
 
 
-
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Features ](#features-differences)
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Architecture ](#architecture)
-- [ Integrations ](#integrations-differences)
-
-- [ Related guides ](#related-guides)
-- 
 
 
 
@@ -150,7 +139,7 @@ Pub/Sub documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -203,7 +192,7 @@ Google Cloud Dedicated.
 
 
 | 
-Authentication for push subscriptions**
+**Authentication for push subscriptions**
 | 
 Authentication for push subscriptions is unavailable.
 | 

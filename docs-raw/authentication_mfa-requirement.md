@@ -148,24 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Interfaces that require 2SV ](#scope)
-- [ Timelines for 2SV requirement ](#timelines)
-- [ Enable 2SV for Google Accounts ](#enable-google)
-
-- [ Additional factors for Google Accounts ](#additional-factors)
-
-- [ Enable 2SV in Google Workspace ](#enable-workspace)
-- [ Enable 2SV for third-party identity providers ](#enable-idp)
-- [ Recover account access if a factor is lost or stolen ](#recover)
-- [ Enterprise Cloud Identity (non-SSO) features ](#cloudid)
-
-- [ Monitor 2SV conformance ](#monitor)
-- [ Extend the deadline for the 2SV requirement ](#extend)
-- [ Opt out of the 2SV requirement ](#opt-out)
-
-- 
-
 
 
 

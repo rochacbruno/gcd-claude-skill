@@ -108,31 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Limitations ](#limitations)
-- [ Before you begin ](#before_you_begin)
-
-- [ Install and initialize the gcloud CLI ](#install_initialize_gcloud)
-- [ Find your quota ID ](#find_your_quota_id)
-
-- [ Example gcloud quota information commands ](#example_gcloud_quota_information_commands)
-
-- [ View quota information for a particular service ](#view_quota_information_for_a_particular_service)
-- [ View quota information for an organization ](#view_quota_information_for_an_organization)
-
-- [ Example gcloud quota preferences commands ](#example_gcloud_quota_preferences_commands)
-
-- [ Check for existing preferences ](#check_for_existing_preferences)
-- [ Check for existing preferences with pending quota adjustments ](#check_for_existing_preferences_with_pending_quota_adjustments)
-- [ Request a quota increase adjustment when a quota preference hasn't been set yet ](#request_a_quota_increase_adjustment_for_a_specific_region_when_a_quota_preference_hasnt_been_set)
-- [ Request a quota increase adjustment when a quota preference has been set ](#request_a_quota_increase_adjustment_for_a_specific_region_when_a_quota_preference_has_been_set)
-- [ View an existing quota preference ](#retrieve_an_existing_quota_preference)
-
-- [ Enable quota adjuster through a client project ](#enable_quota_adjuster_through_client_project)
-- [ Other services with quota-related gcloud CLI commands ](#other_services_with_gcloud_cmds)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -153,7 +128,7 @@ You can use the Google Cloud CLI (gcloud CLI) to get current
 quotas values and specify quota preferences for some Google Cloud Dedicated in Germany APIs and
 services.
 
-## Limitations 
+## Limitations
 
 Cloud Quotas has the following limitations:
 
@@ -217,11 +192,8 @@ gcloud CLI, client libraries, or the REST API. This section shows how
 to find the quota ID using either the Google Cloud Dedicated console or gcloud CLI.
 
 
-[Console](#console) [gcloud](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -246,6 +218,7 @@ The **Limit name** column shows the quota ID.
 
 
 
+### gcloud
 
 To find the quota ID value by using the gcloud CLI, run the
 following command to list your quota information for the specified service:

@@ -108,16 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Terraform resources and data sources ](#terraform-resources-and-data-sources)
-
-- [ Resources ](#resources)
-- [ Data sources ](#data_sources)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 

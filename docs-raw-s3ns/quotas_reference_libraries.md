@@ -108,13 +108,6 @@ Reference
 
 
 
-- On this page 
-- [ Install the client library ](#install)
-- [ Set up authentication ](#authentication)
-- [ Use the client library ](#use)
-- [ Additional resources ](#resources)
-- 
-
 
 
 
@@ -139,7 +132,7 @@ and the older Google API Client Libraries in
 
 
 
-## Install the client library 
+## Install the client library
 
 
 
@@ -155,12 +148,10 @@ and the older Google API Client Libraries in
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -200,6 +191,8 @@ dependencies, see [Setting up a C++ development environment](/cpp/docs/setup).
 
 
 
+
+### C# 
 
 
 
@@ -246,6 +239,8 @@ For more information, see [Setting Up a C# Development Environment](/dotnet/docs
 
 
 
+
+### Go 
 
 
 
@@ -294,6 +289,8 @@ For more information, see [Setting Up a Go Development Environment](/go/docs/set
 
 
 
+
+### Java 
 
 
 
@@ -456,6 +453,8 @@ For more information, see [Setting Up a Java Development Environment](/java/docs
 
 
 
+### Node.js 
+
 
 
 
@@ -502,6 +501,8 @@ For more information, see [Setting Up a Node.js Development Environment](/nodejs
 
 
 
+
+### PHP 
 
 
 
@@ -553,6 +554,8 @@ For more information, see [Using PHP on Google Cloud](/php/docs).
 
 
 
+### Python 
+
 
 
 
@@ -600,6 +603,8 @@ For more information, see [Setting Up a Python Development Environment](/python/
 
 
 
+
+### Ruby 
 
 
 
@@ -778,12 +783,10 @@ The following example shows how to use the client library.
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -895,6 +898,8 @@ return 1 ;
 
 
 
+
+### C# 
 
 
 
@@ -1963,6 +1968,8 @@ public async Task UpdateQuotaPreferenceAsync ()
 
 
 
+### Go 
+
 
 
 
@@ -2265,6 +2272,8 @@ _ = resp
 
 
 
+### Java 
+
 
 
 
@@ -2380,6 +2389,8 @@ try ( [ CloudQuotasClient ](https://documentation.s3ns.fr/java/docs/reference/go
 
 
 
+
+### Node.js 
 
 
 
@@ -2507,6 +2518,8 @@ main (... process . argv . slice ( 2 ));
 
 
 
+
+### PHP 
 
 
 
@@ -2654,6 +2667,8 @@ get_quota_info_sample($formattedName);
 
 
 
+### Python 
+
 
 
 
@@ -2769,6 +2784,8 @@ print ( response )
 
 
 
+
+### Ruby 
 
 
 
@@ -2890,12 +2907,10 @@ end
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -2947,6 +2962,8 @@ client library for C++:
 
 
 
+### C# 
+
 
 
 
@@ -2995,6 +3012,8 @@ client library for C#:
 
 
 
+
+### Go 
 
 
 
@@ -3046,6 +3065,7 @@ client library for Go:
 
 
 
+### Java 
 
 
 
@@ -3097,6 +3117,7 @@ client library for Java:
 
 
 
+### Node.js 
 
 
 
@@ -3147,6 +3168,7 @@ client library for Node.js:
 
 
 
+### PHP 
 
 
 
@@ -3198,6 +3220,7 @@ client library for PHP:
 
 
 
+### Python 
 
 
 
@@ -3249,6 +3272,7 @@ client library for Python:
 
 
 
+### Ruby 
 
 
 

@@ -121,33 +121,12 @@ Guides
 
 
 
-# Managing infrastructure as code with Terraform, Cloud Build, and Git Ops 
+# Managing infrastructure as code with Terraform, Cloud Build, and GitOps 
 
 
 
 
 
-
-- On this page ** 
-- [ Architecture ](#architecture)
-- [ Objectives ](#objectives)
-- [ Costs ](#costs)
-- [ Prerequisites ](#prerequisites)
-- [ Setting up your GitHub repository ](#setting_up_your_github_repository)
-- [ Configuring Terraform to store state in a Cloud Storage bucket ](#configuring_terraform_to_store_state_in_a_cloud_storage_bucket)
-- [ Granting permissions to your Cloud Build service account ](#granting_permissions_to_your_cloud_build_service_account)
-- [ Directly connecting Cloud Build to your GitHub repository ](#directly_connecting_cloud_build_to_your_github_repository)
-- [ Changing your environment configuration in a new feature branch ](#changing_your_environment_configuration_in_a_new_feature_branch)
-- [ Enforcing Cloud Build execution success before merging branches ](#enforcing_cloud_build_execution_success_before_merging_branches)
-- [ Promoting changes to the development environment ](#promoting_changes_to_the_development_environment)
-- [ Promoting changes to the production environment ](#promoting_changes_to_the_production_environment)
-- [ Cleanup ](#cleanup)
-
-- [ Deleting the project ](#deleting_the_project)
-- [ Deleting the GitHub repository ](#deleting_the_github_repository)
-
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -309,8 +288,8 @@ select or create a Google Cloud Dedicated project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -387,7 +366,7 @@ use your project. Replace ` PROJECT_ID ` with your project
 ID.
 
 ```
-gcloud config set project ** PROJECT_ID 
+gcloud config set project PROJECT_ID 
 ```
 
 
@@ -1198,7 +1177,7 @@ Google Cloud Dedicated so you won't be billed for them in the future.
 
 
 - 
-In the Google Cloud Dedicated console, go to the Manage resources** page.
+In the Google Cloud Dedicated console, go to the **Manage resources** page.
 
 
 [Go to Manage resources](https://console.cloud.berlin-build0.goog/iam-admin/projects)

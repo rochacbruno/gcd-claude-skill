@@ -140,11 +140,12 @@ Cloud Interconnect
 
 
 
-# Cloud Interconnect documentation 
+
+# Cloud Interconnect documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/network-connectivity/docs/interconnect/concepts/overview)
+Read product documentation 
 
 
 

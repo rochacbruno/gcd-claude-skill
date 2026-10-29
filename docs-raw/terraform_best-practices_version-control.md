@@ -128,18 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Use a default branching strategy ](#default-branching)
-- [ Use environment branches for root configurations ](#root-config)
-- [ Allow broad visibility ](#visibility)
-- [ Never commit secrets ](#secrets)
-- [ Organize repositories based on team boundaries ](#team-boundaries)
-
-- [ Sample repository structure ](#sample-repo-structure)
-
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -159,7 +147,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Google Cloud Dedicated in Germany, see
 [Get started with Terraform](/docs/terraform/get-started-with-terraform).
 
-## Use a default branching strategy 
+## Use a default branching strategy
 
 For all repositories that contain Terraform code, use the following strategy by
 default:

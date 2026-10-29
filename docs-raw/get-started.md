@@ -84,21 +84,6 @@ Get started
 
 
 
-- On this page 
-- [ Start your platform setup ](#start-your-platform-setup)
-
-- [ IT administration ](#it-administration)
-- [ FinOps administration ](#finops-administration)
-- [ Security engineering ](#security-engineering)
-- [ DevOps engineering ](#devops-engineering)
-- [ Application development ](#application-development)
-- [ Data analysis ](#data-analysis)
-
-- [ Begin building ](#begin-building)
-- [ Explore products ](#explore-products)
-- [ Grow skills ](#grow-skills)
-- 
-
 
 
 
@@ -195,8 +180,9 @@ Data analysis
 
 
 
-### IT administration
 
+
+### IT administration
 
 
 
@@ -231,8 +217,9 @@ Establish administrators, billing accounts, and other settings in your Google Cl
 
 
 
-### Fin Ops administration
 
+
+### FinOps administration
 
 
 
@@ -275,8 +262,9 @@ Set up billing, spending notifications, and resource structure to facilitate cos
 
 
 
-### Security engineering
 
+
+### Security engineering
 
 
 
@@ -322,8 +310,9 @@ and compliance controls.
 
 
 
-### DevOps engineering
 
+
+### DevOps engineering
 
 
 
@@ -372,8 +361,9 @@ Start automating infrastructure and secure collaboration with teammates using Go
 
 
 
-### Application development
 
+
+### Application development
 
 
 
@@ -418,8 +408,9 @@ Get basic API access and set up a development environment that can interact with
 
 
 
-### Data analysis
 
+
+### Data analysis
 
 
 
@@ -456,6 +447,7 @@ Analyze sample data using Google Cloud products with minimal setup.
 - [Gemini in BigQuery overview](/gemini/docs/bigquery/overview)
 
 - [Data analytics design patterns (Architecture Center)](/architecture/reference-patterns/overview)
+
 
 
 

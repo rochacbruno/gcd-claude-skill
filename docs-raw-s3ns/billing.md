@@ -120,11 +120,12 @@ Cloud Billing
 
 
 
-# Cloud Billing documentation 
+
+# Cloud Billing documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/billing/docs/concepts)
+Read product documentation 
 
 
 

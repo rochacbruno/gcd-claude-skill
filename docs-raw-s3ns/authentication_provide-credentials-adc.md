@@ -148,12 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Provide credentials to ADC ](#how-to)
-- [ The gcloud CLI and ADC ](#gcloud-credentials)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -172,7 +166,7 @@ For information about where ADC looks for credentials and in what order, see
 If you are using API keys, then you don't need to set up ADC. For more
 information, see [Use API keys to access APIs](/docs/authentication/api-keys-use).
 
-## Provide credentials to ADC 
+## Provide credentials to ADC
 
 Select the environment where your code is running:
 

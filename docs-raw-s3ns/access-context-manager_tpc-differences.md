@@ -113,14 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Security and access control ](#security-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -145,7 +137,7 @@ Access Context Manager documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -234,17 +226,13 @@ For details about other services and features in Cloud de Confiance and their di
 their Google Cloud counterparts, see the [product list.](https://documentation.s3ns.fr/products)
 
 
-
-### Related products
-
+Related products 
 
 
 - [VPC Service Controls in
 Cloud de Confiance by S3NS](/vpc-service-controls/docs/tpc-differences)
 
-
-### Cloud de Confiance guides
-
+Cloud de Confiance guides 
 
 
 

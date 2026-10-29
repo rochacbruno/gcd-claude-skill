@@ -128,67 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ October 26, 2026 ](#October_26_2026)
-- [ September 29, 2026 ](#September_29_2026)
-- [ July 24, 2026 ](#July_24_2026)
-- [ July 16, 2026 ](#July_16_2026)
-- [ July 13, 2026 ](#July_13_2026)
-- [ July 09, 2026 ](#July_09_2026)
-- [ June 26, 2026 ](#June_26_2026)
-- [ June 22, 2026 ](#June_22_2026)
-- [ May 01, 2026 ](#May_01_2026)
-- [ April 16, 2026 ](#April_16_2026)
-- [ April 15, 2026 ](#April_15_2026)
-- [ April 02, 2026 ](#April_02_2026)
-- [ March 23, 2026 ](#March_23_2026)
-- [ March 19, 2026 ](#March_19_2026)
-- [ March 11, 2026 ](#March_11_2026)
-- [ March 04, 2026 ](#March_04_2026)
-- [ February 12, 2026 ](#February_12_2026)
-- [ February 09, 2026 ](#February_09_2026)
-- [ December 22, 2025 ](#December_22_2025)
-- [ December 14, 2025 ](#December_14_2025)
-- [ December 10, 2025 ](#December_10_2025)
-- [ November 24, 2025 ](#November_24_2025)
-- [ November 18, 2025 ](#November_18_2025)
-- [ November 10, 2025 ](#November_10_2025)
-- [ November 04, 2025 ](#November_04_2025)
-- [ November 02, 2025 ](#November_02_2025)
-- [ October 30, 2025 ](#October_30_2025)
-- [ October 21, 2025 ](#October_21_2025)
-- [ October 20, 2025 ](#October_20_2025)
-- [ October 18, 2025 ](#October_18_2025)
-- [ October 17, 2025 ](#October_17_2025)
-- [ October 16, 2025 ](#October_16_2025)
-- [ October 06, 2025 ](#October_06_2025)
-- [ June 30, 2025 ](#June_30_2025)
-- [ June 27, 2025 ](#June_27_2025)
-- [ March 26, 2025 ](#March_26_2025)
-- [ March 10, 2025 ](#March_10_2025)
-- [ March 04, 2025 ](#March_04_2025)
-- [ January 29, 2025 ](#January_29_2025)
-- [ January 20, 2025 ](#January_20_2025)
-- [ January 17, 2025 ](#January_17_2025)
-- [ December 10, 2024 ](#December_10_2024)
-- [ November 26, 2024 ](#November_26_2024)
-- [ November 05, 2024 ](#November_05_2024)
-- [ October 30, 2024 ](#October_30_2024)
-- [ October 16, 2024 ](#October_16_2024)
-- [ October 15, 2024 ](#October_15_2024)
-- [ October 09, 2024 ](#October_09_2024)
-- [ September 26, 2024 ](#September_26_2024)
-- [ June 18, 2024 ](#June_18_2024)
-- [ June 17, 2024 ](#June_17_2024)
-- [ June 14, 2024 ](#June_14_2024)
-- [ June 13, 2024 ](#June_13_2024)
-- [ June 12, 2024 ](#June_12_2024)
-- [ June 11, 2024 ](#June_11_2024)
-- [ June 05, 2024 ](#June_05_2024)
-- [ June 04, 2024 ](#June_04_2024)
-- [ May 31, 2024 ](#May_31_2024)
-- 
-
 
 
 
@@ -264,8 +203,7 @@ Security
 A vulnerability (CVE-2026-85299) about incorrect authorization in
 Compute Engine was discovered and has been addressed. For more information,
 see the
-[GCP-2026-073 security bulletin](/compute/docs/security-bulletins#gcp-2026-073).
-
+[GCP-2026-073 security bulletin](/compute/docs/security-bulletins#gcp-2026-073). 
 
 
 ## September 29, 2026
@@ -344,8 +282,7 @@ workloads. Each image version is pre-installed with the necessary drivers,
 network fabrics, and Slurm agents to help you run your workloads.
 
 For more information, see
-[Overview of Advanced Compute Images](/compute/docs/images/workload/aci-images).
-
+[Overview of Advanced Compute Images](/compute/docs/images/workload/aci-images). 
 
 
 ## July 09, 2026
@@ -361,8 +298,7 @@ Compute Engine, Google Kubernetes Engine, and Cloud Run.
 
 To purchase spend-based commitments, contact Billing support. For more
 information, see
-[Billing differences in Google Cloud Dedicated](/billing/docs/tpc-differences).
-
+[Billing differences in Google Cloud Dedicated](/billing/docs/tpc-differences). 
 
 
 ## June 26, 2026
@@ -387,8 +323,7 @@ Feature
 
 **Generally available**: You can create instances all at once in a regional
 managed instance group (MIG) by using resize requests. For more information, see
-[About resize requests in a MIG](/compute/docs/instance-groups/about-resize-requests-mig).
-
+[About resize requests in a MIG](/compute/docs/instance-groups/about-resize-requests-mig). 
 
 
 ## May 01, 2026
@@ -407,8 +342,7 @@ For the latest pricing information, see the
 
 For information about how Spot VMs work, see
 [Spot VMs](/compute/docs/instances/spot) and
-[Create and use Spot VMs](/compute/docs/instances/create-use-spot).
-
+[Create and use Spot VMs](/compute/docs/instances/create-use-spot). 
 
 
 ## April 16, 2026
@@ -427,8 +361,7 @@ snapshot, or archive snapshot to a different key without downtime.
 For more information, see
 [Rotate the CMEK for a disk or standard snapshot](/compute/docs/disks/customer-managed-encryption#rotate_encryption)
 and
-[Change the CMEK for a disk or standard snapshot](/compute/docs/disks/customer-managed-encryption#change-key).
-
+[Change the CMEK for a disk or standard snapshot](/compute/docs/disks/customer-managed-encryption#change-key). 
 
 
 ## April 15, 2026
@@ -440,8 +373,7 @@ Announcement
 You can view the physical location of your Compute Engine instances in a zone
 to understand your cluster topology. This information helps you reduce network
 latency between your compute instances. For more information, see
-[View Compute Engine instance topology](/compute/docs/instances/view-instance-topology).
-
+[View Compute Engine instance topology](/compute/docs/instances/view-instance-topology). 
 
 
 Feature 
@@ -452,8 +384,7 @@ Compute Engine instances in a MIG by using workload policies. Workload
 policies help you to, for example, place your compute instances close together
 to minimize network latency when running AI or ML workloads. For more
 information, see
-[About workload policies in MIGs](/compute/docs/instance-groups/about-workload-policies).
-
+[About workload policies in MIGs](/compute/docs/instance-groups/about-workload-policies). 
 
 
 ## April 02, 2026
@@ -548,9 +479,7 @@ You are affected if your VM instance uses a Rocky Linux image from an `-optimize
 
 - 
 
-**If your image version is older than** `v20250912`: Your VM is configured to use legacy [SIG/Cloud](https://sig-cloud.rocky.page/) repositories that no longer receive regular kernel updates and won't receive future security patches. While running `sudo dnf update` applies a one-time patch for the vulnerabilities listed, you **must** manually migrate the VM to the SCN repositories to receive ongoing updates by following the [CIQ migration guide](https://docs.ciq.com/scn/#migration-from-sigcloud).
-
-
+**If your image version is older than** `v20250912`: Your VM is configured to use legacy [SIG/Cloud](https://sig-cloud.rocky.page/) repositories that no longer receive regular kernel updates and won't receive future security patches. While running `sudo dnf update` applies a one-time patch for the vulnerabilities listed, you **must** manually migrate the VM to the SCN repositories to receive ongoing updates by following the [CIQ migration guide](https://docs.ciq.com/scn/#migration-from-sigcloud). 
 
 
 ## March 04, 2026
@@ -697,8 +626,7 @@ Feature
 
 **Generally available**: You can verify which reservation a VM consumes and
 view a list of VMs that consume a reservation. For more information,
-see [View reservation consumption](/compute/docs/instances/reservations-view#view_reservation_consumption).
-
+see [View reservation consumption](/compute/docs/instances/reservations-view#view_reservation_consumption). 
 
 
 ## November 02, 2025
@@ -711,8 +639,7 @@ If you need to synchronize time with high accuracy and monitor its accuracy for
 your Compute Engine instances, you can sync your VM clock with its host
 server clock using `chrony` and `ptp_kvm`. This configuration provides accuracy
 within 1 ms for supported setups. For more information, see
-[Configure accurate time for Compute Engine VMs](/compute/docs/instances/time-synchronization).
-
+[Configure accurate time for Compute Engine VMs](/compute/docs/instances/time-synchronization). 
 
 
 ## October 30, 2025
@@ -734,8 +661,7 @@ For more information, see the following:
 
 - [Create VM instances with multiple network interfaces](/vpc/docs/create-use-multiple-interfaces)
 
-- [Add Dynamic NICs to an instance](/vpc/docs/add-dynamic-nics)
-
+- [Add Dynamic NICs to an instance](/vpc/docs/add-dynamic-nics) 
 
 
 ## October 21, 2025
@@ -746,8 +672,7 @@ Feature
 
 **Generally available**: Future reservations let you reserve capacity for a
 specific date up to one year in advance. For more information, see
-[About future reservation requests](/ai-hypercomputer/docs/reserve-capacity).
-
+[About future reservation requests](/ai-hypercomputer/docs/reserve-capacity). 
 
 
 Change 
@@ -759,8 +684,7 @@ For example, `6.12.0-55.32.1.el10_0cld_next.2.1` changes to `6.12.0-55.39.1.el10
 
 This change affects the Rocky Linux 8, 9, and 10 optimized and accelerator images in an upcoming kernel update over the next month. The major version 8 and 9 kernels now include FIPS 140-3 patches as part of CIQ's ongoing FIPS 140-3 validation efforts for Rocky Linux. These patches have no effect if FIPS mode is not enabled. There are no code changes to the major version 10 kernel.
 
-You can find the kernel source tree in the CIQ [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository.
-
+You can find the kernel source tree in the CIQ [kernel-src-tree](https://github.com/ctrliq/kernel-src-tree) GitHub repository. 
 
 
 ## October 20, 2025
@@ -793,8 +717,7 @@ The G4 machine series is now available in the following regions and zones:
 - Columbus, Ohio: `us-east5-c`
 
 To get started with G4 machine types, see
-[Create a G2 or G4 instance](/compute/docs/gpus/create-gpu-vm-g-series).
-
+[Create a G2 or G4 instance](/compute/docs/gpus/create-gpu-vm-g-series). 
 
 
 ## October 18, 2025
@@ -806,8 +729,7 @@ Feature
 **Generally Available**: You can use the Compute Engine alpha API at the
 project level through a self-service process. By enabling the alpha API, you can
 use the Google Cloud Dedicated console, Google Cloud CLI, API, and Terraform to view and manage
-preview features. For more information, see [Use the Compute Engine alpha API](/compute/docs/reference/rest/alpha).
-
+preview features. For more information, see [Use the Compute Engine alpha API](/compute/docs/reference/rest/alpha). 
 
 
 ## October 17, 2025
@@ -819,8 +741,7 @@ Feature
 **Generally Available**: You can use the Compute Engine alpha API at the
 project level through a self-service process. By enabling the alpha API, you can
 use the Google Cloud Dedicated console, Google Cloud CLI, API, and Terraform to view and manage
-preview features. For more information, see [Use the Compute Engine alpha API](/compute/docs/reference/rest/alpha).
-
+preview features. For more information, see [Use the Compute Engine alpha API](/compute/docs/reference/rest/alpha). 
 
 
 ## October 16, 2025
@@ -829,8 +750,7 @@ preview features. For more information, see [Use the Compute Engine alpha API](/
 Change 
 
 
-Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP, the default file system for the root partition (`/`) is [Btrfs](https://en.wikipedia.org/wiki/Btrfs), which replaces the previous default of XFS. For more information, see [File systems in SLES](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse) in the SUSE documentation.
-
+Starting with SUSE Linux Enterprise Server (SLES) 16, including variants for SAP, the default file system for the root partition (`/`) is [Btrfs](https://en.wikipedia.org/wiki/Btrfs), which replaces the previous default of XFS. For more information, see [File systems in SLES](https://documentation.suse.com/sles/15-SP7/html/SLES-all/cha-filesystems.html#sec-filesystems-major-btrfs-suse) in the SUSE documentation. 
 
 
 ## October 06, 2025
@@ -851,8 +771,7 @@ This update applies to images created on or after September 12, 2025.
 
 For more information about Rocky Linux OS images, see [Rocky
 Linux](/compute/docs/images/os-details#rocky_linux) on
-the operating system details page.
-
+the operating system details page. 
 
 
 ## June 30, 2025

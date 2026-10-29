@@ -73,13 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Google Cloud Dedicated APIs: Access services programmatically ](#apis)
-- [ Cloud Client Libraries: Access APIs with your preferred language ](#libraries)
-- [ What's next? ](#whats_next)
-- 
-
 
 
 
@@ -103,7 +96,7 @@ To set up API access, implement the following:
 
 - [Cloud Client Libraries: Access APIs with your preferred language](#libraries)
 
-## Before you begin 
+## Before you begin
 
 To make sure you can set up APIs and use tools, ask your administrators to
 complete the following tasks:

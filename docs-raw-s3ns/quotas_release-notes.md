@@ -108,11 +108,6 @@ Resources
 
 
 
-- On this page 
-- [ July 12, 2024 ](#July_12_2024)
-- [ June 18, 2024 ](#June_18_2024)
-- 
-
 
 
 
@@ -167,7 +162,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## July 12, 2024 
+## July 12, 2024
 
 v1 
 

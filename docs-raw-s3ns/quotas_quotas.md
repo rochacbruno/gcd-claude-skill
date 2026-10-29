@@ -108,12 +108,6 @@ Resources
 
 
 
-- On this page 
-- [ Rate quotas ](#rate_quotas)
-- [ Request a quota adjustment ](#request_a_quota_adjustment)
-- [ What's next ](#whats_next)
-- 
-
 
 
 

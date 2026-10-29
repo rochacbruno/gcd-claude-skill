@@ -129,8 +129,9 @@ Networking
 
 
 
-### Connectivity
 
+
+### Connectivity
 
 
 
@@ -386,8 +387,8 @@ Dynamically exchange routes between your VPC network and a peered networking usi
 
 
 
-### Scalability
 
+### Scalability
 
 
 
@@ -562,8 +563,8 @@ Establish direct peering links with Google's edge network at various locations t
 
 
 
-### Networking security
 
+### Networking security
 
 
 
@@ -743,8 +744,8 @@ Protect your Cloud de Confiance deployments from multiple types of threats, incl
 
 
 
-### Networking observability
 
+### Networking observability
 
 
 
@@ -924,8 +925,8 @@ Monitor the performance, availability, and overall health of cloud-powered appli
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

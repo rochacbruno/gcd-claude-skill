@@ -126,33 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Limitations ](#limitations)
-- [ Before you begin ](#before_you_begin)
-
-- [ Required permissions ](#required_permissions)
-- [ Permissions to load data from Cloud Storage ](#permissions-load-data-from-cloud-storage)
-- [ Create a dataset ](#create_a_dataset)
-
-- [ CSV compression ](#csv_compression)
-- [ Loading CSV data into a table ](#loading_csv_data_into_a_table)
-- [ Loading CSV data into a table that uses column-based time partitioning ](#loading_csv_data_into_a_table_that_uses_column-based_time_partitioning)
-- [ Appending to or overwriting a table with CSV data ](#appending_to_or_overwriting_a_table_with_csv_data)
-- [ Load Apache Hive-partitioned CSV data ](#loading-hive-partitioned-csv-data)
-- [ Details of loading CSV data ](#details_of_loading_csv_data)
-
-- [ Encoding ](#encoding)
-- [ Field delimiters ](#field_delimiters)
-- [ Data types ](#data_types)
-- [ Schema auto-detection ](#schema_auto-detection)
-
-- [ Troubleshoot loading CSV data ](#troubleshoot-loading-csv-data)
-
-- [ Troubleshoot parsing errors ](#troubleshoot_parsing_errors)
-- [ Troubleshoot quota errors ](#troubleshoot_quota_errors)
-
-- [ CSV options ](#csv-options)
-- 
 
 
 
@@ -161,8 +134,7 @@ Guides
 
 
 
-
-# Load CSV data from Cloud Storage 
+# Load CSV data from Cloud Storage
 
 
 
@@ -177,7 +149,7 @@ For information about loading CSV data from a local file, see
 [Loading data into BigQuery from a local data
 source](/bigquery/docs/batch-loading-data#loading_data_from_local_files).
 
-## Limitations 
+## Limitations
 
 You are subject to the following limitations when you load data into
 BigQuery from a Cloud Storage bucket:
@@ -385,8 +357,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -456,15 +428,12 @@ To load CSV data from Cloud Storage into a new BigQuery
 table, select one of the following options:
 
 
-[ Console ](#console) [ SQL ](#sql) [ bq ](#bq) [ API ](#api) [ C# ](#c) [ Go ](#go) [ Java ](#java) 
-More 
 
-[ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-
+### Console
 
 - 
 
-In the Google Cloud Dedicated console, go to the BigQuery** page.
+In the Google Cloud Dedicated console, go to the **BigQuery** page.
 
 
 
@@ -684,6 +653,7 @@ BigQuery
 
 
 
+### SQL
 
 Use the
 [`LOAD DATA` DDL statement](/bigquery/docs/reference/standard-sql/load-statements).
@@ -716,6 +686,7 @@ Click play_circle **Run**.
 For more information about how to run queries, see [Run an interactive query](/bigquery/docs/running-queries#queries).
 
 
+### bq
 
 Use the `bq load` command, specify `CSV` using the
 `--source_format` flag, and include a [Cloud Storage URI](/bigquery/docs/batch-loading-data#gcs-uri).
@@ -850,7 +821,7 @@ To load CSV data into BigQuery, enter the following command:
 
 
 ```
-bq --location = ** location load \ 
+bq --location = location load \ 
 --source_format = format \ 
 dataset.table \ 
 path_to_source \ 
@@ -999,6 +970,7 @@ mydataset . mytable \
 ```
 
 
+### API
 
 - 
 
@@ -1060,6 +1032,7 @@ operations will succeed.
 
 
 
+### C#
 
 
 
@@ -1204,6 +1177,7 @@ $"Loaded {table.[Resource](https://berlin.devsitetest.how/dotnet/docs/reference/
 
 
 
+### Go
 
 
 
@@ -1352,6 +1326,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -1515,6 +1490,7 @@ System . out . println ( "Column not added during load append \n" + e . toString
 
 
 
+### Node.js
 
 
 
@@ -1676,6 +1652,7 @@ throw errors ;
 
 
 
+### PHP
 
 
 
@@ -1821,6 +1798,7 @@ print('Data imported successfully' . PHP_EOL);
 
 
 
+### Python
 
 
 
@@ -1966,6 +1944,7 @@ print ( "Loaded {} rows." . format ( destination_table . [ num_rows ](https://be
 
 
 
+### Ruby
 
 
 
@@ -2122,12 +2101,10 @@ that uses column-based time partitioning:
 
 
 
-[ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) 
-More 
 
 
 
-
+### Go 
 
 
 
@@ -2284,6 +2261,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -2474,6 +2453,8 @@ System . out . println (
 
 
 
+### Node.js 
+
 
 
 
@@ -2637,6 +2618,8 @@ console . log ( `Job ${ job . id } completed.` );
 
 
 
+
+### Python 
 
 
 
@@ -2802,15 +2785,12 @@ If you load data into an existing table, the load job can append the data or
 overwrite the table.
 
 
-[ Console ](#console) [ SQL ](#sql) [ bq ](#bq) [ API ](#api) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) 
-More 
 
-
-
+### Console
 
 - 
 
-In the Google Cloud Dedicated console, go to the BigQuery** page.
+In the Google Cloud Dedicated console, go to the **BigQuery** page.
 
 
 
@@ -3037,6 +3017,7 @@ BigQuery
 
 
 
+### SQL
 
 Use the
 [`LOAD DATA` DDL statement](/bigquery/docs/reference/standard-sql/load-statements).
@@ -3068,6 +3049,7 @@ Click play_circle **Run**.
 For more information about how to run queries, see [Run an interactive query](/bigquery/docs/running-queries#queries).
 
 
+### bq
 
 Use the `bq load` command, specify `CSV` using the
 `--source_format` flag, and include a [Cloud Storage URI](/bigquery/docs/batch-loading-data#gcs-uri).
@@ -3160,7 +3142,7 @@ table data.
 
 
 ```
-bq --location = ** location load \ 
+bq --location = location load \ 
 -- [ no ] replace \ 
 --source_format = format \ 
 dataset.table \ 
@@ -3221,6 +3203,7 @@ gs : // mybucket / mydata . csv \
 ```
 
 
+### API
 
 - 
 
@@ -3253,6 +3236,7 @@ Specify the write preference by setting the
 
 
 
+### Go
 
 
 
@@ -3399,6 +3383,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -3567,6 +3552,7 @@ System . out . println ( "Column not added during load append \n" + e . toString
 
 
 
+### Node.js
 
 
 
@@ -3752,7 +3738,6 @@ throw errors ;
 
 
 
-
 Before trying this sample, follow the PHP setup instructions in the
 [BigQuery quickstart using
 client libraries](/bigquery/docs/quickstarts/quickstart-client-libraries).
@@ -3864,6 +3849,7 @@ print('Data imported successfully' . PHP_EOL);
 
 
 
+### Python
 
 
 
@@ -4295,7 +4281,7 @@ data, error message: Error detected while parsing row starting at position: 1405
 Error: Data between close quote character (") and field separator.
 File: gs://my-bucket/mytable.csv
 Failure details:
-- gs://my-bucket/mytable.csv*: Error while reading data,
+**- gs://my-bucket/mytable.csv*: Error while reading data,
 error message: Error detected while parsing row starting at
 position: *1405*. Error: Data between close quote character (") and
 field separator. File: gs://my-bucket/mytable.csv**

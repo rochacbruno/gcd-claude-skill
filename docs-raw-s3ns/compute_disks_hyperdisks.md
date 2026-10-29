@@ -128,46 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Hyperdisk features ](#hyperdisk-features)
-- [ Choose a Hyperdisk type for your workload ](#when-to-use)
-- [ Hyperdisk size limits ](#size-limits)
-- [ Hyperdisk performance ](#hd-performance-limits)
-
-- [ Latency ](#latency)
-
-- [ Torn write protection ](#torn-write-protection)
-
-- [ Benefits of torn write protection ](#torn-write-benefits)
-
-- [ Machine series support for Hyperdisk ](#machine-type-support)
-
-- [ Design for flexibility on older machine series ](#gen2-hyperdisk_name_short)
-- [ Restrictions for machine series support ](#machine_type_restrictions)
-
-- [ Regional availability for Hyperdisk ](#hyperdisk_regions)
-- [ When to use Hyperdisk pools with your workload ](#storage_pools)
-- [ Share Hyperdisk volumes between instances ](#share-disks)
-- [ High availability and disaster recovery protection for Hyperdisk volumes ](#hd-dr)
-
-- [ Cross-zonal synchronous replication ](#hd-sync-rep)
-- [ Cross-regional asynchronous replication ](#hd-async-rep)
-
-- [ Encryption for Hyperdisk volumes ](#hd-encryption)
-
-- [ Confidential Computing with Hyperdisk volumes ](#confidential-hd)
-
-- [ Durability of Hyperdisk ](#durability_hyperdisks)
-- [ Supported disk interfaces ](#supported_disk_interfaces)
-- [ Pricing ](#pricing)
-
-- [ Hyperdisk and committed use discounts ](#hyperdisk_cud)
-- [ Hyperdisk and preemptible VM instances ](#hyperdisk_preemptible_instances)
-
-- [ Limitations for Hyperdisk ](#limitations)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -201,7 +161,7 @@ Compute Engine, see [Choose a disk type](/compute/docs/disks).
 To create a new Hyperdisk volume, see
 [Create a Hyperdisk volume](/compute/docs/disks/add-hyperdisk).
 
-## Hyperdisk features 
+## Hyperdisk features
 
 With Hyperdisk you can provision, manage, and scale your
 Compute Engine workloads without the cost and complexity of a typical
@@ -493,7 +453,6 @@ type.
 
 
 
-
 | 
 Disk type | 
 
@@ -567,7 +526,7 @@ Hyperdisk ML |
 
 
 1 
-[Preview](https://documentation.s3ns.fr/products#product-launch-stages)**:
+**[Preview](https://documentation.s3ns.fr/products#product-launch-stages)**:
 C4 supports a maximum disk size of 128 TiB. For access to
 this feature, contact
 [hyperdisk-questions@google.com](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hyperdisk-questions@google.com).
@@ -669,39 +628,39 @@ Select one or more machine series to see the supported Hyperdisk types.
 
 
 
-[A2](/compute/docs/accelerator-optimized-machines#a2-vms) 
-[A3 (H100)](/compute/docs/gpus#h100-gpus) 
-[A3 (H200)](/compute/docs/gpus#h200-gpus) 
-[A4](/compute/docs/accelerator-optimized-machines#a4-vms) 
-[A4X](/compute/docs/accelerator-optimized-machines#a4x-vms) 
-[A4X Max](/compute/docs/accelerator-optimized-machines#a4x-vms) 
-[C2](/compute/docs/compute-optimized-machines#c2_machine_types) 
-[C2D](/compute/docs/compute-optimized-machines#c2d_machine_types) 
-[C3](/compute/docs/general-purpose-machines#c3_series) 
-[C3D](/compute/docs/general-purpose-machines#c3d_machine_types) 
-[C4](/compute/docs/general-purpose-machines#c4_series) 
-[C4A](/compute/docs/general-purpose-machines#c4a_series) 
-[C4D](/compute/docs/general-purpose-machines#c4d_series) 
-[C4N](/compute/docs/network-optimized-machines#c4n_series) 
-[E2](/compute/docs/general-purpose-machines#e2_machine_types) 
-[G2](/compute/docs/accelerator-optimized-machines#g2-vms) 
-[G4](/compute/docs/accelerator-optimized-machines#g4-series) 
-[H3](/compute/docs/compute-optimized-machines#h3_series) 
-[H4D](/compute/docs/compute-optimized-machines#h4d_series) 
-[M1](/compute/docs/memory-optimized-machines#m1_machine_types) 
-[M2](/compute/docs/memory-optimized-machines#m2_machine_types) 
-[M3](/compute/docs/memory-optimized-machines#m3_machine_types) 
-[M4](/compute/docs/memory-optimized-machines#m4_machine_types) 
-[M4N](/compute/docs/network-optimized-machines#m4n_series) 
-[N1](/compute/docs/general-purpose-machines#n1_machines) 
-[N1+GPU](/compute/docs/gpus) 
-[N2](/compute/docs/general-purpose-machines#n2_series) 
-[N2D](/compute/docs/general-purpose-machines#n2d_machines) 
-[N4](/compute/docs/general-purpose-machines#n4_series) 
-[N4A](/compute/docs/general-purpose-machines#n4a_series) 
-[N4D](/compute/docs/general-purpose-machines#n4d_series) 
-[T2A](/compute/docs/general-purpose-machines#t2a_machines) 
-[T2D](/compute/docs/general-purpose-machines#t2d_machines) 
+A2 
+A3 (H100) 
+A3 (H200) 
+A4 
+A4X 
+A4X Max 
+C2 
+C2D 
+C3 
+C3D 
+C4 
+C4A 
+C4D 
+C4N 
+E2 
+G2 
+G4 
+H3 
+H4D 
+M1 
+M2 
+M3 
+M4 
+M4N 
+N1 
+N1+GPU 
+N2 
+N2D 
+N4 
+N4A 
+N4D 
+T2A 
+T2D 
 [TPU v2](/tpu/docs/v2) 
 [TPU v3](/tpu/docs/v3) 
 [TPU v4](/tpu/docs/v4) 
@@ -709,64 +668,17 @@ Select one or more machine series to see the supported Hyperdisk types.
 [TPU v5p](/tpu/docs/v5p) 
 [TPU v6e](/tpu/docs/v6e) 
 [TPU7x](/tpu/docs/tpu7x) 
-[X4](/compute/docs/memory-optimized-machines#x4_series) 
-[X5](/compute/docs/memory-optimized-machines#x5_series) 
-[Z3](/compute/docs/storage-optimized-machines#z3_series) 
-[Z4D](/compute/docs/storage-optimized-machines#z4d_series) 
-[Z4M](/compute/docs/storage-optimized-machines#z4m_series) 
-Select one or more options ** Choose a machine series 
-
-- A2
-- A3 (H100)
-- A3 (H200)
-- A4
-- A4X
-- A4X Max
-- C2
-- C2D
-- C3
-- C3D
-- C4
-- C4A
-- C4D
-- C4N
-- E2
-- G2
-- G4
-- H3
-- H4D
-- M1
-- M2
-- M3
-- M4
-- M4N
-- N1
-- N1+GPU
-- N2
-- N2D
-- N4
-- N4A
-- N4D
-- T2A
-- T2D
-- TPU v2
-- TPU v3
-- TPU v4
-- TPU v5e
-- TPU v5p
-- TPU v6e
-- TPU7x
-- X4
-- X5
-- Z3
-- Z4D
-- Z4M
+X4 
+X5 
+Z3 
+Z4D 
+Z4M 
 
 
 
 
 
-Clear all 
+**Clear all 
 
 
 
@@ -795,7 +707,7 @@ Hyperdisk ML |
 
 
 | 
-[A2](/compute/docs/accelerator-optimized-machines#a2-vms) | 
+A2 | 
 
 **—** 
 | 
@@ -813,7 +725,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[A3 (H100)](/compute/docs/gpus#h100-gpus) | 
+A3 (H100) | 
 
 
 | 
@@ -831,7 +743,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[A3 (H200)](/compute/docs/gpus#h200-gpus) | 
+A3 (H200) | 
 
 
 | 
@@ -849,7 +761,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[A4](/compute/docs/accelerator-optimized-machines#a4-vms) | 
+A4 | 
 
 
 | 
@@ -867,7 +779,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[A4X](/compute/docs/accelerator-optimized-machines#a4x-vms) | 
+A4X | 
 
 
 | 
@@ -885,7 +797,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[A4X Max](/compute/docs/accelerator-optimized-machines#a4x-vms) | 
+A4X Max | 
 
 
 | 
@@ -903,7 +815,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C2](/compute/docs/compute-optimized-machines#c2_machine_types) | 
+C2 | 
 
 **—** 
 | 
@@ -921,7 +833,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C2D](/compute/docs/compute-optimized-machines#c2d_machine_types) | 
+C2D | 
 
 ** 1 **
 | 
@@ -939,7 +851,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C3](/compute/docs/general-purpose-machines#c3_series) | 
+C3 | 
 
 
 | 
@@ -957,7 +869,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C3D](/compute/docs/general-purpose-machines#c3d_machine_types) | 
+C3D | 
 
 
 | 
@@ -975,7 +887,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C4](/compute/docs/general-purpose-machines#c4_series) | 
+C4 | 
 
 
 | 
@@ -993,7 +905,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C4A](/compute/docs/general-purpose-machines#c4a_series) | 
+C4A | 
 
 
 | 
@@ -1011,7 +923,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C4D](/compute/docs/general-purpose-machines#c4d_series) | 
+C4D | 
 
 
 | 
@@ -1029,7 +941,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[C4N](/compute/docs/network-optimized-machines#c4n_series) | 
+C4N | 
 
 
 | 
@@ -1047,7 +959,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[E2](/compute/docs/general-purpose-machines#e2_machine_types) | 
+E2 | 
 
 ** 1 **
 | 
@@ -1065,7 +977,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[G2](/compute/docs/accelerator-optimized-machines#g2-vms) | 
+G2 | 
 
 **—** 
 | 
@@ -1083,7 +995,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[G4](/compute/docs/accelerator-optimized-machines#g4-series) | 
+G4 | 
 
 
 | 
@@ -1101,7 +1013,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[H3](/compute/docs/compute-optimized-machines#h3_series) | 
+H3 | 
 
 
 | 
@@ -1119,7 +1031,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[H4D](/compute/docs/compute-optimized-machines#h4d_series) | 
+H4D | 
 
 
 | 
@@ -1137,7 +1049,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[M1](/compute/docs/memory-optimized-machines#m1_machine_types) | 
+M1 | 
 
 
 | 
@@ -1155,7 +1067,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[M2](/compute/docs/memory-optimized-machines#m2_machine_types) | 
+M2 | 
 
 
 | 
@@ -1173,7 +1085,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[M3](/compute/docs/memory-optimized-machines#m3_machine_types) | 
+M3 | 
 
 
 | 
@@ -1191,7 +1103,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[M4](/compute/docs/memory-optimized-machines#m4_machine_types) | 
+M4 | 
 
 
 | 
@@ -1209,7 +1121,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[M4N](/compute/docs/network-optimized-machines#m4n_series) | 
+M4N | 
 
 
 | 
@@ -1227,7 +1139,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N1](/compute/docs/general-purpose-machines#n1_machines) | 
+N1 | 
 
 ** 1 **
 | 
@@ -1245,7 +1157,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N1+GPU](/compute/docs/gpus) | 
+N1+GPU | 
 
 **—** 
 | 
@@ -1263,7 +1175,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N2](/compute/docs/general-purpose-machines#n2_series) | 
+N2 | 
 
 ** 1 **
 | 
@@ -1281,7 +1193,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N2D](/compute/docs/general-purpose-machines#n2d_machines) | 
+N2D | 
 
 ** 1 **
 | 
@@ -1299,7 +1211,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N4](/compute/docs/general-purpose-machines#n4_series) | 
+N4 | 
 
 
 | 
@@ -1317,7 +1229,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N4A](/compute/docs/general-purpose-machines#n4a_series) | 
+N4A | 
 
 
 | 
@@ -1335,7 +1247,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[N4D](/compute/docs/general-purpose-machines#n4d_series) | 
+N4D | 
 
 
 | 
@@ -1353,7 +1265,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[T2A](/compute/docs/general-purpose-machines#t2a_machines) | 
+T2A | 
 
 **—** 
 | 
@@ -1371,7 +1283,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[T2D](/compute/docs/general-purpose-machines#t2d_machines) | 
+T2D | 
 
 **—** 
 | 
@@ -1515,7 +1427,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[X4](/compute/docs/memory-optimized-machines#x4_series) | 
+X4 | 
 
 
 | 
@@ -1533,7 +1445,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[X5](/compute/docs/memory-optimized-machines#x5_series) | 
+X5 | 
 
 
 | 
@@ -1551,7 +1463,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[Z3](/compute/docs/storage-optimized-machines#z3_series) | 
+Z3 | 
 
 
 | 
@@ -1569,7 +1481,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[Z4D](/compute/docs/storage-optimized-machines#z4d_series) | 
+Z4D | 
 
 
 | 
@@ -1587,7 +1499,7 @@ Hyperdisk ML |
 | 
 |
 | 
-[Z4M](/compute/docs/storage-optimized-machines#z4m_series) | 
+Z4M | 
 
 
 | 

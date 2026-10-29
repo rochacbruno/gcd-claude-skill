@@ -125,17 +125,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Create a Google Cloud Dedicated project ](#create-project)
-
-- [ Install the client library ](#install_the_client_library)
-- [ Read, modify, and write an allow policy ](#using_the_client_library)
-- [ How did it go? ](#how-did-it-go)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -145,8 +134,7 @@ Guides
 
 
 
-
-# Grant roles using client libraries 
+# Grant roles using client libraries
 
 
 
@@ -158,11 +146,11 @@ the Resource Manager API in your favorite programming language.
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
-### Create a Google Cloud Dedicated project 
+### Create a Google Cloud Dedicated project
 
 For this quickstart, you need a new Google Cloud Dedicated project.
 
@@ -255,8 +243,8 @@ gcloud init
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -292,7 +280,7 @@ Create a Google Cloud Dedicated project:
 
 
 ```
-gcloud projects create ** PROJECT_ID 
+gcloud projects create PROJECT_ID 
 ```
 
 
@@ -339,8 +327,7 @@ Enable the Resource Manager API, if it is not already enabled:
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -471,12 +458,10 @@ Represent workforce pool users in IAM policies](/iam/docs/workforce-identity-fed
 
 
 
-[ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) 
-More 
 
 
 
-
+### C# 
 
 
 
@@ -530,6 +515,8 @@ install-package Google.Apis.CloudResourceManager.v1
 
 
 
+### Go 
+
 
 
 
@@ -573,6 +560,8 @@ go get google.golang.org/api/cloudresourcemanager/v1
 
 
 
+
+### Java 
 
 
 
@@ -670,6 +659,8 @@ version>v1 - rev20240118 - 2.0.0 / version >
 
 
 
+### Python 
+
 
 
 
@@ -756,12 +747,10 @@ user account. For example,
 
 
 
-[ C# ](#c) [ Go ](#go) [ Java ](#java) [ Python ](#python) 
-More 
 
 
 
-
+### C# 
 
 
 
@@ -1008,6 +997,8 @@ SetPolicy ( crmService , projectId , policy );
 
 
 
+
+### Go 
 
 
 
@@ -1259,6 +1250,8 @@ log . Fatalf ( "Projects.SetIamPolicy: %v" , err )
 
 
 
+
+### Java 
 
 
 
@@ -1531,6 +1524,8 @@ iamClient . [ setIamPolicy ](https://berlin.devsitetest.how/java/docs/reference/
 
 
 
+
+### Python 
 
 
 

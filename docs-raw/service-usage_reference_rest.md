@@ -73,23 +73,6 @@ Reference
 
 
 
-- On this page ** 
-- [ Service: serviceusage.googleapis.com ](#service:-serviceusage.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v2beta.operations ](#rest-resource:-v2beta.operations)
-- [ REST Resource: v1beta1.operations ](#rest-resource:-v1beta1.operations)
-- [ REST Resource: v1beta1.services ](#rest-resource:-v1beta1.services)
-- [ REST Resource: v1beta1.services.consumerQuotaMetrics ](#rest-resource:-v1beta1.services.consumerquotametrics)
-- [ REST Resource: v1beta1.services.consumerQuotaMetrics.limits ](#rest-resource:-v1beta1.services.consumerquotametrics.limits)
-- [ REST Resource: v1beta1.services.consumerQuotaMetrics.limits.adminOverrides ](#rest-resource:-v1beta1.services.consumerquotametrics.limits.adminoverrides)
-- [ REST Resource: v1beta1.services.consumerQuotaMetrics.limits.consumerOverrides ](#rest-resource:-v1beta1.services.consumerquotametrics.limits.consumeroverrides)
-- [ REST Resource: v1.operations ](#rest-resource:-v1.operations)
-- [ REST Resource: v1.services ](#rest-resource:-v1.services)
-- 
-
 
 
 
@@ -130,7 +113,7 @@ v1beta1.services.consumerQuotaMetrics.limits.consumerOverrides](#v1beta1.service
 
 
 
-## Service: serviceusage. googleapis. com 
+## Service: serviceusage.googleapis.com
 
 
 
@@ -138,7 +121,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -173,7 +156,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 
-## REST Resource: [v2beta. operations](/service-usage/docs/reference/rest/v2beta/operations)
+## REST Resource: [v2beta.operations](/service-usage/docs/reference/rest/v2beta/operations)
 
 
 
@@ -193,7 +176,7 @@ Methods |
 
 `[get](/service-usage/docs/reference/rest/v2beta/operations/get)` | 
 
-`GET / v2beta/ {name=operations/ *}` 
+`GET /v2beta/{name=operations/*}` 
 
 Gets the latest state of a long-running operation. | 
 |
@@ -202,7 +185,7 @@ Gets the latest state of a long-running operation. |
 
 `[list](/service-usage/docs/reference/rest/v2beta/operations/list)` | 
 
-`GET / v2beta/ operations` 
+`GET /v2beta/operations` 
 
 Lists operations that match the specified filter in the request. | 
 |
@@ -212,7 +195,7 @@ Lists operations that match the specified filter in the request. |
 
 
 
-## REST Resource: [v1beta1. operations](/service-usage/docs/reference/rest/v1beta1/operations)
+## REST Resource: [v1beta1.operations](/service-usage/docs/reference/rest/v1beta1/operations)
 
 
 
@@ -270,7 +253,7 @@ Methods |
 | 
 
 `[batchEnable](/service-usage/docs/reference/rest/v1beta1/services/batchEnable) 
-(deprecated)**` | 
+**(deprecated)**` | 
 
 `POST /v1beta1/{parent=*/*}/services:batchEnable` 
 

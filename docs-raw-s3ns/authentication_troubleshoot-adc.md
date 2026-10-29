@@ -148,12 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ User credentials not working ](#user-creds-client-based)
-- [ Incorrect credentials ](#incorrect-creds)
-- [ Unrecognized credential type ](#unrecognized-cred-type)
-- 
-
 
 
 
@@ -168,7 +162,7 @@ Application Default Credentials (ADC).
 For information about how ADC works, including where credentials are found, see
 [How Application Default Credentials works](/docs/authentication/application-default-credentials).
 
-## User credentials not working 
+## User credentials not working
 
 If your API request returns an error message about user credentials not being
 supported by this API, the API not being enabled in the project, or no quota

@@ -73,18 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#before-you-begin)
-- [ Create a support case ](#create-case)
-- [ Prerequisites ](#prerequisites)
-
-- [ Set up a Google Cloud organization ](#organization)
-- [ Configure an Assured Workloads folder ](#aw-folder)
-- [ Create an empty Google Cloud project ](#create-project)
-- [ Submit your information to Google ](#submit-info)
-
-- 
-
 
 
 
@@ -98,7 +86,7 @@ Learn how to create support cases for
 Google Cloud Dedicated in Germany during the private preview. For the
 preview, support is provided by Google.
 
-## Before you begin 
+## Before you begin
 
 Before you create your first support case, you must complete the
 [prerequisites](#prerequisites), including creating a dedicated
@@ -108,7 +96,7 @@ Google Cloud Dedicated in Germany. This process ensures that your
 support case is routed correctly and that you receive support at no additional
 cost.
 
-## Create a support case 
+## Create a support case
 
 Follow these steps to create a technical support case.
 

@@ -128,24 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required_roles)
-
-- [ Configure your organization policies ](#configure-org-policies)
-- [ Configure the service account ](#configure-to-resources)
-
-- [ Configure for a resource in the same project ](#configure-same-project)
-- [ Configure for a resource in a different project ](#configure-different-project)
-
-- [ Attach the service account to a resource ](#attaching-new-resource)
-- [ Enable service accounts to be attached across projects ](#enabling-cross-project)
-- [ Disable service accounts from being attached across projects ](#disabling-cross-project)
-- [ Audit logs for attaching service accounts ](#audit-logs)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -168,7 +150,7 @@ authorization.
 This page describes how to configure service accounts so that you can attach
 them to resources.
 
-## Before you begin 
+## Before you begin
 
 - 
 
@@ -182,8 +164,7 @@ Enable the IAM and Resource Manager APIs, if any are not already enabled.
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -412,12 +393,10 @@ Grant the Service Account Token Creator role
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ REST ](#rest) 
-**More 
 
 
 
-
+### Console
 
 
 
@@ -497,6 +476,8 @@ previous steps.
 
 
 
+### gcloud 
+
 
 
 
@@ -565,6 +546,8 @@ command again.
 
 
 
+### REST 
+
 
 
 
@@ -632,9 +615,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -697,9 +679,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -784,9 +765,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -797,7 +777,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 
@@ -841,7 +821,7 @@ to the service agent.**
 ** { 
 "role" : "roles/iam.serviceAccountTokenCreator" , 
 "members" : [ 
-"serviceAccount: ** SERVICE_AGENT_EMAIL " 
+"serviceAccount: SERVICE_AGENT_EMAIL " 
 ] 
 }, **
 { 
@@ -947,9 +927,8 @@ Request JSON body:
 To send your request, expand one of these options:
 
 
+
 #### curl (Linux, macOS, or Cloud Shell)
-
-
 
 
 
@@ -1012,9 +991,8 @@ curl -X POST \
 
 
 
+
 #### PowerShell (Windows)
-
-
 
 
 
@@ -1099,9 +1077,8 @@ Invoke-WebRequest `
 
 
 
+
 #### APIs Explorer (browser)
-
-
 
 
 
@@ -1112,7 +1089,7 @@ Copy the request body and open the
 The APIs Explorer panel opens on the right side of the page.
 You can interact with this tool to send requests.
 
-Paste the request body in this tool, complete any other required fields, and click Execute**.
+Paste the request body in this tool, complete any other required fields, and click **Execute**.
 
 
 

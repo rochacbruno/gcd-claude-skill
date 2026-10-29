@@ -140,11 +140,12 @@ Cloud Router
 
 
 
-# Cloud Router documentation 
+
+# Cloud Router documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/network-connectivity/docs/router/concepts/overview)
+Read product documentation 
 
 
 

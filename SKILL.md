@@ -79,8 +79,8 @@ region, check these:
 
 4. **Check service availability.** Not all GCP services exist in sovereign
    cloud. GKE is Autopilot only. Older VM types are unavailable. Preview
-   features are generally unavailable. S3NS has a broader product catalog
-   (more networking products) than Berlin.
+   features are generally unavailable. Always check `references/services.md`
+   and `references/product-differences.md` for per-product restrictions.
 
 5. **Design for single-region.** No multi-region storage, no cross-region
    load balancing. Use multiple zones within the single region for HA.
@@ -101,6 +101,16 @@ region, check these:
     `PROJECT.eu0.iam.gserviceaccount.com` (Berlin) or
     `PROJECT.s3ns.iam.gserviceaccount.com` (S3NS).
 
+11. **Check S3NS SecNumCloud 3.2 qualification status.** On S3NS (`u-france-east1`,
+    PREMI3NS), some available services are already **Qualifié SecNumCloud 3.2**
+    while newer services (such as Bigtable, Cloud Run, Secret Manager, Filestore,
+    Managed Airflow/Composer, Managed Spark, Storage Transfer Service, Cloud Quotas,
+    Access Transparency, and Agent Platform) are in **Qualification en cours**
+    (qualification in progress), and others (Cloud Spanner, Cloud Build, Network
+    Connectivity Center, Cloud Asset Inventory) are **À venir** (upcoming). If a
+    workload has a strict ANSSI SecNumCloud 3.2 regulatory mandate, warn the user
+    before using a service whose qualification is still in progress.
+
 ## When to load reference files
 
 Load these files based on what the user needs help with:
@@ -111,7 +121,7 @@ Load these files based on what the user needs help with:
 - **What is different from public GCP** -
   Read [references/key-differences.md](references/key-differences.md)
 
-- **Which services are available** -
+- **Which services are available and their S3NS SecNumCloud 3.2 qualification status** -
   Read [references/services.md](references/services.md)
 
 - **Per-product differences from public GCP** (Compute, BigQuery, GKE, IAM, etc.) -
@@ -137,20 +147,16 @@ Load these files based on what the user needs help with:
 
 ## Available services (quick list)
 
-**Both regions:** Access Context Manager, API Discovery Service, API Keys,
-Artifact Registry, BigQuery, BigQuery Reservation, Cloud DNS, Cloud KMS,
-Cloud Logging, Cloud Monitoring, Cloud SQL, Cloud Storage, Compute Engine,
-Google Kubernetes Engine (Autopilot only), IAM, Pub/Sub, Resource Manager,
-Service Account Credentials, Service Usage, Workforce/Workload Identity
-Federation.
+<!-- AUTO-SYNC:AVAILABLE-SERVICES:START -->
+**Both regions (Compute, Data, Storage, Security & Ops):** Access Context Manager, Access Transparency, Agent Platform (Gemini Enterprise Agent Platform), API Discovery Service, API Keys, Artifact Registry, BigQuery, BigQuery Reservation, Bigtable, Cloud Billing, Cloud DNS, Cloud KMS, Cloud Logging, Cloud Monitoring, Cloud Quotas, Cloud Run, Cloud SQL, Cloud Storage, Compute Engine, Container-Optimized OS, Filestore, Google Cloud CLI (gcloud SDK), Google Kubernetes Engine (Autopilot only), IAM, Managed Airflow (Cloud Composer 3), Managed Service for Apache Spark (Dataproc), Organization Policy, Pub/Sub, Resource Manager, Secret Manager, Service Account Credentials, Service Directory, Service Usage, Shielded VM, Storage Transfer Service, Terraform, Workforce/Workload Identity Federation.
 
-**Both regions (networking):** Cloud Armor, Cloud DNS, Cloud Interconnect,
-Cloud Load Balancing, Cloud NAT, Cloud NGFW, Cloud Router, Cloud VPN,
-Network Service Tiers, VPC, VPC Service Controls.
+**Both regions (Networking):** Cloud Armor, Cloud DNS, Cloud Interconnect, Cloud Load Balancing, Cloud NAT, Cloud NGFW, Cloud Router, Cloud VPN, Network Service Tiers, VPC, VPC Service Controls.
 
-**S3NS additional:** API Registry, Cloud Billing, Cloud Code, Cloud Marketplace,
-Container-Optimized OS, Lakehouse, Organization Policy, SDK docs,
-Service Directory.
+**S3NS (`u-france-east1`) SecNumCloud 3.2 qualification status ([PREMI3NS](https://www.s3ns.io/offres/premi3ns-cloud-de-confiance)):**
+- **Qualifié SecNumCloud 3.2 (29):** Access Context Manager, Artifact Registry, BigQuery, BigQuery Reservation, Cloud Armor, Cloud DNS, Cloud Interconnect, Cloud Key Management Service, Cloud Load Balancing, Cloud Logging, Cloud Monitoring, Cloud NAT, Cloud Router, Cloud SQL, Cloud Storage, Cloud VPN, Compute Engine, Google Kubernetes Engine Autopilot, Identity and Access Management, Networking, Organization Policy, Pub/Sub, Resource Manager, Service Account Credentials, Service Directory, Service Usage, Virtual Private Cloud, Workforce identity federation, Workload identity federation using the Security Token Service API.
+- **Qualification en cours (10 — available on S3NS today, ANSSI qualification in progress):** Access Transparency, Bigtable, Cloud Quota, Cloud Run, Filestore, Gemini platform, Managed Service for Apache Airflow, Managed Service for Apache Spark, Secret Manager, Storage Transfer Service.
+- **À venir (4 — S3NS roadmap, not yet available):** Cloud Asset Inventory, Cloud Build, Cloud Spanner, Network Connectivity Center.
+<!-- AUTO-SYNC:AVAILABLE-SERVICES:END -->
 
 ## Resolving ambiguity
 
@@ -218,17 +224,30 @@ When uncertain whether a feature is available, query the docs directly
 
 ### Service availability
 
-- [ ] No references to unavailable services: Cloud Functions, App Engine,
-      Dataflow, Cloud Run (check current availability), Spanner, Firestore,
-      Memorystore, Cloud Tasks, Cloud Scheduler, Secret Manager, Vertex AI.
+- [ ] No references to unavailable services: Cloud Functions / Cloud Run functions,
+      App Engine, Dataflow, Spanner, Firestore, Memorystore, AlloyDB, Cloud Tasks,
+      Cloud Scheduler, Cloud Build, Cloud CDN, Certificate Manager, or proprietary
+      Vertex AI / Gemini APIs.
+- [ ] For S3NS workloads requiring strict **SecNumCloud 3.2** qualification, verify
+      that every used service is **Qualifié SecNumCloud 3.2** (and flag any service
+      currently in **Qualification en cours** such as Bigtable, Cloud Run, Secret
+      Manager, Filestore, Composer, Managed Spark, Storage Transfer Service, Cloud
+      Quotas, Access Transparency, or Agent Platform).
 - [ ] No use of unavailable features within available services:
   - GKE Standard mode (Autopilot only)
   - Persistent Disk or Local SSD (Hyperdisk Balanced only)
   - N2, E2, T2A, or other unavailable VM series (C3, M3, A3 Edge only)
   - BigQuery scheduled queries, data masking, column-level access control
+  - Bigtable GoogleSQL, Data Boost, BigQuery federation, or Terraform provisioning
+  - Cloud Run source deployments, `*.run.app` domains (use `*.s3nsrun.fr` or `*.run-berlin-build0.goog`), or Serverless VPC Access connectors (use Direct VPC egress)
+  - Secret Manager `v1beta1` API or `.rep.googleapis.com` regional endpoints (use global base URL for regional secrets)
+  - Managed Spark Serverless or GKE mode (Compute Engine clusters on image 2.3+ only)
+  - Managed Airflow Composer 1/2 or Standard resilience (Composer 3 Highly Resilient Large/Custom only)
+  - Filestore Basic/Zonal/Enterprise tiers or Private Services Access (Regional tier with Direct Peering only)
+  - Storage Transfer Service agentless S3 or Azure transfers (agent-based S3 only)
   - Pub/Sub dead-letter queues, exactly-once delivery, ordering keys, schemas
   - Cloud SQL Server engine (MySQL and PostgreSQL only)
-  - Cloud Storage Transfer Service, Storage Insights
+  - Cloud Storage Insights
 - [ ] No reliance on Preview features (generally unavailable).
 
 ### Architecture

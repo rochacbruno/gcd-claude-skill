@@ -128,24 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: accesscontextmanager.googleapis.com ](#service:-accesscontextmanager.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v1.accessPolicies ](#rest-resource:-v1.accesspolicies)
-- [ REST Resource: v1.accessPolicies.accessLevels ](#rest-resource:-v1.accesspolicies.accesslevels)
-- [ REST Resource: v1.accessPolicies.authorizedOrgsDescs ](#rest-resource:-v1.accesspolicies.authorizedorgsdescs)
-- [ REST Resource: v1.accessPolicies.servicePerimeters ](#rest-resource:-v1.accesspolicies.serviceperimeters)
-- [ REST Resource: v1.folders ](#rest-resource:-v1.folders)
-- [ REST Resource: v1.operations ](#rest-resource:-v1.operations)
-- [ REST Resource: v1.organizations.gcpUserAccessBindings ](#rest-resource:-v1.organizations.gcpuseraccessbindings)
-- [ REST Resource: v1.permissions ](#rest-resource:-v1.permissions)
-- [ REST Resource: v1.projects ](#rest-resource:-v1.projects)
-- [ REST Resource: v1.services ](#rest-resource:-v1.services)
-- 
-
 
 
 
@@ -187,7 +169,7 @@ An API for setting attribute based access control to requests to Google Cloud De
 
 
 
-## Service: accesscontextmanager. googleapis. com 
+## Service: accesscontextmanager.googleapis.com
 
 
 
@@ -226,7 +208,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 
-## REST Resource: [v1. access Policies](/access-context-manager/docs/reference/rest/v1/accessPolicies)
+## REST Resource: [v1.accessPolicies](/access-context-manager/docs/reference/rest/v1/accessPolicies)
 
 
 
@@ -246,7 +228,7 @@ Methods |
 
 `[create](/access-context-manager/docs/reference/rest/v1/accessPolicies/create)` | 
 
-`POST / v1/ access Policies` 
+`POST /v1/accessPolicies` 
 
 Creates an access policy. | 
 |
@@ -255,7 +237,7 @@ Creates an access policy. |
 
 `[delete](/access-context-manager/docs/reference/rest/v1/accessPolicies/delete)` | 
 
-`DELETE / v1/ {name=access Policies/ *}` 
+`DELETE /v1/{name=accessPolicies/*}` 
 
 Deletes an `[access policy](/access-context-manager/docs/reference/rest/v1/accessPolicies#AccessPolicy)` based on the resource name. | 
 |

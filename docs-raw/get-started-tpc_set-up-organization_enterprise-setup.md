@@ -73,20 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ What should I know first? ](#what_should_i_know_first)
-- [ About Fabric FAST stages ](#about_fabric_fast_stages)
-- [ Before you begin ](#before_you_begin)
-
-- [ Grant required permissions ](#grant_required_permissions)
-- [ Create a temporary project ](#create_a_temporary_project)
-- [ Get the Terraform ](#get_the_terraform)
-
-- [ Apply the Organization setup Terraform ](#apply_the_organization_setup_terraform)
-- [ Apply additional stages ](#apply_additional_stages)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -116,7 +102,7 @@ you with a relatively simple organization that's ready to deploy workloads in a
 single step. For more details, see [Which Fabric FAST setup is for
 me?](/docs/get-started-tpc/set-up-organization#which-setup).
 
-## What should I know first? 
+## What should I know first?
 
 Before you read this guide, you should:
 

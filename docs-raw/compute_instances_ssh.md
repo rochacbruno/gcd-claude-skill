@@ -128,11 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Metadata-managed SSH connections ](#metadata)
-- [ What's next? ](#whats_next)
-- 
-
 
 
 
@@ -180,11 +175,8 @@ VMs without using the Google Cloud Dedicated console or the gcloud CLI, you must
 perform some configurations yourself.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Third-party tools ](#third-party-tools) 
-More 
 
-
-
+### Console
 
 - You use the [SSH button in the
 Google Cloud Dedicated console](https://console.cloud.berlin-build0.goog/compute/instances) to [connect
@@ -221,6 +213,7 @@ doesn't store the public key on the VM.
 
 
 
+### gcloud
 
 - You use the `gcloud compute ssh` command to
 [connect to your VM](/compute/docs/instances/connecting-to-instance#gcetools).
@@ -258,6 +251,7 @@ doesn't store the public key on the VM.
 
 
 
+### Third-party tools
 
 - You create an SSH key pair and username. See
 [

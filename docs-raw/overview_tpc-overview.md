@@ -73,15 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Differences from Google Cloud ](#differences-from-google-cloud)
-- [ Universes, regions, and zones ](#universes-regions-and-zones)
-- [ Google Cloud Dedicated resources and services ](#resources-and-services)
-- [ Interacting with Google Cloud Dedicated ](#interacting)
-- [ Projects ](#projects)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -107,7 +98,7 @@ This page gives you a high-level overview of Google Cloud Dedicated
 and its features and services, with pointers for where to go next in our
 documentation.
 
-## Differences from Google Cloud 
+## Differences from Google Cloud
 
 While Google Cloud Dedicated is based on exactly the
 same technology as Google Cloud, there are some significant

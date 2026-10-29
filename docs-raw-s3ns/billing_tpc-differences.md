@@ -113,15 +113,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Billing and cost management differences ](#billing-differences)
-- [ Other differences ](#other-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -146,7 +137,7 @@ Cloud Billing documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -195,7 +186,7 @@ Cloud de Confiance.
 
 | 
 
-Cost management**
+**Cost management**
 | 
 
 
@@ -213,8 +204,8 @@ Budgets, alerts, and anomalies are unavailable.
 
 
 If you need to export billing cost data, contact
-[
-Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+
+Cloud de Confiance by S3NS billing support .
 
 
 | 
@@ -229,8 +220,8 @@ Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
 
 Cloud de Confiance by S3NS offers committed use discounts (CUDs). To purchase
 spend-based CUDs, contact
-[
-Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+
+Cloud de Confiance by S3NS billing support .
 
 
 
@@ -278,7 +269,7 @@ spend-based CUDs but will be supported in the near future.
 
 Payments are managed by your universe operator. For assistance with account payment
 management, contact
-[Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+Cloud de Confiance by S3NS billing support .
 | 
 |
 
@@ -290,11 +281,11 @@ management, contact
 **Billing account creation**
 To create, close or reopen a
 Cloud Billing Account, contact
-[Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+Cloud de Confiance by S3NS billing support .
 
 **Managing existing Cloud Billing accounts**
 To find your Cloud
-Billing Accounts, go to the [Account management page](https://console.cloud.s3nscloud.fr/billing") in the Cloud Billing console.
+Billing Accounts, go to the Account management page in the Cloud Billing console.
 
 
 The Lock Billing Account function is not available. Other
@@ -314,7 +305,7 @@ account management features are available.
 
 To manage and access your Cloud Billing documents such as an invoice,
 statement, or receipt, contact
-[Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+Cloud de Confiance by S3NS billing support .
 | 
 |
 
@@ -338,7 +329,7 @@ for details.
 
 For all Cloud Billing inquiries, support, and issue resolution, please
 contact
-[Cloud de Confiance by S3NS billing support](https://support.s3ns.fr/).
+Cloud de Confiance by S3NS billing support .
 | 
 |
 

@@ -73,10 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Differences pages ](#differences)
-- 
-
 
 
 
@@ -102,7 +98,7 @@ relevant [differences page](#differences).
 If there's something you'd like to see in Cloud de Confiance
 documentation, [contact support](/docs/overview/%7B%%20dynamic%20print%20variables.domains.support_domain%0A%%7D).
 
-## Differences pages 
+## Differences pages
 
 As well as the overall [Key differences](/docs/overview/tpc-key-differences)
 guide, almost every Cloud de Confiance service has

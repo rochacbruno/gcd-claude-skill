@@ -128,21 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required_roles)
-
-- [ Message format ](#message_format)
-- [ Publish messages ](#publish-messages)
-
-- [ Use attributes to publish a message ](#using-attributes)
-- [ Use ordering keys to publish a message ](#using-ordering-keys)
-
-- [ Monitor a publisher ](#monitor_a_publisher)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -184,7 +169,7 @@ The general flow for a publisher application is:
 - Send a request to the Pub/Sub server to publish the message
 to the specified topic.
 
-## Before you begin 
+## Before you begin
 
 Before configuring the publish workflow, ensure you have completed the following
 tasks:
@@ -294,11 +279,8 @@ and the client libraries. The client libraries can asynchronously publish messag
 The following samples demonstrate how to publish a message to a topic.
 
 
-[Console](#console) [gcloud](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [ Node.js ](#node.js-javascript) 
-More 
 
-[ Node.js ](#node.js-typescript) [PHP](#php) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
-
+### Console
 
 To publish a message, follow these steps:
 
@@ -327,6 +309,7 @@ Click **Publish**.
 
 
 
+### gcloud
 
 To publish a message, use the
 [gcloud pubsub topics publish](/sdk/gcloud/reference/pubsub/topics/publish)
@@ -352,6 +335,7 @@ Replace the following:
 
 
 
+### REST
 
 To publish a message, send a POST request like the following:
 
@@ -410,6 +394,7 @@ ID. The following example is a response with a message ID:
 ```
 
 
+### C++
 
 
 
@@ -460,6 +445,7 @@ done . get ();
 
 
 
+### C#
 
 
 
@@ -531,6 +517,7 @@ return publishedMessageCount ;
 
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -627,6 +614,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -697,7 +685,7 @@ for ( final String message : messages ) {
 [ PubsubMessage ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.pubsub.v1.PubsubMessage.html) pubsubMessage = [ PubsubMessage ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.pubsub.v1.PubsubMessage.html) . newBuilder (). [ setData ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.pubsub.v1.PubsubMessage.Builder.html#com_google_pubsub_v1_PubsubMessage_Builder_setData_com_google_protobuf_ByteString_) ( data ). build (); 
 
 // Once published, returns a server-assigned message id (unique within the topic) 
-ApiFuture future = [ publish ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_)er . [ publish ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_) ( pubsubMessage ); 
+ApiFuture future = [ publish](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_)er . [ publish ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_) ( pubsubMessage ); 
 
 // Add an asynchronous callback to handle success / failure 
 [ ApiFutures ](https://documentation.s3ns.fr/java/docs/reference/api-common/latest/com.google.api.core.ApiFutures.html) . [ addCallback ](https://documentation.s3ns.fr/java/docs/reference/api-common/latest/com.google.api.core.ApiFutures.html#com_google_api_core_ApiFutures__V_addCallback_com_google_api_core_ApiFuture_V__com_google_api_core_ApiFutureCallback___super_V__) ( 
@@ -738,6 +726,7 @@ publisher . [ awaitTermination ](https://documentation.s3ns.fr/java/docs/referen
 
 
 
+### Node.js 
 
 
 
@@ -801,6 +790,7 @@ process . exitCode = 1 ;
 
 
 
+### Node.js 
 
 
 
@@ -866,6 +856,7 @@ process . exitCode = 1 ;
 
 
 
+### PHP
 
 
 
@@ -923,6 +914,7 @@ print('Message published' . PHP_EOL);
 
 
 
+### Python
 
 
 
@@ -981,7 +973,7 @@ return callback
 for i in range ( 10 ): 
 data = str ( i ) 
 # When you publish a message, the client returns a future. 
-publish_future = [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html)er . [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) ( topic_path , [ data ](https://documentation.s3ns.fr/python/docs/reference/pubsub/latest/google.cloud.pubsub_v1.subscriber.message.Message.html#google_cloud_pubsub_v1_subscriber_message_Message_data) . encode ( "utf-8" )) 
+publish_future = [ publish](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html)er . [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) ( topic_path , [ data ](https://documentation.s3ns.fr/python/docs/reference/pubsub/latest/google.cloud.pubsub_v1.subscriber.message.Message.html#google_cloud_pubsub_v1_subscriber_message_Message_data) . encode ( "utf-8" )) 
 # Non-blocking. Publish failures are handled in the callback function. 
 publish_future . [ add_done_callback ](https://documentation.s3ns.fr/python/docs/reference/pubsub/latest/google.cloud.pubsub_v1.publisher.futures.Future.html#google_cloud_pubsub_v1_publisher_futures_Future_add_done_callback) ( get_callback ( publish_future , data )) 
 publish_futures . append ( publish_future ) 
@@ -996,6 +988,7 @@ print ( f "Published messages with error handler to { topic_path } ." )
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -1049,6 +1042,7 @@ end
 
 
 
+### Rust
 
 
 
@@ -1166,11 +1160,8 @@ The following samples demonstrate how to publish a message with attributes
 to a topic.
 
 
-[Console](#console) [gcloud](#gcloud) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [Python](#python) [Ruby](#ruby) [Rust](#rust) 
-More 
 
-
-
+### Console
 
 To publish a message with attributes, follow these steps:
 
@@ -1214,12 +1205,15 @@ Click **Publish**.
 
 
 
+### gcloud
+
 ```
 gcloud pubsub topics publish my-topic --message = "hello" \ 
 --attribute = "origin=gcloud-sample,username=gcp,eventTime='2021-01-01T12:00:00Z'" 
 ```
 
 
+### C++
 
 
 
@@ -1278,6 +1272,7 @@ for ( auto & f : done ) f . get ();
 
 
 
+### C#
 
 
 
@@ -1344,6 +1339,7 @@ await publisher . [ ShutdownAsync ](https://documentation.s3ns.fr/dotnet/docs/re
 
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -1421,6 +1417,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -1488,7 +1485,7 @@ String message = "first message" ;
 . build (); 
 
 // Once published, returns a server-assigned message id (unique within the topic) 
-ApiFuture messageIdFuture = [ publish ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_)er . [ publish ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_) ( pubsubMessage ); 
+ApiFuture messageIdFuture = [ publish](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_)er . [ publish ](https://documentation.s3ns.fr/java/docs/reference/google-cloud-pubsub/latest/com.google.cloud.pubsub.v1.Publisher.html#com_google_cloud_pubsub_v1_Publisher_publish_com_google_pubsub_v1_PubsubMessage_) ( pubsubMessage ); 
 String messageId = messageIdFuture . get (); 
 System . out . println ( "Published a message with custom attributes: " + messageId ); 
 
@@ -1507,6 +1504,7 @@ publisher . [ awaitTermination ](https://documentation.s3ns.fr/java/docs/referen
 
 
 
+### Node.js
 
 
 
@@ -1574,6 +1572,7 @@ console . log ( `Message ${ messageId } published.` );
 
 
 
+### Python
 
 
 
@@ -1618,7 +1617,7 @@ data_str = f "Message number { n } "
 # Data must be a bytestring 
 data = data_str . encode ( "utf-8" ) 
 # Add two attributes, origin and username, to the message 
-future = [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html)er . [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) ( 
+future = [ publish](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html)er . [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) ( 
 topic_path , data , origin = "python-sample" , username = "gcp" 
 ) 
 print ( future . result ()) 
@@ -1630,6 +1629,7 @@ print ( f "Published messages with custom attributes to { topic_path } ." )
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -1683,6 +1683,7 @@ publisher . [ async_publisher ](https://documentation.s3ns.fr/ruby/docs/referenc
 
 
 
+### Rust
 
 
 
@@ -1807,11 +1808,8 @@ You can publish messages with ordering keys using the Cloud de Confiance console
 Google Cloud CLI, Pub/Sub API, or the client libraries.
 
 
-[Console](#console) [gcloud](#gcloud) [REST](#rest) [C++](#c++) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [Python](#python) 
-More 
 
-[Ruby](#ruby) [Rust](#rust) 
-
+### Console
 
 To publish a message with attributes, follow these steps:
 
@@ -1847,6 +1845,7 @@ Click **Publish**.
 
 
 
+### gcloud
 
 To publish a message with an ordering key, use the
 [`gcloud pubsub topics publish`](/sdk/gcloud/reference/pubsub/topics/publish)
@@ -1870,6 +1869,7 @@ Replace the following:
 
 
 
+### REST
 
 To publish a message with an ordering key, send a POST request like the
 following:
@@ -1932,6 +1932,7 @@ ID. The following example is a response with a message ID:
 ```
 
 
+### C++
 
 
 
@@ -1998,6 +1999,7 @@ for ( auto & f : done ) f . get ();
 
 
 
+### C#
 
 
 
@@ -2081,6 +2083,7 @@ return publishedMessageCount ;
 
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -2207,6 +2210,7 @@ fmt . Fprint ( w , "Published 4 messages with ordering keys successfully\n" )
 
 
 
+### Java
 
 
 
@@ -2323,6 +2327,7 @@ publisher . awaitTermination ( 1 , TimeUnit . MINUTES );
 
 
 
+### Node.js
 
 
 
@@ -2404,6 +2409,7 @@ return messageId ;
 
 
 
+### Python
 
 
 
@@ -2461,7 +2467,7 @@ for message in [
 data = message [ 0 ] . encode ( "utf-8" ) 
 ordering_key = message [ 1 ] 
 # When you publish a message, the client returns a future. 
-future = [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html)er . [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) ( topic_path , data = data , ordering_key = ordering_key ) 
+future = [ publish](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html)er . [ publish ](https://documentation.s3ns.fr/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) ( topic_path , data = data , ordering_key = ordering_key ) 
 print ( future . result ()) 
 
 print ( f "Published messages with ordering keys to { topic_path } ." ) 
@@ -2471,6 +2477,7 @@ print ( f "Published messages with ordering keys to { topic_path } ." )
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -2528,6 +2535,7 @@ puts "Messages published with ordering key."
 
 
 
+### Rust
 
 
 

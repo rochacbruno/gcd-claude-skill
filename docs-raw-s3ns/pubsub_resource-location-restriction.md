@@ -128,29 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Message storage policy overview ](#message_storage_policy_overview)
-
-- [ Message storage policies for new topics ](#message_storage_policies_for_new_topics)
-- [ Message storage policies for existing topics ](#message_storage_policies_for_existing_topics)
-- [ Exceptions ](#exceptions)
-
-- [ Configure message storage policies ](#configure_message_storage_policies_2)
-
-- [ Set a message storage policy using an organization policy ](#set_a_message_storage_policy_using_an_organization_policy)
-- [ Configure a message storage policy when creating a topic ](#configure_a_message_storage_policy_when_creating_a_topic)
-
-- [ Update message storage policies ](#update_message_storage_policies)
-- [ Manage differences between organization and topic policies ](#manage-policies)
-
-- [ View differences between organization and topic policies ](#view_differences_between_organization_and_topic_policies)
-- [ Resolve differences between organization and topic policies ](#resolve_differences_between_organization_and_topic_policies)
-
-- [ Monitoring and troubleshooting ](#monitoring_and_troubleshooting)
-- [ Performance and availability implications ](#performance_and_availability_implications)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -185,7 +162,7 @@ Cloud de Confiance by S3NS region. If you want to control the regions in which y
 messages are stored and processed, you can configure
 a *message storage policy* on your topic.
 
-## Message storage policy overview 
+## Message storage policy overview
 
 You can set a message storage policy when you create a new topic or when you
 update a topic using the console, Google Cloud CLI, or the REST APIs.
@@ -303,11 +280,8 @@ There are two ways to configure message storage policies for topics, including:
 ### Set a message storage policy using an organization policy
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 To configure a message storage policy that applies to multiple topics,
 set a **Resource Location Restriction** organization policy.
@@ -351,11 +325,8 @@ For more information about organization policies, see [Manage your Cloud de Conf
 ### Configure a message storage policy when creating a topic
 
 
-[Console](#console) [gcloud CLI](#gcloud-cli) [REST](#rest) 
-More 
 
-
-
+### Console
 
 When using the Cloud de Confiance console, you can't configure a message storage policy
 when creating a topic. Instead, all new topics automatically
@@ -365,6 +336,7 @@ However, after you create a topic, you can change its message storage policy
 in the console with an update operation.
 
 
+### gcloud CLI
 
 To create a topic with a specific message storage policy, use the
 [`gcloud pubsub topics create`](/sdk/gcloud/reference/pubsub/topics/create)
@@ -386,6 +358,7 @@ supported Cloud de Confiance regions.
 
 
 
+### REST
 
 To create a topic with a message storage policy, use the
 [`projects.topics.create`](/pubsub/docs/reference/rest/v1/projects.topics/create)
@@ -460,11 +433,8 @@ storage policies.
 ## Update message storage policies
 
 
-[Console](#console) [gcloud CLI](#gcloud-cli) [REST](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -495,6 +465,7 @@ Click **Update**.
 
 
 
+### gcloud CLI
 
 To push the message storage policy defined in your organization's
 **Resource Location Restriction policy** to a topic, run the following
@@ -528,6 +499,7 @@ supported Cloud de Confiance regions.
 
 
 
+### REST
 
 To update a topic with a message storage policy, use the
 [`projects.topics.patch`](/pubsub/docs/reference/rest/v1/projects.topics/patch)
@@ -604,11 +576,8 @@ storage policies.
 ### View differences between organization and topic policies
 
 
-[Console](#console) [gcloud CLI](#gcloud-cli) 
-More 
 
-
-
+### Console
 
 The Cloud de Confiance console displays any differences between the
 organization policy and individual topics' message storage policies.
@@ -637,6 +606,7 @@ differences between organization and topic policies.
 
 
 
+### gcloud CLI
 
 To examine the current policy assigned to a topic, run the following command:
 
@@ -656,11 +626,8 @@ Replace the following:
 ### Resolve differences between organization and topic policies
 
 
-[Console](#console) 
-More 
 
-
-
+### Console
 
 - 
 

@@ -120,11 +120,12 @@ Google Cloud SDK
 
 
 
-# Google Cloud SDK documentation 
+
+# Google Cloud SDK documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/sdk/docs/overview)
+Read product documentation 
 
 
 

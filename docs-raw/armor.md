@@ -120,11 +120,12 @@ Google Cloud Armor
 
 
 
-# Google Cloud Armor documentation 
+
+# Google Cloud Armor documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/armor/docs/cloud-armor-overview)
+Read product documentation 
 
 
 

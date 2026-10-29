@@ -108,16 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Terraform resources and data sources ](#terraform-resources-and-data-sources)
-
-- [ Resources ](#resources)
-- [ Data sources ](#data_sources)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -144,7 +134,7 @@ organization.
 - Create a new, or update an existing, `QuotaPreference` quota configuration
 that specifies the preferred value for a quota.
 
-## Before you begin 
+## Before you begin
 
 Before you begin, you need access to Terraform:
 

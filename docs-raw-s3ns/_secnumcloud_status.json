@@ -1,0 +1,311 @@
+{
+  "source_url": "https://www.s3ns.io/offres/premi3ns-cloud-de-confiance",
+  "summary": {
+    "qualified": 29,
+    "in_progress": 10,
+    "upcoming": 4
+  },
+  "services": [
+    {
+      "name": "Gemini platform",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Concevez, développez et déployez vos applications d’IA générative grâce à une plateforme réunissant modèles, outils de développement et gestion des agents IA.",
+      "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Cloud Run",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Déployez et exécutez des applications conteneurisées sur une plateforme entièrement gérée qui adapte automatiquement les ressources à la demande.",
+      "url": "https://documentation.s3ns.fr/run/docs/overview/what-is-cloud-run?hl=fr"
+    },
+    {
+      "name": "Filestore",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Stockez et partagez vos fichiers avec un service de stockage managé compatible NFS, accessible depuis vos applications et vos environnements de calcul.",
+      "url": "https://documentation.s3ns.fr/filestore/docs?hl=fr"
+    },
+    {
+      "name": "Secret Manager",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Stockez et gérez de manière sécurisée les informations sensibles telles que les clés API, les mots de passe et les certificats.",
+      "url": "https://documentation.s3ns.fr/secret-manager/docs?hl=fr"
+    },
+    {
+      "name": "Access Transparency",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Consultez les journaux détaillant les actions réalisées par le personnel S3NS lors de l’accès à vos données afin de renforcer la transparence et l’auditabilité",
+      "url": "https://documentation.s3ns.fr/assured-workloads/access-transparency/docs/overview?hl=fr"
+    },
+    {
+      "name": "Artifact Registry",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Stockez, gérez et sécurisez les images de conteneurs et les packages logiciels utilisés dans vos chaînes de développement et de déploiement.",
+      "url": "https://documentation.s3ns.fr/artifact-registry/docs?hl=fr"
+    },
+    {
+      "name": "BigQuery",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Analysez de grands volumes de données avec une plateforme serverless qui associe entrepôt de données, analytique et capacités d’IA.",
+      "url": "https://documentation.s3ns.fr/bigquery/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Key Management Service",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Créez, importez et gérez de façon centralisée les clés cryptographiques utilisées pour protéger vos données et vos applications.",
+      "url": "https://documentation.s3ns.fr/kms/docs?hl=fr"
+    },
+    {
+      "name": "Cloud SQL",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Cloud SQL est un service de base de données entièrement géré qui vous permet de configurer, de maintenir, de gérer et d'administrer vos bases de données relationnelles sur PREMI3NS.\nVous pouvez utiliser Cloud SQL avec MySQL ou PostgreSQL.",
+      "url": "https://documentation.s3ns.fr/sql/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Storage",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Stockez et protégez des données non structurées dans un service de stockage objet durable, scalable et accessible à l’échelle mondiale.",
+      "url": "https://documentation.s3ns.fr/storage/docs?hl=fr"
+    },
+    {
+      "name": "Compute Engine",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Créez et exécutez des machines virtuelles sécurisées et personnalisables sur l’infrastructure PREMI3NS.",
+      "url": "https://documentation.s3ns.fr/compute/docs?hl=fr"
+    },
+    {
+      "name": "Google Kubernetes Engine Autopilot",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Déployez, gérez et faites évoluer des applications conteneurisées avec un service Kubernetes managé.",
+      "url": "https://documentation.s3ns.fr/kubernetes-engine/docs?hl=fr"
+    },
+    {
+      "name": "Cloud DNS",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Publiez et gérez des zones et des enregistrements DNS sur un service mondial, programmable et entièrement géré.",
+      "url": "https://documentation.s3ns.fr/dns/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Logging",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Centralisez, recherchez, analysez et surveillez les journaux issus de Google Cloud, de vos applications et d’environnements tiers.",
+      "url": "https://documentation.s3ns.fr/logging/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Monitoring",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Collectez les métriques de vos services et applications, créez des tableaux de bord et déclenchez des alertes sur leur état et leurs performances.",
+      "url": "https://documentation.s3ns.fr/monitoring/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Armor",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Protégez les applications et services exposés à Internet contre les attaques DDoS et les menaces applicatives grâce à un WAF distribué.",
+      "url": "https://documentation.s3ns.fr/armor/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Router",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Échangez dynamiquement des routes entre vos réseaux VPC et vos réseaux externes à l’aide du protocole BGP.",
+      "url": "https://documentation.s3ns.fr/network-connectivity/docs/router?hl=fr"
+    },
+    {
+      "name": "Cloud VPN",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Reliez de manière sécurisée vos réseaux sur site ou distants à votre VPC PREMI3NS au moyen de tunnels VPN IPsec.",
+      "url": "https://documentation.s3ns.fr/network-connectivity/docs/vpn?hl=fr"
+    },
+    {
+      "name": "Virtual Private Cloud",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Créez un réseau virtuel privé mondial pour connecter et isoler vos ressources PREMI3NS.",
+      "url": "https://documentation.s3ns.fr/vpc/docs?hl=fr"
+    },
+    {
+      "name": "Resource Manager",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Organisez vos ressources PREMI3NS dans une hiérarchie d’organisations, de dossiers et de projets afin d’en simplifier la gouvernance.",
+      "url": "https://documentation.s3ns.fr/resource-manager/docs?hl=fr"
+    },
+    {
+      "name": "BigQuery Reservation",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Réservez et administrez une capacité de calcul BigQuery dédiée en slots afin de mieux maîtriser les performances et les coûts des charges de travail.",
+      "url": "https://documentation.s3ns.fr/bigquery/docs/reservations-intro?hl=fr"
+    },
+    {
+      "name": "Networking",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Connectez, sécurisez et optimisez vos applications et environnements hybrides grâce aux services réseau de PREMI3NS.",
+      "url": "https://documentation.s3ns.fr/docs/networking?hl=fr"
+    },
+    {
+      "name": "Organization Policy",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Définissez des contraintes centralisées à l’échelle de l’organisation pour encadrer la configuration et l’utilisation des ressources PREMI3NS.",
+      "url": "https://documentation.s3ns.fr/organization-policy/overview?hl=fr"
+    },
+    {
+      "name": "Access Context Manager",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Access Context Manager permet aux entreprises de configurer des niveaux d'accès en fonction d'une stratégie définie à partir des attributs d'une requête.",
+      "url": "https://documentation.s3ns.fr/access-context-manager/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Interconnect",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Étendez votre réseau sur site vers PREMI3NS au moyen d’une connexion dédiée ou opérée par un partenaire, à haute disponibilité et faible latence.",
+      "url": "https://documentation.s3ns.fr/network-connectivity/docs/interconnect?hl=fr"
+    },
+    {
+      "name": "Cloud NAT",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Permettez aux ressources sans adresse IP externe d’accéder à Internet en sortie tout en limitant leur exposition entrante.",
+      "url": "https://documentation.s3ns.fr/nat/docs?hl=fr"
+    },
+    {
+      "name": "Cloud Load Balancing",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Répartissez automatiquement le trafic entre vos ressources régionales ou mondiales afin d’améliorer la disponibilité et les performances des applications.",
+      "url": "https://documentation.s3ns.fr/load-balancing/docs?hl=fr"
+    },
+    {
+      "name": "Identity and Access Management",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Attribuez des rôles et des autorisations granulaires pour contrôler qui peut agir sur quelles ressources PREMI3NS.",
+      "url": "https://documentation.s3ns.fr/iam/docs?hl=fr"
+    },
+    {
+      "name": "Pub/Sub",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Diffusez et traitez des événements à grande échelle grâce à un service de messagerie asynchrone et entièrement géré.",
+      "url": "https://documentation.s3ns.fr/pubsub/docs?hl=fr"
+    },
+    {
+      "name": "Service Account Credentials",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Générez des identifiants temporaires, des jetons et des signatures pour agir de manière sécurisée au nom d’un compte de service.",
+      "url": "https://documentation.s3ns.fr/iam/docs/service-account-creds?hl=fr"
+    },
+    {
+      "name": "Service Directory",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Enregistrez, gérez et découvrez les points de terminaison de services PREMI3NS, multicloud ou sur site dans un annuaire managé unique.",
+      "url": "https://documentation.s3ns.fr/service-directory/docs?hl=fr"
+    },
+    {
+      "name": "Service Usage",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Listez, activez, désactivez et suivez l’utilisation des API et services PREMI3NS au niveau d’un projet.",
+      "url": "https://documentation.s3ns.fr/service-usage/docs?hl=fr"
+    },
+    {
+      "name": "Workforce identity federation",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Autorisez des utilisateurs issus d’un fournisseur d’identité externe à accéder à PREMI3NS avec des identifiants temporaires, sans clés persistantes.",
+      "url": "https://documentation.s3ns.fr/iam/docs/workforce-identity-federation?hl=fr"
+    },
+    {
+      "name": "Workload identity federation using the Security Token Service API",
+      "status": "qualified",
+      "status_label": "Qualifié SecNumCloud 3.2",
+      "description": "Permettez à des charges de travail externes ou multicloud d’échanger leurs identifiants contre des jetons PREMI3NS temporaires, sans clé de compte de service.",
+      "url": "https://documentation.s3ns.fr/iam/docs/workload-identity-federation?hl=fr"
+    },
+    {
+      "name": "Managed Service for Apache Airflow",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Créez, planifiez et automatisez vos workflows de données avec Apache Airflow, sans avoir à gérer l'infrastructure sous-jacente.",
+      "url": "https://cloud.google.com/products/managed-service-for-apache-airflow"
+    },
+    {
+      "name": "Managed Service for Apache Spark",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Traitez et analysez de grands volumes de données avec Apache Spark, grâce à des clusters flexibles dont les ressources s'adaptent à vos besoins.",
+      "url": "https://documentation.s3ns.fr/managed-spark/docs"
+    },
+    {
+      "name": "Cloud Quota",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Visualisez, contrôlez et automatisez l'allocation de vos quotas de ressources à l'échelle de votre organisation.",
+      "url": "https://docs.cloud.google.com/docs/quotas/overview?hl=fr"
+    },
+    {
+      "name": "Bigtable",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Stockez et traitez de très grands volumes de données avec une base NoSQL managée, conçue pour offrir un accès rapide et des performances évolutives.",
+      "url": "https://documentation.s3ns.fr/bigtable/docs?hl=fr"
+    },
+    {
+      "name": "Storage Transfer Service",
+      "status": "in_progress",
+      "status_label": "Qualification en cours",
+      "description": "Planifiez et automatisez le transfert de grands volumes de données depuis vos infrastructures ou d'autres clouds, avec vérification de leur intégrité.",
+      "url": "https://cloud.google.com/storage-transfer-service?hl=en&gclsrc=aw.ds&gad_source=1&gad_campaignid=23620114936&gclid=EAIaIQobChMI-smd0KXLlwMVtqZoCR0CvyV-EAAYASAAEgJtwvD_BwE"
+    },
+    {
+      "name": "Cloud Spanner",
+      "status": "upcoming",
+      "status_label": "À venir",
+      "description": "Gérez vos données relationnelles avec une base SQL managée, conçue pour les applications nécessitant une haute disponibilité et une capacité évolutive.",
+      "url": "https://cloud.google.com/spanner"
+    },
+    {
+      "name": "Network Connectivity Center",
+      "status": "upcoming",
+      "status_label": "À venir",
+      "description": "Centralisez la gestion et l'interconnexion de vos réseaux pour simplifier le routage, suivre les connexions et maîtriser les flux entre environnements.",
+      "url": "https://cloud.google.com/network-connectivity-center"
+    },
+    {
+      "name": "Cloud Build",
+      "status": "upcoming",
+      "status_label": "À venir",
+      "description": "Automatisez la compilation, les tests et la création de vos applications et conteneurs grâce à un service d'intégration et de déploiement continus.",
+      "url": "https://cloud.google.com/build"
+    },
+    {
+      "name": "Cloud Asset Inventory",
+      "status": "upcoming",
+      "status_label": "À venir",
+      "description": "Visualisez et suivez vos ressources cloud, leurs configurations et leurs évolutions pour faciliter les audits et le contrôle de votre environnement.",
+      "url": "https://docs.cloud.google.com/asset-inventory/docs/asset-inventory-overview?hl=fr"
+    }
+  ]
+}

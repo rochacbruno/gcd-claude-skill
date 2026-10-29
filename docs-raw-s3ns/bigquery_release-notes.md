@@ -140,6 +140,7 @@ Resources
 
 
 
+
 This page documents production updates to BigQuery. We recommend
 that BigQuery developers periodically check this list for any
 new announcements. BigQuery automatically updates to the latest
@@ -147,7 +148,6 @@ release and cannot be downgraded to a previous version.
 
 For older release notes, see the
 [Release notes archive](/bigquery/docs/release-notes-archive).
-
 
 
 

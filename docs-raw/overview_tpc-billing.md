@@ -73,10 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ What is Cloud Billing? ](#billing)
-- 
-
 
 
 
@@ -87,7 +83,7 @@ Get started
 
 Pricing and billing information for Google Cloud Dedicated in Germany will be provided after this preview.
 
-## What is Cloud Billing? 
+## What is Cloud Billing?
 
 Cloud Billing is a collection of tools that help you track and
 understand your Google Cloud Dedicated in Germany spending, pay your

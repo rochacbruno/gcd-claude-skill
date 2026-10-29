@@ -113,15 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Recommendations ](#recommendations)
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -152,7 +143,7 @@ Google Cloud, in the [Recommendations](#recommendations) section.
 
 
 
-## Key differences 
+## Key differences
 
 
 

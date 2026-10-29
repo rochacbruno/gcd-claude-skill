@@ -120,11 +120,12 @@ Cloud NAT
 
 
 
-# Cloud NAT documentation 
+
+# Cloud NAT documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/nat/docs/overview)
+Read product documentation 
 
 
 

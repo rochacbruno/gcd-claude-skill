@@ -120,11 +120,12 @@ Terraform on Google Cloud
 
 
 
-# Terraform on Google Cloud documentation 
+
+# Terraform on Google Cloud documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/docs/terraform/terraform-overview)
+Read product documentation 
 
 
 

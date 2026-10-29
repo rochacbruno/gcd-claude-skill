@@ -120,11 +120,12 @@ Compute Engine
 
 
 
-# Compute Engine documentation 
+
+# Compute Engine documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/compute/docs/overview)
+Read product documentation 
 
 
 

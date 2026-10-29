@@ -128,18 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-- [ Add a resource record set ](#add-rrset)
-- [ Add a collection of resource record sets in a transaction ](#add-transaction)
-- [ View resource record sets for a zone ](#view-rrsets)
-- [ View details of a resource record set ](#view-rrset)
-- [ Update a resource record set ](#update-rrset)
-- [ Delete resource record sets ](#delete-rrset)
-- [ Import and export resource record sets ](#import-export)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -154,13 +142,13 @@ This page describes how to add, update, and delete resource record sets.
 To view the list of supported resource record types, see [DNS records overview](/dns/docs/records-overview#supported_dns_record_types).
 
 
-#### Permissions required for this task 
 
+#### Permissions required for this task
 
 To perform this task, you must have been granted the following permissions
 *or* the following IAM roles.
 
-Permissions**
+**Permissions**
 
 
 - `dns.resourceRecordSets.create` to create a resource record set
@@ -185,7 +173,7 @@ Permissions**
 
 
 
-## Before you begin 
+## Before you begin
 
 You must have or create a managed zone before you can create a resource record
 set. For details about how to create a managed zone, in which you can create
@@ -197,11 +185,8 @@ your resource record set, see
 To add a resource record set, follow these steps:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) [ Terraform ](#terraform) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -260,6 +245,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 To add a resource record set, use the
 [`gcloud dns record-sets create` command](/sdk/gcloud/reference/dns/record-sets/create):
@@ -298,6 +284,7 @@ managed zone as its suffix
 
 
 
+### API
 
 To add a resource record set, use the
 [`resourceRecordSets.create` method](/dns/docs/reference/v1/resourceRecordSets/create)
@@ -341,6 +328,7 @@ multiple values in a comma-separated list—for example,
 
 
 
+### Terraform
 
 
 
@@ -394,11 +382,8 @@ Cloud DNS API.
 To create a transaction, follow these steps:
 
 
-[ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### gcloud
 
 - 
 
@@ -494,6 +479,7 @@ of seconds—for example, `300`
 
 
 
+### API
 
 To create a transaction with new resource record sets, use the
 [`changes.create` method](/dns/docs/reference/v1/changes/create):
@@ -551,11 +537,8 @@ process described for Google Workspace.
 To view resource record sets for a zone, follow these steps:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -572,6 +555,7 @@ in that zone.
 
 
 
+### gcloud
 
 To view the DNS records for your zone, use the
 [`gcloud dns record-sets list` command](/sdk/gcloud/reference/dns/record-sets/list):
@@ -598,6 +582,7 @@ must also be present
 
 
 
+### API
 
 To view the DNS records for your zone, use the
 [`resourceRecordSets.list` method](/dns/docs/reference/rest/v1/resourceRecordSets/list):
@@ -628,11 +613,8 @@ within the managed Cloud DNS zone.
 To view the details of an existing resource record set, follow these steps:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -653,6 +635,7 @@ record set.
 
 
 
+### gcloud
 
 To view the details of an existing resource record set, use the
 [`gcloud dns record-sets describe` command](/sdk/gcloud/reference/dns/record-sets/describe):
@@ -681,6 +664,7 @@ managed zone as its suffix
 
 
 
+### API
 
 To get the details of an existing resource record set, use the
 [`resourceRecordSets.get` method](/dns/docs/reference/v1/resourceRecordSets/get):
@@ -715,11 +699,8 @@ of this resource record set—for example, `A`.
 To modify a record set, follow these steps:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To apply a partial update to an existing resource record set,
 follow these steps:
@@ -747,6 +728,7 @@ After making the necessary updates, click **Save**.
 
 
 
+### gcloud
 
 To apply a partial update to an existing resource record set, use the
 [`gcloud dns record-sets update` command](/sdk/gcloud/reference/dns/record-sets/update):
@@ -785,6 +767,7 @@ managed zone as its suffix
 
 
 
+### API
 
 To apply a partial update to an existing resource record set, use
 the [`resourceRecordSets.patch` method](/dns/docs/reference/v1/resourceRecordSets/patch):
@@ -845,11 +828,8 @@ see [RFC 1034](https://tools.ietf.org/html/rfc1034).
 To delete resource record sets, follow these steps:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -873,6 +853,7 @@ Click **Delete record sets**.
 
 
 
+### gcloud
 
 To delete an existing resource record set, use the
 [`gcloud dns record-sets delete` command](/sdk/gcloud/reference/dns/record-sets/delete):
@@ -901,6 +882,7 @@ managed zone as its suffix
 
 
 
+### API
 
 To delete an existing resource record set, use the
 [`resourceRecordSets.delete` method](/dns/docs/reference/v1/resourceRecordSets/delete):
@@ -937,11 +919,8 @@ To copy resource record sets into and out of a managed zone, you can use `import
 format or the YAML file format.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
-
+### gcloud
 
 - 
 

@@ -136,6 +136,7 @@ Guides
 
 
 
+
 Blueprints and modules help you automate provisioning and managing
 Cloud de Confiance resources at scale.
 
@@ -164,22 +165,6 @@ Serverless computing
 Storage 
 Workspace 
 
-Select an option Select a category 
-
-- Select a category
-- Compute
-- Containers
-- Data analytics
-- Databases
-- Developer tools
-- End-to-end
-- Healthcare and life sciences
-- Networking
-- Operations
-- Security and identity
-- Serverless computing
-- Storage
-- Workspace
 
 
 

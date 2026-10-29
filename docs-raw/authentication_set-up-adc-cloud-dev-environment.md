@@ -148,10 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -169,7 +165,7 @@ you need to use a different user account to configure ADC, or configure ADC
 using a service account, use a local development environment or a
 Google Cloud Dedicated compute resource as your development environment.
 
-## What's next 
+## What's next
 
 - Get more information about [Cloud Code](/code/docs).
 

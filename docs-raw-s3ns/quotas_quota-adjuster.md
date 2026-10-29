@@ -108,23 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ How the quota adjuster works ](#how-the-quota-adjuster-works)
-- [ Limitations ](#limitations)
-- [ Availability ](#availability)
-
-- [ Eligibility based on usage history ](#eligibility_based_on_usage_history)
-- [ Supported quotas ](#supported_quotas)
-
-- [ Enable the quota adjuster ](#enable)
-- [ View quota adjustment requests ](#view-quota-adjustment-requests)
-- [ Set up quota adjuster alerts ](#alerts)
-- [ Edit or delete quota adjuster alerts ](#edit-or-delete-alerts)
-- [ Disable the quota adjuster ](#disable)
-- [ Troubleshoot quota increase denials ](#troubleshoot-quota)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -145,7 +128,7 @@ quota adjuster reduces the need to watch for unplanned increases
 in your resource use, and lets you submit fewer manual requests for quota
 adjustments.
 
-## How the quota adjuster works 
+## How the quota adjuster works
 
 When you [enable the quota adjuster](#enable), it monitors all
 applicable quotas and applies the following logic:
@@ -228,770 +211,962 @@ Quotas |
 |
 
 
+
 | 
 Artifact Registry API | 
 Requests per project in the Asia multi-region per minute | 
 |
+
 | 
 Artifact Registry API | 
 Requests per project in the Europe multi-region per minute | 
 |
+
 | 
 Artifact Registry API | 
 Requests per project in the US multi-region per minute | 
 |
+
 | 
 Artifact Registry API | 
 Requests per project per region per minute per region | 
 |
+
 | 
 Cloud Build API | 
 Build and Operation Get requests per minute | 
 |
+
 | 
 Cloud Build API | 
 Build and Operation Get requests per minute per user | 
 |
+
 | 
 Cloud Build API | 
 Concurrent Build CPUs (Regional Default Pool) | 
 |
+
 | 
 Cloud Build API | 
 Concurrent Builds (Non-regional Default Pool) | 
 |
-| 
-Cloud de Confiance by S3NS Memorystore for Redis API | 
-Total Redis capacity (GB) per region | 
-|
-| 
-Cloud de Confiance Memorystore for Redis API | 
-Total Redis Cluster units per project per region | 
-|
+
 | 
 Cloud Key Management Service API | 
 Cryptographic requests per minute | 
 |
+
 | 
 Cloud Key Management Service API | 
 HSM cryptographic usage | 
 |
+
 | 
 Cloud Key Management Service API | 
 Read requests per minute | 
 |
+
 | 
 Cloud Key Management Service API | 
 Read usage | 
 |
+
 | 
 Cloud Key Management Service API | 
 Software cryptographic usage | 
 |
+
 | 
 Cloud Key Management Service API | 
 Write requests per minute | 
 |
+
 | 
 Cloud Key Management Service API | 
 Write usage | 
 |
+
 | 
 Cloud Logging API | 
 Log write bytes per minute per region | 
 |
+
 | 
 Cloud Monitoring API | 
 Time series ingestion requests | 
 |
+
 | 
 Cloud Monitoring API | 
 Time series queries | 
 |
+
 | 
 Cloud Resource Manager API | 
 Read requests per minute | 
 |
+
 | 
 Cloud Run Admin API | 
 Job run requests per minute per region | 
 |
+
 | 
 Cloud Run Admin API | 
 Read requests per minute per region | 
 |
+
 | 
 Cloud Run Admin API | 
 Total CPU allocation, in milli vCPU, per project per region | 
 |
+
 | 
 Cloud Run Admin API | 
 Write requests per minute per region | 
 |
+
 | 
 Cloud Trace API | 
 Write requests (free) per minute | 
 |
+
 | 
 Compute Engine API | 
 Affinity groups | 
 |
+
 | 
 Compute Engine API | 
 Backend buckets | 
 |
+
 | 
 Compute Engine API | 
 C2 CPUs | 
 |
+
 | 
 Compute Engine API | 
 C2D CPUs | 
 |
+
 | 
 Compute Engine API | 
 C3 CPUs | 
 |
+
 | 
 Compute Engine API | 
 Commitments | 
 |
+
 | 
 Compute Engine API | 
 Committed A2 CPUs | 
 |
+
 | 
 Compute Engine API | 
 Committed CPUs | 
 |
+
 | 
 Compute Engine API | 
 Committed licenses | 
 |
+
 | 
 Compute Engine API | 
 Committed local SSD disk reserved (GB) | 
 |
+
 | 
 Compute Engine API | 
 Committed M3 CPUs | 
 |
+
 | 
 Compute Engine API | 
 Committed Memory Optimized CPUs | 
 |
+
 | 
 Compute Engine API | 
 Committed N2 CPUs | 
 |
+
 | 
 Compute Engine API | 
 Committed N2D CPUs | 
 |
+
 | 
 Compute Engine API | 
 Committed T2D CPUs | 
 |
+
 | 
 Compute Engine API | 
 CPUs | 
 |
+
 | 
 Compute Engine API | 
 CPUs per VM family | 
 |
+
 | 
 Compute Engine API | 
 Shared VPC service projects per host project | 
 |
+
 | 
 Compute Engine API | 
 Dynamic routes per region per peering group | 
 |
+
 | 
 Compute Engine API | 
 External passthrough Network Load Balancer backend services | 
 |
+
 | 
 Compute Engine API | 
 External passthrough Network Load Balancer forwarding rules | 
 |
+
 | 
 Compute Engine API | 
 External protocol forwarding rules | 
 |
+
 | 
 Compute Engine API | 
 External VPN gateways | 
 |
+
 | 
 Compute Engine API | 
 Firewall rules | 
 |
+
 | 
 Compute Engine API | 
 Forwarding rules | 
 |
+
 | 
 Compute Engine API | 
 Global external managed backend services | 
 |
+
 | 
 Compute Engine API | 
 Global internal managed backend buckets | 
 |
+
 | 
 Compute Engine API | 
 Global internal managed backend services | 
 |
+
 | 
 Compute Engine API | 
 Global SSL policies | 
 |
+
 | 
 Compute Engine API | 
 Global External Managed Forwarding Rules | 
 |
+
 | 
 Compute Engine API | 
 Global external proxy LB backend services | 
 |
+
 | 
 Compute Engine API | 
 Global internal traffic director backend services | 
 |
+
 | 
 Compute Engine API | 
 GPU count per GPU family | 
 |
+
 | 
 Compute Engine API | 
 GPUs (all regions) | 
 |
+
 | 
 Compute Engine API | 
 Health checks | 
 |
+
 | 
 Compute Engine API | 
 Images | 
 |
+
 | 
 Compute Engine API | 
 Interconnect Attachment Groups | 
 |
+
 | 
 Compute Engine API | 
 Interconnect attachments | 
 |
+
 | 
 Compute Engine API | 
 Interconnect attachments per Interconnect | 
 |
+
 | 
 Compute Engine API | 
 Interconnect attachments total Mbps | 
 |
+
 | 
 Compute Engine API | 
 Interconnect Groups | 
 |
+
 | 
 Compute Engine API | 
 Interconnects | 
 |
+
 | 
 Compute Engine API | 
 In-use IP addresses | 
 |
+
 | 
 Compute Engine API | 
 In-use regional external IPv4 addresses | 
 |
+
 | 
 Compute Engine API | 
 In-use snapshot schedules | 
 |
+
 | 
 Compute Engine API | 
 Instance groups | 
 |
+
 | 
 Compute Engine API | 
 Instance templates | 
 |
+
 | 
 Compute Engine API | 
 Instances Per peering group | 
 |
+
 | 
 Compute Engine API | 
 Instances per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 Internal protocol forwarding rules per peering group | 
 |
+
 | 
 Compute Engine API | 
 Internal protocol forwarding rules per VPC network | 
 |
+
 | 
 Compute Engine API | 
 Internal IP addresses | 
 |
+
 | 
 Compute Engine API | 
 Internal passthrough Network Load Balancer backend services | 
 |
+
 | 
 Compute Engine API | 
 Internal passthrough Network Load Balancer forwarding rules per peering group | 
 |
+
 | 
 Compute Engine API | 
 Internal passthrough Network Load Balancer forwarding rules per VPC network | 
 |
+
 | 
 Compute Engine API | 
 IP Aliases per peering group | 
 |
+
 | 
 Compute Engine API | 
 IP Aliases per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 Local SSD disk per VM family (GB) | 
 |
+
 | 
 Compute Engine API | 
 M1 CPUs | 
 |
+
 | 
 Compute Engine API | 
 M2 CPUs | 
 |
+
 | 
 Compute Engine API | 
 M3 CPUs | 
 |
+
 | 
 Compute Engine API | 
 Managed instance groups | 
 |
+
 | 
 Compute Engine API | 
 N2 CPUs | 
 |
+
 | 
 Compute Engine API | 
 N2D CPUs | 
 |
+
 | 
 Compute Engine API | 
 Network Attachments | 
 |
+
 | 
 Compute Engine API | 
 Network endpoint groups | 
 |
+
 | 
 Compute Engine API | 
 Network firewall policies | 
 |
+
 | 
 Compute Engine API | 
 Network load balancing security policies | 
 |
+
 | 
 Compute Engine API | 
 Network load balancing security policy rules | 
 |
+
 | 
 Compute Engine API | 
 Network load balancing security policy rule attributes | 
 |
+
 | 
 Compute Engine API | 
 Networks | 
 |
+
 | 
 Compute Engine API | 
 NVIDIA A2 CPUs | 
 |
+
 | 
 Compute Engine API | 
 Peerings per VPC network | 
 |
+
 | 
 Compute Engine API | 
 Packet mirrorings | 
 |
+
 | 
 Compute Engine API | 
 Persistent Disk IOPS | 
 |
+
 | 
 Compute Engine API | 
 Persistent Disk SSD (GB) | 
 |
+
 | 
 Compute Engine API | 
 Persistent Disk Standard (GB) | 
 |
+
 | 
 Compute Engine API | 
 Preemptible CPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible Local SSD (GB) | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA A100 80GB GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA A100 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA H100 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA H100 MEGA GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA K80 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA L4 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA L4 Virtual Workstation GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA P4 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA P4 Virtual Workstation GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA T4 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA T4 Virtual Workstation GPUs | 
 |
+
 | 
 Compute Engine API | 
 Preemptible NVIDIA V100 GPUs | 
 |
+
 | 
 Compute Engine API | 
 Public advertised prefixes | 
 |
+
 | 
 Compute Engine API | 
 PSC ILB Consumer Forwarding Rules per Producer VPC Network | 
 |
+
 | 
 Compute Engine API | 
 PSC Internal LB Forwarding Rules | 
 |
+
 | 
 Compute Engine API | 
 Regional external managed backend services | 
 |
+
 | 
 Compute Engine API | 
 Regional External Managed Forwarding Rules per region per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 Regional Instance templates | 
 |
+
 | 
 Compute Engine API | 
 Regional Internal Managed Load Balancer Forwarding Rules per region per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 Regional internal managed backend services | 
 |
+
 | 
 Compute Engine API | 
 Regional internal traffic director backend services | 
 |
+
 | 
 Compute Engine API | 
 Regional managed instance groups | 
 |
+
 | 
 Compute Engine API | 
 Regional Network Firewall Policies | 
 |
+
 | 
 Compute Engine API | 
 Regional security policies | 
 |
+
 | 
 Compute Engine API | 
 Regional security policy rules | 
 |
+
 | 
 Compute Engine API | 
 Regional security policy rules with an advanced match condition | 
 |
+
 | 
 Compute Engine API | 
 Regional SSL policies | 
 |
+
 | 
 Compute Engine API | 
 Regional Target TCP proxies | 
 |
+
 | 
 Compute Engine API | 
 Routers | 
 |
+
 | 
 Compute Engine API | 
 Rule attributes per global network firewall policy | 
 |
+
 | 
 Compute Engine API | 
 Rule attributes per regional network firewall policy | 
 |
+
 | 
 Compute Engine API | 
 Security policies | 
 |
+
 | 
 Compute Engine API | 
 Security policy rules | 
 |
+
 | 
 Compute Engine API | 
 Security policy rules language rules | 
 |
+
 | 
 Compute Engine API | 
 Service Attachments | 
 |
+
 | 
 Compute Engine API | 
 Snapshots | 
 |
+
 | 
 Compute Engine API | 
 SSL certificates | 
 |
+
 | 
 Compute Engine API | 
 Static BYOIP IP addresses | 
 |
+
 | 
 Compute Engine API | 
 Static IP addresses | 
 |
+
 | 
 Compute Engine API | 
 Static global internal IPv4 addresses | 
 |
+
 | 
 Compute Engine API | 
 Static routes per network | 
 |
+
 | 
 Compute Engine API | 
 Static routes per peering group | 
 |
+
 | 
 Compute Engine API | 
 Subnet ranges Per peering group | 
 |
+
 | 
 Compute Engine API | 
 Subnetwork ranges per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 T2A CPUs | 
 |
+
 | 
 Compute Engine API | 
 T2D CPUs | 
 |
+
 | 
 Compute Engine API | 
 Target HTTP proxies | 
 |
+
 | 
 Compute Engine API | 
 Target HTTPS proxies | 
 |
+
 | 
 Compute Engine API | 
 Target SSL proxies | 
 |
+
 | 
 Compute Engine API | 
 Target TCP proxies | 
 |
+
 | 
 Compute Engine API | 
 Target instances | 
 |
+
 | 
 Compute Engine API | 
 Target pools | 
 |
+
 | 
 Compute Engine API | 
 Target VPN gateways | 
 |
+
 | 
 Compute Engine API | 
 Total Local SSD disk reserved (GB) | 
 |
+
 | 
 Compute Engine API | 
 Traffic director forwarding rules | 
 |
+
 | 
 Compute Engine API | 
 Unique Cloud Router dynamic route prefixes from other region per region per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 Unique Cloud Router dynamic route prefixes from own region per region per VPC Network | 
 |
+
 | 
 Compute Engine API | 
 URL maps | 
 |
+
 | 
 Compute Engine API | 
 VM instances | 
 |
+
 | 
 Compute Engine API | 
 VPN gateways | 
 |
+
 | 
 Compute Engine API | 
 VPN tunnels | 
 |
+
 | 
 Connect gateway API | 
 Gateway Connection Requests per minute | 
 |
+
 | 
 Dataproc API | 
 Data Compute Units per project per region | 
 |
+
 | 
 Dialogflow API | 
 All other requests per minute | 
 |
+
 | 
 Filestore API | 
 Backups per region | 
 |
+
 | 
 Filestore API | 
 Basic HDD (Standard) capacity (GB) per region | 
 |
+
 | 
 Filestore API | 
 Basic SSD (Premium) capacity (GB) per region | 
 |
+
 | 
 Filestore API | 
 Zonal & Regional 1-10 TiB (Enterprise) capacity (GB) per region | 
 |
+
 | 
 Filestore API | 
 Zonal & Regional 10-100 TiB (High Scale) capacity (GB) per region | 
 |
+
+| 
+Cloud de Confiance by S3NS Memorystore for Redis API | 
+Total Redis capacity (GB) per region | 
+|
+
+| 
+Cloud de Confiance Memorystore for Redis API | 
+Total Redis Cluster units per project per region | 
+|
+
 | 
 Google Sheets API | 
 Read requests per minute per project | 
 |
+
 | 
 Google Sheets API | 
 Read requests per minute per user | 
 |
+
 | 
 Google Sheets API | 
 Write requests per minute per project | 
 |
+
 | 
 Google Sheets API | 
 Write requests per minute per user | 
 |
+
 | 
 Memorystore API | 
 Total Memorystore units per project per region | 
 |
+
 | 
 Remote Build Execution | 
 Number of reserved N2 CPUs (per region) | 
 |
+
 | 
 Transcoder API | 
 Batch concurrent job count | 
 |
+
 | 
 Transcoder API | 
 Batch pending job count | 
 |
+
 | 
 Transcoder API | 
 Concurrent job count | 
 |
+
 | 
 Transcoder API | 
 Dubbing job count | 
 |
+
 | 
 Transcoder API | 
 Get requests | 
 |
+
 | 
 Transcoder API | 
 List requests | 
 |
+
 | 
 Transcoder API | 
 Mutation requests | 
 |
+
 | 
 Vertex AI API | 
 Custom model serving CPUs per region | 
 |
+
 | 
 Vertex AI API | 
 Custom model serving Nvidia T4 GPUs per region | 
 |
+
 | 
 Vertex AI API | 
 Custom model training Nvidia T4 GPUs per region | 
 |
+
 | 
 Vertex AI API | 
 Generate content requests per minute per project per base model | 
 |
+
 | 
 Vertex AI API | 
 
@@ -1004,14 +1179,17 @@ Note: To see the full list of available dimensions, expand this entry in the Clo
 
 | 
 |
+
 | 
 Vertex AI API | 
 Resource management (CRUD) requests per minute per region | 
 |
+
 | 
 Vertex AI API | 
 Restricted image training TPU V3 pod cores per region | 
-| 
+|
+
 
 
 
@@ -1029,11 +1207,8 @@ To enable the quota adjuster, select the appropriate tab and
 follow the instructions:
 
 
-[Console](#console) [REST](#rest) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - In the Cloud de Confiance console, go to the
 **IAM & Admin  > Quotas & System Limits** page:
@@ -1052,6 +1227,7 @@ To enable the quota adjuster per folder or per organization,
 use the REST API or gcloud CLI.
 
 
+### REST
 
 - 
 
@@ -1101,6 +1277,7 @@ This updates the enablement status to `enabled`.
 
 
 
+### gcloud
 
 - 
 
@@ -1287,11 +1464,8 @@ To disable the quota adjuster, select the appropriate tab and
 follow the instructions:
 
 
-[Console](#console) [REST](#rest) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - In the Cloud de Confiance console, go to the
 **IAM & Admin  > Quotas & System Limits** page:
@@ -1309,6 +1483,7 @@ To disable the quota adjuster per folder or per organization,
 use the REST API or gcloud CLI.
 
 
+### REST
 
 - 
 
@@ -1358,6 +1533,7 @@ This updates the enablement status to `disabled`.
 
 
 
+### gcloud
 
 - 
 

@@ -128,19 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ List access levels ](#list_access_levels)
-- [ List access levels (formatted) ](#formatted_access_levels)
-- [ Describe an access level ](#describe_an_access_level)
-- [ Update an access level ](#update_an_access_level)
-- [ Delete an access level ](#delete_an_access_level)
-
-- [ Check access level dependencies ](#check-access-level-dependencies)
-- [ Delete an individual access level ](#delete-an-individual-access-level)
-
-- 
-
 
 
 
@@ -172,7 +159,7 @@ This page describes how to manage existing access levels. You can:
 
 [Delete an access level](#delete_an_access_level)
 
-## Before you begin 
+## Before you begin
 
 - 
 
@@ -207,11 +194,8 @@ you one of the following roles, or a custom role with the same permissions:
 ## List access levels
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To list all access levels, open the **Access Context Manager**
 page in the Cloud de Confiance console and then, if prompted,
@@ -222,6 +206,7 @@ level.
 [Open the Access Context Manager page](https://console.cloud.s3nscloud.fr/security/access-level)
 
 
+### gcloud
 
 To list all access levels, use the [`list`](/sdk/gcloud/reference/access-context-manager/levels/list) command.
 
@@ -248,6 +233,7 @@ Service_Group_A Service_Group_A Basic
 ```
 
 
+### API
 
 To list all the access levels for a policy, call
 [`accessLevels.list`](/access-context-manager/docs/reference/rest/v1/accessPolicies.accessLevels/list).
@@ -407,7 +393,6 @@ This value is required only if you haven't set a
 
 The YAML output is similar to the following:
 
-
 ```
 - basic : { 'conditions' : [{ 'ipSubnetworks' : [ '192.0.2.0/24' ]}]} 
 description : Level for corp access. 
@@ -421,7 +406,6 @@ title : Net Level
 
 
 The JSON output is similar to the following:
-
 
 ```
 [ 
@@ -461,17 +445,15 @@ The JSON output is similar to the following:
 ## Describe an access level
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 Using Cloud de Confiance console, refer to the steps to
 [list access levels](#list_access_levels). When you list your access
 levels, details are provided in the grid that appears.
 
 
+### gcloud
 
 Listing access levels only provides their name, title, and level type. To
 get detailed information about what a level actually does, use the
@@ -522,6 +504,7 @@ title : Device_Trust Extended
 
 
 
+### API
 
 Listing access levels only provides the name, title, and type of the levels.
 To get detailed information about an access level,
@@ -572,11 +555,8 @@ all of your organization's access levels in one operation, see
 [Making bulk changes to access levels](/access-context-manager/docs/bulk-operations).
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To update an access level:
 
@@ -611,6 +591,7 @@ conditions.
 
 
 
+### gcloud
 
 Use the [`update`](/sdk/gcloud/reference/access-context-manager/levels/update) command to update an access level.
 
@@ -727,6 +708,7 @@ gcloud access-context-manager levels update Device_Trust \
 ```
 
 
+### API
 
 To update an access level, call [`accessLevels.patch`](/access-context-manager/docs/reference/rest/v1/accessPolicies.accessLevels/patch).
 
@@ -867,11 +849,8 @@ access level](#delete-an-individual-access-level).
 ### Delete an individual access level
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To delete an access level:
 
@@ -901,6 +880,7 @@ access level.
 
 
 
+### gcloud
 
 To delete an access level:
 
@@ -953,6 +933,7 @@ Deleted level [Device_Trust].
 
 
 
+### API
 
 To delete an access level, call [`accessLevels.delete`](/access-context-manager/docs/reference/rest/v1/accessPolicies.accessLevels/delete).
 

@@ -128,23 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Set up permissions to manage folders ](#folder-permissions)
-- [ Create folders ](#creating-folders)
-
-- [ Add tags during folder creation ](#add_tags_during_folder_creation)
-
-- [ Retrieve your folder ID ](#retrieve_folder_id)
-- [ Propagation delay ](#propagation-delay)
-- [ Delete folders ](#delete)
-- [ Configure access to folders ](#folder-access)
-
-- [ Handle long-running operations ](#handle-long-running-operations)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -253,11 +236,8 @@ can grant it to other accounts.
 To set up folder permissions, follow these steps:
 
 
-[Console](#console) [gcloud](#gcloud) [REST](#rest) 
-More 
 
-
-
+### Console
 
 - In the Google Cloud Dedicated console, open the **Manage resources** page.
 
@@ -284,6 +264,7 @@ then select the role that you want to grant, such as **Folder Admin**.
 
 
 
+### gcloud
 
 To grant the Folder Admin role to a principal using Google Cloud CLI,
 run the following command:
@@ -296,6 +277,7 @@ gcloud organizations add-iam-policy-binding ORGANIZATION_ID \
 ```
 
 
+### REST
 
 The request JSON:
 
@@ -344,11 +326,8 @@ the following requirements:
 To create a folder, follow these steps:
 
 
-[Console](#console) [gcloud](#gcloud) [API](#api) 
-More 
 
-
-
+### Console
 
 To create folders, do the following:
 
@@ -386,6 +365,7 @@ resource or folder under which you want to create your new folder.
 
 
 
+### gcloud
 
 Folders can be created programmatically using the
 Google Cloud CLI.
@@ -425,6 +405,7 @@ parent is an organization resource.
 
 
 
+### API
 
 [Folders](/resource-manager/reference/rest/v3/folders) can be
 created with an API request.
@@ -522,11 +503,8 @@ in this role, see [Create and manage tags](/resource-manager/docs/tags/tags-crea
 You can only add the namespace for the tag key-value pairs in one of the following ways:
 
 
-[gcloud](#gcloud) [REST](#rest) 
-More 
 
-
-
+### gcloud
 
 To add tags during folder creation, run the following command:
 
@@ -550,6 +528,7 @@ resource. An example of comma-separated key-value pairs is `123/environment=prod
 
 
 
+### REST
 
 The following snippet is a JSON request that creates a folder and adds
 tags to it.
@@ -578,11 +557,8 @@ You can retrieve the ID of a folder using the Google Cloud Dedicated console or
 Google Cloud CLI.
 
 
-[Console](#console) [gcloud](#gcloud) 
-More 
 
-
-
+### Console
 
 - In the Google Cloud Dedicated console, open the **Manage resources** page.
 
@@ -591,6 +567,7 @@ the **ID** column next to the folder's display name.
 
 
 
+### gcloud
 
 To locate your folder ID, run the following command:
 
@@ -623,11 +600,8 @@ To configure access to folders, you must have the **Folder IAM Administrator**
 or **Folder Admin** role at the parent level.
 
 
-[Console](#console) [gcloud](#gcloud) [API](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -664,6 +638,7 @@ of the members' new role.
 
 
 
+### gcloud
 
 You can configure access to folders programmatically using the
 Google Cloud CLI or the REST API.
@@ -701,6 +676,7 @@ Replace the following:
 
 
 
+### API
 
 The `setIamPolicy` method sets the access control policy on a folder,
 replacing any existing policy. The `resource` field should be the folder's

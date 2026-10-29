@@ -113,17 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Integrations ](#integrations-differences)
-- [ Security and access control ](#security-differences)
-- [ Workflows and tools ](#Workflows and tools)
-- [ Insights and observability ](#observability-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -147,7 +136,7 @@ IAM documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 

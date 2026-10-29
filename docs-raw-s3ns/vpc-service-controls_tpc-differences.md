@@ -113,17 +113,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Security and access control ](#security-differences)
-- [ Integrations ](#integrations-differences)
-- [ Other differences ](#availability-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -150,7 +139,7 @@ VPC Service Controls documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -240,7 +229,7 @@ rules instead.
 |
 
 | 
-Ingress and egress rules** | 
+**Ingress and egress rules** | 
 
 The following features are unavailable when configuring ingress and egress rules:
 
@@ -352,17 +341,13 @@ For details about other services and features in Cloud de Confiance and their di
 their Google Cloud counterparts, see the [product list.](https://documentation.s3ns.fr/products)
 
 
-
-### Related products
-
+Related products 
 
 
 - [Access Context Manager in
 Cloud de Confiance by S3NS](/access-context-manager/docs/tpc-differences)
 
-
-### Cloud de Confiance guides
-
+Cloud de Confiance guides 
 
 
 

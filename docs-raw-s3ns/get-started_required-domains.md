@@ -88,11 +88,6 @@ Get started
 
 
 
-- On this page 
-- [ Required domains ](#required_domains)
-- [ Monitoring domains ](#monitoring_domains)
-- 
-
 
 
 
@@ -109,7 +104,7 @@ errors when accessing or using the Cloud de Confiance console. This document lis
 domains and domain patterns that must be allowed for
 the Cloud de Confiance console to function properly.
 
-## Required domains 
+## Required domains
 
 The following domains and domain patterns are required for
 Cloud de Confiance console functionality. If any of these domains are blocked,

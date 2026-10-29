@@ -120,11 +120,12 @@ Cloud Monitoring
 
 
 
-# Cloud Monitoring documentation 
+
+# Cloud Monitoring documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/monitoring/docs/monitoring-overview)
+Read product documentation 
 
 
 

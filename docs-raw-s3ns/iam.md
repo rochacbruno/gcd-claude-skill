@@ -120,11 +120,12 @@ IAM
 
 
 
-# Identity and Access Management documentation 
+
+# Identity and Access Management documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/iam/docs/overview)
+Read product documentation 
 
 
 

@@ -126,17 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Create a bucket ](#create_a_bucket)
-- [ Upload an object into the bucket ](#upload_an_object_into_the_bucket)
-- [ Download the object ](#download_the_object)
-- [ Share the object ](#share_the_object)
-- [ Create a simulated folder ](#create_folders)
-- [ Delete the objects ](#delete_the_objects)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -146,8 +135,7 @@ Guides
 
 
 
-
-# Discover object storage with the Cloud de Confiance console 
+# Discover object storage with the Cloud de Confiance console
 
 
 
@@ -164,7 +152,7 @@ Cloud Storage resources.
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -195,8 +183,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -273,8 +261,8 @@ Storage Admin
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -312,8 +300,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 
@@ -404,6 +392,7 @@ Click add_box **Create**.
 - 
 
 In the **Get started** section, enter a globally unique name for your bucket.
+
 
 See bucket naming requirements. 
 

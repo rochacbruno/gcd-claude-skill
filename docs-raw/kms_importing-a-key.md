@@ -128,33 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-
-- [ Preparing the project ](#preparing_the_project)
-- [ Preparing the local system ](#preparing_the_local_system)
-- [ Preparing the key ](#preparing_the_key)
-
-- [ Create the target key and key ring ](#create_targets)
-- [ Create the import job ](#create_importjob)
-
-- [ Checking the state of the import job ](#check_import_job)
-- [ Preventing modification of import jobs ](#prevent_import_job_modification)
-
-- [ Import the key ](#request_import)
-
-- [ Automatically wrapping and importing a key ](#automatically_wrap_and_import)
-- [ Importing a manually-wrapped key ](#importing_a_manually-wrapped_key)
-- [ Check the state of the imported key version ](#check_imported_key)
-
-- [ Re-import a previously destroyed key ](#re-import_a_previously_destroyed_key)
-
-- [ Restrictions ](#restrictions)
-- [ Re-importing a destroyed key ](#re-importing_a_destroyed_key)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -173,7 +146,7 @@ You can complete the steps in this guide in 5 to 10 minutes, not including the
 [Before you begin](#before_you_begin) steps. Wrapping the key manually adds
 complexity to the task.
 
-## Before you begin 
+## Before you begin
 
 We recommend that you create a new project to test this feature, to ease
 clean-up after testing and to ensure that you have adequate
@@ -215,8 +188,8 @@ select or create a Google Cloud Dedicated project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -291,7 +264,6 @@ Enable the required API, if it is not already enabled.
 
 
 **Roles required to enable APIs**
-
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -501,12 +473,10 @@ Google Cloud CLI or the Google Cloud Dedicated console.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -603,6 +573,8 @@ Click **Create**.
 
 
 
+### gcloud 
+
 
 
 
@@ -694,6 +666,8 @@ you want to use for the key.
 
 
 
+
+### Go 
 
 
 
@@ -812,6 +786,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -940,6 +916,8 @@ System . out . printf ( "Created crypto key %s%n" , createdKey . [ getName ](htt
 
 
 
+### Node.js 
+
 
 
 
@@ -1052,6 +1030,8 @@ return createKeyForImport ();
 
 
 
+### Python 
+
 
 
 
@@ -1161,6 +1141,8 @@ print ( f "Created hsm key: { created_key . name } " )
 
 
 
+### API
+
 
 
 
@@ -1259,12 +1241,10 @@ Google Cloud Dedicated console, or the Cloud Key Management Service API.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -1331,6 +1311,8 @@ Click **Create**.
 
 
 
+
+### gcloud 
 
 
 
@@ -1404,6 +1386,8 @@ gcloud kms import-jobs create IMPORT_JOB \
 
 
 
+
+### Go 
 
 
 
@@ -1520,6 +1504,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -1639,6 +1625,8 @@ System . out . printf ( "Created import job %s%n" , createdImportJob . [ getName
 
 
 
+### Node.js 
+
 
 
 
@@ -1743,6 +1731,8 @@ return createImportJob ();
 
 
 
+### Python 
+
 
 
 
@@ -1846,6 +1836,8 @@ print ( f "Created import job: { import_job . name } " )
 
 
 
+### API
+
 
 
 
@@ -1896,7 +1888,6 @@ imported by this import job.
 
 
 
-
 ### Checking the state of the import job
 
 The initial state for an import job is `PENDING_GENERATION`. When the state is
@@ -1919,12 +1910,10 @@ Google Cloud Dedicated console, or the Cloud Key Management Service API.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -1979,6 +1968,8 @@ name.
 
 
 
+
+### gcloud 
 
 
 
@@ -2043,6 +2034,8 @@ state: ACTIVE
 
 
 
+
+### Go 
 
 
 
@@ -2146,6 +2139,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -2254,6 +2249,8 @@ System . out . printf (
 
 
 
+### Node.js 
+
 
 
 
@@ -2360,6 +2357,8 @@ return checkStateImportJob ();
 
 
 
+### Python 
+
 
 
 
@@ -2448,6 +2447,8 @@ print ( f "Current state of import job { import_job . name } : { import_job . st
 
 
 
+
+### API
 
 
 
@@ -2592,12 +2593,10 @@ each key.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -2670,6 +2669,8 @@ Click **Import**.
 
 
 
+### gcloud 
+
 
 
 
@@ -2729,6 +2730,8 @@ For more information, see the output of the
 
 
 
+
+### Go 
 
 
 
@@ -2897,6 +2900,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -3072,6 +3077,8 @@ System . out . printf ( "Imported: %s%n" , version . [ getName ](https://berlin.
 
 
 
+### Node.js 
+
 
 
 
@@ -3202,6 +3209,8 @@ return wrapAndImportKey ();
 
 
 
+
+### Python 
 
 
 
@@ -3349,6 +3358,8 @@ print ( f "Imported: { import_job . name } " )
 
 
 
+### API
+
 
 
 
@@ -3430,12 +3441,10 @@ Google Cloud Dedicated console, or the Cloud Key Management Service API.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -3490,6 +3499,8 @@ name.
 
 
 
+
+### gcloud 
 
 
 
@@ -3546,6 +3557,8 @@ gcloud kms keys versions list \
 
 
 
+
+### Go 
 
 
 
@@ -3649,6 +3662,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -3764,6 +3779,8 @@ System . out . printf (
 
 
 
+### Node.js 
+
 
 
 
@@ -3872,6 +3889,8 @@ return checkStateCryptoKeyVersion ();
 
 
 
+### Python 
+
 
 
 
@@ -3960,6 +3979,8 @@ print ( f "Current state of import job { import_job . name } : { import_job . st
 
 
 
+
+### API
 
 
 
@@ -4053,12 +4074,10 @@ original protection level.
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -4130,6 +4149,8 @@ Click **Re-Import**.
 
 
 
+### gcloud 
+
 
 
 
@@ -4180,6 +4201,8 @@ gcloud kms keys versions import \
 
 
 
+
+### API
 
 
 

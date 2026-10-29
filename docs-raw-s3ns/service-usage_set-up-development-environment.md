@@ -126,14 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Set up to call the API directly ](#api)
-
-- [ Enable the Service Usage API ](#enable)
-- [ Test with curl ](#test)
-
-- [ Next steps ](#next)
-- 
 
 
 
@@ -142,8 +134,7 @@ Guides
 
 
 
-
-# Set up Service Usage for a development environment 
+# Set up Service Usage for a development environment
 
 
 
@@ -203,8 +194,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -259,7 +250,6 @@ Enable the Service Usage API, if it is not already enabled.
 
 
 **Roles required to enable APIs**
-
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the

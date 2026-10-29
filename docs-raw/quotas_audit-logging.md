@@ -108,20 +108,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Service name ](#service_name)
-- [ Methods by permission type ](#permission-type)
-- [ API interface audit logs ](#api-interface-reference)
-
-- [ google.api.cloudquotas.v1.CloudQuotas ](#google.api.cloudquotas.v1.CloudQuotas)
-- [ google.api.cloudquotas.v1beta.CloudQuotas ](#google.api.cloudquotas.v1beta.CloudQuotas)
-- [ google.api.cloudquotas.v1beta.QuotaAdjusterSettingsManager ](#google.api.cloudquotas.v1beta.QuotaAdjusterSettingsManager)
-
-- [ System events ](#system-events)
-- [ Methods that don't produce audit logs ](#exempt-methods)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -149,7 +135,7 @@ see the following documents:
 
 - [Enable Data Access audit logs](/logging/docs/audit/configure-data-access)
 
-## Service name 
+## Service name
 
 To view the Cloud Quotas audit logs, do the following:
 
@@ -163,7 +149,7 @@ In the Google Cloud Dedicated console, go to the Logs Explorer page:
 
 - 
 
-Copy and paste the following query into the Query** field of the
+Copy and paste the following query into the **Query** field of the
 Logs Explorer, and then click **Run query**.
 
 
@@ -201,8 +187,8 @@ Methods |
 |
 
 | 
-`ADMIN_ READ` | 
-`google. api. cloudquotas. v1. Cloud Quotas. Get Quota Info`
+`ADMIN_READ` | 
+`google.api.cloudquotas.v1.CloudQuotas.GetQuotaInfo`
 `google.api.cloudquotas.v1.CloudQuotas.GetQuotaPreference`
 `google.api.cloudquotas.v1.CloudQuotas.ListQuotaInfos`
 `google.api.cloudquotas.v1.CloudQuotas.ListQuotaPreferences`

@@ -73,17 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Procedure overview ](#procedure_overview)
-- [ Sign in with your bootstrap ID ](#sign_in_with_your_bootstrap_id)
-- [ Grant permissions to your bootstrap ID ](#grant_permissions_to_your_bootstrap_id)
-- [ Configure Workforce Identity Federation ](#configure-workforce-identity-federation)
-- [ Set an Organization Administrator ](#set_an_organization_administrator)
-- [ Sign in with your administrator ID ](#sign_in_with_your_administrator_id)
-- [ What's next ](#whats_next)
-- 
-
 
 
 

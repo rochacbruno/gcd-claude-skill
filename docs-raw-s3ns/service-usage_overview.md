@@ -111,9 +111,6 @@ Guides
 
 
 
-- On this page 
-- [ What's next ](#next)
-- 
 
 
 
@@ -122,8 +119,7 @@ Guides
 
 
 
-
-# Service Usage overview 
+# Service Usage overview
 
 
 

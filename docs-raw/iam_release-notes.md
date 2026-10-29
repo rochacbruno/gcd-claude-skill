@@ -128,20 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ September 12, 2025 ](#September_12_2025)
-- [ June 13, 2025 ](#June_13_2025)
-- [ May 28, 2025 ](#May_28_2025)
-- [ May 15, 2025 ](#May_15_2025)
-- [ May 07, 2025 ](#May_07_2025)
-- [ December 09, 2024 ](#December_09_2024)
-- [ September 12, 2024 ](#September_12_2024)
-- [ August 12, 2024 ](#August_12_2024)
-- [ July 30, 2024 ](#July_30_2024)
-- [ June 10, 2024 ](#June_10_2024)
-- [ May 08, 2024 ](#May_08_2024)
-- 
-
 
 
 

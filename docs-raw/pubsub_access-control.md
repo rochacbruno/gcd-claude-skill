@@ -128,32 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Overview ](#overview)
-- [ Types of roles in Pub/Sub ](#types_roles)
-- [ Required Pub/Sub permissions ](#permissions)
-
-- [ Required permissions for topics ](#required_permissions_for_topics)
-- [ Required permissions for subscriptions ](#required_permissions_for_subscriptions)
-- [ Required permissions for schemas ](#required_permissions_for_schemas)
-- [ Required permissions for snapshots ](#required_permissions_for_snapshots)
-
-- [ Available Pub/Sub roles ](#roles)
-
-- [ Service agent roles ](#service-agent-roles)
-
-- [ Controlling access through the Google Cloud Dedicated console ](#console)
-- [ Controlling access through the IAM API ](#api)
-
-- [ Get a policy ](#get-policy)
-- [ Set a policy ](#set-policy)
-- [ Test permissions ](#test-permissions)
-
-- [ Cross-project communication ](#sample_use_case_cross-project_communication)
-- [ Partial availability behavior ](#partial_availability_behavior)
-- [ What's Next ](#whats_next)
-- 
-
 
 
 
@@ -184,7 +158,7 @@ Guides
 
 This document describes the access control options available to you in Pub/Sub.
 
-## Overview 
+## Overview
 
 Pub/Sub uses [Identity and Access Management (IAM)](/iam) for access
 control.
@@ -221,7 +195,7 @@ For a detailed description of IAM and its features, see the
 [IAM documentation](/iam). In particular, see
 [Granting, changing, and revoking access to resources](/iam/docs/granting-changing-revoking-access).
 
-## Types of roles in Pub/ Sub
+## Types of roles in Pub/Sub
 
 Similar to other Google Cloud Dedicated in Germany products, Pub/Sub supports
 three types of roles:
@@ -670,7 +644,7 @@ permissions associated with each role:
 
 
 
-5 results 
+
 
 
 | 
@@ -710,8 +684,8 @@ Topic
 
 
 
-`cloudkms.keyHandles.*` 
 
+`cloudkms.keyHandles.*` 
 
 
 
@@ -735,8 +709,8 @@ Topic
 
 
 
-`pubsub.*` 
 
+`pubsub.*` 
 
 
 
@@ -868,8 +842,8 @@ Topic
 
 
 
-`serviceusage.groups.*` 
 
+`serviceusage.groups.*` 
 
 
 
@@ -941,8 +915,8 @@ Topic
 
 
 
-`cloudkms.keyHandles.*` 
 
+`cloudkms.keyHandles.*` 
 
 
 
@@ -1162,8 +1136,8 @@ Topic
 
 
 
-`serviceusage.groups.*` 
 
+`serviceusage.groups.*` 
 
 
 
@@ -1389,8 +1363,8 @@ Topic
 
 
 
-`serviceusage.groups.*` 
 
+`serviceusage.groups.*` 
 
 
 
@@ -1440,7 +1414,7 @@ Service agent roles should only be granted to [service agents](/iam/docs/service
 
 
 
-1 result 
+
 
 
 | 
@@ -1619,11 +1593,8 @@ resource.
 Here is some sample code to [get a policy for a subscription](/pubsub/docs/reference/rest/v1/projects.subscriptions/getIamPolicy):
 
 
-[C#](#c) [gcloud](#gcloud) [Go](#go) [Java](#java) [ Node.js ](#node.js-javascript) [ Node.js ](#node.js-typescript) [PHP](#php) [Python](#python) [Ruby](#ruby) 
-More 
 
-
-
+### C#
 
 
 
@@ -1676,6 +1647,7 @@ return policy ;
 
 
 
+### gcloud
 
 Get the subscription policy:
 
@@ -1713,6 +1685,7 @@ Output:
 ```
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -1784,6 +1757,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -1847,6 +1821,7 @@ System . out . println ( "Subscription policy: " + policy );
 
 
 
+### Node.js 
 
 
 
@@ -1902,6 +1877,7 @@ console . log ( `Policy for subscription: ${ JSON . stringify ( policy . binding
 
 
 
+### Node.js 
 
 
 
@@ -1957,6 +1933,7 @@ console . log ( `Policy for subscription: ${ JSON . stringify ( policy . binding
 
 
 
+### PHP
 
 
 
@@ -2010,6 +1987,7 @@ print_r($policy);
 
 
 
+### Python
 
 
 
@@ -2062,6 +2040,7 @@ client . [ close ](https://berlin.devsitetest.how/python/docs/reference/pubsub/l
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -2110,7 +2089,7 @@ puts policy . bindings . first . role
 Here is some sample code to [get a policy for a topic](/pubsub/docs/reference/rest/v1/projects.topics/getIamPolicy):
 
 
-
+### C#
 
 
 
@@ -2163,6 +2142,7 @@ return policy ;
 
 
 
+### gcloud
 
 Get the topic policy
 
@@ -2192,6 +2172,7 @@ Output:
 ```
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -2263,6 +2244,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -2324,6 +2306,7 @@ System . out . println ( "Topic policy: " + policy );
 
 
 
+### Node.js
 
 
 
@@ -2376,6 +2359,7 @@ console . log ( 'Policy for topic: %j.' , policy . bindings );
 
 
 
+### PHP
 
 
 
@@ -2429,6 +2413,7 @@ print_r($policy);
 
 
 
+### Python
 
 
 
@@ -2479,6 +2464,7 @@ print ( "Role: {} , Members: {} " . format ( binding . role , binding . members 
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -2536,11 +2522,8 @@ It returns the resulting policy.
 Here is some sample code to [set a policy for a subscription](/pubsub/docs/reference/rest/v1/projects.subscriptions/setIamPolicy):
 
 
-[C#](#c) [gcloud](#gcloud) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) [Python](#python) [Ruby](#ruby) 
-More 
 
-
-
+### C#
 
 
 
@@ -2606,6 +2589,7 @@ return response ;
 
 
 
+### gcloud
 
 1. Save the policy for the subscription.
 
@@ -2655,6 +2639,7 @@ subscription_policy.json
 ```
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -2739,6 +2724,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -2821,6 +2807,7 @@ System . out . println ( "New subscription policy: " + newPolicy );
 
 
 
+### Node.js
 
 
 
@@ -2892,6 +2879,7 @@ console . log ( 'Updated policy for subscription: %j' , updatedPolicy . bindings
 
 
 
+### PHP
 
 
 
@@ -2949,6 +2937,7 @@ $subscriptionName
 
 
 
+### Python
 
 
 
@@ -3010,6 +2999,7 @@ client . [ close ](https://berlin.devsitetest.how/python/docs/reference/pubsub/l
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -3067,11 +3057,8 @@ bindings : [ bindings ]
 Here is some sample code to [set a policy for a topic](/pubsub/docs/reference/rest/v1/projects.topics/setIamPolicy):
 
 
-[C#](#c) [gcloud](#gcloud) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) [Python](#python) [Ruby](#ruby) 
-More 
 
-
-
+### C#
 
 
 
@@ -3137,6 +3124,7 @@ return response ;
 
 
 
+### gcloud
 
 1. Save the policy for the topic.
 
@@ -3180,6 +3168,7 @@ topic_policy.json
 ```
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -3264,6 +3253,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -3344,6 +3334,7 @@ System . out . println ( "New topic policy: " + newPolicy );
 
 
 
+### Node.js
 
 
 
@@ -3414,6 +3405,7 @@ console . log ( 'Updated policy for topic: %j' , updatedPolicy . bindings );
 
 
 
+### PHP
 
 
 
@@ -3471,6 +3463,7 @@ $topicName
 
 
 
+### Python
 
 
 
@@ -3530,6 +3523,7 @@ print ( "IAM policy for topic {} set: {} " . format ( topic_id , policy ))
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -3594,11 +3588,8 @@ of permissions.
 Here is some sample code to [test permissions for a subscription](/pubsub/docs/reference/rest/v1/projects.topics/testIamPermissions):
 
 
-[C#](#c) [gcloud](#gcloud) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) [Python](#python) [Ruby](#ruby) 
-More 
 
-
-
+### C#
 
 
 
@@ -3652,6 +3643,8 @@ return response ;
 
 
 
+### gcloud
+
 ```
 gcloud iam list-testable-permissions \
 https://pubsub.googleapis.com/v1/projects/${PROJECT}/subscriptions/${SUBSCRIPTION} \
@@ -3692,6 +3685,7 @@ Output:
 ```
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -3764,6 +3758,7 @@ return resp . Permissions , nil
 
 
 
+### Java
 
 
 
@@ -3840,6 +3835,7 @@ System . out . println ( "Tested:\n" + testedPermissionsResponse );
 
 
 
+### Node.js
 
 
 
@@ -3900,6 +3896,7 @@ console . log ( 'Tested permissions for subscription: %j' , permissions );
 
 
 
+### PHP
 
 
 
@@ -3958,6 +3955,7 @@ printf('Permission: %s' . PHP_EOL, $permission);
 
 
 
+### Python
 
 
 
@@ -4019,6 +4017,7 @@ client . [ close ](https://berlin.devsitetest.how/python/docs/reference/pubsub/l
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).
@@ -4075,11 +4074,8 @@ if response . permissions . include? "pubsub.subscriptions.update"
 Here is some sample code to [test permissions for a topic](/pubsub/docs/reference/rest/v1/projects.topics/testIamPermissions):
 
 
-[C#](#c) [gcloud](#gcloud) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) [Python](#python) [Ruby](#ruby) 
-More 
 
-
-
+### C#
 
 
 
@@ -4133,6 +4129,8 @@ return response ;
 
 
 
+### gcloud
+
 ```
 gcloud iam list-testable-permissions \
 https://pubsub.googleapis.com/v1/projects/${PROJECT}/topics/${TOPIC} \
@@ -4181,6 +4179,7 @@ Output
 ```
 
 
+### Go
 
 The following sample uses the major version of the Go Pub/Sub client library (v2). If you are still using the v1 library, see
 [the migration guide to v2](https://github.com/googleapis/google-cloud-go/blob/main/pubsub/MIGRATING.md).
@@ -4253,6 +4252,7 @@ return resp . Permissions , nil
 
 
 
+### Java
 
 
 
@@ -4330,6 +4330,7 @@ System . out . println ( "Tested:\n" + testedPermissionsResponse );
 
 
 
+### Node.js
 
 
 
@@ -4391,6 +4392,7 @@ console . log ( 'Tested permissions for topic: %j' , permissions );
 
 
 
+### PHP
 
 
 
@@ -4450,6 +4452,7 @@ printf('Permission: %s' . PHP_EOL, $permission);
 
 
 
+### Python
 
 
 
@@ -4504,6 +4507,7 @@ print (
 
 
 
+### Ruby
 
 The following sample uses Ruby Pub/Sub client library v3. If you are still using the v2 library, see
 [ the migration guide to v3](https://github.com/googleapis/google-cloud-ruby/blob/main/google-cloud-pubsub/MIGRATION_GUIDE.md).

@@ -128,12 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Favor implicit dependencies over explicit dependencies ](#favor-implicit-dependencies)
-- [ Reference output attributes from dependent resources ](#reference-output-attributes)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -146,7 +140,7 @@ Guides
 This document provides recommendations for expressing dependencies between
 resources in your Terraform configuration.
 
-## Favor implicit dependencies over explicit dependencies 
+## Favor implicit dependencies over explicit dependencies
 
 Resource dependencies arise when one resource depends on the existence of other
 resources. Terraform must be able to understand these dependencies to ensure

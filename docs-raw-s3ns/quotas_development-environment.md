@@ -108,11 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Enable the API ](#enable-cloud-quotas-api)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -125,17 +120,14 @@ Guides
 To use the Cloud Quotas API, you must first enable it for your
 Cloud de Confiance project. This document describes how to enable the Cloud Quotas API.
 
-## Enable the API 
+## Enable the API
 
 You can enable the Cloud Quotas API by using the Cloud de Confiance console or the
 [Google Cloud CLI](/sdk/gcloud).
 
 
-[Console](#console) [gcloud](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -157,6 +149,8 @@ Make sure that your user account has the required [IAM
 roles](/docs/quotas/permissions).
 
 
+
+### gcloud
 
 ## Before you begin
 
@@ -198,7 +192,7 @@ gcloud services list --filter="cloudquotas.googleapis.com"
 
 
 
-## What's next 
+## What's next
 
 - 
 

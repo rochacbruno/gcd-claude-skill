@@ -88,18 +88,6 @@ Google APIs Discovery Service
 
 
 
-- On this page 
-- [ Discovery document format ](#discovery-document-format)
-
-- [ Basic API Description ](#basic-api-description)
-- [ Authentication ](#authentication)
-- [ Resources and schemas ](#resources-and-schemas)
-- [ Methods ](#methods)
-- [ Common parameters ](#common-parameters)
-- [ Inline documentation ](#inline-documentation)
-
-- 
-
 
 
 
@@ -123,7 +111,7 @@ SSL—in other words, URLs begin with `https`.
 
 
 
-## Discovery document format 
+## Discovery document format
 
 
 
@@ -397,7 +385,7 @@ portion of an actual response for a request to enable the Pub/Sub API
 "response" : { 
 "@type" : "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse" , 
 "**service**" : { 
-"**name "** ** : "projects/232342569935/services/pubsub.googleapis.com" , 
+"**name " : "projects/232342569935/services/pubsub.googleapis.com" , 
 " config**" : { 
 "name" : "pubsub.googleapis.com" , 
 "title" : "Cloud Pub/Sub API" , 
@@ -418,8 +406,8 @@ portion of an actual response for a request to enable the Pub/Sub API
 } 
 } 
 ```
-** 
-** | 
+
+| 
 |
 
 
@@ -630,7 +618,6 @@ information about what kinds of media can be uploaded.
 
 The `enable` method doesn't contain a `mediaUpload` section. However, a
 typical `mediaUpload` section might look like the following:
-
 
 ```
 "**supportsMediaUpload**" : true , 

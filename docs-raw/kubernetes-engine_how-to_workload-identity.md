@@ -148,31 +148,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-- [ Enable Workload Identity Federation for GKE on clusters and node pools ](#enable_on_clusters_and_node_pools)
-
-- [ Migrate existing workloads to Workload Identity Federation for GKE ](#migrate_applications_to)
-
-- [ Configure applications to use Workload Identity Federation for GKE ](#authenticating_to)
-
-- [ Configure authorization and principals ](#configure-authz-principals)
-- [ Optional: Configure service mesh options ](#configure-service-mesh)
-- [ Verify the Workload Identity Federation for GKE setup ](#verify)
-- [ Alternative: link Kubernetes ServiceAccounts to IAM ](#kubernetes-sa-to-iam)
-
-- [ Use Workload Identity Federation for GKE from your code ](#using_from_your_code)
-- [ Use quota from a different project with Workload Identity Federation for GKE ](#quota-project)
-- [ Clean up ](#clean_up)
-
-- [ Revoke access ](#revoking_access)
-- [ Disable Workload Identity Federation for GKE ](#disabling_on_a_cluster)
-
-- [ Disable Workload Identity Federation for GKE in your organization ](#disabling_in_your_organization)
-- [ Troubleshooting ](#troubleshoot)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -310,11 +285,8 @@ using the gcloud CLI or the Google Cloud Dedicated console. Existing node pools
 are unaffected, but any new node pools in the cluster use Workload Identity Federation for GKE.
 
 
-[gcloud](#gcloud) [Console](#console) 
-More 
 
-
-
+### gcloud
 
 - 
 
@@ -370,6 +342,7 @@ the cluster control plane, such as `us-central1` or `us-central1-a`.
 
 
 
+### Console
 
 To enable Workload Identity Federation for GKE on an existing cluster, do the following:
 
@@ -410,7 +383,7 @@ You can only enable Workload Identity Federation for GKE on a node pool if Workl
 is enabled on the cluster.
 
 
-Best practice**:
+**Best practice**:
 
 Create new node pools if you also need to modify your
 applications to be compatible with Workload Identity Federation for GKE.
@@ -425,7 +398,7 @@ Workload Identity Federation for GKE enabled, run the following command:
 
 
 ```
-gcloud container node-pools create ** NODEPOOL_NAME \ 
+gcloud container node-pools create NODEPOOL_NAME \ 
 --cluster = CLUSTER_NAME \ 
 --location = CONTROL_PLANE_LOCATION \ 
 --workload-metadata = GKE_METADATA
@@ -447,7 +420,7 @@ The `--workload-metadata=GKE_METADATA` flag configures the node pool to use
 the GKE metadata server.
 
 
-Best practice**:
+**Best practice**:
 
 Include the flag
 so that node pool creation fails if Workload Identity Federation for GKE is not enabled on the
@@ -461,11 +434,8 @@ You can manually enable Workload Identity Federation for GKE on existing node po
 enable Workload Identity Federation for GKE on the cluster.
 
 
-[gcloud](#gcloud) [Console](#console) 
-**More 
 
-
-
+### gcloud
 
 - 
 
@@ -516,6 +486,7 @@ specific node pool by explicitly specifying
 
 
 
+### Console
 
 To modify an existing node pool to use Workload Identity Federation for GKE, perform the following
 steps:
@@ -830,7 +801,7 @@ This output shows that your Pod can access objects in the bucket.
 ### Alternative: link Kubernetes ServiceAccounts to IAM
 
 
-Best practice**:
+**Best practice**:
 
 
 Use IAM principal identifiers to configure
@@ -1054,11 +1025,8 @@ You can only disable Workload Identity Federation for GKE on Standard
 clusters.
 
 
-[gcloud](#gcloud) [Console](#console) 
-More 
 
-
-
+### gcloud
 
 - 
 
@@ -1118,6 +1086,7 @@ gcloud container clusters update CLUSTER_NAME \
 
 
 
+### Console
 
 - 
 

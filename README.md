@@ -90,7 +90,8 @@ gcd-claude-skill/
     quotas.md                           # Quota management, monitoring, CLI
     gotchas.md                          # Critical pitfalls and common mistakes
   scripts/
-    scrape-gcd-docs.py                  # Documentation scraper (Playwright)
+    scrape-gcd-docs.py                  # Documentation scraper (HTTP SSR + optional Playwright)
+    sync-skill.py                       # Synchronizes SKILL.md, references/, and README.md from scraped docs
   docs-raw/                             # Scraped Berlin (GCD) docs
     _manifest.json                      # Page inventory with metadata
     _last_updated.json                  # Per-page last-updated dates
@@ -102,32 +103,29 @@ gcd-claude-skill/
 
 ## Documentation coverage
 
-The skill's reference files are synthesized from scraped pages covering both sovereign cloud documentation sites.
+The skill's reference files are synthesized and automatically synchronized from scraped pages covering both sovereign cloud documentation sites (`/products`, `/release-notes`, `/docs/*`, and all product documentation hubs).
 
-### Berlin (GCD) - scraped from berlin.devsitetest.how
+### Reference files
 
-| Reference file | Pages covered | Content |
-|---|---|---|
-| `product-differences.md` | 122 | Per-product GCD vs GCP differences, plus GCD-specific product sub-pages (Compute, BigQuery, Storage, IAM, GKE, DNS, KMS, Logging, Monitoring, Pub/Sub, etc.) |
-| `terraform.md` | 32 | Provider config, state storage, resources, best practices |
-| `services.md` | 29 | Product landing pages and Technology Area categories |
-| `quotas.md` | 28 | Quota management, monitoring, gcloud CLI examples |
-| `authentication.md` | 21 | Workforce Identity Federation, ADC, tokens, client libraries |
-| `developer-guide.md` | 20 | gcloud CLI setup, client libraries, API endpoints, Discovery API |
-| `overview.md` | 6 | Architecture, universes, regions, zones, billing, support |
-| `organization-setup.md` | 5 | Org setup paths (minimal/basic/enterprise), IdP, Fabric FAST |
-| `key-differences.md` | 1 | Comprehensive top-level GCD vs GCP differences |
-| `gotchas.md` | -- | Synthesized from all sources |
-
-### S3NS (Cloud de Confiance) - scraped from documentation.s3ns.fr
-
-The S3NS region has a broader product catalog including additional networking products (VPC, Cloud NAT, Cloud VPN, Cloud Interconnect, Cloud Router, Cloud Load Balancing, Cloud NGFW, VPC Service Controls, Cloud Armor, Network Service Tiers) and tools (Cloud Code, Lakehouse, Cloud Billing, API Registry, Cloud Marketplace, Organization Policy, Service Directory). The scraped docs are in `docs-raw-s3ns/`.
+| Reference file | Content |
+|---|---|
+| `product-differences.md` | Per-product sovereign cloud vs GCP differences across all 38 product `tpc-differences` pages (Compute, BigQuery, Bigtable, Cloud Run, GKE, IAM, Secret Manager, Composer, Managed Spark, Filestore, Storage Transfer, Networking, etc.) |
+| `services.md` | Complete catalog of available and unavailable services by Technology Area, plus auto-synced documentation inventory |
+| `terraform.md` | Provider config, state storage, resources, best practices |
+| `quotas.md` | Quota management, monitoring, gcloud CLI examples |
+| `authentication.md` | Workforce Identity Federation, ADC, tokens, client libraries |
+| `developer-guide.md` | gcloud CLI setup, client libraries, API endpoints, Discovery API |
+| `overview.md` | Architecture, universes, regions, zones, billing, support |
+| `organization-setup.md` | Org setup paths (minimal/basic/enterprise), IdP, Fabric FAST |
+| `key-differences.md` | Comprehensive top-level sovereign cloud vs GCP differences |
+| `gotchas.md` | Synthesized from all sources |
 
 ### Technology Areas covered
 
 Every item in the sovereign cloud docs "Technology Areas" menu is covered:
 
 - Access and resource management
+- AI and ML (Agent Platform / BigQuery ML)
 - Application development
 - Application hosting
 - Compute
@@ -142,40 +140,60 @@ Every item in the sovereign cloud docs "Technology Areas" menu is covered:
 
 ### Per-product differences covered
 
-Each available service has its `tpc-differences` page plus region-specific sub-pages scraped and synthesized into `references/product-differences.md`:
+Each available service has its `tpc-differences` page plus region-specific sub-pages scraped and synchronized into `references/product-differences.md`:
 
-| Product | Pages | Includes |
-|---|---|---|
-| Access Context Manager | 8 | Landing, differences, access levels, policies |
-| API Keys | 5 | Landing, differences, quotas, REST reference |
-| Artifact Registry | 6 | Landing, differences, access control, quickstarts |
-| BigQuery | 15 | Landing, differences, bq CLI, quotas, quickstarts, data loading |
-| Compute Engine | 6 | Landing, differences, create VM, SSH, REST reference |
-| Cloud DNS | 8 | Landing, differences, zones, records, policies |
-| Cloud KMS | 8 | Landing, differences, key creation, import, retrieval |
-| Cloud Logging | 10 | Landing, differences, audit, buckets, queries, log writing |
-| Cloud Monitoring | 4 | Landing, differences, client libraries |
-| Cloud SQL | 3 | Landing, differences, release notes |
-| Google Kubernetes Engine | 9 | Landing, differences, cluster creation, workload identity |
-| IAM | 15 | Landing, differences, roles, service accounts, custom roles |
-| Pub/Sub | 11 | Landing, differences, topics, publishing, access control |
-| Resource Manager | 11 | Landing, differences, projects, folders, tags |
-| Service Usage | 9 | Landing, differences, enable/disable, setup |
-| Cloud Storage | 10 | Landing, differences, bucket creation, uploads, APIs |
+<!-- AUTO-SYNC:COVERAGE-TABLE:START -->
+Total scraped pages: **434** in `docs-raw/` (Berlin GCD) and **433** in `docs-raw-s3ns/` (S3NS Cloud de Confiance).
+
+| Product | Berlin Pages | S3NS Pages | S3NS SecNumCloud 3.2 | Includes |
+|---|---:|---:|---|---|
+| Access Context Manager | 8 | 8 | Qualifié SecNumCloud 3.2 | Landing, differences, access levels, policies |
+| Access Transparency | 7 | 7 | Qualification en cours | Landing, overview, logs, access approvals |
+| Agent Platform (Gemini Enterprise Agent Platform) | 7 | 7 | Qualification en cours | Landing, differences, Model Garden, online inference, open-weight models |
+| API Keys | 4 | 4 | — | Landing, API key restrictions, quotas, REST reference |
+| Artifact Registry | 6 | 6 | Qualifié SecNumCloud 3.2 | Landing, differences, Docker/Apt/Yum, access control, quickstarts |
+| BigQuery | 16 | 16 | Qualifié SecNumCloud 3.2 | Landing, differences, bq CLI, quotas, quickstarts, data loading, reservations |
+| Bigtable | 14 | 14 | Qualification en cours | Landing, differences, instances, replication, backups, CMEK, change streams |
+| Cloud Armor | 3 | 3 | Qualifié SecNumCloud 3.2 | Landing, differences, security policies, WAF rules, rate limiting |
+| Cloud Billing | 8 | 8 | — | Landing, differences, BigQuery billing export, access control |
+| Cloud DNS | 8 | 8 | Qualifié SecNumCloud 3.2 | Landing, differences, private zones, records, forwarding, peering |
+| Cloud Interconnect | 2 | 2 | Qualifié SecNumCloud 3.2 | Landing, differences, Dedicated & Partner Interconnect, MACsec |
+| Cloud KMS | 8 | 8 | Qualifié SecNumCloud 3.2 | Landing, differences, software keys, EKM, CMEK, key import |
+| Cloud Load Balancing | 3 | 3 | Qualifié SecNumCloud 3.2 | Landing, differences, regional Application & Network Load Balancers |
+| Cloud Logging | 10 | 10 | Qualifié SecNumCloud 3.2 | Landing, differences, audit logs, log buckets, sinks, queries |
+| Cloud Monitoring | 4 | 4 | Qualifié SecNumCloud 3.2 | Landing, differences, PromQL, Prometheus export, client libraries |
+| Cloud NAT | 3 | 3 | Qualifié SecNumCloud 3.2 | Landing, differences, Public NAT, GCE/GKE configuration |
+| Cloud NGFW | 3 | 3 | — | Landing, differences, firewall rules, hierarchical & network policies |
+| Cloud Quotas | 29 | 29 | Qualification en cours | Landing, differences, quota viewing, adjustment requests, REST API |
+| Cloud Router | 2 | 2 | Qualifié SecNumCloud 3.2 | Landing, differences, regional dynamic BGP routing |
+| Cloud Run | 14 | 14 | Qualification en cours | Landing, differences, container services & jobs, Direct VPC egress |
+| Cloud SQL | 3 | 3 | Qualifié SecNumCloud 3.2 | Landing, differences, MySQL & PostgreSQL Enterprise Plus, C3 series |
+| Cloud Storage | 10 | 10 | Qualifié SecNumCloud 3.2 | Landing, differences, single-region buckets, uploads, FUSE, HMAC |
+| Cloud VPN | 2 | 2 | Qualifié SecNumCloud 3.2 | Landing, differences, HA VPN topologies and tunnels |
+| Compute Engine | 9 | 9 | Qualifié SecNumCloud 3.2 | Landing, differences, C3/M3/A3 VMs, Hyperdisk, Shielded VM, OS images |
+| Container-Optimized OS | 3 | 3 | — | Landing, differences, H100 GPU drivers, release notes |
+| Filestore | 16 | 16 | Qualification en cours | Landing, differences, Regional tier NFS, Direct Peering, GKE CSI |
+| Google Kubernetes Engine (GKE) | 9 | 9 | Qualifié SecNumCloud 3.2 | Landing, differences, Autopilot clusters, Workload Identity, Storage FUSE |
+| IAM | 18 | 18 | Qualifié SecNumCloud 3.2 | Landing, differences, Workforce/Workload Identity, service accounts, custom roles |
+| Managed Airflow (Cloud Composer 3) | 18 | 18 | Qualification en cours | Landing, differences, Composer 3 HA environments, DAGs, plugins |
+| Managed Service for Apache Spark (Dataproc) | 10 | 10 | Qualification en cours | Landing, differences, GCE Spark clusters (image 2.3+), jobs, CMEK |
+| Network Service Tiers | 3 | 3 | — | Landing, differences, Premium Tier overview |
+| Organization Policy | 3 | 3 | Qualifié SecNumCloud 3.2 | Landing, differences, managed & custom constraints |
+| Pub/Sub | 11 | 11 | Qualifié SecNumCloud 3.2 | Landing, differences, topics, push/pull subscriptions, IAM |
+| Resource Manager | 11 | 11 | Qualifié SecNumCloud 3.2 | Landing, differences, organizations, folders, projects, tags |
+| Secret Manager | 10 | 10 | Qualification en cours | Landing, differences, global & regional secrets, v1 API, CMEK |
+| Service Usage | 9 | 9 | Qualifié SecNumCloud 3.2 | Landing, differences, enabling/disabling services, REST reference |
+| Storage Transfer Service | 7 | 7 | Qualification en cours | Landing, differences, GCS transfers, agent-based S3 transfers |
+| Terraform | 32 | 32 | — | Landing, differences, provider universe_domain, GCS state backend |
+| VPC | 7 | 7 | Qualifié SecNumCloud 3.2 | Landing, differences, subnets, Private Google Access, Private Service Connect |
+| VPC Service Controls | 3 | 3 | — | Landing, differences, service perimeters, ingress/egress rules |
+<!-- AUTO-SYNC:COVERAGE-TABLE:END -->
 
 ## Updating the docs
 
-The scraper uses Playwright to render JS-heavy DevSite pages and tracks last-updated dates for each page. It supports scraping both regions independently.
+The scraper uses parallel HTTP SSR requests (with automatic product discovery from `/products`, `/release-notes`, and `/docs/*` Technology Area hubs) and tracks last-updated dates for each page. An optional `--use-playwright` flag is available if headless browser rendering is needed.
 
-### Prerequisites
-
-```bash
-uv venv && source .venv/bin/activate
-uv pip install playwright
-playwright install chromium
-```
-
-### Run the scraper
+### Run the scraper and synchronize the skill
 
 ```bash
 # Scrape Berlin only (default)
@@ -186,11 +204,12 @@ python3 scripts/scrape-gcd-docs.py --region s3ns
 
 # Scrape both regions
 python3 scripts/scrape-gcd-docs.py --region all
+
+# Synchronize SKILL.md, references/services.md, references/product-differences.md, and README.md
+python3 scripts/sync-skill.py
 ```
 
-Each region's docs are scraped into their respective output directory (`docs-raw/` for Berlin, `docs-raw-s3ns/` for S3NS). Compare `_last_updated.json` against a previous run to identify which pages changed.
-
-After scraping, the reference files in `references/` should be regenerated to incorporate any documentation updates.
+Each region's docs are scraped into their respective output directory (`docs-raw/` for Berlin, `docs-raw-s3ns/` for S3NS). Running `python3 scripts/sync-skill.py` parses both regions' manifests and `*_tpc-differences.md` pages, automatically updating product inventories, coverage tables, and injecting new product difference sections whenever new services are added to the documentation.
 
 ## License
 

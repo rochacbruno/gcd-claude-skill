@@ -113,20 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Locations, availability, and disaster recovery ](#availability-differences)
-- [ Integrations ](#integrations-differences)
-- [ Security and access control ](#security-differences)
-- [ Network ](#network-differences)
-- [ Workflows and tools ](#workflow-differences)
-- [ Insights and observability ](#observability-differences)
-- [ Other differences ](#other-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -149,7 +135,7 @@ Cloud Storage documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 

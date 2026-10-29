@@ -128,15 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ September 28, 2026 ](#September_28_2026)
-- [ April 30, 2026 ](#April_30_2026)
-- [ June 26, 2024 ](#June_26_2024)
-- [ June 25, 2024 ](#June_25_2024)
-- [ June 24, 2024 ](#June_24_2024)
-- [ June 13, 2024 ](#June_13_2024)
-- 
-
 
 
 

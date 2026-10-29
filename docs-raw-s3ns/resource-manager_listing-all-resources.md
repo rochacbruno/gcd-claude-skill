@@ -128,19 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ List all resource nodes ](#list_all_resource_nodes)
-
-- [ Example to list all resource nodes ](#example_to_list_all_resource_nodes)
-
-- [ Reduce latency on gcloud projects list ](#reduce_latency_on_gcloud_projects_list)
-
-- [ Exclude Apps Script projects example ](#exclude_apps_script_projects_example)
-
-- [ Search resources ](#search_resources)
-- [ Troubleshooting omitted resources ](#troubleshooting_omitted_resources)
-- 
-
 
 
 

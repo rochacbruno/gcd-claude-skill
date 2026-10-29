@@ -93,14 +93,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -125,7 +117,7 @@ Cloud Quotas documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -173,7 +165,7 @@ value that you would like to increase:
 
 
 
-- Project name or number**: for example, `my-project`
+- **Project name or number**: for example, `my-project`
 
 - **Service name**: for example, `compute.googleapis.com`
 

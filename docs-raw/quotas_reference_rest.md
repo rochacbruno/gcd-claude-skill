@@ -108,20 +108,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: cloudquotas.googleapis.com ](#service:-cloudquotas.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v1.folders.locations.quotaPreferences ](#rest-resource:-v1.folders.locations.quotapreferences)
-- [ REST Resource: v1.folders.locations.services.quotaInfos ](#rest-resource:-v1.folders.locations.services.quotainfos)
-- [ REST Resource: v1.organizations.locations.quotaPreferences ](#rest-resource:-v1.organizations.locations.quotapreferences)
-- [ REST Resource: v1.organizations.locations.services.quotaInfos ](#rest-resource:-v1.organizations.locations.services.quotainfos)
-- [ REST Resource: v1.projects.locations.quotaPreferences ](#rest-resource:-v1.projects.locations.quotapreferences)
-- [ REST Resource: v1.projects.locations.services.quotaInfos ](#rest-resource:-v1.projects.locations.services.quotainfos)
-- 
-
 
 
 
@@ -155,7 +141,7 @@ Cloud Quotas API provides GCP service consumers with management and observabilit
 
 
 
-## Service: cloudquotas. googleapis. com 
+## Service: cloudquotas.googleapis.com
 
 
 
@@ -163,7 +149,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -194,7 +180,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 
-## REST Resource: [v1. folders. locations. quota Preferences](/docs/quotas/reference/rest/v1/folders.locations.quotaPreferences)
+## REST Resource: [v1.folders.locations.quotaPreferences](/docs/quotas/reference/rest/v1/folders.locations.quotaPreferences)
 
 
 
@@ -214,7 +200,7 @@ Methods |
 
 `[create](/docs/quotas/reference/rest/v1/folders.locations.quotaPreferences/create)` | 
 
-`POST / v1/ {parent=folders/ */ locations/ *}/ quota Preferences` 
+`POST /v1/{parent=folders/*/locations/*}/quotaPreferences` 
 
 Creates a new QuotaPreference that declares the desired value for a quota. | 
 |
@@ -223,7 +209,7 @@ Creates a new QuotaPreference that declares the desired value for a quota. |
 
 `[get](/docs/quotas/reference/rest/v1/folders.locations.quotaPreferences/get)` | 
 
-`GET / v1/ {name=folders/ */ locations/ */ quota Preferences/ *}` 
+`GET /v1/{name=folders/*/locations/*/quotaPreferences/*}` 
 
 Gets details of a single QuotaPreference. | 
 |
@@ -232,7 +218,7 @@ Gets details of a single QuotaPreference. |
 
 `[list](/docs/quotas/reference/rest/v1/folders.locations.quotaPreferences/list)` | 
 
-`GET / v1/ {parent=folders/ */ locations/ *}/ quota Preferences` 
+`GET /v1/{parent=folders/*/locations/*}/quotaPreferences` 
 
 Lists QuotaPreferences in a given project, folder or organization. | 
 |
@@ -241,7 +227,7 @@ Lists QuotaPreferences in a given project, folder or organization. |
 
 `[patch](/docs/quotas/reference/rest/v1/folders.locations.quotaPreferences/patch)` | 
 
-`PATCH / v1/ {quota Preference. name=folders/ */ locations/ */ quota Preferences/ *}` 
+`PATCH /v1/{quotaPreference.name=folders/*/locations/*/quotaPreferences/*}` 
 
 Updates the parameters of a single QuotaPreference. | 
 |

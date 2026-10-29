@@ -148,20 +148,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-- [ Types of credentials ](#types_of_credentials)
-
-- [ gcloud CLI credentials ](#user-creds)
-- [ Application Default Credentials ](#rest-request)
-- [ Impersonated service account ](#impersonated-sa)
-- [ Metadata server ](#metadata-server)
-- [ API keys ](#api-keys)
-
-- [ Set the quota project with a REST request ](#set-billing-project)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -176,7 +162,7 @@ API.
 For information about how to authenticate when you use Google client libraries,
 see [Authenticate using client libraries](/docs/authentication/client-libraries).
 
-## Before you begin 
+## Before you begin
 
 To run the samples on this page, complete the following steps:
 
@@ -251,8 +237,7 @@ Enable the Cloud Resource Manager and Identity and Access Management (IAM) APIs,
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -362,12 +347,9 @@ make the following replacements:
 To send your request, choose one of these options:
 
 
-[curl](#curl) [PowerShell](#powershell) 
-More 
 
 
-
-
+#### curl
 
 
 
@@ -420,6 +402,7 @@ curl -X GET \
 
 
 
+#### PowerShell
 
 
 
@@ -544,12 +527,9 @@ make the following replacements:
 To send your request, choose one of these options:
 
 
-[curl](#curl) [PowerShell](#powershell) 
-More 
 
 
-
-
+#### curl
 
 
 
@@ -602,6 +582,7 @@ curl -X GET \
 
 
 
+#### PowerShell
 
 
 
@@ -715,11 +696,8 @@ The privilege-bearing service account must have the permissions required
 to make the API method call.
 
 
-[ gcloud ](#gcloud) [ Short-lived token ](#short-lived-token) 
-More 
 
-
-
+### gcloud
 
 - Use the
 [`gcloud auth print-access-token` command](/sdk/gcloud/reference/auth/print-access-token)
@@ -755,6 +733,7 @@ curl -X GET \
 ```
 
 
+### Short-lived token
 
 To generate a short-lived token by using service account impersonation,
 follow the instructions provided in
@@ -891,12 +870,9 @@ Request JSON body:
 To send your request, choose one of these options:
 
 
-[curl](#curl) [PowerShell](#powershell) 
-More 
 
 
-
-
+#### curl
 
 
 
@@ -959,6 +935,7 @@ curl -X POST \
 
 
 
+#### PowerShell
 
 
 

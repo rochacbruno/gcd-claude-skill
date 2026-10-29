@@ -126,24 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Required roles ](#required-roles)
-
-- [ Setting up a local shell ](#local-shell)
-
-- [ Create a Docker repository ](#create)
-- [ Configure authentication ](#auth)
-- [ Obtain an image to push ](#get-image)
-- [ Add the image to the repository ](#add-image)
-
-- [ Tag the image with a registry name ](#tag)
-- [ Push the image to Artifact Registry ](#push)
-
-- [ Pull the image from Artifact Registry ](#pull)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -153,8 +135,7 @@ Guides
 
 
 
-
-# Store Docker container images in Artifact Registry 
+# Store Docker container images in Artifact Registry
 
 
 
@@ -176,7 +157,7 @@ This quickstart shows you how to:
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -211,8 +192,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -288,7 +269,6 @@ Enable the Artifact Registry API, if it is not already enabled.
 
 **Roles required to enable APIs**
 
-
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
 Owner role (`roles/owner`). Otherwise, you can get this permission through the
@@ -321,8 +301,8 @@ Artifact Registry Administrator
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -360,8 +340,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 
@@ -526,11 +506,8 @@ the Docker security group. This step is not required on macOS since
 virtual machine as the root user.
 
 
-[Linux](#linux) [Windows](#windows) 
-More 
 
-
-
+### Linux
 
 The Docker security group is called `docker`.
 To add your username, run the following command:
@@ -541,6 +518,7 @@ sudo usermod -a -G docker ${ USER }
 ```
 
 
+### Windows
 
 The Docker security group is called `docker-users`.
 To add a user from the Administrator command prompt, run the following
@@ -585,11 +563,8 @@ The `--rm` flag deletes the container instance on exit.
 Create a Docker repository to store the sample image for this quickstart.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -624,6 +599,7 @@ Click **Create**.
 The repository is added to the repository list.
 
 
+### gcloud
 
 - 
 
@@ -809,11 +785,8 @@ are available in another location.
 To delete the repository:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -833,6 +806,7 @@ Click **Delete**.
 
 
 
+### gcloud
 
 To delete the `quickstart-docker-repo` repository, run the following
 command:

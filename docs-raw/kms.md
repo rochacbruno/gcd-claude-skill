@@ -120,11 +120,12 @@ Cloud KMS
 
 
 
-# Cloud Key Management Service documentation 
+
+# Cloud Key Management Service documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/kms/docs/key-management-service)
+Read product documentation 
 
 
 

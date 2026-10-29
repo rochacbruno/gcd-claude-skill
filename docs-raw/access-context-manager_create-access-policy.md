@@ -128,13 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before-you-begin)
-- [ Create an organization-level access policy ](#organization-access-policy)
-- [ Create a scoped access policy and delegate the policy ](#scoped-access-policy)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -147,7 +140,7 @@ Guides
 This page describes how to create an organization-level access policy for your
 organization and scoped policies for the folders and projects in your organization.
 
-## Before you begin 
+## Before you begin
 
 - Ensure you have the [correct permissions](/access-context-manager/docs/access-control)
 to use Access Context Manager.
@@ -158,16 +151,14 @@ For an organization, you cannot create an organization-level access policy if an
 organization-level access policy exists for that organization.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 When you [create an access level](/access-context-manager/docs/create-basic-access-level), a default access policy
 is created automatically. No additional manual steps are required.
 
 
+### gcloud
 
 To create an organization-level access policy, use the [`create`](/sdk/gcloud/reference/access-context-manager/policies/create)
 command.
@@ -204,6 +195,7 @@ Created.
 Next, [set your default policy](/access-context-manager/docs/manage-access-policy#set-default).
 
 
+### API
 
 To create an organization-level access policy:
 
@@ -255,11 +247,8 @@ You must continue to use organization-level policies for Google Cloud Dedicated 
 services, such as Identity-Aware Proxy (IAP).
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -371,6 +360,7 @@ On the **Create access policy** page, click **Create access policy**.
 
 
 
+### gcloud
 
 To create a scoped access policy, use the [`gcloud access-context-manager policies create`](/sdk/gcloud/reference/access-context-manager/policies/create)
 command.
@@ -445,6 +435,7 @@ or the role ID for a custom role, such as
 
 
 
+### API
 
 To create a scoped access policy, do the following:
 
@@ -524,7 +515,7 @@ calling [`accessPolicies.setIamPolicy`](/access-context-manager/docs/reference/r
 
 When the operation completes, the response body contains the
 [`accessPolicy`](/access-context-manager/docs/reference/rest/v1/accessPolicies).
-The `name` field contains the resource name: `accessPolicy`/`POLICY_ID` 
+The `name` field contains the resource name: `accessPolicy`/ `POLICY_ID` 
 
 - To set the IAM policy, use the following endpoint:
 

@@ -129,8 +129,9 @@ Developer tools
 
 
 
-### Google Cloud SDK, client libraries, and languages
 
+
+### Google Cloud SDK, client libraries, and languages
 
 
 
@@ -243,7 +244,7 @@ Manage Cloud de Confiance resources programmatically.
 
 
 #### [
-C# and . NET
+C# and .NET
 ](/dotnet/docs)
 
 
@@ -351,7 +352,7 @@ Learn how to use Cloud de Confiance product libraries and frameworks to build an
 
 
 #### [
-JavaScript and Node. js
+JavaScript and Node.js
 ](/nodejs/docs)
 
 
@@ -485,8 +486,8 @@ Learn how to use Cloud de Confiance product libraries and frameworks to build an
 
 
 
-### Frameworks and tools
 
+### Frameworks and tools
 
 
 
@@ -657,8 +658,8 @@ Learn to use Terraform to reliably provision infrastructure on Cloud de Confianc
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

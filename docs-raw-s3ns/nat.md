@@ -120,11 +120,12 @@ Cloud NAT
 
 
 
-# Cloud NAT documentation 
+
+# Cloud NAT documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/nat/docs/overview)
+Read product documentation 
 
 
 

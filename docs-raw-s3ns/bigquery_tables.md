@@ -126,40 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required_permissions)
-
-- [ Table naming ](#table_naming)
-- [ Create tables ](#create-table)
-
-- [ Create an empty table with a schema definition ](#create_an_empty_table_with_a_schema_definition)
-- [ Create an empty table without a schema definition ](#create_an_empty_table_without_a_schema_definition)
-- [ Create a table from a query result ](#create_a_table_from_a_query_result)
-- [ Create a table that references an external data source ](#create_a_table_that_references_an_external_data_source)
-- [ Create a table when you load data ](#create_a_table_when_you_load_data)
-- [ Create a multimodal table ](#create_a_multimodal_table)
-
-- [ Control access to tables ](#table-acl)
-- [ Get information about tables ](#get_information_about_tables)
-
-- [ Required permissions ](#required_permissions)
-- [ Get table information ](#get_table_information)
-- [ Get table information using INFORMATION_SCHEMA ](#get_table_information_using_information_schema)
-
-- [ Troubleshooting ](#troubleshooting)
-
-- [ List tables in a dataset ](#list_tables_in_a_dataset)
-
-- [ Audit table history ](#audit_table_history)
-
-- [ Required permissions ](#required_permissions_3)
-- [ Get audit data ](#get_audit_data)
-
-- [ Table security ](#table_security)
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -168,8 +134,7 @@ Guides
 
 
 
-
-# Create and use tables 
+# Create and use tables
 
 
 
@@ -186,12 +151,12 @@ To create other table types, see
 table properties, copy tables, or delete tables, see
 [Manage tables](/bigquery/docs/managing-tables).
 
-## Before you begin 
+## Before you begin
 
 Grant Identity and Access Management (IAM) roles that give users the necessary permissions to
 perform each task in this document.
 
-### Required roles 
+### Required roles
 
 
 
@@ -360,8 +325,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -499,15 +464,12 @@ to it.
 To create an empty table with a schema definition:
 
 
-[ Console ](#console) [ SQL ](#sql) [ bq ](#bq) [Terraform](#terraform) [ API ](#api) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) 
-More 
 
-[ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-
+### Console
 
 - 
 
-In the Cloud de Confiance console, go to the BigQuery** page.
+In the Cloud de Confiance console, go to the **BigQuery** page.
 
 
 
@@ -588,6 +550,7 @@ by using a Google Cloud-powered encryption key.
 
 
 
+### SQL
 
 The following example creates a table named `newtable` that expires on
 January 1, 2023:
@@ -623,6 +586,7 @@ Click play_circle **Run**.
 For more information about how to run queries, see [Run an interactive query](/bigquery/docs/running-queries#queries).
 
 
+### bq
 
 - 
 
@@ -704,7 +668,7 @@ enter the following:
 ```
 [bq mk](/bigquery/docs/reference/bq-cli-reference#bq_mk) \ 
 --table \ 
---expiration = ** INTEGER \ 
+--expiration = INTEGER \ 
 --description = DESCRIPTION \ 
 --label = KEY_1:VALUE_1 \ 
 --label = KEY_2:VALUE_2 \ 
@@ -817,6 +781,7 @@ the table's expiration, description, and labels. You can also
 
 
 
+### Terraform
 
 Use the
 [`google_bigquery_table`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/bigquery_table)
@@ -1100,11 +1065,13 @@ that Terraform has created or updated them.
 
 
 
+### API
 
 Call the [`tables.insert`](/bigquery/docs/reference/rest/v2/tables/insert)
 method with a defined [table resource](/bigquery/docs/reference/rest/v2/tables).
 
 
+### C#
 
 
 
@@ -1231,6 +1198,7 @@ return dataset . CreateTable ( tableId : "your_table_id" , schema : schema );
 
 
 
+### Go
 
 
 
@@ -1371,6 +1339,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -1517,6 +1486,7 @@ System . out . println ( "Table was not created. \n" + e . toString ());
 
 
 
+### Node.js
 
 
 
@@ -1649,6 +1619,7 @@ console . log ( `Table ${ table . id } created.` );
 
 
 
+### PHP
 
 
 
@@ -1778,6 +1749,7 @@ printf('Created table %s' . PHP_EOL, $tableId);
 
 
 
+### Python
 
 
 
@@ -1901,6 +1873,7 @@ print (
 
 
 
+### Ruby
 
 
 
@@ -2048,12 +2021,10 @@ end
 
 
 
-[ Java ](#java) 
-More 
 
 
 
-
+### Java 
 
 
 
@@ -2178,11 +2149,8 @@ System . out . println ( "Table was not created. \n" + e . toString ());
 To create a table from a query result, write the results to a destination table.
 
 
-[ Console ](#console) [ SQL ](#sql) [ bq ](#bq) [ API ](#api) [ Go ](#go) [Java](#java) [ Node.js ](#node.js) [Python](#python) 
-More 
 
-
-
+### Console
 
 
 
@@ -2287,7 +2255,7 @@ button above the editor.
 
 
 
-
+### SQL
 
 The following example uses the
 [`CREATE TABLE` statement](/bigquery/docs/reference/standard-sql/data-definition-language#create_table_statement)
@@ -2327,6 +2295,7 @@ For more information, see
 [Creating a new table from an existing table](/bigquery/docs/reference/standard-sql/data-definition-language#creating_a_new_table_from_an_existing_table).
 
 
+### bq
 
 
 
@@ -2543,7 +2512,7 @@ Waiting on bqjob_r123abc456_000001234567_1 ... (2s) Current status: DONE
 
 
 
-
+### API
 
 
 
@@ -2584,7 +2553,7 @@ property in the `jobReference` section of the [job resource](/bigquery/docs/refe
 
 
 
-
+### Go
 
 
 
@@ -2731,6 +2700,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -2877,6 +2847,7 @@ System . out . println ( "Saved query did not run \n" + e . toString ());
 
 
 
+### Node.js
 
 
 
@@ -3019,6 +2990,7 @@ console . log ( `Query results loaded to table ${ destinationTable . id } ` );
 
 
 
+### Python
 
 
 
@@ -3305,11 +3277,8 @@ BigQuery, see [Access control](/bigquery/access-control).
 To get information about tables:
 
 
-[ Console ](#console) [ bq ](#bq) [ API ](#api) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3337,6 +3306,7 @@ definition.
 
 
 
+### bq
 
 - 
 
@@ -3427,11 +3397,13 @@ default project.
 
 
 
+### API
 
 Call the [`tables.get`](/bigquery/docs/reference/rest/v2/tables/get)
 method and provide any relevant parameters.
 
 
+### Go
 
 
 
@@ -3567,6 +3539,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -3702,6 +3675,7 @@ System . out . println ( "Table not retrieved. \n" + e . toString ());
 
 
 
+### Node.js
 
 
 
@@ -3828,6 +3802,7 @@ getTable ();
 
 
 
+### PHP
 
 
 
@@ -3944,6 +3919,7 @@ $table = $dataset->table($tableId);
 
 
 
+### Python
 
 
 
@@ -6750,11 +6726,8 @@ BigQuery, see [Access control](/bigquery/access-control).
 To list the tables in a dataset:
 
 
-[ Console ](#console) [ bq ](#bq) [ API ](#api) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -6768,6 +6741,7 @@ views are identified by different icons.
 
 
 
+### bq
 
 - 
 
@@ -6848,7 +6822,6 @@ Examples:
 Enter the following command to list tables in dataset `mydataset` in your
 default project.
 
-
 ```
 [bq ls](/bigquery/docs/reference/bq-cli-reference#bq_ls) --format = pretty mydataset
 ```
@@ -6856,7 +6829,6 @@ default project.
 
 Enter the following command to return more than the default output of 50
 tables from `mydataset`. `mydataset` is in your default project.
-
 
 ```
 [bq ls](/bigquery/docs/reference/bq-cli-reference#bq_ls) --format = pretty --max_results 60 mydataset
@@ -6866,7 +6838,6 @@ tables from `mydataset`. `mydataset` is in your default project.
 Enter the following command to list tables in dataset `mydataset` in
 `myotherproject`.
 
-
 ```
 [bq ls](/bigquery/docs/reference/bq-cli-reference#bq_ls) --format = pretty myotherproject:mydataset
 ```
@@ -6874,11 +6845,13 @@ Enter the following command to list tables in dataset `mydataset` in
 
 
 
+### API
 
 To list tables using the API, call the [`tables.list`](/bigquery/docs/reference/rest/v2/tables/list)
 method.
 
 
+### C#
 
 
 
@@ -7014,6 +6987,7 @@ Console . WriteLine ( $"{datasetId} does not contain any tables." );
 
 
 
+### Go
 
 
 
@@ -7151,6 +7125,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -7289,6 +7264,7 @@ System . out . println ( "Tables were not listed. Error occurred: " + e . toStri
 
 
 
+### Node.js
 
 
 
@@ -7412,6 +7388,7 @@ tables . forEach ( table = > console . log ( table . id ));
 
 
 
+### PHP
 
 
 
@@ -7530,6 +7507,7 @@ print($table->id() . PHP_EOL);
 
 
 
+### Python
 
 
 
@@ -7649,6 +7627,7 @@ print ( " {} . {} . {} " . format ( table . project , table . dataset_id , table
 
 
 
+### Ruby
 
 
 
@@ -7787,7 +7766,7 @@ filter shown in the following example can be used regardless of method used.
 
 - 
 
-In the Cloud de Confiance console, go to the Logging** page.
+In the Cloud de Confiance console, go to the **Logging** page.
 
 [Go to Logging](https://console.cloud.s3nscloud.fr/logs)
 

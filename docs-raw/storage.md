@@ -120,11 +120,12 @@ Cloud Storage
 
 
 
-# Cloud Storage documentation 
+
+# Cloud Storage documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/storage/docs/introduction)
+Read product documentation 
 
 
 

@@ -128,30 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-- [ Build queries ](#building-queries)
-- [ Search for text across log fields ](#search-text)
-
-- [ Boolean operators and the search field ](#boolean-operators)
-
-- [ Construct queries with filter menus ](#query-builder-menus)
-- [ View logs by time range ](#queries-with-time-restriction)
-
-- [ Use the time-range selector ](#time-range)
-- [ Include a timestamp expression in the query-editor field ](#timestamp-expression)
-
-- [ Write advanced queries using the Logging query language ](#queries-by-expression)
-- [ Use recent queries ](#recent-queries)
-- [ Save and share queries ](#saved-queries)
-
-- [ View saved queries ](#view-shared)
-
-- [ Use suggested queries ](#suggested_queries)
-- [ Select queries from the library ](#library-queries)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -170,7 +146,7 @@ You can also save your queries in the Logs Explorer page, or by using the
 Logging API method
 [`savedQueries.create`](/logging/docs/reference/v2/rest/v2/projects.locations.savedQueries/create).
 
-## Before you begin 
+## Before you begin
 
 The Logs Viewer role (`roles/logging.viewer`) provides access to view logs.
 For example, when granted this role, you can write and run queries. You can also
@@ -311,7 +287,7 @@ To build queries by using the Google Cloud Dedicated console, do the following:
 
 In the Google Cloud Dedicated console, go to the
 segment 
-Logs Explorer** page:
+**Logs Explorer** page:
 
 
 [Go to **Logs Explorer**](https://console.cloud.berlin-build0.goog/logs/query)
@@ -676,11 +652,8 @@ a query, the query is no longer owned by you, and any member in the project
 with the necessary permissions can access the query.
 
 
-[ Console ](#console) [ API ](#api) 
-**More 
 
-
-
+### Console
 
 To save a query expression that you've built in the query-editor field, do the
 following:
@@ -731,6 +704,7 @@ You can also sort and filter your saved queries; the filter matches the text
 in your query expression.
 
 
+### API
 
 To save a query by using the Logging API, use the
 `savedQueries.create` method. For more information about this method, its
@@ -771,17 +745,14 @@ in the Google Cloud Dedicated project by clicking the *menu_book* **Query
 library** button:
 
 
-[ Console ](#console) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
 In the Google Cloud Dedicated console, go to the
 segment 
-Logs Explorer** page:
+**Logs Explorer** page:
 
 
 [Go to **Logs Explorer**](https://console.cloud.berlin-build0.goog/logs/query)
@@ -809,6 +780,7 @@ Google Cloud Dedicated project.
 
 
 
+### API
 
 You can use the Logging API to view private and shared
 queries by using the

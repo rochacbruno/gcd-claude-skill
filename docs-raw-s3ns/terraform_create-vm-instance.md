@@ -31,15 +31,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Prepare the environment ](#prepare-environment)
-- [ Review the Terraform files ](#review-files)
-- [ Create the Compute Engine VM instance ](#create-instance)
-- [ Connect to the VM instance ](#connect-instance)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -49,8 +40,7 @@ Guides
 
 
 
-
-# Quickstart: Create a VM instance using Terraform 
+# Quickstart: Create a VM instance using Terraform
 
 
 
@@ -67,7 +57,7 @@ manage Cloud de Confiance infrastructure.
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -77,16 +67,6 @@ To use an online terminal with the gcloud CLI already set up,
 activate Cloud Shell:
 
 
-
-
-
-
-
-
-
-
-
-Activate Cloud Shell on this page 
 
 At the bottom of this page, a Cloud Shell session starts and
 displays a command-line prompt. It can take a few seconds for the session to
@@ -109,8 +89,8 @@ To install the Terraform CLI, follow the
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -146,7 +126,7 @@ Create a Cloud de Confiance project:
 
 
 ```
-gcloud projects create ** PROJECT_ID 
+gcloud projects create PROJECT_ID 
 ```
 
 
@@ -195,8 +175,7 @@ Enable the Compute Engine API, if it is not already enabled:
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the

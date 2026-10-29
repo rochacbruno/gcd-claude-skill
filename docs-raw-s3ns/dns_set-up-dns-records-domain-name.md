@@ -126,16 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Requirements ](#requirements)
-- [ Before you begin ](#before-you-begin)
-- [ Create a managed public zone in Cloud DNS ](#create-managed-public-zone)
-- [ Create a record to point the domain to an external IP address ](#create_a_record_to_point_the_domain_to_an_external_ip_address)
-- [ Create a CNAME record for the www subdomain ](#create-cname-subdomain)
-- [ Update your domain name servers to publish your domain ](#update-domain-name-servers)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -145,8 +135,7 @@ Guides
 
 
 
-
-# Quickstart: Set up DNS records for a domain name with Cloud DNS 
+# Quickstart: Set up DNS records for a domain name with Cloud DNS
 
 
 
@@ -223,8 +212,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -301,8 +290,8 @@ Service Usage Admin, DNS Administrator
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -340,8 +329,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 
@@ -423,7 +412,6 @@ Enable the DNS API, if it is not already enabled.
 
 
 **Roles required to enable APIs**
-
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the

@@ -141,20 +141,12 @@ Guides
 
 
 
-# Introduction to AI/ ML workloads on GKE 
+# Introduction to AI/ML workloads on GKE 
 
 
 
 
 
-
-- On this page ** 
-- [ Get started with AI/ML workloads on GKE ](#get-started)
-- [ Common use cases ](#common_use_cases)
-- [ Choose the right platform for your AI/ML workload ](#choose_the_right_platform_for_your_aiml_workload)
-- [ How GKE powers AI/ML workloads ](#how_powers_aiml_workloads)
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -224,7 +216,7 @@ scalable, automated, managed Kubernetes solution to run AI/ML workloads. To
 learn more about common roles, see
 [Common GKE user roles and tasks](/kubernetes-engine/enterprise/docs/concepts/roles-tasks).
 
-## Get started with AI/ ML workloads on GKE
+## Get started with AI/ML workloads on GKE
 
 You can start exploring GKE in minutes by using GKE's
 [free tier](https://documentation.s3ns.fr/kubernetes-engine/pricing#cluster_management_fee_and_free_tier),
@@ -269,7 +261,7 @@ platform depends on your specific needs for control, flexibility, and level of
 management.
 
 
-Best practice**:
+**Best practice**:
 
 Choose GKE when you need deep control, portability, and the
 ability to build a customized, high-performance AI platform.

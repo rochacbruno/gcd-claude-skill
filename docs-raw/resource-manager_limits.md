@@ -128,11 +128,6 @@ Resources
 
 
 
-- On this page ** 
-- [ Project limits ](#project-limits)
-- [ Tag limits ](#tag-limits)
-- [ Folder limits ](#folder-limits)
-- 
 
 
 
@@ -142,10 +137,7 @@ Resources
 
 
 
-
-## 
-Project limits
-
+## Project limits
 
 The number of projects any user or service account can create is limited. If you create a project
 outside an organization, the quota on your account is used. If you are creating a project within
@@ -231,7 +223,7 @@ Up to 240 requests |
 | 
 Write operations | 
 Includes updating projects, tags, and other resources,
-with the exception of moving or creating folders. The `Create Project` operation
+with the exception of moving or creating folders. The `CreateProject` operation
 costs 10 requests per second. | 
 Up to 10 requests | 
 Up to 600 requests | 
@@ -264,7 +256,7 @@ for your project, then create one.
 API library](https://console.cloud.berlin-build0.goog/apis/enabled) in the Google Cloud Dedicated console, and select an API from the
 list.
 
-- To view and change quota-related settings, select Quotas**. To view
+- To view and change quota-related settings, select **Quotas**. To view
 usage statistics, select **Usage**.
 
 To view or change usage limits for your project, or to request an increase

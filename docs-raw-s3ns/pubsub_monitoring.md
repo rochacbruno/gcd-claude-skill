@@ -121,37 +121,12 @@ Guides
 
 
 
-# Monitor Pub/ Sub in Cloud Monitoring 
+# Monitor Pub/Sub in Cloud Monitoring 
 
 
 
 
 
-
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ View an existing dashboard ](#viewing_dashboard)
-- [ View a single Pub/Sub metric ](#viewing_single_metric)
-- [ View Pub/Sub metrics and resource types ](#viewing_metrics)
-- [ Access the PromQL editor ](#goto-editor)
-- [ Monitor quota usage ](#quota)
-- [ Maintain a healthy subscription ](#maintain_a_healthy_subscription)
-
-- [ Monitor message backlog ](#monitoring_the_backlog)
-- [ Monitor delivery latency health ](#delivery_latency_health)
-- [ Monitor acknowledgment deadline expiration ](#monitoring_exp)
-- [ Monitor message throughput ](#monitoring_message_throughput)
-- [ Monitor push subscriptions ](#monitoring_push_subscriptions)
-- [ Monitor subscriptions with filters ](#monitoring_subscriptions_with_filters)
-- [ Monitor subscriptions with SMTs ](#monitoring_subscriptions_with_smts)
-- [ Monitor forwarded undeliverable messages ](#monitoring_forwarded_undeliverable_messages)
-
-- [ Maintain a healthy publisher ](#keeping_publishers_healthy)
-
-- [ Monitor message throughput ](#monitoring_message_throughput_2)
-
-- [ What's next ](#whats_next)
-- 
 
 
 

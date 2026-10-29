@@ -128,11 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ October 03, 2024 ](#October_03_2024)
-- [ June 28, 2024 ](#June_28_2024)
-- 
-
 
 
 
@@ -149,7 +144,6 @@ Resources
 This page documents production updates to Access Context Manager. You can
 periodically check this page for announcements about new or updated features,
 bug fixes, known issues, and deprecated functionality.
-
 
 
 
@@ -189,7 +183,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## October 03, 2024 
+## October 03, 2024
 
 
 Feature 

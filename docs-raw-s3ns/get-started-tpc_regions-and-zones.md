@@ -73,14 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Regions ](#regions_and_zones)
-- [ Zones ](#zones)
-- [ Regional and zonal resources ](#regional_resources)
-- [ Handling failures ](#application_deployment_considerations)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -101,7 +93,7 @@ This page provides a brief overview of region and zone considerations when
 designing and running applications in
 Cloud de Confiance by S3NS.
 
-## Regions 
+## Regions
 
 Cloud de Confiance helps ensure data sovereignty
 by operating as a single, completely standalone *region*,

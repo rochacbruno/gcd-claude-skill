@@ -129,8 +129,9 @@ Databases
 
 
 
-### Non-relational databases
 
+
+### Non-relational databases
 
 
 
@@ -256,8 +257,8 @@ Store terabytes or petabytes of data using a NoSQL wide-column database service.
 
 
 
-### Relational databases
 
+### Relational databases
 
 
 
@@ -401,8 +402,8 @@ General information about the Cloud SQL options, each a fully-managed database s
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 
@@ -460,7 +461,7 @@ Understand your data using a fully managed, highly scalable data warehouse with 
 
 
 #### [
-Big Lake in BigQuery
+BigLake in BigQuery
 ](/bigquery/docs/biglake-intro)
 
 

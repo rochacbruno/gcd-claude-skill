@@ -138,8 +138,9 @@ Security
 
 
 
-### Access management
 
+
+### Access management
 
 
 
@@ -283,8 +284,8 @@ Establish fine-grained identity and access management for Cloud de Confiance res
 
 
 
-### Auditing, monitoring, and logging
 
+### Auditing, monitoring, and logging
 
 
 
@@ -482,8 +483,8 @@ Get visibility into the performance, availability, and overall health of cloud-p
 
 
 
-### Cloud governance
 
+### Cloud governance
 
 
 
@@ -627,8 +628,8 @@ Reduce security risk and gain access to exclusive cyber insurance policies tailo
 
 
 
-### Data security
 
+### Data security
 
 
 

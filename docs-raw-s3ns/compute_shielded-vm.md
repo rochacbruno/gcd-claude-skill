@@ -140,11 +140,12 @@ Shielded VM
 
 
 
-# Shielded VM documentation 
+
+# Shielded VM documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/compute/shielded-vm/docs/shielded-vm)
+Read product documentation 
 
 
 

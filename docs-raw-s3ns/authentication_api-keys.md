@@ -148,36 +148,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Introduction to API keys ](#introduction)
-
-- [ Standard API keys ](#standard-api-keys)
-- [ Authorization keys ](#api-keys-bound-sa)
-- [ API key components ](#components)
-
-- [ Before you begin ](#before_you_begin)
-
-- [ Set up authentication ](#set_up_authentication)
-- [ Required roles ](#required_roles)
-- [ Enable authorization keys ](#enable-key-binding)
-
-- [ Create an API key ](#create)
-- [ Apply API key restrictions ](#api_key_restrictions)
-
-- [ Add API restrictions ](#adding-api-restrictions)
-- [ Add application restrictions ](#adding-application-restrictions)
-- [ List API keys that don't have restrictions ](#list-no-restriction-keys)
-
-- [ Get project information from a key string ](#get-info)
-- [ Create a copy of an API key ](#copy)
-- [ Rotate an API key ](#rotate)
-- [ Undelete an API key ](#undelete)
-- [ Determine the API key type ](#determine_the_api_key_type)
-- [ Poll long-running operations ](#lro)
-- [ Limits on API keys ](#limits)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -190,7 +160,7 @@ This page describes how to create, edit, and restrict API keys. For information
 about how to use API keys to access Google APIs, see
 [Use API keys to access APIs](/docs/authentication/api-keys-use).
 
-## Introduction to API keys 
+## Introduction to API keys
 
 There are two types of API keys: standard API keys, and authorization keys. Both
 keys let you associate a request with a project for billing and quota purposes.
@@ -301,11 +271,9 @@ Select the tab for how you plan to use the samples on this page:
 
 
 
-[Console](#console) [gcloud](#gcloud) [C++](#c++) [Java](#java) [Python](#python) [REST](#rest) 
-More 
 
 
-
+### Console
 
 
 
@@ -323,6 +291,8 @@ APIs, you don't need to set up authentication.
 
 
 
+
+### gcloud
 
 
 
@@ -393,6 +363,8 @@ gcloud init
 
 
 
+
+### C++
 
 
 
@@ -516,6 +488,8 @@ in the Cloud de Confiance authentication documentation.
 
 
 
+
+### Java
 
 
 
@@ -642,6 +616,8 @@ in the Cloud de Confiance authentication documentation.
 
 
 
+### Python
+
 
 
 
@@ -767,6 +743,8 @@ in the Cloud de Confiance authentication documentation.
 
 
 
+
+### REST
 
 
 
@@ -999,11 +977,8 @@ Projects without an organization aren't supported.
 To change the policy constraint, complete the following instructions.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1066,6 +1041,7 @@ Click **Set policy**.
 
 
 
+### gcloud
 
 To add a service to the allowed list, do the following:
 
@@ -1075,7 +1051,7 @@ Create a file named `spec.yaml` with the following content:
 
 
 ```
-name : SCOPE / SCOPE_ID /policies/iam.managed.disableServiceAccountApiKeyCreation
+name : SCOPE / SCOPE_ID /policies/iam.managed.disableServiceAccountApiKeyCreation 
 spec : 
 rules : 
 - enforce : true 
@@ -1123,7 +1099,7 @@ Create a file named `spec.yaml` with the following content:
 
 
 ```
-name : SCOPE / SCOPE_ID /policies/iam.managed.disableServiceAccountApiKeyCreation
+name : SCOPE / SCOPE_ID /policies/iam.managed.disableServiceAccountApiKeyCreation 
 spec : 
 rules : 
 - enforce : false 
@@ -1151,11 +1127,8 @@ gcloud org-policies set-policy spec.yaml \
 To create an API key, use one of the following options:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ C++ ](#c++) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1189,6 +1162,7 @@ your newly created key.
 
 
 
+### gcloud
 
 You use the
 [`gcloud services api-keys create` command](/sdk/gcloud/reference/services/api-keys/create)
@@ -1236,6 +1210,7 @@ For more information, see [Authorization keys](#api-keys-bound-sa).
 
 
 
+### C++
 
 To run this sample, you must install the
 [API Keys client library](/cpp/docs/reference/apikeys/latest).
@@ -1292,6 +1267,7 @@ return * key ;
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -1389,6 +1365,7 @@ System . out . printf ( "Successfully created an API key: %s" , result . [ getNa
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -1457,6 +1434,7 @@ return response
 
 
 
+### REST
 
 You use the
 [`keys.create` method](/api-keys/docs/reference/rest/v2/projects.locations.keys/create)
@@ -1582,11 +1560,8 @@ API restrictions specify which APIs can be called using the API key.
 To add API restrictions, use one of the following options:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1612,6 +1587,7 @@ Click **Save** to save your changes and return to the API key list.
 
 
 
+### gcloud
 
 - 
 
@@ -1654,6 +1630,7 @@ gcloud services api-keys update KEY_ID \
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -1753,6 +1730,7 @@ System . out . printf ( "Successfully updated the API key: %s" , result . [ getN
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -1834,6 +1812,7 @@ return response
 
 
 
+### REST
 
 - 
 
@@ -2065,11 +2044,8 @@ For example:
 To restrict your API key to specific websites, use one of the following options:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2096,6 +2072,7 @@ Click **Save** to save your changes and return to the API key list.
 
 
 
+### gcloud
 
 - 
 
@@ -2135,6 +2112,7 @@ gcloud services api-keys update KEY_ID \
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -2234,6 +2212,7 @@ System . out . printf ( "Successfully updated the API key: %s" , result . [ getN
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -2314,6 +2293,7 @@ return response
 
 
 
+### REST
 
 - 
 
@@ -2413,11 +2393,8 @@ To restrict your API key to specific external IP addresses, use one of the
 following options:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2444,6 +2421,7 @@ Click **Save** to save your changes and return to the API key list.
 
 
 
+### gcloud
 
 - 
 
@@ -2481,6 +2459,7 @@ gcloud services api-keys update KEY_ID \
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -2581,6 +2560,7 @@ System . out . printf ( "Successfully updated the API key: %s" , result . [ getN
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -2662,6 +2642,7 @@ return response
 
 
 
+### REST
 
 - 
 
@@ -2753,11 +2734,8 @@ To restrict your API key to one or more Android apps, use one of the following
 options:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2784,6 +2762,7 @@ Click **Save** to save your changes and return to the API key list.
 
 
 
+### gcloud
 
 - 
 
@@ -2824,6 +2803,7 @@ gcloud services api-keys update KEY_ID \
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -2927,6 +2907,7 @@ System . out . printf ( "Successfully updated the API key: %s" , result . [ getN
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -3013,6 +2994,7 @@ return response
 
 
 
+### REST
 
 - 
 
@@ -3109,11 +3091,8 @@ To restrict your API key to one or more iOS apps, use one of the following
 options:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3140,6 +3119,7 @@ Click **Save** to save your changes and return to the API key list.
 
 
 
+### gcloud
 
 - 
 
@@ -3178,6 +3158,7 @@ gcloud services api-keys update KEY_ID \
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -3278,6 +3259,7 @@ System . out . printf ( "Successfully updated the API key: %s" , result . [ getN
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -3358,6 +3340,7 @@ return response
 
 
 
+### REST
 
 - 
 
@@ -3445,7 +3428,7 @@ Go to the Cloud Asset Inventory library page in the Cloud de Confiance console a
 to see if it's enabled in the project where you're running Cloud Asset Inventory
 commands from. If it's not enabled, enable it.
 
-[Go to the Library** page](https://console.cloud.s3nscloud.fr/apis/library/cloudasset.googleapis.com)
+[Go to the **Library** page](https://console.cloud.s3nscloud.fr/apis/library/cloudasset.googleapis.com)
 
 If the Cloud Asset Inventory API is already enabled for the current project, you see
 a button labeled **Manage**. Otherwise, you see a button labeled **Enable**.
@@ -3537,11 +3520,8 @@ Replace ` KEY_STRING ` with the key string you need project
 information for.
 
 
-[ gcloud ](#gcloud) [ Java ](#java) [ Python ](#python) [ REST ](#rest) 
-More 
 
-
-
+### gcloud
 
 You use the
 [`gcloud services api-keys lookup` command](/sdk/gcloud/reference/services/api-keys/lookup)
@@ -3555,7 +3535,7 @@ gcloud services api-keys lookup KEY_STRING
 
 
 
-
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -3626,6 +3606,7 @@ System . out . printf ( "Successfully retrieved the API key name: %s" , response
 
 
 
+### Python
 
 To run this sample, you must install the
 [API Keys client library](/python/docs/reference/apikeys/latest).
@@ -3687,6 +3668,7 @@ print ( f "Successfully retrieved the API key name: { lookup_key_response . name
 
 
 
+### REST
 
 You use the
 [`lookupKey` method](/api-keys/docs/reference/rest/v2/keys/lookupKey)
@@ -3793,11 +3775,8 @@ If you delete an API key by mistake, you can undelete (restore) that key within
 30 days of deleting the key. After 30 days, you cannot undelete the API key.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Java ](#java) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3818,6 +3797,7 @@ propagation, the undeleted API key is displayed in the API keys list.
 
 
 
+### gcloud
 
 - 
 
@@ -3847,6 +3827,7 @@ undelete.
 
 
 
+### Java
 
 To run this sample, you must install the
 [`google-cloud-apikeys` client library](/java/docs/reference/google-cloud-apikeys/latest/overview).
@@ -3920,6 +3901,7 @@ System . out . printf ( "Successfully undeleted the API key: %s" , undeletedKey 
 
 
 
+### REST
 
 - 
 
@@ -3978,11 +3960,8 @@ You can determine whether the API key is a standard or authorization key by
 inspecting the key.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3996,6 +3975,7 @@ the API key is a standard API key.
 
 
 
+### gcloud
 
 - 
 

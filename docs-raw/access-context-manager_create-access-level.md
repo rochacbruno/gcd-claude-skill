@@ -128,17 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Create a basic access level ](#create_a_basic_access_level)
-- [ Example implementations ](#example_implementations)
-
-- [ Limit access on a corporate network ](#corporate-network-example)
-- [ Limit access by device attributes ](#device-example)
-- [ Grant access by user or service account ](#members-example)
-
-- 
-
 
 
 
@@ -161,18 +150,15 @@ following examples:
 
 - [Grant access by user or service account](#members-example)
 
-## Before you begin 
+## Before you begin
 
 - Learn about [access levels](/access-context-manager/docs/overview).
 
 ## Create a basic access level
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To create a basic access level:
 
@@ -266,6 +252,8 @@ conditions (**OR**), or all of the conditions (**AND**).
 Click **Save**.
 
 
+
+### gcloud
 
 ### Before you begin
 
@@ -392,6 +380,8 @@ gcloud access-context-manager levels create Device_Trust \
 ```
 
 
+### API
+
 ### Before you begin
 
 - If it doesn't exist yet, [create an access policy](/access-context-manager/docs/create-access-policy) for
@@ -457,11 +447,8 @@ IP address](/vpc-service-controls/docs/enable-internal-ip-access) for additional
 information and an example implementation using VPC Service Controls.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -587,6 +574,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 - 
 
@@ -668,6 +656,7 @@ Created level NAME .
 
 
 
+### API
 
 - 
 
@@ -782,11 +771,8 @@ systems. Additionally, to manage risk, you want to make sure that only certain
 versions of the OSes can gain access.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -830,6 +816,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 - 
 
@@ -899,6 +886,7 @@ Created level NAME .
 
 
 
+### API
 
 - 
 
@@ -982,17 +970,15 @@ existing access levels. This new access level could be considered as a
 less-restrictive tier than the existing access levels.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 The Google Cloud Dedicated console does not currently support adding principals to
 access levels. If you want to add principals to access levels, you must
 use the `gcloud` command-line tool or the API.
 
 
+### gcloud
 
 - 
 
@@ -1087,6 +1073,7 @@ Created level NAME .
 
 
 
+### API
 
 - 
 

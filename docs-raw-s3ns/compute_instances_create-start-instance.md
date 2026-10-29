@@ -128,16 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#byb)
-
-- [ Required roles ](#required-roles)
-
-- [ Methods to create and start an instance ](#create-instance-methods)
-- [ Create and start instances with specific configurations ](#custom-vm-configuration-documents)
-- [ What's next? ](#whats_next)
-- 
-
 
 
 
@@ -238,11 +228,9 @@ Select the tab for how you plan to use the samples on this page:
 
 
 
-[Console](#console) [gcloud](#gcloud) [Terraform](#terraform) [C#](#c) [Go](#go) [Java](#java) [Node.js](#node.js) [PHP](#php) 
-More 
 
-[Python](#python) [Ruby](#ruby) [REST](#rest) 
 
+### Console
 
 
 
@@ -260,6 +248,8 @@ APIs, you don't need to set up authentication.
 
 
 
+
+### gcloud
 
 
 
@@ -334,6 +324,8 @@ Set a default region and zone](/compute/docs/gcloud-compute#set_default_zone_and
 
 
 
+
+### Terraform
 
 
 
@@ -449,6 +441,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+
+### C#
 
 
 
@@ -571,6 +565,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+### Go
+
 
 
 
@@ -688,6 +684,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+
+### Java
 
 
 
@@ -807,6 +805,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+### Node.js
+
 
 
 
@@ -924,6 +924,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+
+### PHP
 
 
 
@@ -1044,6 +1046,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+### Python
+
 
 
 
@@ -1161,6 +1165,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+
+### Ruby
 
 
 
@@ -1284,6 +1290,8 @@ Set up authentication for a local development environment](/compute/docs/authent
 
 
 
+
+### REST
 
 
 
@@ -1859,8 +1867,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -2056,11 +2064,8 @@ Learn more about
 [Cloud de Confiance console features for Compute Engine](/compute/docs/console).
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2130,6 +2135,7 @@ To create and start your instance, click **Create**.
 
 
 
+### gcloud
 
 To create an instance with your own configuration, use the
 [`gcloud compute instances create` command](/sdk/gcloud/reference/compute/instances/create).
@@ -2147,6 +2153,7 @@ Instead, do the following:
 
 
 
+### REST
 
 To create an instance with your own configuration, make a `POST`
 request to the

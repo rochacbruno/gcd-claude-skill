@@ -88,11 +88,6 @@ Google APIs Discovery Service
 
 
 
-- On this page 
-- [ Methods ](#methods)
-- [ Resource Representations ](#resource-representations)
-- 
-
 
 
 
@@ -107,7 +102,7 @@ Discovery documents are available for specific versions of most APIs. Each API's
 
 
 
-## Methods 
+## Methods
 
 
 
@@ -165,7 +160,7 @@ string
 }
 ], 
 "parameters" : {
-(key) : {
+( key ) : {
 "id" : string , 
 "type" : string , 
 "$ref" : string , 
@@ -185,7 +180,7 @@ string
 "repeated" : boolean , 
 "location" : string , 
 "properties" : {
-(key) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
+( key ) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
 } , 
 "additionalProperties" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
 "items" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
@@ -199,7 +194,7 @@ string
 "auth" : {
 "oauth2" : {
 "scopes" : {
-(key) : {
+( key ) : {
 "description" : string 
 }
 }
@@ -209,7 +204,7 @@ string
 string 
 ], 
 "schemas" : {
-(key) : {
+( key ) : {
 "id" : string , 
 "type" : string , 
 "$ref" : string , 
@@ -233,7 +228,7 @@ boolean
 "repeated" : boolean , 
 "location" : string , 
 "properties" : {
-(key) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
+( key ) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
 } , 
 "additionalProperties" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
 "items" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
@@ -245,14 +240,14 @@ string
 }
 } , 
 "methods" : {
-(key) : {
+( key ) : {
 "id" : string , 
 "path" : string , 
 "httpMethod" : string , 
 "description" : string , 
 "deprecated" : boolean , 
 "parameters" : {
-(key) : {
+( key ) : {
 "id" : string , 
 "type" : string , 
 "$ref" : string , 
@@ -276,7 +271,7 @@ boolean
 "repeated" : boolean , 
 "location" : string , 
 "properties" : {
-(key) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
+( key ) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
 } , 
 "additionalProperties" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
 "items" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
@@ -297,7 +292,7 @@ string
 "$ref" : string 
 } , 
 "scopes" : [ 
-(value) 
+( value ) 
 ], 
 "supportsMediaDownload" : boolean , 
 "supportsMediaUpload" : boolean , 
@@ -321,16 +316,16 @@ string
 }
 } , 
 "resources" : {
-(key) : {
+( key ) : {
 "methods" : {
-(key) : {
+( key ) : {
 "id" : string , 
 "path" : string , 
 "httpMethod" : string , 
 "description" : string , 
 "deprecated" : boolean , 
 "parameters" : {
-(key) : {
+( key ) : {
 "id" : string , 
 "type" : string , 
 "$ref" : string , 
@@ -354,7 +349,7 @@ boolean
 "repeated" : boolean , 
 "location" : string , 
 "properties" : {
-(key) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
+( key ) : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ) 
 } , 
 "additionalProperties" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
 "items" : ( [ JsonSchema ](https://tools.ietf.org/html/draft-zyp-json-schema-03) ), 
@@ -375,7 +370,7 @@ string
 "$ref" : string 
 } , 
 "scopes" : [ 
-(value) 
+( value ) 
 ], 
 "supportsMediaDownload" : boolean , 
 "supportsMediaUpload" : boolean , 
@@ -400,7 +395,7 @@ string
 } , 
 "deprecated" : boolean , 
 "resources" : {
-(key) : ( RestResource ) 
+( key ) : ( RestResource ) 
 }
 }
 }
@@ -423,7 +418,7 @@ Description |
 `string` | 
 
 The kind for this response. The fixed string
-`discovery#rest Description`.
+`discovery#restDescription`.
 | 
 |
 

@@ -128,30 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-- [ Create managed zones ](#create_managed_zones)
-
-- [ Create a private zone ](#create-private-zone)
-- [ Create a zone with specific IAM permissions ](#iam-per-resource-zone)
-- [ Create a Service Directory DNS zone ](#create-service-directory-zone)
-- [ Create a forwarding zone ](#creating-forwarding-zones)
-- [ Create a peering zone ](#peering-zones)
-- [ Create a cross-project binding zone ](#create_a_cross-project_binding_zone)
-
-- [ Update managed zones ](#update_managed_zones)
-
-- [ Update labels ](#update_labels)
-
-- [ List and describe managed zones ](#list_and_describe_managed_zones)
-
-- [ List managed zones ](#list_managed_zones)
-- [ Describe a managed zone ](#describe_a_managed_zone)
-
-- [ Delete a managed zone ](#delete_a_managed_zone)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -167,13 +143,13 @@ the [Cloud DNS overview](/dns/docs/overview) and
 [Key terms](/dns/docs/key-terms).
 
 
-#### Permissions required for this task 
 
+#### Permissions required for this task
 
 To perform this task, you must have been granted the following permissions
 *or* the following IAM roles.
 
-Permissions**
+**Permissions**
 
 
 - `dns.managedZones.create` to create a managed zone
@@ -208,7 +184,7 @@ Permissions**
 
 
 
-## Before you begin ** 
+## Before you begin
 
 The Cloud DNS API requires that you create a Cloud DNS project and
 enable the Cloud DNS API.
@@ -247,7 +223,7 @@ The client ID (`xxxxxx.apps.googleusercontent.com`).
 
 - 
 The project ID that you want to use. You can find the ID at the
-top of the Overview** page in the
+top of the **Overview** page in the
 Cloud de Confiance console. You can also ask your user to provide the
 project name that they want to use in your app.
 
@@ -276,6 +252,8 @@ Each managed zone that you create is associated with a
 The following sections describe how to create the type of managed zone that
 Cloud DNS supports.
 
+
+
 ### Create a private zone
 
 To create a new managed private zone with private DNS records managed by
@@ -284,11 +262,8 @@ see [Best practices for Cloud DNS private
 zones](/dns/docs/best-practices#best_practices_for_private_zones).
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Terraform ](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -329,6 +304,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 Run the
 [`dns managed-zones create`](/sdk/gcloud/reference/dns/managed-zones/create)
@@ -364,6 +340,7 @@ information, see the
 
 
 
+### Terraform
 
 
 
@@ -420,6 +397,7 @@ auto_create_subnetworks = false
 
 
 
+### API
 
 Send a `POST` request using the
 [`managedZones.create`](/dns/docs/reference/v1/managedZones/create) method:
@@ -535,11 +513,8 @@ To add new, change existing, remove selected, or clear all labels on a managed
 zone, complete the following steps.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
-
+### gcloud
 
 Run the
 [`dns managed-zones update`](/sdk/gcloud/reference/dns/managed-zones/update)
@@ -587,11 +562,8 @@ The following sections show how to list or describe a managed zone.
 To list all of your managed zones within a project, complete the following steps.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -605,6 +577,7 @@ View managed zones in the right pane.
 
 
 
+### gcloud
 
 Run the
 [`dns managed-zones list`](/sdk/gcloud/reference/dns/managed-zones/list)
@@ -632,11 +605,8 @@ gcloud dns managed-zones list --filter="visibility=private"
 To view the attributes of a managed zone, complete the following steps.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -650,6 +620,7 @@ Click the zone that you want to inspect.
 
 
 
+### gcloud
 
 Run the
 [`dns managed-zones describe`](/sdk/gcloud/reference/dns/managed-zones/describe)
@@ -675,11 +646,8 @@ see [Import and export resource record sets](/dns/docs/records#import-export).
 To delete a managed zone, complete the following steps.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -697,6 +665,7 @@ Click **Delete zone**.
 
 
 
+### gcloud
 
 - 
 

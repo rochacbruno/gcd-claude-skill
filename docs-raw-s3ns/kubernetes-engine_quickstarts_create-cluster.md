@@ -126,17 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required-roles)
-
-- [ Create a cluster in GKE Autopilot mode ](#create-cluster)
-- [ Deploy a sample app to your cluster ](#deploy-sample-app)
-- [ View a live demo in your browser ](#view_a_live_demo_in_your_browser)
-- [ Clean up to avoid billing charges ](#cleanup)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -146,8 +135,7 @@ Guides
 
 
 
-
-# Create a cluster and deploy a workload in the Cloud de Confiance console 
+# Create a cluster and deploy a workload in the Cloud de Confiance console
 
 
 
@@ -238,8 +226,8 @@ Compute Admin, Kubernetes Engine Admin, Service Account User
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -247,7 +235,7 @@ Compute Admin, Kubernetes Engine Admin, Service Account User
 - 
 
 
-In the Cloud de Confiance console, go to the IAM** page.
+In the Cloud de Confiance console, go to the **IAM** page.
 
 
 [Go to IAM](https://console.cloud.s3nscloud.fr/projectselector/iam-admin/iam?supportedpurview=project)
@@ -277,8 +265,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 

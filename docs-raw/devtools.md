@@ -129,8 +129,9 @@ Developer tools
 
 
 
-### Google Cloud SDK, client libraries, and languages
 
+
+### Google Cloud SDK, client libraries, and languages
 
 
 
@@ -243,7 +244,7 @@ Manage Google Cloud Dedicated resources programmatically.
 
 
 #### [
-C# and . NET
+C# and .NET
 ](/dotnet/docs)
 
 
@@ -351,7 +352,7 @@ Learn how to use Google Cloud Dedicated product libraries and frameworks to buil
 
 
 #### [
-JavaScript and Node. js
+JavaScript and Node.js
 ](/nodejs/docs)
 
 
@@ -485,8 +486,8 @@ Learn how to use Google Cloud Dedicated product libraries and frameworks to buil
 
 
 
-### Frameworks and tools
 
+### Frameworks and tools
 
 
 
@@ -657,8 +658,8 @@ Learn to use Terraform to reliably provision infrastructure on Google Cloud Dedi
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

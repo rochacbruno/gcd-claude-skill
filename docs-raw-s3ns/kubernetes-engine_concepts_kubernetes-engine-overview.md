@@ -113,20 +113,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Get started with GKE ](#get-started)
-- [ When to use GKE ](#when-to-use)
-
-- [ Benefits of GKE ](#benefits)
-
-- [ How GKE works ](#how_works)
-
-- [ Kubernetes versions and features ](#kubernetes_versions_and_features)
-- [ Modes of operation ](#modes_of_operation)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -182,7 +168,7 @@ management system. With GKE, you can deploy and operate your own
 containerized applications at scale using
 Cloud de Confiance by S3NS's infrastructure.
 
-## Get started with GKE 
+## Get started with GKE
 
 You can start exploring GKE in minutes.
 
@@ -347,7 +333,7 @@ GKE automatically upgrades the control plane and worker nodes of clusters to new
 For more information, see [About GKE cluster upgrades](/kubernetes-engine/upgrades).
 
 
-Best practice**:
+**Best practice**:
 
 To try less stable Kubernetes features in the *alpha* and *beta*
 stages or to test upcoming Kubernetes minor versions, use

@@ -128,24 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before-you-begin)
-- [ Role types ](#role-types)
-- [ Role components ](#components)
-- [ Basic roles ](#basic)
-
-- [ Legacy basic roles ](#legacy-basic)
-
-- [ Predefined roles ](#predefined)
-- [ Custom roles ](#custom)
-
-- [ Supported permissions ](#custom-role-supported-permissions)
-- [ Permission dependencies ](#custom-role-permission-dependencies)
-- [ Custom roles lifecycle ](#custom-role-lifecycle)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -163,11 +145,11 @@ Google Cloud Dedicated resources.
 To make permissions available to principals, including
 users, groups, and service accounts, you grant roles to the principals.
 
-## Before you begin 
+## Before you begin
 
 - Understand the [basic concepts](/iam/docs/overview) of IAM.
 
-## Role types 
+## Role types
 
 There are three types of roles in IAM:
 

@@ -73,33 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Service and feature availability ](#service_and_feature_availability)
-- [ Service and platform management ](#service_and_platform_management)
-
-- [ Service level agreements ](#sla)
-
-- [ Key differences for developers ](#key_differences_for_developers)
-- [ Key differences for architects and operators ](#key_differences_for_architects_and_operators)
-- [ Redirected links ](#redirect)
-- [ General differences ](#general_differences)
-
-- [ Hardware and OS ](#hardware_and_os)
-- [ Availability and disaster recovery ](#availability_and_disaster_recovery)
-- [ Cost management ](#cost_management)
-- [ Integrations ](#integrations)
-- [ Security and access control ](#security_and_access_control)
-- [ Network ](#network)
-- [ Workflows and tools ](#workflows_and_tools)
-- [ Organization setup ](#organization_setup)
-- [ Project identifiers ](#project_identifiers)
-- [ Service names, endpoints, and resources ](#service_names_endpoints_and_resources)
-- [ Service accounts ](#service_accounts)
-- [ Documentation ](#documentation)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -130,7 +103,7 @@ seem different from Google Cloud documentation. For more
 information, see
 [About Google Cloud Dedicated in Germany documentation](/docs/overview/gcd-documentation).
 
-## Service and feature availability 
+## Service and feature availability
 
 Not all Google Cloud products and services are available (or available yet) in
 Google Cloud Dedicated. You can see a list of currently available

@@ -113,14 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Workflows and tools ](#workflow-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -145,7 +137,7 @@ Logging documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -225,7 +217,7 @@ legacy Logging agent.
 
 
 | 
-
+| 
 |
 
 | 

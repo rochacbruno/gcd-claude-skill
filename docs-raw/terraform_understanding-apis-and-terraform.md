@@ -88,21 +88,6 @@ Infrastructure as code
 
 
 
-- On this page 
-- [ Public versus private Google Cloud Dedicated in Germany APIs ](#pub-vs-priv-gcp-apis)
-
-- [ Public APIs ](#public_apis)
-- [ Private (internal) APIs ](#private_internal_apis)
-
-- [ API Enablement versus Resource Import in Terraform ](#api_enablement_versus_resource_import_in_terraform)
-
-- [ Enabling an API ](#enabling_an_api)
-- [ Importing a Resource ](#importing_a_resource)
-
-- [ Addressing Concerns about Private APIs (e.g., dataproc-control.googleapis.com) ](#addressing_concerns_about_private_apis_eg_dataproc-controlgoogleapiscom)
-- [ Conclusion ](#conclusion)
-- 
-
 
 
 
@@ -118,13 +103,13 @@ like API enablement and resource import. This understanding is crucial for
 effectively managing your Google Cloud Dedicated in Germany resources with Terraform and avoiding
 common pitfalls.
 
-## Public versus private Google Cloud Dedicated in Germany APIs 
+## Public versus private Google Cloud Dedicated in Germany APIs
 
 Google Cloud Dedicated in Germany services expose various APIs that allow applications and tools
 (like Terraform) to interact with and manage resources. These APIs broadly fall
 into two categories:
 
-### Public APIs 
+### Public APIs
 
 **Purpose:** These are the primary interfaces for customers and tools to create, configure, and manage Google Cloud Dedicated in Germany resources (e.g., Compute Engine instances, Cloud Storage buckets, BigQuery datasets).
 

@@ -113,18 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Firewall tiers ](#firewall-tiers)
-- [ Availability and disaster recovery ](#availability-differences)
-- [ Firewall features ](#firewall-features)
-- [ Security and access control ](#security-differences)
-- [ Other cross-product integrations ](#integrations-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -151,7 +139,7 @@ Cloud NGFW documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -197,7 +185,6 @@ The following tiers of Cloud NGFW are available in Google Cloud Dedicated in Ger
 
 
 Cloud NGFW Enterprise is unavailable.
-
 | 
 |
 
@@ -233,7 +220,7 @@ Unavailable |
 |
 
 | 
-| 
+
 
 ### Security and access control
 
@@ -300,9 +287,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -320,9 +305,7 @@ their Google Cloud counterparts, see the [product list.](https://berlin.devsitet
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

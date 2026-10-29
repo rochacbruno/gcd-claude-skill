@@ -129,8 +129,9 @@ Access and resource management
 
 
 
-### Access management
 
+
+### Access management
 
 
 
@@ -274,8 +275,8 @@ Allow organization administrators to define fine-grained, attribute-based access
 
 
 
-### Control and discoverability
 
+### Control and discoverability
 
 
 
@@ -365,8 +366,8 @@ List, enable, and disable APIs and services in your Google Cloud Dedicated in Ge
 
 
 
-### Resource management
 
+### Resource management
 
 
 
@@ -519,8 +520,8 @@ View and manage your Google Cloud Dedicated in Germany resources, grant Identity
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

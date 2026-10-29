@@ -128,36 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Overview ](#overview)
-
-- [ Google Cloud Dedicated default permissions ](#gcp)
-- [ Third-party integration ](#third-party)
-
-- [ Roles and permissions ](#permissions)
-
-- [ Predefined Artifact Registry roles ](#roles)
-- [ Basic IAM roles ](#basic)
-
-- [ Granting roles ](#grant)
-
-- [ Granting project-wide roles ](#grant-project)
-- [ Granting repository-specific roles ](#grant-repo)
-- [ Configuring public access to a repository ](#public)
-- [ Revoking roles ](#revoking_roles)
-
-- [ Granting conditional access with tags ](#tags)
-- [ Integrating with Google Cloud Dedicated services ](#integration)
-
-- [ Default service accounts for Google Cloud Dedicated in Germany services ](#gcp-permissions)
-- [ Granting access to Compute Engine instances ](#compute)
-- [ Granting access to Google Kubernetes Engine clusters ](#gke)
-
-- [ Artifact Registry Service Agent ](#gcr-sa)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -176,7 +146,7 @@ or are integrating Artifact Registry with a
 [third-party tool](/artifact-registry/docs/access-control#third-party), you can
 also configure custom roles.
 
-## Before you begin 
+## Before you begin
 
 - [Enable Artifact Registry](/artifact-registry/docs/enable-service),
 including enabling the API and installing the Google Cloud CLI.
@@ -408,11 +378,8 @@ To add a user or service account to a project and grant them an
 Artifact Registry role:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -449,6 +416,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 - 
 
@@ -524,11 +492,8 @@ Grant repository-level roles when you want users or service accounts to
 have different levels of access for each repository in your project.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ Terraform ](#terraform) 
-More 
 
-
-
+### Console
 
 To grant access to a specific repository:
 
@@ -572,6 +537,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 - 
 
@@ -661,6 +627,7 @@ commands.
 
 
 
+### Terraform
 
 Use the [google_artifact_registry_repository_iam](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/artifact_registry_repository_iam) resource to
 configure an IAM policy. The following example defines a service
@@ -724,11 +691,8 @@ Artifact Registry Reader role to the principal `allUsers`. We also recommend
 user can't use up your project's overall quota.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -767,6 +731,7 @@ misuse by unauthenticated users. For instructions, see
 
 
 
+### gcloud
 
 - 
 
@@ -848,11 +813,8 @@ principals.
 To remove public access from a repository, remove the `allUsers` principal.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 To revoke permissions:
 
@@ -884,6 +846,7 @@ Click **Remove principal** to revoke access.
 
 
 
+### gcloud
 
 - 
 

@@ -128,18 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Overview ](#overview)
-- [ Requests ](#requests)
-
-- [ Authentication ](#authentication)
-- [ Endpoints ](#endpoints)
-- [ Headers and query string parameters ](#headers_and_query_string_parameters)
-- [ Example request ](#example_request)
-
-- [ Responses ](#responses)
-- 
-
 
 
 
@@ -166,7 +154,7 @@ Cloud Storage, you should first try either the
 These tutorials demonstrate the basics of using Cloud Storage without
 the need to use the API directly.
 
-## Overview 
+## Overview
 
 The Cloud Storage XML API is a RESTful interface that lets you manage
 Cloud Storage data in a programmatic way. As a RESTful API, it relies on

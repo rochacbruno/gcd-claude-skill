@@ -128,57 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required roles ](#required-permissions)
-
-- [ Create and define a new tag ](#creating)
-
-- [ Create a tag key ](#creating_tag)
-- [ Create tag keys with dynamic key values ](#create_dynamic_tags)
-- [ View a tag key ](#retrieving_tag_key)
-- [ Add tag values ](#add_tag_values)
-- [ Retrieve tag values ](#retrieving_tag_value)
-- [ Update existing tags ](#updating)
-- [ List tag keys ](#listing_keys)
-- [ List tag values ](#listing_values)
-
-- [ Manage access to tags ](#managing_access)
-- [ Attach tags to resources ](#attaching)
-- [ Modify tags on resources ](#modify_dynamic_tags)
-
-- [ Using gcloud CLI ](#using_gcloud)
-- [ Using the API ](#using_api)
-- [ List all tags attached to a resource ](#listing_tags)
-- [ Detach a tag from a resource ](#detaching)
-
-- [ Enforce mandatory tags on resources ](#enforcing_mandatory_tags)
-
-- [ Set up a custom constraint to enforce tags ](#create_custom_constraint_tags)
-
-- [ Protect tag values with tag holds ](#protecting_tags)
-
-- [ Create tag holds ](#creating_holds)
-- [ List tag holds ](#listing_holds)
-- [ Remove tag holds ](#removing_holds)
-
-- [ Delete tags ](#deleting)
-- [ Policies and tags ](#policies)
-
-- [ Identity and Access Management conditions and tags ](#iam_conditions_and_tags)
-- [ Organization policies and tags ](#organization_policies_tags)
-
-- [ System tags ](#system_tags)
-- [ View and manage semantic tags ](#view_and_manage_semantic_tags)
-
-- [ View synced semantic tags ](#view_synced_semantic_tags)
-- [ Fetch resource semantics ](#fetch_resource_semantics)
-- [ View the Semantic Catalog ](#view_semantic_catalog)
-
-- [ Supported services ](#supported_services)
-- 
-
 
 
 
@@ -193,7 +142,7 @@ that can be attached to a Cloud de Confiance by S3NS resource. You can use tags 
 conditionally allow or deny policies based on whether a supported resource has a
 specific tag.
 
-## Before you begin 
+## Before you begin
 
 For more information about what tags are and how they work, see the
 [Tags overview](/resource-manager/docs/tags/tags-overview).
@@ -442,11 +391,8 @@ After the `shortName` has been created, it cannot be changed, and it must be
 unique within the same namespace.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To create a tag key, do the following:
 
@@ -500,6 +446,7 @@ When you have finished adding tag values, click **Create tag key**.
 
 
 
+### gcloud
 
 To create a tag key, use the `gcloud resource-manager tags keys create`
 command:
@@ -533,7 +480,7 @@ You should get a response similar to the following:
 
 ```
 Creating tag key environment in organization 1234567890...
-
+**
 name: tagKeys/123456789012
 short_name: environment
 namespaced_name: 123456789012/environment
@@ -541,6 +488,7 @@ parent: organizations/123456789012
 ```
 
 
+### Terraform
 
 Before you create tag keys using Terraform, enable the
 [Cloud Resource Manager API](/resource-manager/reference/rest).
@@ -564,6 +512,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 To create a tag key, create a JSON representation of the key. For
 more information about the format of a tag key, see the
@@ -625,11 +574,8 @@ resource, and a globally unique permanent ID called the `name`.
 To create tag keys that support dynamic values, use one of the following methods:
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To create a tag key, do the following:
 
@@ -673,6 +619,8 @@ default, the regular expression matches all values, for example `.*`.
 After defining the validation regular expression, click **Create tag key**.
 
 
+
+### gcloud
 
 ```
 gcloud resource-manager tags keys create SHORT_NAME \
@@ -718,6 +666,7 @@ parent: organizations/123456789012
 ```
 
 
+### Terraform
 
 Before you create tag keys using Terraform, enable the
 [Cloud Resource Manager API](/resource-manager/reference/rest).
@@ -743,7 +692,7 @@ To learn how to apply or remove a Terraform configuration, see
 Replace the following:
 
 
-
+### API
 
 To create a tag key that supports dynamic tag values, create a JSON representation of the key. For
 more information about the format of a tag key, see the
@@ -808,11 +757,8 @@ You can find information about a particular tag key using the permanent ID or
 namespaced name that is displayed when you created it.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To view a created tag, do the following:
 
@@ -834,6 +780,7 @@ Click the tag for which you want to see the tag key.
 
 
 
+### gcloud
 
 To display the information related to a given tag key, use the
 `gcloud resource-manager tags keys describe` command:
@@ -864,6 +811,7 @@ that displays the RE2 regular expression used to validate any dynamic tag values
 entered when the tag is applied to a resource.
 
 
+### API
 
 To display the information related to a given tag key, use the
 [tagKeys.get](/resource-manager/reference/rest/v3/tagKeys/get) method:
@@ -924,11 +872,8 @@ A `shortName` cannot be changed once it has been created, and must be unique
 within the same namespace.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To add a tag value, do the following:
 
@@ -973,6 +918,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 To create a tag value, use the `gcloud resource-manager tags values
 create` command. You must specify the key under which this value is created:
@@ -1009,6 +955,7 @@ parent: tagKeys/123456789012
 ```
 
 
+### Terraform
 
 Use the
 [`google_tags_tag_value`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/tags_tag_value)
@@ -1192,6 +1139,7 @@ that Terraform has created or updated them.
 
 
 
+### API
 
 To create a tag value, create a JSON representation of the value.
 For more information about the format of a tag value, see the
@@ -1298,11 +1246,8 @@ namespaced name that is displayed when you created it. This applies only to
 predefined tag values, not dynamic tag values.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To view a created tag, do the following:
 
@@ -1324,6 +1269,7 @@ the list. Click the tag for which you want to see tag values.
 
 
 
+### gcloud
 
 To display the information related to a given tag value, use the
 `gcloud resource-manager tags values describe` command:
@@ -1349,6 +1295,7 @@ parent: tagKeys/123456789012
 ```
 
 
+### API
 
 To display the information related to a given tag value, use the
 [tagValues.get](/resource-manager/reference/rest/v3/tagValues/get) method:
@@ -1394,11 +1341,8 @@ the allowed format for tag values associated with the tag key. Changes to the
 affect existing tag bindings for the tag key.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To update a tag key's description, do the following:
 
@@ -1443,6 +1387,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 To modify a tag key description, use the
 `gcloud resource-manager tags keys update` command:
@@ -1478,6 +1423,7 @@ parent: organizations/123456789012
 ```
 
 
+### API
 
 To modify a tag key description, use the
 [tagKeys.patch](/resource-manager/reference/rest/v3/tagKeys/patch) method:
@@ -1516,11 +1462,8 @@ longer than 256 characters.
 You can also change the description of tag values.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To update a tag value's description, do the following:
 
@@ -1557,6 +1500,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 To modify a tag value description, use the
 `gcloud resource-manager tags values update` command:
@@ -1592,6 +1536,7 @@ description: "new description"
 ```
 
 
+### API
 
 To modify a tag value description, use the
 [tagValues.patch](/resource-manager/reference/rest/v3/tagValues/patch)
@@ -1635,11 +1580,8 @@ resource using the Cloud de Confiance console, the gcloud CLI, or with a
 call to the API.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To view all tags:
 
@@ -1661,6 +1603,7 @@ the list.
 
 
 
+### gcloud
 
 To return a list of all tag keys created under a organization or a project resource, use
 the `gcloud resource-manager tags keys list` command:
@@ -1692,6 +1635,7 @@ tagKeys/123456789012 environment description of tag key
 ```
 
 
+### API
 
 To return a list of all tag keys for a given resource, use the
 [tagKeys.list](/resource-manager/reference/rest/v3/tagKeys/list) method,
@@ -1726,11 +1670,8 @@ The gcloud CLI command and REST API fetch only the predefined tag values, not th
 dynamic tag values.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To view all tag values attached to a tag key, do the following:
 
@@ -1759,6 +1700,7 @@ for this tag key instead of a list of individual values.
 
 
 
+### gcloud
 
 To return a list of all tag values attached to a key, use the
 `gcloud resource-manager tags values list` command:
@@ -1782,6 +1724,7 @@ tagValues/123456789012 production
 ```
 
 
+### API
 
 To return a list of all tag values attached to a key, use the
 [tagValues.list](/resource-manager/reference/rest/v3/tagValues/list) method,
@@ -1810,11 +1753,8 @@ resources using the Cloud de Confiance console. See
 tags, and the permissions they contain.
 
 
-[ Tag keys ](#tag-keys) [ Tag values ](#tag-values) 
-More 
 
-
-
+### Tag keys
 
 To manage access for users on a tag key, do the following:
 
@@ -1893,6 +1833,7 @@ role you want to delete.
 
 
 
+### Tag values
 
 To manage access for users on a tag value, do the following:
 
@@ -1992,11 +1933,8 @@ resource in
 [Services that support tags](/resource-manager/docs/tags/tags-supported-services).
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To attach a tag to an organization, folder, or project resource, do the
 following:
@@ -2065,6 +2003,7 @@ the **Tags** column on the **Manage resources** page.
 
 
 
+### gcloud
 
 To attach a tag to a resource, you must create a tag binding resource by
 using the `gcloud resource-manager tags bindings create` command:
@@ -2112,6 +2051,7 @@ Compute Engine VM instances), specify the zone (for example:
 
 
 
+### API
 
 To attach a tag to a resource, you must first create a JSON representation
 of a tag binding that includes the permanent ID or namespaced name of the
@@ -2223,10 +2163,8 @@ To remove all tags from a resource, use the
 [`gcloud alpha resource-manager tags bindings update`](/sdk/gcloud/reference/alpha/resource-manager/tags/bindings/update) command.
 
 
-[ gcloud ](#gcloud) 
-**More 
 
-
+### gcloud
 
 ```
 gcloud alpha resource-manager tags bindings update \
@@ -2246,10 +2184,8 @@ To remove specific tags from a resource, use the `--remove-tags`
 flag with the [`gcloud alpha resource-manager tags bindings update`](/sdk/gcloud/reference/alpha/resource-manager/tags/bindings/update) command.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
+### gcloud
 
 ```
 gcloud alpha resource-manager tags bindings update \
@@ -2277,10 +2213,8 @@ To replace all existing tag bindings on a resource with new key-value pairs,
 use the `--replace-tags` flag with the [`gcloud alpha resource-manager tags bindings update`](/sdk/gcloud/reference/alpha/resource-manager/tags/bindings/update) command.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
+### gcloud
 
 ```
 gcloud alpha resource-manager tags bindings update \
@@ -2331,11 +2265,8 @@ You can get a list of all tags attached to a resource, for tags that are either
 inherited or directly attached.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To see all tags that are attached to or inherited by a resource, do the
 following:
@@ -2354,10 +2285,11 @@ Find your organization, folder, or project in the list of resources.
 
 The tags attached to the resource appear under the **Tags** column. Tags
 that are inherited will be marked as
-lan Inherited**.
+lan **Inherited**.
 
 
 
+### gcloud
 
 To get a list of tag bindings directly attached to a resource, use the
 `gcloud resource-manager tags bindings list` command. If you add the
@@ -2445,6 +2377,7 @@ If all tags evaluated on a resource are directly attached, the `inherited`
 field is false and is omitted.
 
 
+### API
 
 To get a list of tag bindings directly attached to a global resource such as
 an organization, use the
@@ -2522,11 +2455,8 @@ the `tagValueNamespacedName` is populated.
 You can detach a tag from a resource by deleting the tag binding resource.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-**More 
 
-
-
+### Console
 
 To detach a tag from an organization, folder, or project resource, do the
 following:
@@ -2544,7 +2474,7 @@ detach a tag.
 
 - 
 
-Click label_important Tags**.
+Click label_important **Tags**.
 
 - 
 
@@ -2566,6 +2496,7 @@ appears under the **Tags** column on the **Manage resources** page.
 
 
 
+### gcloud
 
 To delete a tag binding, use the
 `gcloud resource-manager tags bindings delete` command:
@@ -2604,6 +2535,7 @@ example: `us-central1`.
 
 
 
+### API
 
 To delete a tag binding that is attached to a global resource such as an
 organization, use the
@@ -2658,11 +2590,8 @@ To learn more about tags enforcement, see
 ### Set up a custom constraint to enforce tags
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2711,6 +2640,7 @@ Click **Create constraint**.
 
 
 
+### gcloud
 
 Create a YAML file for the custom constraint:
 
@@ -2801,11 +2731,8 @@ Tag holds can't be applied on dynamic tag values.
 You can manually create a tag hold using the gcloud CLI or the API.
 
 
-[ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### gcloud
 
 To create a tag hold, use the
 [`gcloud resource-manager tags holds create`](/resource-manager/docs/tags/sdk/gcloud/reference/alpha/resource-manager/tags/holds)
@@ -2842,6 +2769,7 @@ the location; for example: `us-central1`.
 
 
 
+### API
 
 To create a tag hold for a tag value, you must first create a JSON
 representation of a tag hold. This JSON reference must include a reference
@@ -2910,11 +2838,8 @@ You can list all tag holds under a particular tag value using the
 gcloud CLI or the API.
 
 
-[ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### gcloud
 
 To list tag holds that are under a tag value, use the
 [`gcloud resource-manager tags holds list`](/resource-manager/docs/tags/sdk/gcloud/reference/alpha/resource-manager/tags/holds)
@@ -2943,6 +2868,7 @@ must specify the location; for example: `us-central1`.
 
 
 
+### API
 
 To get a list of tag holds under a tag value, use the
 [`tagHolds`](/resource-manager/reference/rest/v3/tagHolds/list)
@@ -2974,11 +2900,8 @@ will prevent users from deleting the attached tag value.
 You can delete a tag hold using the gcloud CLI or the API.
 
 
-[ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### gcloud
 
 To delete a tag hold, use the
 [`gcloud resource-manager tags holds delete`](/resource-manager/docs/tags/sdk/gcloud/reference/alpha/resource-manager/tags/holds)
@@ -3010,6 +2933,7 @@ you must specify the location; for example: `us-central1`.
 
 
 
+### API
 
 To delete a tag value, use the
 [tagHolds.delete](/resource-manager/reference/rest/v3/tagHolds/delete)
@@ -3055,11 +2979,8 @@ Once there are no more tag bindings for the tag values you want to delete, you
 can delete the values.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To delete a tag value, do the following:
 
@@ -3096,6 +3017,7 @@ Click **Confirm**.
 
 
 
+### gcloud
 
 To delete a tag value, use the `gcloud resource-manager tag values delete`
 command:
@@ -3111,6 +3033,7 @@ namespaced name of the tag value you want to delete; for example:
 `tagValues/567890123456`.
 
 
+### API
 
 To delete a tag value, use the
 [tagValues.delete](/resource-manager/reference/rest/v3/tagValues/delete)
@@ -3132,11 +3055,8 @@ delete the key. For tags with dynamic values, all the associated bindings must b
 before the tag key can be deleted.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 To delete a tag key, do the following:
 
@@ -3165,6 +3085,7 @@ Click **Confirm**.
 
 
 
+### gcloud
 
 To delete a tag key, use the `gcloud resource-manager tags keys delete`
 command:
@@ -3180,6 +3101,7 @@ namespaced name of the tag key you want to delete; for example:
 `tagKeys/123456789012`.
 
 
+### API
 
 To delete a tag key, use the
 [tagKeys.delete](/resource-manager/reference/rest/v3/tagKeys/delete)
@@ -3381,11 +3303,8 @@ Use the following method to verify that App Hub attributes have
 propagated as read-only system semantic tags to underlying resources.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
-
+### gcloud
 
 To view bindings on the underlying resource (for example, a MIG or
 Cloud Run job), use the
@@ -3422,11 +3341,8 @@ existing resource-specific ` RESOURCE .listEffectiveTags`
 IAM permission.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
-
+### gcloud
 
 To view effective semantic mappings (for example, confirming
 `ENVIRONMENT:STAGING` or `CRITICALITY:LOW`), use the
@@ -3458,11 +3374,8 @@ You can browse the Semantic Catalog in the Cloud de Confiance console to view
 available semantics and their mapping to OpenTelemetry (OTel) attributes.
 
 
-[ Console ](#console) 
-More 
 
-
-
+### Console
 
 To access the Semantic Catalog using the Cloud de Confiance console, do the
 following:

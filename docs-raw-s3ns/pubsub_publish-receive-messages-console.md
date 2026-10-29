@@ -126,15 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Create a topic ](#create_a_topic)
-- [ Add a second subscription ](#add_a_second_subscription)
-- [ Publish a message to the topic ](#publish_a_message_to_the_topic)
-- [ Pull the messages from the subscription ](#pull_the_messages_from_the_subscription)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -144,8 +135,7 @@ Guides
 
 
 
-
-# Publish and receive messages in Pub/ Sub using the Cloud de Confiance console 
+# Publish and receive messages in Pub/Sub using the Cloud de Confiance console
 
 
 
@@ -157,7 +147,7 @@ Cloud de Confiance console.
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -188,8 +178,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -261,7 +251,6 @@ Enable the Pub/Sub API, if it is not already enabled.
 
 **Roles required to enable APIs**
 
-
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
 Owner role (`roles/owner`). Otherwise, you can get this permission through the
@@ -294,8 +283,8 @@ Pub/Sub Admin
 
 
 
-#### Check for the roles
 
+#### Check for the roles
 
 
 
@@ -333,8 +322,8 @@ the list of roles includes the required roles.
 
 
 
-#### Grant the roles
 
+#### Grant the roles
 
 
 

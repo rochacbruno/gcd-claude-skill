@@ -128,53 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Get started ](#getting_started)
-- [ Logs Explorer interface ](#logs-viewer-interface)
-- [ Primary toolbar in the Logs Explorer ](#action-bar)
-
-- [ View recent, saved, and suggested queries ](#view-save-queries)
-- [ Set preferences for viewing log data ](#preferences)
-- [ Filter log entries by time range ](#time-range)
-
-- [ Query pane ](#query-builder)
-
-- [ Select which resources are searched for log entries ](#refine_scope)
-
-- [ Fields pane ](#logs-field-panel)
-
-- [ Refine your query ](#refine_your_query)
-- [ Add fields to the Fields pane ](#custom-fields)
-
-- [ Timeline ](#histogram-panel)
-
-- [ Timeline features ](#using_histogram_panel)
-- [ Analyze log entries using time controls ](#analyzing_logs_histogram)
-
-- [ View your query results ](#query-results)
-
-- [ Highlight search terms, monitor and download your log entries ](#actions)
-- [ Investigate a log entry by using Gemini Cloud Assist ](#explain-log-gemini)
-- [ View or hide log entries that match a field ](#log-entries-field-match)
-- [ Pin log entries ](#pin-logs)
-- [ Copy a link to a log entry ](#copy-link)
-
-- [ Example Logs Explorer queries ](#example_queries)
-- [ View Compute Engine log entries ](#compute-engine)
-- [ Troubleshoot logging issues ](#troubleshooting)
-
-- [ The all resources and all log name menus are disabled ](#resource-menu-disabled)
-- [ Download of logs fails ](#download-fails)
-- [ Can't find console logs for a VM instance ](#console-logs)
-- [ Get Cloud de Confiance project or organization ID ](#getting-project_organization_id)
-- [ Can't see log entries ](#no_log_entries)
-- [ My query is correct but I still don't see log entries ](#no_log_entries_with_query)
-- [ Query returns an error ](#invalid-query)
-- [ Query results time range doesn't match query ](#time-range-query)
-
-- 
-
 
 
 
@@ -191,7 +144,7 @@ you troubleshoot problems and improve observability. You can also read log data 
 [Logging API](/logging/docs/reference/v2/rest/v2/entries/list) and the
 [Google Cloud CLI](/logging/docs/api/gcloud-logging#reading_log_entries).
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -375,7 +328,7 @@ To begin using the Logs Explorer, do the following:
 
 In the Cloud de Confiance console, go to the
 segment 
-Logs Explorer** page:
+**Logs Explorer** page:
 
 
 [Go to **Logs Explorer**](https://console.cloud.s3nscloud.fr/logs/query)

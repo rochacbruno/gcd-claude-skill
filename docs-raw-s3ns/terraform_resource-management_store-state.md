@@ -33,22 +33,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Objectives ](#objectives)
-- [ Costs ](#costs)
-- [ Before you begin ](#before-you-begin)
-- [ Prepare the environment ](#prepare-environment)
-- [ Review the Terraform files ](#review-files)
-- [ Update the backend configuration ](#update-backend)
-- [ Provision the Cloud Storage bucket ](#provision-bucket)
-- [ Migrate state to Cloud Storage bucket ](#migrate-state)
-- [ Clean up ](#clean-up)
-
-- [ Delete the project ](#delete_the_project)
-
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -82,7 +66,7 @@ Cloud Storage bucket. Remote state is a feature of
 
 
 
-## Objectives 
+## Objectives
 
 
 
@@ -226,8 +210,8 @@ signed in to the gcloud CLI with your federated identity](/iam/docs/workforce-lo
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -263,7 +247,7 @@ Create a Cloud de Confiance project:
 
 
 ```
-gcloud projects create ** PROJECT_ID 
+gcloud projects create PROJECT_ID 
 ```
 
 
@@ -312,8 +296,7 @@ Enable the Cloud Storage API, if it is not already enabled:
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the

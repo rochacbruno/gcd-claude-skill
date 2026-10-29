@@ -93,18 +93,6 @@ Guides
 
 
 
-- On this page 
-- [ Types of quotas ](#types-of-quota)
-- [ Quotas and the Cloud de Confiance hierarchy ](#gcp-hierarchy)
-- [ Regions and zones ](#regions_and_zones)
-- [ Manage quota values ](#manage_quota_values)
-
-- [ When you run out of quota ](#running_out)
-- [ About quota adjustments ](#about_increase_requests)
-
-- [ What's next ](#whats_next)
-- 
-
 
 
 

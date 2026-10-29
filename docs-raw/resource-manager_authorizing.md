@@ -128,12 +128,6 @@ Reference
 
 
 
-- On this page ** 
-- [ About authorization protocols ](#AboutAuthorization)
-- [ Authorizing requests with OAuth 2.0 ](#OAuth2Authorizing)
-- [ Acquiring and using an API key ](#APIKey)
-- 
-
 
 
 
@@ -157,7 +151,7 @@ Every request your application sends to the Cloud Resource Manager API needs to 
 
 Your application must use [OAuth 2.0](https://developers.google.com/identity/protocols/OAuth2) to authorize requests. No other authorization protocols are supported. If your application uses [Sign In With Google](https://developers.google.com/identity/gsi/web), some aspects of authorization are handled for you.
 
-## Authorizing requests with OAuth 2. 0
+## Authorizing requests with OAuth 2.0
 
 Requests to the Cloud Resource Manager API for non-public user data must be authorized by an authenticated user.
 
@@ -236,7 +230,7 @@ Create whichever credentials are appropriate for your project:
 - 
 
 
-OAuth 2.0:** Whenever your application requests private user
+**OAuth 2.0:** Whenever your application requests private user
 data, it must send an OAuth 2.0 token along with the request. Your
 application first sends a client ID and, possibly, a client secret to
 obtain a token. You can generate OAuth 2.0 credentials for web

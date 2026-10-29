@@ -126,16 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before_you_begin)
-
-- [ Required permissions ](#required_permissions)
-
-- [ Create a notebook ](#create_a_notebook)
-- [ Try BigQuery DataFrames ](#try-dataframes)
-- [ Clean up ](#clean_up)
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -144,8 +134,7 @@ Guides
 
 
 
-
-# Try BigQuery Data Frames 
+# Try BigQuery DataFrames
 
 
 
@@ -203,8 +192,8 @@ select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 

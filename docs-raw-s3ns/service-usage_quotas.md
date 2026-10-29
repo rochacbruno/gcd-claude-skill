@@ -126,11 +126,6 @@ Resources
 
 
 
-- On this page 
-- [ Rate quotas ](#rate_quotas)
-- [ Get quota and system limit metric names ](#get-metric-names)
-- [ Request a quota adjustment ](#request_a_quota_adjustment)
-- 
 
 
 
@@ -139,8 +134,7 @@ Resources
 
 
 
-
-# Quotas and system limits 
+# Quotas and system limits
 
 
 
@@ -248,11 +242,8 @@ limits by using either the Cloud de Confiance console or the
 gcloud CLI.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -283,6 +274,7 @@ property name or value in the field next to
 filter_list **Filter**—for example, **Service Usage API**.
 
 
+### gcloud
 
 To get the metric names for a Cloud de Confiance by S3NS service by
 using the gcloud CLI, run the

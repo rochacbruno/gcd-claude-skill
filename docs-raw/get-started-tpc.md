@@ -73,11 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Set up a new organization ](#set_up_a_new_organization)
-- [ Set up tools and workflows ](#set_up_tools_and_workflows)
-- 
-
 
 
 
@@ -112,7 +107,7 @@ Google Cloud Dedicated.
 These are tasks that are completed as-needed for users to access and use
 Google Cloud Dedicated.
 
-## Set up a new organization 
+## Set up a new organization
 
 One-time core tasks that are typically completed platform admins or IT
 administrators before others can access and use

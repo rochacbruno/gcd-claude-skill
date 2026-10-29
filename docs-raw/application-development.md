@@ -129,8 +129,9 @@ Application development
 
 
 
-### API management
 
+
+### API management
 
 
 
@@ -238,8 +239,8 @@ Create and manage your API keys for your projects.
 
 
 
-### Build and deploy apps with CI/ CD
 
+### Build and deploy apps with CI/CD
 
 
 
@@ -401,8 +402,8 @@ Store, manage, and secure container images and language packages.
 
 
 
-### Development platforms and tools
 
+### Development platforms and tools
 
 
 
@@ -618,8 +619,8 @@ Install a command-line interface to script and manage Google Cloud Dedicated pro
 
 
 
-### Event-driven app creation
 
+### Event-driven app creation
 
 
 
@@ -763,8 +764,8 @@ Ingest event streams from anywhere, at any scale.
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

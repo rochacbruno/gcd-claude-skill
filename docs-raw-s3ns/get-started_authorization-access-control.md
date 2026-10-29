@@ -88,14 +88,6 @@ Get started
 
 
 
-- On this page 
-- [ Permissions and roles ](#permissions-roles)
-- [ Using IAM as an administrator ](#admin)
-- [ Advanced access control with IAM ](#advanced-iam)
-- [ Other forms of access control ](#other)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -115,7 +107,7 @@ the permissions to work with a resource, you are *authorized* to access that
 resource. Without the proper authorization, you can't access Cloud de Confiance
 resources.
 
-## Permissions and roles 
+## Permissions and roles
 
 To work with a resource, your user account must have the relevant
 permissions to access that resource.

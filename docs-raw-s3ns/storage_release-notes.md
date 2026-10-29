@@ -128,41 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ September 30, 2026 ](#September_30_2026)
-- [ August 17, 2026 ](#August_17_2026)
-- [ July 20, 2026 ](#July_20_2026)
-- [ June 17, 2026 ](#June_17_2026)
-- [ May 28, 2026 ](#May_28_2026)
-- [ April 20, 2026 ](#April_20_2026)
-- [ April 08, 2026 ](#April_08_2026)
-- [ April 06, 2026 ](#April_06_2026)
-- [ April 02, 2026 ](#April_02_2026)
-- [ March 12, 2026 ](#March_12_2026)
-- [ January 30, 2026 ](#January_30_2026)
-- [ January 28, 2026 ](#January_28_2026)
-- [ January 21, 2026 ](#January_21_2026)
-- [ January 16, 2026 ](#January_16_2026)
-- [ January 15, 2026 ](#January_15_2026)
-- [ April 17, 2025 ](#April_17_2025)
-- [ February 05, 2025 ](#February_05_2025)
-- [ November 15, 2024 ](#November_15_2024)
-- [ November 07, 2024 ](#November_07_2024)
-- [ October 29, 2024 ](#October_29_2024)
-- [ October 28, 2024 ](#October_28_2024)
-- [ October 22, 2024 ](#October_22_2024)
-- [ September 23, 2024 ](#September_23_2024)
-- [ August 05, 2024 ](#August_05_2024)
-- [ July 31, 2024 ](#July_31_2024)
-- [ July 23, 2024 ](#July_23_2024)
-- [ July 11, 2024 ](#July_11_2024)
-- [ July 08, 2024 ](#July_08_2024)
-- [ July 02, 2024 ](#July_02_2024)
-- [ June 28, 2024 ](#June_28_2024)
-- [ June 18, 2024 ](#June_18_2024)
-- [ June 06, 2024 ](#June_06_2024)
-- 
-
 
 
 
@@ -217,7 +182,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## September 30, 2026 
+## September 30, 2026
 
 
 Feature 
@@ -337,8 +302,7 @@ You can attach key-value pairs to your objects to categorize, track, and search
 your data. Object contexts are preserved by default during copy, rewrite, and
 compose operations. You can help control this behavior by using the
 [`dropContextGroups`](/storage/docs/json_api/v1/objects/copy#dropContextGroups)
-JSON API parameter or by providing new contexts in the request.
-
+JSON API parameter or by providing new contexts in the request. 
 
 
 ## April 02, 2026
@@ -403,8 +367,7 @@ If a multipart upload is started before relocation begins and is completed
 before the final synchronization step, the objects are successfully relocated.
 In-progress multipart uploads continue to block the final synchronization
 step until they are either completed or cancelled. For more information, see
-[Bucket relocation overview](/storage/docs/bucket-relocation/overview).
-
+[Bucket relocation overview](/storage/docs/bucket-relocation/overview). 
 
 
 ## January 16, 2026

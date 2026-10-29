@@ -140,11 +140,12 @@ Cloud VPN
 
 
 
-# Cloud VPN documentation 
+
+# Cloud VPN documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/network-connectivity/docs/vpn/concepts/overview)
+Read product documentation 
 
 
 

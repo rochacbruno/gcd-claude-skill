@@ -120,11 +120,12 @@ Cloud SQL
 
 
 
-# Cloud SQL documentation 
+
+# Cloud SQL documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/sql/docs/introduction)
+Read product documentation 
 
 
 

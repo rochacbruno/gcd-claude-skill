@@ -148,12 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Workload Identity Federation ](#wlif)
-- [ Service account key ](#wlif-key)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -166,7 +160,7 @@ If you are running your application outside of Google Cloud Dedicated, you need 
 provide credentials that are recognized by Google Cloud Dedicated to
 use Google Cloud Dedicated services.
 
-### Workload Identity Federation 
+### Workload Identity Federation
 
 The preferred way to authenticate with Google Cloud Dedicated using credentials from
 an external IdP is to use [Workload Identity Federation](/iam/docs/workload-identity-federation);
@@ -207,8 +201,8 @@ a new session, set the variable again.
 
 
 
-**Example:** Linux or macOS
 
+**Example:** Linux or macOS
 
 
 ```
@@ -232,8 +226,8 @@ export GOOGLE_APPLICATION_CREDENTIALS = "/home/user/Downloads/service-account-fi
 
 
 
-**Example:** Windows
 
+**Example:** Windows
 
 
 

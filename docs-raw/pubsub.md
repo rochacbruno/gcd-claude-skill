@@ -120,11 +120,12 @@ Pub/Sub
 
 
 
-# Pub/ Sub documentation 
+
+# Pub/Sub documentation
 
 
 
-[Read product documentation](https://berlin.devsitetest.how/pubsub/docs/overview)
+Read product documentation 
 
 
 
@@ -274,7 +275,7 @@ follow_the_signs
 
 
 
-### Get Started with Pub/ Sub
+### Get Started with Pub/Sub
 
 
 
@@ -656,7 +657,7 @@ format_list_numbered
 
 
 
-### Use Pub/ Sub
+### Use Pub/Sub
 
 
 
@@ -1154,7 +1155,7 @@ find_in_page
 
 
 
-### Pub/ Sub reference docs
+### Pub/Sub reference docs
 
 
 

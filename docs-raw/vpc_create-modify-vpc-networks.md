@@ -126,51 +126,6 @@ Guides
 
 
 
-- On this page 
-- [ Create networks ](#creating_networks)
-
-- [ Create an auto mode VPC network ](#create-auto-network)
-- [ Create a custom mode VPC network with IPv4-only subnets ](#create-custom-network)
-- [ Create a custom mode VPC network with a dual-stack subnet ](#create-network-dual)
-- [ Create a custom mode VPC network with IPv6-only subnets ](#create-network-ipv6-only)
-- [ Create a default network ](#create-default-network)
-- [ About firewall rules ](#about_firewall_rules)
-
-- [ View networks ](#viewing-networks)
-- [ Work with subnets ](#subnet-rules)
-
-- [ List subnets ](#listing_existing_subnets)
-- [ Describe a subnet ](#describing_an_existing_subnet)
-- [ Add an IPv4-only subnet ](#add-subnets)
-- [ Add a dual-stack subnet ](#add-subnet-ipv6)
-- [ Add an IPv6-only subnet ](#add-subnet-ipv6-only)
-- [ Change an IPv4-only subnet to dual-stack ](#subnet-enable-ipv6)
-- [ Change a dual-stack subnet to IPv4 only ](#subnet-change-stacktype)
-- [ Add a subnet that uses an IPv6 BYOIP address range ](#byoip)
-- [ Add a subnet that uses a reserved IPv4 internal range ](#subnet-internal-range)
-- [ Delete a subnet ](#deleting_subnets)
-- [ Expand a primary IPv4 range ](#expand-subnet)
-- [ Edit secondary IPv4 ranges ](#edit-secondary)
-
-- [ Modify networks ](#modifying_a_vpc_network)
-
-- [ Convert an auto mode VPC network to custom mode ](#switch-network-mode)
-- [ Assign an internal IPv6 ULA range to a network ](#enable-internal-ipv6-network)
-- [ Change the dynamic routing mode ](#switch-dynamic-routing)
-- [ Change the MTU of a network ](#change-mtu)
-- [ Delete a network ](#deleting_a_network)
-
-- [ Monitor your VPC network ](#monitoring_your_vpc_network)
-- [ Migrate VMs ](#migrating_vms)
-- [ Troubleshooting ](#troubleshooting)
-
-- [ Can't delete a VPC network that was used with Serverless VPC Access ](#network-deletion-serverless-error)
-- [ Error: Constraint constraints/compute.requireVpcFlowLogs violated ](#constraint-flow-logs)
-- [ Resource not found error ](#resource-not-found)
-- [ Resource already exists ](#resource-already-exists)
-
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -179,8 +134,7 @@ Guides
 
 
 
-
-# Create and manage VPC networks 
+# Create and manage VPC networks
 
 
 
@@ -194,7 +148,7 @@ resources](/vpc/docs/subnets#vpc_networks_and_subnets) in Google Cloud Dedicated
 If you plan to enable IPv6 ranges on subnets, see [IPv6
 subnet ranges](/vpc/docs/subnets#ipv6-ranges).
 
-## Create networks 
+## Create networks
 
 You can choose to create an auto mode or custom mode VPC network.
 Each new network that you create must have a unique name within the same
@@ -224,11 +178,8 @@ if you want to create subnets with IPv6 address ranges.
 To create an auto mode VPC network, follow these steps.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -300,6 +251,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 Use the
 [`networks create` command](/sdk/gcloud/reference/compute/networks/create).
@@ -329,6 +281,7 @@ value higher than `1460`, review [Maximum transmission unit](/vpc/docs/mtu).
 
 
 
+### Terraform
 
 Use
 the [`google_compute_network` Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network).
@@ -373,6 +326,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 Make a `POST` request to
 the [`networks.insert` method](/compute/docs/reference/rest/v1/networks/insert).
@@ -451,11 +405,8 @@ To create a custom mode VPC network with IPv4-only subnets,
 follow these steps.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -581,6 +532,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 Use the [`networks create` command](/sdk/gcloud/reference/compute/networks/create).
 
@@ -610,6 +562,7 @@ value higher than `1460`, review [Maximum transmission unit](/vpc/docs/mtu).
 Next, [add subnets](#add-subnets) to your network.
 
 
+### Terraform
 
 Use the [`google_compute_network` Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network).
 
@@ -655,6 +608,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 Make a `POST` request to the
 [`networks.insert` method](/compute/docs/reference/rest/v1/networks/insert).
@@ -714,11 +668,8 @@ see [Assign subnet ranges](/vpc/docs/create-ipv6-sub-prefixes#create-subnets)
 instead.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -854,6 +805,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 Use the [`networks create` command](/sdk/gcloud/reference/compute/networks/create).
 After you have created the network, you can add [subnets](#subnet-rules)
@@ -907,6 +859,7 @@ value higher than `1460`, review [Maximum transmission unit](/vpc/docs/mtu).
 
 
 
+### Terraform
 
 Use the [`google_compute_network` Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network).
 
@@ -951,6 +904,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 Make a `POST` request to the
 [`networks.insert` method](/compute/docs/reference/rest/v1/networks/insert).
@@ -1026,11 +980,8 @@ see [Assign subnet ranges](/vpc/docs/create-ipv6-sub-prefixes#create-subnets)
 instead.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1148,6 +1099,7 @@ Click **Create**.
 
 
 
+### gcloud
 
 Use the [`networks create` command](/sdk/gcloud/reference/compute/networks/create).
 After you have created the network, you can add [subnets](#subnet-rules)
@@ -1201,6 +1153,7 @@ value higher than `1460`, review [Maximum transmission unit](/vpc/docs/mtu).
 
 
 
+### Terraform
 
 Use the [`google_compute_network` Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network).
 
@@ -1245,6 +1198,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 Make a `POST` request to the
 [`networks.insert` method](/compute/docs/reference/rest/v1/networks/insert).
@@ -1308,11 +1262,8 @@ network that is called `default`. To create this configuration, do the
 following.
 
 
-[ gcloud ](#gcloud) 
-More 
 
-
-
+### gcloud
 
 - 
 
@@ -1392,11 +1343,8 @@ VPC networks, you can view information about their subnets and
 their subnet creation mode.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1413,6 +1361,7 @@ peering connections and subnets.
 
 
 
+### gcloud
 
 - 
 
@@ -1454,6 +1403,7 @@ Replace ` NETWORK ` with the name of the network.
 
 
 
+### API
 
 - 
 
@@ -1518,11 +1468,8 @@ total values are calculated by the following equation:
 (`high` * 2^64) + `low` = total value.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1557,6 +1504,7 @@ view details.
 
 
 
+### gcloud
 
 You can list all subnets in all networks in your project, or you can show
 only the subnets for a particular network or region. The following examples
@@ -1615,6 +1563,7 @@ gcloud compute networks subnets list \
 
 
 
+### API
 
 - 
 
@@ -1668,11 +1617,8 @@ total values are calculated by the following equation:
 (`high` * 2^64) + `low` = total value.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1691,6 +1637,7 @@ the **Subnets** tab to view its *Subnet details* page.
 
 
 
+### gcloud
 
 - 
 
@@ -1734,6 +1681,7 @@ gcloud compute networks subnets describe SUBNET \
 
 
 
+### API
 
 - 
 
@@ -1802,11 +1750,8 @@ address range according to the [name](/vpc/docs/subnets#subnet-name-limitations)
 To create an IPv4-only subnet, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -1865,6 +1810,7 @@ Click **Add**.
 
 
 
+### gcloud
 
 Use the [`subnets create`
 command](/sdk/gcloud/reference/compute/networks/subnets/create).
@@ -1918,6 +1864,7 @@ Next, create [firewall
 rules](/firewall/docs/using-firewalls#creating_firewall_rules).
 
 
+### Terraform
 
 Use a
 [Terraform module](https://github.com/terraform-google-modules/terraform-google-network).
@@ -1986,6 +1933,7 @@ subnet_flow_logs_filter = "false"
 Next, create [firewall rules](/vpc/docs/using-firewalls#creating_firewall_rules).
 
 
+### API
 
 Make a `POST` request to the
 [`subnetworks.insert` method](/compute/docs/reference/rest/v1/subnetworks/insert).
@@ -2036,11 +1984,8 @@ instead.
 To create a dual-stack subnet, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2087,6 +2032,7 @@ Click **Add**.
 
 
 
+### gcloud
 
 Use the
 [`subnets create` command](/sdk/gcloud/reference/compute/networks/subnets/create).
@@ -2127,6 +2073,7 @@ subnet will be created.
 
 
 
+### Terraform
 
 Use the [`google_compute_subnetwork` Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork).
 
@@ -2169,6 +2116,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 Make a `POST` request to the
 [`subnetworks.insert` method](/compute/docs/reference/rest/v1/subnetworks/insert).
@@ -2226,11 +2174,8 @@ see [Assign subnet ranges](/vpc/docs/create-ipv6-sub-prefixes#create-subnets)
 instead.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [Terraform](#terraform) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2267,6 +2212,7 @@ Click **Add**.
 
 
 
+### gcloud
 
 Use the
 [`gcloud compute networks subnets create` command](/sdk/gcloud/reference/compute/networks/subnets/create).
@@ -2300,6 +2246,7 @@ tier. Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#produ
 
 
 
+### Terraform
 
 Use the [`google_compute_subnetwork` Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork).
 
@@ -2341,6 +2288,7 @@ To learn how to apply or remove a Terraform configuration, see
 
 
 
+### API
 
 Make a `POST` request to the
 [`subnetworks.insert` method](/compute/docs/reference/rest/v1/subnetworks/insert).
@@ -2400,11 +2348,8 @@ network tier after you've set it for a dual-stack subnet.
 To change a subnet's stack type to dual-stack, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2443,6 +2388,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 Use the
 [`subnets update` command](/sdk/gcloud/reference/compute/networks/subnets/update).
@@ -2473,6 +2419,7 @@ tier. Can be `STANDARD` ([Preview](https://berlin.devsitetest.how/products#produ
 
 
 
+### API
 
 Make a `PATCH` request to
 the [`subnetworks.patch` method](/compute/docs/reference/rest/v1/subnetworks/patch).
@@ -2526,11 +2473,8 @@ Changing the stack type from IPv4 and IPv6 (dual-stack) to IPv4 only
 To change a subnet's stack type to IPv4 only, do the following.
 
 
-[ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### gcloud
 
 Use the
 [`subnets update` command](/sdk/gcloud/reference/compute/networks/subnets/update).
@@ -2551,6 +2495,7 @@ Replace the following:
 
 
 
+### API
 
 Make a `PATCH` request to the
 [`subnetworks.patch` method](/compute/docs/reference/rest/v1/subnetworks/patch).
@@ -2605,11 +2550,8 @@ Cloud NAT gateways that use the subnet.
 To delete a subnet, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2636,6 +2578,7 @@ In the message that appears, click **Delete** to confirm.
 
 
 
+### gcloud
 
 Use the [`subnets delete` command](/sdk/gcloud/reference/compute/networks/subnets/delete).
 
@@ -2654,6 +2597,7 @@ Replace the following:
 
 
 
+### API
 
 Make a `DELETE` request to the
 [`subnetworks.delete` method](/compute/docs/reference/rest/v1/subnetworks/delete).
@@ -2715,11 +2659,8 @@ list](/kubernetes-engine/docs/how-to/authorized-networks#add).
 To expand a subnet's primary IPv4 range, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2753,6 +2694,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 Use the
 [`subnets expand-ip-range` command](/sdk/gcloud/reference/compute/networks/subnets/expand-ip-range).
@@ -2779,6 +2721,7 @@ ranges](/vpc/docs/subnets#manually_created_subnet_ip_ranges).
 
 
 
+### API
 
 Make a `POST` request to the
 [`subnetworks.expandIpCidrRange` method](/compute/docs/reference/rest/v1/subnetworks/expandIpCidrRange).
@@ -2815,11 +2758,8 @@ You can add secondary IPv4 ranges to subnets, or you can remove any
 secondary IPv4 range as long as no resources are using IP addresses in it.
 
 
-[ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### gcloud
 
 To add a new secondary IPv4 range to a subnet, use the
 [`subnets update` command](/sdk/gcloud/reference/compute/networks/subnets/update).
@@ -2866,6 +2806,7 @@ remove.
 
 
 
+### API
 
 To modify secondary IPv4 address ranges for an existing subnet, make a
 `PATCH` request to the
@@ -2939,11 +2880,8 @@ To convert an auto mode VPC network to a custom mode
 VPC network, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -2970,6 +2908,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 Use the
 [`networks update` command](/sdk/gcloud/reference/compute/networks/update).
@@ -2985,6 +2924,7 @@ Replace ` NETWORK ` with the name of the network to
 update.
 
 
+### API
 
 Make a `POST` request to the
 [`networks.switchToCustomMode` method](/compute/docs/reference/rest/v1/networks/switchToCustomMode).
@@ -3028,11 +2968,8 @@ you can do the following:
 To assign an internal ULA range to a network, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3072,6 +3009,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 Use the
 [`networks update` command](/sdk/gcloud/reference/compute/networks/update).
@@ -3098,6 +3036,7 @@ to allocate a ULA prefix.
 
 
 
+### API
 
 Make a `PATCH` request to the
 [`networks.insert` method](/compute/docs/reference/rest/v1/networks/insert).
@@ -3143,11 +3082,8 @@ how Cloud Routers share routes and apply learned routes.
 To change a VPC network's dynamic routing mode, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3175,6 +3111,7 @@ Click **Save**.
 
 
 
+### gcloud
 
 Use the
 [`networks update` command](/sdk/gcloud/reference/compute/networks/update).
@@ -3198,6 +3135,7 @@ Cloud Routers in the network. Can be either `global` or
 
 
 
+### API
 
 Make a
 `PATCH` request to the
@@ -3248,11 +3186,8 @@ include [VPC Network Peering connections](/vpc/docs/using-vpc-peering#deleting-p
 To delete a VPC network, do the following.
 
 
-[ Console ](#console) [ gcloud ](#gcloud) [ API ](#api) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -3275,6 +3210,7 @@ In the message that appears, click **Delete** to confirm.
 
 
 
+### gcloud
 
 Use the
 [`networks delete` command](/sdk/gcloud/reference/compute/networks/delete).
@@ -3288,6 +3224,7 @@ gcloud compute networks delete NETWORK
 Replace ` NETWORK ` with the name of the network to delete.
 
 
+### API
 
 Make a `DELETE` request to the
 [`networks.delete` method](/sdk/gcloud/reference/compute/networks/delete).

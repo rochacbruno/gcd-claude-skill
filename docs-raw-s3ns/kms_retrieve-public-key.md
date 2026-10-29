@@ -128,11 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Required roles ](#required-roles)
-- [ Retrieve a public key ](#retrieve)
-- 
-
 
 
 
@@ -296,8 +291,8 @@ required, expand the **Required permissions** section:
 
 
 
-#### Required permissions
 
+#### Required permissions
 
 
 
@@ -372,12 +367,10 @@ To download the public key for an enabled asymmetric key version:
 
 
 
-[Console](#console) [ gcloud ](#gcloud) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [API](#api) 
-More 
 
 
 
-
+### Console
 
 
 
@@ -463,6 +456,8 @@ Each portion of the filename is separated by a hyphen, for example
 
 
 
+### gcloud 
+
 
 
 
@@ -538,6 +533,8 @@ For information on all flags and possible values, run the command with the
 
 
 
+
+### C# 
 
 
 
@@ -628,6 +625,8 @@ return result ;
 
 
 
+
+### Go 
 
 
 
@@ -762,6 +761,8 @@ return nil
 
 
 
+### Java 
+
 
 
 
@@ -871,6 +872,8 @@ System . out . printf ( "Public key: %s%n" , publicKey . [ getPem ](https://docu
 
 
 
+
+### Node.js 
 
 
 
@@ -988,6 +991,8 @@ return getPublicKey ();
 
 
 
+### PHP 
+
 
 
 
@@ -1083,6 +1088,8 @@ return $publicKey;
 
 
 
+
+### Python 
 
 
 
@@ -1214,6 +1221,8 @@ return crc32c_fun ( data )
 
 
 
+### Ruby 
+
 
 
 
@@ -1299,6 +1308,8 @@ puts "Public key: #{ public_key . pem } "
 
 
 
+### API
+
 
 
 
@@ -1351,7 +1362,7 @@ ZSBkYXkgOik=\n-----END PUBLIC KEY-----\n" ,
 "algorithm" : " ALGORITHM " , 
 "pemCrc32c" : "2561089887" , 
 "name" : "projects/ PROJECT_ID /locations/ LOCATION /keyRings/ 
-KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/
+KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/ 
 KEY_VERSION " , 
 "protectionLevel" : " PROTECTION_LEVEL " 
 } 
@@ -1371,7 +1382,7 @@ the following:
 } 
 "algorithm" : " ALGORITHM " , 
 "name" : "projects/ PROJECT_ID /locations/ LOCATION /keyRings/ 
-KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/
+KEY_RING /cryptoKeys/ KEY_NAME /cryptoKeyVersions/ 
 KEY_VERSION " , 
 "protectionLevel" : " PROTECTION_LEVEL " 
 } 

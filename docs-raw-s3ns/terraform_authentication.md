@@ -128,22 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Authenticate when using Terraform in a local development environment ](#local_dev_environment)
-
-- [ Authenticate using a user account ](#auth_with_user_account)
-- [ Authenticate using service account impersonation ](#auth_using_sa_impersonation)
-
-- [ Authenticate when running Terraform on Cloud de Confiance ](#auth_on_cloud)
-- [ Authenticate when running Terraform on-premises or on a different cloud provider ](#auth_on_cloud_provider)
-
-- [ Authenticate using Workload Identity Federation ](#wlif)
-
-- [ Authenticate using service account keys ](#auth_using_sa_keys_onprem)
-- [ Authenticate to Cloud Storage backends ](#gcs_backends)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -165,7 +149,7 @@ Cloud de Confiance by S3NS services and APIs. For information about where ADC lo
 credentials and in what order, see [How Application Default Credentials
 works](/docs/authentication/application-default-credentials).
 
-## Authenticate when using Terraform in a local development environment 
+## Authenticate when using Terraform in a local development environment
 
 When you're using Terraform in a local development environment, such as a
 development workstation, you can authenticate using the credentials associated

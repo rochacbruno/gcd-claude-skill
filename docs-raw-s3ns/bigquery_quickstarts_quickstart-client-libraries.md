@@ -126,16 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-- [ Query a public dataset ](#query_a_public_dataset)
-- [ Clean up ](#clean_up)
-
-- [ Delete the project ](#delete_the_project)
-- [ Delete the resources ](#delete_the_resources)
-
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -145,8 +135,7 @@ Guides
 
 
 
-
-# Query a public dataset with the BigQuery client libraries 
+# Query a public dataset with the BigQuery client libraries
 
 
 
@@ -160,35 +149,38 @@ To follow step-by-step guidance for this task directly in the
 Cloud de Confiance console, select your preferred programming language:
 
 
-[ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) 
-More 
 
-
-
+### C#
 
 [Take the C# tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--csharp-client-library)
 
 
+### Go
 
 [Take the Go tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--go-client-library)
 
 
+### Java
 
 [Take the Java tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--java-client-library)
 
 
+### Node.js
 
 [Take the Node.js tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--node-client-library)
 
 
+### PHP
 
 [Take the PHP tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--php-client-library)
 
 
+### Python
 
 [Take the Python tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--python-client-library)
 
 
+### Ruby
 
 [Take the Ruby tour](https://console.cloud.s3nscloud.fr/?walkthrough_id=bigquery--ruby-client-library)
 
@@ -199,7 +191,7 @@ More
 
 
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -215,8 +207,8 @@ More
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -252,7 +244,7 @@ Create a Cloud de Confiance project:
 
 
 ```
-gcloud projects create ** PROJECT_ID 
+gcloud projects create PROJECT_ID 
 ```
 
 
@@ -349,8 +341,7 @@ Enable the BigQuery API, if it is not already enabled:
 
 
 
-Roles required to enable APIs**
-
+**Roles required to enable APIs**
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the
@@ -391,7 +382,7 @@ Activate your Cloud de Confiance project in Cloud Shell:
 
 
 ```
-gcloud config set project ** PROJECT_ID 
+gcloud config set project PROJECT_ID 
 ```
 
 
@@ -416,11 +407,8 @@ Updated property [core/project].
 Select one of the following languages:
 
 
-[ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [ Rust ](#rust) 
-More 
 
-
-
+### C#
 
 - 
 
@@ -661,6 +649,7 @@ You have successfully queried a public dataset with the
 BigQuery C# client library.
 
 
+### Go
 
 - 
 
@@ -941,6 +930,7 @@ You have successfully queried a public dataset with the
 BigQuery Go client library.
 
 
+### Java
 
 - 
 
@@ -1233,6 +1223,7 @@ You have successfully queried a public dataset with the
 BigQuery Java client library.
 
 
+### Node.js
 
 - 
 
@@ -1453,6 +1444,7 @@ You have successfully queried a public dataset with the
 BigQuery Node.js client library.
 
 
+### PHP
 
 - 
 
@@ -1684,6 +1676,7 @@ You have successfully queried a public dataset with the
 BigQuery PHP client library.
 
 
+### Python
 
 - 
 
@@ -1892,6 +1885,7 @@ You have successfully queried a public dataset with the
 BigQuery Python client library.
 
 
+### Ruby
 
 - 
 
@@ -2091,6 +2085,7 @@ You have successfully queried a public dataset with the
 BigQuery Ruby client library.
 
 
+### Rust
 
 - 
 
@@ -2316,7 +2311,7 @@ To delete the project:
 
 
 - 
-In the Cloud de Confiance console, go to the Manage resources** page.
+In the Cloud de Confiance console, go to the **Manage resources** page.
 
 
 [Go to Manage resources](https://console.cloud.s3nscloud.fr/iam-admin/projects)
@@ -2341,11 +2336,8 @@ In the dialog, type the project ID, and then click
 If you used an existing project, delete the resources that you created:
 
 
-[ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [ Rust ](#rust) 
-More 
 
-
-
+### C#
 
 - 
 
@@ -2371,6 +2363,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### Go
 
 - 
 
@@ -2396,6 +2389,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### Java
 
 - 
 
@@ -2421,6 +2415,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### Node.js
 
 - 
 
@@ -2446,6 +2441,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### PHP
 
 - 
 
@@ -2471,6 +2467,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### Python
 
 - 
 
@@ -2496,6 +2493,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### Ruby
 
 - 
 
@@ -2521,6 +2519,7 @@ The `-R` flag deletes all assets in a folder.
 
 
 
+### Rust
 
 - 
 

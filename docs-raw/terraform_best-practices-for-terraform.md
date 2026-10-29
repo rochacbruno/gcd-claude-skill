@@ -128,26 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Follow a standard module structure ](#module-structure)
-- [ Adopt a naming convention ](#naming-convention)
-- [ Use variables carefully ](#variables)
-- [ Expose outputs ](#outputs)
-- [ Use data sources ](#data-sources)
-- [ Limit the use of custom scripts ](#custom-scripts)
-- [ Include helper scripts in a separate directory ](#helper-scripts)
-- [ Put static files in a separate directory ](#static-files)
-- [ Protect stateful resources ](#stateful-resources)
-- [ Use built-in formatting ](#built-in-formatting)
-
-- [ Limit the complexity of expressions ](#expressions)
-
-- [ Use count for conditional values ](#count)
-- [ Use for_each for iterated resources ](#for_each)
-- [ Publish modules to a registry ](#publish)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -165,7 +145,7 @@ This guide is not an introduction to Terraform. For an introduction to using
 Terraform with Google Cloud Dedicated in Germany, see
 [Get started with Terraform](/docs/terraform/get-started-with-terraform).
 
-## Follow a standard module structure 
+## Follow a standard module structure
 
 - Terraform modules must follow the
 [standard module structure](https://www.terraform.io/docs/modules/create.html).
@@ -206,7 +186,7 @@ Recommended:
 
 
 ```
-resource "google_compute_instance" "web_server"** {
+resource "google_compute_instance" **"web_server"** {
 name = "web-server"
 }
 ```

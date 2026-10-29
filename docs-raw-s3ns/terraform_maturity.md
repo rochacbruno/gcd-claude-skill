@@ -128,17 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Overview ](#overview)
-
-- [ Adopt (Learner) ](#adopt_learner)
-- [ Build (Builder) ](#build_builder)
-- [ Scale (Operator) ](#scale_operator)
-
-- [ Criteria ](#criteria)
-- [ Recommendations ](#recommendations)
-- 
-
 
 
 
@@ -153,7 +142,7 @@ This model provides best practices, recommendations, and learning materials that
 meet you at your level of comfort and expertise with Terraform on
 Cloud de Confiance.
 
-## Overview 
+## Overview
 
 Terraform on Cloud de Confiance has three user personas (Learners, Builders, and
 Operators), and three stages of the maturity model (Adopt, Build, and Scale).
@@ -441,7 +430,6 @@ Training & Tutorials |
 - `gcloud terraform vet`
 
 
-
 | 
 |
 
@@ -457,7 +445,6 @@ Ready to use |
 - [ Cloud de Confiance Terraform modules on GitHub](https://github.com/terraform-google-modules)
 
 - [ Terraform Registry](https://registry.terraform.io/providers/hashicorp/google/latest)
-
 | 
 
 
@@ -469,7 +456,7 @@ Ready to use |
 
 - Create your own Terraform Blueprint
 
-- [](https://github.com/terraform-google-modules/terraform-docs-samples/blob/main/CONTRIBUTING.md)Create your own Terraform module
+- [](https://github.com/terraform-google-modules/terraform-docs-samples/blob/main/CONTRIBUTING.md)Create your own Terraform module 
 
 
 | 
@@ -503,9 +490,9 @@ Deploy & Manage |
 
 - [ Infrastructure Manager](https://documentation.s3ns.fr/infrastructure-manager/docs)
 
-- [Terraform GitOps with Cloud Build (CI/CD)](/docs/terraform/resource-management/managing-infrastructure-as-code) 
+- [Terraform GitOps with Cloud Build (CI/CD) 
 
-- [ Terraform Cloud or Enterprise on Cloud de Confiance](https://developer.hashicorp.com/terraform/cloud-docs)
+- Terraform Cloud or Enterprise on Cloud de Confiance](/docs/terraform/resource-management/managing-infrastructure-as-code)
 
 
 | 

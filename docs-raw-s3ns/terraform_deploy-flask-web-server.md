@@ -128,36 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Costs ](#costs)
-- [ Before you begin ](#before-you-begin)
-
-- [ Select or create a project ](#select_or_create_a_project)
-- [ Set up permissions ](#permissions)
-- [ Enable the API ](#enable-api)
-- [ Install gcloud CLI ](#install-cli)
-
-- [ Create the Compute Engine VM ](#create-vm)
-
-- [ Create the directory ](#prep)
-- [ Create the Virtual Private Cloud network and subnet ](#vpc)
-- [ Create the Compute Engine VM resource ](#vm)
-- [ Initialize Terraform ](#init)
-- [ Validate the Terraform configuration ](#plan)
-- [ Apply the configuration ](#apply)
-
-- [ Run a web server on Cloud de Confiance ](#run-web-server)
-
-- [ Add a custom SSH firewall rule ](#ssh-firewall-rule)
-- [ Connect to the VM with SSH ](#ssh)
-- [ Build the Flask app ](#flask)
-- [ Open port 5000 on the VM ](#open-port)
-- [ Add an output variable for the web server URL ](#output)
-
-- [ Troubleshooting ](#troubleshooting)
-- [ Clean up ](#clean-up)
-- 
-
 
 
 
@@ -176,7 +146,7 @@ In this tutorial, you do the following:
 
 - Start a basic Python Flask server.
 
-## Costs 
+## Costs
 
 
 
@@ -242,8 +212,8 @@ Select or create a Cloud de Confiance project.
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -300,7 +270,6 @@ Enable the Compute Engine API, if it is not already enabled.
 
 
 **Roles required to enable APIs**
-
 
 To enable APIs, you need the `serviceusage.services.enable` permission. If you
 created the project, then you likely already have this permission through the

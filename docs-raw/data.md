@@ -129,8 +129,9 @@ Data analytics
 
 
 
-### Data and AI platform
 
+
+### Data and AI platform
 
 
 
@@ -202,8 +203,8 @@ Understand your data using a fully managed, highly scalable data platform with b
 
 
 
-### Data analysis
 
+### Data analysis
 
 
 
@@ -284,8 +285,8 @@ Maximize your data analysis investments when running analytic queries on large d
 
 
 
-### Data governance and sharing
 
+### Data governance and sharing
 
 
 
@@ -375,8 +376,8 @@ Enable intelligent data management with unified metadata and governance and secu
 
 
 
-### Data integration and orchestration
 
+### Data integration and orchestration
 
 
 
@@ -511,8 +512,8 @@ Create, schedule, monitor, and manage workflows using a fully managed orchestrat
 
 
 
-### Data lakehouses
 
+### Data lakehouses
 
 
 
@@ -566,8 +567,8 @@ Build an open, managed, high-performance lakehouse that provides a single source
 
 
 
-### Data processing
 
+### Data processing
 
 
 
@@ -648,8 +649,8 @@ Perform batch processing, querying, and streaming using a managed Apache Spark a
 
 
 
-### Streaming
 
+### Streaming
 
 
 
@@ -730,8 +731,8 @@ Ingest event streams from anywhere, at any scale.
 
 
 
-### AI and ML
 
+### AI and ML
 
 
 

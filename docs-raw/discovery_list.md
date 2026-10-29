@@ -88,17 +88,6 @@ Google APIs Discovery Service
 
 
 
-- On this page ** 
-- [ Request ](#request)
-
-- [ HTTP Request ](#http-request)
-- [ Parameters ](#parameters)
-- [ Request Body ](#request-body)
-
-- [ Response ](#response)
-- [ Try it ](#try-it)
-- 
-
 
 
 
@@ -121,10 +110,10 @@ has multiple versions, each of the versions has its own entry in the list.
 
 
 
-## Request 
+## Request
 
 
-### HTTP Request 
+### HTTP Request
 
 
 ```
@@ -148,7 +137,7 @@ Description |
 
 
 | 
-Optional Parameters** | 
+**Optional Parameters** | 
 |
 
 | 

@@ -73,13 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Set up with minimal configuration ](#minimal)
-- [ No default network ](#no_default_network)
-- [ What's next? ](#whats_next)
-- 
-
 
 
 
@@ -98,7 +91,7 @@ enough to explore available services and run our quickstart tutorials.
 
 For options for a full enterprise setup, see [Set up your organization](/docs/get-started-tpc/set-up-organization).
 
-## Before you begin 
+## Before you begin
 
 Ensure the following:
 

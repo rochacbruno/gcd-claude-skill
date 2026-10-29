@@ -126,13 +126,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before)
-- [ List enabled services in an organization or folder ](#org-list-enabled)
-- [ List enabled services in a project ](#enabled)
-- [ List available services in a project ](#available)
-- [ What's next ](#next)
-- 
 
 
 
@@ -141,8 +134,7 @@ Guides
 
 
 
-
-# List services 
+# List services
 
 
 
@@ -152,7 +144,7 @@ available in a Cloud de Confiance project, folder, or organization.
 To program against the Service Usage API, you can also use one of the
 [Service Usage client libraries](/service-usage/docs/libraries).
 
-## Before you begin 
+## Before you begin
 
 To list the enabled and available APIs and services, you need:
 
@@ -174,11 +166,8 @@ To list the enabled services in an organization or folder, complete the
 following steps:
 
 
-[ gcloud ](#gcloud) [REST API](#rest-api) 
-More 
 
-
-
+### gcloud
 
 To list the enabled APIs and services for an organization or folder, use the
 [`gcloud beta services list`](/sdk/gcloud/reference/beta/services/list)
@@ -204,6 +193,7 @@ folder that you want to list enabled services for.
 
 
 
+### REST API
 
 To list enabled services for an organization or folder, call the
 [`consumerPolicies.get`](/service-usage/docs/reference/rest/v2beta/consumerPolicies/get)
@@ -256,11 +246,8 @@ which contains a list of enabled APIs:
 To list the enabled services in a project, complete the following steps:
 
 
-[Console](#console) [ gcloud ](#gcloud) [REST API](#rest-api) 
-More 
 
-
-
+### Console
 
 To list the enabled APIs and services in a project:
 
@@ -288,6 +275,7 @@ Cloud de Confiance project.
 
 
 
+### gcloud
 
 To list the enabled APIs and services in your current project, use the
 [`gcloud services list`](/sdk/gcloud/reference/services/list) command:
@@ -317,6 +305,7 @@ TITLE: BigQuery API
 ```
 
 
+### REST API
 
 To list enabled services for your project, call the
 [`services.list`](/service-usage/docs/reference/rest/v1/services/list)
@@ -340,11 +329,8 @@ set of available services rarely changes and can be cached for extended periods
 of time.
 
 
-[Console](#console) [ gcloud ](#gcloud) [REST API](#rest-api) 
-More 
 
-
-
+### Console
 
 To list the APIs and services available to you in a project:
 
@@ -372,6 +358,7 @@ available APIs.
 
 
 
+### gcloud
 
 To list the APIs and services available to you in
 your current project, use the
@@ -405,6 +392,7 @@ TITLE: YouTube Data API v3
 ```
 
 
+### REST API
 
 To list available services for your project, call the
 [`services.list`](/service-usage/docs/reference/rest/v1/services/list)

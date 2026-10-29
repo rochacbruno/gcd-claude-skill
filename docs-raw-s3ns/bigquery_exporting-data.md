@@ -126,42 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Export limitations ](#export_limitations)
-- [ Before you begin ](#before_you_begin)
-
-- [ Required permissions ](#required_permissions)
-
-- [ Export formats and compression types ](#export_formats_and_compression_types)
-- [ Export data ](#export-data-in-bigquery)
-
-- [ Export table data ](#export_table_data)
-- [ Export table metadata ](#export_table_metadata)
-- [ Export query results ](#export_query_results)
-
-- [ Other ways to export data ](#other_export_options)
-- [ Avro export details ](#avro_export_details)
-- [ Parquet export details ](#parquet_export_details)
-- [ Exporting data into one or more files ](#exporting_data_into_one_or_more_files)
-
-- [ Limit the exported file size ](#limit_the_exported_file_size)
-- [ Extract compressed table ](#extract_compressed_table)
-
-- [ Example use case ](#example-export-data)
-- [ Quota policy ](#quota_policy)
-
-- [ View current quota usage ](#view_current_quota_usage)
-
-- [ Troubleshooting ](#troubleshooting)
-
-- [ Diagnose issues using Logs Explorer ](#diagnose-export-issues)
-- [ Exceeded extract bytes per day quota error ](#ts-exceeded-extract-bytes-per-day-quota)
-- [ Failed to export on nested schema error ](#failed-to-export)
-
-- [ Pricing ](#pricing)
-- [ Table security ](#table_security)
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -170,8 +134,7 @@ Guides
 
 
 
-
-# Export table data to Cloud Storage 
+# Export table data to Cloud Storage
 
 
 
@@ -182,7 +145,7 @@ BigQuery](/bigquery/docs/loading-data), you can export it by
 using the Cloud de Confiance console, the bq command-line tool, the API, client libraries,
 or [alternative export methods](#other_export_options).
 
-## Export limitations 
+## Export limitations
 
 When you export data from BigQuery, note the following:
 
@@ -385,11 +348,8 @@ You can export table data by:
 Select one of the following:
 
 
-[ Console ](#console) [ SQL ](#sql) [ bq ](#bq) [ API ](#api) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) 
-More 
 
-[ Python ](#python) [ Ruby ](#ruby) 
-
+### Console
 
 - 
 
@@ -441,6 +401,7 @@ To check on the progress of the job, in the **Explorer** pane, click
 To export views to Cloud Storage, use [`EXPORT DATA OPTIONS` statement](/bigquery/docs/reference/standard-sql/export-statements).
 
 
+### SQL
 
 Use the
 [`EXPORT DATA` statement](/bigquery/docs/reference/standard-sql/export-statements#export_data_statement).
@@ -482,6 +443,7 @@ For more information about how to run queries, see [Run an interactive query](/b
 
 
 
+### bq
 
 Use the [`bq extract`](/bigquery/docs/reference/bq-cli-reference#bq_extract) command with the `--destination_format` flag.
 
@@ -601,6 +563,7 @@ gs://example-bucket/single_partition.csv
 ```
 
 
+### API
 
 To export data, create an `extract` job and populate the job configuration.
 
@@ -663,6 +626,7 @@ those operations will succeed.
 
 
 
+### C#
 
 
 
@@ -791,6 +755,7 @@ Console . Write ( $"Exported table to {destinationUri}." );
 
 
 
+### Go
 
 
 
@@ -940,6 +905,7 @@ return nil
 
 
 
+### Java
 
 
 
@@ -1109,6 +1075,7 @@ System . out . println ( "Table extraction job was interrupted. \n" + e . toStri
 
 
 
+### Node.js
 
 
 
@@ -1251,6 +1218,7 @@ throw errors ;
 
 
 
+### PHP
 
 
 
@@ -1385,6 +1353,7 @@ printf('Exported %s to %s' . PHP_EOL, $table->id(), $destinationUri);
 
 
 
+### Python
 
 
 
@@ -1512,6 +1481,7 @@ print (
 
 
 
+### Ruby
 
 
 
@@ -1926,9 +1896,8 @@ property:
 
 
 
+`destinationUris` options | 
 
-| `destinationUris` options | 
-| 
 
 
 
@@ -1947,7 +1916,7 @@ wildcard URI.
 
 
 
-Property definition:**
+**Property definition:**
 
 
 
@@ -2090,12 +2059,10 @@ WHERE export_id = i ;
 
 
 
-[ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ Python ](#python) 
-**More 
 
 
 
-
+### Go 
 
 
 
@@ -2248,6 +2215,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -2423,6 +2392,8 @@ System . out . println ( "Table extraction job was interrupted. \n" + e . toStri
 
 
 
+### Node.js 
+
 
 
 
@@ -2567,6 +2538,8 @@ throw errors ;
 
 
 
+
+### Python 
 
 
 
@@ -2751,7 +2724,7 @@ policy that monitors the number of bytes exported.
 - 
 
 In the Cloud de Confiance console, go to the
-notifications*  Alerting** page:
+notifications* **Alerting** page:
 
 
 [Go to **Alerting**](https://console.cloud.s3nscloud.fr/monitoring/alerting)

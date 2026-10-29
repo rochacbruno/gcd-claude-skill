@@ -128,27 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Configure your project and roles ](#configure_your_project_and_roles)
-- [ Select the interface you plan to use ](#select_the_interface_you_plan_to_use)
-
-- [ Create a bucket ](#create_bucket)
-- [ List and view details of log buckets ](#list-and-view)
-
-- [ List buckets ](#listing-log-buckets)
-- [ View a bucket's details ](#viewing-logs-buckets)
-
-- [ Manage buckets ](#manage_buckets)
-
-- [ Update a bucket ](#update_bucket)
-- [ Configure custom retention ](#custom-retention)
-- [ Lock a bucket ](#locking-logs-buckets)
-- [ Delete a bucket ](#deleting-logs-bucket)
-
-- 
-
 
 
 
@@ -164,12 +143,12 @@ custom retention periods to control storage costs and compliance.
 
 For conceptual information, see [Store log entries](/logging/docs/store-log-entries).
 
-## Before you begin 
+## Before you begin
 
 Configure your project, your IAM roles, and select the interface
 that you plan to use.
 
-### Configure your project and roles 
+### Configure your project and roles
 
 To get started with buckets, do the following:
 
@@ -281,11 +260,8 @@ create or manage your log buckets, then understand the
 ### Select the interface you plan to use
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [gcloud](#gcloud) [REST](#rest) 
-More 
 
-
-
+### Cloud de Confiance console
 
 
 
@@ -356,6 +332,7 @@ APIs, you don't need to set up authentication.
 
 
 
+### gcloud
 
 
 
@@ -474,6 +451,7 @@ gcloud init
 
 
 
+### REST
 
 
 
@@ -596,17 +574,14 @@ To create a user-defined log bucket for your Cloud de Confiance project, do the
 following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
-
-
+### Cloud de Confiance console
 
 To create a log bucket in your Cloud de Confiance project, do the following:
 
 - 
 
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -650,13 +625,14 @@ It might take a moment for these steps to complete.
 
 
 
+### gcloud
 
 To create a log bucket,
 run the [`gcloud logging buckets create`](/sdk/gcloud/reference/logging/buckets/create) command:
 
 
 ```
-gcloud logging buckets create ** BUCKET_ID --location= LOCATION 
+gcloud logging buckets create BUCKET_ID --location= LOCATION 
 ```
 
 
@@ -672,6 +648,7 @@ gcloud logging buckets create my-bucket --location global --description "My firs
 
 
 
+### REST
 
 To create a bucket, use the
 [`projects.locations.buckets.create`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/create)
@@ -720,13 +697,10 @@ To list the log buckets associated with a Cloud de Confiance project, and to see
 details such as retention settings, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
+### Cloud de Confiance console
 
-
-
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -756,6 +730,7 @@ then its table entry is annotated with a *warning* **warning**
 symbol.
 
 
+### gcloud
 
 Run the [`gcloud logging buckets list`](/sdk/gcloud/reference/logging/buckets/list) command:
 
@@ -796,6 +771,7 @@ gcloud logging buckets describe _Default --location=global
 ```
 
 
+### REST
 
 To list the log buckets associated with a Cloud de Confiance project, use
 [`projects.locations.buckets.list`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/list)
@@ -812,13 +788,10 @@ log bucket was created and when it was last updated.
 To view the details of a single log bucket, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-**More 
 
+### Cloud de Confiance console
 
-
-
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -842,6 +815,7 @@ be stored by Cloud Logging.
 
 
 
+### gcloud
 
 Run the [`gcloud logging buckets describe`](/sdk/gcloud/reference/logging/buckets/describe) command.
 
@@ -873,6 +847,7 @@ modified.
 
 
 
+### REST
 
 To view the details of a single log bucket, use
 [`projects.locations.buckets.get`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/get)
@@ -891,17 +866,14 @@ To update the properties of your bucket, such as the
 description or retention period, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-**More 
 
-
-
+### Cloud de Confiance console
 
 To update your bucket's properties, do the following:
 
 - 
 
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -927,13 +899,14 @@ Click **Update bucket**.
 
 
 
+### gcloud
 
 To update your bucket's properties, run the
 [`gcloud logging buckets update`](/sdk/gcloud/reference/logging/buckets/update) command:
 
 
 ```
-gcloud logging buckets update ** BUCKET_ID --location= LOCATION UPDATED_ATTRIBUTES 
+gcloud logging buckets update BUCKET_ID --location= LOCATION UPDATED_ATTRIBUTES 
 ```
 
 
@@ -945,6 +918,7 @@ gcloud logging buckets update my-bucket --location=global --description "Updated
 ```
 
 
+### REST
 
 To update your bucket's properties, use
 [`projects.locations.buckets.patch`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/patch)
@@ -985,17 +959,14 @@ To update the retention period for a custom log bucket or for the
 `_Default` log bucket that is in a project, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) 
-More 
 
-
-
+### Cloud de Confiance console
 
 To update a log bucket's retention period, do the following:
 
 - 
 
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -1023,6 +994,7 @@ Click **Update bucket**. Your new retention period appears in the
 
 
 
+### gcloud
 
 To update the retention period for a user-defined log bucket or for the
 `_Default` log bucket that is in a project, run the
@@ -1031,7 +1003,7 @@ RETENTION_DAYS :
 
 
 ```
-gcloud logging buckets update ** BUCKET_ID --location= LOCATION --retention-days= RETENTION_DAYS 
+gcloud logging buckets update BUCKET_ID --location= LOCATION --retention-days= RETENTION_DAYS 
 ```
 
 
@@ -1062,15 +1034,13 @@ To prevent anyone from updating or deleting a log bucket, lock the bucket. To
 lock the bucket, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
-
-
+### Cloud de Confiance console
 
 The Cloud de Confiance console doesn't support locking a log bucket.
 
 
+### gcloud
 
 To lock your bucket, run the [`gcloud logging buckets update`](/sdk/gcloud/reference/logging/buckets/update)
 command with the `--locked` flag:
@@ -1089,6 +1059,7 @@ gcloud logging buckets update my-bucket --location=global --locked
 ```
 
 
+### REST
 
 To lock your bucket's attributes, use
 [`projects.locations.buckets.patch`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/patch)
@@ -1122,17 +1093,14 @@ that is in the `DELETE_REQUESTED` state.
 To delete a log bucket, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) 
-More 
 
-
-
+### Cloud de Confiance console
 
 To delete a log bucket, do the following:
 
 - 
 
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -1160,11 +1128,8 @@ pending deletion. The bucket, including all the logs in it, is deleted
 after 7 days.
 
 
-[ gcloud ](#gcloud) [ REST ](#rest) 
-**More 
 
-
-
+### gcloud
 
 To delete a log bucket, run the
 [`gcloud logging buckets delete`](/sdk/gcloud/reference/logging/buckets/delete) command:
@@ -1175,6 +1140,7 @@ gcloud logging buckets delete BUCKET_ID --location= LOCATION
 ```
 
 
+### REST
 
 To delete a bucket, use
 [`projects.locations.buckets.delete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/delete)
@@ -1188,17 +1154,14 @@ You can restore, or undelete, a log bucket that's in the pending deletion state.
 To restore a log bucket, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
-
-
+### Cloud de Confiance console
 
 To restore a log bucket that is pending deletion, do the following:
 
 - 
 
-In the Cloud de Confiance console, go to the Logs Storage** page:
+In the Cloud de Confiance console, go to the **Logs Storage** page:
 
 
 [Go to **Logs Storage**](https://console.cloud.s3nscloud.fr/logs/storage)
@@ -1223,16 +1186,18 @@ from your log bucket.
 
 
 
+### gcloud
 
 To restore a log bucket that is pending deletion, run the
 [`gcloud logging buckets undelete`](/sdk/gcloud/reference/logging/buckets/undelete) command:
 
 
 ```
-gcloud logging buckets undelete ** BUCKET_ID --location= LOCATION 
+gcloud logging buckets undelete BUCKET_ID --location= LOCATION 
 ```
 
 
+### REST
 
 To restore a bucket that is pending deletion, use
 [`projects.locations.buckets.undelete`](/logging/docs/reference/v2/rest/v2/projects.locations.buckets/undelete)
@@ -1258,17 +1223,14 @@ about log views, see [Store log entries](/logging/docs/store-log-entries) and
 To read logs from a log bucket, do the following:
 
 
-[ Cloud de Confiance console ](#cloud-de-confiance-console) [ gcloud ](#gcloud) [ REST ](#rest) 
-More 
 
-
-
+### Cloud de Confiance console
 
 - 
 
 In the Cloud de Confiance console, go to the
 segment 
-Logs Explorer** page:
+**Logs Explorer** page:
 
 
 [Go to **Logs Explorer**](https://console.cloud.s3nscloud.fr/logs/query)
@@ -1291,6 +1253,7 @@ For more information, see
 [Logs Explorer overview: Refine scope](/logging/docs/view/logs-explorer-interface#refine_scope).
 
 
+### gcloud
 
 To read logs from a log bucket, use the
 [`gcloud logging read`](/sdk/gcloud/reference/logging/read) command and add
@@ -1299,10 +1262,11 @@ data:
 
 
 ```
-gcloud logging read ** LOG_FILTER --bucket= BUCKET_ID --location= LOCATION --view= LOG_VIEW_ID 
+gcloud logging read LOG_FILTER --bucket= BUCKET_ID --location= LOCATION --view= LOG_VIEW_ID 
 ```
 
 
+### REST
 
 To read logs from a log bucket, use the
 [entries.list](/logging/docs/reference/v2/rest/v2/entries/list) method. Set
@@ -1344,7 +1308,7 @@ route logs to your bucket, do the following:
 
 - 
 
-In the Cloud de Confiance console, go to the IAM** page:
+In the Cloud de Confiance console, go to the **IAM** page:
 
 
 [Go to **IAM**](https://console.cloud.s3nscloud.fr/iam-admin/iam)

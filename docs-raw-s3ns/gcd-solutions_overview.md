@@ -73,18 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Available solutions ](#available_solutions)
-
-- [ Finance ](#finance)
-- [ Healthcare ](#healthcare)
-- [ Multi-universe ](#multi-universe)
-- [ Observability and monitoring ](#observability_and_monitoring)
-
-- [ Design considerations ](#design_considerations)
-- 
-
 
 
 
@@ -101,7 +89,7 @@ scenarios.
 Where available, solutions come with a reference implementation in GitHub that
 you can deploy and try yourself.
 
-## Before you begin 
+## Before you begin
 
 - (Recommended) Review the [key differences between
 Cloud de Confiance and
@@ -111,7 +99,7 @@ Google Cloud](/docs/overview/tpc-key-differences).
 haven't done so already, [set up the Google Cloud CLI for your
 universe](/docs/get-started-tpc/setup-gcloud).
 
-## Available solutions 
+## Available solutions
 
 The following solutions are available for
 Cloud de Confiance.

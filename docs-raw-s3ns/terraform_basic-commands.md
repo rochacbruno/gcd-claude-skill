@@ -128,17 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Prepare Cloud Shell ](#prepare-cloud-shell)
-- [ Prepare the directory ](#prepare-the-directory)
-- [ Apply the changes ](#apply-the-changes)
-- [ Reformat ](#format)
-- [ Validate ](#validate)
-- [ Delete changes ](#destroy)
-- [ Specify the project ID ](#google_project)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -151,7 +140,7 @@ Guides
 To apply your Terraform configuration in a Cloud de Confiance project, complete the steps in the
 following sections.
 
-## Prepare Cloud Shell 
+## Prepare Cloud Shell
 
 
 - Launch [Cloud Shell](https://shell.cloud.google.com/).

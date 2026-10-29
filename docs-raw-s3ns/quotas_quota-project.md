@@ -108,16 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ How the quota project is determined ](#project-determined)
-
-- [ Resource-based APIs ](#project-resource-based)
-- [ Client-based APIs ](#project-client-based)
-
-- [ Determine if an API is resource-based or client-based ](#determine-api)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -144,7 +134,7 @@ takes precedence over the [`billing/quota_project`
 property](/sdk/gcloud/reference/config/set#quota_project) in your
 gcloud CLI configuration.
 
-## How the quota project is determined 
+## How the quota project is determined
 
 How the quota project is determined depends on the type of API method that you
 use: *resource-based API* or *client-based API*. In rare cases, a service might

@@ -120,11 +120,12 @@ Artifact Registry
 
 
 
-# Artifact Registry documentation 
+
+# Artifact Registry documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/artifact-registry/docs/overview)
+Read product documentation 
 
 
 

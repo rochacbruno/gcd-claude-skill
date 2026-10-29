@@ -128,22 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Import resources one at a time ](#import-resources-one-at-a-time)
-
-- [ Import resources within modules ](#import-resources-within-modules)
-
-- [ Import resources in bulk with a configuration-driven import block ](#import-resources-in-bulk-in-code)
-- [ Import resources created after doing a bulk export ](#import-resources-after-doing-a-bulk-export)
-
-- [ Before you begin ](#before_you_begin)
-- [ Generate Terraform code for your resources ](#generate_terraform_code_for_your_resources)
-- [ Create Terraform modules from the generated code ](#create_terraform_modules_from_the_generated_code)
-- [ Import the modules into the Terraform state ](#import_the_modules_into_the_terraform_state)
-
-- [ Next steps ](#next_steps)
-- 
-
 
 
 
@@ -217,7 +201,6 @@ terraform import google_storage_bucket.sample sample-project/my-bucket
 
 Output:
 
-
 ```
 terraform import google_storage_bucket.sample sample-project/my-bucket
 google_storage_bucket.sample: Importing from ID "sample-project/my-bucket"...
@@ -279,7 +262,6 @@ the form `project/name`. The name can be identified from the plan output.
 
 Output:
 
-
 ```
 module.gcs_bucket.google_storage_bucket.bucket will be created
 + resource "google_storage_bucket" "bucket" {
@@ -304,7 +286,6 @@ terraform import module.gcs_bucket.google_storage_bucket.bucket sample-project/m
 
 
 Output:
-
 
 ```
 terraform import module.gcs_bucket.google_storage_bucket.bucket sample-project/my-bucket

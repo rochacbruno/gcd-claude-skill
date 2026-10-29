@@ -128,13 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ June 25, 2024 ](#June_25_2024)
-- [ June 17, 2024 ](#June_17_2024)
-- [ June 06, 2024 ](#June_06_2024)
-- [ May 28, 2024 ](#May_28_2024)
-- 
-
 
 
 
@@ -192,7 +185,7 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## June 25, 2024 
+## June 25, 2024
 
 
 Feature 

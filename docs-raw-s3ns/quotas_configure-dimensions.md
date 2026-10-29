@@ -108,13 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ View dimensions ](#view_dimensions)
-- [ Dimension precedence ](#dimension_precedence)
-- [ Combining dimensions ](#combining_dimensions)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -149,11 +142,8 @@ your project doesn't already use the associated resource. This section shows how
 to view dimensions by using the console and by using the gcloud CLI.
 
 
-[Console](#console) [gcloud](#gcloud) 
-More 
 
-
-
+### Console
 
 - 
 
@@ -217,6 +207,7 @@ attribute, so there are no dimensions to display.
 
 
 
+### gcloud
 
 
 

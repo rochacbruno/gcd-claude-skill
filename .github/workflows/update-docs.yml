@@ -18,15 +18,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: |
-          pip install playwright
-          playwright install chromium --with-deps
-
-      - name: Save previous update trackers
+      - name: Save previous manifests and update trackers
         run: |
           cp docs-raw/_last_updated.json /tmp/previous_tracker_berlin.json 2>/dev/null || echo "{}" > /tmp/previous_tracker_berlin.json
           cp docs-raw-s3ns/_last_updated.json /tmp/previous_tracker_s3ns.json 2>/dev/null || echo "{}" > /tmp/previous_tracker_s3ns.json
+          cp docs-raw/_manifest.json /tmp/previous_manifest_berlin.json 2>/dev/null || echo "{}" > /tmp/previous_manifest_berlin.json
+          cp docs-raw-s3ns/_manifest.json /tmp/previous_manifest_s3ns.json 2>/dev/null || echo "{}" > /tmp/previous_manifest_s3ns.json
+          cp docs-raw-s3ns/_secnumcloud_status.json /tmp/previous_secnumcloud_s3ns.json 2>/dev/null || echo "{}" > /tmp/previous_secnumcloud_s3ns.json
 
       - name: Scrape Berlin (GCD) docs
         run: python3 -u scripts/scrape-gcd-docs.py --region berlin
@@ -34,30 +32,45 @@ jobs:
       - name: Scrape S3NS (Cloud de Confiance) docs
         run: python3 -u scripts/scrape-gcd-docs.py --region s3ns
 
-      - name: Diff update trackers
+      - name: Synchronize skill capabilities and references
+        run: |
+          python3 -u scripts/sync-skill.py
+          python3 -u scripts/sync-skill.py --check
+
+      - name: Detect documentation and skill changes
         id: diff
         run: |
           CHANGED=false
           if ! diff -q /tmp/previous_tracker_berlin.json docs-raw/_last_updated.json > /dev/null 2>&1; then
             CHANGED=true
-            echo "Berlin documentation changes detected:"
-            diff /tmp/previous_tracker_berlin.json docs-raw/_last_updated.json || true
+            echo "Berlin last-updated tracker changes detected:"
+            diff -u /tmp/previous_tracker_berlin.json docs-raw/_last_updated.json || true
           fi
           if ! diff -q /tmp/previous_tracker_s3ns.json docs-raw-s3ns/_last_updated.json > /dev/null 2>&1; then
             CHANGED=true
-            echo "S3NS documentation changes detected:"
-            diff /tmp/previous_tracker_s3ns.json docs-raw-s3ns/_last_updated.json || true
+            echo "S3NS last-updated tracker changes detected:"
+            diff -u /tmp/previous_tracker_s3ns.json docs-raw-s3ns/_last_updated.json || true
+          fi
+          if ! diff -q /tmp/previous_secnumcloud_s3ns.json docs-raw-s3ns/_secnumcloud_status.json > /dev/null 2>&1; then
+            CHANGED=true
+            echo "S3NS SecNumCloud 3.2 qualification status changes detected:"
+            diff -u /tmp/previous_secnumcloud_s3ns.json docs-raw-s3ns/_secnumcloud_status.json || true
+          fi
+          if [ -n "$(git status --porcelain docs-raw/ docs-raw-s3ns/ references/ SKILL.md README.md)" ]; then
+            CHANGED=true
+            echo "Repository file changes detected:"
+            git status --short docs-raw/ docs-raw-s3ns/ references/ SKILL.md README.md
           fi
           if [ "$CHANGED" = "false" ]; then
-            echo "No documentation changes detected in either region."
+            echo "No documentation or skill changes detected in either region."
           fi
           echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
 
-      - name: Commit updated docs
+      - name: Commit updated docs and skill references
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs-raw/ docs-raw-s3ns/
-          git commit -m "chore: update scraped GCD docs ($(date -u +%Y-%m-%d))"
+          git add docs-raw/ docs-raw-s3ns/ references/ SKILL.md README.md
+          git commit -m "chore: update scraped GCD/S3NS docs and sync skill ($(date -u +%Y-%m-%d))"
           git push

@@ -148,17 +148,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: apikeys.googleapis.com ](#service:-apikeys.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v2.keys ](#rest-resource:-v2.keys)
-- [ REST Resource: v2.operations ](#rest-resource:-v2.operations)
-- [ REST Resource: v2.projects.locations.keys ](#rest-resource:-v2.projects.locations.keys)
-- 
-
 
 
 
@@ -186,7 +175,7 @@ Manages the API keys associated with developer projects.
 
 
 
-## Service: apikeys. googleapis. com 
+## Service: apikeys.googleapis.com
 
 
 
@@ -194,7 +183,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -225,7 +214,7 @@ A [service endpoint](https://berlin.devsitetest.how/apis/design/glossary#api_ser
 
 
 
-## REST Resource: [v2. keys](/api-keys/docs/reference/rest/v2/keys)
+## REST Resource: [v2.keys](/api-keys/docs/reference/rest/v2/keys)
 
 
 
@@ -243,9 +232,9 @@ Methods |
 
 | 
 
-`[lookup Key](/api-keys/docs/reference/rest/v2/keys/lookupKey)` | 
+`[lookupKey](/api-keys/docs/reference/rest/v2/keys/lookupKey)` | 
 
-`GET / v2/ keys:lookup Key` 
+`GET /v2/keys:lookupKey` 
 
 Find the parent project and resource name of the API key that matches the key string in the request. | 
 |
@@ -255,7 +244,7 @@ Find the parent project and resource name of the API key that matches the key st
 
 
 
-## REST Resource: [v2. operations](/api-keys/docs/reference/rest/v2/operations)
+## REST Resource: [v2.operations](/api-keys/docs/reference/rest/v2/operations)
 
 
 
@@ -275,7 +264,7 @@ Methods |
 
 `[get](/api-keys/docs/reference/rest/v2/operations/get)` | 
 
-The method `google. longrunning. Operations. Get Operation` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.longrunning.Operations.GetOperation` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 

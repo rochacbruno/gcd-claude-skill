@@ -108,13 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Limitations ](#limitations)
-- [ Enforced actions ](#enforced_actions)
-- [ Set up ](#set_up)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -131,7 +124,7 @@ Cloud Quotas with
 requests to Cloud Quotas stay within the VPC
 service perimeter boundary.
 
-## Limitations 
+## Limitations
 
 Because VPC Service Controls enforces boundaries at the project level,
 Cloud Quotas requests that originate from clients within the

@@ -108,20 +108,6 @@ Guides
 
 
 
-- On this page 
-- [ Set the quota project programmatically ](#set-project-programmatically)
-
-- [ Client library ](#client_library)
-- [ gcloud CLI ](#gcloud-cli-commands)
-- [ REST request ](#rest_request)
-
-- [ Set the quota project using an environment variable ](#set-project-variable)
-- [ Set the quota project using authentication credentials ](#set-project-credentials)
-- [ Permissions required to set and use the quota project ](#project-permissions)
-- [ Set the quota user ](#set_the_quota_user)
-- [ What's next ](#whats_next)
-- 
-
 
 
 

@@ -128,71 +128,6 @@ Reference
 
 
 
-- On this page 
-- [ Service: logging.googleapis.com ](#service:-logging.googleapis.com)
-
-- [ Discovery document ](#discovery-document)
-- [ Service endpoint ](#service-endpoint)
-
-- [ REST Resource: v2 ](#rest-resource:-v2)
-- [ REST Resource: v2.billingAccounts ](#rest-resource:-v2.billingaccounts)
-- [ REST Resource: v2.billingAccounts.exclusions ](#rest-resource:-v2.billingaccounts.exclusions)
-- [ REST Resource: v2.billingAccounts.locations.buckets ](#rest-resource:-v2.billingaccounts.locations.buckets)
-- [ REST Resource: v2.billingAccounts.locations.buckets.links ](#rest-resource:-v2.billingaccounts.locations.buckets.links)
-- [ REST Resource: v2.billingAccounts.locations.buckets.views ](#rest-resource:-v2.billingaccounts.locations.buckets.views)
-- [ REST Resource: v2.billingAccounts.locations.buckets.views.logs ](#rest-resource:-v2.billingaccounts.locations.buckets.views.logs)
-- [ REST Resource: v2.billingAccounts.locations.operations ](#rest-resource:-v2.billingaccounts.locations.operations)
-- [ REST Resource: v2.billingAccounts.locations.recentQueries ](#rest-resource:-v2.billingaccounts.locations.recentqueries)
-- [ REST Resource: v2.billingAccounts.locations.savedQueries ](#rest-resource:-v2.billingaccounts.locations.savedqueries)
-- [ REST Resource: v2.billingAccounts.logs ](#rest-resource:-v2.billingaccounts.logs)
-- [ REST Resource: v2.billingAccounts.sinks ](#rest-resource:-v2.billingaccounts.sinks)
-- [ REST Resource: v2.entries ](#rest-resource:-v2.entries)
-- [ REST Resource: v2.exclusions ](#rest-resource:-v2.exclusions)
-- [ REST Resource: v2.folders ](#rest-resource:-v2.folders)
-- [ REST Resource: v2.folders.exclusions ](#rest-resource:-v2.folders.exclusions)
-- [ REST Resource: v2.folders.locations.buckets ](#rest-resource:-v2.folders.locations.buckets)
-- [ REST Resource: v2.folders.locations.buckets.links ](#rest-resource:-v2.folders.locations.buckets.links)
-- [ REST Resource: v2.folders.locations.buckets.views ](#rest-resource:-v2.folders.locations.buckets.views)
-- [ REST Resource: v2.folders.locations.buckets.views.logs ](#rest-resource:-v2.folders.locations.buckets.views.logs)
-- [ REST Resource: v2.folders.locations.logScopes ](#rest-resource:-v2.folders.locations.logscopes)
-- [ REST Resource: v2.folders.locations.operations ](#rest-resource:-v2.folders.locations.operations)
-- [ REST Resource: v2.folders.locations.recentQueries ](#rest-resource:-v2.folders.locations.recentqueries)
-- [ REST Resource: v2.folders.locations.savedQueries ](#rest-resource:-v2.folders.locations.savedqueries)
-- [ REST Resource: v2.folders.logs ](#rest-resource:-v2.folders.logs)
-- [ REST Resource: v2.folders.sinks ](#rest-resource:-v2.folders.sinks)
-- [ REST Resource: v2.locations.buckets ](#rest-resource:-v2.locations.buckets)
-- [ REST Resource: v2.locations.buckets.links ](#rest-resource:-v2.locations.buckets.links)
-- [ REST Resource: v2.locations.buckets.views ](#rest-resource:-v2.locations.buckets.views)
-- [ REST Resource: v2.locations.operations ](#rest-resource:-v2.locations.operations)
-- [ REST Resource: v2.logs ](#rest-resource:-v2.logs)
-- [ REST Resource: v2.monitoredResourceDescriptors ](#rest-resource:-v2.monitoredresourcedescriptors)
-- [ REST Resource: v2.organizations ](#rest-resource:-v2.organizations)
-- [ REST Resource: v2.organizations.exclusions ](#rest-resource:-v2.organizations.exclusions)
-- [ REST Resource: v2.organizations.locations.buckets ](#rest-resource:-v2.organizations.locations.buckets)
-- [ REST Resource: v2.organizations.locations.buckets.links ](#rest-resource:-v2.organizations.locations.buckets.links)
-- [ REST Resource: v2.organizations.locations.buckets.views ](#rest-resource:-v2.organizations.locations.buckets.views)
-- [ REST Resource: v2.organizations.locations.buckets.views.logs ](#rest-resource:-v2.organizations.locations.buckets.views.logs)
-- [ REST Resource: v2.organizations.locations.logScopes ](#rest-resource:-v2.organizations.locations.logscopes)
-- [ REST Resource: v2.organizations.locations.operations ](#rest-resource:-v2.organizations.locations.operations)
-- [ REST Resource: v2.organizations.locations.recentQueries ](#rest-resource:-v2.organizations.locations.recentqueries)
-- [ REST Resource: v2.organizations.locations.savedQueries ](#rest-resource:-v2.organizations.locations.savedqueries)
-- [ REST Resource: v2.organizations.logs ](#rest-resource:-v2.organizations.logs)
-- [ REST Resource: v2.organizations.sinks ](#rest-resource:-v2.organizations.sinks)
-- [ REST Resource: v2.projects ](#rest-resource:-v2.projects)
-- [ REST Resource: v2.projects.exclusions ](#rest-resource:-v2.projects.exclusions)
-- [ REST Resource: v2.projects.locations.buckets ](#rest-resource:-v2.projects.locations.buckets)
-- [ REST Resource: v2.projects.locations.buckets.links ](#rest-resource:-v2.projects.locations.buckets.links)
-- [ REST Resource: v2.projects.locations.buckets.views ](#rest-resource:-v2.projects.locations.buckets.views)
-- [ REST Resource: v2.projects.locations.buckets.views.logs ](#rest-resource:-v2.projects.locations.buckets.views.logs)
-- [ REST Resource: v2.projects.locations.logScopes ](#rest-resource:-v2.projects.locations.logscopes)
-- [ REST Resource: v2.projects.locations.operations ](#rest-resource:-v2.projects.locations.operations)
-- [ REST Resource: v2.projects.locations.recentQueries ](#rest-resource:-v2.projects.locations.recentqueries)
-- [ REST Resource: v2.projects.locations.savedQueries ](#rest-resource:-v2.projects.locations.savedqueries)
-- [ REST Resource: v2.projects.logs ](#rest-resource:-v2.projects.logs)
-- [ REST Resource: v2.projects.sinks ](#rest-resource:-v2.projects.sinks)
-- [ REST Resource: v2.sinks ](#rest-resource:-v2.sinks)
-- 
-
 
 
 
@@ -328,7 +263,7 @@ Writes log entries and manages your Cloud Logging configuration.
 
 
 
-## Service: logging. googleapis. com 
+## Service: logging.googleapis.com
 
 
 
@@ -336,7 +271,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -385,34 +320,34 @@ Methods |
 
 | 
 
-`[get Settings](/logging/docs/reference/v2/rest/v2/TopLevel/getSettings)` | 
+`[getSettings](/logging/docs/reference/v2/rest/v2/TopLevel/getSettings)` | 
 
-`GET / v2/ {name=*/ *}/ settings` 
+`GET /v2/{name=*/*}/settings` 
 
 Gets the settings for the given resource. | 
 |
 
 | 
 
-`[update Settings](/logging/docs/reference/v2/rest/v2/TopLevel/updateSettings)` | 
+`[updateSettings](/logging/docs/reference/v2/rest/v2/TopLevel/updateSettings)` | 
 
-`PATCH / v2/ {name=*/ *}/ settings` 
+`PATCH /v2/{name=*/*}/settings` 
 
 Updates the settings for the given resource. | 
 |
 
 | 
 
-`[get Cmek Settings](/logging/docs/reference/v2/rest/v2/TopLevel/getCmekSettings)` | 
+`[getCmekSettings](/logging/docs/reference/v2/rest/v2/TopLevel/getCmekSettings)` | 
 
-The method `google. logging. v2. Config Service V2. Get Cmek Settings` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.logging.v2.ConfigServiceV2.GetCmekSettings` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 | 
 
-`[update Cmek Settings](/logging/docs/reference/v2/rest/v2/TopLevel/updateCmekSettings)` | 
+`[updateCmekSettings](/logging/docs/reference/v2/rest/v2/TopLevel/updateCmekSettings)` | 
 
-The method `google. logging. v2. Config Service V2. Update Cmek Settings` is not available in Google Cloud Dedicated in Germany. | 
+The method `google.logging.v2.ConfigServiceV2.UpdateCmekSettings` is not available in Google Cloud Dedicated in Germany. | 
 |
 
 
@@ -420,7 +355,7 @@ The method `google. logging. v2. Config Service V2. Update Cmek Settings` is not
 
 
 
-## REST Resource: [v2. billing Accounts](/logging/docs/reference/v2/rest/v2/billingAccounts)
+## REST Resource: [v2.billingAccounts](/logging/docs/reference/v2/rest/v2/billingAccounts)
 
 
 

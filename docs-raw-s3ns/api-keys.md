@@ -160,11 +160,12 @@ Overview
 
 
 
-# API Keys documentation 
+
+# API Keys documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/api-keys/docs/overview)
+Read product documentation 
 
 
 

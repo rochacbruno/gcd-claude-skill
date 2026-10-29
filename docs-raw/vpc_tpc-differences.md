@@ -113,16 +113,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Key differences ](#key-differences)
-
-- [ Network ](#networks)
-- [ Regions and zones ](#regions-zones)
-- [ Insights and observability ](#observability-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -150,7 +140,7 @@ VPC documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -180,7 +170,7 @@ Google Cloud Dedicated.
 
 
 | 
-VPC networks**
+**VPC networks**
 | 
 
 
@@ -399,9 +389,7 @@ For details about other services and features in Google Cloud Dedicated and thei
 their Google Cloud counterparts, see the [product list.](https://berlin.devsitetest.how/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -438,9 +426,7 @@ Cloud Load Balancing documentation](/load-balancing/docs/tpc-differences)
 
 
 
-
-### Google Cloud Dedicated guides
-
+Google Cloud Dedicated guides 
 
 
 

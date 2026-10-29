@@ -126,13 +126,6 @@ Guides
 
 
 
-- On this page 
-- [ Required role ](#required_role)
-- [ Set or modify custom quotas ](#set-custom-quotas)
-- [ Returned error messages ](#error-messages)
-- [ Example ](#example)
-- [ What's next ](#whats_next)
-- 
 
 
 
@@ -141,8 +134,7 @@ Guides
 
 
 
-
-# Create custom query quotas 
+# Create custom query quotas
 
 
 

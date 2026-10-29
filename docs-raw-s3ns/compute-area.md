@@ -129,8 +129,9 @@ Compute
 
 
 
-### Virtual machines
 
+
+### Virtual machines
 
 
 
@@ -229,8 +230,8 @@ Compute Engine resources are hosted in multiple locations worldwide. These locat
 
 
 
-### Images
 
+### Images
 
 
 
@@ -356,8 +357,8 @@ Bring up your Docker containers on Cloud de Confiance quickly, efficiently, and 
 
 
 
-### Block storage
 
+### Block storage
 
 
 
@@ -447,8 +448,8 @@ Use scalable, high-performance storage service with a comprehensive suite of dat
 
 
 
-### Workloads
 
+### Workloads
 
 
 
@@ -556,8 +557,8 @@ Learn the machine families, machine series, and machine types that you can choos
 
 
 
-### Related products, guides, and sites
 
+### Related products, guides, and sites
 
 
 

@@ -120,11 +120,12 @@ BigQuery
 
 
 
-# BigQuery documentation 
+
+# BigQuery documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/bigquery/docs/introduction)
+Read product documentation 
 
 
 

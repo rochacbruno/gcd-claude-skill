@@ -148,12 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Test containerized applications locally ](#local-testing)
-- [ Run containerized applications on Cloud de Confiance ](#gcp-containerized)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -167,7 +161,7 @@ Authentication for containerized applications running on Cloud Run
 or Google Kubernetes Engine is handled differently between local testing environments
 and Cloud de Confiance environments.
 
-### Test containerized applications locally 
+### Test containerized applications locally
 
 To test your containerized application on your local workstation, you can
 configure your container to authenticate with your

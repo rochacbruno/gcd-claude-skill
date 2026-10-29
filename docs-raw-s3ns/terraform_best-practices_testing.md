@@ -128,16 +128,6 @@ Guides
 
 
 
-- On this page 
-- [ Use less expensive test methods first ](#test-methods)
-- [ Start small ](#start-small)
-- [ Randomize project IDs and resource names ](#randomize)
-- [ Use a separate environment for testing ](#test-environment)
-- [ Clean up all resources ](#clean-up)
-- [ Optimize test runtime ](#runtime)
-- [ What's next ](#whats-next)
-- 
-
 
 
 
@@ -262,9 +252,9 @@ cycle.
 separate suites. When iterating, execute each suite independently.
 
 - Similarly, using Terratest, wrap each stage of your test with
-`stage(t, STAGE_NAME , CORRESPONDING_TEST*FUNCTION* *)*`*.
+`stage(t, STAGE_NAME , CORRESPONDING_TEST*FUNCTION )`.
 Set environment variables that indicate which tests to run. For example,
-`SKIP`*` STAGE_NAME ="true"`.
+`SKIP* STAGE_NAME ="true"`.
 
 - The
 [blueprint testing framework](https://pkg.go.dev/github.com/GoogleCloudPlatform/cloud-foundation-toolkit/infra/blueprint-test)

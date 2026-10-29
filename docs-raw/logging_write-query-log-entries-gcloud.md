@@ -126,19 +126,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Before you begin ](#before-you-begin)
-
-- [ Required roles ](#required-roles)
-
-- [ Write log entries by using the gcloud CLI ](#write-log-entries-using-sdk)
-- [ List log entries by using the gcloud CLI ](#list-log-entries-using-sdk)
-- [ View log entries in the Logs Explorer ](#explore)
-- [ Query log entries in the Logs Explorer ](#filter-log-entries)
-- [ Troubleshooting ](#troubleshooting)
-- [ Clean up ](#clean-up)
-- [ What's next ](#whats-next)
-- 
 
 
 
@@ -148,8 +135,7 @@ Guides
 
 
 
-
-# Write and query log entries with the gcloud CLI 
+# Write and query log entries with the gcloud CLI
 
 
 
@@ -169,7 +155,7 @@ and shows you how to do the following:
 
 
 
-## Before you begin 
+## Before you begin
 
 
 You must have a Google Cloud Dedicated project with billing enabled to complete this
@@ -265,8 +251,8 @@ gcloud init
 
 
 
-Roles required to select or create a project**
 
+**Roles required to select or create a project**
 
 
 
@@ -302,7 +288,7 @@ Create a Google Cloud Dedicated project:
 
 
 ```
-gcloud projects create ** PROJECT_ID 
+gcloud projects create PROJECT_ID 
 ```
 
 
@@ -553,7 +539,7 @@ following:
 
 In the Google Cloud Dedicated console, go to the
 segment 
-Logs Explorer** page:
+**Logs Explorer** page:
 
 
 [Go to **Logs Explorer**](https://console.cloud.berlin-build0.goog/logs/query)

@@ -73,15 +73,6 @@ Get started
 
 
 
-- On this page 
-- [ Differences from Google Cloud ](#differences-from-google-cloud)
-- [ Simplest quickstart (Compute Engine) ](#simplest-quickstart-compute-engine)
-- [ Simple application (Cloud SQL and Compute Engine) ](#simple-application-cloud-sql-and-compute-engine)
-- [ Containerized application (Cloud SQL and GKE): ](#containerized-application-cloud-sql-and-google-kubernetes-engine)
-- [ Data analytics workload (BigQuery) ](#data-analytics-workload-bigquery)
-- [ Resilient application (Compute Engine) ](#resilient-application-compute-engine)
-- 
-
 
 
 
@@ -94,7 +85,7 @@ The following are some suggestions for first quickstarts (basic tutorials) and
 tutorials to follow when getting started with
 Cloud de Confiance by S3NS. Or go exploring!
 
-## Differences from Google Cloud 
+## Differences from Google Cloud
 
 Note the following important differences from Google Cloud when
 following tutorials:

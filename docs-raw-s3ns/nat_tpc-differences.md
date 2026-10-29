@@ -113,17 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Security and access control ](#security-differences)
-- [ Network ](#network-differences)
-- [ Workflows ](#workflow-differences)
-- [ Insights and observability ](#observability-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -148,7 +137,7 @@ Cloud NAT documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -286,9 +275,7 @@ For details about other services and features in Cloud de Confiance and their di
 their Google Cloud counterparts, see the [product list.](https://documentation.s3ns.fr/products)
 
 
-
-### Related products
-
+Related products 
 
 
 
@@ -323,9 +310,7 @@ in Cloud de Confiance by S3NS](/monitoring/docs/tpc-differences)
 
 
 
-
-### Cloud de Confiance guides
-
+Cloud de Confiance guides 
 
 
 

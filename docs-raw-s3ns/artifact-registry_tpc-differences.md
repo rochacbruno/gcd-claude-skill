@@ -113,17 +113,6 @@ Guides
 
 
 
-- On this page 
-- [ Key differences ](#key-differences)
-
-- [ Repository formats and modes ](#repository-formats)
-- [ Workflows and tools ](#workflows-tools)
-- [ Integrations ](#integrations-differences)
-- [ Security and access control ](#security-differences)
-
-- [ Related guides ](#related-guides)
-- 
-
 
 
 
@@ -147,7 +136,7 @@ Artifact Registry documentation.
 
 
 
-## Key differences 
+## Key differences
 
 
 
@@ -317,7 +306,7 @@ client tools:
 |
 
 | 
-**Cleanup policies ** | 
+**Cleanup policies | 
 Cleanup policies aren't available. | 
 |
 
@@ -327,7 +316,7 @@ Cleanup policies aren't available. |
 
 
 | 
-**Vulnerability Scanning**
+Vulnerability Scanning**
 | 
 Vulnerability scanning with Artifact Analysis isn't available.
 | 

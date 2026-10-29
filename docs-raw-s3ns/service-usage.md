@@ -120,11 +120,12 @@ Service Usage
 
 
 
-# Service Usage documentation 
+
+# Service Usage documentation
 
 
 
-[Read product documentation](https://documentation.s3ns.fr/service-usage/docs/overview)
+Read product documentation 
 
 
 

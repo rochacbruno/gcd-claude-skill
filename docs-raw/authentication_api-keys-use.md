@@ -148,12 +148,6 @@ Guides
 
 
 
-- On this page 
-- [ Before you begin ](#before_you_begin)
-- [ Using an API key with REST ](#using-with-rest)
-- [ Using an API key with client libraries ](#using-with-client-libs)
-- 
-
 
 
 
@@ -172,7 +166,7 @@ determine whether it accepts API keys.
 For information about creating and managing API keys, including restricting
 API keys, see [Manage API keys](/docs/authentication/api-keys).
 
-## Before you begin 
+## Before you begin
 
 
 
@@ -208,11 +202,9 @@ Select the tab for how you plan to use the samples on this page:
 
 
 
-[C#](#c) [C++](#c++) [Go](#go) [Node.js](#node.js) [Python](#python) [REST](#rest) 
-More 
 
 
-
+### C#
 
 
 
@@ -333,6 +325,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### C++
+
 
 
 
@@ -452,6 +446,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### Go
 
 
 
@@ -575,6 +571,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### Node.js
+
 
 
 
@@ -696,6 +694,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+
+### Python
 
 
 
@@ -823,6 +823,8 @@ in the Google Cloud Dedicated authentication documentation.
 
 
 
+### REST
+
 
 
 
@@ -891,3 +893,17 @@ However, this method includes your API key in the URL, exposing your key
 to URL scans.
 
 ## Using an API key with client libraries
+
+
+
+
+When you use API keys in your applications, ensure that they are kept secure
+during both storage and transmission. Publicly exposing your API keys can
+lead to unexpected charges on your account. For more information, see
+[Best practices for managing API keys](/docs/authentication/api-keys-best-practices).
+
+## What's next
+
+- See an overview of [authentication methods](/docs/authentication).
+
+- Learn more about the [API Keys API](/api-keys/docs/overview).

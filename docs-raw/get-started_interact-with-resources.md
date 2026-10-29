@@ -88,32 +88,6 @@ Get started
 
 
 
-- On this page 
-- [ Graphical interfaces ](#graphical-interfaces)
-
-- [ Google Cloud Dedicated console ](#console)
-- [ Google Cloud Dedicated mobile app ](#mobile-app)
-
-- [ Development environments ](#development-environments)
-
-- [ Cloud Shell (and Cloud Shell Editor) ](#cloud-shell)
-- [ Antigravity 2.0 ](#antigravity)
-- [ Cloud Workstations ](#cloud-workstations)
-- [ Cloud Code ](#cloud-code)
-
-- [ Developer tools ](#developer-tools)
-
-- [ Google Cloud SDK ](#cloud-sdk)
-- [ AI-powered command-line tools ](#cli-tools)
-- [ MCP servers and Agents ](#mcp-servers)
-- [ Infrastructure as code (IaC) tools ](#iac-tools)
-
-- [ Integrated AI assistance ](#integrated-ai-assistance)
-
-- [ Gemini for Google Cloud Dedicated (web and mobile) ](#gemini)
-
-- 
-
 
 
 
@@ -130,12 +104,12 @@ you can choose the path that best aligns with your workflow. Mix and match
 these interfaces and tools to create pipelines for development, deployment,
 and monitoring.
 
-## Graphical interfaces 
+## Graphical interfaces
 
 Use graphical interfaces for visual resource management, administrative tasks,
 and high-level overviews of your cloud footprint.
 
-### Google Cloud Dedicated console 
+### Google Cloud Dedicated console
 
 If you prefer to manage your Google Cloud Dedicated projects and resources through
 a graphical user interface, use the web-based

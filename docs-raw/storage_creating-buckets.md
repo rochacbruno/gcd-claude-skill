@@ -128,12 +128,6 @@ Guides
 
 
 
-- On this page ** 
-- [ Required roles ](#required-roles)
-- [ Create a new bucket ](#create-bucket)
-- [ What's next ](#whats_next)
-- 
-
 
 
 
@@ -164,7 +158,7 @@ If you're creating a bucket for the first time, see
 comprehensive walkthrough of the tasks you can perform with
 Cloud Storage.
 
-## Required roles 
+## Required roles
 
 In order to get the required permissions for creating a Cloud Storage
 bucket, ask your administrator to grant you the Storage Admin
@@ -176,9 +170,8 @@ To see the exact permissions that are required, expand the
 
 
 
+
 #### Required permissions
-
-
 
 - `storage.buckets.create`
 
@@ -208,14 +201,11 @@ To create a bucket with specific settings or advanced configurations, complete
 the following steps.
 
 
-[Console](#console) [Command line](#command-line) [Client libraries](#client-libraries) [Terraform](#terraform) [REST APIs](#rest-apis) 
-More 
+
+### Console
 
 
-
-
-
-- In the Google Cloud Dedicated console, go to the Cloud Storage Buckets** page.
+- In the Google Cloud Dedicated console, go to the Cloud Storage **Buckets** page.
 
 [Go to Buckets](https://console.cloud.berlin-build0.goog/storage/browser)
 
@@ -661,6 +651,7 @@ operations in the Google Cloud Dedicated console, see
 
 
 
+### Command line
 
 - 
 
@@ -755,6 +746,7 @@ gcloud CLI, see [`buckets create` options](/sdk/gcloud/reference/storage/buckets
 
 
 
+### Client libraries
 
 
 
@@ -795,12 +787,10 @@ gcloud CLI, see [`buckets create` options](/sdk/gcloud/reference/storage/buckets
 
 
 
-[ C++ ](#c++) [ C# ](#c) [ Go ](#go) [ Java ](#java) [ Node.js ](#node.js) [ PHP ](#php) [ Python ](#python) [ Ruby ](#ruby) [ Rust ](#rust) 
-More 
 
 
 
-
+### C++ 
 
 
 
@@ -913,6 +903,8 @@ std :: cout "Bucket " bucket_metadata - > name () " created."
 
 
 
+
+### C# 
 
 
 
@@ -1057,6 +1049,8 @@ return newlyCreatedBucket ;
 
 
 
+### Go 
+
 
 
 
@@ -1190,6 +1184,8 @@ return nil
 
 
 
+
+### Java 
 
 
 
@@ -1330,6 +1326,8 @@ System . out . println (
 
 
 
+### Node.js 
+
 
 
 
@@ -1466,6 +1464,8 @@ createBucketWithStorageClassAndLocation (). catch ( console . error );
 
 
 
+### PHP 
+
 
 
 
@@ -1591,6 +1591,8 @@ printf('Created bucket %s in %s with storage class %s', $bucketName, $storageCla
 
 
 
+### Python 
+
 
 
 
@@ -1711,6 +1713,8 @@ return new_bucket
 
 
 
+### Ruby 
+
 
 
 
@@ -1818,6 +1822,8 @@ end
 
 
 
+### Rust 
+
 
 
 
@@ -1905,6 +1911,7 @@ Ok (())
 
 
 
+### Terraform
 
 You can use a [Terraform resource to create a storage bucket](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket).
 
@@ -1947,11 +1954,10 @@ uniform_bucket_level_access = true
 
 
 
-[JSON API](#json-api) [XML API](#xml-api) 
-More 
+### REST APIs
 
 
-
+### JSON API
 
 - 
 
@@ -2023,6 +2029,7 @@ example, `my-project`.
 
 
 
+### XML API
 
 - 
 
