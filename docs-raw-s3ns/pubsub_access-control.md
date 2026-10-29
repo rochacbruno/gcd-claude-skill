@@ -1,7 +1,7 @@
 # Access control with Identity and Access Management
 
 Source: https://documentation.s3ns.fr/pubsub/docs/access-control
-Last updated: 2026-10-26
+Last updated: 2026-10-28
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -150,6 +150,11 @@ Guides
 - [ Test permissions ](#test-permissions)
 
 - [ Cross-project communication ](#sample_use_case_cross-project_communication)
+
+- [ Publish to a topic in a different project ](#cross-project-publish)
+- [ Create a subscription in a different project ](#cross-project-subscriptions)
+- [ Receive messages from a topic in a different project ](#cross-project-receive)
+
 - [ Partial availability behavior ](#partial_availability_behavior)
 - [ What's Next ](#whats_next)
 - 
@@ -2096,7 +2101,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # subscription_id = "your-subscription-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 
 policy = pubsub . [ iam ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html) . get_iam_policy \ 
 resource : pubsub . subscription_path ( subscription_id ) 
@@ -2513,7 +2518,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # topic_id = "your-topic-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 
 policy = pubsub . [ iam ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html) . get_iam_policy resource : pubsub . topic_path ( topic_id ) 
 
@@ -3047,7 +3052,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 # service_account_email = 
 # "serviceAccount:account_name@project_name.iam.gserviceaccount.com" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 
 bindings = Google :: Iam :: [ V1 ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub-V1.html) :: Binding . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) \ 
 role : role , 
@@ -3567,7 +3572,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 # service_account_email = 
 # "serviceAccount:account_name@project_name.iam.gserviceaccount.com" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 
 bindings = Google :: Iam :: [ V1 ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub-V1.html) :: Binding . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) \ 
 role : role , 
@@ -4053,7 +4058,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # subscription_id = "your-subscription-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 subscription_admin = pubsub . [ subscription_admin ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html)
 permissions = [ "pubsub.subscriptions.consume" , "pubsub.subscriptions.update" ] 
 
@@ -4538,7 +4543,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # topic_id = "your-topic-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 topic_admin = pubsub . [ topic_admin ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html)
 permissions = [ "pubsub.topics.attachSubscription" , "pubsub.topics.publish" , 
 "pubsub.topics.update" ] 
@@ -4565,40 +4570,59 @@ if response . permissions . include? "pubsub.topics.update"
 Pub/Sub IAM is useful for fine-tuning access in
 cross-project communication.
 
-Suppose a service account in Cloud Project A wants to publish messages to a
-topic in Cloud Project B. First, enable the Pub/Sub API
-in Project A.
+### Publish to a topic in a different project
 
-Second, grant the service account **Edit** permission in
-Cloud Project B. However, this approach is often too coarse. You can use the
-IAM API to achieve a more fine-grained level of access.
+Suppose that you want a service account in project A to publish messages to a
+topic in project B. To enable this scenario, do the following:
 
+- 
 
+Enable the Pub/Sub API in project A.
 
-For example, this snippet uses the `setIamPolicy()` method in project-b and a prepared
-`topic_policy.json` file to grant the service account
-`foobar@` project-a `.s3ns.iam.gserviceaccount.com` of project-a the publisher role on the topic
-`projects/` project-b `/topics/` topic-b :
+- 
 
+Grant the service account the `pubsub.topics.publish` permission either on
+project B or on the topic. The **Pub/Sub Publisher**
+(`roles/pubsub.publisher`) role includes this permission.
 
-```
-gcloud pubsub topics set-iam-policy \
-projects/ project-b /topics/ topic-b \
-topic_policy.json
-```
+### Create a subscription in a different project
 
-Output:
+Suppose that you want a service account in project A to create a subscription in
+project A for a topic in project B. To enable this scenario, do the following:
 
+- 
 
-```
-Updated IAM policy for topic topic-b .
-bindings:
-- members:
-- serviceAccount:foobar@ project-a .s3ns.iam.gserviceaccount.com
-role: roles/pubsub.publisher
-etag: BwWGrQYX6R4=
-```
+Enable the Pub/Sub API in both projects.
 
+- 
+
+Grant the service account the following permissions:
+
+- `pubsub.subscriptions.create` on project A.
+
+- `pubsub.topics.attachSubscription` on the topic in project B.
+
+The **Pub/Sub Editor** (`roles/pubsub.editor`) role includes these
+permissions.
+
+- 
+
+Create a subscription in project A that is attached to the topic in project
+B.
+
+### Receive messages from a topic in a different project
+
+Suppose that you want a service account in project A to receive messages from a
+subscription in project B. To enable this scenario, do the following:
+
+- 
+
+Enable the Pub/Sub API in project A.
+
+- 
+
+Grant the service account the **Pub/Sub Subscriber**
+(`roles/pubsub.subscriber`) role on either project B or on the subscription.
 
 ## Partial availability behavior
 

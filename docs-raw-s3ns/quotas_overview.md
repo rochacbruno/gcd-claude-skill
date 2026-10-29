@@ -1,7 +1,7 @@
 # Cloud Quotas overview
 
 Source: https://documentation.s3ns.fr/docs/quotas/overview
-Last updated: 2026-10-26
+Last updated: 2026-10-28
 
 - 
 
@@ -114,7 +114,7 @@ Guides
 
 
 
-Cloud de Confiance by S3NS uses quotas to help ensure fairness and reduce
+Cloud de Confiance by S3NS uses quotas to help maintain fairness and reduce
 spikes in resource use and availability. A quota restricts how much of a
 Cloud de Confiance resource your Cloud de Confiance project can use. Quotas
 apply to a range of resource types, including hardware, software, and network

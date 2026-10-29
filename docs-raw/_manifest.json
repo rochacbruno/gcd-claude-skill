@@ -151,14 +151,14 @@
     "filename": "bigquery.md",
     "size": 4464,
     "url": "https://berlin.devsitetest.how/bigquery/docs",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/bq-command-line-tool": {
     "title": "Use the bq tool",
     "filename": "bigquery_bq-command-line-tool.md",
     "size": 9896,
     "url": "https://berlin.devsitetest.how/bigquery/docs/bq-command-line-tool",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
@@ -172,14 +172,14 @@
     "filename": "bigquery_create-machine-learning-model.md",
     "size": 39593,
     "url": "https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/custom-quotas": {
     "title": "Create custom query quotas",
     "filename": "bigquery_custom-quotas.md",
     "size": 7702,
     "url": "https://berlin.devsitetest.how/bigquery/docs/custom-quotas",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/dataframes-quickstart": {
     "title": "Try BigQuery DataFrames",
@@ -191,37 +191,37 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72573,
+    "size": 72568,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139423,
+    "size": 139418,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/quickstarts/load-data-bq": {
     "title": "Use the bq tool",
     "filename": "bigquery_quickstarts_load-data-bq.md",
     "size": 9900,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/load-data-bq",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/quickstarts/query-public-dataset-console": {
     "title": "Try BigQuery using the sandbox",
     "filename": "bigquery_quickstarts_query-public-dataset-console.md",
     "size": 9738,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/query-public-dataset-console",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42654,
+    "size": 42649,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/release-notes": {
     "title": "BigQuery release notes",
@@ -233,23 +233,23 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 162833,
+    "size": 162815,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/bigquery/docs/tpc-differences": {
     "title": "BigQuery in Google Cloud Dedicated versus Google Cloud",
     "filename": "bigquery_tpc-differences.md",
     "size": 6366,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tpc-differences",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/bigquery/docs/troubleshoot-quotas": {
     "title": "Troubleshoot quota and limit errors",
     "filename": "bigquery_troubleshoot-quotas.md",
     "size": 79897,
     "url": "https://berlin.devsitetest.how/bigquery/docs/troubleshoot-quotas",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-27"
   },
   "/billing/docs": {
     "title": "Cloud Billing documentation",
@@ -289,9 +289,9 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 538130,
+    "size": 515415,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
-    "last_updated": "2026-10-15"
+    "last_updated": "2026-10-28"
   },
   "/compute/docs/release-notes": {
     "title": "Compute Engine release notes",
@@ -436,14 +436,14 @@
   "/docs/authentication/client-libraries": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_client-libraries.md",
-    "size": 13708,
+    "size": 13711,
     "url": "https://berlin.devsitetest.how/docs/authentication/client-libraries",
     "last_updated": "2026-10-26"
   },
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13731,
+    "size": 13734,
     "url": "https://berlin.devsitetest.how/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-10-26"
   },
@@ -723,9 +723,9 @@
   "/docs/get-started-tpc/setup-gcloud": {
     "title": "Set up the Google Cloud CLI for Google Cloud Dedicated",
     "filename": "get-started-tpc_setup-gcloud.md",
-    "size": 16541,
+    "size": 16549,
     "url": "https://berlin.devsitetest.how/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-10-28"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -786,9 +786,9 @@
   "/docs/get-started/required-domains": {
     "title": "Allow access to Google Cloud Dedicated console domains",
     "filename": "get-started_required-domains.md",
-    "size": 2402,
+    "size": 2476,
     "url": "https://berlin.devsitetest.how/docs/get-started/required-domains",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/docs/get-started/tpc-differences": {
     "title": "Key differences between Google Cloud Dedicated and Google Cloud",
@@ -926,7 +926,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19061,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -954,9 +954,9 @@
   "/docs/quotas/overview": {
     "title": "Cloud Quotas overview",
     "filename": "quotas_overview.md",
-    "size": 9637,
+    "size": 9639,
     "url": "https://berlin.devsitetest.how/docs/quotas/overview",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/docs/quotas/permissions": {
     "title": "Quota permissions",
@@ -982,9 +982,9 @@
   "/docs/quotas/quotas": {
     "title": "Quotas and system limits",
     "filename": "quotas_quotas.md",
-    "size": 3183,
+    "size": 3322,
     "url": "https://berlin.devsitetest.how/docs/quotas/quotas",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
@@ -1549,7 +1549,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91312,
+    "size": 91456,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-10-26"
   },
@@ -1563,9 +1563,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2347039,
+    "size": 2370470,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1861,6 +1861,13 @@
     "url": "https://berlin.devsitetest.how/nat/docs/tpc-differences",
     "last_updated": "2026-10-26"
   },
+  "/network-connectivity/docs": {
+    "title": "Network Connectivity",
+    "filename": "network-connectivity.md",
+    "size": 3905,
+    "url": "https://berlin.devsitetest.how/network-connectivity/docs",
+    "last_updated": ""
+  },
   "/network-connectivity/docs/interconnect": {
     "title": "Cloud Interconnect documentation",
     "filename": "network-connectivity_interconnect.md",
@@ -1927,9 +1934,9 @@
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115466,
+    "size": 116168,
     "url": "https://berlin.devsitetest.how/pubsub/docs/access-control",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/pubsub/docs/create-topic": {
     "title": "Create a topic",
@@ -2102,9 +2109,9 @@
   "/service-usage/docs/quotas": {
     "title": "Quotas and system limits",
     "filename": "service-usage_quotas.md",
-    "size": 5741,
+    "size": 5880,
     "url": "https://berlin.devsitetest.how/service-usage/docs/quotas",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-28"
   },
   "/service-usage/docs/reference/rest": {
     "title": "Service Usage API",
@@ -2146,7 +2153,7 @@
     "filename": "sql_release-notes.md",
     "size": 67337,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-10-28"
+    "last_updated": "2026-10-29"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

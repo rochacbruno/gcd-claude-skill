@@ -411,7 +411,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-cloudquotas" % "0.67.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-cloudquotas" % "0.68.0" 
 ```
 
 

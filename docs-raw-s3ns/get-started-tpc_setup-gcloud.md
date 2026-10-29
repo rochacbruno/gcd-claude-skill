@@ -1,7 +1,7 @@
 # Set up the Google Cloud CLI for Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/get-started-tpc/setup-gcloud
-Last updated: 2026-10-27
+Last updated: 2026-10-28
 
 - 
 
@@ -144,7 +144,7 @@ More
 
 
 - Confirm that you have a supported version of Python. The Google Cloud CLI requires
-Python 3.10 to 3.15. The x86_64 Linux package includes
+Python 3.10 to 3.15. The x86_64 and Arm Linux packages include
 a bundled Python interpreter that will be preferred by default. For
 information on how to choose and configure your Python interpreter, see the 
 [`gcloud topic startup` documentation](/sdk/gcloud/reference/topic/startup).

@@ -1,7 +1,7 @@
 # BigQuery documentation
 
 Source: https://berlin.devsitetest.how/bigquery/docs
-Last updated: 2026-10-26
+Last updated: 2026-10-27
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 

@@ -1,7 +1,7 @@
 # Quotas and system limits
 
 Source: https://documentation.s3ns.fr/docs/quotas/quotas
-Last updated: 2026-10-26
+Last updated: 2026-10-28
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -123,8 +123,10 @@ Resources
 
 
 
-This document lists the quotas and system limits that apply to
-Cloud Quotas.
+Cloud Quotas uses quotas and system limits to maintain fair resource
+allocation, prevent service overloads, and help you manage resource use.
+
+Quotas and system limits are similar but differ in the following ways:
 
 
 - *Quotas* have default values, but you can typically request
@@ -132,7 +134,7 @@ adjustments.
 
 - *System limits* are fixed values that can't be changed.
 
-Cloud de Confiance by S3NS uses quotas to help ensure fairness and reduce
+Cloud de Confiance by S3NS uses quotas to help maintain fairness and reduce
 spikes in resource use and availability. A quota restricts how much of a
 Cloud de Confiance resource your Cloud de Confiance project can use. Quotas
 apply to a range of resource types, including hardware, software, and network
