@@ -1,7 +1,7 @@
 # Quickstart: Write and query log entries with the gcloud CLI
 
 Source: https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud
-Last updated: 2026-10-26
+Last updated: 2026-10-29
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -154,16 +154,12 @@ Guides
 
 
 
-This document introduces you to some of the capabilities of Cloud Logging
-and shows you how to do the following:
-
-- Write log entries by using the Google Cloud CLI.
-
-- List log entries by using the gcloud CLI.
-
-- List log entries by using the Logging API.
-
-- View and query log entries by using the Logs Explorer.
+The Google Cloud CLI lets you write and query log entries in Cloud Logging
+from the command line so that you can test log ingestion and inspect log
+data without writing application code. In this quickstart, you write and
+list structured and unstructured log entries by using the
+gcloud CLI, list log entries by using the Cloud Logging API, and
+view and query logs by using the Logs Explorer.
 
 
 
@@ -463,12 +459,12 @@ is a string of characters; for example, `"A simple entry"`.
 
 In the next steps, you use the gcloud CLI to write a log entry with
 unstructured data and a log entry with structured data.
-The [gcloud CLI](/sdk/docs) provide a command-line interface to
+The [gcloud CLI](/sdk/docs) provides a command-line interface to
 the Cloud Logging API.
 
 - 
 
-Write a log entry with unstructured data to the log `my-test-log`, run
+To write a log entry with unstructured data to the log `my-test-log`, run
 the [`gcloud logging write`](/sdk/gcloud/reference/logging/write) command:
 
 

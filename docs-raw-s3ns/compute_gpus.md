@@ -1,7 +1,7 @@
 # GPU machine types
 
 Source: https://documentation.s3ns.fr/compute/docs/gpus
-Last updated: 2026-10-26
+Last updated: 2026-10-29
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -1509,7 +1509,7 @@ machine types:
 Machine type | 
 Number of GPUs | 
 Typical scheduled maintenance event frequency | 
-Maintenance behavior | 
+[Maintenance behavior](/compute/docs/instances/setting-vm-host-options#available_host_maintenance_properties) | 
 Advanced notification for scheduled maintenance | 
 
 On-demand maintenance | 
@@ -1530,7 +1530,7 @@ Simulate maintenance |
 N1+T4 | 
 1 or 2 | 
 Minimum of 15 days | 
-Terminate and restart | 
+Stop and restart | 
 7 days | 
 No | 
 Yes | 
@@ -1540,7 +1540,7 @@ Yes |
 N1+T4 | 
 4 | 
 Minimum of 30 days | 
-Terminate and restart | 
+Stop and restart | 
 7 days | 
 Yes | 
 Yes | 
@@ -1550,7 +1550,7 @@ Yes |
 N1+P4 | 
 1 or 2 | 
 Minimum of 15 days | 
-Terminate and restart | 
+Stop and restart | 
 7 days | 
 No | 
 Yes | 
@@ -1560,7 +1560,7 @@ Yes |
 N1+P4 | 
 4 | 
 Minimum of 30 days | 
-Terminate and restart | 
+Stop and restart | 
 7 days | 
 Yes | 
 Yes | 
@@ -1570,7 +1570,7 @@ Yes |
 N1+V100 | 
 1, 2, or 4 | 
 Minimum of 15 days | 
-Terminate and restart | 
+Stop and restart | 
 7 days | 
 No | 
 Yes | 
@@ -1580,7 +1580,7 @@ Yes |
 N1+V100 | 
 8 | 
 Minimum of 30 days | 
-Terminate and restart | 
+Stop and restart | 
 7 days | 
 Yes | 
 Yes | 
@@ -1590,15 +1590,8 @@ Yes |
 
 
 
-The following notes apply to the preceding table:
-
-
-- **Typical scheduled maintenance event frequency**: 
-
 The maintenance frequencies shown in the previous table are approximations, not guarantees.
 Compute Engine might occasionally perform maintenance more frequently.
-
-
 
 ## General comparison chart
 
