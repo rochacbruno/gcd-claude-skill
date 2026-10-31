@@ -1,7 +1,7 @@
 # Create and manage tags
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/tags/tags-creating-and-managing
-Last updated: 2026-10-26
+Last updated: 2026-10-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -188,10 +188,9 @@ Guides
 
 
 
-This guide describes how to create and manage tags. A tag is a key-value pair
-that can be attached to a Google Cloud Dedicated in Germany resource. You can use tags to
-conditionally allow or deny policies based on whether a supported resource has a
-specific tag.
+Tags are key-value pairs that you can attach to Google Cloud Dedicated in Germany
+resources. You can use tags to conditionally enforce policies based on
+whether a supported resource has a specific tag.
 
 ## Before you begin 
 

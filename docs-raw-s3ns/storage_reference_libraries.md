@@ -1,7 +1,7 @@
 # Cloud Storage client libraries
 
 Source: https://documentation.s3ns.fr/storage/docs/reference/libraries
-Last updated: 2026-10-26
+Last updated: 2026-10-30
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -693,7 +693,7 @@ For more information, see [Setting Up a Ruby Development Environment](/ruby/docs
 
 
 
-## Set up authentication
+## Set up authentication 
 
 To authenticate calls to Cloud de Confiance by S3NS APIs, client libraries support
 [Application Default Credentials (ADC)](/docs/authentication/application-default-credentials);
@@ -1502,7 +1502,7 @@ def quickstart bucket_name :
 require "google/cloud/storage" 
 
 # Instantiates a client 
-storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: [ Storage ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://documentation.s3ns.fr/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
 
 # The ID to give your GCS bucket 
 # bucket_name = "your-unique-bucket-name" 

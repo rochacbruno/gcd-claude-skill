@@ -1,7 +1,7 @@
 # Troubleshooting
 
 Source: https://berlin.devsitetest.how/storage/docs/troubleshooting
-Last updated: 2026-10-26
+Last updated: 2026-10-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -168,6 +168,14 @@ Guides
 - [ Proxy servers ](#proxy-server)
 - [ What's next ](#whats_next)
 - 
+
+
+
+
+
+
+
+
 
 
 
@@ -529,7 +537,7 @@ extra_headers = {
 ```
 require "google/cloud/storage" 
 
-storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
 
 storage . [ add_custom_headers ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Project.html) { 'X-Custom-Header' = > 'value' } 
 ```

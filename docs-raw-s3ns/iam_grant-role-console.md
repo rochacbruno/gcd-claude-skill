@@ -166,7 +166,7 @@ See the following video for a quick walkthrough:
 
 
 
-## Before you begin 
+## Before you begin
 
 
 

@@ -1,7 +1,7 @@
 # Logging client libraries
 
 Source: https://berlin.devsitetest.how/logging/docs/reference/libraries
-Last updated: 2026-10-22
+Last updated: 2026-10-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -699,6 +699,8 @@ For more information, see [Setting Up a Ruby Development Environment](/ruby/docs
 
 
 
+
+
 ## Set up authentication
 
 To authenticate calls to Google Cloud Dedicated in Germany APIs, client libraries support
@@ -1206,8 +1208,8 @@ import com.google.cloud.[MonitoredResource](https://berlin.devsitetest.how/java/
 import com.google.cloud.logging.[LogEntry](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) ; 
 import com.google.cloud.logging.[Logging](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Logging.html) ; 
 import com.google.cloud.logging.[LoggingOptions](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LoggingOptions.html) ; 
-import com.google.cloud.logging.[Payload](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apigee-connect/latest/com.google.cloud.apigeeconnect.v1.Payload.html).StringPayload ; 
-import com.google.cloud.logging.[Severity](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apihub/latest/com.google.cloud.apihub.v1.Severity.html) ; 
+import com.google.cloud.logging.[Payload](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Payload.html).StringPayload ; 
+import com.google.cloud.logging.[Severity](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Severity.html) ; 
 import java.util.Collections ; 
 
 /** 
@@ -1231,7 +1233,7 @@ try ( [ Logging ](https://berlin.devsitetest.how/java/docs/reference/google-clou
 
 [ LogEntry ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) entry = 
 [ LogEntry ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.LogEntry.html) . newBuilder ( StringPayload . of ( textPayload )) 
-. setSeverity ( [ Severity ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-apihub/latest/com.google.cloud.apihub.v1.Severity.html) . ERROR ) 
+. setSeverity ( [ Severity ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-logging/latest/com.google.cloud.logging.Severity.html) . ERROR ) 
 . setLogName ( logName ) 
 . setResource ( [ MonitoredResource ](https://berlin.devsitetest.how/java/docs/reference/google-cloud-core/latest/com.google.cloud.MonitoredResource.html) . newBuilder ( "global" ). build ()) 
 . build (); 
@@ -1638,6 +1640,8 @@ puts "Logged #{ entry . [ payload ](https://berlin.devsitetest.how/ruby/docs/ref
 
 
 
+
+
 ## Code samples
 
 For all code samples, see [All logging samples](/logging/docs/samples).
@@ -2009,6 +2013,8 @@ client library for Ruby:
 - [`google-cloud-logging` on Stack Overflow](https://stackoverflow.com/search?q=%5Bgoogle-cloud-logging%5D+%5Bruby%5D) 
 
 - [Source code](https://github.com/googleapis/google-cloud-ruby) 
+
+
 
 
 

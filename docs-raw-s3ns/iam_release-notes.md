@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ October 29, 2026 ](#October_29_2026)
 - [ September 12, 2025 ](#September_12_2025)
 - [ June 13, 2025 ](#June_13_2025)
 - [ May 28, 2025 ](#May_28_2025)
@@ -194,6 +195,26 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## October 29, 2026
+
+
+Feature 
+
+
+The Admin (`roles/admin`), Writer (`roles/writer`), and Reader (`roles/reader`)
+basic roles are generally available
+([GA](https://documentation.s3ns.fr/products#product-launch-stages)). For more
+information, see [Basic roles](/iam/docs/roles-overview#basic).
+
+The legacy basic roles—Owner (`roles/owner`), Editor (`roles/editor`), and
+Viewer (`roles/viewer`)—are still available for use and are being
+actively maintained. However, if you need to grant a basic role, we recommend
+granting the Admin, Writer, or Reader role instead of a legacy basic role.
+This is because the newer roles support additional features, such as the use of
+[IAM Conditions](/iam/docs/conditions-overview).
 
 
 
