@@ -1,7 +1,7 @@
 # Export table data to Cloud Storage
 
 Source: https://berlin.devsitetest.how/bigquery/docs/exporting-data
-Last updated: 2026-10-27
+Last updated: 2026-10-30
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -416,7 +416,8 @@ Click **Overview > Tables**, and then select a table.
 
 - 
 
-In the details pane, click upload **Export / sync** > **Cloud Storage**.
+In the details pane, click
+**More > Export to Google Cloud Storage**.
 
 - 
 
@@ -1602,7 +1603,7 @@ require "google/cloud/bigquery"
 def extract_table bucket_name = "my-bucket" , 
 dataset_id = "my_dataset_id" , 
 table_id = "my_table_id" 
-bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-data_exchange-v1beta1/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
+bigquery = Google :: Cloud :: [ Bigquery ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery-migration-v2/latest/Google-Cloud-Bigquery.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-bigquery/latest/Google-Cloud-Bigquery.html)
 dataset = bigquery . dataset dataset_id 
 table = dataset . table table_id 
 

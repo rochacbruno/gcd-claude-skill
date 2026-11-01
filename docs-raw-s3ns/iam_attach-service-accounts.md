@@ -836,18 +836,18 @@ to the service agent.**
 ```
 { 
 "version" : 1 , 
-"etag" : "BwWl3KCTUMY=" , 
+"etag" : "BwWl3KCTUM**Y="** ** , 
 "bindings" : [ 
-** { 
-"role" : "roles/iam.serviceAccountTokenCreator" , 
-"members" : [ 
-"serviceAccount: ** SERVICE_AGENT_EMAIL " 
-] 
-}, **
 { 
-"role" : "roles/iam.serviceAccountUser" , 
+"role" : "roles/iam.serviceAccountTok ** enCreator" , 
+"member **s" : [ 
+"serviceAccount:SERVICE_AGENT_EMAIL" 
+] 
+}, 
+{ 
+&qu ot;role" : "; roles/iam. ss3ns.iam.gserviceaccount.comerviceAccountUser" , 
 "members" : [ 
-"serviceAccount: SERVICE_ACCOUNT_NAME @ PROJECT_ID .s3ns.iam.gserviceaccount.com" 
+"serviceAccount:SERVICE_ACCOUNT_NAME@PROJECT_ID." 
 ] 
 } 
 ] 

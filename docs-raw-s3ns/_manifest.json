@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 52798,
+    "size": 52799,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-10-27"
   },
@@ -205,14 +205,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72295,
+    "size": 72283,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-10-30"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 138949,
+    "size": 138940,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-27"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42507,
+    "size": 42498,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-27"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 162145,
+    "size": 162127,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-10-28"
   },
@@ -520,7 +520,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13684,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-10-29"
   },
@@ -977,12 +977,12 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26536,
     "url": "https://documentation.s3ns.fr/docs/quotas/custom-constraints",
-    "last_updated": "2026-10-29"
+    "last_updated": "2026-10-30"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-10-26"
   },
@@ -996,7 +996,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18877,
+    "size": 18882,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -1059,7 +1059,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 131885,
+    "size": 132187,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-10-29"
   },
@@ -1486,7 +1486,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4779,
+    "size": 4778,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
     "last_updated": "2026-10-26"
   },
@@ -1591,7 +1591,7 @@
   "/iam/docs/attach-service-accounts": {
     "title": "Attach service accounts to resources",
     "filename": "iam_attach-service-accounts.md",
-    "size": 21193,
+    "size": 21202,
     "url": "https://documentation.s3ns.fr/iam/docs/attach-service-accounts",
     "last_updated": "2026-10-29"
   },
@@ -1703,7 +1703,7 @@
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39534,
+    "size": 39540,
     "url": "https://documentation.s3ns.fr/kms/docs/destroy-restore",
     "last_updated": "2026-10-27"
   },
@@ -1731,7 +1731,7 @@
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22528,
+    "size": 22531,
     "url": "https://documentation.s3ns.fr/kms/docs/retrieve-public-key",
     "last_updated": "2026-10-27"
   },
@@ -1747,42 +1747,42 @@
     "filename": "kubernetes-engine.md",
     "size": 3746,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/concepts/kubernetes-engine-overview": {
     "title": "GKE overview",
     "filename": "kubernetes-engine_concepts_kubernetes-engine-overview.md",
     "size": 7165,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
     "size": 8431,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
     "filename": "kubernetes-engine_how-to_cluster-access-for-kubectl.md",
     "size": 14813,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/how-to/cluster-access-for-kubectl",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/how-to/workload-identity": {
     "title": "Authenticate to Cloud de Confiance APIs from GKE workloads",
     "filename": "kubernetes-engine_how-to_workload-identity.md",
     "size": 27776,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/how-to/workload-identity",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/quickstarts/create-cluster": {
     "title": "Quickstart: Create a cluster and deploy a workload",
     "filename": "kubernetes-engine_quickstarts_create-cluster.md",
     "size": 9690,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/quickstarts/create-cluster",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/reference/rest": {
     "title": "Kubernetes Engine API",
@@ -1796,14 +1796,14 @@
     "filename": "kubernetes-engine_release-notes.md",
     "size": 1515993,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-10-30"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
     "size": 13724,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-10-30"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1899,7 +1899,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39226,
+    "size": 39238,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
     "last_updated": "2026-10-29"
   },
@@ -1999,7 +1999,7 @@
     "filename": "organization-policy_overview.md",
     "size": 14459,
     "url": "https://documentation.s3ns.fr/organization-policy/overview",
-    "last_updated": "2026-10-22"
+    "last_updated": "2026-10-26"
   },
   "/pubsub/docs": {
     "title": "Pub/Sub documentation",
@@ -2011,7 +2011,7 @@
   "/pubsub/docs/access-control": {
     "title": "Access control with Identity and Access Management",
     "filename": "pubsub_access-control.md",
-    "size": 115858,
+    "size": 115876,
     "url": "https://documentation.s3ns.fr/pubsub/docs/access-control",
     "last_updated": "2026-10-28"
   },
@@ -2251,7 +2251,7 @@
     "filename": "sql_release-notes.md",
     "size": 67271,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-10-31"
+    "last_updated": "2026-11-01"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2270,7 +2270,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 32661,
+    "size": 32658,
     "url": "https://documentation.s3ns.fr/storage/docs/creating-buckets",
     "last_updated": "2026-10-30"
   },
@@ -2291,7 +2291,7 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22296,
+    "size": 22292,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
     "last_updated": "2026-10-30"
   },
