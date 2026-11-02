@@ -1,7 +1,7 @@
 # Create projects
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/creating-managing-projects
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Guides
 
 
 - On this page 
+- [ Key characteristics of projects ](#key-characteristics)
 - [ Before you begin ](#before_you_begin)
 - [ Create a project ](#creating_a_project)
 
@@ -149,36 +150,41 @@ Guides
 
 
 
-Projects are the fundamental operating unit in the Cloud de Confiance by S3NS resource
-hierarchy. Projects exist between folders (or the organization) and resources
-such as virtual machines and storage. This page explains how to create
-Cloud de Confiance projects using the Cloud Resource Manager API and the Cloud de Confiance console.
+Projects are the fundamental operating unit in the Cloud de Confiance by S3NS
+resource hierarchy and let you organize, isolate, and control your cloud
+resources. Sitting between folders (or the organization resource) and service
+resources such as virtual machines and storage, projects help you manage APIs,
+billing, and permissions across environments. To create and manage projects,
+you can use the Cloud de Confiance console, the Google Cloud CLI, or the Cloud Resource Manager API.
+
+## Key characteristics of projects 
 
 Key characteristics of projects include the following:
 
 - 
 
-The primary service container: A project is the base level where all
-Cloud de Confiance by S3NS services (APIs) are enabled and where resources like
-Compute Engine instances or BigQuery datasets are created.
+**The primary service container**: A project is the base level where you
+enable Cloud de Confiance services (APIs) and create resources such as
+Compute Engine instances or BigQuery datasets.
 
 - 
 
-The trust boundary: Projects serve as an isolation layer. By default,
-resources in one project don't have access to resources in another,
-establishing a secure perimeter for different applications or environments.
+**The trust boundary**: Projects serve as an isolation layer. By default,
+resources in one project don't have access to resources in another project,
+which helps establish a secure perimeter for different applications or
+environments.
 
 - 
 
-The billing unit: Projects are the primary way businesses track, organize, and separate costs
-across their organization.
+**The billing unit**: Projects are the primary way that you track, organize,
+and separate costs across your organization.
 
 - 
 
-The policy attachment point: While policies often inherit from folders, the
-project level is the most common place where specific permissions (
-Identity and Access Management (IAM)) are granted to developers and service accounts
-for daily tasks.
+**The policy attachment point**: Although projects inherit policies from
+folders and the organization resource, the project level is the most common
+place where you grant specific Identity and Access Management (IAM) permissions to
+developers and service accounts for daily tasks.
 
 ## Before you begin
 

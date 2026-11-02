@@ -1,7 +1,7 @@
 # Quickstart: Create your Cloud de Confiance by S3NS resource hierarchy
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/manage-google-cloud-resources
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -153,9 +153,11 @@ Guides
 
 
 
-This page explains how to view and manage your Cloud de Confiance by S3NS
-resources, grant Identity and Access Management (IAM) roles at the organization
-level, and manage organization resource billing accounts using the
+A Cloud de Confiance by S3NS resource hierarchy lets you organize cloud assets,
+establish access control boundaries, and centralize administrative control. In
+this quickstart, you view and manage resources, grant Identity and Access Management
+(IAM) roles at the organization level, and manage billing
+accounts using the
 [Cloud de Confiance console](https://console.cloud.s3nscloud.fr/).
 
 

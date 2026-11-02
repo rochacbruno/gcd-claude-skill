@@ -191,14 +191,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72561,
+    "size": 72558,
     "url": "https://berlin.devsitetest.how/bigquery/docs/exporting-data",
     "last_updated": "2026-10-30"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139414,
+    "size": 139411,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-27"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42645,
+    "size": 42642,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-27"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 162807,
+    "size": 162801,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-10-28"
   },
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 515415,
+    "size": 538197,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -905,9 +905,9 @@
   "/docs/quotas/custom-constraints": {
     "title": "Use custom organization policies",
     "filename": "quotas_custom-constraints.md",
-    "size": 26643,
+    "size": 26673,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-10-30"
+    "last_updated": "2026-11-01"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -926,7 +926,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19064,
+    "size": 19066,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -989,7 +989,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132584,
+    "size": 132282,
     "url": "https://berlin.devsitetest.how/docs/quotas/reference/libraries",
     "last_updated": "2026-10-29"
   },
@@ -1521,7 +1521,7 @@
   "/iam/docs/attach-service-accounts": {
     "title": "Attach service accounts to resources",
     "filename": "iam_attach-service-accounts.md",
-    "size": 21237,
+    "size": 21228,
     "url": "https://berlin.devsitetest.how/iam/docs/attach-service-accounts",
     "last_updated": "2026-10-29"
   },
@@ -1549,7 +1549,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91456,
+    "size": 91312,
     "url": "https://berlin.devsitetest.how/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-10-29"
   },
@@ -2018,16 +2018,16 @@
   "/resource-manager/docs/creating-managing-folders": {
     "title": "Create folders",
     "filename": "resource-manager_creating-managing-folders.md",
-    "size": 19707,
+    "size": 19504,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/creating-managing-folders",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/creating-managing-projects": {
     "title": "Create projects",
     "filename": "resource-manager_creating-managing-projects.md",
-    "size": 13541,
+    "size": 13820,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/creating-managing-projects",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/limits": {
     "title": "Quotas and usage limits",
@@ -2039,16 +2039,16 @@
   "/resource-manager/docs/listing-all-resources": {
     "title": "List all projects and folders in your hierarchy",
     "filename": "resource-manager_listing-all-resources.md",
-    "size": 9754,
+    "size": 8870,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/listing-all-resources",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/manage-google-cloud-resources": {
     "title": "Quickstart: Create your Google Cloud Dedicated in Germany resource hierarchy",
     "filename": "resource-manager_manage-google-cloud-resources.md",
-    "size": 13965,
+    "size": 14065,
     "url": "https://berlin.devsitetest.how/resource-manager/docs/manage-google-cloud-resources",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/reference/essentialcontacts/rest": {
     "title": "Essential Contacts API",
@@ -2153,7 +2153,7 @@
     "filename": "sql_release-notes.md",
     "size": 67337,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-11-01"
+    "last_updated": "2026-11-02"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

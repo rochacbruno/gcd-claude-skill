@@ -205,14 +205,14 @@
   "/bigquery/docs/exporting-data": {
     "title": "Export table data to Cloud Storage",
     "filename": "bigquery_exporting-data.md",
-    "size": 72283,
+    "size": 72280,
     "url": "https://documentation.s3ns.fr/bigquery/docs/exporting-data",
     "last_updated": "2026-10-30"
   },
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 138940,
+    "size": 138937,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-27"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42498,
+    "size": 42495,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-27"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 162127,
+    "size": 162121,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-10-28"
   },
@@ -975,9 +975,9 @@
   "/docs/quotas/custom-constraints": {
     "title": "Use custom organization policies",
     "filename": "quotas_custom-constraints.md",
-    "size": 26536,
+    "size": 26566,
     "url": "https://documentation.s3ns.fr/docs/quotas/custom-constraints",
-    "last_updated": "2026-10-30"
+    "last_updated": "2026-11-01"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -996,7 +996,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18882,
+    "size": 18879,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -1059,7 +1059,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132187,
+    "size": 131885,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-10-29"
   },
@@ -1591,7 +1591,7 @@
   "/iam/docs/attach-service-accounts": {
     "title": "Attach service accounts to resources",
     "filename": "iam_attach-service-accounts.md",
-    "size": 21202,
+    "size": 21193,
     "url": "https://documentation.s3ns.fr/iam/docs/attach-service-accounts",
     "last_updated": "2026-10-29"
   },
@@ -1619,7 +1619,7 @@
   "/iam/docs/granting-changing-revoking-access": {
     "title": "Manage access to projects, folders, and organizations",
     "filename": "iam_granting-changing-revoking-access.md",
-    "size": 91087,
+    "size": 90943,
     "url": "https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access",
     "last_updated": "2026-10-29"
   },
@@ -2095,16 +2095,16 @@
   "/resource-manager/docs/creating-managing-folders": {
     "title": "Create folders",
     "filename": "resource-manager_creating-managing-folders.md",
-    "size": 19638,
+    "size": 19435,
     "url": "https://documentation.s3ns.fr/resource-manager/docs/creating-managing-folders",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/creating-managing-projects": {
     "title": "Create projects",
     "filename": "resource-manager_creating-managing-projects.md",
-    "size": 13449,
+    "size": 13735,
     "url": "https://documentation.s3ns.fr/resource-manager/docs/creating-managing-projects",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/limits": {
     "title": "Quotas and usage limits",
@@ -2116,16 +2116,16 @@
   "/resource-manager/docs/listing-all-resources": {
     "title": "List all projects and folders in your hierarchy",
     "filename": "resource-manager_listing-all-resources.md",
-    "size": 9708,
+    "size": 8824,
     "url": "https://documentation.s3ns.fr/resource-manager/docs/listing-all-resources",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/manage-google-cloud-resources": {
     "title": "Quickstart: Create your Cloud de Confiance by S3NS resource hierarchy",
     "filename": "resource-manager_manage-google-cloud-resources.md",
-    "size": 13763,
+    "size": 13863,
     "url": "https://documentation.s3ns.fr/resource-manager/docs/manage-google-cloud-resources",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/resource-manager/docs/reference/essentialcontacts/rest": {
     "title": "Essential Contacts API",
@@ -2251,7 +2251,7 @@
     "filename": "sql_release-notes.md",
     "size": 67271,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-11-01"
+    "last_updated": "2026-11-02"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

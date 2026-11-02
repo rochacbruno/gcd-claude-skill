@@ -1,7 +1,7 @@
 # Quickstart: Create your Google Cloud Dedicated in Germany resource hierarchy
 
 Source: https://berlin.devsitetest.how/resource-manager/docs/manage-google-cloud-resources
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -153,9 +153,11 @@ Guides
 
 
 
-This page explains how to view and manage your Google Cloud Dedicated in Germany
-resources, grant Identity and Access Management (IAM) roles at the organization
-level, and manage organization resource billing accounts using the
+A Google Cloud Dedicated in Germany resource hierarchy lets you organize cloud assets,
+establish access control boundaries, and centralize administrative control. In
+this quickstart, you view and manage resources, grant Identity and Access Management
+(IAM) roles at the organization level, and manage billing
+accounts using the
 [Google Cloud Dedicated console](https://console.cloud.berlin-build0.goog/).
 
 

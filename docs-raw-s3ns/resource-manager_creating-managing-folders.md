@@ -1,7 +1,7 @@
 # Create folders
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/creating-managing-folders
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Guides
 
 
 - On this page 
+- [ Example folder hierarchy ](#example-folder-hierarchy)
 - [ Before you begin ](#before_you_begin)
 - [ Set up permissions to manage folders ](#folder-permissions)
 - [ Create folders ](#creating-folders)
@@ -154,21 +155,20 @@ Guides
 
 
 
-This page describes how to create Cloud de Confiance by S3NS folders to group and organize projects
-in a resource hierarchy. You can use folders to delegate administrative duties, enforce
-environment-specific organization policies, and streamline cost management across
-your departments.
+Cloud de Confiance by S3NS folders let you group and organize projects in a
+resource hierarchy. You can use folders to delegate administrative duties,
+enforce environment-specific organization policies, and streamline cost
+management across departments.
 
-Folders are nodes in the
-[Cloud Platform Resource Hierarchy](/resource-manager/docs/cloud-platform-resource-hierarchy).
-A folder can contain projects, other folders, or a combination of both.
-Organization resources can use folders to group projects under the organization resource node in a
-hierarchy. For example, your organization resource might contain multiple departments,
-each with its own set of Cloud de Confiance resources. Folders allow
-you to group these resources on a per-department basis. Folders are
-used to group resources that share common allow or deny policies. While a folder
-can contain multiple folders or resources, a given folder or resource can have
-exactly one parent.
+As nodes in the [Cloud de Confiance resource
+hierarchy](/resource-manager/docs/cloud-platform-resource-hierarchy), folders
+can contain projects, other folders, or a combination of both under an
+organization resource. They also let you group resources that share common
+Identity and Access Management (IAM) roles, deny policies, or organization policies.
+Although a folder can contain multiple child folders or resources, each folder
+or resource can have only one parent.
+
+## Example folder hierarchy 
 
 In the following diagram, the organization resource, "Company", has folders
 representing "Standard Workloads", "Regulated Workloads", and
@@ -202,12 +202,12 @@ The topic describes how you can control who has what access to folders and
 the resources they contain.
 
 - Understand how to set [folder permissions](#folder-permissions).
-Folders support a number of different Identity and Access Management (IAM) roles. If you want to
-broadly set up permissions so users can see the structure of their projects,
-grant the entire domain the **Organization Viewer** and **Folder Viewer**
-roles at the organization resource level. To restrict visibility to branches of your
-folder hierarchy, grant the **Folder Viewer** role on the folder or folders
-you want users to see.
+Folders support a number of different IAM roles.
+If you want to broadly set up permissions so users can see the structure of
+their projects, grant the entire domain the **Organization Viewer** and
+**Folder Viewer** roles at the organization resource level. To restrict
+visibility to branches of your folder hierarchy, grant the **Folder Viewer**
+role on the folder or folders you want users to see.
 
 - [Create folders](#creating-folders). As you plan how to organize your Cloud
 resources, we recommend that you start with a single folder as a sandbox
