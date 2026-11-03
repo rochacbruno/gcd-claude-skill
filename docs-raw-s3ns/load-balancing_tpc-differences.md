@@ -1,7 +1,7 @@
 # Cloud Load Balancing in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/load-balancing/docs/tpc-differences
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 - 
 
@@ -419,6 +419,11 @@ Not available |
 
 | 
 **Cloud Service Mesh** | 
+Not available | 
+|
+
+| 
+**Cloud Trace** | 
 Not available | 
 |
 

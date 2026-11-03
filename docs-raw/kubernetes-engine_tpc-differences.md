@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-10-30
+Last updated: 2026-11-02
 
 - 
 
@@ -411,12 +411,6 @@ The following security features are unavailable:
 | 
 |
 
-| 
-**Sensitive data encryption**
-| 
-Encrypting Secrets at the application layer is not supported.
-| 
-|
 | 
 **Authentication** | 
 Connect gateway is unavailable. | 

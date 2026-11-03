@@ -1,7 +1,7 @@
 # Service Usage documentation
 
 Source: https://documentation.s3ns.fr/service-usage/docs
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -223,18 +223,6 @@ API keys for your Cloud de Confiance project.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 format_list_numbered
 
 
@@ -339,40 +327,6 @@ Enable and disable services
 
 
 ](/service-usage/docs/enable-disable)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- 
-
-
-
-
-
-
-[
-
-
-Access control with IAM
-
-
-](/service-usage/docs/access-control)
 
 
 

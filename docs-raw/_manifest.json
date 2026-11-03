@@ -151,7 +151,7 @@
     "filename": "bigquery.md",
     "size": 4464,
     "url": "https://berlin.devsitetest.how/bigquery/docs",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-11-02"
   },
   "/bigquery/docs/bq-command-line-tool": {
     "title": "Use the bq tool",
@@ -172,7 +172,7 @@
     "filename": "bigquery_create-machine-learning-model.md",
     "size": 39593,
     "url": "https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-11-03"
   },
   "/bigquery/docs/custom-quotas": {
     "title": "Create custom query quotas",
@@ -212,9 +212,9 @@
   "/bigquery/docs/quickstarts/query-public-dataset-console": {
     "title": "Try BigQuery using the sandbox",
     "filename": "bigquery_quickstarts_query-public-dataset-console.md",
-    "size": 9738,
+    "size": 9740,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/query-public-dataset-console",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-11-03"
   },
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 538197,
+    "size": 515415,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -382,7 +382,7 @@
     "filename": "ai-ml.md",
     "size": 5082,
     "url": "https://berlin.devsitetest.how/docs/ai-ml",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/docs/application-development": {
     "title": "Application development",
@@ -856,9 +856,9 @@
   "/docs/product-list": {
     "title": "Google Cloud products at a glance",
     "filename": "product-list.md",
-    "size": 16929,
+    "size": 17410,
     "url": "https://berlin.devsitetest.how/docs/product-list",
-    "last_updated": "2026-09-04"
+    "last_updated": "2026-11-02"
   },
   "/docs/quotas": {
     "title": "Cloud Quotas documentation",
@@ -907,7 +907,7 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26673,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-11-01"
+    "last_updated": "2026-11-02"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -926,7 +926,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19066,
+    "size": 19064,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -1264,7 +1264,7 @@
     "filename": "storage.md",
     "size": 1223,
     "url": "https://berlin.devsitetest.how/docs/storage",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/docs/terraform": {
     "title": "Terraform on Google Cloud documentation",
@@ -1488,7 +1488,7 @@
     "filename": "terraform_understanding-apis-and-terraform.md",
     "size": 7603,
     "url": "https://berlin.devsitetest.how/docs/terraform/understanding-apis-and-terraform",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/docs/tpc-differences": {
     "title": "Key differences between Google Cloud Dedicated and Google Cloud",
@@ -1633,7 +1633,7 @@
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39639,
+    "size": 39633,
     "url": "https://berlin.devsitetest.how/kms/docs/destroy-restore",
     "last_updated": "2026-10-27"
   },
@@ -1661,7 +1661,7 @@
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22577,
+    "size": 22574,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
     "last_updated": "2026-10-27"
   },
@@ -1731,9 +1731,9 @@
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
     "filename": "kubernetes-engine_tpc-differences.md",
-    "size": 13843,
+    "size": 13740,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences",
-    "last_updated": "2026-10-30"
+    "last_updated": "2026-11-02"
   },
   "/load-balancing/docs": {
     "title": "Cloud Load Balancing documentation",
@@ -1745,9 +1745,9 @@
   "/load-balancing/docs/tpc-differences": {
     "title": "Cloud Load Balancing in Google Cloud Dedicated versus Google Cloud",
     "filename": "load-balancing_tpc-differences.md",
-    "size": 7794,
+    "size": 7836,
     "url": "https://berlin.devsitetest.how/load-balancing/docs/tpc-differences",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/logging/docs": {
     "title": "Cloud Logging documentation",
@@ -2081,9 +2081,9 @@
   "/service-usage/docs": {
     "title": "Service Usage documentation",
     "filename": "service-usage.md",
-    "size": 2353,
+    "size": 2244,
     "url": "https://berlin.devsitetest.how/service-usage/docs",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/service-usage/docs/enable-disable": {
     "title": "Enable and disable services",
@@ -2095,9 +2095,9 @@
   "/service-usage/docs/list-services": {
     "title": "List services",
     "filename": "service-usage_list-services.md",
-    "size": 7724,
+    "size": 7764,
     "url": "https://berlin.devsitetest.how/service-usage/docs/list-services",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/service-usage/docs/overview": {
     "title": "Service Usage overview",
@@ -2130,9 +2130,9 @@
   "/service-usage/docs/set-up-development-environment": {
     "title": "Quickstart: Set up Service Usage for a development environment",
     "filename": "service-usage_set-up-development-environment.md",
-    "size": 4503,
+    "size": 4610,
     "url": "https://berlin.devsitetest.how/service-usage/docs/set-up-development-environment",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-02"
   },
   "/service-usage/docs/tpc-differences": {
     "title": "Service Usage in Google Cloud Dedicated versus Google Cloud",
@@ -2153,7 +2153,7 @@
     "filename": "sql_release-notes.md",
     "size": 67337,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-11-02"
+    "last_updated": "2026-11-03"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -2172,7 +2172,7 @@
   "/storage/docs/creating-buckets": {
     "title": "Create a bucket",
     "filename": "storage_creating-buckets.md",
-    "size": 32899,
+    "size": 32902,
     "url": "https://berlin.devsitetest.how/storage/docs/creating-buckets",
     "last_updated": "2026-10-30"
   },
@@ -2193,7 +2193,7 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22364,
+    "size": 22367,
     "url": "https://berlin.devsitetest.how/storage/docs/reference/libraries",
     "last_updated": "2026-10-30"
   },

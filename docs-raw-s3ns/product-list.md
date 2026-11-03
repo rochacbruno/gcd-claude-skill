@@ -1,7 +1,7 @@
 # Google Cloud products at a glance
 
 Source: https://documentation.s3ns.fr/docs/product-list
-Last updated: 2026-09-04
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/tpc-differences) for more details.
 
@@ -346,6 +346,14 @@ Analyze, classify, search documents
 Enterprise Knowledge Graph 
 Consolidate & reconcile organizational knowledge 
 ](/enterprise-knowledge-graph/docs)
+
+
+
+- 
+[
+Gemini Cloud Assist 
+AI assistance for cloud operations 
+](/cloud-assist)
 
 
 
@@ -827,6 +835,14 @@ Data foundation for enterprise analytics
 
 - 
 [
+Data Agent Kit 
+IDE extension & agent plugin for data workflows 
+](/data-agent-kit)
+
+
+
+- 
+[
 Data Studio 
 Interactive dashboards & data reporting 
 ](/data-studio)
@@ -868,8 +884,8 @@ Change data capture/replication service
 - 
 [
 Knowledge Catalog 
-Agentic context & data governance 
-](/dataplex/docs)
+Unified data & AI metadata management 
+](/knowledge-catalog/docs)
 
 
 
@@ -918,6 +934,14 @@ Serverless analytics using Apache Spark
 Manufacturing Data Engine 
 Analyze & contextualize factory data 
 ](/manufacturing-data-engine/docs)
+
+
+
+- 
+[
+Orchestration Pipelines 
+Declarative orchestration & deployment framework 
+](/orchestration-pipelines)
 
 
 
@@ -1023,6 +1047,14 @@ Horizontally scalable relational DB
 
 
 
+- 
+[
+Spanner Omni 
+Self-managed Spanner for your environment 
+](/spanner-omni)
+
+
+
 
 
 
@@ -1090,14 +1122,6 @@ Publish & discover services at scale
 ## Industry solutions
 
 
-
-
-
-- 
-[
-AI Commerce Search 
-Personalized search for retail 
-](/retail/docs)
 
 
 
@@ -1424,6 +1448,14 @@ App error reporting
 
 - 
 [
+Google Cloud Observability 
+Monitor, log & trace cloud workloads 
+](/stackdriver/docs/observability)
+
+
+
+- 
+[
 Logging 
 Centralized data & event logging 
 ](/logging/docs)
@@ -1697,6 +1729,14 @@ Check URLs for safety
 Backup and DR Service 
 Backup & DR SaaS 
 ](/backup-disaster-recovery/docs)
+
+
+
+- 
+[
+Cloud FTP 
+Managed SFTP & FTP file transfers 
+](/cloud-ftp)
 
 
 

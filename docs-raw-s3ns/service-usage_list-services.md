@@ -1,7 +1,7 @@
 # List services
 
 Source: https://documentation.s3ns.fr/service-usage/docs/list-services
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/service-usage/docs/tpc-differences) for more details.
 
@@ -159,9 +159,10 @@ To list the enabled and available APIs and services, you need:
 - A Cloud de Confiance project. To learn how to create a Cloud de Confiance project, see
 [Create projects](/resource-manager/docs/creating-managing-projects).
 
-- The correct [Identity and Access Management (IAM)](/iam) permissions. To learn
-about the IAM requirements for Service Usage, see
-[Access control with IAM](/service-usage/docs/access-control).
+- The correct [Identity and Access Management (IAM)](/iam) permissions. You have the
+needed permissions if you are granted the
+[**Service Usage Viewer**](/iam/docs/roles-permissions/serviceusage#serviceusage.serviceUsageViewer)
+role.
 
 - If you plan to use the Google Cloud CLI or REST API instructions on this page,
 you also need to [install the Google Cloud CLI](/sdk/docs/install).

@@ -1,7 +1,7 @@
 # AI and ML
 
 Source: https://berlin.devsitetest.how/docs/ai-ml
-Last updated: 2026-10-26
+Last updated: 2026-11-02
 
 - 
 
