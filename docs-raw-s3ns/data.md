@@ -1,7 +1,7 @@
 # Data analytics
 
 Source: https://documentation.s3ns.fr/docs/data
-Last updated: 2026-10-26
+Last updated: 2026-11-03
 
 - 
 
@@ -612,21 +612,21 @@ Empower your data journey, from robust batch processing using managed Apache Spa
 
 
 
-
-
-
-
-
-
-
-
-
 #### [
 Managed Service for Apache Spark
 ](/managed-spark/docs)
 
 
 Perform batch processing, querying, and streaming using a managed Apache Spark and Apache Hadoop service.
+
+
+
+
+
+
+
+
+
 
 
 

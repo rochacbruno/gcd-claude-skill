@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://documentation.s3ns.fr/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-10-27
+Last updated: 2026-11-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -496,7 +496,7 @@ You might also want to consider replacing streaming inserts with the newer
 [Storage Write API](/bigquery/docs/write-api), which has higher throughput,
 lower price, and many useful features.
 
-For more information about streaming inserts, see [streaming data into BigQuery](/bigquery/docs/streaming-data-into-bigquery).
+For more information about streaming inserts, see [streaming data into BigQuery](/bigquery/docs/write-api-rest).
 
 ### Streaming table creation rate limit errors
 
@@ -808,8 +808,9 @@ calls from a service account, or the
 a different user email—or when a user exceeds the rate limit for
 `INFORMATION_SCHEMA` queries.
 
-Most BigQuery API core methods have a maximum of 100 API requests per user
-per method; however, some of these core methods can have different rate limits;
+Most BigQuery API core methods have a maximum of 100 API requests per second
+per user per method; however, some of these core methods can have different rate
+limits;
 for example:
 
 - The [`jobs.get` method](/bigquery/docs/reference/rest/v2/jobs/get)

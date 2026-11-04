@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://documentation.s3ns.fr/bigquery/docs/controlling-costs
-Last updated: 2026-10-27
+Last updated: 2026-11-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -1089,7 +1089,7 @@ query in slot-milliseconds (`total_slot_ms`) by inspecting the query execution
 details or querying the
 [`INFORMATION_SCHEMA.JOBS` view](/bigquery/docs/information-schema-jobs).
 
-#### Capacity-based cost attribution
+#### Capacity-based cost attribution 
 
 Cost attribution is the process of splitting and attributing reservation
 compute costs across projects, teams, or queries after workloads have run.
@@ -1549,10 +1549,10 @@ Incorrect pricing amounts
 
 The general advice is following the recommended way of calculating the on-demand job usage for billing in our [public documentation](/bigquery/docs/information-schema-jobs#compare_on-demand_job_usage_to_billing_data).
 
-#### Billed for BigQuery Reservations API usage even though the API is disabled and not reservations or commitments used
+#### Billed for BigQuery Reservation API usage even though the API is disabled and not reservations or commitments used
 
 Inspect the SKU to better understand what services are charged. If the SKU billed is `BigQuery Governance SKU`—these are charges coming from Knowledge Catalog.
-Some Knowledge Catalog functionalities trigger job execution using BigQuery. These charges are now processed under the corresponding BigQuery Reservations API SKU. 
+Some Knowledge Catalog functionalities trigger job execution using BigQuery. These charges are now processed under the corresponding BigQuery Reservation API SKU. 
 
 #### Project is assigned to a reservation, but still seeing BigQuery Analysis on-demand costs
 
@@ -1566,7 +1566,7 @@ In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type
 
 In the Cloud Billing report, apply a filter with the label `goog-bq-feature-type` with the value `SPARK_PROCEDURE`. The usage you will see is metered as pay-as-you go slots under the [BigQuery Enterprise edition](/bigquery/docs/editions-intro). These are charges for using the [BigQuery Apache Spark procedures](/bigquery/docs/spark-procedures#pricing), which are charged this way regardless of the computing model used by the project.
 
-#### BigQuery Reservations API charges appearing after the Reservation API is disabled
+#### BigQuery Reservation API charges appearing after the Reservation API is disabled
 
 Disabling the BigQuery won't stop commitment charges. In order to stop commitment charges, you will need to delete a commitment. Set the renewal plan to `NONE`, and the commitment will be automatically deleted when it expires.
 

@@ -1,7 +1,7 @@
 # Roles overview
 
 Source: https://berlin.devsitetest.how/iam/docs/roles-overview
-Last updated: 2026-10-29
+Last updated: 2026-11-04
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -432,12 +432,11 @@ role](https://console.cloud.berlin-build0.goog/iam-admin/roles/details/roles%3Ca
 
 
 
-You can't use the Google Cloud Dedicated console to grant the Reader, Writer, or Admin
-roles. Instead, use the API or the gcloud CLI. You can also create
-entitlements for these roles using [Privileged Access Manager](/iam/docs/pam-overview).
+You can use the Google Cloud Dedicated console, the API, or the gcloud CLI to
+grant the Reader, Writer, or Admin roles. For instructions, see [Granting,
+changing, and revoking access](/iam/docs/granting-changing-revoking-access).
 
-For instructions, see [Granting, changing, and revoking
-access](/iam/docs/granting-changing-revoking-access).
+You can also create entitlements for these roles using [Privileged Access Manager](/iam/docs/pam-overview).
 
 ### Legacy basic roles
 

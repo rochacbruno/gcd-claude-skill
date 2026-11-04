@@ -1,7 +1,7 @@
 # Roles overview
 
 Source: https://documentation.s3ns.fr/iam/docs/roles-overview
-Last updated: 2026-10-29
+Last updated: 2026-11-04
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -432,12 +432,11 @@ role](https://console.cloud.s3nscloud.fr/iam-admin/roles/details/roles%3Cadmin)
 
 
 
-You can't use the Cloud de Confiance console to grant the Reader, Writer, or Admin
-roles. Instead, use the API or the gcloud CLI. You can also create
-entitlements for these roles using [Privileged Access Manager](/iam/docs/pam-overview).
+You can use the Cloud de Confiance console, the API, or the gcloud CLI to
+grant the Reader, Writer, or Admin roles. For instructions, see [Granting,
+changing, and revoking access](/iam/docs/granting-changing-revoking-access).
 
-For instructions, see [Granting, changing, and revoking
-access](/iam/docs/granting-changing-revoking-access).
+You can also create entitlements for these roles using [Privileged Access Manager](/iam/docs/pam-overview).
 
 ### Legacy basic roles
 

@@ -1,7 +1,7 @@
 # Set up a local development environment
 
 Source: https://berlin.devsitetest.how/docs/get-started/developer-environment
-Last updated: 2026-10-27
+Last updated: 2026-11-03
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -159,16 +159,16 @@ code:
 
 - [Enable required Cloud APIs](/apis/docs/getting-started) for your project.
 
-- Install [Cloud Client Libraries](/apis/docs/cloud-client-libraries) for
-your programming language (such as Java, Python, or Go). Your code
-authenticates automatically using ADC.
+- Install [Cloud Client Libraries](/apis/docs/cloud-client-libraries) for your
+programming language (such as Java, Python, or Go). Your code authenticates
+automatically using ADC.
 
 ## Install the `google-cloud-developer` plugin
 
-If you use an agent such as Claude Code CLI, Antigravity CLI, or Codex CLI to assist
-you in your development work, you can install the `google-cloud-developer`
-plugin to get help with Google Cloud Dedicated tasks and coding. This plugin
-includes:
+If you use an agent such as Claude Code CLI, Antigravity CLI, or Codex CLI to
+assist you in your development work, you can install the
+`google-cloud-developer` plugin to get help with Google Cloud Dedicated tasks and
+coding. This plugin includes:
 
 - Skills to help with account creation, billing setup, project management, and
 authentication to Google Cloud Dedicated services and APIs.
@@ -185,34 +185,25 @@ Install the `google-cloud-developer` plugin using the following instructions
 based on your agent.
 
 
-[Antigravity CLI](#antigravity-cli) [Claude Code CLI](#claude-code-cli) [Codex CLI](#codex-cli) 
+[Antigravity](#antigravity) [Claude Code CLI](#claude-code-cli) [Codex CLI](#codex-cli) 
 More 
 
 
 
 
-- 
+Install the plugin from the Antigravity Marketplace:
 
-Install the plugin by specifying its location in the
-[Google Agent Skills](https://g.dev/cloud/agent-plugins) repository:
+- In Antigravity, go to Customizations > Marketplace and search for
+"Google Cloud Developer".
 
+- Click the **Add** button.
 
-```
-agy plugin install https://github.com/google/skills/plugins/cloud/google-cloud-developer
-```
-
-
-- 
-
-Enable the Developer Knowledge API in your Google Cloud Dedicated project by
-using the gcloud CLI:
+Alternatively, install the plugin using the Antigravity CLI:
 
 
 ```
-gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT_ID 
+agy plugin install google-cloud-developer
 ```
-
-
 
 
 
@@ -241,7 +232,8 @@ gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT
 - 
 
 Create an API key for the Developer Knowledge API by following the
-instructions [Create and secure the API key](https://developers.google.com/knowledge/quickstart#create-secure-key).
+instructions
+[Create and secure the API key](https://developers.google.com/knowledge/quickstart#create-secure-key).
 Save the key you create in a secure location.
 
 - 
@@ -282,7 +274,8 @@ gcloud services enable developerknowledge.googleapis.com --project= YOUR_PROJECT
 - 
 
 Create an API key for the Developer Knowledge API by following the
-instructions [Create and secure the API key](https://developers.google.com/knowledge/quickstart#create-secure-key).
+instructions
+[Create and secure the API key](https://developers.google.com/knowledge/quickstart#create-secure-key).
 Save the key you create in a secure location.
 
 - 
@@ -325,4 +318,5 @@ tooling, consider the following:
 
 ## What's next
 
-- Learn about [Authentication in Google Cloud Dedicated](/docs/get-started/authentication).
+- Learn about
+[Authentication in Google Cloud Dedicated](/docs/get-started/authentication).

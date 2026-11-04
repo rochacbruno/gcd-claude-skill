@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-11-02
+Last updated: 2026-11-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -2004,7 +2004,7 @@ SCSI interface, depending on the machine type of the instance.
 ## Pricing
 
 You are billed for the total provisioned capacity of your
-Hyperdisk volumes until you delete them. Charges incur even if
+Hyperdisk volumes until you delete them. You incur charges even if
 the volume isn't attached to any instances or if the instance is suspended or
 stopped. You are charged per GiB per month. Additionally, you are billed for the
 following:

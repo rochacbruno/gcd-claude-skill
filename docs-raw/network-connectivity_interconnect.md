@@ -1,7 +1,7 @@
 # Cloud Interconnect documentation
 
 Source: https://berlin.devsitetest.how/network-connectivity/docs/interconnect
-Last updated: 2026-10-26
+Last updated: 2026-11-03
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/network-connectivity/docs/interconnect/tpc-differences) for more details.
 
@@ -515,10 +515,10 @@ Partner Cross-Cloud Interconnect for OCI
 [
 
 
-Partner Cross-Cloud Interconnect for AWS
+Partner Cross-Cloud Interconnect for managed cloud partners
 
 
-](/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview)
+](/network-connectivity/docs/interconnect/concepts/partner-cci-for-csp-overview)
 
 
 

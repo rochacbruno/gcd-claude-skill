@@ -1,7 +1,7 @@
 # Google Cloud Armor documentation
 
 Source: https://documentation.s3ns.fr/armor/docs
-Last updated: 2026-10-26
+Last updated: 2026-11-04
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/armor/docs/tpc-differences) for more details.
 
@@ -318,7 +318,7 @@ Google Cloud Armor security policy overview
 Configuring security policies
 
 
-](/armor/docs/configure-security-policies)
+](/armor/docs/create-security-policies)
 
 
 
@@ -494,7 +494,7 @@ monitor_heart
 Custom rules language reference
 
 
-](/armor/docs/rules-language-reference)
+](/armor/docs/create-security-policy-rules)
 
 
 

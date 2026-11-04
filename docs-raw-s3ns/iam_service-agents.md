@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://documentation.s3ns.fr/iam/docs/service-agents
-Last updated: 2026-10-29
+Last updated: 2026-11-04
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -1388,22 +1388,6 @@ None
 | 
 
 
-#### Auto Annotate Service Account
-
-Service agent for `storage.googleapis.com`. 
-
-
-`service- PROJECT_NUMBER @gcp-sa-autoannotate.s3ns-system.iam.gserviceaccount.com`
-
-| 
-
-None
-| 
-|
-
-| 
-
-
 #### AutoML Recommendations Service Account
 
 [Primary service agent](/iam/docs/service-account-types#primary) for `recommendationengine.googleapis.com`. 
@@ -2534,6 +2518,33 @@ Granted on the project.
 
 
 `service- PROJECT_NUMBER @cloud-filer.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+
+
+[Cloud Filestore Service Agent](/iam/docs/roles-permissions/file#file.serviceAgent)
+
+(`roles/file.serviceAgent`)
+
+
+
+
+Granted on the project.
+
+
+| 
+|
+
+| 
+
+
+#### Cloud Filestore Backup Service Agent
+
+Service agent for `file.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-filer-backup.s3ns-system.iam.gserviceaccount.com`
 
 | 
 
@@ -4849,6 +4860,33 @@ Granted on the project.
 | 
 
 
+#### Firebase Telemetry Service Agent
+
+[Primary service agent](/iam/docs/service-account-types#primary) for `firebasetelemetry.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-firebasetelemetry.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+
+
+[Firebase Telemetry Service Agent](/iam/docs/roles-permissions/firebasetelemetry#firebasetelemetry.serviceAgent)
+
+(`roles/firebasetelemetry.serviceAgent`)
+
+
+
+
+Granted on the project.
+
+
+| 
+|
+
+| 
+
+
 #### Firewall Insights Service Account
 
 [Primary service agent](/iam/docs/service-account-types#primary) for `firewallinsights.googleapis.com`. 
@@ -6233,6 +6271,22 @@ Granted on the project.
 
 
 `service- PROJECT_NUMBER @gcp-sa-networksecurity.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
+
+| 
+
+
+#### Object Enrichment Service Account
+
+Service agent for `storage.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-autoannotate.s3ns-system.iam.gserviceaccount.com`
 
 | 
 
