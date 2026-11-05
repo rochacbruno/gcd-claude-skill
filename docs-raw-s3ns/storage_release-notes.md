@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ November 04, 2026 ](#November_04_2026)
 - [ September 30, 2026 ](#September_30_2026)
 - [ August 17, 2026 ](#August_17_2026)
 - [ July 20, 2026 ](#July_20_2026)
@@ -217,7 +218,20 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## September 30, 2026 
+## November 04, 2026 
+
+
+Feature 
+
+
+You can pause hard deletions for a bucket when you need more time to restore
+soft-deleted objects before they're permanently deleted. For more information,
+see
+[Pause permanent (hard) deletions of soft-deleted objects](/storage/docs/pause-hard-deletions).
+
+
+
+## September 30, 2026
 
 
 Feature 
