@@ -1,7 +1,7 @@
 # Cloud Storage client libraries
 
 Source: https://documentation.s3ns.fr/storage/docs/reference/libraries
-Last updated: 2026-10-30
+Last updated: 2026-11-03
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -453,7 +453,7 @@ the following to your dependencies:
 
 
 ```
-libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.76.0" 
+libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "2.77.0" 
 ```
 
 

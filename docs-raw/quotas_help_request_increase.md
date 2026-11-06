@@ -493,7 +493,7 @@ You can learn more about quotas for a specific service by reading the
 documentation for that service. For example, Compute Engine users can read the
 [Compute Engine quota and limits overview](/compute/quotas-limits).
 
-### View and export quota usage over time 
+### View and export quota usage over time
 
 You can view quota usage over time with charts. The Quotas & System Limits page
 of the console provides charts for each individual quota or system limit that's
@@ -537,7 +537,7 @@ To export the chart, click more_vert
 To do more with charts, see
 [Set up quota alerts and monitoring](/docs/quotas/set-up-quota-alerts).
 
-### View API-specific quotas 
+### View API-specific quotas
 
 To view detailed quota information for a particular API, including usage
 over time, visit the quota page for the API in the Google Cloud Dedicated console.

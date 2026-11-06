@@ -2,7 +2,7 @@
   "/access-context-manager/docs": {
     "title": "Access Context Manager documentation",
     "filename": "access-context-manager.md",
-    "size": 2973,
+    "size": 2974,
     "url": "https://documentation.s3ns.fr/access-context-manager/docs",
     "last_updated": "2026-10-26"
   },
@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 52795,
+    "size": 52796,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-11-03"
   },
@@ -212,7 +212,7 @@
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 138941,
+    "size": 138937,
     "url": "https://documentation.s3ns.fr/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-27"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42499,
+    "size": 42495,
     "url": "https://documentation.s3ns.fr/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-27"
   },
@@ -247,7 +247,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 162147,
+    "size": 162139,
     "url": "https://documentation.s3ns.fr/bigquery/docs/tables",
     "last_updated": "2026-11-03"
   },
@@ -396,7 +396,7 @@
     "filename": "dns_overview.md",
     "size": 11481,
     "url": "https://documentation.s3ns.fr/dns/docs/overview",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-05"
   },
   "/dns/docs/policies": {
     "title": "Configure DNS server policies",
@@ -520,7 +520,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13684,
+    "size": 13683,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-11-04"
   },
@@ -977,12 +977,12 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26578,
     "url": "https://documentation.s3ns.fr/docs/quotas/custom-constraints",
-    "last_updated": "2026-11-04"
+    "last_updated": "2026-11-05"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-10-26"
   },
@@ -996,7 +996,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 18880,
+    "size": 18879,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -1059,7 +1059,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 132187,
+    "size": 132188,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-11-03"
   },
@@ -1486,7 +1486,7 @@
   "/docs/terraform/install-configure-terraform": {
     "title": "Install Terraform",
     "filename": "terraform_install-configure-terraform.md",
-    "size": 4778,
+    "size": 4779,
     "url": "https://documentation.s3ns.fr/docs/terraform/install-configure-terraform",
     "last_updated": "2026-10-26"
   },
@@ -1500,7 +1500,7 @@
   "/docs/terraform/release-notes": {
     "title": "Terraform on Google Cloud release notes",
     "filename": "terraform_release-notes.md",
-    "size": 2261,
+    "size": 1862,
     "url": "https://documentation.s3ns.fr/docs/terraform/release-notes",
     "last_updated": "2026-10-26"
   },
@@ -2046,7 +2046,7 @@
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 73449,
+    "size": 73458,
     "url": "https://documentation.s3ns.fr/pubsub/docs/publisher",
     "last_updated": "2026-11-04"
   },
@@ -2251,14 +2251,14 @@
     "filename": "sql_release-notes.md",
     "size": 67271,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-11-05"
+    "last_updated": "2026-11-06"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
     "filename": "sql_tpc-differences.md",
     "size": 6670,
     "url": "https://documentation.s3ns.fr/sql/docs/tpc-differences",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-03"
   },
   "/storage/docs": {
     "title": "Cloud Storage documentation",
@@ -2293,7 +2293,7 @@
     "filename": "storage_reference_libraries.md",
     "size": 22295,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
-    "last_updated": "2026-10-30"
+    "last_updated": "2026-11-03"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",

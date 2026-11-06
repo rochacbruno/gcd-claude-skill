@@ -198,7 +198,7 @@
   "/bigquery/docs/loading-data-cloud-storage-csv": {
     "title": "Load CSV data from Cloud Storage",
     "filename": "bigquery_loading-data-cloud-storage-csv.md",
-    "size": 139415,
+    "size": 139411,
     "url": "https://berlin.devsitetest.how/bigquery/docs/loading-data-cloud-storage-csv",
     "last_updated": "2026-10-27"
   },
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42646,
+    "size": 42642,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-10-27"
   },
@@ -233,7 +233,7 @@
   "/bigquery/docs/tables": {
     "title": "Create and use tables",
     "filename": "bigquery_tables.md",
-    "size": 162827,
+    "size": 162819,
     "url": "https://berlin.devsitetest.how/bigquery/docs/tables",
     "last_updated": "2026-11-03"
   },
@@ -319,7 +319,7 @@
     "filename": "dns_overview.md",
     "size": 11517,
     "url": "https://berlin.devsitetest.how/dns/docs/overview",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-05"
   },
   "/dns/docs/policies": {
     "title": "Configure DNS server policies",
@@ -597,7 +597,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3590,
+    "size": 3612,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -907,7 +907,7 @@
     "filename": "quotas_custom-constraints.md",
     "size": 26685,
     "url": "https://berlin.devsitetest.how/docs/quotas/custom-constraints",
-    "last_updated": "2026-11-04"
+    "last_updated": "2026-11-05"
   },
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
@@ -926,7 +926,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19063,
+    "size": 19061,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-10-26"
   },
@@ -1430,7 +1430,7 @@
   "/docs/terraform/release-notes": {
     "title": "Terraform on Google Cloud release notes",
     "filename": "terraform_release-notes.md",
-    "size": 2291,
+    "size": 1892,
     "url": "https://berlin.devsitetest.how/docs/terraform/release-notes",
     "last_updated": "2026-10-26"
   },
@@ -1969,7 +1969,7 @@
   "/pubsub/docs/publisher": {
     "title": "Publish messages to topics",
     "filename": "pubsub_publisher.md",
-    "size": 73637,
+    "size": 73646,
     "url": "https://berlin.devsitetest.how/pubsub/docs/publisher",
     "last_updated": "2026-11-04"
   },
@@ -2153,14 +2153,14 @@
     "filename": "sql_release-notes.md",
     "size": 67337,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-11-05"
+    "last_updated": "2026-11-06"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
     "filename": "sql_tpc-differences.md",
     "size": 6821,
     "url": "https://berlin.devsitetest.how/sql/docs/tpc-differences",
-    "last_updated": "2026-10-26"
+    "last_updated": "2026-11-03"
   },
   "/storage/docs": {
     "title": "Cloud Storage documentation",
@@ -2195,7 +2195,7 @@
     "filename": "storage_reference_libraries.md",
     "size": 22367,
     "url": "https://berlin.devsitetest.how/storage/docs/reference/libraries",
-    "last_updated": "2026-10-30"
+    "last_updated": "2026-11-03"
   },
   "/storage/docs/release-notes": {
     "title": "Cloud Storage release notes",
