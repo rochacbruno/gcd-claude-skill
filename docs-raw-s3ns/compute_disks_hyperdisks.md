@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-11-04
+Last updated: 2026-11-06
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -675,6 +675,7 @@ Select one or more machine series to see the supported Hyperdisk types.
 [A4](/compute/docs/accelerator-optimized-machines#a4-vms) 
 [A4X](/compute/docs/accelerator-optimized-machines#a4x-vms) 
 [A4X Max](/compute/docs/accelerator-optimized-machines#a4x-vms) 
+[A5X](/compute/docs/accelerator-optimized-machines#a5x-instances) 
 [C2](/compute/docs/compute-optimized-machines#c2_machine_types) 
 [C2D](/compute/docs/compute-optimized-machines#c2d_machine_types) 
 [C3](/compute/docs/general-purpose-machines#c3_series) 
@@ -722,6 +723,7 @@ Select one or more options ** Choose a machine series
 - A4
 - A4X
 - A4X Max
+- A5X
 - C2
 - C2D
 - C3
@@ -891,6 +893,24 @@ Hyperdisk ML |
 | 
 
 **—** 
+| 
+
+
+| 
+
+
+| 
+
+
+| 
+|
+| 
+[A5X](/compute/docs/accelerator-optimized-machines#a5x-instances) | 
+
+
+| 
+
+
 | 
 
 
@@ -1666,7 +1686,7 @@ supported
 
 
 - You can't use Hyperdisk Throughput on bare metal instances, with the exception of
-C4D and A4X Max bare metal instances.
+A5X, A4X Max, and C4D bare metal instances.
 
 - Additional limitations apply to attaching Hyperdisk Throughput volumes to certain machine series,
 including C4, C4A, and N4. For more information, see
