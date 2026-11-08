@@ -128,6 +128,11 @@ Resources
 
 
 
+- On this page 
+- [ September 16, 2024 ](#September_16_2024)
+- 
+
+
 
 
 
@@ -175,3 +180,23 @@ To get the latest product updates delivered to you, add the URL of this page to 
 [feed
 reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 [feed URL](https://documentation.s3ns.fr/feeds/terraform-release-notes.xml) directly.
+
+
+
+
+
+
+
+
+
+## September 16, 2024 
+
+
+Change 
+
+
+Multiple Terraform samples added to [BigQuery](/bigquery/docs/introduction) documentation. For example, see the Terraform tabs on the following pages:
+
+- [Tag tables and datasets](/bigquery/docs/tags)
+
+- [Creating and managing tags](/resource-manager/docs/tags/tags-creating-and-managing)

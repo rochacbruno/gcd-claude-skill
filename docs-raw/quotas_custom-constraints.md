@@ -1,7 +1,7 @@
 # Use custom organization policies
 
 Source: https://berlin.devsitetest.how/docs/quotas/custom-constraints
-Last updated: 2026-11-05
+Last updated: 2026-11-06
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -132,24 +132,6 @@ Guides
 - [ What's next ](#whats_next)
 - [ What's next ](#whats_next_2)
 - 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

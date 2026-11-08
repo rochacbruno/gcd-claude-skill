@@ -1,7 +1,7 @@
 # Compute Engine in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/compute/docs/tpc-differences
-Last updated: 2026-10-26
+Last updated: 2026-11-06
 
 - 
 
@@ -184,7 +184,7 @@ Cloud de Confiance
 
 - 
 
-Hyperdisk Balanced is the only disk type available in
+Hyperdisk Balanced and Hyperdisk Balanced High Availability are the only disk types available in
 Cloud de Confiance
 
 
@@ -382,7 +382,9 @@ Cloud de Confiance:
 
 
 
-- [Hyperdisk Balanced](/compute/docs/disks#hyperdisks)
+- [Hyperdisk Balanced](/compute/docs/disks/hd-types/hyperdisk-balanced)
+
+- [Hyperdisk Balanced High Availability](/compute/docs/disks/hd-types/hyperdisk-balanced-ha)
 
 
 
@@ -579,6 +581,26 @@ in case of an outage.
 |
 
 | 
+**Disks** | 
+
+
+
+To protect your applications from a zonal outage, use
+[Hyperdisk Balanced High Availability](/compute/docs/disks/hd-types/hyperdisk-balanced-ha)
+volumes for your boot and data disks. Hyperdisk Balanced High Availability volumes
+synchronously replicate data across two zones in the same region.
+
+
+
+
+For more information, see
+[About
+synchronous disk replication](/compute/docs/disks/about-regional-persistent-disk).
+
+| 
+|
+
+| 
 **Reservations** | 
 
 
@@ -733,6 +755,26 @@ All other backup and restoration options are unavailable.
 |
 
 | 
+**Disk replication** | 
+
+
+
+[Hyperdisk Balanced High Availability](/compute/docs/disks/hd-types/hyperdisk-balanced-ha)
+is the only supported option to replicate disk data to another zone in the
+same region.
+
+
+
+If you use Persistent Disk, then create Hyperdisk Balanced High Availability volumes from
+your Persistent Disk volumes by following the steps in
+[Change
+a zonal disk to a regional Hyperdisk](/compute/docs/disks/migrate-to-hyperdisk#migrate-to-hdbha).
+
+
+| 
+|
+
+| 
 **VM and user management** | 
 
 
@@ -805,12 +847,10 @@ large for your workload, then consider doing CPU inferencing.
 - 
 
 
-Hyperdisk Balanced is the recommended block storage option for
-Compute Engine and the only block storage option in
-Cloud de Confiance by S3NS. If you use balanced
-Persistent Disk in Google Cloud, we recommend that you use
-Google Cloud Hyperdisk in Cloud de Confiance by S3NS and
-Google Cloud alike.
+For boot and data disks for your compute instances in
+Cloud de Confiance by S3NS, use Hyperdisk Balanced and Hyperdisk Balanced High Availability.
+You should use Hyperdisk Balanced for zonal disks and Hyperdisk Balanced High Availability as a regional disk,
+that is, a disk that has replicas in two zones within the same region.
 
 
 

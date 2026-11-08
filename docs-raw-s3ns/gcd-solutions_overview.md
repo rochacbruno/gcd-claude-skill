@@ -1,7 +1,7 @@
 # Solutions for Cloud de Confiance
 
 Source: https://documentation.s3ns.fr/docs/gcd-solutions/overview
-Last updated: 2026-10-26
+Last updated: 2026-11-06
 
 - 
 
