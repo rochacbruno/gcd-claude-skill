@@ -1,7 +1,7 @@
 # Token types
 
 Source: https://berlin.devsitetest.how/docs/authentication/token-types
-Last updated: 2026-11-07
+Last updated: 2026-11-08
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -575,7 +575,7 @@ Sign the payload using a service account key of the respective service
 account. Clients can sign the payload offline by using a user-managed
 service account key, or online by using the `signJwt` method and a
 Google-managed service account key. For more information, see
-[Create a self-signed JSON Web Token](/iam/docs/create-short-lived-credentials-direct#sa-credentials-jwt)
+[Create a self-signed JSON Web Token](/iam/docs/create-short-lived-credentials-direct#sa-credentials-jwt).
 
 A decoded service account JWT looks similar to the following, with
 ` SIGNATURE ` replaced by the token's signature:
@@ -608,7 +608,7 @@ can specify an API endpoint in the `aud` key:
 } . { 
 "iss" : "service-account@example.eu0.iam.gserviceaccount.com" , 
 "sub" : "service-account@example.eu0.iam.gserviceaccount.com" , 
-"aud" : "https://cloudresourcemanager.googleapis.com/" , 
+"aud" : "https://cloudresourcemanager.apis-berlin-build0.goog/" , 
 "exp" : 1744854799 , 
 "iat" : 1744851199 
 } . SIGNATURE 
