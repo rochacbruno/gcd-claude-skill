@@ -336,7 +336,7 @@ import json
 import uritemplate 
 import urllib 
 
-** # Step 1: Fetch Discovery document **
+# Step 1: Fetch Discovery document 
 DISCOVERY_URI = "https://serviceusage.s3nsapis.fr/$discovery/rest?version=v1" 
 h = httplib2 . Http () 
 resp , content = h . request ( DISCOVERY_URI ) 
@@ -344,7 +344,7 @@ discovery = json . loads ( content )
 location = None # Set this to your location if appropriate 
 use_global_endpoint = True # Set this to False if you want to target the endpoint for your location 
 
-** # Step 2.a: Construct base URI **
+# Step 2.a: Construct base URI 
 BASE_URL = None 
 if not use_global_endpoint and location : 
 if discovery [ 'endpoints' ]: 
@@ -356,7 +356,7 @@ BASE_URL += discovery [ 'servicePath' ]
 class Collection ( object ): pass 
 
 def createNewMethod ( name , method ): 
-** # Step 2.b Compose request **
+# Step 2.b Compose request 
 def newMethod ( ** kwargs ): 
 body = kwargs . pop ( 'body' , None ) 
 url = urllib . parse . urljoin ( BASE_URL , uritemplate . expand ( method [ 'path' ], kwargs )) 
@@ -370,7 +370,7 @@ headers = { 'content-type' : 'application/json' })
 
 return newMethod 
 
-** # Step 3.a: Build client surface **
+# Step 3.a: Build client surface 
 def build ( discovery , collection ): 
 for name , resource in discovery . get ( 'resources' , {}) . items (): 
 setattr ( collection , name , build ( resource , Collection ())) 
@@ -378,7 +378,7 @@ for name , method in discovery . get ( 'methods' , {}) . items ():
 setattr ( collection , name , createNewMethod ( name , method )) 
 return collection 
 
-** # Step 3.b: Use the client **
+# Step 3.b: Use the client 
 service = build ( discovery , Collection ()) 
 print ( serviceusage . services . enable ( name = 'projects/my-project/services/compute.googleapis.com' )) 
 ```

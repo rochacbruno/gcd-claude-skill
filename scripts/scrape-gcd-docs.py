@@ -521,13 +521,17 @@ def html_to_markdown(content: str) -> str:
             lambda m, lv=i: "\n" + "#" * lv + " " + m.group(1).strip() + "\n",
             text, flags=re.DOTALL)
 
+    def _clean_pre(m: re.Match) -> str:
+        inner = re.sub(r"</?(?:strong|b|em|i)\b[^>]*>", "", m.group(1), flags=re.IGNORECASE)
+        return "\n```\n" + html.unescape(inner).strip() + "\n```\n"
+
     text = re.sub(
         r"<pre[^>]*><code[^>]*>(.*?)</code></pre>",
-        lambda m: "\n```\n" + html.unescape(m.group(1)).strip() + "\n```\n",
+        _clean_pre,
         text, flags=re.DOTALL)
     text = re.sub(
         r"<pre[^>]*>(.*?)</pre>",
-        lambda m: "\n```\n" + html.unescape(m.group(1)).strip() + "\n```\n",
+        _clean_pre,
         text, flags=re.DOTALL)
 
     text = re.sub(
@@ -537,6 +541,18 @@ def html_to_markdown(content: str) -> str:
 
     text = re.sub(r'<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>',
                   r"[\2](\1)", text, flags=re.DOTALL)
+
+    # Fix malformed duplicate or unclosed inline emphasis tags inside table cells (e.g. <td><strong>Foo<strong></td>)
+    text = re.sub(
+        r"<(strong|b|em|i)\b[^>]*>([^<]*?)(?:<\1\b[^>]*>)?(?=\s*</(?:td|th|li|p)\b)",
+        r"<\1>\2</\1>",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(r"<strong\b[^>]*>(.*?)</strong>", r"**\1**", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<b\b[^>]*>(.*?)</b>", r"**\1**", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<em\b[^>]*>(.*?)</em>", r"*\1*", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<i\b[^>]*>(.*?)</i>", r"*\1*", text, flags=re.DOTALL | re.IGNORECASE)
 
     text = re.sub(r"<li[^>]*>", "\n- ", text, flags=re.DOTALL)
     text = re.sub(r"</li>", "", text)
@@ -551,11 +567,6 @@ def html_to_markdown(content: str) -> str:
     text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
     text = re.sub(r"<p[^>]*>", "\n\n", text, flags=re.DOTALL)
     text = re.sub(r"</p>", "\n", text)
-
-    text = re.sub(r"<strong[^>]*>(.*?)</strong>", r"**\1**", text, flags=re.DOTALL)
-    text = re.sub(r"<b[^>]*>(.*?)</b>", r"**\1**", text, flags=re.DOTALL)
-    text = re.sub(r"<em[^>]*>(.*?)</em>", r"*\1*", text, flags=re.DOTALL)
-    text = re.sub(r"<i[^>]*>(.*?)</i>", r"*\1*", text, flags=re.DOTALL)
 
     text = re.sub(
         r"<blockquote[^>]*>(.*?)</blockquote>",

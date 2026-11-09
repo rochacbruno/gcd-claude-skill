@@ -19,7 +19,7 @@ All products share these platform-wide constraints:
 |---|---|---|---|---|
 | Access Context Manager | Qualifié SecNumCloud 3.2 | `access-context-manager_tpc-differences.md` | 2026-10-26 | `74571076b2` |
 | Agent Platform (Gemini Enterprise Agent Platform) | Qualification en cours | `gemini-enterprise-agent-platform_tpc-differences.md` | 2026-10-26 | `9cf6ccf3df` |
-| Artifact Registry | Qualifié SecNumCloud 3.2 | `artifact-registry_tpc-differences.md` | 2026-10-26 | `36706b91a3` |
+| Artifact Registry | Qualifié SecNumCloud 3.2 | `artifact-registry_tpc-differences.md` | 2026-10-26 | `881c6a448e` |
 | BigQuery | Qualifié SecNumCloud 3.2 | `bigquery_tpc-differences.md` | 2026-10-26 | `40eb9066e7` |
 | Bigtable | Qualification en cours | `bigtable_tpc-differences.md` | 2026-10-28 | `8399e6dd61` |
 | Cloud Armor | Qualifié SecNumCloud 3.2 | `armor_tpc-differences.md` | 2026-10-26 | `82802e7d6b` |

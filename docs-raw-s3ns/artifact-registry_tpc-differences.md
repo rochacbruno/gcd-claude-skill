@@ -306,7 +306,7 @@ client tools:
 |
 
 | 
-**Cleanup policies | 
+**Cleanup policies** | 
 Cleanup policies aren't available. | 
 |
 
@@ -316,7 +316,7 @@ Cleanup policies aren't available. |
 
 
 | 
-Vulnerability Scanning**
+**Vulnerability Scanning**
 | 
 Vulnerability scanning with Artifact Analysis isn't available.
 | 
