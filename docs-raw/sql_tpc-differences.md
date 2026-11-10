@@ -1,7 +1,7 @@
 # Cloud SQL in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/sql/docs/tpc-differences
-Last updated: 2026-11-07
+Last updated: 2026-11-09
 
 - 
 
@@ -136,8 +136,8 @@ Guides
 
 
 
-Cloud SQL is a fully managed relational database service for MySQL, PostgreSQL,
-and SQL Server. This frees you from database administration tasks so that you
+Cloud SQL is a fully managed relational database service for MySQL and
+PostgreSQL. This frees you from database administration tasks so that you
 have more time to manage your data.
 This page describes the differences between the
 Google Cloud Dedicated and Google Cloud versions of Cloud SQL.
@@ -208,6 +208,13 @@ Cloud SQL for SQL Server is unavailable.
 **Product editions**
 | 
 Only Cloud SQL Enterprise Plus edition is available. Cloud SQL Enterprise edition is unavailable.
+| 
+|
+
+| 
+**Database versions**
+| 
+Only database versions supported in Cloud SQL Enterprise Plus edition (MySQL 8.0, 8.4, and 9.7, and PostgreSQL 12 through 18) are available. Versions supported only in Cloud SQL Enterprise edition (MySQL 5.6 and 5.7, and PostgreSQL 9.6, 10, and 11) are unavailable.
 | 
 |
 
@@ -294,6 +301,43 @@ User account and group IAM authentication is unavailable in Google Cloud Dedicat
 **Domain controllers**
 | 
 Managed Service for Microsoft Active Directory is unavailable in Google Cloud Dedicated.
+| 
+|
+
+| 
+**Organization policies**
+| 
+
+
+
+[Organization
+policies](/sql/docs/mysql/org-policy/org-policy) are available with the following differences in
+Google Cloud Dedicated:
+
+
+
+
+- Built-in connection organization policies
+(`constraints/sql.restrictPublicIp` and
+`constraints/sql.restrictAuthorizedNetworks`) and restricting
+allowed Cloud KMS projects for customer-managed encryption keys
+(CMEK) (`constraints/gcp.restrictCmekCryptoKeyProjects`) are
+available in Google Cloud Dedicated.
+
+- Requiring CMEK on Cloud SQL instances using
+`constraints/gcp.restrictNonCmekServices` (with
+`sqladmin.googleapis.com`) is unavailable in
+Google Cloud Dedicated.
+
+- [Custom
+organization policies](/sql/docs/mysql/org-policy/custom-org-policy) targeting
+`sqladmin.googleapis.com/Instance` or
+`sqladmin.googleapis.com/BackupRun` and managed constraints
+(`constraints/sql.managed.restrictPublicIp` and
+`constraints/sql.managed.restrictAuthorizedNetworks`) are
+unavailable in Google Cloud Dedicated.
+
+
 | 
 |
 

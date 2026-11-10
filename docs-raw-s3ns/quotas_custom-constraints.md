@@ -1,7 +1,7 @@
 # Use custom organization policies
 
 Source: https://documentation.s3ns.fr/docs/quotas/custom-constraints
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -2642,8 +2642,8 @@ To define a condition, click edit **Edit condition**.
 
 - 
 In the **Add condition** panel, create a CEL condition that refers to a supported
-service resource, for example, `resource.management.autoUpgrade == false`. This
-field can contain up to 1000 characters. For details about CEL usage, see
+service resource, for example, `resource.autopilot.enabled == false`. This
+field can contain up to 1,500 characters. For details about CEL usage, see
 [
 Common Expression Language](/resource-manager/docs/organization-policy/creating-managing-custom-constraints#common_expression_language).
 For more information about the service resources you can use in your custom constraints,
@@ -2755,7 +2755,7 @@ Services that support custom constraints](/organization-policy/reference/custom-
 - 
 ` CONDITION `: a [
 CEL condition](/resource-manager/docs/organization-policy/creating-managing-custom-constraints#common_expression_language) that is written against a representation of a supported service
-resource. This field can contain up to 1000 characters. For example,
+resource. This field can contain up to 1,500 characters. For example,
 `"resource.service == compute.googleapis.com && resource.quotaId == CPUS-per-project-region"`.
 
 

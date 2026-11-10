@@ -1,7 +1,7 @@
 # Create and start a Compute Engine instance
 
 Source: https://documentation.s3ns.fr/compute/docs/instances/create-start-instance
-Last updated: 2026-11-06
+Last updated: 2026-11-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -2211,8 +2211,8 @@ Customized provisioning type
 [Create a Spot instance](/compute/docs/instances/create-use-spot) 
 [Create instances that consume reserved instances](/compute/docs/instances/reservations-consume) 
 Multiple instances at once 
-[Create a managed instance group (MIG)](/compute/docs/instance-groups/creating-groups-of-managed-instances#basic_scenarios_for_creating_a_mig)
-
+[Create a managed instance group (MIG)](/compute/docs/instance-groups/creating-groups-of-managed-instances#basic_scenarios_for_creating_a_mig) 
+[Create instances in bulk](/compute/docs/instances/multiple/create-in-bulk) 
 Sole-tenant nodes 
 [Create instances on sole-tenant nodes](/compute/docs/nodes/create-nodes) 
 Efficient instances 

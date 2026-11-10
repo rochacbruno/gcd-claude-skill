@@ -1,7 +1,7 @@
 # Estimate and control costs
 
 Source: https://documentation.s3ns.fr/bigquery/docs/controlling-costs
-Last updated: 2026-11-07
+Last updated: 2026-11-09
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -131,6 +131,7 @@ Guides
 
 - [ Pricing models ](#compute-pricing-models)
 - [ Restrict costs for each model ](#restrict-compute-costs)
+- [ Attribute capacity costs to consumption projects ](#attribute-capacity-costs)
 
 - [ Control query costs ](#control-query-cost)
 
@@ -247,6 +248,17 @@ to 0 and the maximum to a setting that meets your workload needs.
 BigQuery automatically scales up to the number of slots
 needed for your workload, never exceeding the maximum that you set. For more
 information, see [Workload management using reservations](/bigquery/docs/reservations-workload-management).
+
+### Attribute capacity costs to consumption projects
+
+If your organization uses BigQuery editions capacity-based
+pricing and separates workloads across multiple query projects (`consumption
+projects`), consider enabling [compute cost attribution](/bigquery/docs/reservations-monitoring#reservation_cost_attribution)
+in your administration project.
+
+Attributing capacity charges directly to the projects where queries execute lets
+you view project-level compute costs in Cloud Billing and perform better
+FinOps internal chargebacks.
 
 ## Control query costs
 

@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ November 09, 2026 ](#November_09_2026)
 - [ October 27, 2026 ](#October_27_2026)
 - [ October 26, 2026 ](#October_26_2026)
 - [ October 14, 2026 ](#October_14_2026)
@@ -533,6 +534,32 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## November 09, 2026
+
+
+Feature 
+
+
+GKE Gateway now supports Server Name Indication (SNI)-based routing with TLS passthrough. You can use TLS protocol-specific rules to route incoming TLS streams from the Gateway to Kubernetes Services based on SNI without terminating TLS at the GKE Gateway load balancer. Application developers can create TLSRoute resources to expose secure TLS traffic to applications that run in the GKE cluster.
+
+Creating TLSRoute resources requires the Gateway API version 1.5.0 or later CRDs (Standard channel), which are installed in GKE version 1.35.2-gke.1842000 or later.
+
+This feature supports single-cluster and multi-cluster GKE Gateway load balancers by using the following GatewayClass resources:
+
+- `gke-l7-rilb`
+
+- `gke-l7-regional-external-managed`
+
+- `gke-l7-rilb-mc`
+
+- `gke-l7-regional-external-managed-mc`
+
+- `gke-l7-cross-regional-internal-managed-mc`
+
+For more information, see [Deploy a TLS passthrough Gateway](/kubernetes-engine/docs/how-to/deploy-tls-passthrough-gateway).
 
 
 
