@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://berlin.devsitetest.how/iam/docs/service-agents
-Last updated: 2026-11-07
+Last updated: 2026-11-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -7454,6 +7454,22 @@ Service agent for `aiplatform.googleapis.com`.
 Granted on the project.
 
 
+| 
+|
+
+| 
+
+
+#### Vertex AI Grounding Service Agent
+
+Service agent for `aiplatform.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-vertex-grounding.eu0-system.iam.gserviceaccount.com`
+
+| 
+
+None
 | 
 |
 

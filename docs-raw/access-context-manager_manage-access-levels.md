@@ -1,7 +1,7 @@
 # Manage access levels
 
 Source: https://berlin.devsitetest.how/access-context-manager/docs/manage-access-levels
-Last updated: 2026-10-26
+Last updated: 2026-11-11
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/access-context-manager/docs/tpc-differences) for more details.
 
@@ -331,32 +331,6 @@ the next page of results.
 | 
 |
 
-| 
-
-`accessLevelFormat`
-| 
-
-
-
-`enum([LevelFormat](/access-context-manager/docs/reference/rest/v1/LevelFormat))`
-
-
-
-
-Normally, access levels are returned as they are defined, either
-as `BasicLevel` or `CustomLevel`.
-
-
-
-
-You can specify the value `CEL` for this parameter to
-return `BasicLevels` as `CustomLevels` in
-Cloud Common Expression Language.
-
-
-| 
-|
-
 
 
 ### Response body
@@ -547,15 +521,6 @@ describe.
 ### Request body
 
 The request body must be empty.
-
-### Optional parameters
-
-Optionally, include the [`accessLevelFormat`](#accessLevelFormat)
-query parameter. Normally, access levels are returned as they are defined,
-either as `BasicLevel` or `CustomLevel`.
-
-You can specify the value `CEL` for this parameter to return `BasicLevels`
-as `CustomLevels` in Cloud Common Expression Language.
 
 ### Response body
 

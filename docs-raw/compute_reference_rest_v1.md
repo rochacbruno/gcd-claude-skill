@@ -697,7 +697,7 @@ Creates and runs virtual machines on Cloud Platform.
 
 
 
-## Service: compute.googleapis.com
+## Service: compute. googleapis. com
 
 
 
@@ -750,7 +750,7 @@ global
 
 
 
-## REST Resource: [v1.acceleratorTypes](/compute/docs/reference/rest/v1/acceleratorTypes)
+## REST Resource: [v1. accelerator Types](/compute/docs/reference/rest/v1/acceleratorTypes)
 
 
 
@@ -768,9 +768,9 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
+`[aggregated List](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
 
-`GET /compute/v1/projects/{project}/aggregated/acceleratorTypes` 
+`GET / compute/ v1/ projects/ {project}/ aggregated/ accelerator Types` 
 
 Retrieves an aggregated list of accelerator types. | 
 |

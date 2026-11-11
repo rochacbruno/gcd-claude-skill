@@ -1,7 +1,7 @@
 # Quickstart: Create a Compute Engine VM instance using Terraform
 
 Source: https://documentation.s3ns.fr/docs/terraform/get-started-with-terraform
-Last updated: 2026-11-07
+Last updated: 2026-11-10
 
 - 
 

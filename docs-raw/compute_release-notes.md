@@ -1,7 +1,7 @@
 # Compute Engine release notes
 
 Source: https://berlin.devsitetest.how/compute/docs/release-notes
-Last updated: 2026-11-06
+Last updated: 2026-11-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ November 10, 2026 ](#November_10_2026)
 - [ October 26, 2026 ](#October_26_2026)
 - [ September 29, 2026 ](#September_29_2026)
 - [ July 24, 2026 ](#July_24_2026)
@@ -252,6 +253,21 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## November 10, 2026
+
+
+Feature 
+
+
+For your regional managed instance groups (MIGs), you can view planned instance
+allocations across zones and machine types, check the number of instances
+waiting for capacity, and configure alerts based on this data. Compute Engine
+records these details in instance distribution logs in Cloud Logging when you
+create a regional MIG or increase its target size. For more information, see
+[View instance distribution logs](/compute/docs/instance-groups/view-instance-distribution-logs).
 
 
 

@@ -1,7 +1,7 @@
 # Cloud Billing in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/billing/docs/tpc-differences
-Last updated: 2026-11-04
+Last updated: 2026-11-10
 
 - 
 

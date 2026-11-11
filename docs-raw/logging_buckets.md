@@ -1,7 +1,7 @@
 # Configure log buckets
 
 Source: https://berlin.devsitetest.how/logging/docs/buckets
-Last updated: 2026-11-06
+Last updated: 2026-11-10
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/logging/docs/tpc-differences) for more details.
 
@@ -1052,9 +1052,8 @@ retention period ends.
 ### Lock a bucket
 
 When you lock a bucket against updates, you also lock the bucket's
-retention policy. After a retention policy is locked, you can't delete the
-bucket until every log entry in the bucket has fulfilled the bucket's retention
-period. If you want to prevent the accidental deletion of a project that
+retention policy and prevent deletion of that log bucket. If you want to prevent
+the accidental deletion of a project that
 contains a locked log bucket, then add a lien to the project.
 To learn more, see [Protecting projects with liens](/resource-manager/docs/project-liens).
 
@@ -1098,17 +1097,14 @@ in the Logging API. Set the `locked` parameter to `true`.
 
 ### Delete a bucket
 
-You can delete log buckets that satisfy one of the following:
-
-- The log bucket is [unlocked](#locking-logs-buckets).
-
-- The log bucket is [locked](#locking-logs-buckets) and all log entries in
-the log bucket have fulfilled the bucket's retention period.
+You can delete log buckets that are [unlocked](#locking-logs-buckets). You
+can't delete [locked](#locking-logs-buckets) log buckets. If you want to delete
+a locked user-defined log bucket, wait until all log entries in the bucket have
+fulfilled the bucket's retention period and then contact Cloud Customer Care.
 
 You can't delete a log bucket in any of the following situations:
 
-- The log bucket is locked against updates and it stores log entries that
-haven't fulfilled the bucket's retention period.
+- The log bucket is locked.
 
 After you issue the delete command, the log bucket transitions to the
 [`DELETE_REQUESTED` state](/logging/docs/reference/v2/rest/v2/LifecycleState), and it stays in that state
@@ -1321,21 +1317,19 @@ troubleshooting steps and answers to common questions.
 
 ### Why can't I delete this bucket?
 
-If you're trying to delete a bucket, do the following:
+If you're trying to delete a user-defined log bucket, do the following:
 
 - 
 
-Verify that you have the correct permissions to delete the bucket. For the
-list of the permissions that you need, see
+Verify that you have the correct permissions to delete the log bucket. For
+the list of the permissions that you need, see
 [Access control with IAM](/logging/docs/access-control).
 
 - 
 
-Determine whether the bucket is locked by
-[listing the bucket's attributes](#listing-log-buckets). If the bucket is
-locked, check the bucket's
-[retention period](#custom-retention). You can't delete a locked bucket until
-all of the logs in the bucket have fulfilled the bucket's retention period.
+Determine whether the log bucket is locked by
+[listing the bucket's attributes](#listing-log-buckets). You can't delete a
+locked bucket.
 
 ### Which service accounts are routing logs to my bucket?
 
