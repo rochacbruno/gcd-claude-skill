@@ -1,7 +1,7 @@
 # Cloud Storage in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/storage/docs/tpc-differences
-Last updated: 2026-11-09
+Last updated: 2026-11-11
 
 - 
 
@@ -291,13 +291,7 @@ Using buckets as backends for content serving to custom domains through
 **Cloud Storage FUSE**
 | 
 
-
-
-
-- The Cloud Storage FUSE CSI driver for Google Kubernetes Engine (GKE) is
-not available in Google Cloud Dedicated.
-
-- When using [Cloud Storage FUSE](/storage/docs/cloud-storage-fuse/overview),
+When using [Cloud Storage FUSE](/storage/docs/cloud-storage-fuse/overview),
 the authentication for the Google Cloud Dedicated
 bucket must be done either by using Cloud Storage FUSE in a Compute Engine
 virtual machine that's contained in the same project as the bucket or
@@ -306,8 +300,6 @@ permission to read and write data within the bucket. The service account
 key file can be specified either in the
 [configuration file](/storage/docs/cloud-storage-fuse/config-file)
 or by using the `--key-file` flag in individual commands.
-
-
 | 
 |
 

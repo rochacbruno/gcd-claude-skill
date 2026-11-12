@@ -1,7 +1,7 @@
 # Cloud KMS in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/kms/docs/tpc-differences
-Last updated: 2026-10-27
+Last updated: 2026-11-10
 
 - 
 

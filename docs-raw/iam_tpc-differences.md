@@ -1,7 +1,7 @@
 # IAM in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/iam/docs/tpc-differences
-Last updated: 2026-11-07
+Last updated: 2026-11-12
 
 - 
 
@@ -255,6 +255,20 @@ supported when creating policies in Google Cloud Dedicated:
 | 
 **SCIM provisioning for Workforce Identity Federation** | 
 SCIM provisioning for Workforce Identity Federation is unavailable in Google Cloud Dedicated. | 
+|
+
+| 
+**Managed workload identities** | 
+Managed workload identities let you bind strongly attested identities to
+your Compute Engine and GKE workloads. Managed workload
+identities are unavailable in Google Cloud Dedicated. | 
+|
+
+| 
+**Agent Identity** | 
+Agent Identity provides strongly attested identities that
+are tied to the lifecycle of agentic workloads. Agent Identity
+is unavailable in Google Cloud Dedicated. | 
 |
 
 | 

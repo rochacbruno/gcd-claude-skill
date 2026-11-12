@@ -1,7 +1,7 @@
 # Set up ADC for a cloud-based development environment
 
 Source: https://documentation.s3ns.fr/docs/authentication/set-up-adc-cloud-dev-environment
-Last updated: 2026-11-10
+Last updated: 2026-11-11
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -169,7 +169,13 @@ you need to use a different user account to configure ADC, or configure ADC
 using a service account, use a local development environment or a
 Cloud de Confiance compute resource as your development environment.
 
-## What's next 
+In Cloud Workstations, run `gcloud auth application-default login` in your
+workstation terminal to generate a
+[local ADC credential file](/docs/authentication/application-default-credentials#personal) for ADC.
+
+## What's next
+
+- Get more information about [Cloud Workstations authentication](/workstations/docs/authentication).
 
 - Get more information about [Cloud Code](/code/docs).
 
