@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ November 12, 2026 ](#November_12_2026)
 - [ November 10, 2026 ](#November_10_2026)
 - [ November 09, 2026 ](#November_09_2026)
 - [ October 27, 2026 ](#October_27_2026)
@@ -535,6 +536,33 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## November 12, 2026
+
+
+Change 
+
+
+In GKE version 1.35.1-gke.1516000 or later, GKE Dataplane V2 clusters use a
+unified `cilium-cni` configuration instead of a chained CNI setup. With this
+change, Cilium configures the Pod default gateway by using its node-local
+virtual router interface (`cilium_host`), which has the statically assigned
+link-local IP address `169.254.4.6`.
+
+As a result, node-local `kubelet` health checks (`kube-probe` for liveness,
+readiness, and startup probes) and NodeLocal DNSCache traffic now originate from
+`169.254.4.6` instead of the `.1` address of the node's Pod CIDR range (for
+example, `10.x.x.1`).
+
+If your workloads only accept traffic from specific IP address ranges, for
+example through application-level IP allowlists or web server ACLs, allow
+traffic from `169.254.4.6/32` before you upgrade. Otherwise, health checks for
+these workloads might fail.
+
+For more information, see
+[Using GKE Dataplane V2](/kubernetes-engine/docs/how-to/dataplane-v2#health-check-source-ip).
 
 
 

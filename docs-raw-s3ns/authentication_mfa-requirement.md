@@ -1,7 +1,7 @@
 # 2-step verification requirement for Cloud de Confiance by S3NS
 
 Source: https://documentation.s3ns.fr/docs/authentication/mfa-requirement
-Last updated: 2026-11-10
+Last updated: 2026-11-13
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -178,7 +178,8 @@ Cloud de Confiance by S3NS strives to provide its customers with the strongest s
 possible. We prioritize protecting your identity, to help keep your account and
 sensitive information safe. To help keep this commitment, Google is phasing in
 the requirement that all Cloud de Confiance customers enable 2-step verification
-(2SV) for their accounts.
+(2SV) for accounts that are used interactively by humans. Automated workloads
+aren't affected by this change.
 
 Also known as *multifactor authentication* (MFA), 2SV is an important security
 measure. In addition to your password, 2SV requires another proof of identity,
@@ -233,10 +234,13 @@ for more information.
 YouTube.
 
 Your applications and workloads running on Cloud de Confiance, including
-applications secured by Identity-Aware Proxy (IAP), aren't affected by the 2SV
-requirement. However, your developers won't be able to use the
-Cloud de Confiance console to manage those applications. In other words, your
-control plane is affected by the 2SV requirement, but not your data plane.
+applications secured by Identity-Aware Proxy (IAP) and workloads run by
+service accounts, aren't affected by the 2SV requirements. Automated workloads
+running externally (such as CI/CD pipelines) that interact with Cloud de Confiance by S3NS
+programmatically through APIs also aren't affected. However, your developers
+won't be able to use the Cloud de Confiance console without 2SV. In other
+words, your control plane is affected by the 2SV requirement, but not your data
+plane.
 
 Other Cloud de Confiance by S3NS interfaces like the gcloud CLI don't have a 2SV
 requirement. However, after a user account enables 2SV, 2SV becomes part of the

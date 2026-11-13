@@ -1,7 +1,7 @@
 # Cloud DNS overview
 
 Source: https://documentation.s3ns.fr/dns/docs/overview
-Last updated: 2026-11-10
+Last updated: 2026-11-12
 
 - 
 
@@ -371,7 +371,7 @@ roles](/iam/docs/understanding-custom-roles).
 
 ## Performance and timing
 
-Cloud DNS uses [anycast](http://wikipedia.org/wiki/Anycast) to serve
+Cloud DNS uses [anycast](https://wikipedia.org/wiki/Anycast) to serve
 your managed zones.
 
 ### Propagation of changes

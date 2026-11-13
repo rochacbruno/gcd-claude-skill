@@ -1,7 +1,7 @@
 # GPU machine types
 
 Source: https://documentation.s3ns.fr/compute/docs/gpus
-Last updated: 2026-11-10
+Last updated: 2026-11-13
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -1089,11 +1089,14 @@ performing single host inference and model tuning compared with A series machine
 
 
 
+
 You can also add Titanium SSD disks when you create a G4 instance. For the number of disks
 you can attach, see
 [Machine types that require you to choose a number of Local SSD disks](/compute/docs/disks/local-ssd#lssd_disk_options).
 For information about machine type limitations, see
 [G4 limitations](/compute/docs/accelerator-optimized-machines#g4-limitations).
+
+
 
 
 A key feature of the G4 series is support for direct GPU peer-to-peer (P2P) communication
@@ -1110,12 +1113,15 @@ G4 GPU peer-to-peer communication, see
 Machine type | 
 vCPU count | 
 Instance memory (GB) | 
+
 Maximum Titanium SSD supported (GiB) | 
+
 Physical NIC count | 
 Maximum network bandwidth (Gbps) | 
 NVIDIA RTX PRO 6000 GPU count | 
 GPU memory (GB GDDR7) | 
 |
+
 
 
 
@@ -1151,6 +1157,7 @@ GPU memory (GB GDDR7) |
 1/2 | 
 48 | 
 |
+
 
 | 
 `g4-standard-48` | 
