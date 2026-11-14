@@ -1,7 +1,7 @@
 # Google Cloud Hyperdisk overview
 
 Source: https://documentation.s3ns.fr/compute/docs/disks/hyperdisks
-Last updated: 2026-11-12
+Last updated: 2026-11-13
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -675,7 +675,6 @@ Select one or more machine series to see the supported Hyperdisk types.
 [A4](/compute/docs/accelerator-optimized-machines#a4-vms) 
 [A4X](/compute/docs/accelerator-optimized-machines#a4x-vms) 
 [A4X Max](/compute/docs/accelerator-optimized-machines#a4x-vms) 
-[A5X](/compute/docs/accelerator-optimized-machines#a5x-instances) 
 [C2](/compute/docs/compute-optimized-machines#c2_machine_types) 
 [C2D](/compute/docs/compute-optimized-machines#c2d_machine_types) 
 [C3](/compute/docs/general-purpose-machines#c3_series) 
@@ -683,7 +682,6 @@ Select one or more machine series to see the supported Hyperdisk types.
 [C4](/compute/docs/general-purpose-machines#c4_series) 
 [C4A](/compute/docs/general-purpose-machines#c4a_series) 
 [C4D](/compute/docs/general-purpose-machines#c4d_series) 
-[C4N](/compute/docs/network-optimized-machines#c4n_series) 
 [E2](/compute/docs/general-purpose-machines#e2_machine_types) 
 [G2](/compute/docs/accelerator-optimized-machines#g2-vms) 
 [G4](/compute/docs/accelerator-optimized-machines#g4-series) 
@@ -693,7 +691,6 @@ Select one or more machine series to see the supported Hyperdisk types.
 [M2](/compute/docs/memory-optimized-machines#m2_machine_types) 
 [M3](/compute/docs/memory-optimized-machines#m3_machine_types) 
 [M4](/compute/docs/memory-optimized-machines#m4_machine_types) 
-[M4N](/compute/docs/network-optimized-machines#m4n_series) 
 [N1](/compute/docs/general-purpose-machines#n1_machines) 
 [N1+GPU](/compute/docs/gpus) 
 [N2](/compute/docs/general-purpose-machines#n2_series) 
@@ -713,8 +710,6 @@ Select one or more machine series to see the supported Hyperdisk types.
 [X4](/compute/docs/memory-optimized-machines#x4_series) 
 [X5](/compute/docs/memory-optimized-machines#x5_series) 
 [Z3](/compute/docs/storage-optimized-machines#z3_series) 
-[Z4D](/compute/docs/storage-optimized-machines#z4d_series) 
-[Z4M](/compute/docs/storage-optimized-machines#z4m_series) 
 Select one or more options ** Choose a machine series 
 
 - A2
@@ -723,7 +718,6 @@ Select one or more options ** Choose a machine series
 - A4
 - A4X
 - A4X Max
-- A5X
 - C2
 - C2D
 - C3
@@ -731,7 +725,6 @@ Select one or more options ** Choose a machine series
 - C4
 - C4A
 - C4D
-- C4N
 - E2
 - G2
 - G4
@@ -741,7 +734,6 @@ Select one or more options ** Choose a machine series
 - M2
 - M3
 - M4
-- M4N
 - N1
 - N1+GPU
 - N2
@@ -761,8 +753,6 @@ Select one or more options ** Choose a machine series
 - X4
 - X5
 - Z3
-- Z4D
-- Z4M
 
 
 
@@ -847,7 +837,7 @@ Hyperdisk ML |
 **—** 
 | 
 
-
+**—** 
 | 
 |
 | 
@@ -892,34 +882,16 @@ Hyperdisk ML |
 
 | 
 
+
+| 
+
 **—** 
 | 
 
-
+**—** 
 | 
 
-
-| 
-
-
-| 
-|
-| 
-[A5X](/compute/docs/accelerator-optimized-machines#a5x-instances) | 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
+**—** 
 | 
 |
 | 
@@ -1009,7 +981,7 @@ Hyperdisk ML |
 
 | 
 
-
+**—** 
 | 
 |
 | 
@@ -1036,34 +1008,16 @@ Hyperdisk ML |
 
 | 
 
-
+**—** 
 | 
 
 
 | 
 
-
+**—** 
 | 
 
-
-| 
-|
-| 
-[C4N](/compute/docs/network-optimized-machines#c4n_series) | 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
+**—** 
 | 
 |
 | 
@@ -1229,24 +1183,6 @@ Hyperdisk ML |
 | 
 |
 | 
-[M4N](/compute/docs/network-optimized-machines#m4n_series) | 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-|
-| 
 [N1](/compute/docs/general-purpose-machines#n1_machines) | 
 
 ** 1 **
@@ -1333,7 +1269,7 @@ Hyperdisk ML |
 
 | 
 
-
+**—** 
 | 
 |
 | 
@@ -1351,7 +1287,7 @@ Hyperdisk ML |
 
 | 
 
-
+**—** 
 | 
 |
 | 
@@ -1369,7 +1305,7 @@ Hyperdisk ML |
 
 | 
 
-
+**—** 
 | 
 |
 | 
@@ -1586,42 +1522,6 @@ Hyperdisk ML |
 | 
 
 **—** 
-| 
-|
-| 
-[Z4D](/compute/docs/storage-optimized-machines#z4d_series) | 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-|
-| 
-[Z4M](/compute/docs/storage-optimized-machines#z4m_series) | 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
-| 
-
-
 | 
 | 
 

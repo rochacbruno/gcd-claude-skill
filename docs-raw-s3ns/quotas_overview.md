@@ -1,7 +1,7 @@
 # Cloud Quotas overview
 
 Source: https://documentation.s3ns.fr/docs/quotas/overview
-Last updated: 2026-11-10
+Last updated: 2026-11-13
 
 - 
 
@@ -159,7 +159,7 @@ The following links provide additional information related to resource usage:
 
 
 - For other API usage metrics, see
-[Monitoring API usage](/apis/docs/monitoring)
+[Monitoring your API usage](/apis/docs/monitoring)
 
 
 

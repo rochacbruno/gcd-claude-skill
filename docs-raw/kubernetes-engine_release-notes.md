@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes
-Last updated: 2026-11-10
+Last updated: 2026-11-13
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ November 13, 2026 ](#November_13_2026)
 - [ November 12, 2026 ](#November_12_2026)
 - [ November 10, 2026 ](#November_10_2026)
 - [ November 09, 2026 ](#November_09_2026)
@@ -533,6 +534,111 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+
+
+
+## November 13, 2026
+
+
+Change 
+
+#### (2026-R48) Version updates
+
+GKE cluster versions have been updated.
+
+**New versions available for upgrades and new clusters.**
+
+The following versions are now available for new GKE clusters, and for
+manual control plane upgrades and node upgrades for existing clusters. For more
+information about versioning and upgrades, see [GKE versioning and
+support](https://berlin.devsitetest.how/kubernetes-engine/versioning) and [About GKE
+cluster upgrades](https://berlin.devsitetest.how/kubernetes-engine/upgrades).
+
+
+
+[Rapid channel](#rapid-channel) [Regular channel](#regular-channel) [Stable channel](#stable-channel) 
+More 
+
+[Extended channel](#extended-channel) [No channel (deprecated)](#no-channel-deprecated) 
+
+
+
+
+
+- The following versions are now available in the Rapid channel:
+
+- [1.34.12-gke.1776000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-12-gke-1776000)
+
+- [1.36.5-gke.2370000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-5-gke-2370000)
+
+- [1.37.2-gke.1325000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.37#1-37-2-gke-1325000)
+
+- [Alpha version](https://berlin.devsitetest.how/kubernetes-engine/versioning#alpha-versions) 1.38.0-gke.5166000+preview is now available for GKE alpha clusters in the Rapid channel.
+
+- Alpha version 1.38.0-gke.3229000+preview is no longer available in the Rapid channel.
+
+
+
+
+
+
+
+- The following versions are now available in the Regular channel:
+
+- [1.34.12-gke.1539000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-12-gke-1539000)
+
+- [1.35.9-gke.1505000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.35#1-35-9-gke-1505000)
+
+- [1.36.5-gke.1982000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-5-gke-1982000)
+
+
+
+
+
+
+
+There are no new releases in the Stable channel.
+
+
+
+
+
+
+
+- The following versions are now available in the Extended channel:
+
+- [1.32.13-gke.3070000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.32#1-32-13-gke-3070000)
+
+- [1.33.13-gke.2398000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.33#1-33-13-gke-2398000)
+
+
+
+
+
+
+
+- The following versions are now available:
+
+- [1.34.12-gke.1776000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-12-gke-1776000)
+
+- [1.36.5-gke.2370000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-5-gke-2370000)
+
+- [1.37.2-gke.1325000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.37#1-37-2-gke-1325000)
+
+- The following node versions are now available:
+
+- [1.32.13-gke.3070000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.32#1-32-13-gke-3070000)
+
+- [1.33.13-gke.2398000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.33#1-33-13-gke-2398000)
+
+- [1.34.12-gke.1776000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-12-gke-1776000)
+
+- [1.36.5-gke.2370000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-5-gke-2370000)
+
+- [1.37.2-gke.1325000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.37#1-37-2-gke-1325000)
 
 
 
