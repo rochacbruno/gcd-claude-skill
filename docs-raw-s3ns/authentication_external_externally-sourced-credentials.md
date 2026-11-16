@@ -590,7 +590,7 @@ end
 
 
 
-## Use API keys with client libraries 
+## Use API keys with client libraries
 
 You can use an API keys only with client libraries for APIs that accept API
 keys. In addition, the API key must not have an API restriction that prevents it
