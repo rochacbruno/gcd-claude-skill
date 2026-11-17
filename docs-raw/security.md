@@ -1,7 +1,7 @@
 # Security
 
 Source: https://berlin.devsitetest.how/docs/security
-Last updated: 2026-11-13
+Last updated: 2026-11-16
 
 - 
 
@@ -516,6 +516,24 @@ Manage your resources in a secure and compliant way with visibility and control 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+Cloud Asset Inventory
+](/asset-inventory/docs)
+
+
+View, monitor, and analyze Google Cloud Dedicated and Anthos assets across projects and services.
 
 
 

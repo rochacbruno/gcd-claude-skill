@@ -1,7 +1,7 @@
 # Security
 
 Source: https://documentation.s3ns.fr/docs/security
-Last updated: 2026-11-13
+Last updated: 2026-11-16
 
 - 
 
@@ -516,6 +516,24 @@ Manage your resources in a secure and compliant way with visibility and control 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+Cloud Asset Inventory
+](/asset-inventory/docs)
+
+
+View, monitor, and analyze Cloud de Confiance and Anthos assets across projects and services.
 
 
 

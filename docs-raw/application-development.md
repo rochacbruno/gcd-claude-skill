@@ -1,7 +1,7 @@
 # Application development
 
 Source: https://berlin.devsitetest.how/docs/application-development
-Last updated: 2026-11-13
+Last updated: 2026-11-16
 
 - 
 
@@ -263,6 +263,24 @@ Automate code deployment using CI/CD processes and products that assist in effic
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#### [
+Cloud Build
+](/build/docs)
+
+
+Continuously build, test, and deploy containers using the Google Cloud Dedicated infrastructure.
 
 
 

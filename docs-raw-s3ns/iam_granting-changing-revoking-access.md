@@ -1,7 +1,7 @@
 # Manage access to projects, folders, and organizations
 
 Source: https://documentation.s3ns.fr/iam/docs/granting-changing-revoking-access
-Last updated: 2026-11-13
+Last updated: 2026-11-17
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -5064,7 +5064,7 @@ fmt . Fprintf ( w , "Role %q found. Member removed.\n" , role )
 
 // removeIdx removes arr[idx] from arr. 
 func removeIdx [ T any ]( arr [] T , idx int ) [] T { 
-return append ( arr [: idx ], arr [ idx + 1 :] ... ) 
+return append ( arr [: idx ], arr [ idx + 1 :]...) 
 } 
 ```
 

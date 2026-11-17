@@ -1,7 +1,7 @@
 # Troubleshoot your ADC setup
 
 Source: https://documentation.s3ns.fr/docs/authentication/troubleshoot-adc
-Last updated: 2026-11-13
+Last updated: 2026-11-17
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/authentication/tpc-differences) for more details.
 
@@ -151,6 +151,7 @@ Guides
 - On this page 
 - [ User credentials not working ](#user-creds-client-based)
 - [ Incorrect credentials ](#incorrect-creds)
+- [ Insufficient authentication scopes ](#insufficient-scopes)
 - [ Unrecognized credential type ](#unrecognized-cred-type)
 - 
 
@@ -270,6 +271,76 @@ environment variable and you are using an API key, the API might return a
 warning telling you that the credentials you provided to ADC are being
 ignored. To stop the warning, unset the `GOOGLE_APPLICATION_CREDENTIALS`
 environment variable. 
+
+## Insufficient authentication scopes
+
+If your API request returns `Request had insufficient authentication scopes`
+with the reason `ACCESS_TOKEN_SCOPE_INSUFFICIENT`, your access token doesn't
+include a scope that the API requires. Granting IAM roles doesn't
+fix this error.
+
+To resolve the error, do the following:
+
+- 
+
+Identify the API from the `service` and `method` fields in the error
+details.
+
+- 
+
+Find the scope that the API requires in the method's API reference or in
+[OAuth 2.0 Scopes for Google APIs](https://developers.google.com/identity/protocols/oauth2/scopes).
+Most Cloud de Confiance APIs accept the
+`https://www.googleapis.com/auth/cloud-platform` scope.
+Google Workspace APIs require their own scopes.
+
+- 
+
+Check which scopes your token has. From the environment where the error
+occurs, run the following command and review the `scope` field:
+
+
+```
+curl "https://oauth2.googleapis.com/tokeninfo?access_token= $( gcloud auth application-default print-access-token ) " 
+```
+
+
+- 
+
+Add the missing scope where your credentials get their scopes:
+
+- 
+
+**Compute Engine**: Update the VM's access scopes. For more
+information, see
+[Access scopes](/compute/docs/access/service-accounts#accesscopesiam)
+and
+[Attach the service account and update the access scope](/compute/docs/instances/change-service-account#changeserviceaccountandscopes).
+
+- 
+
+**GKE**: Create a node pool with the required access
+scopes, or use Workload Identity Federation for GKE for your workloads. For more
+information, see
+[Default access scopes](/kubernetes-engine/docs/how-to/access-scopes#default_access_scopes)
+and
+[Authenticate to Cloud de Confiance by S3NS APIs from GKE workloads](/kubernetes-engine/docs/how-to/workload-identity).
+
+- 
+
+**Your code**: Add the scope to the scopes that you request when you
+create credentials. For the scopes that each API requires, see
+[OAuth 2.0 Scopes for Google APIs](https://developers.google.com/identity/protocols/oauth2/scopes).
+
+- 
+
+**Domain-wide delegation**: Authorize the required scopes for the
+service account's client ID in the Google Workspace Admin console,
+and then request those scopes in your code when you create credentials.
+For more information, see
+[Delegate domain-wide authority to the service account](https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority)
+and
+[Control API access with domain-wide delegation](https://support.google.com/a/answer/162106).
 
 ## Unrecognized credential type
 
