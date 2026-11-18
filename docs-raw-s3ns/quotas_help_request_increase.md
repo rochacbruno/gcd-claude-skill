@@ -1,7 +1,7 @@
 # View and manage quotas
 
 Source: https://documentation.s3ns.fr/docs/quotas/help/request_increase
-Last updated: 2026-11-10
+Last updated: 2026-11-17
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -463,28 +463,33 @@ Current usage is calculated according to the following criteria:
 
 For per-minute rate quotas:
 
-- The *average* per minute usage in the past 10 minutes.
+- The *average* per-minute usage in the past 10 minutes. Because this
+value is an average over a 10-minute window, short-duration traffic
+spikes might temporarily exhaust your rate quota even if the
+**Current usage percentage** column is under 100%. For more
+information,
+see [Troubleshoot quota errors](/docs/quotas/troubleshoot#exceeding_rate_quotas).
 
 - 
 
 For per-day rate quotas:
 
-- The *total* usage so far in the current day, according to Pacific
-Standard Time.
+- The *total* usage so far in the current day, according to
+Pacific Time.
 
 - 
 
 For allocation quotas:
 
-- The most recent value. For example, this number
-might show the number of load balancers in use by your project.
+- The current state of allocated resources. For example, this value
+shows the number of load balancers in use by your project.
 
 - 
 
 For concurrent quotas:
 
-- The most recent value. For example, this number
-might show the number of in-flight insert_operations for a given service.
+- The current state of concurrent operations. For example, this value
+shows the number of in-flight operations for a given service.
 
 
 
@@ -537,7 +542,7 @@ To export the chart, click more_vert
 To do more with charts, see
 [Set up quota alerts and monitoring](/docs/quotas/set-up-quota-alerts).
 
-### View API-specific quotas 
+### View API-specific quotas
 
 To view detailed quota information for a particular API, including usage
 over time, visit the quota page for the API in the Cloud de Confiance console.

@@ -1,7 +1,7 @@
 # View and manage quotas
 
 Source: https://berlin.devsitetest.how/docs/quotas/help/request_increase
-Last updated: 2026-11-10
+Last updated: 2026-11-17
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -463,28 +463,33 @@ Current usage is calculated according to the following criteria:
 
 For per-minute rate quotas:
 
-- The *average* per minute usage in the past 10 minutes.
+- The *average* per-minute usage in the past 10 minutes. Because this
+value is an average over a 10-minute window, short-duration traffic
+spikes might temporarily exhaust your rate quota even if the
+**Current usage percentage** column is under 100%. For more
+information,
+see [Troubleshoot quota errors](/docs/quotas/troubleshoot#exceeding_rate_quotas).
 
 - 
 
 For per-day rate quotas:
 
-- The *total* usage so far in the current day, according to Pacific
-Standard Time.
+- The *total* usage so far in the current day, according to
+Pacific Time.
 
 - 
 
 For allocation quotas:
 
-- The most recent value. For example, this number
-might show the number of load balancers in use by your project.
+- The current state of allocated resources. For example, this value
+shows the number of load balancers in use by your project.
 
 - 
 
 For concurrent quotas:
 
-- The most recent value. For example, this number
-might show the number of in-flight insert_operations for a given service.
+- The current state of concurrent operations. For example, this value
+shows the number of in-flight operations for a given service.
 
 
 
@@ -493,7 +498,7 @@ You can learn more about quotas for a specific service by reading the
 documentation for that service. For example, Compute Engine users can read the
 [Compute Engine quota and limits overview](/compute/quotas-limits).
 
-### View and export quota usage over time 
+### View and export quota usage over time
 
 You can view quota usage over time with charts. The Quotas & System Limits page
 of the console provides charts for each individual quota or system limit that's
@@ -537,7 +542,7 @@ To export the chart, click more_vert
 To do more with charts, see
 [Set up quota alerts and monitoring](/docs/quotas/set-up-quota-alerts).
 
-### View API-specific quotas 
+### View API-specific quotas
 
 To view detailed quota information for a particular API, including usage
 over time, visit the quota page for the API in the Google Cloud Dedicated console.
@@ -734,7 +739,7 @@ the Compute Engine VM quotas.
 
 
 
-### View quota increase requests
+### View quota increase requests 
 
 You can see pending and past quota increase requests in the
 Google Cloud Dedicated console.
@@ -804,7 +809,7 @@ requests for all projects within the organization or folder.
 
 
 
-### Create a quota override
+### Create a quota override 
 
 To restrict usage of a particular resource, create a *quota override* by
 changing the quota value to a value less than the default quota value.
@@ -816,7 +821,7 @@ To create a quota override, follow the steps to
 Quota overrides are not available to all services. For service-specific
 information, check the quota and system limits documentation for your service.
 
-### Reset a quota value
+### Reset a quota value 
 
 To reset the quota value after an override has been applied, follow these steps:
 

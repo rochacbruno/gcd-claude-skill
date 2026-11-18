@@ -1,7 +1,7 @@
 # Cloud KMS in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kms/docs/tpc-differences
-Last updated: 2026-11-10
+Last updated: 2026-11-18
 
 - 
 
@@ -199,7 +199,8 @@ location is supported for Google Cloud Dedicated.
 | 
 |
 
-| **Multi-regions**
+| 
+**Multi-regions**
 | 
 Multi-regions other than `global` are not supported for
 Google Cloud Dedicated.
@@ -220,8 +221,8 @@ residency requirements as those stored in
 you want to use CMEK to protect resources in the `global`
 location. Otherwise, you should create your Cloud KMS resources
 in the `u-germany-northeast1` region.
-
-| |
+| 
+|
 
 
 ### Integrations
