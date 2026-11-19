@@ -1,7 +1,7 @@
 # Access and resource management
 
 Source: https://berlin.devsitetest.how/docs/access-resources
-Last updated: 2026-11-16
+Last updated: 2026-11-18
 
 - 
 
@@ -281,15 +281,6 @@ Allow organization administrators to define fine-grained, attribute-based access
 
 
 Manage internal enterprise solutions and Google Cloud Dedicated in Germany APIs.
-
-
-
-
-
-
-
-
-
 
 
 

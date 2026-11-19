@@ -1,7 +1,7 @@
 # Create an ML model in BigQuery ML by using SQL
 
 Source: https://documentation.s3ns.fr/bigquery/docs/create-machine-learning-model
-Last updated: 2026-11-10
+Last updated: 2026-11-18
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -159,19 +159,17 @@ Guides
 
 
 
-This tutorial shows you how to create a logistic regression model by using
-BigQuery ML SQL queries.
-
-BigQuery ML lets you create and train machine learning models in
-BigQuery by using SQL queries. This helps make machine learning more
-approachable by letting you use familiar tools like the BigQuery
-SQL editor, and also increases development speed by removing the need to move
-data into a separate machine learning environment.
+You can create and train machine learning (ML) models in BigQuery ML by
+using SQL queries. This helps make ML more approachable by letting you use
+familiar tools like the BigQuery SQL editor, and also increases
+development speed by removing the need to move data into a separate ML
+environment.
 
 In this tutorial, you use the sample
 [Google Analytics sample dataset for BigQuery](https://support.google.com/analytics/answer/7586738?ref_topic=3416089)
-to create a model that predicts whether a website visitor will make a
-transaction. For information on the schema of the Analytics dataset, see
+to create a logistic regression model that predicts whether a website visitor
+will make a transaction. For information on the schema of the Analytics
+dataset, see
 [BigQuery export schema](https://support.google.com/analytics/answer/3437719)
 in the Analytics Help Center.
 

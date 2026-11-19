@@ -170,9 +170,9 @@
   "/bigquery/docs/create-machine-learning-model": {
     "title": "Create an ML model in BigQuery ML by using SQL",
     "filename": "bigquery_create-machine-learning-model.md",
-    "size": 39593,
+    "size": 39479,
     "url": "https://berlin.devsitetest.how/bigquery/docs/create-machine-learning-model",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/bigquery/docs/custom-quotas": {
     "title": "Create custom query quotas",
@@ -219,7 +219,7 @@
   "/bigquery/docs/quickstarts/quickstart-client-libraries": {
     "title": "Query a public dataset with the BigQuery client libraries",
     "filename": "bigquery_quickstarts_quickstart-client-libraries.md",
-    "size": 42644,
+    "size": 42645,
     "url": "https://berlin.devsitetest.how/bigquery/docs/quickstarts/quickstart-client-libraries",
     "last_updated": "2026-11-10"
   },
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 538138,
+    "size": 538197,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -373,9 +373,9 @@
   "/docs/access-resources": {
     "title": "Access and resource management",
     "filename": "access-resources.md",
-    "size": 2526,
+    "size": 2517,
     "url": "https://berlin.devsitetest.how/docs/access-resources",
-    "last_updated": "2026-11-16"
+    "last_updated": "2026-11-18"
   },
   "/docs/ai-ml": {
     "title": "AI and ML",
@@ -912,7 +912,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2714,
+    "size": 2713,
     "url": "https://berlin.devsitetest.how/docs/quotas/development-environment",
     "last_updated": "2026-11-10"
   },
@@ -1563,9 +1563,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2398199,
+    "size": 2422603,
     "url": "https://berlin.devsitetest.how/iam/docs/permissions-change-log",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-18"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1621,28 +1621,28 @@
     "filename": "kms.md",
     "size": 3585,
     "url": "https://berlin.devsitetest.how/kms/docs",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 166309,
+    "size": 166249,
     "url": "https://berlin.devsitetest.how/kms/docs/creating-keys",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39613,
+    "size": 39619,
     "url": "https://berlin.devsitetest.how/kms/docs/destroy-restore",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/importing-a-key": {
     "title": "Import a key version into Cloud KMS",
     "filename": "kms_importing-a-key.md",
-    "size": 95331,
+    "size": 95330,
     "url": "https://berlin.devsitetest.how/kms/docs/importing-a-key",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/reference/rest": {
     "title": "Cloud Key Management Service (KMS) API",
@@ -1656,14 +1656,14 @@
     "filename": "kms_release-notes.md",
     "size": 5118,
     "url": "https://berlin.devsitetest.how/kms/docs/release-notes",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22564,
+    "size": 22567,
     "url": "https://berlin.devsitetest.how/kms/docs/retrieve-public-key",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Google Cloud Dedicated versus Google Cloud",
@@ -1689,9 +1689,9 @@
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
-    "size": 8473,
+    "size": 8477,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
@@ -1724,9 +1724,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1542178,
+    "size": 1543224,
     "url": "https://berlin.devsitetest.how/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-17"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Google Cloud Dedicated versus Google Cloud",
@@ -1754,28 +1754,28 @@
     "filename": "logging.md",
     "size": 3409,
     "url": "https://berlin.devsitetest.how/logging/docs",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21227,
     "url": "https://berlin.devsitetest.how/logging/docs/audit",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27280,
     "url": "https://berlin.devsitetest.how/logging/docs/buckets",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28021,
+    "size": 28028,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1789,42 +1789,42 @@
     "filename": "logging_release-notes.md",
     "size": 3692,
     "url": "https://berlin.devsitetest.how/logging/docs/release-notes",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Google Cloud Dedicated versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5825,
     "url": "https://berlin.devsitetest.how/logging/docs/tpc-differences",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23828,
     "url": "https://berlin.devsitetest.how/logging/docs/view/building-queries",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41470,
     "url": "https://berlin.devsitetest.how/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12395,
     "url": "https://berlin.devsitetest.how/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2802,
     "url": "https://berlin.devsitetest.how/monitoring/docs",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-18"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
@@ -1838,14 +1838,14 @@
     "filename": "monitoring_release-notes.md",
     "size": 3608,
     "url": "https://berlin.devsitetest.how/monitoring/docs/release-notes",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Google Cloud Dedicated versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4419,
     "url": "https://berlin.devsitetest.how/monitoring/docs/tpc-differences",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/nat/docs": {
     "title": "Cloud NAT documentation",
@@ -2151,9 +2151,9 @@
   "/sql/docs/release-notes": {
     "title": "Cloud SQL release notes",
     "filename": "sql_release-notes.md",
-    "size": 67337,
+    "size": 68055,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-11-18"
+    "last_updated": "2026-11-19"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",

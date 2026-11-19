@@ -739,7 +739,7 @@ the Compute Engine VM quotas.
 
 
 
-### View quota increase requests
+### View quota increase requests 
 
 You can see pending and past quota increase requests in the
 Cloud de Confiance console.
@@ -809,7 +809,7 @@ requests for all projects within the organization or folder.
 
 
 
-### Create a quota override
+### Create a quota override 
 
 To restrict usage of a particular resource, create a *quota override* by
 changing the quota value to a value less than the default quota value.
@@ -821,7 +821,7 @@ To create a quota override, follow the steps to
 Quota overrides are not available to all services. For service-specific
 information, check the quota and system limits documentation for your service.
 
-### Reset a quota value
+### Reset a quota value 
 
 To reset the quota value after an override has been applied, follow these steps:
 

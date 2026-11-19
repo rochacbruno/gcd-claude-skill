@@ -1,7 +1,7 @@
 # Cloud SQL release notes
 
 Source: https://berlin.devsitetest.how/sql/docs/release-notes
-Last updated: 2026-11-18
+Last updated: 2026-11-19
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/sql/docs/tpc-differences) for more details.
 
@@ -129,6 +129,7 @@ Resources
 
 
 - On this page 
+- [ November 17, 2026 ](#November_17_2026)
 - [ October 10, 2026 ](#October_10_2026)
 - [ October 08, 2026 ](#October_08_2026)
 - [ August 04, 2026 ](#August_04_2026)
@@ -246,7 +247,28 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
-## October 10, 2026 
+## November 17, 2026 
+
+**Cloud SQL for MySQL**
+
+Feature 
+
+
+Blue-green deployments for Cloud SQL for MySQL are
+[generally available](https://berlin.devsitetest.how/products#product-launch-stages).
+
+Blue-green deployments let you update databases—such as performing major
+version upgrades from MySQL 8.0 to 8.4 and staging hardware or configuration
+modifications in a green staging environment—while minimizing downtime.
+You can create and manage blue-green deployments using the Google Cloud console,
+the gcloud CLI, the Cloud SQL Admin API, or Terraform.
+
+For more information, see [About blue-green deployments in
+Cloud SQL](/sql/docs/mysql/about-blue-green-deployments).
+
+
+
+## October 10, 2026
 
 **Cloud SQL for MySQL**
 

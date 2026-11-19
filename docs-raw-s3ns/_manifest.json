@@ -177,16 +177,16 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53411,
+    "size": 53410,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-11-10"
   },
   "/bigquery/docs/create-machine-learning-model": {
     "title": "Create an ML model in BigQuery ML by using SQL",
     "filename": "bigquery_create-machine-learning-model.md",
-    "size": 39431,
+    "size": 39317,
     "url": "https://documentation.s3ns.fr/bigquery/docs/create-machine-learning-model",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/bigquery/docs/custom-quotas": {
     "title": "Create custom query quotas",
@@ -450,9 +450,9 @@
   "/docs/access-resources": {
     "title": "Access and resource management",
     "filename": "access-resources.md",
-    "size": 2473,
+    "size": 2464,
     "url": "https://documentation.s3ns.fr/docs/access-resources",
-    "last_updated": "2026-11-16"
+    "last_updated": "2026-11-18"
   },
   "/docs/ai-ml": {
     "title": "AI and ML",
@@ -520,7 +520,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13683,
+    "size": 13684,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-11-17"
   },
@@ -982,7 +982,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-11-10"
   },
@@ -996,7 +996,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19187,
+    "size": 19190,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-11-17"
   },
@@ -1633,9 +1633,9 @@
   "/iam/docs/permissions-change-log": {
     "title": "IAM permissions change log",
     "filename": "iam_permissions-change-log.md",
-    "size": 2398125,
+    "size": 2422529,
     "url": "https://documentation.s3ns.fr/iam/docs/permissions-change-log",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-18"
   },
   "/iam/docs/reference/rest": {
     "title": "Identity and Access Management (IAM) API",
@@ -1675,7 +1675,7 @@
   "/iam/docs/tpc-differences": {
     "title": "IAM in Cloud de Confiance versus Google Cloud",
     "filename": "iam_tpc-differences.md",
-    "size": 5996,
+    "size": 5995,
     "url": "https://documentation.s3ns.fr/iam/docs/tpc-differences",
     "last_updated": "2026-11-17"
   },
@@ -1691,28 +1691,28 @@
     "filename": "kms.md",
     "size": 3575,
     "url": "https://documentation.s3ns.fr/kms/docs",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/creating-keys": {
     "title": "Create a key",
     "filename": "kms_creating-keys.md",
-    "size": 165872,
+    "size": 165812,
     "url": "https://documentation.s3ns.fr/kms/docs/creating-keys",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/destroy-restore": {
     "title": "Destroy and restore key versions",
     "filename": "kms_destroy-restore.md",
-    "size": 39514,
+    "size": 39520,
     "url": "https://documentation.s3ns.fr/kms/docs/destroy-restore",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/importing-a-key": {
     "title": "Import a key version into Cloud KMS",
     "filename": "kms_importing-a-key.md",
-    "size": 95066,
+    "size": 95065,
     "url": "https://documentation.s3ns.fr/kms/docs/importing-a-key",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/reference/rest": {
     "title": "Cloud Key Management Service (KMS) API",
@@ -1726,14 +1726,14 @@
     "filename": "kms_release-notes.md",
     "size": 5088,
     "url": "https://documentation.s3ns.fr/kms/docs/release-notes",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/retrieve-public-key": {
     "title": "Retrieve a public key",
     "filename": "kms_retrieve-public-key.md",
-    "size": 22518,
+    "size": 22521,
     "url": "https://documentation.s3ns.fr/kms/docs/retrieve-public-key",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/kms/docs/tpc-differences": {
     "title": "Cloud KMS in Cloud de Confiance versus Google Cloud",
@@ -1759,9 +1759,9 @@
   "/kubernetes-engine/docs/concepts/machine-learning": {
     "title": "Introduction to AI/ML workloads on GKE",
     "filename": "kubernetes-engine_concepts_machine-learning.md",
-    "size": 8431,
+    "size": 8435,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/machine-learning",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/kubernetes-engine/docs/how-to/cluster-access-for-kubectl": {
     "title": "Install kubectl and configure cluster access",
@@ -1794,9 +1794,9 @@
   "/kubernetes-engine/docs/release-notes": {
     "title": "GKE release notes",
     "filename": "kubernetes-engine_release-notes.md",
-    "size": 1540140,
+    "size": 1541186,
     "url": "https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-17"
   },
   "/kubernetes-engine/docs/tpc-differences": {
     "title": "GKE in Cloud de Confiance versus Google Cloud",
@@ -1824,28 +1824,28 @@
     "filename": "logging.md",
     "size": 3399,
     "url": "https://documentation.s3ns.fr/logging/docs",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/audit": {
     "title": "Cloud Audit Logs overview",
     "filename": "logging_audit.md",
     "size": 21037,
     "url": "https://documentation.s3ns.fr/logging/docs/audit",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/buckets": {
     "title": "Configure log buckets",
     "filename": "logging_buckets.md",
     "size": 27018,
     "url": "https://documentation.s3ns.fr/logging/docs/buckets",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 27849,
+    "size": 27856,
     "url": "https://documentation.s3ns.fr/logging/docs/reference/libraries",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/reference/v2/rest": {
     "title": "Cloud Logging API",
@@ -1859,42 +1859,42 @@
     "filename": "logging_release-notes.md",
     "size": 3663,
     "url": "https://documentation.s3ns.fr/logging/docs/release-notes",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/tpc-differences": {
     "title": "Logging in Cloud de Confiance versus Google Cloud",
     "filename": "logging_tpc-differences.md",
     "size": 5717,
     "url": "https://documentation.s3ns.fr/logging/docs/tpc-differences",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/view/building-queries": {
     "title": "Build and save queries by using the Logging query language",
     "filename": "logging_view_building-queries.md",
     "size": 23728,
     "url": "https://documentation.s3ns.fr/logging/docs/view/building-queries",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/view/logs-viewer-interface": {
     "title": "View and analyze log entries",
     "filename": "logging_view_logs-viewer-interface.md",
     "size": 41358,
     "url": "https://documentation.s3ns.fr/logging/docs/view/logs-viewer-interface",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/logging/docs/write-query-log-entries-gcloud": {
     "title": "Quickstart: Write and query log entries with the gcloud CLI",
     "filename": "logging_write-query-log-entries-gcloud.md",
     "size": 12301,
     "url": "https://documentation.s3ns.fr/logging/docs/write-query-log-entries-gcloud",
-    "last_updated": "2026-11-12"
+    "last_updated": "2026-11-18"
   },
   "/monitoring/docs": {
     "title": "Cloud Monitoring documentation",
     "filename": "monitoring.md",
     "size": 2792,
     "url": "https://documentation.s3ns.fr/monitoring/docs",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-18"
   },
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
@@ -1908,14 +1908,14 @@
     "filename": "monitoring_release-notes.md",
     "size": 3572,
     "url": "https://documentation.s3ns.fr/monitoring/docs/release-notes",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/monitoring/docs/tpc-differences": {
     "title": "Monitoring in Cloud de Confiance versus Google Cloud",
     "filename": "monitoring_tpc-differences.md",
     "size": 4322,
     "url": "https://documentation.s3ns.fr/monitoring/docs/tpc-differences",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-18"
   },
   "/nat/docs": {
     "title": "Cloud NAT documentation",
@@ -2249,9 +2249,9 @@
   "/sql/docs/release-notes": {
     "title": "Cloud SQL release notes",
     "filename": "sql_release-notes.md",
-    "size": 67271,
+    "size": 67988,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-11-18"
+    "last_updated": "2026-11-19"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2291,7 +2291,7 @@
   "/storage/docs/reference/libraries": {
     "title": "Cloud Storage client libraries",
     "filename": "storage_reference_libraries.md",
-    "size": 22296,
+    "size": 22295,
     "url": "https://documentation.s3ns.fr/storage/docs/reference/libraries",
     "last_updated": "2026-11-17"
   },

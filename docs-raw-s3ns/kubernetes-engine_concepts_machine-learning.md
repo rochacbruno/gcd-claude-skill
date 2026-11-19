@@ -1,7 +1,7 @@
 # Introduction to AI/ML workloads on GKE
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/machine-learning
-Last updated: 2026-11-10
+Last updated: 2026-11-18
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -386,3 +386,6 @@ Explore experimental samples for leveraging GKE to accelerate your AI/ML initiat
 - 
 
 [View details for your AI/ML workloads in Cloud de Confiance console](https://console.cloud.s3nscloud.fr/kubernetes/aiml), including resources such as JobSets, RayJobs, PyTorchJobs, and Deployments for inference serving.
+
+
+-

@@ -1,7 +1,7 @@
 # GKE release notes
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/release-notes
-Last updated: 2026-11-13
+Last updated: 2026-11-17
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/kubernetes-engine/docs/tpc-differences) for more details.
 
@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ November 18, 2026 ](#November_18_2026)
 - [ November 13, 2026 ](#November_13_2026)
 - [ November 12, 2026 ](#November_12_2026)
 - [ November 10, 2026 ](#November_10_2026)
@@ -537,6 +538,31 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+## November 18, 2026
+
+
+Issue 
+
+
+In GKE versions 1.35, 1.36, and 1.37, enabling
+[application-layer secrets encryption](/kubernetes-engine/docs/how-to/encrypting-secrets)
+on a new or existing cluster whose control plane stores cluster state in Spanner
+encrypts only Kubernetes Secrets (`ENCRYPTED`) instead of all Kubernetes API
+objects (`ALL_OBJECTS_ENCRYPTION_ENABLED`).
+
+- Clusters that already have encryption of all Kubernetes API objects enabled
+(`ALL_OBJECTS_ENCRYPTION_ENABLED`) continue to encrypt all objects.
+
+- Clusters where application-layer secrets encryption is in the `ENCRYPTED`
+state encrypt only Secrets and require manual Secret re-encryption after a
+Cloud KMS key rotation. To check which objects are encrypted in your cluster,
+see
+[Verify that application-layer secrets encryption is enabled](/kubernetes-engine/docs/how-to/encrypting-secrets#verifying_secrets_encryption).
+
+A fix to restore encryption of all Kubernetes API objects for newly configured clusters is in progress.
 
 
 

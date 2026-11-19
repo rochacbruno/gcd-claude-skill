@@ -1,7 +1,7 @@
 # Import a key version into Cloud KMS
 
 Source: https://berlin.devsitetest.how/kms/docs/importing-a-key
-Last updated: 2026-11-10
+Last updated: 2026-11-18
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/kms/docs/tpc-differences) for more details.
 
@@ -2842,7 +2842,7 @@ return fmt . Errorf ( "failed to wrap KWP key: %w" , err )
 } 
 
 // Concatenate the wrapped KWP key and the wrapped target key. 
-combined := append ( wrappedWrappingKey , wrappedTarget ... ) 
+combined := append ( wrappedWrappingKey , wrappedTarget ...) 
 
 // Build the request. 
 req := & kmspb . ImportCryptoKeyVersionRequest { 
