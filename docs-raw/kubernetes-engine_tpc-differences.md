@@ -1,7 +1,7 @@
 # GKE in Google Cloud Dedicated versus Google Cloud
 
 Source: https://berlin.devsitetest.how/kubernetes-engine/docs/tpc-differences
-Last updated: 2026-11-13
+Last updated: 2026-11-19
 
 - 
 
@@ -206,8 +206,8 @@ TPUs are unavailable.
 |
 
 | 
-**Node pools**
-| 
+**Node pools** | 
+
 
 The following node configuration features are unavailable:
 
@@ -447,8 +447,8 @@ Connect gateway is unavailable. |
 
 Workload identity pool domains (and the Kubernetes principal identifiers that use them) are specified slightly differently in Google Cloud and Google Cloud Dedicated in Germany, using `eu0.svc.id.goog` rather than `svc.id.goog`. So, for example, when specifying a Kubernetes ServiceAccount using Workload Identity Federation for GKE in an [IAM policy](/kubernetes-engine/docs/concepts/workload-identity#kubernetes-resources-iam-policies), you use `.../ PROJECT_ID .eu0.svc.id.goog/subject/ns/ NAMESPACE /sa/ KUBERNETES_SERVICE_ACCOUNT `.
 
-
-| |
+| 
+|
 
 | 
 **Node security** | 
@@ -529,7 +529,8 @@ When using the GKE Ingress controller, the global Google Cloud external applicat
 Multi Cluster Ingress and multi-cluster Services (MCS) are unavailable. | 
 |
 
-| **Observability** | 
+| 
+**Observability** | 
 GKE Dataplane V2 observability tools are unavailable. | 
 |
 
@@ -611,7 +612,6 @@ Workload metrics are unavailable. |
 **Google Cloud Observability**
 | 
 All Google Cloud Observability integrations and dashboards are unavailable. | 
-
 |
 
 | 
@@ -690,7 +690,7 @@ Fleets, fleet dashboards, and fleet team management are unavailable. |
 
 
 - 
-[Learn more about Autopilot.](https://berlin.devsitetest.how/kubernetes-engine/docs/concepts/autopilot-overview")
+[Learn more about Autopilot.](/kubernetes-engine/docs/concepts/autopilot-overview)
 
 
 
