@@ -1,7 +1,7 @@
 # Compute Engine in Cloud de Confiance versus Google Cloud
 
 Source: https://documentation.s3ns.fr/compute/docs/tpc-differences
-Last updated: 2026-11-10
+Last updated: 2026-11-20
 
 - 
 
@@ -521,6 +521,10 @@ available in Cloud de Confiance.
 
 
 Global DNS names are unavailable.
+
+
+
+Public DNS PTR records for VM instances are unavailable.
 
 
 

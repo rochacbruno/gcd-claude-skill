@@ -498,7 +498,7 @@ You can learn more about quotas for a specific service by reading the
 documentation for that service. For example, Compute Engine users can read the
 [Compute Engine quota and limits overview](/compute/quotas-limits).
 
-### View and export quota usage over time
+### View and export quota usage over time 
 
 You can view quota usage over time with charts. The Quotas & System Limits page
 of the console provides charts for each individual quota or system limit that's

@@ -1,7 +1,7 @@
 # Create a topic
 
 Source: https://berlin.devsitetest.how/pubsub/docs/create-topic
-Last updated: 2026-11-12
+Last updated: 2026-11-20
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/pubsub/docs/tpc-differences) for more details.
 
@@ -1034,18 +1034,27 @@ For more information, see the [Pub/Sub Python API reference documentation](/pyth
 
 
 ```
+import google.api_core.exceptions 
 from google.cloud import pubsub_v1 
 
-# TODO(developer) 
-# project_id = "your-project-id" 
-# topic_id = "your-topic-id" 
+client = pubsub_v1 . [ PublisherClient ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) () 
 
-publisher = pubsub_v1 . [ PublisherClient ](https://berlin.devsitetest.how/python/docs/reference/pubsublite/latest/google.cloud.pubsublite.cloudpubsub.publisher_client.PublisherClient.html) () 
-topic_path = publisher . topic_path ( project_id , topic_id ) 
+def create_topic ( project_id : str , topic_id : str ) - > None : 
+"""Use the create_topic method 
 
-topic = publisher . create_topic ( request = { "name" : topic_path }) 
+Args: 
+project_id: The Google Cloud project ID (for example, 'example-project-id') 
+topic_id: ID of the Topic (for example, 'example-topic-id') 
+""" 
+name = client . topic_path ( project_id , topic_id ) 
 
+try : 
+topic = client . create_topic ( request = { "name" : name }) 
 print ( f "Created topic: { topic . name } " ) 
+except google . api_core . exceptions . AlreadyExists : 
+print ( f "Topic already exists: { name } " ) 
+except google . api_core . exceptions . GoogleAPICallError as error : 
+print ( f "Failed to create topic due to an API error: { error } " ) 
 ```
 
 
@@ -1086,7 +1095,7 @@ For more information, see the [Pub/Sub Ruby API reference documentation](https:/
 ```
 # topic_id = "your-topic-id" 
 
-pubsub = Google :: Cloud :: [ PubSub ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
+pubsub = Google :: Cloud :: [ PubSub ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub-v1/latest/Google-Cloud-PubSub.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub.html)
 topic_admin = pubsub . [ topic_admin ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-pubsub/latest/Google-Cloud-PubSub-Project.html)
 
 topic = topic_admin . create_topic name : pubsub . topic_path ( topic_id ) 
