@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53410,
+    "size": 53411,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-11-10"
   },
@@ -345,7 +345,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 526509,
+    "size": 526568,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -982,7 +982,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-11-10"
   },
@@ -996,7 +996,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19187,
+    "size": 19190,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-11-17"
   },
@@ -2251,7 +2251,7 @@
     "filename": "sql_release-notes.md",
     "size": 67988,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-11-21"
+    "last_updated": "2026-11-22"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",

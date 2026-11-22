@@ -498,7 +498,7 @@ You can learn more about quotas for a specific service by reading the
 documentation for that service. For example, Compute Engine users can read the
 [Compute Engine quota and limits overview](/compute/quotas-limits).
 
-### View and export quota usage over time 
+### View and export quota usage over time
 
 You can view quota usage over time with charts. The Quotas & System Limits page
 of the console provides charts for each individual quota or system limit that's
@@ -739,7 +739,7 @@ the Compute Engine VM quotas.
 
 
 
-### View quota increase requests 
+### View quota increase requests
 
 You can see pending and past quota increase requests in the
 Google Cloud Dedicated console.
@@ -809,7 +809,7 @@ requests for all projects within the organization or folder.
 
 
 
-### Create a quota override 
+### Create a quota override
 
 To restrict usage of a particular resource, create a *quota override* by
 changing the quota value to a value less than the default quota value.
@@ -821,7 +821,7 @@ To create a quota override, follow the steps to
 Quota overrides are not available to all services. For service-specific
 information, check the quota and system limits documentation for your service.
 
-### Reset a quota value 
+### Reset a quota value
 
 To reset the quota value after an override has been applied, follow these steps:
 
