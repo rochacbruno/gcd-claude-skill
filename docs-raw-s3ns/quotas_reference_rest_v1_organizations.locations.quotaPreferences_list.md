@@ -108,16 +108,6 @@ Reference
 
 
 
-- On this page 
-- [ HTTP request ](#http-request)
-- [ Path parameters ](#path-parameters)
-- [ Query parameters ](#query-parameters)
-- [ Request body ](#request-body)
-- [ Response body ](#response-body)
-- [ Authorization scopes ](#authorization-scopes)
-- [ IAM Permissions ](#iam-permissions)
-- 
-
 
 
 

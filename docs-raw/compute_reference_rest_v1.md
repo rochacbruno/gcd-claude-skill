@@ -697,7 +697,7 @@ Creates and runs virtual machines on Cloud Platform.
 
 
 
-## Service: compute. googleapis. com ** 
+## Service: compute.googleapis.com
 
 
 
@@ -705,7 +705,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document 
+### Discovery document
 
 
 
@@ -750,7 +750,7 @@ global
 
 
 
-## REST Resource: [v1. accelerator Types](/compute/docs/reference/rest/v1/acceleratorTypes)
+## REST Resource: [v1.acceleratorTypes](/compute/docs/reference/rest/v1/acceleratorTypes)
 
 
 
@@ -768,9 +768,9 @@ Methods |
 
 | 
 
-`[aggregated List](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
+`[aggregatedList](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
 
-`GET / compute/ v1/ projects/ {project}/ aggregated/ accelerator Types` 
+`GET /compute/v1/projects/{project}/aggregated/acceleratorTypes` 
 
 Retrieves an aggregated list of accelerator types. | 
 |
@@ -6123,7 +6123,7 @@ Lists all shared VPC host projects visible to the user in an organization. |
 | 
 
 `[moveDisk](/compute/docs/reference/rest/v1/projects/moveDisk) 
-(deprecated)**` | 
+**(deprecated)**` | 
 
 `POST /compute/v1/projects/{project}/moveDisk` 
 

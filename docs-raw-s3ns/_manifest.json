@@ -345,7 +345,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 526568,
+    "size": 526495,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -802,7 +802,7 @@
     "filename": "get-started-tpc_setup-gcloud.md",
     "size": 16321,
     "url": "https://documentation.s3ns.fr/docs/get-started-tpc/setup-gcloud",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-22"
   },
   "/docs/get-started-tpc/suggested-tutorials": {
     "title": "Suggested tutorials",
@@ -823,7 +823,7 @@
     "filename": "get-started_access-apis.md",
     "size": 3381,
     "url": "https://documentation.s3ns.fr/docs/get-started/access-apis",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-22"
   },
   "/docs/get-started/authentication": {
     "title": "Authentication basics",
@@ -844,7 +844,7 @@
     "filename": "get-started_developer-environment.md",
     "size": 6801,
     "url": "https://documentation.s3ns.fr/docs/get-started/developer-environment",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-22"
   },
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Cloud de Confiance by S3NS",
@@ -996,7 +996,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19190,
+    "size": 19187,
     "url": "https://documentation.s3ns.fr/docs/quotas/help/request_increase",
     "last_updated": "2026-11-17"
   },
@@ -1171,7 +1171,7 @@
   "/docs/quotas/reference/rest/v1/organizations.locations.quotaPreferences/list": {
     "title": "Method: organizations.locations.quotaPreferences.list",
     "filename": "quotas_reference_rest_v1_organizations.locations.quotaPreferences_list.md",
-    "size": 3598,
+    "size": 3302,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/rest/v1/organizations.locations.quotaPreferences/list",
     "last_updated": "2025-12-10"
   },
@@ -2251,7 +2251,7 @@
     "filename": "sql_release-notes.md",
     "size": 67988,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-11-22"
+    "last_updated": "2026-11-23"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
