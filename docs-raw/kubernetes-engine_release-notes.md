@@ -131,6 +131,7 @@ Resources
 - On this page 
 - [ Current versions ](#current_versions)
 - [ Other resources ](#other_resources)
+- [ November 23, 2026 ](#November_23_2026)
 - [ November 18, 2026 ](#November_18_2026)
 - [ November 13, 2026 ](#November_13_2026)
 - [ November 12, 2026 ](#November_12_2026)
@@ -535,6 +536,117 @@ reader](https://wikipedia.org/wiki/Comparison_of_feed_aggregators), or add the
 
 
 
+
+
+
+
+
+
+## November 23, 2026
+
+
+Change 
+
+#### (2026-R49) Version updates
+
+GKE cluster versions have been updated.
+
+**New versions available for upgrades and new clusters.**
+
+The following versions are now available for new GKE clusters, and for
+manual control plane upgrades and node upgrades for existing clusters. For more
+information about versioning and upgrades, see [GKE versioning and
+support](https://berlin.devsitetest.how/kubernetes-engine/versioning) and [About GKE
+cluster upgrades](https://berlin.devsitetest.how/kubernetes-engine/upgrades).
+
+
+
+[Rapid channel](#rapid-channel) [Regular channel](#regular-channel) [Stable channel](#stable-channel) 
+More 
+
+[Extended channel](#extended-channel) [No channel (deprecated)](#no-channel-deprecated) 
+
+
+
+
+
+- The following versions are now available in the Rapid channel:
+
+- [1.34.13-gke.1051000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-13-gke-1051000)
+
+- [1.35.10-gke.1122000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.35#1-35-10-gke-1122000)
+
+- [1.36.6-gke.1146000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-6-gke-1146000)
+
+- [1.37.2-gke.1606000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.37#1-37-2-gke-1606000)
+
+- [Alpha version](https://berlin.devsitetest.how/kubernetes-engine/versioning#alpha-versions) 1.38.0-gke.5273000+preview is now available for GKE alpha clusters in the Rapid channel.
+
+- Alpha version 1.38.0-gke.4162000+preview is no longer available in the Rapid channel.
+
+
+
+
+
+
+
+- The following versions are now available in the Regular channel:
+
+- [1.34.12-gke.1698000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-12-gke-1698000)
+
+- [1.35.9-gke.1673000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.35#1-35-9-gke-1673000)
+
+- [1.36.5-gke.2262000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-5-gke-2262000)
+
+
+
+
+
+
+
+There are no new releases in the Stable channel.
+
+
+
+
+
+
+
+- The following versions are now available in the Extended channel:
+
+- [1.32.13-gke.3169000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.32#1-32-13-gke-3169000)
+
+- [1.33.13-gke.2480000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.33#1-33-13-gke-2480000)
+
+
+
+
+
+
+
+- The following versions are now available:
+
+- [1.34.13-gke.1051000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-13-gke-1051000)
+
+- [1.35.10-gke.1122000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.35#1-35-10-gke-1122000)
+
+- [1.36.6-gke.1146000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-6-gke-1146000)
+
+- [1.37.2-gke.1606000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.37#1-37-2-gke-1606000)
+
+- The following node versions are now available:
+
+- [1.32.13-gke.3169000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.32#1-32-13-gke-3169000)
+
+- [1.33.13-gke.2480000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.33#1-33-13-gke-2480000)
+
+- [1.34.13-gke.1051000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.34#1-34-13-gke-1051000)
+
+- [1.35.10-gke.1122000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.35#1-35-10-gke-1122000)
+
+- [1.36.6-gke.1146000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.36#1-36-6-gke-1146000)
+
+- [1.37.2-gke.1606000](https://berlin.devsitetest.how/kubernetes-engine/docs/changelogs/1.37#1-37-2-gke-1606000)
 
 
 

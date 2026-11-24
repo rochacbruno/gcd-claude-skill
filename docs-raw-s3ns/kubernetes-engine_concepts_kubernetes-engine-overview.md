@@ -1,7 +1,7 @@
 # GKE overview
 
 Source: https://documentation.s3ns.fr/kubernetes-engine/docs/concepts/kubernetes-engine-overview
-Last updated: 2026-11-10
+Last updated: 2026-11-23
 
 - 
 
@@ -262,7 +262,6 @@ Improved security posture |
 - Hardened node operating system for apps: [Container-Optimized OS](/container-optimized-os/docs/concepts/security).
 
 - [Built-in security measures](/kubernetes-engine/docs/concepts/autopilot-security).
-
 
 - [Automatic upgrades](/kubernetes-engine/docs/concepts/release-channels)
 to new GKE versions.

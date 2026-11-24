@@ -1,7 +1,7 @@
 # Troubleshoot quota and limit errors
 
 Source: https://documentation.s3ns.fr/bigquery/docs/troubleshoot-quotas
-Last updated: 2026-11-20
+Last updated: 2026-11-23
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -152,6 +152,7 @@ Guides
 - [ Maximum number of pending jobs errors ](#ts-max-pending-jobs)
 - [ Query queue limit errors ](#ts-query-queue-limit)
 - [ Shuffle size limit errors ](#ts-shuffle-limit-errors)
+- [ Maximum number of partitions per partitioned table limit errors ](#ts-max-partitions-per-table)
 - [ Number of partition modifications for column-partitioned tables quota errors ](#ts-number-column-partition-quota)
 - [ Maximum rate of table metadata update operations limit errors ](#ts-maximum-update-table-metadata-limit)
 - [ Maximum concurrent table and dataset metadata reads limit errors ](#ts-concurrent-table-and-meta-reads)
@@ -1529,6 +1530,127 @@ dependence on resources. For more information, see [Query queues](/bigquery/docs
 
 - [Review detailed steps](/bigquery/docs/query-insights#insufficient_shuffle_quota)
 for mitigating insufficient shuffle quota.
+
+### Maximum number of partitions per partitioned table limit errors
+
+BigQuery returns this error when a query, load, copy, or DML
+operation attempts to create partitions that exceed the
+[maximum limit of 10,000 partitions per partitioned table](/bigquery/quotas#max_partitions_per_table).
+You also receive a partition limit error when a single job attempts to modify
+more than
+[4,000 partitions](/bigquery/quotas#max_partition_mods_by_a_job).
+
+When you stream data into a partitioned table by using the
+[Storage Write API (gRPC)](/bigquery/docs/write-api-grpc)
+or the
+[Storage Write API (REST)](/bigquery/docs/write-api-rest),
+BigQuery buffers incoming rows in the `__UNPARTITIONED__`
+partition and extracts them into target partitions asynchronously. To prevent
+streamed data from becoming stuck in the buffer, background partition extraction
+doesn't reject writes when a table reaches 10,000 partitions. However, any table
+with more than 10,000 partitions is in an unsupported state. Exceeding 10,000
+partitions degrades background storage compaction and query performance. In
+addition, subsequent load jobs, query jobs, multi-table copy jobs, and DML
+statements that add new partitions fail.
+
+**Error messages**
+
+
+```
+Resources exceeded during query execution: Table PROJECT_ID : DATASET_ID . TABLE_NAME 
+will have PARTITION_COUNT partitions when the job finishes, exceeding
+limit 10000. If partitions were recently expired, it may take some time to be
+reflected unless explicitly deleted.
+```
+
+
+
+```
+Resources exceeded during query execution: PARTITION_COUNT partitions will
+be copied to the table PROJECT_ID : DATASET_ID . TABLE_NAME ,
+which exceeds the limit 10000 for number of partitions in the table.
+```
+
+
+
+```
+Resources exceeded during query execution: Too many partitions produced by
+query, allowed 4000, query produces at least PARTITION_COUNT 
+partitions.
+```
+
+
+#### Diagnosis
+
+Because the 10,000-partition limit applies per table rather than per project, it
+doesn't appear on the **Quotas & System Limits** page in the
+Cloud de Confiance console. To monitor the number of partitions per table in a
+dataset, query the
+[`INFORMATION_SCHEMA.PARTITIONS` view](/bigquery/docs/information-schema-partitions):
+
+
+```
+SELECT 
+table_name , 
+COUNT ( DISTINCT partition_id ) AS partition_count 
+FROM 
+` PROJECT_ID . DATASET_ID .INFORMATION_SCHEMA.PARTITIONS` 
+WHERE 
+partition_id NOT IN ( '__NULL__' , '__UNPARTITIONED__' ) 
+GROUP BY 
+table_name 
+ORDER BY 
+partition_count DESC ; 
+```
+
+
+Replace the following:
+
+- `PROJECT_ID`: the ID of your Cloud de Confiance project.
+
+- `DATASET_ID`: the name of the dataset that contains your partitioned tables.
+
+Querying the `INFORMATION_SCHEMA.PARTITIONS` view is limited to 1,000 tables
+per query. If your dataset contains more than 1,000 tables, add a `table_name`
+filter to the `WHERE` clause—for example,
+`AND table_name = ' TABLE_NAME '`, where
+` TABLE_NAME ` is the name of the table from the error
+message. This filter prevents an `INFORMATION_SCHEMA.PARTITIONS query attempted
+to read too many tables` error.
+
+#### Resolution
+
+The 10,000-partition limit is a system limit and can't be increased.
+To optimize your workload to prevent meeting this limit, do the following:
+
+- **Use a coarser partitioning granularity with clustering.** Partition the
+table by a coarser time unit, such as monthly instead of daily, or daily
+instead of hourly. Combine partitioning with
+[clustering](/bigquery/docs/clustered-tables) on the partitioning column or
+other frequently filtered columns to maintain query pruning performance.
+
+- **Configure partition expiration or explicitly delete old partitions.** Set a
+[partition expiration](/bigquery/docs/managing-partitioned-tables#partition-expiration)
+so that BigQuery automatically expires old partitions. Because
+expired partitions are reclaimed asynchronously by a background process, they
+continue to count toward the 10,000-partition limit until deletion completes.
+To free partition capacity without waiting for background reclamation,
+[delete partitions explicitly](/bigquery/docs/managing-partitioned-tables#delete_a_partition).
+Use the `bq rm` command to delete one partition at a time, or use a
+[DML `DELETE` statement](/bigquery/docs/using-dml-with-partitioned-tables#using_dml_delete_to_delete_partitions)
+to delete up to 4,000 partitions per job. A `DELETE` statement removes entire
+partitions only when it qualifies as a metadata-only partition delete and the
+target partitions contain no rows in the Storage Write API (REST) streaming
+buffer.
+
+- **Migrate tables that exceed 10,000 partitions.** If a table ingested with the
+Storage Write API (gRPC) or the Storage Write API (REST) already exceeds
+10,000 partitions, delete unneeded partitions or recreate the table with a
+coarser partitioning granularity and clustering.
+
+- **Split large jobs across smaller partition ranges.** If the error message
+states `allowed 4000`, split the query, load, or DML operation so that each
+job modifies 4,000 or fewer partitions.
 
 ### Number of partition modifications for column-partitioned tables quota errors
 

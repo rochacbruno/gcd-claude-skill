@@ -128,16 +128,6 @@ Resources
 
 
 
-- On this page 
-- [ Get a Google support package ](#get_a_google_support_package)
-- [ Open an issue on GitHub ](#open_an_issue_on_github)
-- [ Check the Hashicorp community portal and get troubleshooting advice ](#check_the_hashicorp_community_portal_and_get_troubleshooting_advice)
-- [ Ask a question on Stack Overflow ](#ask_a_question_on_stack_overflow)
-- [ Find troubleshooting tips for gcloud beta terraform vet ](#find_troubleshooting_tips_for)
-- [ Discuss Terraform for Cloud de Confiance ](#discuss)
-- [ File bugs or feature requests ](#file_bugs_or_feature_requests)
-- 
-
 
 
 
@@ -150,7 +140,7 @@ Resources
 The Terraform provider for Cloud de Confiance by S3NS is jointly developed by
 HashiCorp and Google. The core Terraform CLI is developed by HashiCorp.
 
-## Get a Google support package 
+## Get a Google support package
 
 Cloud de Confiance by S3NS offers different support packages to meet different needs, such as 24-7
 coverage, phone support, and access to a technical support manager. For more

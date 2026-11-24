@@ -980,7 +980,7 @@ Creates and runs virtual machines on Cloud Platform.
 
 
 
-## Service: compute.googleapis.com
+## Service: compute. googleapis. com 
 
 
 
@@ -988,7 +988,7 @@ To call this service, we recommend that you use the Google-provided [client libr
 
 
 
-### Discovery document
+### Discovery document 
 
 
 
@@ -1025,7 +1025,10 @@ A [service endpoint](https://documentation.s3ns.fr/apis/design/glossary#api_serv
 
 
 A regional service endpoint is a base URL that specifies the network address of an API service in a single region. A service that is available in multiple regions might have multiple regional endpoints. Select a location to see its regional service endpoint for this service. 
-global 
+global Select an option global 
+
+- [global](?rep_location=global)
+
 
 - `https://compute.s3nsapis.fr` 
 
@@ -1033,7 +1036,7 @@ global
 
 
 
-## REST Resource: [v1.acceleratorTypes](/compute/docs/reference/rest/v1/acceleratorTypes)
+## REST Resource: [v1. accelerator Types](/compute/docs/reference/rest/v1/acceleratorTypes)
 
 
 
@@ -1051,9 +1054,9 @@ Methods |
 
 | 
 
-`[aggregatedList](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
+`[aggregated List](/compute/docs/reference/rest/v1/acceleratorTypes/aggregatedList)` | 
 
-`GET /compute/v1/projects/{project}/aggregated/acceleratorTypes` 
+`GET / compute/ v1/ projects/ {project}/ aggregated/ accelerator Types` 
 
 Retrieves an aggregated list of accelerator types. | 
 |

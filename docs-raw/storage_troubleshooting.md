@@ -1,7 +1,7 @@
 # Troubleshooting
 
 Source: https://berlin.devsitetest.how/storage/docs/troubleshooting
-Last updated: 2026-11-17
+Last updated: 2026-11-23
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/storage/docs/tpc-differences) for more details.
 
@@ -166,6 +166,7 @@ Guides
 - [ CLI or client library latency ](#tool-latency)
 
 - [ Proxy servers ](#proxy-server)
+- [ Object Lifecycle Management ](#lifecycle)
 - [ What's next ](#whats_next)
 - 
 
@@ -537,7 +538,7 @@ extra_headers = {
 ```
 require "google/cloud/storage" 
 
-storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage-control-v2/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
+storage = Google :: Cloud :: [ Storage ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html) . [ new ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage.html)
 
 storage . [ add_custom_headers ](https://berlin.devsitetest.how/ruby/docs/reference/google-cloud-storage/latest/Google-Cloud-Storage-Project.html) { 'X-Custom-Header' = > 'value' } 
 ```
@@ -1152,6 +1153,53 @@ check with your network administrator to ensure that the `Authorization`
 header containing your credentials is not stripped out by the proxy. Without
 the `Authorization` header, your requests are rejected and you receive a
 `MissingSecurityHeader` error.
+
+## Object Lifecycle Management
+
+**Issue**: My lifecycle rule isn't performing actions on objects.
+
+**Solution**: Check for the following common causes:
+
+- 
+
+**The configuration changed recently, or the bucket is large**: Lifecycle
+actions are asynchronous and can take hours or days to occur. For expected
+delays and an alternative for time-sensitive bulk deletions, see
+[Object lifecycle behavior and configuration delays](/storage/docs/lifecycle#behavior).
+
+- 
+
+**A `matchesPrefix` or `matchesSuffix` value contains `*` or `?`**: These
+conditions don't support wildcards. For valid values, see
+[`matchesPrefix` and `matchesSuffix`](/storage/docs/lifecycle#matchesprefix-suffix).
+
+- 
+
+**Objects don't meet every condition in the rule**: To learn how
+Cloud Storage evaluates conditions within and across rules, see
+[Lifecycle configuration](/storage/docs/lifecycle#configuration).
+
+- 
+
+**The rule uses a noncurrent-version condition**: The
+`daysSinceNoncurrentTime`, `noncurrentTimeBefore`, and `numNewerVersions`
+conditions don't match live objects. To choose a condition that matches live
+objects, see [Lifecycle conditions](/storage/docs/lifecycle#conditions).
+
+- 
+
+**Deleted objects are still visible or still incur charges**: If
+soft delete is enabled, objects that a lifecycle rule deletes are
+soft-deleted first. For details, see [`Delete` action](/storage/docs/lifecycle#delete).
+
+- 
+
+**Objects have a hold or are under a retention policy**: For information
+about how holds and retention policies affect lifecycle deletion, see
+[`Delete` action](/storage/docs/lifecycle#delete).
+
+To confirm whether Object Lifecycle Management is acting on your objects, see
+[Options for tracking Lifecycle actions](/storage/docs/lifecycle#tracking).
 
 ## What's next
 
