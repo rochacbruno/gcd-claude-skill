@@ -1,7 +1,7 @@
 # Create folders
 
 Source: https://documentation.s3ns.fr/resource-manager/docs/creating-managing-folders
-Last updated: 2026-11-10
+Last updated: 2026-11-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/resource-manager/docs/tpc-differences) for more details.
 
@@ -598,6 +598,11 @@ To locate your folder ID, run the following command:
 ```
 gcloud resource-manager folders list --organization = ORGANIZATION_ID 
 ```
+
+
+Replace ` ORGANIZATION_ID ` with your organization ID.
+
+The `gcloud resource-manager folders list` command returns only direct child folders of the specified organization or folder. To search and list all folders across an organization hierarchy recursively, see [Search all folders across an organization hierarchy](/resource-manager/docs/manage-folders#search-folders-hierarchy).
 
 
 

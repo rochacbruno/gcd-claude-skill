@@ -1,7 +1,7 @@
 # Try BigQuery using the sandbox
 
 Source: https://berlin.devsitetest.how/bigquery/docs/quickstarts/query-public-dataset-console
-Last updated: 2026-11-10
+Last updated: 2026-11-24
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/bigquery/docs/tpc-differences) for more details.
 
@@ -293,13 +293,21 @@ days.
 - 
 
 The BigQuery sandbox does not support several BigQuery
-features, including the following:
+features, including but not limited to the following:
 
 - [Streaming data](/bigquery/docs/write-api)
 
 - [Data manipulation language (DML) statements](/bigquery/docs/data-manipulation-language)
 
+- [Continuous queries](/bigquery/docs/continuous-queries-introduction)
+
 - [BigQuery Data Transfer Service](/bigquery/docs/dts-introduction)
+
+- [Edition-only features](/bigquery/docs/editions-intro)
+
+Running unsupported features without a linked Cloud Billing account returns a
+[`billingNotEnabled` error](/bigquery/docs/troubleshoot-access-control#ts-billing-not-enabled).
+To use these features, [upgrade from the BigQuery sandbox](#upgrade).
 
 ## View a public dataset
 

@@ -1,7 +1,7 @@
 # Service agents
 
 Source: https://documentation.s3ns.fr/iam/docs/service-agents
-Last updated: 2026-11-17
+Last updated: 2026-11-24
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/iam/docs/tpc-differences) for more details.
 
@@ -179,6 +179,22 @@ Role |
 |
 
 
+
+| 
+
+
+#### AI Platform Agent Experience Service Agent
+
+Service agent for `aiplatform.googleapis.com`. 
+
+
+`service- PROJECT_NUMBER @gcp-sa-aiplatform-agx.s3ns-system.iam.gserviceaccount.com`
+
+| 
+
+None
+| 
+|
 
 | 
 
