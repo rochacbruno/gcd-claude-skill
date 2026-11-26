@@ -177,7 +177,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53411,
+    "size": 53410,
     "url": "https://documentation.s3ns.fr/bigquery/docs/controlling-costs",
     "last_updated": "2026-11-10"
   },
@@ -324,9 +324,9 @@
   "/compute/docs/gpus": {
     "title": "GPU machine types",
     "filename": "compute_gpus.md",
-    "size": 45823,
+    "size": 47437,
     "url": "https://documentation.s3ns.fr/compute/docs/gpus",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-25"
   },
   "/compute/docs/instances/create-start-instance": {
     "title": "Create and start a Compute Engine instance",
@@ -345,7 +345,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 526566,
+    "size": 526568,
     "url": "https://documentation.s3ns.fr/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -520,7 +520,7 @@
   "/docs/authentication/external/externally-sourced-credentials": {
     "title": "Authenticate with client libraries",
     "filename": "authentication_external_externally-sourced-credentials.md",
-    "size": 13683,
+    "size": 13684,
     "url": "https://documentation.s3ns.fr/docs/authentication/external/externally-sourced-credentials",
     "last_updated": "2026-11-17"
   },
@@ -851,7 +851,7 @@
     "filename": "get-started_interact-with-resources.md",
     "size": 10753,
     "url": "https://documentation.s3ns.fr/docs/get-started/interact-with-resources",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/get-started/learn-about-billing": {
     "title": "Learn about Cloud Billing",
@@ -861,11 +861,11 @@
     "last_updated": "2026-11-10"
   },
   "/docs/get-started/required-domains": {
-    "title": "Allow access to Cloud de Confiance console domains",
+    "title": "Allow access to Cloud de Confiance by S3NS domains",
     "filename": "get-started_required-domains.md",
-    "size": 2448,
+    "size": 2914,
     "url": "https://documentation.s3ns.fr/docs/get-started/required-domains",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/get-started/tpc-differences": {
     "title": "Key differences between Cloud de Confiance and Google Cloud",
@@ -982,7 +982,7 @@
   "/docs/quotas/development-environment": {
     "title": "Set up the Cloud Quotas API",
     "filename": "quotas_development-environment.md",
-    "size": 2681,
+    "size": 2680,
     "url": "https://documentation.s3ns.fr/docs/quotas/development-environment",
     "last_updated": "2026-11-10"
   },
@@ -1038,9 +1038,9 @@
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
-    "size": 26711,
+    "size": 26494,
     "url": "https://documentation.s3ns.fr/docs/quotas/quota-adjuster",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
@@ -1059,7 +1059,7 @@
   "/docs/quotas/reference/libraries": {
     "title": "Cloud Quotas client libraries",
     "filename": "quotas_reference_libraries.md",
-    "size": 131885,
+    "size": 131886,
     "url": "https://documentation.s3ns.fr/docs/quotas/reference/libraries",
     "last_updated": "2026-11-10"
   },
@@ -1304,9 +1304,9 @@
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
     "filename": "quotas_troubleshoot.md",
-    "size": 7254,
+    "size": 17019,
     "url": "https://documentation.s3ns.fr/docs/quotas/troubleshoot",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/quotas/view-manage": {
     "title": "View and manage quotas",
@@ -1332,9 +1332,9 @@
   "/docs/storage": {
     "title": "Storage",
     "filename": "storage.md",
-    "size": 1211,
+    "size": 1225,
     "url": "https://documentation.s3ns.fr/docs/storage",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-26"
   },
   "/docs/terraform": {
     "title": "Terraform on Google Cloud documentation",
@@ -1843,7 +1843,7 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 27849,
+    "size": 27856,
     "url": "https://documentation.s3ns.fr/logging/docs/reference/libraries",
     "last_updated": "2026-11-25"
   },
@@ -1899,7 +1899,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39184,
+    "size": 39235,
     "url": "https://documentation.s3ns.fr/monitoring/docs/reference/libraries",
     "last_updated": "2026-11-13"
   },
@@ -2251,7 +2251,7 @@
     "filename": "sql_release-notes.md",
     "size": 67988,
     "url": "https://documentation.s3ns.fr/sql/docs/release-notes",
-    "last_updated": "2026-11-25"
+    "last_updated": "2026-11-26"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Cloud de Confiance versus Google Cloud",
@@ -2321,7 +2321,7 @@
     "filename": "storage_uploading-objects.md",
     "size": 46657,
     "url": "https://documentation.s3ns.fr/storage/docs/uploading-objects",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-26"
   },
   "/storage/docs/xml-api/overview": {
     "title": "XML API overview",

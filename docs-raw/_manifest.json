@@ -163,7 +163,7 @@
   "/bigquery/docs/controlling-costs": {
     "title": "Estimate and control costs",
     "filename": "bigquery_controlling-costs.md",
-    "size": 53593,
+    "size": 53594,
     "url": "https://berlin.devsitetest.how/bigquery/docs/controlling-costs",
     "last_updated": "2026-11-10"
   },
@@ -289,7 +289,7 @@
   "/compute/docs/reference/rest/v1": {
     "title": "Compute Engine API",
     "filename": "compute_reference_rest_v1.md",
-    "size": 538136,
+    "size": 538197,
     "url": "https://berlin.devsitetest.how/compute/docs/reference/rest/v1",
     "last_updated": "2026-10-28"
   },
@@ -597,7 +597,7 @@
   "/docs/discovery/list": {
     "title": "Discovery Document: list",
     "filename": "discovery_list.md",
-    "size": 3612,
+    "size": 3590,
     "url": "https://berlin.devsitetest.how/docs/discovery/list",
     "last_updated": "2025-06-16"
   },
@@ -772,9 +772,9 @@
   "/docs/get-started/interact-with-resources": {
     "title": "Ways to interact with Google Cloud Dedicated in Germany",
     "filename": "get-started_interact-with-resources.md",
-    "size": 10910,
+    "size": 10913,
     "url": "https://berlin.devsitetest.how/docs/get-started/interact-with-resources",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/get-started/learn-about-billing": {
     "title": "Learn about Cloud Billing",
@@ -784,11 +784,11 @@
     "last_updated": "2026-11-10"
   },
   "/docs/get-started/required-domains": {
-    "title": "Allow access to Google Cloud Dedicated console domains",
+    "title": "Allow access to Google Cloud Dedicated in Germany domains",
     "filename": "get-started_required-domains.md",
-    "size": 2476,
+    "size": 2973,
     "url": "https://berlin.devsitetest.how/docs/get-started/required-domains",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/get-started/tpc-differences": {
     "title": "Key differences between Google Cloud Dedicated and Google Cloud",
@@ -926,7 +926,7 @@
   "/docs/quotas/help/request_increase": {
     "title": "View and manage quotas",
     "filename": "quotas_help_request_increase.md",
-    "size": 19374,
+    "size": 19373,
     "url": "https://berlin.devsitetest.how/docs/quotas/help/request_increase",
     "last_updated": "2026-11-17"
   },
@@ -968,9 +968,9 @@
   "/docs/quotas/quota-adjuster": {
     "title": "Use the quota adjuster",
     "filename": "quotas_quota-adjuster.md",
-    "size": 26828,
+    "size": 26611,
     "url": "https://berlin.devsitetest.how/docs/quotas/quota-adjuster",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/quotas/quota-project": {
     "title": "Quota project overview",
@@ -1234,9 +1234,9 @@
   "/docs/quotas/troubleshoot": {
     "title": "Troubleshoot quota errors",
     "filename": "quotas_troubleshoot.md",
-    "size": 7315,
+    "size": 17117,
     "url": "https://berlin.devsitetest.how/docs/quotas/troubleshoot",
-    "last_updated": "2026-11-10"
+    "last_updated": "2026-11-25"
   },
   "/docs/quotas/view-manage": {
     "title": "View and manage quotas",
@@ -1262,9 +1262,9 @@
   "/docs/storage": {
     "title": "Storage",
     "filename": "storage.md",
-    "size": 1223,
+    "size": 1237,
     "url": "https://berlin.devsitetest.how/docs/storage",
-    "last_updated": "2026-11-13"
+    "last_updated": "2026-11-26"
   },
   "/docs/terraform": {
     "title": "Terraform on Google Cloud documentation",
@@ -1773,7 +1773,7 @@
   "/logging/docs/reference/libraries": {
     "title": "Logging client libraries",
     "filename": "logging_reference_libraries.md",
-    "size": 28021,
+    "size": 28028,
     "url": "https://berlin.devsitetest.how/logging/docs/reference/libraries",
     "last_updated": "2026-11-25"
   },
@@ -1829,7 +1829,7 @@
   "/monitoring/docs/reference/libraries": {
     "title": "Monitoring client libraries",
     "filename": "monitoring_reference_libraries.md",
-    "size": 39399,
+    "size": 39450,
     "url": "https://berlin.devsitetest.how/monitoring/docs/reference/libraries",
     "last_updated": "2026-11-13"
   },
@@ -2153,7 +2153,7 @@
     "filename": "sql_release-notes.md",
     "size": 68055,
     "url": "https://berlin.devsitetest.how/sql/docs/release-notes",
-    "last_updated": "2026-11-25"
+    "last_updated": "2026-11-26"
   },
   "/sql/docs/tpc-differences": {
     "title": "Cloud SQL in Google Cloud Dedicated versus Google Cloud",
@@ -2223,7 +2223,7 @@
     "filename": "storage_uploading-objects.md",
     "size": 46899,
     "url": "https://berlin.devsitetest.how/storage/docs/uploading-objects",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-26"
   },
   "/storage/docs/xml-api/overview": {
     "title": "XML API overview",

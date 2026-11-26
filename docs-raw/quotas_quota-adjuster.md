@@ -1,7 +1,7 @@
 # Use the quota adjuster
 
 Source: https://berlin.devsitetest.how/docs/quotas/quota-adjuster
-Last updated: 2026-11-10
+Last updated: 2026-11-25
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/quotas/tpc-differences) for more details.
 
@@ -262,15 +262,7 @@ Concurrent Builds (Non-regional Default Pool) |
 |
 | 
 Cloud Key Management Service API | 
-Cryptographic requests per minute | 
-|
-| 
-Cloud Key Management Service API | 
 HSM cryptographic usage | 
-|
-| 
-Cloud Key Management Service API | 
-Read requests per minute | 
 |
 | 
 Cloud Key Management Service API | 
@@ -279,10 +271,6 @@ Read usage |
 | 
 Cloud Key Management Service API | 
 Software cryptographic usage | 
-|
-| 
-Cloud Key Management Service API | 
-Write requests per minute | 
 |
 | 
 Cloud Key Management Service API | 

@@ -1,7 +1,7 @@
 # Ways to interact with Cloud de Confiance by S3NS
 
 Source: https://documentation.s3ns.fr/docs/get-started/interact-with-resources
-Last updated: 2026-11-10
+Last updated: 2026-11-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -155,7 +155,7 @@ databases and analytics services.
 your architecture or troubleshoot errors as they appear.
 
 To ensure proper console functionality, see
-[Allow access to Cloud de Confiance console domains](/docs/get-started/required-domains).
+[Allow access to Cloud de Confiance by S3NS domains](/docs/get-started/required-domains).
 
 ### Cloud de Confiance mobile app
 

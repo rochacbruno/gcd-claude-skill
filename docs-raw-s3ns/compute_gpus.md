@@ -1,7 +1,7 @@
 # GPU machine types
 
 Source: https://documentation.s3ns.fr/compute/docs/gpus
-Last updated: 2026-11-17
+Last updated: 2026-11-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/compute/docs/tpc-differences) for more details.
 
@@ -130,6 +130,7 @@ Guides
 
 - On this page ** 
 - [ Overview ](#gpu-models)
+- [ Consumption options ](#consumption-options)
 - [ A5X machine series (NVIDIA Vera Rubin) ](#vera-rubin-gpus)
 
 - [ A5X machine type notes ](#a5x_machine_type_notes)
@@ -385,6 +386,42 @@ supercomputing system that is optimized to support your artificial intelligence
 (AI) and machine learning (ML) workloads. This option is recommended for creating a
 densely allocated, performance-optimized infrastructure that has integrations
 for Google Kubernetes Engine (GKE) and Slurm schedulers.
+
+## Consumption options
+
+Before you create GPU instances, choose a consumption option that matches your
+workload's runtime, fault tolerance, and capacity assurance needs.
+
+To help increase your chances of obtaining GPU capacity and reduce costs, use
+[Flex-start VMs](/compute/docs/instances/about-flex-start-vms),
+[Spot VMs](/compute/docs/instances/spot), or
+[reservations](/compute/docs/instances/choose-reservation-type) instead of
+unreserved on-demand capacity:
+
+- **Flex-start VMs**: use the flex-start provisioning model for
+workloads that run for up to seven days and can tolerate a flexible start
+time. When capacity becomes available, Compute Engine provisions
+your requested instances through Dynamic Workload Scheduler (at a discount for A4, A3,
+A2, and G4 machine series).
+
+- **Reservations**: use
+[on-demand reservations](/compute/docs/instances/reservations-overview)
+for production services, continuous workloads, or large-scale training that
+require high capacity assurance.
+
+- **Spot VMs**: use the spot provisioning model only for
+fault-tolerant, checkpointed workloads that can handle
+preemption.
+
+Use unreserved on-demand capacity only if your workload can't use reservations,
+Flex-start VMs, or Spot VMs and can tolerate
+delays if capacity is unavailable.
+
+For more information about consumption options and availability by machine
+series, see
+[Compute Engine instances provisioning models](/compute/docs/instances/provisioning-models)
+and
+[Pricing and consumption options](/compute/docs/accelerator-optimized-machines#pricing-and-provisioning).
 
 ## A5X machine series (NVIDIA Vera Rubin)
 

@@ -1,7 +1,7 @@
-# Allow access to Cloud de Confiance console domains
+# Allow access to Cloud de Confiance by S3NS domains
 
 Source: https://documentation.s3ns.fr/docs/get-started/required-domains
-Last updated: 2026-11-10
+Last updated: 2026-11-25
 
 Some or all of the information on this page might not apply to Cloud de Confiance by S3NS. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -81,15 +81,16 @@ Get started
 
 
 
-# Allow access to Cloud de Confiance console domains 
+# Allow access to Cloud de Confiance by S3NS domains 
 
 
 
 
 
 
-- On this page 
-- [ Required domains ](#required_domains)
+- On this page ** 
+- [ Cloud de Confiance console domains ](#console-domains)
+- [ Additional domains ](#additional_domains)
 - [ Monitoring domains ](#monitoring_domains)
 - 
 
@@ -105,11 +106,11 @@ Get started
 
 If you or your company uses a local networking configuration that denies access
 to particular URLs, such as a firewall or proxy server, you might encounter
-errors when accessing or using the Cloud de Confiance console. This document lists the
-domains and domain patterns that must be allowed for
-the Cloud de Confiance console to function properly.
+errors when accessing or using Cloud de Confiance by S3NS. This document lists the domains and
+domain patterns that you must allow for Cloud de Confiance by S3NS interfaces to function
+properly.
 
-## Required domains 
+## Cloud de Confiance console domains 
 
 The following domains and domain patterns are required for
 Cloud de Confiance console functionality. If any of these domains are blocked,
@@ -175,6 +176,33 @@ Multi-factor authentication (MFA) conformance |
 | 
 csp.withgoogle.com | 
 Content Security Policy (CSP) violation reporting | 
+|
+
+
+
+## Additional domains
+
+The following domains are required for additional Cloud de Confiance by S3NS functionality in
+interfaces outside of the Cloud de Confiance console.
+
+
+
+
+| 
+Domain or domain pattern | 
+Purpose | 
+|
+
+
+
+| 
+ogs.google.com | 
+Google Account management | 
+|
+
+| 
+explorer.apis.google.com | 
+Google APIs Explorer and Try this method** panel in documentation | 
 |
 
 

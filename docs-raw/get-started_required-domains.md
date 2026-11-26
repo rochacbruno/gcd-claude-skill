@@ -1,7 +1,7 @@
-# Allow access to Google Cloud Dedicated console domains
+# Allow access to Google Cloud Dedicated in Germany domains
 
 Source: https://berlin.devsitetest.how/docs/get-started/required-domains
-Last updated: 2026-11-10
+Last updated: 2026-11-25
 
 Some or all of the information on this page might not apply to Google Cloud Dedicated. See [Differences from Google Cloud](/docs/get-started/tpc-differences) for more details.
 
@@ -81,15 +81,16 @@ Get started
 
 
 
-# Allow access to Google Cloud Dedicated console domains 
+# Allow access to Google Cloud Dedicated in Germany domains 
 
 
 
 
 
 
-- On this page 
-- [ Required domains ](#required_domains)
+- On this page ** 
+- [ Google Cloud Dedicated console domains ](#console-domains)
+- [ Additional domains ](#additional_domains)
 - [ Monitoring domains ](#monitoring_domains)
 - 
 
@@ -105,11 +106,11 @@ Get started
 
 If you or your company uses a local networking configuration that denies access
 to particular URLs, such as a firewall or proxy server, you might encounter
-errors when accessing or using the Google Cloud Dedicated console. This document lists the
-domains and domain patterns that must be allowed for
-the Google Cloud Dedicated console to function properly.
+errors when accessing or using Google Cloud Dedicated in Germany. This document lists the domains and
+domain patterns that you must allow for Google Cloud Dedicated in Germany interfaces to function
+properly.
 
-## Required domains 
+## Google Cloud Dedicated console domains 
 
 The following domains and domain patterns are required for
 Google Cloud Dedicated console functionality. If any of these domains are blocked,
@@ -175,6 +176,33 @@ Multi-factor authentication (MFA) conformance |
 | 
 csp.withgoogle.com | 
 Content Security Policy (CSP) violation reporting | 
+|
+
+
+
+## Additional domains
+
+The following domains are required for additional Google Cloud Dedicated in Germany functionality in
+interfaces outside of the Google Cloud Dedicated console.
+
+
+
+
+| 
+Domain or domain pattern | 
+Purpose | 
+|
+
+
+
+| 
+ogs.google.com | 
+Google Account management | 
+|
+
+| 
+explorer.apis.google.com | 
+Google APIs Explorer and Try this method** panel in documentation | 
 |
 
 
